@@ -1,5 +1,20 @@
 # Journal
 
+## Meta Tags and Playing with Gradients
+### 11/9/23
+
+Takeaways:
+- In order to link to your image for sharing, you need to add the absolute path.
+- Why does "X" have so many unique `property` tags? Can't they just use open graph?
+- I need to be more comfortable making mistakes. Nothing is TOO permanent...
+
+Gradients:
+- Fun to play around with
+- Easy to make something pleasing to the eye
+- Easy to go overboard
+- Less is more? Maybe?
+
+
 ## Affinity 2 Tutorials
 ### 11/8/23
 
