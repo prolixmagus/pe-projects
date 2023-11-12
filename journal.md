@@ -1,5 +1,11 @@
 # Journal
 
+## Mini-Project
+### 11/11/23
+
+Today I threw together a few webpages to make a mini-site about classic horror games from the 1990s - 2000s. The process was fun, but I definitely spent a lot of time nitpicking over colors and fonts. I want to focus on choosing the correct size for images that matches with the content / layout.
+
+
 ## Meta Tags and Playing with Gradients
 ### 11/9/23
 
