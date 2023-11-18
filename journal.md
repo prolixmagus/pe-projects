@@ -1,5 +1,23 @@
 # Journal
 
+## CSS Reset
+### 11/17/23
+
+Today I am watching and responding to Lesson 40, "More CSS Resets," in Perpetual Education's Design for the Web Course.
+
+- The ["Kitchen Sink" CodePen](https://codepen.io/chriscoyier/pen/JpLzjd) is very useful for having examples of HTML elements in the wild.
+
+- I would further stress that an id can only be used once per page for THAT element, and that it will be important later why this is so. Or that classes are primarily used for styling.
+
+-I would love to know the best practices for NAMING classes, or if classes supercede the element.
+
+-Would it be better to teach what to do first, then what not to do? I think both are necessary, just wondering the order. I like to see non-examples alongside examples.
+
+-I like showing the little space between the inline-block elements.
+
+-Maybe add a border to the Drake example?
+
+
 ## Mini-Project
 ### 11/11/23
 

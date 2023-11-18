@@ -29,11 +29,13 @@
 
 		<style>
 				body {
+				margin: 0;
 				padding: 10px;
 				background-image: 
 				url(https://peprojects.dev/alpha-8/jeremy/challenge-1/images/background/room.jpg);
 				background-repeat: no-repeat;
 				background-size: cover;
+				color: white;
 			}
 
 			h1 {
@@ -51,8 +53,24 @@
 				max-width: 70ch;
 				letter-spacing: .001em;
 				font-size: 20px;
-				color: white;
 				margin-bottom: 50px;
+			}
+
+			ul li::before {
+				content: '🩸';
+				color: white;
+				display: inline-block;
+				width: 1em;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			li {
+				margin-bottom: 5px;
+				font-size: 20px;
 			}
 
 			a {
@@ -64,10 +82,6 @@
 				color: #AA4A44;
 			}
 
-			h6 {
-				color: yellow;
-			}
-
 		</style>
 	</head>
 
@@ -77,6 +91,10 @@
 		<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, porro accusamus nemo modi adipisci doloremque similique? Dicta vel perspiciatis nesciunt amet. Consequuntur nemo harum, doloremque modi nobis dolores sunt optio.</p>
 
 		<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit, fugiat, incidunt molestiae aperiam autem sapiente debitis saepe perferendis cupiditate, facere repellendus exercitationem veritatis, nam accusamus recusandae. Aspernatur, sequi, alias.</p>
+
+		<ul>
+			<li><a href='walkthrough/index.html'>In-depth walkthrough</a></li>
+		</ul>
 
 		<h6>Background Image by <a href="https://www.freepik.com/free-photo/halloween-wallpaper-with-zombie-hand_19055587.htm#query=zombie%20background&position=0&from_view=keyword&track=ais">Freepik</a></h6>
 
