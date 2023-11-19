@@ -1,5 +1,12 @@
 # Journal
 
+## More CSS Reset
+### 11/18/23
+
+Today I experimented with typography and margins. Line height, letter spacing, box-sizing specifically. I basically styled an  blog entry I wrote when I lived into Taiwan (almost 7 years ago now!), primarily focusing on readability.
+
+I'm also listening to Andre 3000's experimental jazz flute album, New Blue Sun. There are some remixes just waiting to happen...
+
 ## CSS Reset
 ### 11/17/23
 
