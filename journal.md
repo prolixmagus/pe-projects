@@ -1,5 +1,12 @@
 # Journal
 
+## Semantic Mark-Up
+### 11/19/23
+
+To be discovered! Isn't that the ultimate goal, to show off our work? So why wouldn't we want search engines to find us? Cue semantic markup, wonderful CSS additions that reveal the data structure behind that wonderful styling of yours.
+
+Today I styled a website using flex, semantic markup, and lots of gradients. It was a good time, and I saw the benefit of styling the parent for layout vs. the child. Let's you keep track of position and how the styles affect everything the parent contains.
+
 ## More CSS Reset
 ### 11/18/23
 
