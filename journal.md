@@ -1,5 +1,23 @@
 # Journal
 
+## Uncle Bill's Challenge
+### 11/20/23
+- While Ivy went heading by heading, I focused on section by section. I also thought of 'how are these links going to get aligned ...' then I remembered, they are inline!
+
+- Marking up the website! So obvious, but I didn't do it at first 0_o
+
+- Checklist of properties and elements. I'm sure it becomes automatic over time (the most commonly used properties / elements)
+
+- The `tab` tag shortcut in CodePen is clutch
+
+- Padding should be on parent section, not necessarily on image sin the parent.
+
+- The side-by-side columns of HTML/CSS/JS in the Text-Editor, all things aligning, was great to see visually.
+
+Reconfiguring the website didn't take that long structurally, perhaps 15 minutes. The biggest issue was nitpicking the gradients and the iframe, as well as fitting the photos into the gallery section. Those little problems took me an additional 25 minutes. I find myself falling into little whirlpools (which is where the learning happens, I suppose!) As long as those little detours are goal driven. I had to go back to a previous lesson to double-check how to resize an iframe properly.
+
+I learned how to make stacked gradients and to adjust their opacity to make it look like they come from different directions. I learned that setting overflow: hidden and display: inline-block can keep pictures from jutting out of a section. 
+
 ## Semantic Mark-Up
 ### 11/19/23
 
