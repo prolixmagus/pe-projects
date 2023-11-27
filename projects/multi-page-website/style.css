@@ -32,16 +32,19 @@ main {
 h1 {
 	text-align: center;
 	font-size: 2rem;
-	text-decoration: underline;
+	text-decoration: wavy underline;
 	text-decoration-color: #ffd016;
 }
 
+.parent-nav-bar {
+	padding-left: 0px;
+}
 
 .nav-bar-links {
 	display: inline-block;
 	margin: 5px;
 	padding: 5px;
-	border: 2px solid black;
+	border: 3px solid black;
 	border-radius: 10px;
 }
 
@@ -83,7 +86,7 @@ img, picture {
 
 .turkey {
 	max-width: 100px;
-	margin-left: 10px;
+
 	padding: 5px;
 }
 
