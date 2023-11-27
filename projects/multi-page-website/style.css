@@ -36,6 +36,15 @@ h1 {
 	text-decoration-color: #ffd016;
 }
 
+
+.nav-bar-links {
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
 h2 {
 	color: steelblue;
 	font-size: 1.5rem;
@@ -67,30 +76,18 @@ li + li {
 	margin-top: 15px;
 }
 
-.nav.inner-column{
-	max-width: 1100px;
-}
 
-.nav-bar-links {
-	display: inline-block;
-	margin: 10px;
-	padding: 5px;
-	border: 2px solid black;
+img, picture {
 	border-radius: 10px;
 }
 
 .turkey {
 	max-width: 100px;
-	padding: 10px;
+	margin-left: 10px;
+	padding: 5px;
 }
 
-img {
-	border-radius: 10px;
-	margin-left: 20px;
-}
-}
-
-.turkey:hover {
+.turkey-hover:hover {
 	border: 2px solid black;
 }
 
@@ -107,7 +104,7 @@ a:visited{
 	color: #a1045a;
 }
 
-.disclaimer{
+.disclaimer {
 	border: 2px solid red;
 	padding: 10px;
 	margin-top: 40px;
@@ -134,6 +131,7 @@ a:visited{
 /* IMAGE RESET */
 picture {
 	display: block;
+	height: auto;
 }
 
 img {
