@@ -1,5 +1,25 @@
 # Journal
 
+## Research and Destroy Reflection
+
+I started my search by googling "intermediate website layout" and the internet delievered unto me a listicle from a website call [htmlburger](https://htmlburger.com/blog/modern-website-design-examples/). These websites were mostly brand agencies that were using so many responsive / interactive elements that I thought, this couldn't possbly be for intermediates. I found an [orthodontist's website](https://www.myorthos.com/) that I felt was accessible, although definitely designed in a manner beyond what I could do now. I felt like it had grid or flexbox (which, after inspecting it, definitely utilized), but I wanted to practice creating a website for a business. I also felt that I could match the minimal colors and font styles, as well as the GENERAL layout. 
+
+So far, I definitely know what I don't know:
+
+- buttons and certain transition effects
+- images or text that responds based on scrolling position
+- SVG manipulation
+- @media queries (I've heard of them, but not sure how to implement them successfully)
+- Drop down menus (is this realted to <details> and <summary> elements?) in the nav bar
+- the hamburger button on the nav bar
+- image positioning
+
+I marked up the 'boxes' and section on CleanShot. I feel as if I were designing my own webpage (and not mimicking one), drawing it out may be better. I feel you really have to be deliberate and know what boxes go where. It's easier to draw on outline on an already completed site.   
+
+Reflections:
+
+I definitely did not get through as much as I wanted. I got hung up on the nav bar and perfecting it before moving on. Once I got into the swing of things, it went much faster. Having a plan REALLY helped, because you can get lost in one section and then, once you emerge from the depths, know exactly where you need to go. A lot of unexpected things arose, such as knowing which element should be responsible for general margins/padding, and which for styling. 
+
 ## Uncle Bill's Challenge
 ### 11/20/23
 - While Ivy went heading by heading, I focused on section by section. I also thought of 'how are these links going to get aligned ...' then I remembered, they are inline!
