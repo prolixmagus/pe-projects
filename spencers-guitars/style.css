@@ -1,0 +1,232 @@
+@import url('meyer.css');
+
+
+
+/* general header */
+
+* {
+   box-sizing: border-box;
+}
+body {
+	background: url('images/purple-line-background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+   backround-position: center center;
+   min-height: 100vh;
+
+}
+
+.site-header {
+	background-color: black;
+}
+
+nav {
+  padding: 5px;
+}
+
+ul {
+  padding: 10px;
+}
+
+.site-menu {
+   text-align: center;
+}
+
+.site-menu-list {
+   display: inline-block;
+}
+
+.site-menu-list li {
+   font-size: 1rem;
+   display: inline-block;
+   text-align: center;
+   padding: 0px 25px;
+   color: white;
+   font-family: rockwell;
+   transition: all .5s ease-out;
+}
+
+.site-menu-list li:hover {
+	background-color: rgba(255 255 255 / .4);
+}
+
+h1 {
+   font-family: san-serif;
+   text-align: center;
+   margin-inline: auto;
+}
+
+h2 {
+   font-family: rockwell;
+   font-size: clamp(28px, 5vw, 40px);
+   text-align: center;
+   margin-top: 10px;
+   color: #5D3FD3;
+}
+
+.page-content h2 {
+	color: rgba(32 228 55);
+   max-width: 900px;
+}
+
+.page-content .inner-column {
+   max-width: 900px;
+}
+
+.shop-list {
+   padding: 5px;
+   text-align: center;
+}
+
+.shop-list li {
+   display: inline-block;
+   padding: 10px;
+   margin: 10px;
+}
+
+.experimental-guitar-picture, .vintage-guitar-picture {
+   max-width: 300px;
+}
+
+.experimental-guitar-link, .vintage-guitar-link {
+	display: inline-block;
+	font-size: 1.25rem;
+	padding: 10px;
+	margin-top: 15px;
+	background-color: rgba(32 228 55);
+	border-radius: 20px;
+	border: 2px solid white;
+
+}
+
+.vintage-guitar-link {
+	font-family: courier, serif;
+}
+
+.experimental-guitar-link {
+	font-family: aclonica, sans-serif;
+}
+
+.video .inner-column {
+	background-color: rgba(255 255 255);
+}
+}
+.about p, .video p {
+   line-height: 1.44;
+   font-size: 1.15rem;
+   margin-inline: auto;
+
+}
+
+/*About Section */
+
+.guitar-video {
+   min-height: 400px;
+   max-width: 600px;
+   margin-inline: auto;
+}
+
+p + .guitar-video {
+   margin-top: 10px;
+}
+
+iframe {
+   display: block;
+   width: 100%;
+   min-height: 400px;
+   padding-bottom: 10px;
+}
+
+.about .inner-column {
+	background-color: rgba(255 255 255);
+}
+
+/*contact*/
+
+address {
+   line-height: 1.44;
+   font-family: sans-serif;
+}
+
+.contact {
+	margin-inline: auto
+}
+
+.contact p, .contact li {
+	font-size: 1.25rem;
+}
+
+.contact a {
+	text-decoration: underline;
+}
+
+.contact .inner-column{
+	background-color: rgba(255 255 255);
+}
+
+/* footer */
+
+.site-footer{
+	background-color: black;
+	text-align: center;
+}
+
+.site-footer a {
+	color: white;
+	font-size: 1rem;
+}
+
+/* SITE STRUCTURE */
+
+.inner-column {
+  margin-inline: auto;
+  max-width: 75ch;
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+picture {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+	color: black;
+	padding: 10px;
+	font-size: 1.20rem;
+	line-height: 1.44;
+	font-family: sans-serif;
+}
+
+p a {
+  display: inline-block;
+  text-decoration: underline;
+  color: blue
+}
+
+h2 + p {
+   margin-top: 10px;
+}
+
+section {
+	padding: 10px;
+}s
+
+header + main {
+	margin-top: 30px;
+}
