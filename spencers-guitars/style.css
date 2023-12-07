@@ -7,18 +7,23 @@
 * {
    box-sizing: border-box;
 }
-body {
+
+body{
 	background: url('images/purple-line-background.png');
 	background-repeat: no-repeat;
 	background-size: cover;
    backround-position: center center;
    min-height: 100vh;
+}
 
+.spencer-logo {
+   width: 100%;
 }
 
 .site-header {
 	background-color: black;
 }
+
 
 nav {
   padding: 5px;
@@ -38,7 +43,7 @@ ul {
 
 .site-menu-list li {
    font-size: 1rem;
-   display: inline-block;
+   display: block;
    text-align: center;
    padding: 0px 25px;
    color: white;
@@ -58,19 +63,18 @@ h1 {
 
 h2 {
    font-family: rockwell;
-   font-size: clamp(28px, 5vw, 40px);
+   font-size: clamp(28px, 6vw, 40px);
    text-align: center;
    margin-top: 10px;
    color: #5D3FD3;
 }
 
-.page-content h2 {
+.shop h2 {
 	color: rgba(32 228 55);
-   max-width: 900px;
-}
-
-.page-content .inner-column {
-   max-width: 900px;
+   font-family: rockwell;
+   font-size: clamp(28px, 6vw, 40px);
+   text-align: center;
+   margin-top: 10px;
 }
 
 .shop-list {
@@ -85,7 +89,7 @@ h2 {
 }
 
 .experimental-guitar-picture, .vintage-guitar-picture {
-   max-width: 300px;
+   max-width: 400px;
 }
 
 .experimental-guitar-link, .vintage-guitar-link {
@@ -121,9 +125,10 @@ h2 {
 /*About Section */
 
 .guitar-video {
-   min-height: 400px;
+   min-height: 300px;
    max-width: 600px;
    margin-inline: auto;
+   padding: 10px;
 }
 
 p + .guitar-video {
@@ -133,7 +138,7 @@ p + .guitar-video {
 iframe {
    display: block;
    width: 100%;
-   min-height: 400px;
+   min-height: 300px;
    padding-bottom: 10px;
    border-radius: 20px;
 }
@@ -181,7 +186,6 @@ address {
 
 .inner-column {
   margin-inline: auto;
-  max-width: 75ch;
   width: 80%;
   padding: 10px;
   border-radius: 20px;
@@ -221,13 +225,39 @@ p a {
 }
 
 h2 + p {
-   margin-top: 10px;
+   margin-top: 5px;
 }
 
 section {
 	padding: 10px;
-}s
+}
 
 header + main {
 	margin-top: 30px;
 }
+
+section + section {
+   margin-top: 20px;
+}
+
+@media (min-width: 510px) {
+
+   .site-menu-list li {
+      display: inline-block;
+      font-size: 1.25rem;
+      transition: all .5 ease-out;
+   }
+
+   .inner-column {
+     margin-inline: auto;
+     max-width: 75ch;
+     width: 80%;
+     padding: 10px;
+     border-radius: 20px;
+   }
+}
+
+
+
+
+
