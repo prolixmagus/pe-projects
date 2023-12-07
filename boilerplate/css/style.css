@@ -1,0 +1,39 @@
+
+/* RESET */
+
+@import url('meyer-reset.css');
+@import url('setup-reset.css');
+
+/* STYLING */
+html {
+	background:lavender;
+}
+
+body * {
+	border: 2px solid black;
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+.site-header {
+	padding: 10px;
+}
+
+.page-content {
+	padding: 10px;
+}
+
+.site-footer {
+	padding: 10px;
+}
+
+/*SITE STRUCTURE*/
+
+inner-column {
+	display: block;
+	width: 80%;
+	max-width: 900px;
+	margin-inline: auto;
+} 
