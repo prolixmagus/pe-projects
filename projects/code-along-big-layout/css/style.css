@@ -1,0 +1,106 @@
+
+/* RESET */
+
+@import url('meyer-reset.css');
+@import url('setup-reset.css');
+
+/* TYPOGRAPHY */
+
+html {
+	background-color: wheat;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.page-content {
+	background-image: url(https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2352&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-position: center center;
+	background-size: cover;
+	flex-grow: 1;
+}
+
+
+h2 {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+}
+
+p {
+	line-height: 1.4;
+	font-size: 1rem;
+	font-family: sans-serif;
+}
+
+p + p {
+	margin-top: 14px;
+}
+
+h1 + p {
+	margin-top: 14px;
+}
+
+h2 + p {
+	margin-top: 14px;
+}
+
+/*Site Sections*/
+
+.site-header {
+	background-color: #BCC8C6;
+	position: sticky;
+	top: 0;
+	box-shadow: 0px 2px 5px 0px rgba(0 0 0 / .4);
+}
+
+.site-header inner-column {
+	padding: 14px;
+}
+
+.page-header h1 {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+}
+
+.page-header {
+/*	background-color: lightblue;*/
+	color: black;
+}
+
+.about {
+	background-color: #BCC8C6;
+	box-shadow: 0px 2px 5px 0px rgba(0 0 0 / 1);
+}
+
+
+.contact {
+	color: white;
+	background-color: rgba(0 0 0 / .3);
+}
+
+.site-footer {
+	background-color: #333;
+	color: white;
+}
+
+
+
+/*SITE STRUCTURE*/
+
+inner-column {
+	display: block;
+	max-width: 700px;
+	margin-inline: auto;
+	padding: 25px 14px;
+} 
+
+@media (min-width: 700px) {
+	.page-header {
+		background-color: transparent;
+	}
+	.page-header {
+	}
+	
+}
