@@ -4,37 +4,52 @@
 @import url('meyer-reset.css');
 @import url('setup-reset.css');
 
-/* STYLING */
-html {
-	background:lavender;
-
-}
-
-body * {
-	border: 2px solid black;
-}
-
-h1 {
-	font-family: sans-serif;
-}
-
-.site-header {
-	padding: 10px;
-}
-
-.page-content {
-	padding: 10px;
-}
-
-.site-footer {
-	padding: 10px;
-}
-
 /*SITE STRUCTURE*/
 
 inner-column {
 	display: block;
-	width: 80%;
+	width: 100%;
 	max-width: 900px;
 	margin-inline: auto;
 } 
+
+/* THEME */
+
+body {
+	background:lavender;
+}
+
+.site-header {
+}
+
+.page-content {
+}
+
+.site-footer {
+}
+
+/*Typography*/
+
+.whisper-voice {
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+.quiet-voice {
+	font-size: 12px;
+	font-family: sans-serif;
+}
+.indoor-voice {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+.outdoor-voice {
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.loud-voice {
+	font-size: 32px;
+	font-family: [[insert-font!]];
+}
