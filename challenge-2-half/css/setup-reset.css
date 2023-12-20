@@ -1,0 +1,30 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* IMAGES */
+
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* LINKS */
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  display: inline-block;
+  text-decoration: underline;
+  color: blue;
+}
