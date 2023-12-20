@@ -28,6 +28,16 @@ inner-column {
 .site-header inner-column {
 	padding-block: 10px;
 }
+
+.smiley {
+	width: 50px;
+}
+
+header-module {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
 /*Page-Intro*/
 
 .page-section {
@@ -81,6 +91,7 @@ intro-component a {
 .rectangle-2 {
 	display: none;
 }
+
 /*Product Gallery */
 
 .product-gallery {
