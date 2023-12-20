@@ -86,7 +86,7 @@ img, picture {
 
 .turkey {
 	max-width: 100px;
-
+	display: inline-block;
 	padding: 5px;
 }
 

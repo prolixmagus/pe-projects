@@ -22,7 +22,9 @@ body {
 	flex-grow: 1;
 }
 
-
+header food {
+	display: flex;
+}
 h2 {
 	font-family: sans-serif;
 	font-size: 1.5rem;
