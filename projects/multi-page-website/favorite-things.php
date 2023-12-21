@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang='en'>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<title>Favorite Things</title>
-		<link rel='stylesheet' href='style.css'>
-	</head>
+<?php include('header.php') ?>
 
-	<body>
-
-		<header class='header'>
-			<nav class='nav inner-column'>
-				<a href='index.html'>
-					<picture class='turkey'>
-						<img src='turkey.jpg' alt='water color turkey'>
-					</picture>
-				</a>
-				<ul class='parent-nav-bar'>
-					<li class='nav-bar-links'><a href="favorite-things.html">Favorite Things</a></li>
-					<li class='nav-bar-links'><a href="learning-journal.html">Learning Journal</a></li>
-					<li class='nav-bar-links'><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<main>
 			<article>
 				<section class='prologue inner-column'>
 					<h1>Favorite Things</h1>
@@ -77,6 +51,5 @@
 
 				</section>
 			</article>
-		</main>
-	</body>
-</html>
+
+<?php include('footer.php') ?>
