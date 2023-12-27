@@ -20,21 +20,27 @@ inner-column {
 	padding: 30px 10px;
 } 
 
-experience-gained, synopsis {
+experience-gained, div {
 	display: block;
 }
 
 /* SITE HEADER */
 
+.welcome {
+	font-size: 1rem;
+	font-family: sans-serif;
+}
+
 .site-header inner-column {
-	padding-block: 15px;
+	padding-top: 15px;
+	padding-bottom: 10px;
 }
 
 .site-header h1 {
 	letter-spacing: .004em;	
 }
 
-.site-header picture {
+.site-header div {
 	max-width: 60px;
 }
 
@@ -69,11 +75,15 @@ nav ul{
 	gap: 5px;
 }
 
+nav ul li {
+	padding-top: 10px;
+}
+
 nav {
 	padding-top: 10px;
 }
 
-synopsis h2 {
+h2 {
 	font-family: futura;
 	font-size: 32px;
 /*	text-decoration: underline var(--fish-blue);*/
@@ -93,7 +103,7 @@ experience-gained ul {
 	padding-top: 15px;
 }
 
-synopsis + experience-gained {
+div + experience-gained {
 	padding-top: 30px;
 }
 
@@ -170,6 +180,7 @@ p a, li a {
 	color: blue;
 	text-decoration: none;
 	display: inline-block;
+	font-family: futura;
 }
 p a:hover, li a:hover {
 	text-decoration: wavy underline;
@@ -211,4 +222,14 @@ p {
 .loud-voice {
 	font-size: 36px;
 	font-family: futura;
+}
+
+@media (min-width: 450px) {
+	nav ul {
+		flex-direction: row;
+		align-items: center;
+		gap: 25px;
+		padding-top: 0px;
+
+	}
 }
