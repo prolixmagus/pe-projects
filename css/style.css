@@ -1,0 +1,214 @@
+
+/* RESET */
+
+@import url('meyer-reset.css');
+@import url('setup-reset.css');
+
+:root {
+	--fish-green: #D3E8CD;
+	--fish-blue: #E1F5FD;
+	--tile-red: #A82D1D;
+}
+
+/*SITE STRUCTURE*/
+
+inner-column {
+	display: block;
+	width: 100%;
+	max-width: 800px;
+	margin-inline: auto;
+	padding: 30px 10px;
+} 
+
+experience-gained, synopsis {
+	display: block;
+}
+
+/* SITE HEADER */
+
+.site-header inner-column {
+	padding-block: 15px;
+}
+
+.site-header h1 {
+	letter-spacing: .004em;	
+}
+
+.site-header picture {
+	max-width: 60px;
+}
+
+svg {
+	display: block;
+	height: auto;
+}
+
+.site-header inner-column {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+}
+
+/*PAGE CONTENT*/
+
+.page-content span {
+	font-style: italic;
+}
+
+p + p {
+	padding-top: 15px;
+}
+
+/*TIMELINE*/
+
+nav ul{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 5px;
+}
+
+nav {
+	padding-top: 10px;
+}
+
+synopsis h2 {
+	font-family: futura;
+	font-size: 32px;
+/*	text-decoration: underline var(--fish-blue);*/
+}
+
+experience-gained h2 {
+	font-family: futura;
+	font-size: 24px;
+/*	text-decoration: underline var(--fish-green);*/
+}
+
+h2 + p {
+	padding-top: 15px;
+}
+
+experience-gained ul {
+	padding-top: 15px;
+}
+
+synopsis + experience-gained {
+	padding-top: 30px;
+}
+
+experience-gained + experience-gained {
+	padding-top: 30px;
+}
+
+li + li {
+	padding-top: 10px;
+}
+
+
+/* THEME */
+
+.timeline-header{
+	background-color: #D7E3E8;
+}
+
+.present-day {
+	background-color: #C6DEEA;
+}
+
+.burbank {
+	background-color: #B3D3E8;
+
+}
+.white-oak {
+	background-color: #85B2D7;
+
+}
+.aug-2017 {
+	background-color: #6499C3;
+}
+
+.july-2017 {
+	background-color: #85B2D7;
+
+
+}
+
+.seattle {
+	background-color: #B3D3E8;
+}
+
+.college {
+	background-color: #C6DEEA;
+
+}
+
+.holdcom {
+	background-color: #D7E3E8;
+}
+
+
+/*LISTS and LINKS*/
+
+.page-content ul {
+	padding-block: 1em;
+	padding-left: .5em;
+}
+
+.page-content ul li {
+	padding-left: .5em;
+	padding-block: .25em;
+}
+
+li {
+	max-width: 75ch;
+	line-height: 1.44;
+	font-family: sans-serif;
+}
+
+p a, li a {
+	color: blue;
+	text-decoration: none;
+	display: inline-block;
+}
+p a:hover, li a:hover {
+	text-decoration: wavy underline;
+}
+
+a:visited {
+	color: #A82D1D;
+}
+
+
+/*Typography*/
+
+p {
+	line-height: 1.44;
+	font-size: 1rem;
+	max-width: 70ch;
+	font-family: sans-serif;
+}
+
+.whisper-voice {
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+.quiet-voice {
+	font-size: 12px;
+	font-family: sans-serif;
+}
+.indoor-voice {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+.outdoor-voice {
+	font-size: 24px;
+	font-family: futura;
+}
+
+.loud-voice {
+	font-size: 36px;
+	font-family: futura;
+}
