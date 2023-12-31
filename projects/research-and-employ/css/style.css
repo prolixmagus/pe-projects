@@ -1,0 +1,103 @@
+
+/* RESET */
+
+@import url('meyer-reset.css');
+@import url('setup-reset.css');
+
+/*SITE STRUCTURE*/
+
+inner-column {
+	display: block;
+	width: 100%;
+	max-width: 900px;
+	margin-inline: auto;
+	padding: 25px;
+} 
+
+/* HEADER */
+
+header-module {
+	display: flex;
+	justify-content: space-between;
+	font-family: sans-serif;
+	align-items: center;
+}
+
+header h1 {
+	font-size: 18px0;
+	font-family: sans-serif;
+}
+
+nav ul {
+	display: flex;
+	gap: 10px;
+	font-size: 14px;
+}
+
+/* CONTENT */
+
+.page-content inner-column {
+	padding-block: 150px;
+}
+
+content-module {
+	display: flex;
+	flex-direction: column;
+}
+
+event-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.first-info, .second-info {
+	max-width: 150px;
+	line-height: 1.4;
+}
+
+.h2-info {
+	max-width: 100px;
+	transform: translate(-50px, -20px);
+	line-height: 1.4;
+	font-size: 18px;
+	letter-spacing: .04em;
+}
+
+.first-info {
+	transform: translate(-100%);
+	text-align: right;
+}
+
+.second-info {
+	padding-top: 15px;
+}
+
+h2 {
+	font-family: 'Butler Stencil';
+}
+
+
+/* THEME */
+
+:root {
+	--dominant: #0C4C8A;
+	--subdominant: #D4D4D4;
+}
+
+body {
+	background-color: var(--dominant);
+	color: var(--subdominant);
+}
+
+p {
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+@media (min-width: 500px) {
+	event-info{
+		transform: translate(-100px, -100px);
+	}
+}
