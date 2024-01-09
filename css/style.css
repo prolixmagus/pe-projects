@@ -77,7 +77,8 @@ logo-container {
 
 .header-menu {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 
@@ -141,8 +142,6 @@ experience-gained + experience-gained {
 .fish {
 	max-width: 50px;
 	transition: 1s;
-	bottom: 50px;
-	right: 300px;
 }
 
 /*LISTS and LINKS*/
@@ -220,10 +219,6 @@ p {
 /* Media */
 
 @media (min-width: 350px) {
-	.header-menu {
-		flex-direction: row;
-		justify-content: space-around;
-	}
 
 	.seaweed-1 {
 		position: absolute;
