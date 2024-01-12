@@ -5,11 +5,11 @@
 @import url('setup-reset.css');
 
 :root {
-	--fish-green: #D3E8CD;
-	--fish-blue: #E1F5FD;
-	--dark-fish-blue: #CDE2ED;
-	--tile-red: #A82D1D;
-	--fish-pink: #FFD5D1;
+	--fish-green: #5AA348;
+	--fish-blue: #8CCDDE;
+	--dark-fish-blue: #349DB7;
+	--tile-red: #B30006;
+	--fish-pink: #FF584D;
 	--sand-yellow: #FECA52;
 }
 
@@ -172,20 +172,21 @@ h2 + p {
 
 /* ASSETS */
 
-.seaweed-1 {
+.seaweed-pink {
 	display: none;
 }
 
-.seaweed-2 {
+.seaweed-green {
 	display: none;
 }
 
-.seaweed-3 {
+.seaweed-blue {
 	position: absolute;
 	right: 0;
 	bottom: -100px;
-	max-width: 150px;
+	max-width: 100px;
 	z-index: -1;
+	opacity: .5;
 }
 
 .timeline-seaweed {
@@ -195,6 +196,7 @@ h2 + p {
 	bottom: -100px;
 	max-width: 150px;
 	z-index: -1;
+	opacity: .5;
 	}
 
 .fish {
@@ -272,7 +274,7 @@ li a:visited, p a:visited {
 p, li {
 	line-height: 1.44;
 	font-size: 1rem;
-	max-width: 75ch;
+	max-width: 65ch;
 	font-family: "Gill Sans";
 }
 
@@ -317,12 +319,16 @@ p, li {
 
 @media (min-width: 350px) {
 
-	.seaweed-1 {
+	.seaweed-pink {
 		position: absolute;
 		right: 0;
 		bottom: 100px;
 		max-width: 150px;
 		z-index: -1;
+	}
+
+	.seaweed-blue {
+		max-width: 100px;
 	}
 
 	.fish {
@@ -344,16 +350,28 @@ p, li {
 		gap: 2.5rem;
 	}
 
+	.seaweed-blue {
+		max-width: 150px;
+	}
+
+	.timeline-seaweed {
+		opacity: 1;
+	}
+
 }
 
 @media (min-width: 650px) {
-	.seaweed-2 {
+	.seaweed-green {
 		display: block;
 		position: absolute;
 		right: 100px;
 		bottom: -100px;
 		max-width: 150px;
 		z-index: -1;
+	}
+
+	.seaweed-blue {
+		opacity: 1;
 	}
 
 	.fish {
@@ -371,7 +389,7 @@ p, li {
 	.influence-seaweed {
 		display: block;
 		position: absolute;
-		bottom: -30px;
+		bottom: -60px;
 		max-width: 100px;
 		left: 100px;
 		z-index: -1;
@@ -383,7 +401,7 @@ p, li {
 		flex-direction: row;
 		gap: 40px;
 	}
-	.seaweed-1 {
+	.seaweed-pink {
 		display: block;
 		position: absolute;
 		right: 225px;
