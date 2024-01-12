@@ -7,7 +7,9 @@
 :root {
 	--fish-green: #D3E8CD;
 	--fish-blue: #E1F5FD;
+	--dark-fish-blue: #CDE2ED;
 	--tile-red: #A82D1D;
+	--fish-pink: #FFD5D1;
 	--sand-yellow: #FECA52;
 }
 
@@ -72,13 +74,14 @@ logo-container {
 }
 
 .site-logo {
-	max-width: 50px;
+	max-width: 40px;
 }
 
 .header-menu {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	gap: 2.5rem;
+	justify-content: space-between;
 }
 
 
@@ -93,33 +96,79 @@ p + p {
 }
 
 .welcome {
-	padding-block: 30px 48px;
+	font-size: 2rem;
+	font-family: Gill Sans;
+	padding-bottom: 16px;
 }
 
 /*TIMELINE PAGE*/
 
-
-experience-gained h2 {
-	font-family: Gill Sans, sans-serif;
-	font-size: 24px;
+.timeline-section {
+	position: relative;
 }
+
+.timeline-section inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 2rem 1rem;
+	border-bottom: 4px dotted var(--fish-green);
+}
+
+.title {
+	font-size: 2rem;
+	font-family: Gill Sans;
+}
+
+.timeline-section h2 {
+	font-family: "Gill Sans", san-serif;
+	font-size: 1.5rem;
+}
+
+.timeline-section h3 {
+	font-family: "Gill Sans", san-serif;
+	font-size: 1.25rem;
+}
+
+.timeline-section p, .timeline-section li {
+	max-width: 50ch;
+	font-weight: 300;
+}
+
+.timeline-section li::before {
+	content: '-';
+	padding-right: 5px;
+}
+
 
 h2 + p {
-	padding-top: 15px;
+	padding-top: 16px;
 }
 
-experience-gained ul {
-	padding-top: 15px;
+/*INFLUENCES PAGE*/
+
+.influences {
+	position: relative;
 }
 
-div + experience-gained {
-	padding-top: 30px;
+.influences inner-column {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	gap: 2rem;
 }
 
-experience-gained + experience-gained {
-	padding-top: 30px;
+.current {
+	background-color: var(--sand-yellow)
 }
 
+.italic {
+	font-style: italic;
+}
+
+.books, .shows, .music {
+	position: relative;
+}
 
 /* ASSETS */
 
@@ -139,27 +188,62 @@ experience-gained + experience-gained {
 	z-index: -1;
 }
 
+.timeline-seaweed {
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -100px;
+	max-width: 150px;
+	z-index: -1;
+	}
+
 .fish {
 	max-width: 50px;
 	transition: 1s;
 }
 
+
+	.bubble {
+		position: absolute;
+		bottom: 300px;
+		right: 500px;
+		max-width: 30px;
+		z-index: -2;
+	}
+
+	.influence-seaweed {
+		display: none;
+	}
+
+	.bubble-small {
+		position: absolute;
+		bottom: 300px;
+		right: 250px;
+		max-width: 15px;
+		z-index: -1;
+	}
+
+	.bubble-middle {
+		position: absolute;
+		bottom: 150px;
+		right: 350px;
+		max-width: 25px;
+		z-index: -1;
+	}
+
+	.bubble-big{
+		position: absolute;
+		bottom: -50px;
+		right: 100px;
+		max-width: 100px;
+		z-index: -1;
+	}
+
 /*LISTS and LINKS*/
 
-.page-content ul {
-	padding-block: 1em;
-	padding-left: .5em;
-}
-
-.page-content ul li {
-	padding-left: .5em;
-	padding-block: .25em;
-}
-
-li {
-	line-height: 1.44;
-	font-family: sans-serif;
-	max-width: 50ch;
+.timeline-section li, .influences li {
+	padding-top: 10px;
+	font-weight: 300;
 }
 
 p a, li a {
@@ -178,17 +262,18 @@ p a:hover, li a:hover {
 	text-decoration-color: #FECA52;
 }
 
-a:visited {
+li a:visited, p a:visited {
 	color: var(--tile-red);
 }
 
 
 /*Typography*/
 
-p {
+p, li {
 	line-height: 1.44;
 	font-size: 1rem;
-	max-width: 50ch;
+	max-width: 75ch;
+	font-family: "Gill Sans";
 }
 
 .whisper-voice {
@@ -199,6 +284,7 @@ p {
 .quiet-voice {
 	font-size: .8rem;
 	font-family: "Gill Sans", sans-serif;
+	font-weidght: 300;
 }
 .indoor-voice {
 	font-size: 1rem;
@@ -216,6 +302,17 @@ p {
 	font-family: "Gill Sans", sans-serif;
 }
 
+.pink-mark {
+	border-bottom: 4px dotted var(--fish-pink);
+}
+
+.blue-mark {
+	border-bottom: 4px dotted var(--dark-fish-blue);
+}
+
+.green-mark {
+	border-bottom: 4px dotted var(--fish-green);
+}
 /* Media */
 
 @media (min-width: 350px) {
@@ -223,7 +320,7 @@ p {
 	.seaweed-1 {
 		position: absolute;
 		right: 0;
-		bottom: -100px;
+		bottom: 100px;
 		max-width: 150px;
 		z-index: -1;
 	}
@@ -233,7 +330,7 @@ p {
 		position: absolute;
 		max-width: 50px;
 		right: 250px;
-
+	}
 }
 
 @media (min-width: 525px) {
@@ -244,8 +341,9 @@ p {
 	}
 
 	.header-menu {
-		gap: 40px;
+		gap: 2.5rem;
 	}
+
 }
 
 @media (min-width: 650px) {
@@ -265,9 +363,26 @@ p {
 		max-width: 50px;
 	}
 
+	.influences inner-column {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.influence-seaweed {
+		display: block;
+		position: absolute;
+		bottom: -30px;
+		max-width: 100px;
+		left: 100px;
+		z-index: -1;
+	}
 }
 
 @media (min-width: 775px) {
+	.timeline-section inner-column {
+		flex-direction: row;
+		gap: 40px;
+	}
 	.seaweed-1 {
 		display: block;
 		position: absolute;
