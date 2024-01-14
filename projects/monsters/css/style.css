@@ -1,0 +1,172 @@
+
+/* RESET */
+
+@import url('meyer-reset.css');
+@import url('setup-reset.css');
+
+/*SITE STRUCTURE*/
+
+:root {
+	--hue: 45;
+}
+
+inner-column {
+	display: block;
+	width: 100%;
+	max-width: 900px;
+	margin-inline: auto;
+	padding-inline: 10px;
+} 
+
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+
+}
+
+/* HEADER */
+
+.site-header {
+	background-color: hsl(var(--hue) 100% 50%);
+}
+
+.site-header inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding-block: .5em;
+}
+
+.site-header h1 {
+	font-size: clamp(20px, 5vw, 30px);
+	font-family: "BM Hanna Pro", sans-serif;
+	letter-spacing: .004em;
+}
+
+.main-links {
+	display: flex;
+	gap: 20px;
+	font-family: Charter;
+}
+
+.main-links:visited {
+	font-color: E200FF;
+}
+
+/* Page Content */
+
+.page-content inner-column {
+	padding-block: 2em;
+}
+
+identification {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.adopt-message {
+	font-size: 50px;
+	font-family: "BM Hanna Pro";
+	text-align: center;
+	background-color: red;
+}
+
+.name {
+	font-size: 30px;
+	font-family: "BM Hanna Pro", sans-serif;
+}
+
+.portrait {
+	max-width: 400px;
+
+
+}
+.portrait img{
+	border-radius: 10%;
+/*	border-width: 30px;
+  	border-style: solid;
+  	border-image: url("../images/border-diamond.png");
+  	border-image-slice: 30;
+  	border-image-repeat: round;*/
+  	border: 15px solid black;
+
+}
+
+.monster {
+	padding-top: 2rem;
+}
+
+about, status {
+	display: flex;
+	flex-direction: column;
+	max-width: 30ch;
+	gap: .5rem;
+}
+
+info-module {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-block: 1rem;
+}
+
+/*Typography*/
+
+p {
+	line-height: 1.33;
+}
+
+.whisper-voice {
+	font-size: 10px;
+	font-family: Charter, serif;
+}
+
+.quiet-voice {
+	font-size: 12px;
+	font-family: Charter, serif;
+}
+.indoor-voice {
+	font-size: 18px;
+	font-family: Charter, serif;
+}
+
+.outdoor-voice {
+	font-size: 24px;
+	font-family: "BM Hanna Pro", sans-serif;
+}
+
+.loud-voice {
+	font-size: 30px;
+	font-family: "BM Hanna Pro", sans-serif;
+}
+
+@media (min-width: 600px) {
+
+	.site-header inner-column {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	info-module {
+		flex-direction: column;
+	}
+
+	monster-card {
+		display: flex;
+		gap: 1.25em;
+	}
+
+	about, status {
+		max-width: 70ch;
+	}
+
+
+}
