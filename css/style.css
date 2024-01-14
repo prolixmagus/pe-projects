@@ -390,8 +390,8 @@ p, li {
 		display: block;
 		position: absolute;
 		bottom: -60px;
-		max-width: 100px;
-		left: 100px;
+		max-width: 80px;
+		left: 250px;
 		z-index: -1;
 	}
 }

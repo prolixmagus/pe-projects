@@ -13,10 +13,20 @@ inner-column {
 	margin-inline: auto;
 } 
 
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 /* THEME */
 
 body {
-	background:lavender;
+	background: lavender;
 }
 
 .site-header {
