@@ -26,7 +26,7 @@
 		<main>
 			<section class='page-content'>
 				<inner-column>
-					<?php include("monster-card.php") ?>
+					<?php include("monster-list.php") ?>
 				</inner-column>
 			</section>
 		</main>
