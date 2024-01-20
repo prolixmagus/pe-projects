@@ -1,7 +1,4 @@
 
-
-<!-- HTML starts here -->
-
 <?php 
 
 	$id = $monster["id"];

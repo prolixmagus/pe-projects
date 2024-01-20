@@ -20,13 +20,13 @@ inner-column {
 
 picture {
 	display: block;
+
 }
 
 img {
 	display: block;
 	width: 100%;
 	height: auto;
-
 }
 
 /* HEADER */
@@ -67,7 +67,6 @@ img {
 identification {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	gap: 5px;
 }
 
@@ -84,20 +83,17 @@ identification {
 }
 
 .portrait {
-	max-width: 400px;
-
-
+	border: 10px solid black;
+	overflow: hidden;
+	aspect-ratio: 3 / 2;
 }
-.portrait img{
-	border-radius: 10%;
-/*	border-width: 30px;
-  	border-style: solid;
-  	border-image: url("../images/border-diamond.png");
-  	border-image-slice: 30;
-  	border-image-repeat: round;*/
-  	border: 15px solid black;
 
+.cover img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
+
 
 .monster {
 	padding-top: 2rem;
@@ -106,8 +102,15 @@ identification {
 about, status {
 	display: flex;
 	flex-direction: column;
-	max-width: 30ch;
 	gap: .5rem;
+}
+
+about {
+	width: 70%;
+}
+
+status {
+	width: 30%;
 }
 
 info-module {
@@ -159,14 +162,19 @@ p {
 		flex-direction: column;
 	}
 
-	monster-card {
-		display: flex;
-		gap: 1.25em;
+	info-module, identification {
+		width: 50%;
 	}
 
-	about, status {
-		max-width: 70ch;
+	monster-card {
+		display: flex;
+		gap: 2rem;
 	}
+
+	.portrait {
+		max-width: 600px;
+	}
+
 
 
 }
