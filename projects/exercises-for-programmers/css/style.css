@@ -1,0 +1,72 @@
+@import url('meyer-reset.css');
+@import url('setup-reset.css');
+
+inner-column {
+	display: grid;
+	padding: 20px 5px;
+	max-width: 800px;
+
+}
+.refresh {
+	text-decoration: none;
+	padding: 20px 5px;
+	font-size: 2rem;
+	font-family: monospace;
+	color: black;
+}
+/*FORM*/
+
+h2, label, input {
+	font-family: "Gill Sans", sans-serif;
+}
+
+h2  {
+	margin-block: 0;
+	font-size: 1.25rem;
+}
+
+.field {
+	display: grid;
+}
+
+form {
+	display: grid;
+	gap: 15px;
+	max-width: 300px;
+}
+
+label + input {
+	margin-top: 4px;
+}
+
+action-buttons {
+	display: flex;
+	gap: 20px;
+}
+
+/*	BUTTONS*/
+
+.clear-button {
+	background-color: lightblue;
+	box-shadow: 2px 2px black;
+	font-family: "Gill Sans", sans-serif;
+	padding: 5px 10px;
+}
+
+.submit-button {
+	background-color: lightgreen;
+	box-shadow: 2px 2px black;
+	font-family: "Gill Sans", sans-serif;
+	padding: 5px 10px;
+}
+
+/*OUTPUT*/
+
+output {
+	display: block;
+}
+
+.message {
+	font-family: "Gill Sans", sans-serif;
+	font-weight: 300;
+}
