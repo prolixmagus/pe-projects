@@ -45,7 +45,7 @@
 						<li class="exercise"><a href='projects/exercises-for-programmers'>Exercises for Programmers</a></li>
 						<li class="exercise"><a href='projects/challenge-2-more-responsive-layout'
 						>Responsive Layout Challenge</a></li>
-						<li class="exercise"><a href="#">TBD</a></li>
+						<li class="exercise"><a href="projects/pixel-to-rem-converter">Pixel to Rem Converter</a></li>
 						<li class="exercise"><a href="#">TBD</a></li>
 						<li class="exercise"><a href="#">TBD</a></li>
 						<li class="exercise"><a href="#">TBD</a></li>
