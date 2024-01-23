@@ -3,6 +3,8 @@
 
 @import url('meyer-reset.css');
 @import url('setup-reset.css');
+@import url('forms.css');
+@import url('header.css');
 
 :root {
 	--fish-green: #5AA348;
@@ -39,52 +41,6 @@ experience-gained, div {
 	display: block;
 }
 
-/* LANDING PAGE */
-/* HEADER */
-
-header {
-	background-color: var(--fish-blue);
-}
-
-.site-header inner-column {
-	display: flex;
-	flex-direction: column;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.site-header h1 {
-	letter-spacing: .004em;	
-}
-
-header nav {
-	padding-block: .5rem;
-}
-
-svg {
-	display: block;
-	height: auto;
-}
-
-logo-container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 1rem;
-}
-
-.site-logo {
-	max-width: 40px;
-}
-
-.header-menu {
-	display: flex;
-	flex-direction: row;
-	gap: 2.5rem;
-	justify-content: space-between;
-}
-
-
 /*PAGE CONTENT*/
 
 .page-content span {
@@ -97,7 +53,7 @@ p + p {
 
 .welcome {
 	font-size: 2rem;
-	font-family: Gill Sans;
+	font-family: Avenir;
 	padding-bottom: 16px;
 }
 
@@ -121,16 +77,16 @@ p + p {
 
 .title {
 	font-size: 2rem;
-	font-family: Gill Sans;
+	font-family: Avenir;
 }
 
 .timeline h2 {
-	font-family: "Gill Sans", san-serif;
+	font-family: Avenir, san-serif;
 	font-size: 1.5rem;
 }
 
 .timeline h3 {
-	font-family: "Gill Sans", san-serif;
+	font-family: Avenir, san-serif;
 	font-size: 1.25rem;
 }
 
@@ -187,7 +143,7 @@ h2 + p {
 	padding-inline: 5px;
 	border-radius: 5%;
 	min-height: 15vh;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 .projects inner-column {
@@ -276,7 +232,7 @@ p a, li a {
 	color: blue;
 	text-decoration: none;
 	display: inline-block;
-	font-family: "Gill-Sans";
+	font-family: Avenir;
 }
 
 .main-link a {
@@ -292,41 +248,49 @@ li a:visited, p a:visited {
 	color: var(--tile-red);
 }
 
-
-
 /*Typography*/
+
+.bold {
+	font-weight: 600;
+}
 
 p, li {
 	line-height: 1.44;
 	font-size: 1rem;
 	max-width: 65ch;
-	font-family: "Gill Sans";
+	font-family: Avenir;
 }
 
 .whisper-voice {
-	font-size: .7rem;
-	font-family: "Gill Sans", sans-serif;
+	font-size: .8rem;
+	font-family: Avenir, sans-serif;
 }
 
 .quiet-voice {
-	font-size: .8rem;
-	font-family: "Gill Sans", sans-serif;
+	font-size: .9rem;
+	font-family: Avenir, sans-serif;
 	font-weidght: 300;
 }
 .indoor-voice {
 	font-size: 1rem;
-	font-family: "Gill Sans", sans-serif;
+	font-family: Avenir, sans-serif;
+	font-weight: 300;
+}
+
+.output-voice {
+	font-size: 1.25rem;
+	font-family: Avenir, sans-serif;
 	font-weight: 300;
 }
 
 .outdoor-voice {
 	font-size: 1.5rem;
-	font-family: "Gill Sans", sans-serif;
+	font-family: Avenir, sans-serif;
 }
 
 .loud-voice {
 	font-size: 2rem;
-	font-family: "Gill Sans", sans-serif;
+	font-family: Avenir, sans-serif;
 }
 
 .pink-mark {
@@ -419,7 +383,15 @@ p, li {
 		left: 250px;
 		z-index: -1;
 	}
-}
+
+	/*	FORM*/
+
+	.large-form {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		place-items: center;
+	}
+
 
 @media (min-width: 775px) {
 	.timeline inner-column {
@@ -435,14 +407,3 @@ p, li {
 		z-index: -1;
 	}
 }
-
-
-/*@media (min-width: 450px) {
-	.timeline-nav ul {
-		flex-direction: row;
-		align-items: center;
-		gap: 25px;
-		padding-top: 0px;
-
-	}
-}*/

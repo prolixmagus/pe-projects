@@ -1,0 +1,100 @@
+
+form {
+	display: grid;
+	gap: 20px;
+	max-width: 500px;
+}
+
+form-section {
+	display: grid;
+}
+
+label + input {
+	margin-top: 4px;
+}
+
+action-buttons {
+	display: flex;
+	gap: 20px;
+}
+
+.refresh {
+	text-decoration: none;
+	font-size: 2rem;
+	font-family: monospace;
+	color: black;
+}
+
+form-explanation h2, form h2, label, input, .form-output h2 {
+	font-family: "Avenir", sans-serif;
+}
+
+label {
+	font-size: .9rem;
+	align-self: center;
+}
+
+input {
+	padding: .5em;
+	font-size: ;
+	font-weight: 300;
+}
+
+form-explanation h2, .form-output h2, form h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+h2.form-title {
+	font-weight: 400;
+}
+
+.word-assist {
+	text-decoration: dotted underline;
+}
+
+.field {
+	display: grid;
+	gap: 5px;
+}
+
+.mad-libs {
+	grid-template-columns: 1fr 1fr;
+}
+
+.mad-libs-color {
+	color: var(--fish-green);
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+output{
+	display: block;
+	padding: 1em;
+}
+
+h2 + blockquote {
+	padding-top: 1rem;
+}
+
+blockquote {
+	font-size: 20px;
+	font-family: "Apple Chancery", serf;
+}
+/*	BUTTONS*/
+
+.clear-button {
+	font-family: "Avenir", sans-serif;
+	box-shadow: none;
+	border: none;
+	text-decoration: underline;
+	background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.submit-button {
+	background-color: lightgreen;
+	box-shadow: 2px 2px black;
+	font-family: "Avenir", sans-serif;
+	padding: 5px 10px;
+}
