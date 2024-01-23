@@ -9,7 +9,7 @@
 		<meta name='description' content='My solutions to 57 coding challenges created by Brian P. Hogan.'>
 		<meta property='og:image' content='images/e4p.jpg'>
 
-		<meta property='og:url' content='https://www.peprojects.dev/alpha-8/jeremy/projects/exercises-for-programmers/index.html'>
+		<meta property='og:url' content='https://www.peprojects.dev/alpha-8/jeremy/projects/exercises-for-programmers/index.php'>
 		<meta property='og:image' content='www.peprojects.dev/alpha-8/jeremy/projects/exercises-for-programmers/images/e4p.jpg'>
 
 		<meta name="twitter:title" content="Exercises for Programmers">
@@ -92,7 +92,7 @@
 						<li class="exercise"><a href="hello-world/index.php">Hello, World!</a></li>
 						<li class="exercise"><a href="counting-characters/index.php">Counting Characters</a></li>
 						<li class="exercise"><a href="printing-quotes/index.php">Printing Quotes</a></li>
-						<li class="exercise"><a href="#">TBD</a></li>
+						<li class="exercise"><a href="mad-libs/index.php">Mad-Libs</a></li>
 						<li class="exercise"><a href="#">TBD</a></li>
 						<li class="exercise"><a href="#">TBD</a></li>
 					</ol>
