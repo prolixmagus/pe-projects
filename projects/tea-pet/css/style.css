@@ -1,0 +1,133 @@
+
+/* RESET */
+
+@import url('meyer-reset.css');
+@import url('setup-reset.css');
+
+/*SITE STRUCTURE*/
+
+:root {
+	--hue: 100;
+	--pet-purple: #644146;
+}
+
+inner-column {
+	display: block;
+	width: 100%;
+	max-width: 900px;
+	margin-inline: auto;
+	padding: 2rem 1rem;
+} 
+
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+}
+
+footer {
+	background-color: hsl(var(--hue) 20% 94%);
+}
+
+/*home*/
+
+text-container {
+	display: block;
+	background-image: url('../images/smile-tea-pet.jpg');
+	background-size: cover;
+	background-postion: center;
+	min-height: 90vh;
+}
+
+.title {
+	font-size: 4rem;
+	font-family: avenir, san-serif;
+}
+
+/*nav*/
+
+nav ul {
+	display: flex;
+	gap: 30px;
+}
+
+/* shop */
+.item-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.preview-details {
+	margin-top: 4px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Typography*/
+
+.warning {
+	font-weight: 600;
+}
+
+ul > li {
+	font-family: avenir, sans-serif;
+}
+
+p {
+	line-height: 1.44;
+	max-width: 75ch;
+	font-family: avenir, sans-serif;
+}
+
+p + p {
+	margin-top: 1rem;
+}
+
+address {
+	margin-top: 2rem;
+}
+
+h2 + p {
+	margin-top: .5rem;
+}
+
+
+
+.whisper-voice {
+	font-size: .625rem; /* 10px */
+	font-family: avenir, sans-serif;
+}
+
+.quiet-voice {
+	font-size: .75px; /* 12px */
+	font-family: avenir, sans-serif;
+}
+.indoor-voice {
+	font-size: 1rem; /* 16px */
+	font-family: avenir, sans-serif;
+}
+
+.outdoor-voice {
+	font-size: 1.5rem; /* 24px */
+	font-family: avenir, sans-serif;
+}
+
+.loud-voice {
+	font-size: 2rem; /* 32 px*/
+	font-family: avenir, sans-serif;
+}
