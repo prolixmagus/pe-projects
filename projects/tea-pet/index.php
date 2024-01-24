@@ -17,7 +17,7 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 
 		<title><?=$page?></title>	
-		<meta name='description' content='[[insert description!]]'>
+		<meta name='description' content='Online store for artisanal clay tea pets'>
 		<meta property='og:image' content='[[link to image!]]'>
 
 		<link rel='stylesheet' href='css/style.css'>
@@ -34,19 +34,22 @@
 
 			<section class='page-content'>
 				<?php 
-					if ($page === 'home') {
+					if ($page == 'home') {
 						include('home.php');
 					}
 
-					if ($page === 'pet-shop') {
-						include('pet-shop.php');
+					if ($page == 'pet-shop-list') {
+						include('pet-shop-list.php');
 					}
 					
-					if ($page === 'contact') {
+					if ($page == 'contact') {
 						include('contact.php');
 					}
-					if ($page === 'care') {
+					if ($page == 'care') {
 						include('care.php');
+					}
+					if ($page == 'detail') {
+						include('detail.php');
 					}
 					?>
 

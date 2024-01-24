@@ -9,6 +9,7 @@
 :root {
 	--hue: 100;
 	--pet-purple: #644146;
+	--link-orange: #C37200;
 }
 
 inner-column {
@@ -16,7 +17,7 @@ inner-column {
 	width: 100%;
 	max-width: 900px;
 	margin-inline: auto;
-	padding: 2rem 1rem;
+	padding: 1.5rem 1rem;
 } 
 
 picture {
@@ -29,6 +30,10 @@ img {
 	height: auto;
 }
 
+header {
+	background-color: hsl(var(--hue) 20% 74%);
+}
+
 body {
 	min-height: 100vh;
 	display: flex;
@@ -39,8 +44,13 @@ main {
 	flex-grow: 1;
 }
 
+.site-footer inner-column {
+	padding-block: 10px;
+
+}
+
 footer {
-	background-color: hsl(var(--hue) 20% 94%);
+	background-color: hsl(var(--hue) 20% 54%);
 }
 
 /*home*/
@@ -56,6 +66,7 @@ text-container {
 .title {
 	font-size: 4rem;
 	font-family: avenir, san-serif;
+	color: var(--pet-purple);
 }
 
 /*nav*/
@@ -63,6 +74,15 @@ text-container {
 nav ul {
 	display: flex;
 	gap: 30px;
+}
+
+nav a {
+	text-decoration: underline;
+}
+
+a:visited {
+	text-decoration: underline;
+	color: var(--link-orange);
 }
 
 /* shop */
@@ -78,6 +98,65 @@ nav ul {
 	justify-content: space-between;
 }
 
+.detail-picture ul {
+	display: grid;
+	gap: .5rem;
+}
+/* detail */
+
+item-snapshot picture {
+	max-width: 500px;
+}
+
+item-details {
+	font-family: avenir, sans-serif;
+	line-height: 1.4;
+}
+
+item-details .pet-name {
+	font-size: 2rem;
+}
+
+.pet-name {
+	font-weight: 600;
+}
+
+.description {
+	margin-top: 10px;
+}
+
+.price {
+	font-weight: 500;
+	margin-top: 5px;
+	font-size: 1.5rem;
+}
+
+.buy {
+	margin-top: 1rem;
+	font-size: 1.25rem;
+	background-color: hsl(var(--hue) 20% 74%);
+	max-width: 100px;
+	text-align: center;
+	font-weight: 500;
+}
+
+extra-details {
+	display: block;
+	margin-top: 2rem;
+}
+
+
+/* contact */
+
+
+address {
+	margin-top: 1rem;
+	font-size: 1.125rem;
+	font-family: avenir;
+}
+
+
+
 /*Typography*/
 
 .warning {
@@ -89,7 +168,7 @@ ul > li {
 }
 
 p {
-	line-height: 1.44;
+	line-height: 1.4;
 	max-width: 75ch;
 	font-family: avenir, sans-serif;
 }
@@ -98,15 +177,9 @@ p + p {
 	margin-top: 1rem;
 }
 
-address {
-	margin-top: 2rem;
-}
-
 h2 + p {
-	margin-top: .5rem;
+	margin-top: 1.25rem;
 }
-
-
 
 .whisper-voice {
 	font-size: .625rem; /* 10px */
@@ -130,4 +203,16 @@ h2 + p {
 .loud-voice {
 	font-size: 2rem; /* 32 px*/
 	font-family: avenir, sans-serif;
+}
+
+/* media */
+
+@media(min-width: 375px) {
+	.details {
+		display: grid;
+		grid-template-columns: .75fr 1fr;
+		gap: 2rem;
+		max-width: px;
+}
+
 }
