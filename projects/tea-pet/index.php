@@ -1,15 +1,6 @@
 <!doctype html>
 
-<?php 
-
-	$page = null;
-
-	if (isset($_GET['page'])) {
-		$page = $_GET['page'];
-	} else {
-		$page = 'home'; // default
-	}
-?>
+<?php require("router.php")?>
 
 <html lang='en'>
 	<head>
@@ -33,8 +24,9 @@
 		<main>
 
 			<section class='page-content'>
-				<?php 
-					if ($page == 'home') {
+				<?php getTemplate($page); 
+
+					/* if ($page == 'home') {
 						include('home.php');
 					}
 
@@ -51,7 +43,12 @@
 					if ($page == 'detail') {
 						include('detail.php');
 					}
-					?>
+
+					if ($page == 'create') {
+						include('detail.php');
+					} */
+
+				?>
 
 			</section>
 

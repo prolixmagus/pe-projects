@@ -25,10 +25,10 @@ foreach ($tea_pets as $tea_pet) {
 <?php 
 	if (isset($detail) ) { ?>
 	<picture class="detail-picture">
-		<img src="https://placehold.co/600x600" alt="tea pet">
+		<img src="<?=$detail["image"]?>" alt="tea pet">
 	</picture>
 	<item-details>
-		<h1 class="pet-name"><?=$detail["pet-name"];?></h1>
+		<h1 class="pet-name bold"><?=$detail["pet-name"];?></h1>
 		<h2 class="price"><?=$price?></h2>
 		<h3 class="description">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quo nam eum sapiente, rem saepe debitis sed atque perspiciatis dignissimos cumque veniam corrupti quasi consequuntur fugiat tenetur sunt nobis blanditiis ullam!</h3>
 
@@ -43,7 +43,7 @@ foreach ($tea_pets as $tea_pet) {
 	<?php } else { ?>
 
 		<h1>No Tea pets Here!</h1>
-		<p>Please visit our<a href="?page=pet-shop-list">Pet Shop</a></li> to nurture a Tea Pet today!</p>
+		<p>Please visit our<a href="?page=pet-shop-list">Pet Shop</a> to nurture a Tea Pet today!</p>
 
 	<?php } ?>
 </inner-column>

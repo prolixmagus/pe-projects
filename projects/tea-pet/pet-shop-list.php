@@ -6,11 +6,21 @@
 			<li>
 				<a href='?page=detail&tea-pet=<?=$tea_pet["id"]?>'>
 					<picture>
-						<img src="https://placehold.co/250x250">
-						<ul class="preview-details">
-							<h2 class="pet-name"><?=$tea_pet["pet-name"]?></li>
-							<h3 class="origin"><?=$tea_pet["origin"]?></li>
-						</ul>
+						<img src="<?=$tea_pet["image"]?>">
+						<dl class="preview-details">
+							<div class="detail-container">
+								<dt>Type:</dt> 
+								<dd class="pet-name"><?=$tea_pet["pet-name"]?></dd>
+							</div>
+							<div class="detail-container">
+								<dt>Origin:</dt>
+								<dd class="origin"> <?=$tea_pet["origin"]?></dd>
+							</div>
+							<div class="detail-container">
+								<dt>Material:</dt> 
+								<dd class="materials"> <?=$tea_pet["materials"]?></dd>
+							</div>
+						</dl>
 					</picture>
 				</a>
 			</li>

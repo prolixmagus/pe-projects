@@ -1,6 +1,6 @@
 <inner-column>
-	<text-container>
+	<site-cover>
 		<h1 class="title">Tea Pet</h1>
-	</text-container>
+	</site-cover>
 </inner-column>
 
