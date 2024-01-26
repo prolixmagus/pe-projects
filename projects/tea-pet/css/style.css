@@ -164,9 +164,8 @@ extra-details {
 
 /* form */
 form {
-	padding: 4rem 0rem;
+	padding: 2rem 0rem;
 	font-family: avenir, sans-serif;
-	max-width: 300px;
 }
 
 field {
@@ -175,7 +174,7 @@ field {
 }
 
 label {
-	font-size: 1rem;
+	font-size: .9rem;
 }
 
 field + field {
@@ -184,20 +183,37 @@ field + field {
 
 input, select {
 	padding: .5em;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+	max-width: 300px;
 }
 
 button {
 	margin-top: 1rem;
 	padding: .25em .5em;
-	font-size: 1rem;
-	margin-top: 1rem;
+	font-size: 2rem;
 	font-size: 1rem;
 	background-color: hsl(var(--hue) 20% 74%);
 	font-weight: 500;
 	border: 2px solid var(--pet-purple);
+	color: var(--pet-purple);
 }
 
+textarea {
+	padding: .5em;
+	font-size: 1rem;
+	max-width: 400px;
+	font-family: avenir, sans-serif;
+}
+
+.error {
+	color: var(--link-orange);
+}
+
+.success {
+ color: hsl(var(--hue) 20% 50%);
+ font-weight: 500;
+ font-size: 1.25rem;
+}
 
 /* contact */
 
@@ -219,6 +235,10 @@ address {
 
 .warning {
 	font-weight: 600;
+}
+
+.italic {
+	font-style: italic;
 }
 
 ul > li, cart a{
