@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=VT323&display=swap');
+/* RESET */
+
+@import url('meyer-reset.css');
+@import url('setup-reset.css');
+@import url('../../../css/style.css');
+
+.right-arrow {
+	display: none;
+	max-width: 100px;
+}
+
+.down-arrow {
+	display: block;
+	max-width: 100px;
+}
+
+
+
+/* SECTION */
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+label {
+	font-size: 1.25rem;
+	color: rgb(0 0 0 / .5);
+}
+
+input {
+	padding: .25em;
+	font-family: avenir, sans-serif;
+	font-size: 1.5rem;
+
+}
+
+.output {
+	font-family: avenir, sans-serif;
+	font-size: 2rem;
+}
+
+.form-group inner-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.pixelated {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-family: 'VT323', monospace;
+}
+
+action-buttons {
+	display: flex;
+	gap: 20px;
+}
+
+.clear-button {
+	font-family: avenir, sans-serif;
+}
+
+.pixel-button {
+	background-color: pink;
+	padding: 5px 10px;
+	border-radius: 5%;
+	font-family: avenir, sans-serif;
+}
+
+.rem-button {
+	background-color: lightblue;
+	padding: 5px 10px;
+	border-radius: 5%;
+	font-family: avenir, sans-serif;
+}
+
+/*Typography*/
+
+.whisper-voice {
+	font-size: .625rem; /* 10px */
+	font-family: sans-serif;
+}
+
+.quiet-voice {
+	font-size: .75px; /* 12px */
+	font-family: sans-serif;
+}
+.indoor-voice {
+	font-size: 1rem; /* 16px */
+	font-family: sans-serif;
+}
+
+.outdoor-voice {
+	font-size: 1.5rem; /* 24px */
+	font-family: sans-serif;
+}
+
+.loud-voice {
+	font-size: 2rem; /* 32 px*/
+	font-family: sans-serif;
+}
+
+@media(min-width: 550px) {
+	.form-group inner-column {
+		flex-direction: row;
+	}
+
+	.right-arrow {
+		display: block;
+	}
+
+	.down-arrow {
+		display: none;
+	}
+}
