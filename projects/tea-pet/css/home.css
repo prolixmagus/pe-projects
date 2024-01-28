@@ -1,0 +1,7 @@
+.home {
+	display: block;
+	background-size: cover;
+	background-image: url('../images/smile-tea-pet.jpg');
+	background-position: center;
+	min-height: 100vh;
+}

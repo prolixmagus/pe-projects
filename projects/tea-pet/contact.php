@@ -1,5 +1,5 @@
 <inner-column>
-	<h2 class="outdoor-voice">Injured Pets</h2>
+	<h2 class="loud-voice">Injured Pets</h2>
 
 	<p>It is a long journey from our home to yours. If any pets arrive damaged (i.e. cracks or broken pieces), please email us at <a href="mailto:teapethospital@teapets.com">teapethospital@teapets.com</a>.</p>
 

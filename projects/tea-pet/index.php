@@ -7,7 +7,7 @@
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-		<title><?=$page?></title>	
+		<title>Tea Pets: <?=$page?></title>	
 		<meta name='description' content='Online store for artisanal clay tea pets'>
 		<meta property='og:image' content='[[link to image!]]'>
 
@@ -16,12 +16,12 @@
 	</head>
 
 	<body>
-
+		
 		<header class='site-header'>
 			<?php include("site-menu.php")?>
 		</header>
 
-		<main>
+		<main class="<?=$page?>">
 
 			<section class='page-content'>
 				<?php getTemplate($page); 

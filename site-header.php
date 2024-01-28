@@ -8,9 +8,5 @@
 </logo-container>
 
 <nav>
-	<ul class='header-menu'>
-		<li class='main-link'><a href='timeline.php'>résumé</a></li>
-		<li class='main-link'><a href='projects.php'>projects</a></li>
-		<li class='main-link'><a href='influences.php'>influences</a></li>
-	</ul>
+	<?php include("site-menu.php")?>
 </nav>

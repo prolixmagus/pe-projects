@@ -1,0 +1,70 @@
+.pet-shop-list picture {
+	background-color: hsl(var(--pet-purple) 21% 32% / .2);
+	padding: 1em;
+}
+
+.item-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	padding-top: 1rem;
+}
+
+.shop-item {
+	max-width: 200px;
+}
+
+.preview-details {
+	margin-top: 10px;
+	font-weight: 500;
+	color: hsl(var(--pet-purple) 21% 32%);
+}
+
+.detail-picture ul {
+	display: grid;
+	gap: .5rem;
+}
+
+dl {
+	display: grid;
+	gap: 10px;
+}
+
+.detail-container {
+	display: flex;
+	gap: 5px;
+}
+
+/* detail */
+
+.detail-picture {
+	max-width: 600px;
+}
+
+item-details {
+	font-family: avenir, sans-serif;
+	line-height: 1.4;
+}
+
+item-details .pet-name {
+	font-size: 2rem;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.description {
+	margin-top: 10px;
+}
+
+.price {
+	font-weight: 500;
+	margin-top: 5px;
+	font-size: 1.5rem;
+}
+
+extra-details {
+	display: block;
+	margin-top: 2rem;
+}

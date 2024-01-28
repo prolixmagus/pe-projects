@@ -1,7 +1,11 @@
 <inner-column>
-	<h2 class="outdoor-voice">How to Train a Tea Pet</h2>
+	<h2 class="loud-voice">How to Train a Tea Pet</h2>
 
 	<p>Simple: shower and feed it every day with your favorite tea!</p>
+
+	<picture>
+		<img src="images/cat-shower.jpg">
+	</picture>
 
 	<p>Tea pets are marvelous creatures born from the Earth. Since Song Dynasty in 960, these pets have been traditionally molded from Zisha clay (kaolin, quartz, and mica) near city of Yixing. As their popularity spread across the world, enthusiasts began creating ceramic, stone, porcelain, and even wooden pets.</p>
 

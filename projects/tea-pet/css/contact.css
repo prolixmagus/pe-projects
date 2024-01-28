@@ -1,0 +1,16 @@
+/* contact */
+
+snail-mail {
+	display: block;
+	margin-top: 2rem;
+}
+
+address {
+	background-color: hsl(var(--pet-purple) 21% 32% / .2);
+	margin-top: 1rem;
+	padding: 1em;
+	font-size: 1.125rem;
+	font-family: avenir;
+	border: 2px solid hsl(var(--pet-purple) 21% 32%);
+	max-width: 300px;
+}

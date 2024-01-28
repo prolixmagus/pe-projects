@@ -37,7 +37,9 @@ foreach ($tea_pets as $tea_pet) {
 			<h5 class="materials">Material: <?=$detail["materials"];?> </h5>
 			<h6 class="origin">Origin: <?=$detail["origin"];?> </h6>
 		</extra-details>
-		<a class="buy" href='#'>Buy Now!</a>
+		<button type="submit" name ="submitted" href='#'>
+			Buy Now!
+		</button>
 	</item-details>
 
 	<?php } else { ?>

@@ -1,5 +1,5 @@
 <inner-column>
-	<h2 class="outdoor-voice">Make Your Own Tea Pet!</h2>
+	<h2 class="loud-voice">Make Your Own Tea Pet!</h2>
 
 	<p>Can't find what you're looking for in the <a href="?page=pet-shop-list">store</a>? No problem!</p>
 

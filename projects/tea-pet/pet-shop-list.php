@@ -1,6 +1,8 @@
 <?php include("tea-pet-data.php"); ?>
 
 <inner-column>
+	<h2 class="loud-voice">The Tea Pet Shop</h2>
+
 	<ul class='item-grid'>
 		<?php foreach($tea_pets as $tea_pet) { ?>
 			<li>
