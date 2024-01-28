@@ -55,14 +55,14 @@
 </section>
 
 <picture class='influence-seaweed'>
-	<img src='images/influence-green.svg' alt='a green stem of seaweed'>
+	<img src='images/influence-green.svg' alt='green stem of seaweed'>
 </picture>
 <picture class='bubble-small'>
-	<img src='images/bubble.svg' alt='bubble'>
+	<img src='images/bubble.svg' alt='blue bubble'>
 </picture>
 <picture class='bubble-middle'>
-	<img src='images/bubble-2.svg' alt='bubble'>
+	<img src='images/bubble-2.svg' alt='blue bubble'>
 </picture>
 <picture class='bubble-big'>
-	<img src='images/bubble-3.svg' alt='bubble'>
+	<img src='images/bubble-3.svg' alt='blue bubble'>
 </picture>

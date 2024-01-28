@@ -138,13 +138,13 @@ h2 + p {
 
 .project-list {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 10px;
 }
 
 .exercise {
 	border: 2px solid black;
-	padding-inline: 5px;
+	padding: 5px;
 	border-radius: 5%;
 	min-height: 15vh;
 	font-size: 1.25rem;
@@ -152,6 +152,14 @@ h2 + p {
 
 .projects inner-column {
 	padding-top: 1rem;
+}
+
+.seaweed-patch {
+	position: absolute;
+	bottom: -100px;
+	right: 0;
+	max-width: 400px;
+
 }
 
 /* ASSETS */
@@ -343,6 +351,10 @@ p, li {
 		gap: 2.5rem;
 	}
 
+	.project-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
 	.seaweed-blue {
 		max-width: 150px;
 	}
@@ -388,10 +400,12 @@ p, li {
 	}
 
 @media (min-width: 775px) {
+
 	.timeline inner-column {
 		flex-direction: row;
 		gap: 40px;
 	}
+
 	.seaweed-pink {
 		display: block;
 		position: absolute;
@@ -399,5 +413,11 @@ p, li {
 		bottom: -100px;
 		max-width: 150px;
 		z-index: -1;
+	}
+}
+
+@media (min-width: 860px) {
+		.project-list {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }

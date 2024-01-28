@@ -16,3 +16,7 @@
 		</ol>
 	</inner-column>
 </section>
+
+<picture class='seaweed-patch'>
+	<img src='images/seaweed-patch.svg' alt='pink green blue seaweed patch'>
+</picture>
