@@ -5,6 +5,7 @@
 @import url('setup-reset.css');
 @import url('forms.css');
 @import url('header.css');
+@import url('footer.css');
 
 :root {
 	--fish-green: #5AA348;
@@ -40,7 +41,6 @@ inner-column {
 experience-gained, div {
 	display: block;
 }
-
 /*PAGE CONTENT*/
 
 .page-content span {
@@ -72,6 +72,10 @@ p + p {
 	flex-direction: column;
 	gap: 1.5rem;
 	border-bottom: 4px dotted var(--fish-green);
+}
+
+.timeline .last {
+	border-bottom: none;
 }
 
 
@@ -224,7 +228,7 @@ h2 + p {
 /*LISTS and LINKS*/
 
 .timeline li, .influences li {
-	padding-top: 10px;
+	padding-top: 16px;
 	font-weight: 300;
 }
 
@@ -346,7 +350,6 @@ p, li {
 	.timeline-seaweed {
 		opacity: 1;
 	}
-
 }
 
 @media (min-width: 650px) {
@@ -383,15 +386,6 @@ p, li {
 		left: 250px;
 		z-index: -1;
 	}
-
-	/*	FORM*/
-
-	.large-form {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		place-items: center;
-	}
-
 
 @media (min-width: 775px) {
 	.timeline inner-column {

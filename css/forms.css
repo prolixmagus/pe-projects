@@ -9,6 +9,11 @@ form-section {
 	display: grid;
 }
 
+form-section inner-column {
+	padding: 0rem 1rem;
+	margin-bottom: 1rem;
+}
+
 label + input {
 	margin-top: 4px;
 }
@@ -36,7 +41,7 @@ label {
 
 input {
 	padding: .5em;
-	font-size: ;
+	font-size: 1rem;
 	font-weight: 300;
 }
 
@@ -58,10 +63,6 @@ h2.form-title {
 	gap: 5px;
 }
 
-.mad-libs {
-	grid-template-columns: 1fr 1fr;
-}
-
 .mad-libs-color {
 	color: var(--fish-green);
 	font-weight: 600;
@@ -70,7 +71,7 @@ h2.form-title {
 
 output{
 	display: block;
-	padding: 1em;
+	max-width: 65ch;
 }
 
 h2 + blockquote {

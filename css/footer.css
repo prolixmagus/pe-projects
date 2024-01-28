@@ -1,0 +1,8 @@
+footer {
+	font-family: avenir, sans-serif;
+	background-color: hsl(42 99% 66% / .3);
+}
+
+footer inner-column {
+	padding: 10px;
+}
