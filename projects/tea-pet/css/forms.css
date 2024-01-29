@@ -37,6 +37,7 @@ button {
 
 button:hover {
 	background-color: hsl(var(--hue) 20% 74%);
+}
 
 textarea {
 	padding: .5em;

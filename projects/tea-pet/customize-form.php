@@ -1,58 +1,94 @@
 <?php 
-$petname = "";
-$type = "";
-$material = "";
-$requests = "";
-$hasPetname = false;
-$petnameError = false;
+
+$teapetData = "";
+$petName = "";
+$description = "";
+$hasDescription= "";
+$descriptionError= "";
+$haspetName = false;
+$petNameError = false;
 $customTeapet = "";
 $id = "";
 
+/* READ function
+
+	function readTeapetData() {
+	$getTeapet = file_get_contents('teapet.json');
+ 	return json_decode($getTeapet, true);
+} 
+ */
+
 if ( isset($_POST["submitted"]) ) {
 
-	if ( isset($_POST["petname"]) ) {
-		$petname = $_POST["petname"];
+	//setting variables for $_POST key => values
+	if ( isset($_POST["petName"]) ) {
+		$petName = $_POST["petName"];
 	}
 
-	if ( strlen( $petname ) > 0 ) {
-		$hasPetname = true;
+	if ( strlen( $petName ) > 0 ) {
+		$haspetName = true;
 	} else {
-		$petnameError = "*Please enter a name.";
+		$petNameError = "*Please enter your tea pet's name.";
 	}
 
-	if ( isset($_POST["type"]) ) {
-		$type = $_POST["type"];
+	if ( isset($_POST["description"]) ) {
+		$description = $_POST["description"];
 	}
 
-	if ( isset($_POST["material"]) ) {
-		$material = $_POST["material"];
+	if ( strlen( $description ) > 0 ) {
+		$hasDescription = true;
+	} else {
+		$descriptionError = "*Please describe your tea pet's origin story.";
 	}
 
-	if ( isset($_POST["requests"]) ) {
-		$requests = $_POST["requests"];
-	}
-
-	if ($hasPetname) {
+	//creating item
+	if ($haspetName && $hasDescription) {
 		$customTeapet = [
-			$id => "",
-			$petname => $_POST["petname"],
-			$type => $_POST["type"],
-			$material => $_POST["material"],
-			$requests => $_POST["requests"],
-		]; ?>
+			"id" => uniqid(),
+			"petName" => $_POST["petName"],
+			"type" => $_POST["type"],
+			"material" => $_POST["material"],
+			"description" => $_POST["description"],
+		];
 
-		<p class="success">Order received! Thank you!</p>
-	<?php }
-}
+		//READ and decode json file to PHP
+	 	$getTeapet = file_get_contents('teapet.json');
+	 	$decodedTeapet = json_decode($getTeapet, true);
 
+	 	//WRITE file into new array so no overwriting
+	 	$teapetDataArray = $decodedTeapet;
+
+	 	//UPDATE the array
+	 	$teapetDataArray[] = $customTeapet;
+
+	 	//SAVE the data to JSON
+		$encodeTeapet = json_encode($teapetDataArray);
+		file_put_contents('teapet.json', $encodeTeapet);
+		
+		//get updated JSON file
+		$teapetData = file_get_contents('teapet.json');
+		$displayTeapet = json_decode($teapetData, true);
+
+		
+		echo "<pre>";
+		var_dump($displayTeapet);
+		echo "</pre>";
+
+		?>
+		<!--success message -->
+		<p class="success">Order received. Thank you!</p>
+		<?php 
+		} 
+	}
 ?>
+
 
 <form method="POST">
 	<field>
-		<label for="petname">What is your pet's name?</label>
-		<input id="petname" type="text" name="petname" value="<?=$petname?>">
-		<?php if ($petnameError) { ?>
-			<p class="error"><?=$petnameError?></p>
+		<label for="petName">What's your pet's name?</label>
+		<input id="petName" type="text" name="petName" value="<?=$petName?>">
+		<?php if ($petNameError) { ?>
+			<p class="error"><?=$petNameError?></p>
 		<?php } ?>
 	</field>
 
@@ -79,9 +115,12 @@ if ( isset($_POST["submitted"]) ) {
 		</select> 
 	</field>
 
-	<field class="requests">
-		<label for="message">Please include any special requests:</label>
-		<textarea id="requests" type="textarea" name="requests" value="<?=$requests?>" rows="5"></textarea>
+	<field>
+		<label for="message">What's your teapet's origin story?</label>
+		<textarea id="description" type="textarea" name="description" rows="5"><?=$description?></textarea>
+		<?php if ($descriptionError) { ?>
+			<p class="error"></p>
+		<?php } ?>
 	</field>
 
 	<button type=submit name="submitted">

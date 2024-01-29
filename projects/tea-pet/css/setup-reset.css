@@ -28,3 +28,13 @@ p a {
   text-decoration: underline;
   color: blue;
 }
+
+.with-fit {
+  aspect-ratio: 3 / 2;
+}
+
+.with-fit img {
+  width: 100%; /*adjust*/
+  height: 100%; /*adjust*/
+  object-fit: cover;
+}

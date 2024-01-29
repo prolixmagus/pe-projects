@@ -30,7 +30,7 @@ foreach ($tea_pets as $tea_pet) {
 	<item-details>
 		<h1 class="pet-name bold"><?=$detail["pet-name"];?></h1>
 		<h2 class="price"><?=$price?></h2>
-		<h3 class="description">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quo nam eum sapiente, rem saepe debitis sed atque perspiciatis dignissimos cumque veniam corrupti quasi consequuntur fugiat tenetur sunt nobis blanditiis ullam!</h3>
+		<h3 class="description"><?=$detail["description"]?></h3>
 
 		<extra-details>
 			<h4 class="dimensions">Dimensions: <?=$detail["dimensions"];?> </h4>
