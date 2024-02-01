@@ -1,10 +1,13 @@
-<?php include("tea-pet-data.php"); ?>
+<?php include("functions.php"); ?>
 
 <inner-column>
 	<h2 class="loud-voice">The Tea Pet Shop</h2>
 
 	<ul class='item-grid'>
-		<?php foreach($tea_pets as $tea_pet) { ?>
+		<?php 
+			$tea_pets = readDatabase();
+
+			foreach ($tea_pets as $tea_pet) { ?>
 			<li>
 				<a href='?page=detail&tea-pet=<?=$tea_pet["id"]?>'>
 					<picture>
@@ -20,7 +23,7 @@
 							</div>
 							<div class="detail-container">
 								<dt>Material:</dt> 
-								<dd class="materials"> <?=$tea_pet["materials"]?></dd>
+								<dd class="material"> <?=$tea_pet["material"]?></dd>
 							</div>
 						</dl>
 					</picture>

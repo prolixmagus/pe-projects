@@ -77,10 +77,19 @@ footer {
 		max-width: 500px;
 	}
 
+	action-buttons {
+		flex-direction: row;
+		gap: 20px;
+	}
+
 }
 
 @media(min-width: 600px) {
 	.item-grid {
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	action-buttons {
+		flex-direction: row;
 	}
 }

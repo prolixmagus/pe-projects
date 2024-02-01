@@ -1,24 +1,39 @@
 
-<?php include("tea-pet-data.php"); ?>
+<?php include('functions.php');
 
-<?php
+//READ FIRST
 
-if (isset($_GET["tea-pet"])) {
-	$this_tea_pet_id = $_GET["tea-pet"];
-}
+	$tea_pets = readDatabase();
 
-// Price format
-foreach ($tea_pets as $tea_pet) {
-	$price = number_format($tea_pet["price"], 2, ".", ",");
+//GET PET ID
 
-	if ( $this_tea_pet_id == $tea_pet["id"] ) {
-		$detail = $tea_pet;
-	} else {
-		"No data!";
+	if (isset($_GET["tea-pet"])) {
+		$this_tea_pet_id = $_GET["tea-pet"];
 	}
-}
 
-?>
+//SET UP DELETE PROCESS
+
+	$filtered = [];
+
+	if (isset($_POST["delete"]) ) {
+		foreach ($tea_pets as $tea_pet) {
+			if (strval($tea_pet["id"]) !== $this_tea_pet_id) {
+				array_push($filtered, $tea_pet);
+			}
+		}
+
+	$encodedTeapet = json_encode($filtered); 	//Save
+	
+	file_put_contents('database.json', $encodedTeapet);
+
+	header("Location: ".$_SERVER['PHP_SELF']."?page=pet-shop-list");
+	exit();
+
+	}
+
+	?>
+
+<!-- HTML START -->
 
 <inner-column class="details">
 
@@ -28,24 +43,28 @@ foreach ($tea_pets as $tea_pet) {
 		<img src="<?=$detail["image"]?>" alt="tea pet">
 	</picture>
 	<item-details>
-		<h1 class="pet-name bold"><?=$detail["pet-name"];?></h1>
-		<h2 class="price"><?=$price?></h2>
+		<h1 class="pet-name bold"><?=$detail["pet-name"]?></h1>
+		<h2 class="price"><?=$detail["price"]?></h2>
 		<h3 class="description"><?=$detail["description"]?></h3>
 
 		<extra-details>
-			<h4 class="dimensions">Dimensions: <?=$detail["dimensions"];?> </h4>
-			<h5 class="materials">Material: <?=$detail["materials"];?> </h5>
+			<h4 class="dimensions">Dimensions: <?=$detail["dimensions"]?> </h4>
+			<h5 class="material">Material: <?=$detail["material"]?> </h5>
 			<h6 class="origin">Origin: <?=$detail["origin"];?> </h6>
 		</extra-details>
-		<button type="submit" name ="submitted" href='#'>
-			Buy Now!
-		</button>
+		<form method="POST" action="">
+			<field>
+				<button class="delete" type="submit" name="delete">
+				Delete Tea Pet
+				</button>
+			</field>
+		</form>
 	</item-details>
 
 	<?php } else { ?>
 
-		<h1>No Tea pets Here!</h1>
-		<p>Please visit our<a href="?page=pet-shop-list">Pet Shop</a> to nurture a Tea Pet today!</p>
+		<h2 class="outdoor-voice">No Tea pets Here!</h1>
+		<p class="indoor-voice">Please visit our <a href="?page=pet-shop-list">Pet Shop</a> to nurture a Tea Pet today!</p>
 
 	<?php } ?>
 </inner-column>

@@ -1,4 +1,5 @@
 <?php 
+include('functions.php');
 
 $teapetData = "";
 $petName = "";
@@ -10,19 +11,12 @@ $petNameError = false;
 $customTeapet = "";
 $id = "";
 
-/* READ function
-
-	function readTeapetData() {
-	$getTeapet = file_get_contents('teapet.json');
- 	return json_decode($getTeapet, true);
-} 
- */
 
 if ( isset($_POST["submitted"]) ) {
 
 	//setting variables for $_POST key => values
-	if ( isset($_POST["petName"]) ) {
-		$petName = $_POST["petName"];
+	if ( isset($_POST["pet-name"]) ) {
+		$petName = $_POST["pet-name"];
 	}
 
 	if ( strlen( $petName ) > 0 ) {
@@ -43,36 +37,40 @@ if ( isset($_POST["submitted"]) ) {
 
 	//creating item
 	if ($haspetName && $hasDescription) {
+		var_dump($_POST);
+
 		$customTeapet = [
 			"id" => uniqid(),
-			"petName" => $_POST["petName"],
+			"pet-name" => $petName,
 			"type" => $_POST["type"],
+			"origin" => $_POST["origin"],
 			"material" => $_POST["material"],
-			"description" => $_POST["description"],
+			"description" => $description,
+			"dimensions" => $_POST["dimensions"],
+			"price" => 0,
 		];
 
-		//READ and decode json file to PHP
-	 	$getTeapet = file_get_contents('teapet.json');
-	 	$decodedTeapet = json_decode($getTeapet, true);
+		if ($_POST["dimensions"] == "2.54cm") {
+			$customTeapet["price"] = 9.99;
+		} else if ($_POST["dimensions"] == "5.08cm") {
+			$customTeapet["price"] = 12.99;
+		} else {
+			$customTeapet["price"] = 16.99;
+		}
 
-	 	//WRITE file into new array so no overwriting
-	 	$teapetDataArray = $decodedTeapet;
+
+
+		
+
+		//READ and decode json file to PHP
+	 	$teapetData = readDatabase();
 
 	 	//UPDATE the array
-	 	$teapetDataArray[] = $customTeapet;
+	 	$teapetData[] = $customTeapet;
 
 	 	//SAVE the data to JSON
-		$encodeTeapet = json_encode($teapetDataArray);
-		file_put_contents('teapet.json', $encodeTeapet);
-		
-		//get updated JSON file
-		$teapetData = file_get_contents('teapet.json');
-		$displayTeapet = json_decode($teapetData, true);
-
-		
-		echo "<pre>";
-		var_dump($displayTeapet);
-		echo "</pre>";
+		$encodedTeapet = json_encode($teapetData);
+		file_put_contents('database.json', $encodedTeapet);
 
 		?>
 		<!--success message -->
@@ -85,15 +83,15 @@ if ( isset($_POST["submitted"]) ) {
 
 <form method="POST">
 	<field>
-		<label for="petName">What's your pet's name?</label>
-		<input id="petName" type="text" name="petName" value="<?=$petName?>">
+		<label for="pet-name">What's your pet's name?</label>
+		<input id="pet-name" type="text" name="pet-name" value="<?=$petName?>">
 		<?php if ($petNameError) { ?>
 			<p class="error"><?=$petNameError?></p>
 		<?php } ?>
 	</field>
 
 	<field>
-		<label for="type">Type</label>
+		<label for="type">What type of teapet do you want?</label>
 		<select id="type" name="type">
 			<option value="Frog">Frog</option>
 			<option value="Pig">Pig</option>
@@ -106,8 +104,12 @@ if ( isset($_POST["submitted"]) ) {
 	</field>
 
 	<field>
-		<label for="material">Material</label>
-		<select id="type" name="material">
+		<?php include('country-label.php') ?>
+	</field>
+
+	<field>
+		<label for="material">What material do you want?</label>
+		<select id="material" name="material">
 			<option value="Zisha">Zisha</option>
 			<option value="Ceramic">Ceramic</option>
 			<option value="Stone">Stone</option>
@@ -116,10 +118,19 @@ if ( isset($_POST["submitted"]) ) {
 	</field>
 
 	<field>
+		<label for="dimensions">How tall will it be?</label>
+			<select id="dimensions" name="dimensions">
+				<option value="2.54cm">2.54cm</option>
+				<option value="5.08cm">5.08cm</option>
+				<option value="7.62cm">7.62cm</option>
+			</select>
+	</field>
+
+	<field>
 		<label for="message">What's your teapet's origin story?</label>
-		<textarea id="description" type="textarea" name="description" rows="5"><?=$description?></textarea>
+		<textarea id="description" name="description" rows="5"><?=$description?></textarea>
 		<?php if ($descriptionError) { ?>
-			<p class="error"></p>
+			<p class="error"><?=$descriptionError?></p>
 		<?php } ?>
 	</field>
 
