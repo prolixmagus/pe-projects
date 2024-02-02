@@ -11,13 +11,19 @@
 		$this_tea_pet_id = $_GET["tea-pet"];
 	}
 
+	foreach ($tea_pets as $teapet) {
+		if ($teapet["id"] == $this_tea_pet_id) {
+			$detail = $teapet;
+		}
+	}
+
 //SET UP DELETE PROCESS
 
 	$filtered = [];
 
 	if (isset($_POST["delete"]) ) {
 		foreach ($tea_pets as $tea_pet) {
-			if (strval($tea_pet["id"]) !== $this_tea_pet_id) {
+			if ($tea_pet["id"] !== $this_tea_pet_id) {
 				array_push($filtered, $tea_pet);
 			}
 		}
@@ -39,6 +45,7 @@
 
 <?php 
 	if (isset($detail) ) { ?>
+
 	<picture class="detail-picture">
 		<img src="<?=$detail["image"]?>" alt="tea pet">
 	</picture>
