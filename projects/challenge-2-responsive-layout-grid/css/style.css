@@ -1,0 +1,320 @@
+@import url('meyer-reset.css');
+@import url('setup-reset.css');
+
+/* External Structure */
+
+inner-column {
+	max-width: 800px;
+}
+
+/*Site Theme*/
+
+body {
+	background-color:#FF80D7;
+}
+
+.site-header {
+	background-color: rgba(255 255 255 / .4);
+}
+
+.page-content {
+	background-color: rgba(255 255 255 / .4);
+}
+
+.site-footer {
+	background-color: rgba(0 0 0 / .4);
+}
+
+/*Header Module */
+
+header inner-column {
+	padding: 5px 5px;
+}
+
+header-module {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	align-items: center;
+	gap: 10px;
+}
+
+header-module .logo{
+	max-width: 50px;
+	border-radius: 50%;
+	transition: 1s ease-out;
+}
+
+header-module .logo:hover {
+	transform: scale(1.2);
+}
+
+header-module h1 {
+	grid-column: 2 / 3;
+	font-size: clamp(20px, 3vw, 24px);
+
+}
+
+/*Site-Intro Module*/
+
+.intro-picture {
+	max-width: 400px;
+}
+
+.cog {
+	display: none;
+}
+
+.cloud {
+	display: none;
+}
+
+.site-intro inner-column {
+	padding: 40px 5px
+}
+
+intro-module {
+	display: grid;
+	gap: 15px;
+}
+
+/*Content-Module*/
+
+
+.page-content inner-column {
+	padding: 40px 5px;
+}
+
+featured-donut {
+	display: grid;
+	padding: 20px 0px;
+}
+
+donut-description {
+	display: block;
+}
+
+.shop-link {
+	text-decoration: underline;
+	color: blue;
+	font-family: "Gill Sans";
+}
+
+.big-cog {
+	display: none;
+}
+
+featured-donut picture {
+	max-width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/*Footer*/
+
+donut-disclaimer {
+	color: pink;
+	display: grid;
+	gap: 5px;
+}
+
+.site-footer inner-column {
+	padding: 10px 5px 40px 5px;
+}
+
+
+/*Typography*/
+
+p {
+	line-height: 1.4;
+}
+
+donut-description p {
+	padding-top: 5px;
+}
+
+donut-description h2 {
+	padding-top: 10px;
+}
+
+.shop-link {
+	margin-top: 10px;
+}
+
+.quiet-voice {
+	font-size: .8rem;
+	font-family: 'Gill Sans';
+}
+.normal-voice {
+	font-size: 1rem;
+	font-family: 'Gill Sans';
+}
+
+.raised-voice {
+	font-size: 1.5rem;
+	font-family: 'Gill Sans';
+}
+
+.loud-voice {
+	font-size: 1.5rem;
+	font-family: 'Gill Sans';
+}
+
+/*Media*/
+
+@media (min-width: 600px) {
+
+	intro-module {
+		grid-template-columns: 1fr 1fr;
+
+	}
+
+	intro-text {
+		max-width: 50ch;
+	}
+
+	featured-donut{
+		grid-template-columns: .25fr 1fr;
+		align-items: center;
+		gap: 20px;
+	}
+
+	featured-donut picture {
+		max-width: 150px;
+	}
+
+	donut-disclaimer {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.big-cog {
+		display: block;
+		position: absolute;
+		bottom: -10%;
+		right: -10%;
+		max-width: 200px;
+		transition: 1s ease-out;
+	}
+
+	.big-cog:hover {
+		transform: rotate(-90deg);
+	}
+
+	.page-content {
+		overflow: hidden;
+		position: relative;
+		
+	}
+}
+
+@media (min-width: 1000px) {
+
+	.site-intro {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.site-intro inner-column {
+		position: relative;
+	}
+
+
+	.site-intro inner-column {
+		padding-top: 25px;
+		padding-bottom: 50px;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.cog {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: -5%;
+		bottom: -20%;
+		max-width: 200px;
+		transition: 1s ease-out;
+	}
+
+	.cog:hover {
+		transform: rotate(90deg);
+	}
+
+	content-module {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.page-content inner-column {
+		margin-top: 20px;
+		padding-bottom: 30px;
+	}
+
+	featured-donut {
+		display: block;
+	}
+
+	featured-donut picture {
+		margin-inline: auto;
+	}
+
+	donut-description {
+		text-align: center;
+	}
+
+	donut-description a {
+		margin-inline: auto;
+		text-align: center;
+	}
+
+	featured-donut picture {
+		max-width: 100px;
+	}
+
+	donut-description a.shop-link {
+		background-color: black;
+		text-decoration: none;
+		color: white;
+		max-width: 100px;
+		padding: 5px 20px;
+		border-radius: 50px;
+		font-family: "Gill Sans";
+	}
+
+	.big-cog {
+		display: block;
+		position: absolute;
+		bottom: -10%;
+		right: -4%;
+		max-width: 150px;
+		transition: all 1s ease-out;
+	}
+
+	.big-cog:hover {
+		transform: rotate(-90deg);
+	}
+
+	.cloud {
+		display: block;
+		position: absolute;
+		bottom: -20%;
+		right: 10%;
+		max-width: 200px;
+		transition: 1s ease-out;
+	}
+
+	.cloud:hover {
+		transform: scale(1.3);
+	}
+
+	.intro-picture {
+		max-width: 400px;
+	}
+
+	donut-disclaimer{
+
+	}
+
+	.site-footer {
+
+	}
+}

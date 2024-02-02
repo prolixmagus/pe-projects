@@ -1,0 +1,28 @@
+
+.article-card h2, .article-card p {
+	border: 3px solid black;
+
+}
+.article-card-link {
+	display: block;
+	max-width: 125px;
+}
+
+.article-card p {
+	margin-top: 30px;
+	padding: 10px;
+}
+
+.article-card a {
+	margin-top: 10px;
+}
+
+.article-card h2 {
+	margin-top: 30px;
+	padding: 10xp;
+}
+
+li {
+	border: 3px solid black;
+	padding: 10px;
+}

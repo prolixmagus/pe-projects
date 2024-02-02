@@ -1,0 +1,35 @@
+/*HEADER*/
+
+.site-header {
+	background-color: #ABDABC;
+}
+
+.site-header inner-column {
+	border: 3px solid black;
+}
+/*NAV*/
+masthead {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-menu {
+	display: flex;
+	padding: 10px;
+	border: 3px solid black;
+}
+
+.site-menu a, .sign-in-menu a {
+	padding: 5px;
+	text-decoration: underline;
+	color: blue;
+	font-weight: 500;
+	border: 3px solid black;
+}
+
+.sign-in-menu {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	border: 3px solid black;
+}

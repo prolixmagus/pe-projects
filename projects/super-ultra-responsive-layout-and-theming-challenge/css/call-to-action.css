@@ -1,0 +1,26 @@
+.call-to-action {
+	background-color: #DA9EC7;
+}
+
+.call-to-action inner-column {
+	border: 3px solid black;
+}
+
+.call-to-action h2 {
+	border: 3px solid black;
+	padding: 10px;
+	margin-top: 50px;
+}
+
+.call-to-action p {
+	margin-top: 30px;
+	padding: 10px;
+	border: 3px solid black;
+}
+
+.cta-link {
+	max-width: 190px;
+	margin-bottom: 50px;
+}
+
+

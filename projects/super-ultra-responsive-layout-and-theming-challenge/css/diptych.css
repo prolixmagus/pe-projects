@@ -1,0 +1,37 @@
+.diptych {
+	background-color: #ABDEEB;
+}
+
+.diptych inner-column {
+	display: flex;
+	flex-direction: column;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	border: 3px solid black;
+
+}
+
+picture-container {
+	display: block;
+	padding: 10px;
+	border: 3px solid black;
+}
+
+picture-container picture {
+	padding: 10px;
+}
+
+support-text {
+	padding-inline: 10px;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border: 3px solid black;
+}
+
+support-text h2, support-text p {
+	padding: 10px;
+	border: 3px solid black;
+}
