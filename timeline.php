@@ -172,6 +172,6 @@
 	</inner-column>	
 </section>
 
-<picture class='timeline-seaweed'>
+<picture class='seaweed'>
 	<img src='images/seaweed-1.svg' alt='pink seaweed'>
 </picture>

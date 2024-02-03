@@ -54,15 +54,15 @@
 	</inner-column>
 </section>
 
-<picture class='influence-seaweed'>
+<picture class='seaweed influence'>
 	<img src='images/influence-green.svg' alt='green stem of seaweed'>
 </picture>
-<picture class='bubble-small'>
+<picture class='bubble small'>
 	<img src='images/bubble.svg' alt='blue bubble'>
 </picture>
-<picture class='bubble-middle'>
+<picture class='bubble middle'>
 	<img src='images/bubble-2.svg' alt='blue bubble'>
 </picture>
-<picture class='bubble-big'>
+<picture class='bubble big'>
 	<img src='images/bubble-3.svg' alt='blue bubble'>
 </picture>

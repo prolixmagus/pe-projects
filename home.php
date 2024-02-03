@@ -10,13 +10,13 @@
 
 	<p class='indoor-voice'>And of course, here's my <a href='https://github.com/prolixmagus'>github</a> and <a href='https://prolixmagus.substack.com'>blog</a>.</p>
 
-	<picture class='seaweed-pink'>
+	<picture class='seaweed pink'>
 		<img src='images/seaweed-1.svg' alt='pink seaweed'>
 	</picture>
-	<picture class='seaweed-green'>
+	<picture class='seaweed green'>
 		<img src='images/seaweed-2.svg' alt='green seaweed'>
 	</picture>
-	<picture class='seaweed-blue'>
+	<picture class='seaweed blue'>
 		<img src='images/seaweed-3.svg' alt='blue seaweed'>
 	</picture>
 	<a href='https://www.aquariumofpacific.org/exhibits/webcams/webcam_tropical_reef' target='_blank' class='fish'>
