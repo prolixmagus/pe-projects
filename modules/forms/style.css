@@ -82,20 +82,3 @@ blockquote {
 	font-size: 20px;
 	font-family: "Apple Chancery", serf;
 }
-/*	BUTTONS*/
-
-.clear-button {
-	font-family: "Avenir", sans-serif;
-	box-shadow: none;
-	border: none;
-	text-decoration: underline;
-	background-color: rgba(0, 0, 0, 0.1);
-
-}
-
-.submit-button {
-	background-color: lightgreen;
-	box-shadow: 2px 2px black;
-	font-family: "Avenir", sans-serif;
-	padding: 5px 10px;
-}

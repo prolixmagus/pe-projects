@@ -1,4 +1,4 @@
-<?php include("exercises-data.php")?>
+<?php include("exercises-for-programmers/data/exercises-data.php")?>
 
 <section class='challenge-introduction'>
 	<inner-column>
@@ -13,8 +13,12 @@
 	<inner-column>
 		<ol class='project-list'>
 			<?php foreach($exercises as $exercise) { ?>
-			<li class="exercise"><a href="?page=exercise&id=<?=$exercise['id']?>"><?=$exercise["name"]?></a></li>
-		<?php } ?>
+				<li class="exercise">
+					<a href="?page=exercise&id=<?=$exercise['id']?>">
+						<?=$exercise["name"]?>
+					</a>
+				</li>
+			<?php } ?>
 		</ol>
 	</inner-column>
 </section>

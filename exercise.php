@@ -1,11 +1,8 @@
+
+
 <?php
+
 //get correct exercise
-
-function getAllExercises() {
-	include("exercises-data.php");
-	return $exercises;
-}
-
 
 function getExerciseById($id) {
 	//get the exercises from the database
@@ -28,7 +25,7 @@ $exercise= getExerciseById($_GET['id']);
 <?php
 //show correct exercise template
 if ($exercise) {
-	getTemplate($exercise);
+	getExerciseTemplate($exercise);
 } else {
 	echo "There is no exercise";
 }

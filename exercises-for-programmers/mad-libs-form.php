@@ -1,4 +1,4 @@
-<?php include("mad-libs-data.php") ?>
+<?php include("data/mad-libs-data.php") ?>
 <side-by-side-container>
 	<section class="form-group">
 

@@ -1,0 +1,19 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+inner-column {
+	display: block;
+	width: 100%;
+	max-width: 850px;
+	margin-inline: auto;
+	padding: 2rem 1rem;
+} 
