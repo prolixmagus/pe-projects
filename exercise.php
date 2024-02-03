@@ -3,7 +3,7 @@
 
 function getAllExercises() {
 	include("exercises-data.php");
-	return $exercises
+	return $exercises;
 }
 
 
@@ -12,15 +12,15 @@ function getExerciseById($id) {
 	$exercises = getAllExercises();
 	//find the right one by id
 	foreach ( $exercises as $exercise ) {
-		if ( $exercise_id == $exercise["id"] ) {
-			return $exercise["form"]; // slug
+		if ( $_GET['id'] == $exercise["id"] ) {
+			return $exercise["slug"]; // slug
 		}
 	} 
 	//otherwise return false
-	return false
+	return false;
 }
 
-$exercise = getExerciseById($_GET['exercise']);
+$exercise= getExerciseById($_GET['id']);
 
 ?>
 

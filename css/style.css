@@ -163,16 +163,25 @@ h2 + p {
 }
 
 /* ASSETS */
+.seaweed {
+	width: 100%;
+	max-width: 100px;
+	position: absolute;
+	right: 0;
+	bottom: -100px;
+	z-index: -1;
+	opacity: .5;
+}
 
-.seaweed-pink {
+.seaweed.pink {
 	display: none;
 }
 
-.seaweed-green {
+.seaweed.green {
 	display: none;
 }
 
-.seaweed-blue {
+.seaweed.blue {
 	position: absolute;
 	right: 0;
 	bottom: -100px;
@@ -181,15 +190,15 @@ h2 + p {
 	opacity: .5;
 }
 
-.timeline-seaweed {
-	display: block;
+.seaweed.timeline {
+	width: 100%;
+	max-width: 100px;
 	position: absolute;
 	right: 0;
 	bottom: -100px;
-	max-width: 150px;
 	z-index: -1;
 	opacity: .5;
-	}
+}
 
 .fish {
 	max-width: 50px;
@@ -209,7 +218,7 @@ h2 + p {
 	display: none;
 }
 
-.bubble-small {
+.bubble.small {
 	position: absolute;
 	bottom: 300px;
 	right: 250px;
@@ -217,7 +226,7 @@ h2 + p {
 	z-index: -1;
 }
 
-.bubble-middle {
+.bubble.middle {
 	position: absolute;
 	bottom: 150px;
 	right: 350px;
@@ -225,7 +234,7 @@ h2 + p {
 	z-index: -1;
 }
 
-.bubble-big{
+.bubble.big{
 	position: absolute;
 	bottom: -50px;
 	right: 100px;
@@ -320,7 +329,7 @@ p, li {
 
 @media (min-width: 350px) {
 
-	.seaweed-pink {
+	.seaweed.pink {
 		position: absolute;
 		right: 0;
 		bottom: 100px;
@@ -328,7 +337,7 @@ p, li {
 		z-index: -1;
 	}
 
-	.seaweed-blue {
+	.seaweed.blue {
 		max-width: 100px;
 	}
 
@@ -355,17 +364,17 @@ p, li {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.seaweed-blue {
+	.seaweed.blue {
 		max-width: 150px;
 	}
 
-	.timeline-seaweed {
+	.seaweed.timeline {
 		opacity: 1;
 	}
 }
 
 @media (min-width: 650px) {
-	.seaweed-green {
+	.seaweed.green {
 		display: block;
 		position: absolute;
 		right: 100px;
@@ -374,7 +383,7 @@ p, li {
 		z-index: -1;
 	}
 
-	.seaweed-blue {
+	.seaweed.blue {
 		opacity: 1;
 	}
 
@@ -390,7 +399,7 @@ p, li {
 		justify-content: space-between;
 	}
 
-	.influence-seaweed {
+	.seaweed.influence {
 		display: block;
 		position: absolute;
 		bottom: -60px;
@@ -406,7 +415,7 @@ p, li {
 		gap: 40px;
 	}
 
-	.seaweed-pink {
+	.seaweed.pink {
 		display: block;
 		position: absolute;
 		right: 225px;
