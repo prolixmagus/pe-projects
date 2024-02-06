@@ -1,20 +1,4 @@
-<?php
-	$name = "";
-	$message = "";
-
-	if ( isset($_POST["submitted"]) ) {
-
-		if ( isset($_POST["name"]) ) {
-			$name = $_POST["name"];
-
-			if ( strlen($name) > 30) {
-				$message = "Is your name really that long? Try again!";
-			} else {
-				$message = "Hello, $name, nice to meet you!";
-			}
-		}
-	}
-?>
+<?php include('code/hello-world-code.php')?>
 
 <section class="form-group">
 	<form-explanation>
@@ -60,6 +44,14 @@
 					<h2>Output</h2>
 					<p class="output-voice"><?=$message?></p>
 				</output>
+
+				<code-container>
+					<pre>
+						<code>
+							<?php highlight_code('exercises-for-programmers/code/hello-world-code.php'); ?>
+						</code>
+					</pre>
+				</code-container>
 		
 		</inner-column>
 	</section>

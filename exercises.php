@@ -2,7 +2,7 @@
 
 <section class='challenge-introduction'>
 	<inner-column>
-		<h2 class="title">Practice Makes Perfect</h2>
+		<h2 class="loud-voice">Practice Makes Perfect</h2>
 		<p>In 2015, Brian P. Hogan published <span class="italic">Exercises for Programmers</span>, a collection of 57 coding challenges designed to "develop your coding skills." They can be completed in any language and be made as simple or complex as you want.</p>
 
 		<p>Check out my solutions below!</p>

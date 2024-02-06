@@ -1,7 +1,8 @@
 
 <section class='intro'>
 	<inner-column>
-		<h2 class='title'>Influences</h2>
+		<h2 class='loud-voice'>Influences</h2>
+		<p>This is a living documentation of my past, current, and future inspirations. If you want to know where my head is at, check out these artists.</p>
 	</inner-column>
 </section>
 

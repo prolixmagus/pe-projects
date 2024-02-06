@@ -9,8 +9,8 @@ $projects = [
 	],
 	[
 		"id" => 2,
-		"name" => "Responsive Layout Challenge",
-		"address" => "projects/challenge-2-responsive-layout",
+		"name" => "Responsive Layout Garden",
+		"address" => "?page=layout-garden",
 	],
 	[ 	
 		"id" => 3,

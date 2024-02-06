@@ -14,7 +14,8 @@
 
 /* T ypography */
 @import "typography.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
 /* C omponents */
 @import "components.css";
 
@@ -33,12 +34,6 @@ experience-gained, div {
 
 p + p {
 	padding-top: 15px;
-}
-
-.welcome {
-	font-size: 2rem;
-	font-family: Avenir;
-	padding-bottom: 16px;
 }
 
 /*TIMELINE PAGE*/
@@ -62,19 +57,13 @@ p + p {
 	border-bottom: none;
 }
 
-
-.title {
-	font-size: 2rem;
-	font-family: Avenir;
-}
-
 .timeline h2 {
-	font-family: Avenir, san-serif;
+	font-family: 'Comfortaa', san-serif;
 	font-size: 1.5rem;
 }
 
 .timeline h3 {
-	font-family: Avenir, san-serif;
+	font-family: 'Comfortaa', san-serif;
 	font-size: 1.25rem;
 }
 
@@ -257,7 +246,11 @@ p, li {
 	line-height: 1.44;
 	font-size: 1rem;
 	max-width: 65ch;
-	font-family: Avenir;
+	font-family: 'Avenir';
+}
+
+.exercise a {
+	font-family: 'Comfortaa';
 }
 
 
@@ -354,6 +347,23 @@ p, li {
 		left: 250px;
 		z-index: -1;
 	}
+
+@media (min-width: 700px) {
+
+	.graphic-diptych inner-column {
+		flex-direction: row-reverse;
+	}
+
+	cta-text {
+		width: 50%;
+	}
+
+	.graphic-diptych picture {
+		width: 80%;
+	}
+
+
+}
 
 @media (min-width: 775px) {
 

@@ -1,0 +1,34 @@
+.graphic-diptych inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.graphic-diptych p {
+	padding-top: 1rem;
+}
+
+.graphic-diptych .cta-button {
+	max-width: 200px;
+	margin-top: 1.5rem;
+}
+
+.graphic-diptych picture img {
+	border-radius: 10px;
+}
+
+.cta-button {
+	padding-inline: 1rem;
+	padding-block: .5rem;
+	border-radius: 20px;
+	font-family: avenir, sans-serif;
+	font-size: 1.25rem;
+}
+
+
+

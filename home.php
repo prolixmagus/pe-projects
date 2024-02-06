@@ -1,6 +1,6 @@
 <inner-column>
-
-	<h2 class='welcome'>You made it!</h2>
+	
+	<h2 class='loud-voice'>You made it!</h2>
 	
 	<p class='indoor-voice'>I'm Jeremy, a web developer and K-12 <abbr title='English as a Second Language'>ESL</abbr> educator. I help people of all ages navigate foreign systems.</p>
 

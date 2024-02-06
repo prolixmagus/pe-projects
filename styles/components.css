@@ -16,3 +16,11 @@
 	font-family: "Avenir", sans-serif;
 	padding: 5px 10px;
 }
+
+.cta-button {
+	padding-inline: 1rem;
+	padding-block: .5rem;
+	border-radius: 20px;
+	font-family: "Avenir", sans-serif;
+	font-size: 1.25rem;
+}

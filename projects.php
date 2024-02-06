@@ -2,8 +2,8 @@
 
 <section class='intro'>
 	<inner-column>
-		<h2 class='title'>Projects</h2>
-		<p></p>
+		<h2 class='loud-voice'>Projects</h2>
+		<p>Everyone loves a showcase!</p>
 	</inner-column>
 </section>
 

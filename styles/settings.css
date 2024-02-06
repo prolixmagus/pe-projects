@@ -6,3 +6,12 @@ html {
 	--fish-pink: #FF584D;
 	--sand-yellow: #FECA52;
 }
+
+pre {
+	display: flex;
+	background-color: black;
+	margin-top: 1rem;
+	max-width: 500px;
+	padding-inline: 10px;
+	border-radius: 5%;
+}

@@ -1,7 +1,7 @@
 
 <section class='intro'>
 	<inner-column>
-		<h2 class='title'>Everything I remember so far</h2>
+		<h2 class='loud-voice'>Everything I remember so far</h2>
 
 	</inner-column>
 </section>
