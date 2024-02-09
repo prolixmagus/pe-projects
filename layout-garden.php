@@ -8,8 +8,15 @@
 </section>
 
 <section class='graphic-diptych'>
+
 	<inner-column>
 		<?php include('modules/layout-garden/graphic-diptych/template.php') ?>
 	</inner-column>
 
+</section>
+
+<section class='announcement-grid'>
+	<inner-column>
+		<?php include('modules/layout-garden/announcement-grid/template.php'); ?>
+	</inner-column>
 </section>

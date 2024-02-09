@@ -14,20 +14,21 @@ cta-text {
 }
 
 .graphic-diptych .cta-button {
-	max-width: 200px;
+	max-width: 175px;
 	margin-top: 1.5rem;
+	background-color: #296BE5;
+	color: white;
+}
+
+.graphic-diptych .cta-button:hover {
+	max-width: 175px;
+	margin-top: 1.5rem;
+	background-color: white;
+	color: #296BE5;
 }
 
 .graphic-diptych picture img {
 	border-radius: 10px;
-}
-
-.cta-button {
-	padding-inline: 1rem;
-	padding-block: .5rem;
-	border-radius: 20px;
-	font-family: avenir, sans-serif;
-	font-size: 1.25rem;
 }
 
 

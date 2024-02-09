@@ -17,7 +17,7 @@ function getExerciseById($id) {
 	return false;
 }
 
-$exercise= getExerciseById($_GET['id']);
+$exercise = getExerciseById($_GET['id']);
 
 ?>
 

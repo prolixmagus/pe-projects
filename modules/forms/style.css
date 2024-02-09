@@ -63,17 +63,13 @@ h2.form-title {
 	gap: 5px;
 }
 
-.mad-libs-color {
-	color: var(--fish-green);
-	font-weight: 600;
-	text-decoration: underline;
-}
 
 output{
 	display: block;
 	max-width: 65ch;
 }
 
+/* Exercise 3 - Printing Quotes */
 h2 + blockquote {
 	padding-top: 1rem;
 }
@@ -81,4 +77,11 @@ h2 + blockquote {
 blockquote {
 	font-size: 20px;
 	font-family: "Apple Chancery", serf;
+}
+
+/* Exercise 4 - Mad Libs */
+.mad-libs-color {
+	color: var(--fish-green);
+	font-weight: 600;
+	text-decoration: underline;
 }

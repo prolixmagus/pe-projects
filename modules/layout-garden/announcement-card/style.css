@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;700&display=swap');
+
+.announcement-card date-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: stretch;
+
+}
+.time-banner {
+	font-family: 'Gothic A1', sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: 600;
+	padding-inline: 2rem;
+	padding-block: 1rem;
+	text-transform: uppercase;
+}
+
+.day {
+	background-color: #328042;
+	color: white;
+	overflow: hidden;
+
+}
+
+.date {
+	background-color: #8EA880;
+	color: #328042;
+}
+
+.announcement-card {
+	border: 2px solid #328042;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+card-info {
+	display: block;
+	border-top: 2px solid #328042;
+	padding: 15px;
+	color: #328042;
+}
+
+.announcement-card h2 {
+font-family: 'Gothic A1', sans-serif;
+font-weight: 700;
+font-size: 1.5rem;
+}
+
+.announcement-card p {
+font-family: 'Gothic A1', sans-serif;
+font-weight: 300;
+}
+
+showtime {
+	display: flex;
+	margin-top: 10px;
+	align-items: center;
+	font-family: 'Gothic A1', sans-serif;
+	color: #328042;
+	font-size: 1rem;
+	font-weight: 700;
+	gap: 10px;
+}
+
+showtime picture {
+	max-width: 30px;
+}

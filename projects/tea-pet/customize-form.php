@@ -5,7 +5,7 @@ $teapetData = "";
 $petName = "";
 $description = "";
 $hasDescription= "";
-$descriptionError= "";
+$descriptionError= false;
 $haspetName = false;
 $petNameError = false;
 $customTeapet = "";
@@ -37,7 +37,6 @@ if ( isset($_POST["submitted"]) ) {
 
 	//creating item
 	if ($haspetName && $hasDescription) {
-		var_dump($_POST);
 
 		$customTeapet = [
 			"id" => uniqid(),

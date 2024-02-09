@@ -111,14 +111,14 @@ h2 + p {
 
 .project-list {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr;
 	gap: 10px;
 }
 
 .exercise {
 	border: 2px solid black;
 	padding: 5px;
-	border-radius: 5%;
+	border-radius: 10px;
 	min-height: 15vh;
 	font-size: 1.25rem;
 }
@@ -286,6 +286,12 @@ p, li {
 		position: absolute;
 		max-width: 50px;
 		right: 250px;
+	}
+}
+
+@media (min-width: 400px) {
+	.project-list {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 

@@ -1,0 +1,15 @@
+<svg width="100%" height="100%" viewBox="0 0 314 314" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g class="clock" transform="matrix(1,0,0,1,-363.447,-312.983)">
+        <g class="clockface" transform="matrix(0.783913,0,0,0.783913,112.393,101.488)">
+            <circle cx="520.128" cy="469.664" r="199.872" style="fill:rgb(50,128,66);"/>
+        </g>
+        <g class="clock-hands">
+            <g class="hour-hand" transform="matrix(1,0,0,0.848862,0,70.9842)">
+                <path d="M520.128,469.664L520.128,323.393L520.128,469.664Z" style="fill:none;stroke:white;stroke-width:8.98px;"/>
+            </g>
+            <g class="minute-hand" transform="matrix(0.699092,-0.231965,-0.231965,0.821183,265.457,204.635)">
+                <path d="M520.128,469.664L630.672,554.88" style="fill:none;stroke:white;stroke-width:15.67px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

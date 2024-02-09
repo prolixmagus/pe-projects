@@ -5,3 +5,5 @@
 @import '../modules/forms/style.css';
 @import '../modules/footer/style.css';
 @import '../modules/layout-garden/graphic-diptych/style.css';
+@import '../modules/layout-garden/announcement-grid/style.css';
+@import '../modules/layout-garden/announcement-card/style.css';

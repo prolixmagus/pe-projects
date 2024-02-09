@@ -22,6 +22,16 @@ $exercises = [
 		"name" => "Mad Libs",
 		"slug" => "mad-libs-form",
 	],
+	[
+		"id" => 5,
+		"name" => "Simple Math",
+		"slug" => "simple-math-form",
+	],
+		[
+		"id" => 6,
+		"name" => "Retirement Calculator",
+		"slug" => "retirement-calculator-form",
+	]
 ];
 
 ?>
