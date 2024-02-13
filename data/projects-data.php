@@ -15,7 +15,7 @@ $projects = [
 	[ 	
 		"id" => 3,
 		"name" => "Tea Pet Shop",
-		"address" => "projects/tea-pet",
+		"address" => "projects/teapet",
 	],
 ];
 
