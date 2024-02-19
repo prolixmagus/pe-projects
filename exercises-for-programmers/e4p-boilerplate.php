@@ -19,7 +19,7 @@
 
 				<div class="field">
 					<label for="[[change]]">Label</label>
-					<input id ="[[change]]" type="text" name="[[change]]" value="<?=$unknown?>" required />
+					<input id ="[[change]]" type="text" name="[[change]]" value="[[variable]]" required />
 				</div>
 
 				<action-buttons>
@@ -45,7 +45,7 @@
 
 				<output>
 					<h2>Output</h2>
-					<p class="output-voice"><?=$message?></p>
+					<p class="output-voice">[[message variable]]</p>
 				</output>
 		
 		</inner-column>
