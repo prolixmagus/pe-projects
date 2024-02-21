@@ -23,10 +23,14 @@ action-buttons {
 	gap: 20px;
 }
 
+input:focus {
+	background: rgb(0 0 0 / 5%);
+}
+
 .refresh {
 	text-decoration: none;
 	font-size: 2rem;
-	font-family: monospace;
+	font-family: Avenir;
 	color: black;
 }
 

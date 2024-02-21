@@ -27,11 +27,17 @@ $exercises = [
 		"name" => "Simple Math",
 		"slug" => "simple-math-form",
 	],
-		[
+	[
 		"id" => 6,
 		"name" => "Retirement Calculator",
 		"slug" => "retirement-calculator-form",
-	]
+	],
+	[
+		"id" => 7,
+		"name" => "Area of a Rectangular Room",
+		"slug" => "rectangular-room-form",
+	],
+
 ];
 
 ?>

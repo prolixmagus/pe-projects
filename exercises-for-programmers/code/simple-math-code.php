@@ -1,7 +1,7 @@
 <?php
 $first = "";
 $second = "";
-$negativeNumberError = false;;
+$negativeNumberError = false;
 
 if (isset($_POST["submitted"])) {
 	$first = intval($_POST["firstNumber"]);
@@ -27,20 +27,11 @@ if (isset($_POST["submitted"])) {
 		return $first * $second;
 	}
 
-	function formatDecimals($number){
-		$decimalPosition = strpos(strval($number), ".");
-		if ($decimalPosition !== false) {
-			return number_format($number, 2, '.', '');
-		} else {
-			return $number;
-		}
-	}
-
 	function displayOperations($first, $second) {
-		echo "<p class'output-voice'>$first + $second = " . add($first, $second) . "</p>";
-		echo "<p class'output-voice'>$first - $second = " . subtract($first, $second) . "</p>";
-		echo "<p class'output-voice'>$first / $second = " . divide($first, $second) . "</p>";
-		echo "<p class'output-voice'>$first * $second = " . multiply($first, $second) . "</p>";
+		echo "<p class'output-voice'>$first + $second = " . formatDecimals(add($first, $second)) . "</p>";
+		echo "<p class'output-voice'>$first - $second = " . formatDecimals(subtract($first, $second)) . "</p>";
+		echo "<p class'output-voice'>$first / $second = " . formatDecimals(divide($first, $second)) . "</p>";
+		echo "<p class'output-voice'>$first * $second = " . formatDecimals(multiply($first, $second)) . "</p>";
 	}
 }
 

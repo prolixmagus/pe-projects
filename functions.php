@@ -28,9 +28,21 @@ function highlight_code($path) {
 
 
 // For showing associative array when submitting info
-	function displayCode($code) {
-		echo "<pre><code>";
-		print_r($code);
-		echo "</code></pre>";
+function displayCode($code) {
+	echo "<pre><code>";
+	print_r($code);
+	echo "</code></pre>";
 	}
+
+// For formatting decimals to the hundredths place
+
+function formatDecimals($number){
+	$decimalPosition = strpos(strval($number), ".");
+	if ($decimalPosition !== false) {
+		return number_format($number, 2, '.', '');
+	} else {
+		return $number;
+	}
+}
+
 ?>

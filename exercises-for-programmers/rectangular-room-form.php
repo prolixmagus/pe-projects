@@ -1,0 +1,62 @@
+
+
+<?php
+	include('code/rectangular-room-code.php')
+?>
+
+
+<section class="form-group">
+	<form-explanation>
+		<inner-column>
+			<h2 class="form-title"><a class="refresh" href="?">Area of a Rectangular Room</a></h2>
+			<p class="indoor-voice">"Create a program that calculates the area of a room." But not just any room - a rectangular room! No squares, circles, or triangles allowed.</p>
+		</inner-column>
+	</form-explanation>
+
+	<form-section>
+		<inner-column>
+			
+			<form method="POST">
+
+				<h2>Input</h2>
+
+				<div class="field">
+					<label for="length">What is the length of the room in feet?</label>
+					<input id ="length" type="text" name="length" value="<?=$length?>" required />
+				</div>
+
+				<div class="field">
+					<label for="width">What is the width of the room in feet?</label>
+					<input id ="width" type="text" name="width" value="<?=$width?>" required />
+				</div>
+
+				<action-buttons>
+
+					<button class="submit-button" type="submit" name="submitted">
+						Submit
+					</button>
+
+					<button class="clear-button" type="submit" name="clear">
+						Clear
+					</button>
+
+				</action-buttons>
+			</form>
+
+		</inner-column>
+	</form-section>
+</section>
+
+<?php if (isset($_POST["submitted"]) ) { ?>
+	<section class="form-output">
+		<inner-column>
+
+				<output>
+					<h2>Output</h2>
+					<p class="output-voice">You entered dimensions of <?=formatDecimals($length)?> feet by <?=formatDecimals($width)?> feet.</p>
+					<p class="output-voice">The area is <?=formatDecimals($totalSquareFeet)?> feet or <?=formatDecimals($totalSquareMeters)?> meters.</p>
+				</output>
+		
+		</inner-column>
+	</section>
+<?php } ?>

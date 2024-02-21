@@ -20,3 +20,9 @@
 		<?php include('modules/layout-garden/announcement-grid/template.php'); ?>
 	</inner-column>
 </section>
+
+<section class='cta-overlap'>
+	<inner-column>
+		<?php include('modules/layout-garden/cta-overlap/template.php'); ?>
+	</inner-column>
+</section>
