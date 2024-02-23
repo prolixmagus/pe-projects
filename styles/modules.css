@@ -6,5 +6,8 @@
 @import '../modules/footer/style.css';
 @import '../modules/layout-garden/graphic-diptych/style.css';
 @import '../modules/layout-garden/announcement-grid/style.css';
-@import '../modules/layout-garden/announcement-card/style.css';
+@import '../modules/layout-garden/announcement-grid/announcement-card/style.css';
 @import '../modules/layout-garden/cta-overlap/style.css';
+@import '../modules/layout-garden/fly-fishing-grid/style.css';
+@import '../modules/layout-garden/fly-fishing-grid/fly-fishing-card/style.css';
+@import '../modules/layout-garden/takeout-contact-form/style.css';

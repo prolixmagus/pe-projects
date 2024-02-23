@@ -21,7 +21,8 @@
 .cta-button {
 	padding-inline: 1rem;
 	padding-block: .5rem;
-	border-radius: 20px;
+	border-radius: 50px;
 	font-family: "Avenir", sans-serif;
 	font-size: 1.25rem;
+	border: 1px solid black;
 }

@@ -3,6 +3,7 @@
 	flex-direction: column;
 	gap: 15px;
 }
+
 cta-text {
 	display: flex;
 	flex-direction: column;
@@ -24,6 +25,7 @@ cta-text {
 	max-width: 175px;
 	margin-top: 1.5rem;
 	background-color: white;
+	border: 1px solid #296BE5;
 	color: #296BE5;
 }
 

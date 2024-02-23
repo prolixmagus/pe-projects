@@ -22,12 +22,12 @@
 
 				<div class="field">
 					<label for="length">What is the length of the room in feet?</label>
-					<input id ="length" type="text" name="length" value="<?=$length?>" required />
+					<input id ="length" type="number" name="length" value="<?=$length?>" min="0" required />
 				</div>
 
 				<div class="field">
 					<label for="width">What is the width of the room in feet?</label>
-					<input id ="width" type="text" name="width" value="<?=$width?>" required />
+					<input id ="width" type="text" name="width" min="0" value="<?=$width?>" required />
 				</div>
 
 				<action-buttons>

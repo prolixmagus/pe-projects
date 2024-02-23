@@ -1,0 +1,27 @@
+.fly-fishing-grid {
+	background-color: #F3EBDC;
+}
+
+.fly-fishing-grid ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 10px;
+	place-items: center;
+}
+
+.fly-fishing-grid li {
+	border-bottom: 1px solid rgba(0 0 0 / .2);
+	padding-block: 20px;
+}
+
+.fly-fishing-grid li:last-child {
+	border-bottom: none;
+}
+
+.fly-fishing-grid h2 {
+	font-size: .85rem;
+	text-transform: uppercase;
+	font-family: Overpass, sans-serif;
+	text-align: center;
+	opacity: .8;
+}

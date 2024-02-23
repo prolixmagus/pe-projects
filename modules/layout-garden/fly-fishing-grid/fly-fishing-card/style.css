@@ -1,0 +1,46 @@
+product-details .category {
+	font-weight: 300;
+	opacity: .5;
+	font-size: .75rem;
+	text-transform: none;
+}
+
+product-details {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-name .product-link {
+	text-decoration: none;
+	font-weight: 600;
+	color: black;
+	font-family: Overpass, sans-serif;
+}
+
+.product-name a:hover {
+	text-decoration: underline;
+}
+
+.price-text {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	font-family: sans-serif;
+
+}
+
+.price-text::before {
+	content: '$';
+}
+
+.fly-fish-btn {
+	padding: 5px 20px;
+	border-radius: 50px;
+	border: 1px solid black;
+	background: white;
+	margin-top: 5px;
+}
+

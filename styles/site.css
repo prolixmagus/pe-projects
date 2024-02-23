@@ -28,10 +28,6 @@ experience-gained, div {
 }
 /*PAGE CONTENT*/
 
-.page-content span {
-	font-style: italic;
-}
-
 p + p {
 	padding-top: 15px;
 }
@@ -127,13 +123,7 @@ h2 + p {
 	padding-top: 1rem;
 }
 
-.seaweed-patch {
-	position: absolute;
-	bottom: -100px;
-	right: 0;
-	max-width: 400px;
-
-}
+/* LAYOUT GARDEN */
 
 /* ASSETS */
 .seaweed {
@@ -171,6 +161,15 @@ h2 + p {
 	bottom: -100px;
 	z-index: -1;
 	opacity: .5;
+}
+
+.seaweed-patch {
+	position: absolute;
+	bottom: -100px;
+	z-index: -1;
+	right: 0;
+	max-width: 225px;
+
 }
 
 .fish {
@@ -289,11 +288,55 @@ p, li {
 	}
 }
 
-@media (min-width: 400px) {
+@media (min-width: 540px) {
 	.project-list {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.takeout-form {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.fname {
+		grid-column: 1 / 2;
+	}
+
+	.lname {
+		grid-column: 2 / 3;
+	}
+
+	.email {
+		grid-column: 1 / 3;
+	}
+
+	.phone {
+		grid-column: 1 / 3;
+	}
+
+	.location {
+		grid-column: 1 / 3;
+	}
+
+	.company {
+		grid-column: 1 / 3;
+	}
+
+	.takeout-message {
+		grid-column: 1 / 3;
+	}
+
+	.takeout-button {
+	grid-column: 1 / 3;
+	}
+	
 }
+
+@media (min-width: 541px) {
+	.fly-fishing-grid li {
+		border-bottom: none;
+	}
+}
+
 
 @media (min-width: 525px) {
 	.site-header inner-column {
@@ -368,7 +411,6 @@ p, li {
 		width: 80%;
 	}
 
-
 }
 
 @media (min-width: 775px) {
@@ -385,6 +427,21 @@ p, li {
 		bottom: -100px;
 		max-width: 150px;
 		z-index: -1;
+	}
+}
+
+@media (min-width: 802px) {
+	.fly-fishing-grid li {
+		border-bottom: none;
+		border-left: 1px solid rgba(0 0 0 / .2);
+	}
+
+	.fly-fishing-grid li:first-child {
+		border-left: none;
+	}
+
+	.fly-fishing-grid li {
+		padding-inline: 20px;
 	}
 }
 

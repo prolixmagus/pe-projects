@@ -32,4 +32,15 @@ img {
 svg {
   display: block;
   width: 100%;
+  height: 100%;
 }
+
+.with-fit {
+ aspect-ratio: 3 / 2;
+}
+
+.with-fit img {
+ width: 100%; /*adjust*/
+ height: 100%; /*adjust*/
+}
+
