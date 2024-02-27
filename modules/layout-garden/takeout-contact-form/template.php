@@ -13,23 +13,28 @@
 	<h2>Check <span>&#8470;</span> 15938</h2>
 </header>
 <form class='takeout-form' method='post'>
-	<field class='fname field text collapse'>
+
+	<field class='fname field text'>
 	  <label for='fname'>First Name</label>
 	  <input id='fname' type='text' name='fname' value='' />
 	</field>
-	<field class='lname field text collapse'>
+
+	<field class='lname field text'>
 	  <label for='lname'>Last Name</label>
 	  <input id='lname' type='text' name='lname' value='' />
 	</field>
-	<field class='email field text collapse'>
+
+	<field class='email field text'>
 	  <label for='email'>Email</label>
-	  <input id='email' type='text' name='email' value='' />
+	  <input id='email' type='email' name='email' value='' />
 	</field>
-	<field class='phone field text collapse'>
+
+	<field class='phone field text'>
 	  <label for='phone'>Phone</label>
 	  <input id='phone' type='text' name='phone' value='' />
 	</field>
-	<field class='location field text collapse'>
+
+	<field class='location field text'>
 		<label for='location'>Location</label>
 		<select class='field text' name='location'>
 		  <option value='los-angeles'>Los Angeles</option>
@@ -39,25 +44,30 @@
 		  <option value='mars'>Mars</option>
 		</select>
 	</field>
-	<field class='form-date field text collapse'>
+
+	<field class='form-date field text'>
 	  <label for='form-date'>Date</label>
 	  <input id='form-date' type='text' name='form-date' value='' placeholder='MM/DD/YY' />
 	</field>
-	<field class='takeout-time field text collapse'>
+
+	<field class='takeout-time field text'>
 	  <label for='takeout-time'>Time</label>
 	  <input id='takeout-time' type='text' name='takeout-time' value='' placeholder='-- : --' />
 	</field>
-	<field class='company field text collapse'>
+
+	<field class='company field text'>
 	  <label for='company'>Company</label>
 	  <input id='company' type='text' name='company' value='' />
 	</field>
-<field class='takeout-message field text collapse'>
-	<label-wrapper>
- 		<label for='takeout-message'>Message</label>
- 	</label-wrapper>
-	<textarea class='field text' id="takeout-message" name="takeout-message" rows="8"></textarea>
-</field>
-	<button class='takeout-button field text collapse' type='submit' name='submitted'>
+
+	<field class='takeout-message field text'>
+		<label-wrapper>
+	 		<label for='takeout-message'>Message</label>
+	 	</label-wrapper>
+		<textarea class='field text' id="takeout-message" name="takeout-message" rows="8"></textarea>
+	</field>
+
+	<button class='takeout-button field text' type='submit' name='submitted'>
 			Submit
 	</button>
 </form>

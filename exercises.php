@@ -1,4 +1,4 @@
-<?php include("exercises-for-programmers/data/exercises-data.php")?>
+<?php include("exercises-for-programmers/data/exercises-database.php")?>
 
 <section class='challenge-introduction'>
 	<inner-column>

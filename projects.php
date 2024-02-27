@@ -1,4 +1,4 @@
-<?php include("data/projects-data.php") ?>
+<?php include("data/projects-database.php") ?>
 
 <section class='intro'>
 	<inner-column>

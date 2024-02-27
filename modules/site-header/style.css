@@ -13,10 +13,6 @@ header {
 	letter-spacing: .004em;	
 }
 
-header nav {
-	padding-block: .5rem;
-}
-
 svg {
 	display: block;
 	height: auto;

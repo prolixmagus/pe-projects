@@ -1,0 +1,29 @@
+html {
+	--black: #111111;
+	--white: #efefef;
+
+	--neutral-stuffs: gray;
+
+	--yellow: #FFD800;
+	--blue: #064E8F;
+	--pink: #C85B78;
+
+	--shadow: rgba(0, 0, 0, 0.8);
+
+	--corners: 15px; /* or whatevers */
+
+	--paper: var(--white);
+	--ink: var(--black);
+
+	--standard: 900px;
+	--tight: 700px;
+
+	--padding: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--paper: #231a1a;
+		--ink: #ffffe2;
+	}
+}

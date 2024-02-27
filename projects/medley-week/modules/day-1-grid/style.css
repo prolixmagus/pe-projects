@@ -1,0 +1,20 @@
+
+.article-grid .headline {
+	padding-block: 2.5rem;
+	border-top: none;
+}
+
+.article-grid li {
+	padding-top: 1rem;
+	border-top: 1px solid black;
+}
+
+.article-grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.picture-grid {
+	display: grid;
+	gap: 1rem;
+}

@@ -9,7 +9,7 @@
 	<form-explanation>
 		<inner-column>
 			<h2 class="form-title"><a class="refresh" href="?">Area of a Rectangular Room</a></h2>
-			<p class="indoor-voice">"Create a program that calculates the area of a room." But not just any room - a rectangular room! No squares, circles, or triangles allowed.</p>
+			<p class="indoor-voice">&#8220;Create a program that calculates the area of a room.&#8221; But not just any room - a rectangular room! No squares, circles, or triangles allowed.</p>
 		</inner-column>
 	</form-explanation>
 
@@ -27,7 +27,7 @@
 
 				<div class="field">
 					<label for="width">What is the width of the room in feet?</label>
-					<input id ="width" type="text" name="width" min="0" value="<?=$width?>" required />
+					<input id ="width" type="number" name="width" min="0" value="<?=$width?>" required />
 				</div>
 
 				<action-buttons>

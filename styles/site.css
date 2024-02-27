@@ -306,7 +306,7 @@ p, li {
 	}
 
 	.email {
-		grid-column: 1 / 3;
+		grid-column: span 2;
 	}
 
 	.phone {
@@ -318,7 +318,7 @@ p, li {
 	}
 
 	.company {
-		grid-column: 1 / 3;
+		grid-column: span 2;
 	}
 
 	.takeout-message {

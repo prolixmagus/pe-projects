@@ -7,34 +7,16 @@
 	</inner-column>
 </section>
 
-<section class='fly-fishing-grid'>
-	<inner-column>
-		<?php include('modules/layout-garden/fly-fishing-grid/template.php'); ?>
-	</inner-column>
-</section>
+<?php
 
-<section class='graphic-diptych'>
+$layout_database = read('data/layout-garden-database.json');
 
-	<inner-column>
-		<?php include('modules/layout-garden/graphic-diptych/template.php') ?>
-	</inner-column>
+foreach ($layout_database['sections'] as $section) { ?>
 
-</section>
+	<section class='<?=$section['module']?>'>
+		<inner-column>
+			<?php include("modules/layout-garden/" . $section['module'] . "/template.php");?>
+		</inner-column>
+	</section>
 
-<section class='announcement-grid'>
-	<inner-column>
-		<?php include('modules/layout-garden/announcement-grid/template.php'); ?>
-	</inner-column>
-</section>
-
-<section class='cta-overlap'>
-	<inner-column>
-		<?php include('modules/layout-garden/cta-overlap/template.php'); ?>
-	</inner-column>
-</section>
-
-<section class='takeout-contact'>
-	<inner-column>
-		<?php include('modules/layout-garden/takeout-contact-form/template.php'); ?>
-	</inner-column>
-</section>
+<?php } ?>

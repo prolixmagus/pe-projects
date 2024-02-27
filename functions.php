@@ -1,9 +1,54 @@
 <?php
 
+// CRUD Functions
+function read($path) {
+	$json = file_get_contents($path);
+	return json_decode($json, true);
+}
+
+function create($database, $data) {
+	$database[] = $data;
+	return $database;
+}
+
+function save($path, $database) {
+	$encodedJson = json_encode($database);
+	file_put_contents($path, $encodedJson);
+}
+
+function update(&$database, $this_data_id, $new_data) {
+	foreach ($database as &$data) {
+		if ($data["id"] == $this_data_id) {
+			$data = $new_data;
+			break;
+		}
+	}
+	return $database;
+}
+
+function delete($database, $data_id) {
+	$filtered = [];
+	
+	foreach ($database as $data) {
+		if ($data["id"] !== $data_id) {
+			array_push($filtered, $data);
+			}
+		}
+	return $filtered;
+	}
+
+function getItemById($database, $id_to_match) {
+	foreach ($database as $data) {
+		if ($data['id'] == $id_to_match) {
+		return $data;
+		}
+	}
+}
+
 // reading database for exercises for programmers files
 
 function getAllExercises() {
-	include("exercises-for-programmers/data/exercises-data.php");
+	include("exercises-for-programmers/data/exercises-database.php");
 	return $exercises;
 }
 
