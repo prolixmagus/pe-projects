@@ -1,1 +1,17 @@
-style.css
+.case-study-link {
+	border: 2px solid black;
+	padding: 8px 4px;
+	text-align: center;
+	max-width: 100px;
+}
+
+.case-study-link:hover {
+	background-color: var(--fish-green);
+}
+
+module-showcase {
+	display: block;
+}
+.case-study-link + module-showcase {
+	margin-top: 1rem;
+}

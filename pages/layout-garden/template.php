@@ -15,12 +15,14 @@ $layout_database = read('data/layout-garden-database.json');
 
 foreach ($layout_database['sections'] as $section) { ?>
 
-	<section class='<?=$section['module']?>'>
+	<section class='module-showcase <?=$section['module']?>'>
 		<inner-column>
-			<a class='case-study-link' href="?page=layout-garden-single&id=<?=$section['id']?>">
+			<a class='case-study-link quiet-voice' href="?page=layout-garden-single&id=<?=$section['id']?>">
 				Case Study
 			</a>
-			<?php include(getFile("modules/layout-garden/" . $section['module'] . "/template.php"));?>
+			<module-showcase>
+				<?php include(getFile("modules/layout-garden/" . $section['module'] . "/template.php"));?>
+			</module-showcase>
 		</inner-column>
 	</section>
 

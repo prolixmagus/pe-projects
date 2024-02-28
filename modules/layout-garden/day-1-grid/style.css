@@ -18,3 +18,46 @@
 	display: grid;
 	gap: 1rem;
 }
+
+.day-1-grid module-showcase{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+@media (min-width: 400px) {
+	.article-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 10px;
+	}
+
+	.article-grid .headline {
+		grid-column: span 2;
+	}
+
+	.picture-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 10px;
+		gap: 1rem;
+	}
+}
+
+@media (min-width: 850px) {
+	.day-1-grid module-showcase {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.article-grid {
+		width: 50%;
+	}
+
+	.picture-grid {
+		width: 50%;
+		place-items: center;
+		display: grid;
+		margin-top: 4rem;
+	}
+}
