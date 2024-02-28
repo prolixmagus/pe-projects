@@ -9,7 +9,7 @@
 <section class='timeline' id='present-day'>
 	<inner-column class='first'>
 		<div>
-			<h2>2024</h2>
+			<h2 class='attention-voice'>2024</h2>
 
 			<p>I am currently enrolled in a web development course by <a class='derek-pink' href='https://perpetual.education/'>Perpetual Education</a> called Design for <em>the Web</em>.</p>
 
@@ -19,7 +19,7 @@
 		</div>
 
 		<experience-gained>
-			<h3>skills</h3>
+			<h3 class='output-voice'>skills</h3>
 
 			<ul title='skills so far'>
 				<li>Research and study through <a href='https://www.sciencedirect.com/topics/psychology/deliberate-practice'>Deliberate Practice</a></li>
@@ -36,13 +36,13 @@
 <section class='timeline' id='burbank'>
 	<inner-column>
 		<div>
-			<h2>2022</h2>
+			<h2 class='attention-voice'>2022</h2>
 			
 			<p>Four years and one pandemic later, I am flying across the country to teach at John Muir Middle School in Burbank, California.</p>
 
 		</div>
 		<experience-gained>
-			<h3>skills</h3>
+			<h3 class='output-voice'>skills</h3>
 			
 			<ul>
 				<li>Designed over 185 unique standards-based lesson plans</li>
@@ -58,13 +58,13 @@
 <section class='timeline' id='white-oak'>
 	<inner-column>
 		<div>
-			<h2>2019</h2>
+			<h2 class='attention-voice'>2019</h2>
 			
 			<p>I'm back in the United States teaching English as a Second language to immigrants from all over the world. I'm teaching at White Oak Middle School in Maryland.</p>
 
 		</div>
 		<experience-gained>
-			<h3>skills</h3>
+			<h3 class='output-voice'>skills</h3>
 			
 			<ul>
 				<li>Co-taught STEM courses as ELD support</li>
@@ -80,7 +80,7 @@
 <section class='timeline'>
 	<inner-column>
 		<div>
-			<h2>2018</h2>
+			<h2 class='attention-voice'>2018</h2>
 			
 			<p>I am in teaching in English in Taiwan as the recipient of a Fulbright Scholarship. I travel to different elementary schools in Zhiben, a spa town in the Taitung region.</p>
 
@@ -90,7 +90,7 @@
 			<!-- insert link here -->
 		</div>
 		<experience-gained>
-			<h3>skills</h3>
+			<h3 class='output-voice'>skills</h3>
 			
 			<ul>
 				<li>Co-taught grades K-6 EFL classes with a certified local English teacher</li>
@@ -105,14 +105,14 @@
 <section class='timeline'>
 	<inner-column>
 		<div>
-			<h2>2017</h2>
+			<h2 class='attention-voice'>2017</h2>
 			
 			<p>After three years, I graduate from Montclair State University with a Master's in Teaching English as a Second Language. I am one course shy of a Master's in Applied Linguistics (statistics)</p>
 			
 			<p>Post-graduation, I take the train to Princeton, <abbr title='New Jersey'>NJ</abbr>, to write test questions for the <abbr title='Test of English as a Foreign Language'>TOEFL</abbr> <abbr title='internet-Based-Test'>iBT</abbr> at <abbr title='Educational Testing Services'>ETS</abbr> over the summer.</p>
 		</div>
 		<experience-gained>
-			<h2>skills</h2>
+			<h3 class='output-voice'>skills</h3>
 			
 			<ul>
 				<li>Researched, created, and revised test items for the Speaking Section of the TOEFL iBT</li>
@@ -127,7 +127,7 @@
 <section class='timeline'>
 	<inner-column>
 		<div>
-			<h2>2014</h2>
+			<h2 class='attention-voice'>2014</h2>
 			
 			<p>I disembark a plane that just landed in Seattle, Washington, to search for new prospects in the midst of a recession. A few months later and I am working the help line at Nintendo of America's call center.</p>
 			
@@ -136,7 +136,7 @@
 			<p>I feel stuck. I miss my family. I move back home</p>
 		</div>
 		<experience-gained>
-			<h3>skills</h3>
+			<h3 class='output-voice'>skills</h3>
 			
 			<ul>
 				<li>Compiled feedback from tech forums, social media, news outlets, and the Miiverse into digestible reports for upper management.</li>
@@ -150,7 +150,7 @@
 	<inner-column class='last'>
 		<div>
 			
-			<h2>2011</h2>
+			<h2 class='attention-voice'>2011</h2>
 			
 			<p>Clutching a degree in Creative Writing from the University of Rochester and a certificate from NYU's Summer Publishing Institute, I set out to realize my dreams of becoming an Editor.</p>
 			
@@ -161,7 +161,7 @@
 		</div>
 		<experience-gained>
 			
-			<h3>skills</h3>
+			<h3 class='output-voice'>skills</h3>
 			
 			<ul>
 				<li>Proofread and reformatted 60 titles per month for online distribution to vendors such as Amazon, Barnes & Noble, and iTunes Bookstore</li>

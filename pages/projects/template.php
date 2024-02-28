@@ -1,4 +1,6 @@
-<?php include("data/projects-database.php") ?>
+<?php
+	$projects = read('data/projects-database.json');
+?>
 
 <section class='intro'>
 	<inner-column>

@@ -61,7 +61,7 @@
 
 					</a>
 					<a href ='../index.php'>
-						<h1 class='outdoor-voice'>Jeremy Fishman</h1>
+						<h1 class='attention-voice'>Jeremy Fishman</h1>
 					</a>
 				</logo-container>
 

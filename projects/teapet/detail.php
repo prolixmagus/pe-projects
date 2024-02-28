@@ -70,8 +70,8 @@
 
 	<?php } else { ?>
 
-		<h2 class="outdoor-voice">No Tea pets Here!</h1>
-		<p class="indoor-voice">Please visit our <a href="?page=pet-shop-list">Pet Shop</a> to nurture a Tea Pet today!</p>
+		<h2 class="attention-voice">No Tea pets Here!</h1>
+		<p class="calm-voice">Please visit our <a href="?page=pet-shop-list">Pet Shop</a> to nurture a Tea Pet today!</p>
 
 	<?php } ?>
 </inner-column>

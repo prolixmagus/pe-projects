@@ -27,12 +27,12 @@
 	<info-module>
 
 		<about>
-			<h2 class='outdoor-voice'>About</h2>
-			<p class="story indoor-voice"><?=$story?></p>
+			<h2 class='attention-voice'>About</h2>
+			<p class="story calm-voice"><?=$story?></p>
 		</about>
 		<status>
-			<h2 class='outdoor-voice'>Status</h2>
-			<p class='status indoor-voice'><?=$status?></p>
+			<h2 class='attention-voice'>Status</h2>
+			<p class='status calm-voice'><?=$status?></p>
 		</status>
 
 	</info-module>

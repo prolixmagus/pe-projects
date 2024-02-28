@@ -18,8 +18,8 @@
 	<form-explanation>
 		<inner-column>
 			<h2 class="form-title"><a class="refresh" href="?">Printing Quotes</a></h2>
-			<p class="indoor-voice">It's so difficult to remember whos says what anymore!</p>
-			<p class="indoor-voice">This short form exercise is used to practice interpolating quotation marks or using escape character. Always important to decide whether you want to use single or double quotes - and to be consistent with it!</p>
+			<p class="calm-voice">It's so difficult to remember whos says what anymore!</p>
+			<p class="calm-voice">This short form exercise is used to practice interpolating quotation marks or using escape character. Always important to decide whether you want to use single or double quotes - and to be consistent with it!</p>
 		</inner-column>
 	</form-explanation>
 

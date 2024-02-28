@@ -1,12 +1,11 @@
-<?php
-?>
+<?php include('code/simple-math-code.php'); ?>
 
 
 <section class="form-group">
 	<form-explanation>
 		<inner-column>
-			<h2 class="form-title"><a class="refresh" href="?">Exercise Name</a></h2>
-			<p class="indoor-voice">Exercise explanation</p>
+			<h2 class="form-title"><a class="refresh" href="?">Simple Math</a></h2>
+			<p class="calm-voice">I have taught students in high school who have trouble with these.</p>
 		</inner-column>
 	</form-explanation>
 
@@ -18,8 +17,13 @@
 				<h2>Input</h2>
 
 				<div class="field">
-					<label for="[[change]]">Label</label>
-					<input id ="[[change]]" type="text" name="[[change]]" value="[[variable]]" required />
+					<label for="firstNumber">Enter a number:</label>
+					<input id ="firstNumber" type="number" name="firstNumber" value=<?=$first?> min = 0 required />
+				</div>
+
+				<div class="field">
+					<label for="secondNumber">Enter a number:</label>
+					<input id ="secondNumber" type="number" name="secondNumber" value=<?=$second?> min = 0 required />
 				</div>
 
 				<action-buttons>
@@ -45,7 +49,7 @@
 
 				<output>
 					<h2>Output</h2>
-					<p class="output-voice">[[message variable]]</p>
+					<?=displayOperations($first, $second)?>
 				</output>
 		
 		</inner-column>

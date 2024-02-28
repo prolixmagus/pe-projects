@@ -88,12 +88,12 @@ action-buttons {
 	font-size: .75px; /* 12px */
 	font-family: sans-serif;
 }
-.indoor-voice {
+.calm-voice {
 	font-size: 1rem; /* 16px */
 	font-family: sans-serif;
 }
 
-.outdoor-voice {
+.attention-voice {
 	font-size: 1.5rem; /* 24px */
 	font-family: sans-serif;
 }

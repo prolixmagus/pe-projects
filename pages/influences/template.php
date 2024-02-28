@@ -9,7 +9,7 @@
 <section class='influences'>
 	<inner-column class='first'>
 		<div class='books'>
-			<h2 class='outdoor-voice pink-mark'>Books</h2>
+			<h2 class='attention-voice pink-mark'>Books</h2>
 			<ul class='influences-list'>
 				<li><span class='italic'>Badass: Making Users Awesome </span><span class='quiet-voice'>by </span>Kathy Sierra</li>
 				<li><span class='italic'>Don Quixote </span><span class='quiet-voice'>by </span>Miguel de Cervantes</li>
@@ -22,7 +22,7 @@
 		</div>
 
 		<div class='shows'>
-			<h2 class='outdoor-voice green-mark'>Shows</h2>
+			<h2 class='attention-voice green-mark'>Shows</h2>
 			<ul>
 				<li>Scandal</li>
 				<li>Succession</li>
@@ -35,7 +35,7 @@
 		</div>
 
 		<div class='music'>
-			<h2 class='outdoor-voice blue-mark'>Music</h2>
+			<h2 class='attention-voice blue-mark'>Music</h2>
 			<ul>
 				<li>DJ Sprinkles</li>
 				<li>Rina Sawayama</li>

@@ -1,3 +1,4 @@
+
 <?php 
 
 /* router */
@@ -13,5 +14,6 @@
 	function getTemplate($name) {
 			include("pages/" . $name . "/template.php");
 		}
+
 
 ?>

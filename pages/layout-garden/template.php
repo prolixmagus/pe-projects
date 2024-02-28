@@ -11,11 +11,16 @@
 
 $layout_database = read('data/layout-garden-database.json');
 
+// print_r($layout_database);
+
 foreach ($layout_database['sections'] as $section) { ?>
 
 	<section class='<?=$section['module']?>'>
 		<inner-column>
-			<?php include("modules/layout-garden/" . $section['module'] . "/template.php");?>
+			<a class='case-study-link' href="?page=layout-garden-single&id=<?=$section['id']?>">
+				Case Study
+			</a>
+			<?php include(getFile("modules/layout-garden/" . $section['module'] . "/template.php"));?>
 		</inner-column>
 	</section>
 

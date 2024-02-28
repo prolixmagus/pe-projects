@@ -4,7 +4,7 @@
 	<form-explanation>
 		<inner-column>
 			<h2 class="form-title"><a class="refresh" href="?">Retirement Calculator</a></h2>
-			<p class="indoor-voice">[[Insert Explanation]]</p>
+			<p class="calm-voice">[[Insert Explanation]]</p>
 		</inner-column>
 	</form-explanation>
 

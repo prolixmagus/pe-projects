@@ -1,0 +1,17 @@
+.project-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+
+.exercise {
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 10px;
+	min-height: 15vh;
+	font-size: 1.25rem;
+}
+
+.projects inner-column {
+	padding-top: 1rem;
+}

@@ -1,0 +1,33 @@
+.timeline {
+	position: relative;
+}
+
+.first {
+	padding-top: 1rem;
+}
+
+.timeline inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	border-bottom: 4px dotted var(--fish-green);
+}
+
+.timeline .last {
+	border-bottom: none;
+}
+
+.timeline p, .timeline li {
+	max-width: 50ch;
+	font-weight: 300;
+}
+
+.timeline li, .influences li {
+	padding-top: 1em;
+	font-weight: 300;
+}
+
+.timeline li::before {
+	content: '-';
+	padding-right: 5px;
+}

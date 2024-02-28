@@ -21,7 +21,7 @@
 	font-size:  1rem;
 }
 
-.outdoor-voice {
+.attention-voice {
 	font-size: 1.5rem;
 	font-weight: 600;
 	font-family: Lucida Grande, sans-serif;
@@ -34,13 +34,13 @@
 }
 
 .calm-voice {
-	font-family: Bembo, sans-serif;
+	font-family: Avenir, sans-serif;
 	font-size: 1rem;
 	line-height: 1.4;
 }
 
 .quiet-voice {
-	font-family: Bembo, serif;
+	font-family: Avenir, serif;
 	font-size: .75rem;
 	line-height: 1.4;
 }

@@ -4,8 +4,8 @@
 	<form-explanation>
 		<inner-column>
 			<h2 class="form-title"><a class="refresh" href="?">Hello, World</a></h2>
-			<p class="indoor-voice">One of the first programs that demonstrates the relationship between entering information and receiving a response. Fortunately for humans, we acquire langauge naturally. Computers, on the other hand, need instructions.</p>
-			<p class="indoor-voice">Type in your name and you'll receive a greeting!</p>
+			<p class="calm-voice">One of the first programs that demonstrates the relationship between entering information and receiving a response. Fortunately for humans, we acquire langauge naturally. Computers, on the other hand, need instructions.</p>
+			<p class="calm-voice">Type in your name and you'll receive a greeting!</p>
 		</inner-column>
 	</form-explanation>
 

@@ -1,10 +1,27 @@
 html {
 	--fish-green: #5AA348;
-	--fish-blue: #8CCDDE;
-	--dark-fish-blue: #349DB7;
+	--fish-blue: #4cc5e0;
 	--tile-red: #B30006;
 	--fish-pink: #FF584D;
 	--sand-yellow: #FECA52;
+
+	--black: #111111;
+	--white: #efefef;
+
+	--neutral-stuffs: gray;
+
+	--color: #9ec9eb;
+	--highlight: #aadee9;
+
+	--shadow: rgba(0, 0, 0, 0.8);
+
+	--corners: 10px; /* or whatevers */
+
+	--paper: var(--white);
+	--ink: var(--black);
+
+	--standard: 900px;
+	--tight: 700px;
 }
 
 pre {
@@ -14,4 +31,11 @@ pre {
 	max-width: 500px;
 	padding-inline: 10px;
 	border-radius: 5%;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--paper: #231a1a;
+		--ink: #ffffe2;
+	}
 }

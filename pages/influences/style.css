@@ -1,0 +1,21 @@
+.influences {
+	position: relative;
+}
+
+.influences inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.current {
+	background-color: var(--sand-yellow)
+}
+
+.italic {
+	font-style: italic;
+}
+
+.books, .shows, .music {
+	position: relative;
+}

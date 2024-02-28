@@ -48,14 +48,19 @@ function getItemById($database, $id_to_match) {
 // reading database for exercises for programmers files
 
 function getAllExercises() {
-	include("exercises-for-programmers/data/exercises-database.php");
+	include("exercises-for-programmers-forms/data/exercises-database.php");
 	return $exercises;
 }
+
 
 // getting exercise for programmers page for router
 
 function getExerciseTemplate($name) {
-	include("exercises-for-programmers/" . "$name" . ".php");
+	include("exercises-for-programmers-forms/" . "$name" . ".php");
+}
+
+function getLayoutGardenTemplate($module) {
+	include("modules/layout-garden/" . $module . "/template.php");
 }
 
 // for linking to top level files on local server

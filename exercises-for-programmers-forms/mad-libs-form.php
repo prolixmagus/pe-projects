@@ -5,8 +5,8 @@
 		<form-explanation>
 			<inner-column>
 				<h2 class="form-title"><a class="refresh" href="?">Mad-Libs</a></h2>
-				<p class="indoor-voice">There is nothing better in life than sinking into the backseat of your parent's car on a sunny day, listening to music and burning through a dozen or so Mad-Libs while your parents argue over whose fault it was that they missed the the last exit.</p>
-				<p class="indoor-voice">Here is a PHP version of Mad-Libs. Write in your choices, click submit, and enjoy the story from server-generated HTML!</p>
+				<p class="calm-voice">There is nothing better in life than sinking into the backseat of your parent's car on a sunny day, listening to music and burning through a dozen or so Mad-Libs while your parents argue over whose fault it was that they missed the the last exit.</p>
+				<p class="calm-voice">Here is a PHP version of Mad-Libs. Write in your choices, click submit, and enjoy the story from server-generated HTML!</p>
 			</inner-column>
 		</form-explanation>
 

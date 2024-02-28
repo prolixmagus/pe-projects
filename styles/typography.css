@@ -4,11 +4,11 @@
 }
 
 .quiet-voice {
-	font-size: .9rem;
+	font-size: .8rem;
 	font-family: Avenir, sans-serif;
 	font-weidght: 300;
 }
-.indoor-voice {
+.calm-voice {
 	font-size: 1rem;
 	font-family: Avenir, sans-serif;
 	font-weight: 300;
@@ -16,27 +16,38 @@
 
 .company-name {
 	font-size: 1rem;
-	font-family: 'Comfortaa', sans-serif;
+	font-family: 'Lucida Grande', sans-serif;
 	font-weight: 400;
 }
 
 .output-voice {
 	font-size: 1.25rem;
-	font-family: 'Comfortaa', sans-serif;
+	font-family: 'Lucida Grande', sans-serif;
 	font-weight: 300;
 }
 
-.outdoor-voice {
+.attention-voice {
 	font-size: 1.5rem;
-	font-family: 'Comfortaa', sans-serif;
+	font-family: 'Lucida Grande', sans-serif;
 }
 
 .loud-voice {
 	font-size: 2rem;
-	font-family: 'Comfortaa', sans-serif;
+	font-family: 'Lucida Grande', sans-serif;
 	letter-spacing: .003em;
 }
 
-.bold {
-	font-weight: 600;
+:is(.calm-voice, p, li) em {
+	font-style: italic;
+}
+
+:is(.calm-voice, p, li) strong {
+	font-weight: 700;
+}
+
+p, li {
+	line-height: 1.44;
+	font-size: 1rem;
+	max-width: 65ch;
+	font-family: 'Avenir', sans-serif;
 }

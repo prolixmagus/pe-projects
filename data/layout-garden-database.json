@@ -3,19 +3,28 @@
 	"slug": "layout-garden",
 	"sections": [
 		{
-			"module": "fly-fishing-grid"
+			"module": "fly-fishing-grid",
+			"id": 1
 		},
 		{
-			"module": "graphic-diptych"
+			"module": "graphic-diptych",
+			"id": 2
 		},
 		{
-			"module": "announcement-grid"
+			"module": "announcement-grid",
+			"id": 3
 		},
 		{
-			"module": "cta-overlap"
+			"module": "cta-overlap",
+			"id": 4
 		},
 		{
-			"module": "takeout-contact-form"
+			"module": "takeout-contact-form",
+			"id": 5
+		},
+		{
+			"module": "day-1-grid",
+			"id": 6
 		}
 	] 
 }

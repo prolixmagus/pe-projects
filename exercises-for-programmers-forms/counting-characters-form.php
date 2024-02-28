@@ -5,8 +5,8 @@
 	<form-explanation>
 		<inner-column>
 			<h2 class="form-title"><a class="refresh" href="?">Counting Characters</a></h2>
-			<p class="indoor-voice">PHP technically does not count the characters in a given string, rather, the amount of bytes that make up the string. Usually byte to character is 1:1, but certain languages (like Arabic or Chinese) are several bytes per character!</p>
-			<p class="indoor-voice">TL;DR I made a form to count the letters in a word.</p>
+			<p class="calm-voice">PHP technically does not count the characters in a given string, rather, the amount of bytes that make up the string. Usually byte to character is 1:1, but certain languages (like Arabic or Chinese) are several bytes per character!</p>
+			<p class="calm-voice">TL;DR I made a form to count the letters in a word.</p>
 		</inner-column>
 	</form-explanation>
 

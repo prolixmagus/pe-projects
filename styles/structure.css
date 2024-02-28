@@ -12,8 +12,20 @@ main {
 
 inner-column {
 	display: block;
-	width: 100%;
-	max-width: 850px;
+	width: 98%;
+	max-width: 900px;
 	margin-inline: auto;
 	padding: 2rem 1rem;
 } 
+
+p + p {
+	padding-top: 1rem;
+}
+
+h2 + p {
+	padding-top: 16px;
+}
+
+experience-gained, div {
+	display: block;
+}

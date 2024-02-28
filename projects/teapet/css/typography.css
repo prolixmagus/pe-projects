@@ -34,12 +34,12 @@ h2 + p {
 	font-size: .75px; /* 12px */
 	font-family: avenir, sans-serif;
 }
-.indoor-voice {
+.calm-voice {
 	font-size: 1rem; /* 16px */
 	font-family: avenir, sans-serif;
 }
 
-.outdoor-voice {
+.attention-voice {
 	font-size: 1.5rem; /* 24px */
 	font-family: avenir, sans-serif;
 }
