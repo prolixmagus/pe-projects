@@ -42,6 +42,11 @@ $exercises = [
 		"name" => "Pizza Party",
 		"slug" => "pizza-party-form",
 	],
+	[
+		"id" => 9,
+		"name" => "Paint Calculator",
+		"slug" => "paint-calculator-form",
+	],
 
 ];
 
