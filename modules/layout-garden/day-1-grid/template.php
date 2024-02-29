@@ -12,22 +12,22 @@
 <ul class='picture-grid'>
 	<li>
 		<picture>
-			<img src="images/square.jpg">
+			<img src="https://peprojects.dev/images/square.jpg">
 		</picture>
 	</li>
 	<li>
 		<picture>
-			<img src="images/square.jpg">
+			<img src="https://peprojects.dev/images/square.jpg">
 		</picture>
 	</li>
 	<li>
 		<picture>
-			<img src="images/square.jpg">
+			<img src="https://peprojects.dev/images/square.jpg">
 		</picture>
 	</li>
 	<li>
 		<picture>
-			<img src="images/square.jpg">
+			<img src="https://peprojects.dev/images/square.jpg">
 		</picture>
 	</li>
 </ul>

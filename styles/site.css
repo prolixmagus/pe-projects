@@ -270,7 +270,7 @@ li a:visited, p a:visited {
 
 @media (min-width: 700px) {
 
-	.graphic-diptych inner-column {
+	.graphic-diptych module-showcase {
 		flex-direction: row-reverse;
 	}
 

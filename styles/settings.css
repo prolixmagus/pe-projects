@@ -33,6 +33,12 @@ pre {
 	border-radius: 5%;
 }
 
+sup {
+	vertical-align: super;
+	vertical-align: 25%;
+	font-size: .7rem;
+}
+
 @media (prefers-color-scheme: dark) {
 	html {
 		--paper: #231a1a;

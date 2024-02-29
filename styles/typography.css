@@ -17,12 +17,17 @@
 .company-name {
 	font-size: 1rem;
 	font-family: 'Lucida Grande', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
+}
+
+.quiet-heading {
+	font-size: 1.125rem;
+	font-family: Lucida Grande, sans-serif;
 }
 
 .output-voice {
 	font-size: 1.25rem;
-	font-family: 'Lucida Grande', sans-serif;
+	font-family: 'Avenir', sans-serif;
 	font-weight: 300;
 }
 

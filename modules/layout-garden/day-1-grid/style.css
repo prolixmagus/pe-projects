@@ -25,7 +25,12 @@
 	gap: 1rem;
 }
 
-@media (min-width: 400px) {
+.picture-grid li picture{
+	background-image: url('https://peprojects.dev/images/portrait.jpg');
+	background-size: cover;
+}
+
+@media (min-width: 500px) {
 	.article-grid{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -44,20 +49,13 @@
 	}
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
 	.day-1-grid module-showcase {
 		display: flex;
-		gap: 1rem;
-	}
-
-	.article-grid {
-		width: 50%;
 	}
 
 	.picture-grid {
-		width: 50%;
 		place-items: center;
-		display: grid;
 		margin-top: 4rem;
 	}
 }

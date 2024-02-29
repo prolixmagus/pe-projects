@@ -47,7 +47,7 @@
 					</button>
 
 					<button class="clear-button" type="submit" name="clear">
-						Clear
+						x clear
 					</button>
 
 				</action-buttons>

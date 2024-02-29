@@ -13,7 +13,7 @@ main {
 inner-column {
 	display: block;
 	width: 98%;
-	max-width: 900px;
+	max-width: 1000px;
 	margin-inline: auto;
 	padding: 2rem 1rem;
 } 
@@ -23,7 +23,11 @@ p + p {
 }
 
 h2 + p {
-	padding-top: 16px;
+	padding-top: 1em;
+}
+
+h3 + p {
+	padding-top: .5em;
 }
 
 experience-gained, div {

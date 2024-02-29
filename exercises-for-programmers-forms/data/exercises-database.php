@@ -37,6 +37,11 @@ $exercises = [
 		"name" => "Area of a Rectangular Room",
 		"slug" => "rectangular-room-form",
 	],
+	[
+		"id" => 8,
+		"name" => "Pizza Party",
+		"slug" => "pizza-party-form",
+	],
 
 ];
 

@@ -13,7 +13,7 @@
 	font-weight: 600;
 }
 
-.cta-overlap p {
+.cta-overlap h3 {
 	grid-column: 3 / 5;
 	grid-row: 1;
 	font-size: 12rem;
