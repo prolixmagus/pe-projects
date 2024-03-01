@@ -10,7 +10,7 @@
 	<section class='<?=$module?>'>
 		<inner-column>
 			<a class='case-study-link' href="?page=layout-garden">
-				Back Button
+				Back
 			</a>
 			<?php include("modules/layout-garden/" . $section['module'] . "/template.php");?>
 		</inner-column>
