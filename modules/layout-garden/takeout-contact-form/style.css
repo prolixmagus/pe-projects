@@ -1,3 +1,7 @@
+.takeout-contact-form inner-column {
+	max-width: 575px;
+}
+
 .takeout-contact-form header {
 	background-color: white;
 }
@@ -8,7 +12,6 @@
 .takeout-contact-form span {
 	font-style: normal;
 }
-
 
 .takeout-contact-form header {
 	display: grid;
@@ -118,4 +121,23 @@ label-wrapper {
 	padding: 1em;
 	background-color: #CBC3E3;
 	margin-top: 1rem;
+}
+
+@media (min-width: 575px) {
+	.takeout-contact-form {
+		margin-inline: auto;
+
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.takeout-contact-form header, select {
+		background-color: var(--paper-light-gray);
+		color: var(--ink-light);
+	}
+
+	.takeout-contact-form input {
+		background-color: var(--paper-light-gray);
+		color: var(--ink-light);
+	}
 }

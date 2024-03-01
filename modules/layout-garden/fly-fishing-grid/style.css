@@ -25,3 +25,9 @@
 	text-align: center;
 	opacity: .8;
 }
+
+@media (prefers-color-scheme: dark) {
+	.fly-fishing-grid {
+		background-color: var(--paper-light-gray);
+	}
+}

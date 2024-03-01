@@ -7,3 +7,9 @@
 	grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
 	gap: 10px;
 }
+
+@media (prefers-color-scheme: dark) {
+	.announcement-grid {
+		background-color: var(--paper-light-gray);
+	}
+}

@@ -1,3 +1,4 @@
+
 .case-study-link {
 	border: 2px solid black;
 	padding: 8px 4px;
@@ -14,4 +15,11 @@ module-showcase {
 }
 .case-study-link + module-showcase {
 	margin-top: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color: var(--ink-light);
+		background-color: var(--paper-black);
+	}
 }

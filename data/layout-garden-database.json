@@ -25,6 +25,10 @@
 		{
 			"module": "day-1-grid",
 			"id": 6
+		},
+		{
+			"module": "day-2-grid",
+			"id": 7
 		}
 	] 
 }

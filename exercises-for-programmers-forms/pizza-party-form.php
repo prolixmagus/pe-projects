@@ -8,7 +8,7 @@
 		<inner-column>
 			<h2 class="form-title"><a class="refresh" href="?">Pizza Party</a></h2>
 			<p class="calm-voice">The objective of this exercise was to create a critical web application that performs the emergency service of calculating how many pieces of pizza can be <em>evenly</em> distributed among a group of friends. Who wants to be the one left with &#188;<sup>th</sup> of slice?</p>
-			<p class="calm-voice">This exercise involved using the <code>floor()</code> function as well as a bunch of if-then statements to account for singular/pluralization (piece/pieces, person/people, pizza/pizzas).</p>
+			<p class="calm-voice">This exercise involved using the <code>floor()</code> function as well as a bunch of if-then statements to account for singular/pluralization (piece/pieces, person/people, pizza/pizzas). Let's not forget about the <code>%</code> modulo operator that gives us the remainder of a divisible operation (aka, the leftovers).</p>
 	</form-explanation>
 
 	<form-section>

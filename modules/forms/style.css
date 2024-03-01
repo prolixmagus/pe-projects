@@ -89,3 +89,9 @@ blockquote {
 	font-weight: 600;
 	text-decoration: underline;
 }
+
+@media (prefers-color-scheme: dark) {
+	.form-title .refresh {
+		color: var(--ink-light);
+	}
+}

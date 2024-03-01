@@ -321,3 +321,10 @@ li a:visited, p a:visited {
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color: var(--ink-light);
+		background-color: var(--paper-light-gray);
+	}
+}

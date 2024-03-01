@@ -19,6 +19,10 @@
 	gap: 1rem;
 }
 
+.day-1-grid {
+	background-color: #FBF7F5;
+}
+
 .day-1-grid module-showcase{
 	display: grid;
 	grid-template-columns: 1fr;
@@ -57,5 +61,11 @@
 	.picture-grid {
 		place-items: center;
 		margin-top: 4rem;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.day-1-grid {
+		background-color: var(--paper-light-gray);
 	}
 }

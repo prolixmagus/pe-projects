@@ -36,3 +36,10 @@ logo-container {
 	justify-content: space-between;
 }
 
+@media (prefers-color-scheme: dark) {
+	header {
+		color: var(--ink-light);
+		background-color: var(--fish-blue);
+	}
+}
+

@@ -1,17 +1,17 @@
 html {
-	--fish-green: #5AA348;
-	--fish-blue: #4cc5e0;
-	--tile-red: #B30006;
-	--fish-pink: #FF584D;
-	--sand-yellow: #FECA52;
+	--fish-green: hsl(108, 39%, 46%);
+	--fish-blue: hsl(191, 71%, 59%);
+	--tile-red: hsl(358, 100%, 35%);
+	--fish-pink: hsl(4, 100%, 65%);
+	--sand-yellow: hsl(42, 99%, 66%);
 
-	--black: #111111;
-	--white: #efefef;
+	--black: hsl(0, 0%, 7%);
+	--white: hsl(0, 0%, 94%);
 
 	--neutral-stuffs: gray;
 
-	--color: #9ec9eb;
-	--highlight: #aadee9;
+	--color: hsl(206, 66%, 77%);
+	--highlight: hsl(190, 59%, 79%);
 
 	--shadow: rgba(0, 0, 0, 0.8);
 
@@ -19,8 +19,9 @@ html {
 
 	--paper: var(--white);
 	--ink: var(--black);
+	--ink-light: var(--dark-gray);
 
-	--standard: 900px;
+	--standard: 1000px;
 	--tight: 700px;
 }
 
@@ -33,6 +34,14 @@ pre {
 	border-radius: 5%;
 }
 
+code {
+	background-color: black;
+	padding: 2px 4px;
+	color: orange;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
 sup {
 	vertical-align: super;
 	vertical-align: 25%;
@@ -41,7 +50,10 @@ sup {
 
 @media (prefers-color-scheme: dark) {
 	html {
-		--paper: #231a1a;
-		--ink: #ffffe2;
+		--paper-black: hsl(0, 0%, 7%);
+		--ink-light: hsl(63, 100%, 96%);
+		--paper-light-gray: hsl(0, 0%, 11%);
+		--fish-blue: hsl(190, 39%, 25%);
+		--sand-yellow: hsl(37, 24%, 28%);
 	}
 }

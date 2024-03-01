@@ -17,9 +17,9 @@ foreach ($layout_database['sections'] as $section) { ?>
 
 	<section class='module-showcase <?=$section['module']?>'>
 		<inner-column>
-			<a class='case-study-link quiet-voice' href="?page=layout-garden-single&id=<?=$section['id']?>">
+<!-- 			<a class='case-study-link quiet-voice' href="?page=layout-garden-single&id=<?=$section['id']?>">
 				Case Study
-			</a>
+			</a> -->
 			<module-showcase>
 				<?php include(getFile("modules/layout-garden/" . $section['module'] . "/template.php"));?>
 			</module-showcase>

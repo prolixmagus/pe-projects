@@ -1,8 +1,14 @@
 footer {
 	font-family: avenir, sans-serif;
-	background-color: hsl(42 99% 66% / .3);
+	background-color: var(--sand-yellow)
 }
 
 footer inner-column {
 	padding: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+	footer {
+		background-color: var(--sand-yellow);
+	}
 }
