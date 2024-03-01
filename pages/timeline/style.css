@@ -31,3 +31,11 @@
 	content: '-';
 	padding-right: 5px;
 }
+
+.timeline h3 {
+	font-weight: 500;
+}
+
+work-narrative {
+	display: block;
+}

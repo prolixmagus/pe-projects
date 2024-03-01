@@ -48,7 +48,7 @@ function getItemById($database, $id_to_match) {
 // reading database for exercises for programmers files
 
 function getAllExercises() {
-	include("exercises-for-programmers-forms/data/exercises-database.php");
+	$exercises = read("exercises-for-programmers-forms/data/exercises-database.json");
 	return $exercises;
 }
 

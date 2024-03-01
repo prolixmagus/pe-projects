@@ -1,4 +1,6 @@
-<?php include(getFile("exercises-for-programmers-forms/data/exercises-database.php"))?>
+<?php 
+$exercises = read(getFile("exercises-for-programmers-forms/data/exercises-database.json"));
+?>
 
 <section class='challenge-introduction'>
 	<inner-column>
