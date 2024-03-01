@@ -1,3 +1,5 @@
+@import "day-3-grid/day-3-details-element/style.css";
+
 .whisper-voice {
 	font-size: .8rem;
 	font-family: Avenir, sans-serif;
@@ -25,6 +27,11 @@
 	font-family: Lucida Grande, sans-serif;
 }
 
+.small-heading {
+	font-size: 1rem;
+	font-family: Lucida Grande, sans-serif;
+}
+
 .output-voice {
 	font-size: 1.25rem;
 	font-family: 'Avenir', sans-serif;
@@ -40,6 +47,13 @@
 	font-size: 2rem;
 	font-family: 'Lucida Grande', sans-serif;
 	letter-spacing: .003em;
+}
+
+.teaser-little {
+	font-size: .9rem;
+	color: var(--fish-green);
+	font-family: 'Lucida Grande', sans-serif;
+	font-weight: 600;
 }
 
 :is(.calm-voice, p, li) em {

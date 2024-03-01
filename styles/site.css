@@ -291,6 +291,10 @@ li a:visited, p a:visited {
 		gap: 40px;
 	}
 
+	work-narrative, experience-gained {
+		width: 50%;
+	}
+
 	.seaweed.pink {
 		display: block;
 		position: absolute;
