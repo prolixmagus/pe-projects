@@ -1,0 +1,40 @@
+.goal {
+	display: grid;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+.goal li {
+	border: 1rem solid black;
+	padding: 1rem;
+}
+
+.goal li:nth-child(1) {
+	background-color: var(--fish-pink);
+}
+
+.goal li:nth-child(2) {
+	background-color: var(--fish-blue);
+}
+
+.goal li:nth-child(3) {
+	background-color: var(--fish-green);
+}
+
+.goal li:nth-child(4) {
+	background-color: var(--sand-yellow);
+}
+
+@media (min-width: 500px) {
+	.goal {
+		gap: 2rem;
+	}
+
+	.goal li {
+		padding: 1.5rem;
+	}
+}
+
+@media (min-width: 700px) {
+	.goal {
+		grid-template-columns: 1fr 1fr;
+}
