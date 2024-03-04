@@ -22,12 +22,13 @@
 	font-weight: 300;
 }
 
-.quiet-heading {
+.small-heading {
 	font-size: 1.125rem;
 	font-family: Comfortaa, sans-serif;
+	font-weight: 600;
 }
 
-.small-heading {
+.quiet-heading {
 	font-size: 1rem;
 	font-family: Comfortaa, sans-serif;
 }
@@ -67,6 +68,6 @@
 p, li {
 	line-height: 1.44;
 	font-size: 1rem;
-	max-width: 65ch;
+	max-width: 70ch;
 	font-family: 'Avenir', sans-serif;
 }

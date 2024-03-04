@@ -1,9 +1,15 @@
-
 .case-study-link {
+	margin-left: 1rem;
+	display: block;
 	border: 2px solid black;
 	padding: 8px 4px;
 	text-align: center;
 	max-width: 100px;
+}
+
+case-study-wrapper {
+	display: block;
+	padding-top: 1rem;
 }
 
 .case-study-link:hover {
@@ -13,6 +19,7 @@
 module-showcase {
 	display: block;
 }
+
 .case-study-link + module-showcase {
 	margin-top: 1rem;
 }

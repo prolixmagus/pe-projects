@@ -68,7 +68,7 @@ details[open] > summary::after {
 }
 
 @media (min-width: 600px) {
-	.headline .quiet-heading {
+	.headline .small-heading {
 		font-size: 1.5rem;
 	}
 

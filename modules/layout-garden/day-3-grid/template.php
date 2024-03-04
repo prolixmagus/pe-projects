@@ -3,7 +3,7 @@
 		<h2 class='teaser-little'>Little teaser</h2>
 	</li>
 	<li class='headline'>
-		<h2 class='quiet-heading'><strong>Heading level 2</strong></h2>
+		<h2 class='small-heading'><strong>Heading level 2</strong></h2>
 		<p class='calm-voice'>This is some body text. This is some body text. This is some body text. This is some body text.</p>
 	</li>
 </ul>
