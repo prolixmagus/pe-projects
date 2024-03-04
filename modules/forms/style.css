@@ -94,4 +94,11 @@ blockquote {
 	.form-title .refresh {
 		color: var(--ink-light);
 	}
+
+	input:focus {
+		background: hsl(0 0 94% / 2);
+		outline: 2px solid var(--fish-pink); 
+	}
+
+
 }

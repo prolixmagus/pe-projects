@@ -29,5 +29,8 @@
 @media (prefers-color-scheme: dark) {
 	.fly-fishing-grid {
 		background-color: var(--paper-light-gray);
+		& li {
+			border-bottom: 1px solid var(--paper);
+		}
 	}
 }

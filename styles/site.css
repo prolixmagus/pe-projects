@@ -331,4 +331,12 @@ li a:visited, p a:visited {
 		color: var(--ink-light);
 		background-color: var(--paper-light-gray);
 	}
+
+	li, p {
+		& a:visited {
+			color: var(--fish-pink);
+		}
+		& a {
+			color: hsl(191 71% 59% / 1);
+		}
 }

@@ -44,3 +44,9 @@ product-details {
 	margin-top: 5px;
 }
 
+@media (prefers-color-scheme: dark) {
+	.product-name .product-link {
+		color: var(--paper);
+	}
+}
+
