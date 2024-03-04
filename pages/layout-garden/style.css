@@ -29,4 +29,8 @@ module-showcase {
 		color: var(--ink-light);
 		background-color: var(--paper-black);
 	}
+
+	.case-study-link {
+		border: 2px solid var(--paper);
+	}
 }

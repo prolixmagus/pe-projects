@@ -1,5 +1,5 @@
 <?php 
-$exercises = read(getFile("exercises-for-programmers-forms/data/exercises-database.json"));
+$exercises = read(getFile("data/exercises-database.json"));
 ?>
 
 <section class='challenge-introduction'>

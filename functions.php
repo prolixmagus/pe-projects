@@ -48,10 +48,9 @@ function getItemById($database, $id_to_match) {
 // reading database for exercises for programmers files
 
 function getAllExercises() {
-	$exercises = read("exercises-for-programmers-forms/data/exercises-database.json");
+	$exercises = read("data/exercises-database.json");
 	return $exercises;
 }
-
 
 // getting exercise for programmers page for router
 

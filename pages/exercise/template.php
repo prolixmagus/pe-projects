@@ -4,7 +4,7 @@
 
 //get correct exercise
 
-function getExerciseById($id) {
+function getExerciseNameById($id) {
 	//get the exercises from the database
 	$exercises = getAllExercises();
 	//find the right one by id
@@ -17,7 +17,7 @@ function getExerciseById($id) {
 	return false;
 }
 
-$exercise = getExerciseById($_GET['id']);
+$exercise = getExerciseNameById($_GET['id']);
 
 ?>
 
@@ -27,7 +27,7 @@ $exercise = getExerciseById($_GET['id']);
 if ($exercise) {
 	getExerciseTemplate($exercise);
 } else {
-	echo "There is no exercise";
+	include("pages/error404/template.php");
 }
 
 ?>
