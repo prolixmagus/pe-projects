@@ -6,11 +6,11 @@
 		</section>
 	</main>
 
-	</body>
-
 	<footer>
 		<inner-column>
 			<?php include("modules/footer/template.php")?>
 		</inner-column>
 	</footer>
+
+	</body>
 </html>
