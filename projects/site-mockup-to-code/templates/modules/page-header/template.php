@@ -9,8 +9,8 @@
 				<?php include('templates/partials/page-header-nav.php')?>
 			</nav>
 				<login>
-					<div class='icon'>
-						<?php include('templates/components/icon.php')?>
+					<div class='page-header-icon'>
+						<?php include('templates/components/page-header-icon.php')?>
 					</div>
 					<?php foreach($content['button'] as $button) { ?>
 						<a class='<?=$button['class']?>' href='#'>

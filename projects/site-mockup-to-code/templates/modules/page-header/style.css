@@ -35,16 +35,6 @@ login {
 	justify-content: flex-end;
 }
 
-.icon {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	max-width: 55px;
-	gap: 5px;
-	flex-shrink: 0;
-
-}
-
 @media (min-width: 650px) {
 	mast-head {
 		grid-template-columns: 1fr 2fr 1fr;
