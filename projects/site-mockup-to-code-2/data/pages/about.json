@@ -1,0 +1,21 @@
+{
+	"slug": "about",
+	"title": "About",
+	"sections": [
+		{
+			"module": "cta",
+			"header": "About",
+			"text": "Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Cum dignissimos alias rerum nisi recusandae ut consectetur, ab quod placeat necessitatibus mollitia eligendi voluptatum error pariatur!",
+			"actions": [
+				{
+					"text": "Get Started",
+					"class": "cta-button"
+				},
+				{
+					"text": "Start Free Trial",
+					"class": "cta-button white"
+				}
+			]
+		}
+	] 
+}

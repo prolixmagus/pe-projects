@@ -1,0 +1,42 @@
+.cta {
+	display: flex;
+	align-items: center;
+	background-image: url('../../../images/background/stripe-landscape.png');
+	min-height: 50vh;
+	background-position: center center;
+	background-size: cover;
+}
+.cta inner-column {
+	display: flex;
+	flex-direction: column;
+}
+.action-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 2rem;
+}
+
+cta-text {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 575px) {
+	cta-text {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		& p {
+			max-width: 50ch;
+		}
+	}
+
+	.action-buttons {
+		flex-direction: row;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+
+}

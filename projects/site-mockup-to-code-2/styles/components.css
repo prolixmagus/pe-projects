@@ -1,0 +1,32 @@
+@import "forms.css";
+
+/* buttons and icons and smaller reusable bits here */
+
+.login-button {
+	display: block;
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+	color: var(--paper);
+	border-radius: var(--corners);
+	padding: 0.25em 1em;
+	background-color: var(--color);
+	text-align: center;
+}
+
+.cta-button {
+	max-width: 200px;
+	display: block;
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+	color: var(--paper);
+	padding: .5em 2em;
+	background-color: var(--color);
+	text-align: center;
+	&.white {
+		background-color: var(--white);
+		color: var(--color);
+		border: 1px solid var(--color);
+	}
+}
