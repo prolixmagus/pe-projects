@@ -28,7 +28,7 @@ error_reporting(E_ALL);
 	<main class="page-content">
 		<?php
 			foreach ($pageData['sections'] as $section) { ?>
-			<section class='<?=$section['class']?>'>
+			<section class='<?=$section['section-class']?>'>
 				<inner-column>
 					<?php include("templates/modules/" . $section['module'] . "/template.php");?>
 				</inner-column>
