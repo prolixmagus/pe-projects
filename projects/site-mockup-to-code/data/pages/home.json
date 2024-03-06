@@ -4,7 +4,7 @@
 	"description": "Site Mockup to Code Challenge from Perpetual Education",
 	"page-header": [
 		{
-			"class": "page-header",
+			"section-class": "page-header",
 			"links": [
 				{
 					"link": "?page=home",
@@ -31,9 +31,11 @@
 	"sections": [
 		{
 			"module": "cta",
-			"class": "cta",
-			"header": "Home",
+			"section-class": "cta",
+			"heading": "Home",
+			"heading-class": "strong-attention-voice",
 			"text": "Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Cum dignissimos alias rerum nisi recusandae ut consectetur, ab quod placeat necessitatibus mollitia eligendi voluptatum error pariatur!",
+			"text-class": "calm-voice",
 			"actions": [
 				{
 					"text": "Get Started",
@@ -47,11 +49,45 @@
 		},
 		{
 			"module": "media-video",
-			"class": "media-video",
+			"section-class": "media-video",
 			"teaser": "Rhoncus, Accumsan Dictum",
 			"heading": "Etiam nulla lfulputate",
 			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
 			"video": "https://www.youtube.com/embed/6HsepgHlIFg"
+		},
+		{
+			"module": "overview",
+			"section-class": "overview",
+			"heading": "Etiam Nulla Lectus Molestie At Vulputate",
+			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
+			"image": "../../images/square.jpg",
+			"article": [
+				{
+					"article-card": "article-card",
+					"small-heading": "Sit Quam Gravite",
+					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
+				},
+				{
+					"article-card": "article-card",
+					"small-heading": "Sit Quam Gravite",
+					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
+				},
+				{
+					"article-card": "article-card",
+					"small-heading": "Sit Quam Gravite",
+					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
+				},
+				{
+					"article-card": "article-card",
+					"small-heading": "Sit Quam Gravite",
+					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
+				},
+				{
+					"article-card": "article-card",
+					"small-heading": "Sit Quam Gravite",
+					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
+				}
+			]
 		}
 	] 
 }

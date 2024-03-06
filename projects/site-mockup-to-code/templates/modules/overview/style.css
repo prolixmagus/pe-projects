@@ -1,0 +1,48 @@
+overview-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 50vh;
+	gap: 40px;
+}
+
+company-overview {
+	display: grid;
+	gap: 20px;
+	& p:nth-child(2) {
+		margin-top: 0;
+	}
+}
+
+article-gallery {
+	display: grid;
+	gap: 20px;
+}
+
+.article-card {
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+}
+
+@media (min-width: 575px) {
+	video-heading {
+		text-align: center;
+		justify-content: center;
+	}
+
+	iframe {
+		margin-inline: auto;
+		width: 50%;
+	}
+}
+
+@media (min-width: 700px) {
+	overview-container {
+		flex-direction: row;
+		& picture {
+			max-width: 400px;
+		}
+	}
+
+}
+
