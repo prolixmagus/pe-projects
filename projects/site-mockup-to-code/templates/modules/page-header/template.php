@@ -1,5 +1,5 @@
 <?php foreach($pageData['page-header'] as $content) { ?>
-<header class="page-header">
+<header class='<?=$content['class']?>'>
 	<inner-column>
 		<mast-head>
 			<a href="#" class='link logo'>
