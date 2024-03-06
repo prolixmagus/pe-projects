@@ -6,7 +6,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 10px;
+	gap: 20px;
 }
 
 .link.logo {
@@ -60,6 +60,9 @@ login {
 		grid-row: 1;
 		align-self: center;
 		justify-self: center;
+		& ul {
+			gap: 30px;
+		}
 	}
 
 @media (min-width: 900px) {

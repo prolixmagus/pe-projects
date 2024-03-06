@@ -1,10 +1,15 @@
 .cta {
 	display: flex;
 	align-items: center;
-	background-image: url('../../../images/background/stripe-landscape.png');
+ 	background-image: repeating-linear-gradient(
+    -45deg,
+    #F7F9FE 0 25px,
+    #c2d0f9 25px 26px
+  	);
 	min-height: 50vh;
 	background-position: center center;
 	background-size: cover;
+	z-index: 1;
 }
 .cta inner-column {
 	display: flex;
