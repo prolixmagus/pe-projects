@@ -4,6 +4,7 @@
 	"description": "Site Mockup to Code Challenge from Perpetual Education",
 	"page-header": [
 		{
+			"class": "page-header",
 			"links": [
 				{
 					"link": "?page=home",
@@ -30,6 +31,7 @@
 	"sections": [
 		{
 			"module": "cta",
+			"class": "cta",
 			"header": "Home",
 			"text": "Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Cum dignissimos alias rerum nisi recusandae ut consectetur, ab quod placeat necessitatibus mollitia eligendi voluptatum error pariatur!",
 			"actions": [
@@ -42,6 +44,14 @@
 					"class": "cta-button white"
 				}
 			]
+		},
+		{
+			"module": "media-video",
+			"class": "media-video",
+			"teaser": "Rhoncus, Accumsan Dictum",
+			"heading": "Etiam nulla lfulputate",
+			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
+			"video": "https://www.youtube.com/embed/6HsepgHlIFg"
 		}
 	] 
 }
