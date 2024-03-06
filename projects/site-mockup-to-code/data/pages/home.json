@@ -42,6 +42,13 @@
 					"class": "cta-button white"
 				}
 			]
+		},
+		{
+			"module": "media-video",
+			"teaser": "Rhoncus, Accumsan Dictum",
+			"heading": "Etiam nulla lfulputate",
+			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
+			"video": "https://www.youtube.com/embed/6HsepgHlIFg"
 		}
 	] 
 }

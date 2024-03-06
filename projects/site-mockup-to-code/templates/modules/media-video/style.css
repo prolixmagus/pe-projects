@@ -1,0 +1,36 @@
+.media-video {
+	min-height: 50vh;
+}
+
+.media-video inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+video-heading {
+	display: grid;
+	gap: 15px;
+	& p:nth-child(3) {
+		margin-top: 0;
+	}
+}
+
+iframe {
+	display: block;
+	width: 100%;
+}
+
+@media (min-width: 575px) {
+	video-heading {
+		text-align: center;
+		justify-content: center;
+	}
+
+	iframe {
+		margin-inline: auto;
+		width: 50%;
+	}
+
+}
+
