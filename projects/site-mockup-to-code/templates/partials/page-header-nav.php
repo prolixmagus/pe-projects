@@ -1,12 +1,8 @@
 <ul>
+<?php foreach($content['links'] as $linkContent) { ?>
 	<li>
-		<a class='link-voice' href='?page=home'>Home</a>
+		<a class='link-voice <?=$linkContent['class']?>' href='<?=$linkContent['link']?>'><?=$linkContent['name']?></a>
 	</li>
-	<li>
-		<a class='link-voice' href='?page=about'>About</a>
-	</li>
-		<li>
-		<a class='link-voice' href='?page=contact'>Contact</a>
-	</li>
+<?php } ?>
 </ul>
 	

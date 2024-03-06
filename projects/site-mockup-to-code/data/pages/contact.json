@@ -1,10 +1,36 @@
 {
-	"slug": "contact",
-	"title": "Contact",
+	"slug": "home",
+	"title": "Home",
+	"description": "Site Mockup to Code Challenge from Perpetual Education",
+	"page-header": [
+		{
+			"links": [
+				{
+					"link": "?page=home",
+					"name": "Home",
+					"class": "active"
+				},
+				{
+					"link": "?page=about",
+					"name":"About"
+				},
+				{
+					"link": "?page=contact",
+					"name": "Contact"
+				}
+			],
+			"button": [
+				{
+					"text": "Login",
+					"class": "login-button"
+				}
+			]
+		}
+	],
 	"sections": [
 		{
 			"module": "cta",
-			"header": "Contact",
+			"header": "Home",
 			"text": "Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Cum dignissimos alias rerum nisi recusandae ut consectetur, ab quod placeat necessitatibus mollitia eligendi voluptatum error pariatur!",
 			"actions": [
 				{
@@ -19,3 +45,6 @@
 		}
 	] 
 }
+
+
+

@@ -1,6 +1,32 @@
 {
 	"slug": "home",
 	"title": "Home",
+	"description": "Site Mockup to Code Challenge from Perpetual Education",
+	"page-header": [
+		{
+			"links": [
+				{
+					"link": "?page=home",
+					"name": "Home",
+					"class": "active"
+				},
+				{
+					"link": "?page=about",
+					"name":"About"
+				},
+				{
+					"link": "?page=contact",
+					"name": "Contact"
+				}
+			],
+			"button": [
+				{
+					"text": "Login",
+					"class": "login-button"
+				}
+			]
+		}
+	],
 	"sections": [
 		{
 			"module": "cta",
@@ -19,3 +45,6 @@
 		}
 	] 
 }
+
+
+
