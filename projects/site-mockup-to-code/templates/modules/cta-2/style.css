@@ -1,0 +1,44 @@
+.cta-2 inner-column {
+	background-color: var(--color-background-light);
+	padding-block: 2rem;
+}
+
+.cta-2 .action-buttons li a {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.cta-2 cta-text {
+	display: grid;
+	gap: 20px;
+	place-items: center;
+}
+
+.cta-2 .action-buttons {
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+@media (min-width: 575px) {
+	cta-text {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		& p {
+			max-width: 50ch;
+		}
+	}
+
+	.action-buttons {
+		flex-direction: row;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+
+}
