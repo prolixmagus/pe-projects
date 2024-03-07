@@ -1,8 +1,8 @@
 <h2 class='attention-voice'><?=$section['heading']?></h2>
 <p class='calm-voice'><?=$section['sub-heading']?></p>
-<ul class='testimonial'>
+<ul class='client-quotes'>
 	<?php foreach($section['testimonials'] as $testimonial) { ?>
-		<li>
+		<li class='client-quote-item'>
 			<ul class='ratings'>
 				<?php for ($i = 0; $i < 5; $i++) { ?>
 					<li class='star'>
@@ -11,7 +11,10 @@
 				<?php }?>
 			</ul>
 			<p class='strong-voice'><?=$testimonial['text']?></p>
-			<?php include('templates/components/icon.php') ?>
+			<employee-info>
+				<?php include('templates/components/icon.php') ?>
+				<p class='quiet-voice'><?=$testimonial['employee']?></p>
+			</employee-info>
 		</li>
 	<?php } ?>
 </ul>

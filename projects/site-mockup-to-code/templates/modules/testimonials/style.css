@@ -1,9 +1,45 @@
-.testimonial {
+.testimonials inner-column {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.client-quotes {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.client-quote-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 35ch;
+	gap: 20px;
+	padding: 1.5rem;
 }
 
 .ratings {
 	display: flex;
 	gap: 5px;
+}
+
+employee-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+@media (min-width: 700px) {
+	.client-quotes {
+	flex-direction: row;
+
+}
+
 }

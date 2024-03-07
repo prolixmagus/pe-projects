@@ -37,16 +37,15 @@
 	font-weight: 300;
 }
 
-.link-voice {
+.link-voice, .quiet-voice {
 	font-family: sans-serif;
-	font-size: .9rem;
+	font-size: .8rem;
 	color: var(--ink-light);
+}
 
-
-	&:hover {
-		color: var(--color);
-		font-weight: 700;
-	}
+.link-voice:hover {
+	color: var(--color);
+	font-weight: 700;
 }
 
 :is(.calm-voice, p, li) em {
