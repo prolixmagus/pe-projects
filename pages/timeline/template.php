@@ -26,7 +26,8 @@
 				<li>Preparing shareable rich metadata assets</li>
 				<li>Creating and exporting original graphics using Affinity 2 design software</li>
 				<li>Formatting responsive webpages for accessibility via semantic HTML, typography, and usability concerns</li>
-				<li>HTML + CSS + PHP</li>
+				<li>Managing a resilient design system using custom properties, JSON data, and PHP modules</li>
+				<li>HTML + CSS + PHP + Wordpress</li>
 			</ul>
 		</experience-gained>
 
