@@ -1,0 +1,50 @@
+.faq inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+}
+
+faq-info {
+	display: block;
+	text-align: center;
+}
+
+.question-list {
+	display: grid;
+	gap: 10px;
+}
+
+details > summary {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	&::after {
+		content:'❯';
+		color: var(--ink-light);
+	}
+}
+
+details[open] > p  {
+	margin-top: 1em;
+}
+
+.details-item {
+	border-bottom: .5px solid var(--ink-light);
+	padding: 1em;
+}
+
+@media (min-width: 575px) {
+	.faq inner-column {
+		justify-content: center;
+		align-items: center;
+	}
+
+	faq-info {
+		width: 70%;
+	}
+
+	.question-list {
+		width: 100%;
+	}
+}

@@ -106,6 +106,34 @@
 					"class": "free-quotes-button"
 				}
 			]
+		},
+		{
+			"module": "faq",
+			"section-class": "faq",
+			"heading": "Frequently Asked Questions",
+			"sub-heading": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.",
+			"details": [
+				{
+					"question": "How soon will my order ship?",
+					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+				},
+				{
+					"question": "Are there any warranty exclusions?",
+					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+				},
+				{
+					"question": "Are there any return exclusions?",
+					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+				},
+								{
+					"question": "Will I be charged for a replacement item?",
+					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+				},
+								{
+					"question": "Who would win in a fight: Derek or the Mailman?",
+					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+				}
+			]
 		}
 	] 
 }
