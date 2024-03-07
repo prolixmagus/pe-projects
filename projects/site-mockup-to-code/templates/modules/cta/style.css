@@ -3,8 +3,8 @@
 	align-items: center;
  	background-image: repeating-linear-gradient(
     -45deg,
-    #F7F9FE 0 25px,
-    #c2d0f9 25px 26px
+    var(--color-background-light) 0 25px,
+    var(--color-light) 25px 26px
   	);
 	min-height: 50vh;
 	background-position: center center;
