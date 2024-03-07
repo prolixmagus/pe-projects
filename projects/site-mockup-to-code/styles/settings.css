@@ -1,10 +1,17 @@
 html {
-	--black: #424242;
-	--white: #FFFFFF;
+/* primitive */
 
+	--black: hsl(0 0 26%);
+	--gray: hsl(0, 0%, 46%);
+	--white: hsl(0 0 100%);
+	--color-hue: 225;
+
+
+/* semantic */
 	--neutral-stuffs: gray;
-
-	--color: #3563E9;
+	--color: hsl(var(--color-hue) 80% 56%);
+	--color-background-light: hsl(var(--color-hue) 78% 98%);
+	--color-light: hsl(var(--color-hue) 82% 87%);
 
 	--shadow: rgba(0, 0, 0, 0.8);
 
@@ -13,7 +20,7 @@ html {
 
 	--paper: var(--white);
 	--ink: var(--black);
-	--fish-blue: hsl(191, 71%, 90%);
+	--ink-light: var(--gray);
 
 	--standard: 1000px;
 	--tight: 800px;
@@ -21,7 +28,5 @@ html {
 
 @media (prefers-color-scheme: dark) {
 	html {
-		--paper: #231a1a;
-		--ink: #ffffe2;
 	}
 }
