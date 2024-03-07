@@ -21,7 +21,7 @@ error_reporting(E_ALL);
 		<link rel='stylesheet' href='styles/site.css'>
 	</head>
 
-	<body>
+	<body class="<?=$page?>">
 
 	<?php include('templates/modules/page-header/template.php') ?>
 
