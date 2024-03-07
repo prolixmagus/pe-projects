@@ -4,7 +4,6 @@
 	"description": "Site Mockup to Code Challenge from Perpetual Education",
 	"page-header": [
 		{
-			"section-class": "page-header",
 			"links": [
 				{
 					"link": "?page=home",
@@ -19,13 +18,8 @@
 					"link": "?page=contact",
 					"name": "Contact"
 				}
-			],
-			"button": [
-				{
-					"text": "Login",
-					"class": "login-button"
-				}
-			]
+			], 
+			"button": "Login"
 		}
 	],
 	"sections": [
@@ -33,9 +27,7 @@
 			"module": "cta",
 			"section-class": "cta",
 			"heading": "Home",
-			"heading-class": "strong-attention-voice",
 			"text": "Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Cum dignissimos alias rerum nisi recusandae ut consectetur, ab quod placeat necessitatibus mollitia eligendi voluptatum error pariatur!",
-			"text-class": "calm-voice",
 			"actions": [
 				{
 					"text": "Get Started",
@@ -52,15 +44,13 @@
 			"section-class": "media-video",
 			"teaser": "Rhoncus, Accumsan Dictum",
 			"heading": "Etiam nulla lfulputate",
-			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
-			"video": "https://www.youtube.com/embed/6HsepgHlIFg"
+			"sub-heading": "Neque, pulvinar vestibulum non aliquam"
 		},
 		{
 			"module": "overview",
 			"section-class": "overview",
 			"heading": "Etiam Nulla Lectus Molestie At Vulputate",
 			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
-			"image": "../../images/square.jpg",
 			"article": [
 				{
 					"article-card": "article-card",
@@ -86,6 +76,22 @@
 					"article-card": "article-card",
 					"small-heading": "Sit Quam Gravite",
 					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
+				}
+			]
+		},
+				{
+			"module": "testimonials",
+			"section-class": "testimonials",
+			"heading": "What Our Clients Say",
+			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
+			"testimonials": [
+				{
+					"text": "“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”",
+					"employee": "Courtney Henry"
+				},
+				{
+					"text": "“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”",
+					"employee": "Courtney Henry"
 				}
 			]
 		}
