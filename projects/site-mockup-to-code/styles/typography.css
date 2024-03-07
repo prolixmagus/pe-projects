@@ -60,6 +60,10 @@
 	color: var(--color);
 }
 
+.weighted {
+	font-weight: 500;
+}
+
 /* these would be scoped to section or to an article element */
 /* this is just a loose setting for now */
 p + p {
