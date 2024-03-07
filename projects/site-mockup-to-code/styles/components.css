@@ -43,4 +43,11 @@
 .icon {
 	max-width: 40px;
 	flex-shrink: 0;
+	fill: var(--color);
+}
+
+.star {
+	max-width: 25px;
+	fill: var(--color);
+	flex-shrink: 0;
 }
