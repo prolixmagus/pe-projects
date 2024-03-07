@@ -1,5 +1,5 @@
 <?php foreach($pageData['page-header'] as $content) { ?>
-<header class='<?=$content['class']?>'>
+<header class='page-header'>
 	<inner-column>
 		<mast-head>
 			<a href="#" class='link logo'>
@@ -12,11 +12,9 @@
 					<div class='page-header-icon'>
 						<?php include('templates/components/page-header-icon.php')?>
 					</div>
-					<?php foreach($content['button'] as $button) { ?>
-						<a class='<?=$button['class']?>' href='#'>
-							<?=$button['text']?>
+						<a class='login-button' href='#'>
+							<?=$content['button']?>
 						</a>
-					<?php } ?>
 				</login>
 		</mast-head>
 	</inner-column>

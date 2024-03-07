@@ -3,7 +3,7 @@
 		<h2 class="attention-voice"><?=$section['heading'];?></h2>
 		<p class="calm-voice"><?=$section['sub-heading'];?></p>
 		<picture>
-			<img src="<?=$section['image']?>" />
+			<img src="images/square.jpg" />
 		</picture>
 	</company-overview>
 	<article-gallery>
