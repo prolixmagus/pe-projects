@@ -1,6 +1,3 @@
-<?php
-?>
-
 <cta-text>
 	<h2 class='strong-attention-voice'><?=$section['heading']?></h2>
 	<p class='calm-voice'><?=$section['text']?></p>
