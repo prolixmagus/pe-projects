@@ -1,44 +1,44 @@
 /* could we pull in @fonts here? */
 
 .attention-voice	{
-	font-family: sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 30px;
 }
 
 .strong-attention-voice {
-	font-family: sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 30px;
 	font-weight: 700;
 }
 
 .small-heading-voice {
-	font-family: sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1.125rem;
 	font-weight: 700;
 }
 
 .strong-voice	{
-	font-family: sans-serif;
+	font-family: Inter, sans-serif;
 	font-size:  1rem;
 	color: var(--ink);
 }
 
 .calm-voice, p, li {
-	font-family: sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1rem;
 	line-height: 1.3;
 	color: var(--ink-light);
 }
 
 .button-voice {
-	font-family: sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 1rem;
 	line-height: 1.4;
 	font-weight: 300;
 }
 
 .link-voice, .quiet-voice {
-	font-family: sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: .8rem;
 	color: var(--ink-light);
 }
