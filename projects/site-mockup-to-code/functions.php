@@ -1,6 +1,4 @@
 <?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
 
 	function getFile($path) {
 		return dirname(__FILE__) . "/" . $path;
