@@ -1,0 +1,9 @@
+.testimonial {
+	display: flex;
+	flex-direction: column;
+}
+
+.ratings {
+	display: flex;
+	gap: 5px;
+}
