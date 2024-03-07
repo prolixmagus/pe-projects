@@ -11,17 +11,6 @@
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	&::before {
-		content:'⟨';
-		margin-block: auto;
-		font-size: 2rem;
-
-	}
-	&::after {
-		content:'⟩';
-		margin-block: auto;
-		font-size: 2rem;
-	}
 }
 
 .client-quote-item {
@@ -50,6 +39,19 @@ employee-info {
 @media (min-width: 700px) {
 	.client-quotes {
 	flex-direction: row;
+	&::before {
+		content:'⟨';
+		margin-block: auto;
+		padding-inline: 1rem;
+		font-size: 2rem;
+
+	}
+	&::after {
+		content:'⟩';
+		margin-block: auto;
+		font-size: 2rem;
+		padding-inline: 1rem;
+	}
 
 }
 
