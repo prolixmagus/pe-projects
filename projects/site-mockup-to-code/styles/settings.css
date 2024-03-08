@@ -2,7 +2,8 @@ html {
 /* primitive */
 
 	--black: hsl(0 0 26%);
-	--gray: hsl(0, 0%, 46%);
+	--gray: hsl(0 0 46%);
+	--gray-opaque: hsl(0 0 46% / .3);
 	--white: hsl(0 0 100%);
 	--color-hue: 225;
 
@@ -12,8 +13,10 @@ html {
 	--color: hsl(var(--color-hue) 80% 56%);
 	--color-background-light: hsl(var(--color-hue) 78% 98%);
 	--color-light: hsl(var(--color-hue) 82% 87%);
+	--color-light-opaque: hsl(var(--color-hue) 82% 87% / .3);
+	--color-dark: hsl(var(--color-hue) 77% 52%);
 
-	--shadow: rgba(0, 0, 0, 0.8);
+	--shadow: rgba(0 0 0 / 0.8);
 
 	--corners: 4px; /* or whatevers */
 	--mobile-padding: 5px;
@@ -21,9 +24,10 @@ html {
 	--paper: var(--white);
 	--ink: var(--black);
 	--ink-light: var(--gray);
+	--ink-light-opaque: var(--gray-opaque);
 
-	--standard: 1000px;
-	--tight: 800px;
+	--standard: 950px;
+	--tight: 700px;
 }
 
 @media (prefers-color-scheme: dark) {
