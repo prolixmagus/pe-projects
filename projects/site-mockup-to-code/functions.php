@@ -4,15 +4,6 @@
 		return dirname(__FILE__) . "/" . $path;
 	}
 
-	function getPage($page) {
-		$filePath = "templates/pages/$page/template.php";
-		if ( file_get_contents($filePath) )  {
-			include($filePath);
-		} else {
-			echo "No page here!";
-		}
-	}
-
 	function readPageData($page) {
 		$filePath = "data/pages/$page.json";
 		if ( file_get_contents($filePath) ) {
