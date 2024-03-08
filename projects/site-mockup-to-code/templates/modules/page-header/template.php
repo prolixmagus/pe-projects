@@ -1,7 +1,7 @@
 <?php foreach($pageData['page-header'] as $content) { ?>
 	<inner-column>
 		<mast-head>
-			<a href="#" class='link logo'>
+			<a href="#" class='logo'>
 				<?php include('templates/components/logo.php')?>
 			</a>
 			<nav class='page-menu'>

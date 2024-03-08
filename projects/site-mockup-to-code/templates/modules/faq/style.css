@@ -30,7 +30,7 @@ details[open] > p  {
 }
 
 .details-item {
-	border-bottom: .5px solid var(--ink-light);
+	border-bottom: 1px solid var(--ink-light-opaque);
 	padding: 1em;
 }
 
