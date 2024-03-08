@@ -4,7 +4,6 @@
 	"description": "Site Mockup to Code Challenge from Perpetual Education",
 	"page-header": [
 		{
-			"section-class": "page-header",
 			"links": [
 				{
 					"link": "?page=home",
@@ -19,13 +18,8 @@
 					"link": "?page=contact",
 					"name": "Contact"
 				}
-			],
-			"button": [
-				{
-					"text": "Login",
-					"class": "login-button"
-				}
-			]
+			], 
+			"button": "Login"
 		}
 	],
 	"sections": [

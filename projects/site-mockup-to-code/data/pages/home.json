@@ -125,17 +125,102 @@
 					"question": "Are there any return exclusions?",
 					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
 				},
-								{
+				{
 					"question": "Will I be charged for a replacement item?",
 					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
 				},
-								{
+				{
 					"question": "Who would win in a fight: Derek or the Mailman?",
 					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
 				}
 			]
 		}
-	] 
+	],
+	"page-footer": [
+		{
+			"product-links": [
+				{
+					"heading": "Product",
+					"links": [
+						{
+							"name": "Beith"
+						},
+						{
+							"name": "Muir"
+						},
+						{
+							"name": "Quert"
+						},
+						{
+							"name": "Coll"
+						},
+						{
+							"name": "Duir"
+						},
+						{
+							"name": "Gort"
+						}
+					]
+				}
+			],
+			"information-links": [
+				{
+					"heading": "Information",
+					"links": [
+						{
+							"name": "Beith"
+						},
+						{
+							"name": "Muir"
+						},
+						{
+							"name": "Quert"
+						}
+					]
+				}
+			],
+			"company-links": [
+				{
+					"heading": "Company",
+					"links": [
+						{
+							"name": "Beith"
+						},
+						{
+							"name": "Muir"
+						},
+						{
+							"name": "Quert"
+						},
+						{
+							"name": "Coll"
+						}
+					]
+				}
+			],
+			"subscribe-section": [
+				{
+					"heading": "Subscribe",
+					"fine-print": "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Non reprehenderit neque aperiam eos ea. Et, nam illo fugit amet magnam nihil recusandae laboriosam quaerat accusamus maxime nemo, corporis assumenda repudiandae."
+				}
+			],
+			"legal-links": [
+				{
+					"name": "Terms",
+					"link": "#"
+				},
+				{
+					"name":"Privacy",
+					"link": "#"					
+				},
+				{
+					"name": "Cookies",
+					"link": "#"					
+				}
+			]
+		}
+	]
+
 }
 
 
