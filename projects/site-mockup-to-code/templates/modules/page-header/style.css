@@ -1,6 +1,14 @@
+.about .page-header inner-column {
+	background-color: var(--color);
+}
 
 .page-header inner-column {
 	padding: var(--mobile-padding);
+	.logo {
+	max-width: 80px;
+	fill: var(--color);
+	align-self: center;
+	}
 }
 
 .page-menu ul {
@@ -10,11 +18,6 @@
 	gap: 20px;
 }
 
-.page-header .logo {
-	max-width: 80px;
-	fill: var(--color);
-	align-self: center;
-}
 
 mast-head {
 	display: grid;

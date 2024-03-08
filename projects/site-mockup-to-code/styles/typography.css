@@ -56,8 +56,12 @@
 	font-weight: 700;
 }
 
-.active {
+.home .active, .contact .active {
 	color: var(--color);
+}
+
+.about .active {
+	color: var(--paper);
 }
 
 .weighted {

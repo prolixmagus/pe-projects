@@ -7,8 +7,7 @@
 			"links": [
 				{
 					"link": "?page=home",
-					"name": "Home",
-					"class": "active"
+					"name": "Home"
 				},
 				{
 					"link": "?page=about",
@@ -16,7 +15,8 @@
 				},
 				{
 					"link": "?page=contact",
-					"name": "Contact"
+					"name": "Contact",
+					"class": "active"
 				}
 			], 
 			"button": "Login"
