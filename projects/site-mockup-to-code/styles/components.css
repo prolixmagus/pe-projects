@@ -75,3 +75,19 @@
 	fill: var(--color);
 	flex-shrink: 0;
 }
+
+.email-input {
+	display: flex;
+	& input:focus {
+		outline: none;
+	}
+	& button {
+	background-color: var(--color);
+	border: none;
+	padding: 10px 15px;
+	color: var(--paper);
+	transform: translate(-5px);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	}
+}
