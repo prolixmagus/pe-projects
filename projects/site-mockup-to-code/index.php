@@ -22,24 +22,25 @@ error_reporting(E_ALL);
 	</head>
 
 	<body class="<?=$page?>">
+		<header class='page-header'>
+			<?php include('templates/modules/page-header/template.php') ?>
+		</header>
 
-	<?php include('templates/modules/page-header/template.php') ?>
+		<main class="page-content">
+			<?php
+				foreach ($pageData['sections'] as $section) { ?>
+				<section class='<?=$section['section-class']?>'>
+					<inner-column>
+						<?php include("templates/modules/" . $section['module'] . "/template.php");?>
+					</inner-column>
+				</section>
+			<?php } ?>
 
-	<main class="page-content">
-		<?php
-			foreach ($pageData['sections'] as $section) { ?>
-			<section class='<?=$section['section-class']?>'>
-				<inner-column>
-					<?php include("templates/modules/" . $section['module'] . "/template.php");?>
-				</inner-column>
-			</section>
-		<?php } ?>
+		</main>
 
-	</main>
-
-	<footer>
-		<p>hi</p>
-	</footer>
+		<footer class='page-footer'>
+			<?php include('templates/modules/page-footer/template.php') ?>
+		</footer>
 
 	</body>
 </html>

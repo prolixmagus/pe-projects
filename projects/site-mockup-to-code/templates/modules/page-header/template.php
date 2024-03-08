@@ -1,5 +1,4 @@
 <?php foreach($pageData['page-header'] as $content) { ?>
-<header class='page-header'>
 	<inner-column>
 		<mast-head>
 			<a href="#" class='link logo'>
@@ -18,5 +17,4 @@
 				</login>
 		</mast-head>
 	</inner-column>
-</header>
 <?php } ?>
