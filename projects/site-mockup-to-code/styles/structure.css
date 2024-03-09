@@ -8,7 +8,7 @@ body {
 main {
 	flex-grow: 1; /* fill up available space + push the footer down */
 	& section {
-		padding-block: 1.5rem;
+		padding-block: 2rem;
 		padding-inline: var(--mobile-padding);
 	}
 }
