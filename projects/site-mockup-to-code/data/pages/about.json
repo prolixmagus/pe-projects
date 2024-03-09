@@ -26,16 +26,12 @@
 		{
 			"module": "cta",
 			"section-class": "cta",
-			"heading": "Home",
+			"heading": "About",
 			"text": "Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Cum dignissimos alias rerum nisi recusandae ut consectetur, ab quod placeat necessitatibus mollitia eligendi voluptatum error pariatur!",
 			"actions": [
 				{
 					"text": "Get Started",
 					"class": "cta-button"
-				},
-				{
-					"text": "Start Free Trial",
-					"class": "cta-button white"
 				}
 			]
 		},
@@ -44,7 +40,13 @@
 			"section-class": "media-video",
 			"teaser": "Rhoncus, Accumsan Dictum",
 			"heading": "Etiam nulla lfulputate",
-			"sub-heading": "Neque, pulvinar vestibulum non aliquam"
+			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
+			"actions": [
+				{
+					"text": "Learn More",
+					"class": "media-link"
+				}
+			]
 		},
 		{
 			"module": "overview",
@@ -53,27 +55,26 @@
 			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
 			"article": [
 				{
-					"article-card": "article-card",
 					"small-heading": "Sit Quam Gravite",
 					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
 				},
 				{
-					"article-card": "article-card",
 					"small-heading": "Sit Quam Gravite",
 					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
 				},
 				{
-					"article-card": "article-card",
 					"small-heading": "Sit Quam Gravite",
 					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
 				},
 				{
-					"article-card": "article-card",
 					"small-heading": "Sit Quam Gravite",
 					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
 				},
 				{
-					"article-card": "article-card",
+					"small-heading": "Sit Quam Gravite",
+					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
+				},
+				{
 					"small-heading": "Sit Quam Gravite",
 					"article-text": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
 				}
@@ -82,28 +83,29 @@
 		{
 			"module": "testimonials",
 			"section-class": "testimonials",
-			"heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
+			"heading": "What Our Clients Say",
 			"sub-heading": "Neque, pulvinar vestibulum non aliquam",
 			"testimonials": [
 				{
 					"text": "“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”",
-					"employee": "Courtney Henry"
-				},
-				{
-					"text": "“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”",
-					"employee": "Courtney Henry"
+					"employee": "Courtney Henry",
+					"role": "Marketing Coordinator"
 				}
 			]
 		},
 		{
 			"module": "cta-2",
 			"section-class": "cta-2",
-			"heading": "Home",
+			"heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
 			"text": "Rhoncus, Accumsan Dictum",
 			"actions": [
 				{
 					"text": "Get free quotes",
 					"class": "free-quotes-button"
+				},
+				{
+					"text": "Free Sign Up",
+					"class": "free-quotes-button white"
 				}
 			]
 		},
@@ -115,23 +117,23 @@
 			"details": [
 				{
 					"question": "How soon will my order ship?",
-					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+					"answer": "Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam."
 				},
 				{
 					"question": "Are there any warranty exclusions?",
-					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+					"answer": "Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam."
 				},
 				{
 					"question": "Are there any return exclusions?",
-					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+					"answer": "Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam."
 				},
 				{
 					"question": "Will I be charged for a replacement item?",
-					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+					"answer": "Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam."
 				},
 				{
 					"question": "Who would win in a fight: Derek or the Mailman?",
-					"answer": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+					"answer": "Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam."
 				}
 			]
 		}
