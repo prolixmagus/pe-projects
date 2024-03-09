@@ -8,10 +8,23 @@
 	gap: 25px;
 }
 
+.about video-heading .icon {
+	max-width: 60px;
+}
+
+.media-link {
+	color: var(--color);
+	display: flex;
+	gap: 10px;
+	&::after {
+		content: '➡︎'
+	}
+}
+
 video-heading {
 	display: grid;
-	gap: 15px;
-	& p:nth-child(3) {
+	gap: 20px;
+	& p{
 		margin-top: 0;
 	}
 }
@@ -23,8 +36,7 @@ iframe {
 
 @media (min-width: 575px) {
 	video-heading {
-		text-align: center;
-		justify-content: center;
+		place-items: center;
 	}
 
 	iframe {

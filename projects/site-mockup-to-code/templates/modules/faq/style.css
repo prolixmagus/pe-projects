@@ -15,18 +15,45 @@ faq-info {
 	gap: 10px;
 }
 
-details > summary {
+.home details > summary {
 	display: flex;
 	justify-content: space-between;
 	cursor: pointer;
 	&::after {
-		content:'❯';
+		content:'>';
 		color: var(--ink-light);
 	}
 }
 
+.home details[open] > summary::after {
+	content: '∧';
+	color: var(--ink-light);
+}
+
+.about details > summary {
+	display: flex;
+	gap: 10px;
+	cursor: pointer;
+	&::before {
+		content:'+';
+		color: var(--color);
+	}
+}
+
+.about details[open] > summary::before {
+	content: '−';
+	color: var(--color);
+}
+
 details[open] > p  {
 	margin-top: 1em;
+}
+
+.about details[open] > p {
+	border-left: 2px solid var(--color);
+	margin-left: 2em;
+	padding-inline: 1em;
+
 }
 
 .details-item {

@@ -18,10 +18,23 @@ article-gallery {
 	gap: 20px;
 }
 
-.article-card {
+.about article-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.home .article-card {
 	display: flex;
 	align-items: flex-start;
 	gap: 15px;
+}
+
+.about .article-card {
+	border: 1px solid var(--ink-light-opaque);
+	border-radius: var(--corners);
+	padding: 1em;
+	display: grid;
+	gap: 10px;
 }
 
 @media (min-width: 575px) {
@@ -37,7 +50,7 @@ article-gallery {
 }
 
 @media (min-width: 700px) {
-	overview-container {
+	.home overview-container {
 		flex-direction: row;
 		& picture {
 			max-width: 400px;

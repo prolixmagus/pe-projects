@@ -1,5 +1,5 @@
 <faq-info>
-	<h2 class='attention-voice'><?=$section['heading']?></h2>
+	<h2 class='loud-voice'><?=$section['heading']?></h2>
 	<p class='calm-voice'><?=$section['sub-heading']?></p>
 </faq-info>
 <ul class='question-list'>

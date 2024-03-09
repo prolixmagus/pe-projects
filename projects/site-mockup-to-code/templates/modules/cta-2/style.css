@@ -3,6 +3,14 @@
 	padding-block: 3rem;
 }
 
+.about .cta-2 cta-text .calm-voice {
+	font-size: 1rem
+}
+
+.cta-2 .action-buttons li {
+	max-width: 200px;
+}
+
 .cta-2 .action-buttons li a {
 	display: flex;
 	gap: 20px;
@@ -16,7 +24,7 @@
 }
 
 .cta-2 .action-buttons {
-	flex-direction: row;
+	flex-direction: column
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
@@ -37,8 +45,6 @@
 	.action-buttons {
 		flex-direction: row;
 		gap: 20px;
-		align-items: center;
-		justify-content: center;
 	}
 
 }

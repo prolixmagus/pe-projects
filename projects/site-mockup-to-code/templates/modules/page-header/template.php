@@ -2,7 +2,7 @@
 	<inner-column>
 		<mast-head>
 			<a href="#" class='logo'>
-				<?php include('templates/components/logo.php')?>
+				<h1><?php include('templates/components/logo.php')?></h1>
 			</a>
 			<nav class='page-menu'>
 				<?php include('templates/partials/page-header-nav.php')?>

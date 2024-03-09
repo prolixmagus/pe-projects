@@ -1,5 +1,5 @@
 <cta-text>
-	<h2 class='strong-attention-voice'><?=$section['heading']?></h2>
+	<h2 class='strong-loud-voice'><?=$section['heading']?></h2>
 	<p class='calm-voice'><?=$section['text']?></p>
 </cta-text>
 <ul class='action-buttons'>
@@ -10,3 +10,4 @@
 	</li>
 	<?php } ?>
 </ul>
+<?php include('templates/components/slice.php')?>

@@ -1,13 +1,16 @@
-.about .page-header inner-column {
-	background-color: var(--color);
-}
-
 .page-header inner-column {
 	padding: var(--mobile-padding);
 	.logo {
 	max-width: 80px;
 	fill: var(--color);
 	align-self: center;
+	}
+}
+
+.about .page-header {
+	background-color: var(--color);
+	.logo {
+		fill: var(--paper);
 	}
 }
 

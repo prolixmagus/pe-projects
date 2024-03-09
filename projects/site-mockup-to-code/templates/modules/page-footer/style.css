@@ -29,6 +29,37 @@
 	}
 }
 
+.about .page-footer {
+	color: var(--white);
+	background-color: var(--white);
+}
+
+.about .page-footer inner-column {
+	padding: var(--mobile-padding);
+	padding-top: 10vh;
+}
+
+.about .page-footer {
+	& .logo {
+	max-width: 80px;
+	fill: var(--color);
+	}
+	& .icon {
+	fill: var(--ink);
+	stroke-width: .5px;
+	}
+	& .calm-voice {
+		color: var(--ink);
+		font-weight: 500;
+		font-size: .9rem;
+	}
+	& li {
+		color: var(--ink-light);
+		font-weight: 400;
+		font-size: .9rem;
+	}
+}
+
 site-map {
 	display: block;
 	display: grid;
@@ -71,17 +102,34 @@ site-map h3 {
 	}
 }
 
+.about .subscribe {
+	background-color: var(--color-light);
+	& h3 {
+		color: var(ink);
+	}
+	& p {
+		color: var(--ink-light);
+		font-size: .7rem;
+		margin-top: 1rem;
+	}
+}
+
 .footer-masthead {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding-block: 2rem;
 	& .link-voice {
-	color: var(--color-light);
+	color: var(--white);
 	}
 	& .socials {
 		display: flex;
 		gap: 10px;
 	}
+}
+
+.about .footer-masthead .link-voice {
+	color: var(--ink);
 }
 
 @media (min-width: 810px) {

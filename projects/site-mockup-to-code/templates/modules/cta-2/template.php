@@ -1,6 +1,6 @@
 <cta-text>
 	<p class='calm-voice'><?=$section['text']?></p>
-	<h2 class='strong-attention-voice'><?=$section['heading']?></h2>
+	<h2 class='loud-voice'><?=$section['heading']?></h2>
 </cta-text>
 <ul class='action-buttons'>
 	<?php foreach($section['actions'] as $action) { ?>

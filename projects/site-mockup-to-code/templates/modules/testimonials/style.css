@@ -11,6 +11,7 @@
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	gap: 1.5rem;
 }
 
 .client-quote-item {
@@ -20,7 +21,7 @@
 	align-items: center;
 	max-width: 35ch;
 	gap: 20px;
-	padding: 1.5rem;
+
 }
 
 .ratings {
@@ -28,12 +29,36 @@
 	gap: 5px;
 }
 
+.about .client-quote-item {
+	max-width: 100%;
+	& > p {
+		font-size: clamp(20px, 5vw, 40px);
+	}
+}
+
 employee-info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 5px;
+	gap: 10px;
+	& .employee-name {
+		font-size: 18px;
+	}
+	& .employee-info-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 5px;
+		& p {
+			margin-top: 0;
+		}
+	}
+}
+
+
+.about employee-info {
+	flex-direction: row;
 }
 
 @media (min-width: 700px) {
