@@ -14,6 +14,11 @@
 	text-align: center;
 }
 
+.about .login-button {
+	color: var(--color);
+	background-color: var(--paper);
+}
+
 .cta-button {
 	max-width: 200px;
 	display: block;
@@ -62,6 +67,13 @@
 	max-width: 55px;
 	gap: 5px;
 	flex-shrink: 0;
+}
+
+.about .page-header-icon {
+	fill: var(--white);
+	& p {
+		color: var(--white);
+	}
 }
 
 .icon {
