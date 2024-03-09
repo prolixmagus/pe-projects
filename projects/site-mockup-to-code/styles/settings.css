@@ -19,7 +19,7 @@ html {
 	--shadow: rgba(0 0 0 / 0.8);
 
 	--corners: 4px; /* or whatevers */
-	--mobile-padding: 5px;
+	--mobile-padding: 10px;
 
 	--paper: var(--white);
 	--ink: var(--black);
