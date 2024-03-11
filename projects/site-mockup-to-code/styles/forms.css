@@ -1,8 +1,36 @@
-.email {
+.email-input input {
 	font-family: "Inter", sans-serif;
 	padding: .5em;
 	border-radius: 5px;
+	border: transparent;
+}
+
+.email-input {
+	display: flex;
+	& input:focus {
+		outline: none;
+	}
+	& .email-submit-button {
+	background-color: var(--color);
 	border: none;
+	padding: 10px 15px;
+	color: var(--paper);
+	transform: translate(-5px);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	}
+}
 
+.contact .cta .email-input {
+	& input {
+		background-color: var(--color-dark);
+		font-size: 1rem;
+		color: white;
+	&::placeholder {
+		color: var(--color-light);
+	}
+}
 
+.contact .cta-2 .email-input {
+	border: 1px solid black;
 }

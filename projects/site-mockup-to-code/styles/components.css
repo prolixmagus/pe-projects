@@ -36,6 +36,11 @@
 	}
 }
 
+.contact .cta-button {
+	border-radius: 5px;
+}
+
+
 .free-quotes-button {
 	max-width: 200px;
 	display: block;
@@ -51,14 +56,14 @@
 	&::after {
 		content: '⟩';
 	}
-
-	&.white {
-		background-color: var(--white);
-		color: var(--color);
-		border: 1px solid var(--color);
-	}
-
 }
+
+
+.white {
+	background-color: var(--white);
+	color: var(--color);
+	border: 1px solid var(--color);
+	}
 
 .page-header-icon {
 	display: flex;
@@ -93,7 +98,7 @@
 	& input:focus {
 		outline: none;
 	}
-	& button {
+	& .email-submit-button {
 	background-color: var(--color);
 	border: none;
 	padding: 10px 15px;
@@ -102,4 +107,16 @@
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	}
+}
+
+.contact .cta .email-input {
+	& input {
+		background-color: var(--color-dark);
+		font-size: 1rem;
+		color: white;
+	&::placeholder {
+		color: var(--color-light);
+	}
+}.contact .email {
+	border: 
 }

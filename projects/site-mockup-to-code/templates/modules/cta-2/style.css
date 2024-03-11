@@ -1,14 +1,36 @@
-.cta-2 inner-column {
+.cta-2 cta-wrapper {
+	display: block;
 	background-color: var(--color-background-light);
 	padding-block: 3rem;
+}
+
+.contact cta-wrapper {
+	background-color: var(--paper);
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 20px;
+	& picture {
+		width: 30%;
+	}
 }
 
 .about .cta-2 cta-text .calm-voice {
 	font-size: 1rem
 }
 
+.contact cta-text p {
+	margin-top: 0;
+}
+
+.contact cta-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .cta-2 .action-buttons li {
-	max-width: 200px;
+	max-width: 400px;
 }
 
 .cta-2 .action-buttons li a {
@@ -23,11 +45,20 @@
 	place-items: center;
 }
 
+.contact .cta-2 cta-text {
+	display: grid;
+}
+
 .cta-2 .action-buttons {
-	flex-direction: column
+	flex-direction: column;
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
+}
+
+.contact .cta-2 .action-buttons {
+	flex-direction: column;
+	gap: 10px;
 }
 
 
@@ -42,9 +73,20 @@
 		}
 	}
 
+	.contact .cta-2 cta-text {
+		justify-content: center;
+		align-items: center;
+	}
+
 	.action-buttons {
 		flex-direction: row;
 		gap: 20px;
 	}
 
+	.contact .cta-2 .action-buttons {
+		flex-direction: row;
+		& .email-input {
+			margin-right: 90px;
+		}
+	}
 }

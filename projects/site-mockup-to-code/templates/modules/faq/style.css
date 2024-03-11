@@ -1,8 +1,9 @@
-.faq inner-column {
+.faq faq-content{
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-
+	justify-content: center;
+	align-items: center;
 }
 
 faq-info {
@@ -10,12 +11,17 @@ faq-info {
 	text-align: center;
 }
 
+.contact faq-info {
+	text-align: unset;
+}
+
 .question-list {
 	display: grid;
 	gap: 10px;
 }
 
-.home details > summary {
+.home details > summary, 
+.contact details > summary {
 	display: flex;
 	justify-content: space-between;
 	cursor: pointer;
@@ -25,7 +31,8 @@ faq-info {
 	}
 }
 
-.home details[open] > summary::after {
+.home details[open] > summary::after,
+.contact details[open] > summary::after,{
 	content: '∧';
 	color: var(--ink-light);
 }
@@ -72,6 +79,13 @@ details[open] > p  {
 	}
 
 	.question-list {
+		width: 100%;
+	}
+
+	.contact faq-content {
+	flex-direction: row;
+	justify-content: stretch;
+	& .question-list {
 		width: 100%;
 	}
 }

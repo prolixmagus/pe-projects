@@ -8,7 +8,7 @@ overview-container {
 company-overview {
 	display: grid;
 	gap: 20px;
-	& p:nth-child(2) {
+	& p {
 		margin-top: 0;
 	}
 }
@@ -18,7 +18,7 @@ article-gallery {
 	gap: 20px;
 }
 
-.about article-gallery {
+.about article-gallery, .contact article-gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
@@ -29,12 +29,18 @@ article-gallery {
 	gap: 15px;
 }
 
-.about .article-card {
+.about .article-card, .contact .article-card {
 	border: 1px solid var(--ink-light-opaque);
 	border-radius: var(--corners);
 	padding: 1em;
 	display: grid;
 	gap: 10px;
+}
+
+.contact .article-card {
+	border: unset;
+	place-items: center;
+	text-align: center;
 }
 
 @media (min-width: 575px) {

@@ -1,5 +1,8 @@
 <overview-container>
 	<company-overview>
+		<?php if ($page == 'contact') { ?>
+			<p class="calm-voice"><?=$section['teaser'];?></p>
+		<?php } ?>
 		<h2 class="loud-voice"><?=$section['heading'];?></h2>
 		<p class="calm-voice"><?=$section['sub-heading'];?></p>
 		<?php if ($page == 'home') { ?>

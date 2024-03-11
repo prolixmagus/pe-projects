@@ -16,6 +16,15 @@
 	position: relative;
 }
 
+.contact .cta {
+	background-color: var(--color);
+	background-image: unset;
+	color: var(--white);
+	& .calm-voice {
+		color: var(--white);
+	}
+}
+
 .slice {
 	position: absolute;
 	bottom: 0;
