@@ -85,13 +85,17 @@ function displayCode($code) {
 
 // For formatting decimals to the hundredths place
 
-function formatDecimals($number){
+function formatDecimals($number) {
 	$decimalPosition = strpos(strval($number), ".");
 	if ($decimalPosition !== false) {
 		return number_format($number, 2, '.', '');
 	} else {
 		return $number;
 	}
+}
+
+function formatMoney($money){
+	return number_format($money, 2, '.', '');
 }
 
 ?>
