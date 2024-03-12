@@ -1,4 +1,6 @@
-
+<?php 
+$exercises = read(getFile("data/exercises-database.json"));
+?>
 
 <?php
 
