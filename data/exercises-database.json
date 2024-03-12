@@ -43,5 +43,10 @@
 		"id": 9,
 		"name": "Paint Calculator",
 		"slug": "paint-calculator-form"
+	},
+	{
+		"id": 10,
+		"name": "Self-Checkout",
+		"slug": "self-checkout-form"
 	}
 ]
