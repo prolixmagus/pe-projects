@@ -6,12 +6,12 @@ $exercises = read(getFile("data/exercises-database.json"));
 
 //get correct exercise
 
-function getExerciseNameById($id) {
+function getExerciseNameBySlug($slug) {
 	//get the exercises from the database
 	$exercises = getAllExercises();
 	//find the right one by id
 	foreach ( $exercises as $exercise ) {
-		if ( $_GET['id'] == $exercise["id"] ) {
+		if ( $_GET['slug'] == $exercise["slug"] ) {
 			return $exercise["slug"]; // slug
 		}
 	} 
@@ -19,7 +19,7 @@ function getExerciseNameById($id) {
 	return false;
 }
 
-$exercise = getExerciseNameById($_GET['id']);
+$exercise = getExerciseNameBySlug($_GET['slug']);
 
 ?>
 

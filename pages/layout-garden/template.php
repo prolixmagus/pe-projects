@@ -18,7 +18,7 @@ foreach ($layout_database['sections'] as $section) { ?>
 	<section class='module-showcase <?=$section['module']?>'>
 		
 		<case-study-wrapper>
-			<a class='case-study-link quiet-voice' href="?page=layout-garden-single&id=<?=$section['id']?>">
+			<a class='case-study-link quiet-voice' href="?page=layout&slug=<?=$section['slug']?>">
 					Case Study
 			</a>
 		</case-study-wrapper>

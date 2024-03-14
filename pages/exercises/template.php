@@ -16,7 +16,7 @@ $exercises = read(getFile("data/exercises-database.json"));
 		<ol class='project-list'>
 			<?php foreach($exercises as $exercise) { ?>
 				<li class="exercise">
-					<a href="?page=exercise&id=<?=$exercise['id']?>">
+					<a href="?page=exercise&slug=<?=$exercise['slug']?>">
 						<?=$exercise["name"]?>
 					</a>
 				</li>

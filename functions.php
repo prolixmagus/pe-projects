@@ -37,14 +37,6 @@ function delete($database, $data_id) {
 	return $filtered;
 	}
 
-function getItemById($database, $id_to_match) {
-	foreach ($database as $data) {
-		if ($data['id'] == $id_to_match) {
-		return $data;
-		}
-	}
-}
-
 // reading database for exercises for programmers files
 
 function getAllExercises() {
@@ -60,6 +52,14 @@ function getExerciseTemplate($name) {
 
 function getLayoutGardenTemplate($module) {
 	include("modules/layout-garden/" . $module . "/template.php");
+}
+
+function getLayoutBySlug($database, $slug_to_match) {
+	foreach ($database as $data) {
+		if ($data['slug'] == $slug_to_match) {
+			return $data;
+		}
+	}
 }
 
 // for linking to top level files on local server
