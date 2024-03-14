@@ -1,7 +1,7 @@
 <?php
 	$layout_database = read('data/layout-garden-database.json');
 
-	$section = getItemById($layout_database['sections'], $_GET['id']);
+	$section = getLayoutBySlug($layout_database['sections'], $_GET['slug']);
 
 	$module = $section['module'];
 ?>
