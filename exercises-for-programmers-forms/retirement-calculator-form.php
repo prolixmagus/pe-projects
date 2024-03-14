@@ -4,7 +4,7 @@
 	<form-explanation>
 		<inner-column>
 			<h2 class="form-title"><a class="refresh" href="?">Retirement Calculator</a></h2>
-			<p class="calm-voice">[[Insert Explanation]]</p>
+			<p class="calm-voice">Aside from looking wistfully into the future, this exercise was designed to solidify a separation of concerns when programming: keeping input, calculations, and processing separate (through functions, classes, or objects). I'm just hoping to make it to next year!</p>
 		</inner-column>
 	</form-explanation>
 

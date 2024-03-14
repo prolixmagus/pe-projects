@@ -4,35 +4,35 @@
 	"sections": [
 		{
 			"module": "fly-fishing-grid",
-			"id": 1
+			"slug": "fly-fishing-grid"
 		},
 		{
 			"module": "graphic-diptych",
-			"id": 2
+			"slug": "graphic-diptych"
 		},
 		{
 			"module": "announcement-grid",
-			"id": 3
+			"slug": "announcement-grid"
 		},
 		{
 			"module": "cta-overlap",
-			"id": 4
+			"slug": "cta-overlap"
 		},
 		{
 			"module": "takeout-contact-form",
-			"id": 5
+			"slug": "takeout-contact-form"
 		},
 		{
 			"module": "day-1-grid",
-			"id": 6
+			"id": "day-1-grid"
 		},
 		{
 			"module": "day-2-grid",
-			"id": 7
+			"id": "day-2-grid"
 		},
 		{
 			"module": "day-3-grid",
-			"id": 8
+			"id": "day-3-grid"
 		}
 	] 
 }

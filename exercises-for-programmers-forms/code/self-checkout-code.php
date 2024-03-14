@@ -49,18 +49,4 @@ $item3 = [
 	$total = $salesTax + $subtotal;
 	$total = formatMoney($total);
 
-
-	if (isset ($_POST['clear']) ) {
-		$item1 = '';
-		$item2 = '';
-		$item3 = '';
-		$amount1 = '';
-		$amount2 = '';
-		$amount3 = '';
-		$price1 = '';
-		$price2 = '';
-		$price3 = '';
-		$subtotal = '';
-		$total = '';
-		$salesTax = '';
-	}
+?>

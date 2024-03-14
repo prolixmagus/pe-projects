@@ -5,7 +5,7 @@
 	<form-explanation>
 		<inner-column>
 			<h2 class="form-title"><a class="refresh" href="?">Self-Checkout</a></h2>
-			<p class="calm-voice">Exercise explanation</p>
+			<p class="calm-voice">This exercise's challenge was to work with multiple inputs and to calculate, as well as display, currency values with accurately. It can be a simple form input or it can be an application running on many self-checkout stations in grocery stores - perhaps there is a CRUD version in the future?</p>
 		</inner-column>
 	</form-explanation>
 
