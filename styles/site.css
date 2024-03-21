@@ -176,9 +176,6 @@ li a:visited, p a:visited {
 }
 
 @media (min-width: 540px) {
-	.project-list {
-		grid-template-columns: repeat(2, 1fr);
-	}
 
 	.takeout-form {
 		grid-template-columns: repeat(2, 1fr);
@@ -218,11 +215,7 @@ li a:visited, p a:visited {
 
 	.header-menu {
 		gap: 2.5rem;
-	}
-
-	.project-list {
-		grid-template-columns: repeat(3, 1fr);
-	}
+	} 
 
 	.seaweed.blue {
 		max-width: 150px;
@@ -267,6 +260,7 @@ li a:visited, p a:visited {
 		left: 250px;
 		z-index: -1;
 	}
+}
 
 @media (min-width: 700px) {
 
@@ -317,12 +311,6 @@ li a:visited, p a:visited {
 
 	.fly-fishing-grid li {
 		padding-inline: 20px;
-	}
-}
-
-@media (min-width: 860px) {
-		.project-list {
-		grid-template-columns: repeat(4, 1fr);
 	}
 }
 

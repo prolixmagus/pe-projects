@@ -1,0 +1,95 @@
+.preview-banner inner-column{
+	max-width: 600px;
+}
+preview-banner {
+	display: grid;
+	grid-template-columns: .5fr repeat(10, 1fr) .5fr;
+	background: linear-gradient(to right, #17D8D6 5%, #029297 30%, black);
+	&:hover {
+			border: 3px solid #3AFFFF;
+	}
+}
+
+
+.logo-placeholder{
+	max-width: 200px;
+	opacity: .3;
+}
+
+/*.small-logo-placeholder {
+	max-width: 30px;
+	fill: green;
+}*/
+
+preview-banner .rank-number {
+	display: block;
+	grid-column: 3 / 6;
+	grid-row: 1;
+	margin-block: auto;
+	max-width: 60px;
+}
+
+preview-banner picture {
+	grid-column: 6 / 11;
+	grid-row: 1;
+	max-width: 300px;
+	align-self: center;
+}
+
+
+show-info {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	grid-column: 2 / 12;
+	grid-row: 1;
+	z-index: 1;
+	align-self: end;
+	text-transform: uppercase;
+	color: #FAF9F6;
+	font-weight: 700;
+	font-size: 1rem;
+	font-family: arial;
+	& h1 {
+		font-size: clamp(1.5rem, 8vw, 3rem);
+		font-family: "Revue", sans-serif;
+		text-shadow: 5px 2.5px gray;
+	}
+	& h2 {
+		letter-spacing: .05em;
+		font-weight: 700;
+	}
+	& .tv-categories {
+	display: flex;
+	flex-direction: row;
+	padding-block: 20px;
+		& li {
+		text-transform: none;
+		color: #FAF9F6;
+		font-weight: 500;
+		font-size: .7rem;
+		}
+		& li:nth-child(1)::after, li:nth-child(2)::after {
+			content: '•';
+			padding-inline: 2px;
+		}
+	}
+/*	& .small-logo-placeholder {
+		position: absolute;
+		bottom: 10px;
+		right: 20px;
+	}
+}*/
+
+@media (max-width: 400px) {
+	preview-banner .rank-number {
+	max-width: 30px;
+	}
+
+	show-info {
+		& h1 {
+			font-size: ;
+		}
+	}
+}
