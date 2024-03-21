@@ -18,6 +18,9 @@ $exercises = read(getFile("data/exercises-database.json"));
 				<li class="exercise">
 					<a href="?page=exercise&slug=<?=$exercise['slug']?>">
 						<?=$exercise["name"]?>
+						<div class='e4p-icon'>
+							<?php include('images/' . $exercise['svg'] . '.svg')?>
+						</div>
 					</a>
 				</li>
 			<?php } ?>
