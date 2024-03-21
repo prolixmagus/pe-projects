@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 113 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.58813,0,0,1.58813,-121.772,-169.426)">
+        <g transform="matrix(0.812803,0,0,0.812803,-1392.77,-680.937)">
+            <g transform="matrix(84.4378,0,0,84.4378,1845.65,1041.27)">
+            </g>
+            <text x="1798.69px" y="1041.27px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:84.438px;">1</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-1827.38,-878.268)">
+            <g transform="matrix(84.4378,0,0,84.4378,1957.51,1045.64)">
+            </g>
+            <text x="1910.55px" y="1045.64px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:84.438px;">2</text>
+        </g>
+        <g transform="matrix(0.727518,0,0,0.727518,-1208.2,-672.568)">
+            <g transform="matrix(86.7445,0,0,86.7445,1867.25,1146.38)">
+            </g>
+            <text x="1819.01px" y="1146.38px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:86.744px;stroke:black;stroke-width:0.87px;">3</text>
+        </g>
+    </g>
+</svg>

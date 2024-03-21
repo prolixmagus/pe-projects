@@ -2,51 +2,61 @@
 	{
 		"id": 1,
 		"name": "Hello, World!",
-		"slug": "hello-world-form"
+		"slug": "hello-world-form",
+		"svg" : "hello-world"
 	},
 	{
 		"id": 2,
 		"name": "Counting Characters",
-		"slug": "counting-characters-form"
+		"slug": "counting-characters-form",
+		"svg" : "counting-characters"
 	},
 	{
 		"id": 3,
 		"name": "Printing Quotes",
-		"slug": "printing-quotes-form"
+		"slug": "printing-quotes-form",
+		"svg" : "printing-quotes"
 	},
 	{
 		"id": 4,
 		"name": "Mad Libs",
-		"slug": "mad-libs-form"
+		"slug": "mad-libs-form",
+		"svg" : "mad-libs"
 	},
 	{
 		"id": 5,
 		"name": "Simple Math",
-		"slug": "simple-math-form"
+		"slug": "simple-math-form",
+		"svg" : "simple-math"
 	},
 	{
 		"id": 6,
 		"name": "Retirement Calculator",
-		"slug": "retirement-calculator-form"
+		"slug": "retirement-calculator-form",
+		"svg" : "retirement-calculator"
 	},
 	{
 		"id": 7,
-		"name": "Area of a Rectangular Room",
-		"slug": "rectangular-room-form"
+		"name": "Area of a Room",
+		"slug": "rectangular-room-form",
+		"svg" : "area-of-a-room"
 	},
 	{
 		"id": 8,
 		"name": "Pizza Party",
-		"slug": "pizza-party-form"
+		"slug": "pizza-party-form",
+		"svg" : "pizza-party"
 	},
 	{
 		"id": 9,
 		"name": "Paint Calculator",
-		"slug": "paint-calculator-form"
+		"slug": "paint-calculator-form",
+		"svg": "paint-calculator"
 	},
 	{
 		"id": 10,
 		"name": "Self-Checkout",
-		"slug": "self-checkout-form"
+		"slug": "self-checkout-form",
+		"svg": "self-checkout"
 	}
 ]
