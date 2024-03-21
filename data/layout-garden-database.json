@@ -15,24 +15,28 @@
 			"slug": "announcement-grid"
 		},
 		{
-			"module": "cta-overlap",
-			"slug": "cta-overlap"
-		},
-		{
 			"module": "takeout-contact-form",
 			"slug": "takeout-contact-form"
 		},
 		{
+			"module": "cta-overlap",
+			"slug": "cta-overlap"
+		},
+		{
 			"module": "day-1-grid",
-			"id": "day-1-grid"
+			"slug": "day-1-grid"
 		},
 		{
 			"module": "day-2-grid",
-			"id": "day-2-grid"
+			"slug": "day-2-grid"
 		},
 		{
 			"module": "day-3-grid",
-			"id": "day-3-grid"
+			"slug": "day-3-grid"
+		},
+		{
+			"module": "preview-banner",
+			"slug": "preview-banner"
 		}
 	] 
 }
