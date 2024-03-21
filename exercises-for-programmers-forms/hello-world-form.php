@@ -44,15 +44,7 @@
 					<h2>Output</h2>
 					<p class="output-voice"><?=$message?></p>
 				</output>
-
-				<code-container>
-					<pre>
-						<code>
-							<?php highlight_code('exercises-for-programmers/code/hello-world-code.php'); ?>
-						</code>
-					</pre>
-				</code-container>
-		
+				
 		</inner-column>
 	</section>
 <?php } ?>
