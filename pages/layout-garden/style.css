@@ -11,6 +11,9 @@ case-study-wrapper {
 	display: block;
 	padding-top: 1rem;
 }
+.layout-garden section:nth-child(even) {
+	background-color: #FBF7F5;
+}
 
 .case-study-link:hover {
 	background-color: var(--fish-green);

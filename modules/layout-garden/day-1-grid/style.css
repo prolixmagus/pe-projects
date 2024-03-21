@@ -19,10 +19,6 @@
 	gap: 1rem;
 }
 
-.day-1-grid {
-	background-color: #FBF7F5;
-}
-
 .day-1-grid module-showcase{
 	display: grid;
 	grid-template-columns: 1fr;

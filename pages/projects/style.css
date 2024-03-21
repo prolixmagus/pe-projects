@@ -1,15 +1,23 @@
 .project-list {
 	display: grid;
-	grid-template-columns: 1fr;
-	gap: 10px;
-}
-
-.exercise {
-	border: 2px solid black;
-	padding: 5px;
-	border-radius: 10px;
-	min-height: 15vh;
-	font-size: 1.25rem;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr) );
+	gap: 15px;
+ & .exercise {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid black;
+		padding: 10px;
+		border-radius: 10px;
+		font-size: 1.25rem;
+		& a {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	& .calm-voice {
+		color: var(--fish-green);
+	}
 }
 
 .projects inner-column {
@@ -17,7 +25,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	.exercise {
-		border: 2px solid var(--ink-light);
+	.project-list .exercise {
+		border: 1px solid var(--paper);
 	}
 }
