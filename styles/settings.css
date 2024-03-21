@@ -1,12 +1,20 @@
 html {
-	--fish-green: hsl(108, 39%, 46%);
-	--fish-blue: hsl(191, 71%, 59%);
-	--tile-red: hsl(358, 100%, 35%);
-	--fish-pink: hsl(4, 100%, 89%);
-	--sand-yellow: hsl(42, 99%, 66%);
 
-	--black: hsl(0, 0%, 7%);
-	--white: hsl(0, 0%, 94%);
+	--green: 108;
+	--blue: 191;
+	--red: 358;
+	--pink: 4;
+	--yellow: 42;
+	--hue: 0;
+
+	--black: hsl(var(--hue), 0%, 7%);
+	--white: hsl(var(--hue), 0%, 94%);
+
+	--fish-green: hsl(var(--green), 39%, 46%);
+	--fish-blue: hsl(var(--blue), 71%, 59%);
+	--tile-red: hsl(var(--red), 100%, 35%);
+	--fish-pink: hsl(var(--pink), 100%, 89%);
+	--sand-yellow: hsl(var(--yellow), 99%, 66%);
 
 	--neutral-stuffs: gray;
 
@@ -19,7 +27,6 @@ html {
 
 	--paper: var(--white);
 	--ink: var(--black);
-	--ink-light: var(--dark-gray);
 
 	--standard: 1000px;
 	--tight: 700px;
@@ -39,7 +46,7 @@ code {
 	padding: 2px 4px;
 	color: orange;
 	font-weight: 600;
-	border-radius: 5px;
+	border-radius: 20px;
 }
 
 sup {
@@ -56,4 +63,5 @@ sup {
 		--fish-blue: hsl(190, 39%, 25%);
 		--sand-yellow: hsl(37, 24%, 28%);
 	}
+	
 }

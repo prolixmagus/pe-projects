@@ -26,3 +26,8 @@
 	font-size: 1.25rem;
 	border: 1px solid black;
 }
+
+.e4p-icon {
+	max-width: 30px;
+	stroke: var(--black);
+} 

@@ -6,7 +6,7 @@
 	</inner-column>
 </section>
 
-<section class='influences'>
+<section class='influence-list'>
 	<inner-column class='first'>
 		<div class='books'>
 			<h2 class='attention-voice pink-mark'>Books</h2>
