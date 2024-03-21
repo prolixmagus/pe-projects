@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 <?php include("modules/site-header/template.php");?>
 
 	<main>
-		<section class='page-content'>
+		<section class='page-content <?=$page?>'>
 			<?php getTemplate($page) ?>
 		</section>
 	</main>

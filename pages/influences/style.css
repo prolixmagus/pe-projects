@@ -1,8 +1,8 @@
-.influences {
+.influence-list {
 	position: relative;
 }
 
-.influences inner-column {
+.influence-list inner-column {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
