@@ -47,11 +47,24 @@ function getAllExercises() {
 // getting exercise for programmers page for router
 
 function getExerciseTemplate($name) {
-	include("exercises-for-programmers-forms/" . "$name" . ".php");
+	include("exercises-for-programmers-forms/$name.php");
+}
+
+function getExerciseNameBySlug($slug) {
+	//get the exercises from the database
+	$exercises = getAllExercises();
+	//find the right one by id
+	foreach ( $exercises as $exercise ) {
+		if ( $_GET['slug'] == $exercise["slug"] ) {
+			return $exercise["slug"]; // slug
+		}
+	} 
+	//otherwise return false
+	return false;
 }
 
 function getLayoutGardenTemplate($module) {
-	include("modules/layout-garden/" . $module . "/template.php");
+	include("modules/layout-garden/$module/template.php");
 }
 
 function getLayoutBySlug($database, $slug_to_match) {
@@ -60,6 +73,16 @@ function getLayoutBySlug($database, $slug_to_match) {
 			return $data;
 		}
 	}
+}
+
+// getting scripts
+
+function getSiteScripts($page) {
+	return "scripts/$page.js";
+}
+
+function getExerciseScripts($slug) {
+	return "exercises-for-programmers-forms/scripts/$slug.js";
 }
 
 // for linking to top level files on local server

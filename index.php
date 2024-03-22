@@ -17,5 +17,17 @@ error_reporting(E_ALL);
 		</inner-column>
 	</footer>
 
+
+	<script src="<?=getSiteScripts($page)?>"></script>
+
+	<?php if (isset($_GET['page']) && $_GET['page'] == "exercise") {
+		foreach($exercises as $exercise) {
+			if ($_GET['slug'] == $exercise["slug"]) { ?>
+				<script src="<?=getExerciseScripts($exercise["slug"])?>"></script>
+			<?php } 
+		} 
+	} ?>
+
+
 	</body>
 </html>

@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 
-<?php include("functions.php"); ?>
-<?php require("router.php") ?>
+<?php 
+	include("functions.php");
+	require("router.php");
+	$exercises = read(getFile("data/exercises-database.json"));
+?>
+
 
 <html lang="en">
 	<head>
