@@ -1,4 +1,4 @@
-<?php include('code/retirement-calculator-code.php'); ?>
+<?php include('scripts/retirement-calculator-code.php'); ?>
 
 <section class="form-group">
 	<form-explanation>

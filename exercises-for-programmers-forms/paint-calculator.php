@@ -1,5 +1,5 @@
 <?php
-	include('code/paint-calculator-code.php');
+	include('scripts/paint-calculator-code.php');
 ?>
 
 <section class="form-group">

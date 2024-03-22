@@ -1,5 +1,5 @@
 <?php
-	include('code/pizza-party-code.php');
+	include('scripts/pizza-party-code.php');
 ?>
 
 

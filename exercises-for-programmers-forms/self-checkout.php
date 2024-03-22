@@ -1,4 +1,4 @@
-<?php include('code/self-checkout-code.php'); ?>
+<?php include('scripts/self-checkout-code.php'); ?>
 
 
 <section class="form-group">

@@ -1,29 +1,23 @@
-<?php include('code/simple-math-code.php'); ?>
-
+<?php include('scripts/hello-world-code.php')?>
 
 <section class="form-group">
 	<form-explanation>
 		<inner-column>
-			<h2 class="form-title"><a class="refresh" href="?">Simple Math</a></h2>
-			<p class="calm-voice">I have taught students in high school who have trouble with these.</p>
+			<h2 class="form-title"><a class="refresh" href="?">Hello, World</a></h2>
+			<p class="calm-voice">One of the first programs that demonstrates the relationship between entering information and receiving a response. Fortunately for humans, we acquire langauge naturally. Computers, on the other hand, need instructions.</p>
+			<p class="calm-voice">Type in your name and you'll receive a greeting!</p>
 		</inner-column>
 	</form-explanation>
 
 	<form-section>
 		<inner-column>
-			
 			<form method="POST">
 
 				<h2>Input</h2>
 
 				<div class="field">
-					<label for="firstNumber">Enter a number:</label>
-					<input id ="firstNumber" type="number" name="firstNumber" value=<?=$first?> min = 0 required />
-				</div>
-
-				<div class="field">
-					<label for="secondNumber">Enter a number:</label>
-					<input id ="secondNumber" type="number" name="secondNumber" value=<?=$second?> min = 0 required />
+					<label for="name">What is your name?</label>
+					<input id ="name" type="text" name="name" value="<?=$name?>" required />
 				</div>
 
 				<action-buttons>
@@ -33,12 +27,11 @@
 					</button>
 
 					<button class="clear-button" type="submit" name="clear">
-						Clear
+						clear x
 					</button>
 
 				</action-buttons>
 			</form>
-
 		</inner-column>
 	</form-section>
 </section>
@@ -49,9 +42,9 @@
 
 				<output>
 					<h2>Output</h2>
-					<?=displayOperations($first, $second)?>
+					<p class="output-voice"><?=$message?></p>
 				</output>
-		
+				
 		</inner-column>
 	</section>
 <?php } ?>

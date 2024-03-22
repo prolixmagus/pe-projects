@@ -1,5 +1,5 @@
 <?php 
-	include("code/mad-libs-code.php") 
+	include("scripts/mad-libs-code.php") 
 ?>
 
 <side-by-side-container>
@@ -68,7 +68,7 @@
 						<input type="text" name="verb2" id="verb2" value="<?=$verb2?>" required />
 					</div>
 
-					<action-buttons style="justify-content: right;">
+					<action-buttons>
 						<button class="submit-button" type="submit" name="submitted">
 							Submit
 						</button>

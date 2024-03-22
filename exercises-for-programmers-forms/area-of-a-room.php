@@ -1,7 +1,7 @@
 
 
 <?php
-	include('code/rectangular-room-code.php')
+	include('scripts/rectangular-room-code.php')
 ?>
 
 
