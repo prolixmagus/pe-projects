@@ -77,9 +77,16 @@ input.numbertype {
 }
 
 
-output{
+output {
 	display: block;
 	max-width: 65ch;
+	& p {
+		background-color: var(--highlight);
+		border: 3px solid var(--ink);
+		border-radius: 5px;
+		color: ink;
+		padding: 1em;
+	}
 }
 
 /* Exercise 3 - Printing Quotes */

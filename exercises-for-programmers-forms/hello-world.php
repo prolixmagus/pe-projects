@@ -9,7 +9,7 @@
 		</inner-column>
 	</form-explanation>
 
-	<form-section>
+	<form-section id="hello-world">
 		<inner-column>
 			<form method="POST">
 
@@ -17,7 +17,7 @@
 
 				<div class="field">
 					<label for="name">What is your name?</label>
-					<input id ="name" type="text" name="name" value="<?=$name?>" required />
+					<input id ="name" type="text" name="name" value="<?=$name?>" />
 				</div>
 
 				<action-buttons>
@@ -26,7 +26,7 @@
 						Submit
 					</button>
 
-					<button class="clear-button" type="submit" name="clear">
+					<button class="clear-button" data-clear="clear" type="button" name="clear">
 						clear x
 					</button>
 
@@ -36,15 +36,11 @@
 	</form-section>
 </section>
 
-<?php if (isset($_POST["submitted"]) ) { ?>
-	<section class="form-output">
-		<inner-column>
+<section class="form-output">
+	<inner-column id='form-column'>
+			<output class='output-voice'><?=$message?></output>
+	</inner-column>
+</section>
 
-				<output>
-					<h2>Output</h2>
-					<p class="output-voice"><?=$message?></p>
-				</output>
-				
-		</inner-column>
-	</section>
-<?php } ?>
+
+
