@@ -49,10 +49,10 @@
         </g>
         <g class="plant-text" transform="matrix(2.94516,0,0,3.07994,-1011.43,-1420.8)">
             <g transform="matrix(1.03,0,0,1,-23.6276,0)">
-                <text x="787.585px" y="643.5px" style="font-family:'Cormorant-Regular', 'Cormorant';font-size:82.528px;">Elite</text>
+                <text class='elite' x="787.585px" y="643.5px" style="font-family:'Cormorant-Regular', 'Cormorant';font-size:82.528px;">Elite</text>
             </g>
             <g transform="matrix(1.03,0,0,1,-23.6276,0)">
-                <text x="787.585px" y="726.028px" style="font-family:'Cormorant-Regular', 'Cormorant';font-size:82.528px;">Ec<tspan x="865.341px " y="726.028px ">o</tspan>Sc<tspan x="978.911px " y="726.028px ">a</tspan>pes</text>
+                <text class='ecoscapes' x="787.585px" y="726.028px" style="font-family:'Cormorant-Regular', 'Cormorant';font-size:80px;">EcoScapes</text>
             </g>
         </g>
     </g>
