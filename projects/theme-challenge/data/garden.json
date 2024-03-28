@@ -11,7 +11,8 @@
 	],
 	"graphic-diptych": [
 		{
-			"module": "graphic-diptych"
+			"module": "graphic-diptych",
+			"img": "../../images/background/garden-diptych.jpg"
 		}
 	],
 	"call-to-action": [

@@ -11,7 +11,8 @@
 	],
 	"graphic-diptych": [
 		{
-			"module": "graphic-diptych"
+			"module": "graphic-diptych",
+			"img": "https://peprojects.dev/images/landscape.jpg"
 		}
 	],
 	"call-to-action": [
