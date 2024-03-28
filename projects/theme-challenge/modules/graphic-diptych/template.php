@@ -10,7 +10,7 @@
 	<text-content>
 		<h1 class='loud-voice'>This is a graphic diptych</h1>
 
-		<p>What a fun thing that we have here</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae quod eum laboriosam voluptatum iste et quo, assumenda placeat minus dolorem culpa, consequuntur tempore velit, veniam delectus voluptatem corrupti eius? </p>
 	</text-content>
 
 </graphic-diptych>

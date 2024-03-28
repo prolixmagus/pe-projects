@@ -5,11 +5,13 @@ call-to-action {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding: 10vh 0;
+	padding: 10vh 1vh;
 }
 
+
+
 call-to-action .button {
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .garden .sign-up {

@@ -1,6 +1,7 @@
 
 mast-head {
 	display: block;
+	padding: 0 1vh;
 }
 
 mast-head .logo {
@@ -29,11 +30,11 @@ mast-head nav a:not(.home) {
 	gap: 20px;
 }
 
-.garden mast-head .plant-leaves *{
+.garden mast-head .plant-leaves * {
 	fill: var(--color);
 }
 
-.garden mast-head .bodrer *{
+.garden mast-head .border * {
 	fill: var(--accent);
 }
 
@@ -45,18 +46,21 @@ mast-head nav a:not(.home) {
 
 .garden .user-menu .button {
 	color: var(--paper);
+	&:visited {
+		color: var(--paper);
+	}
+	&:hover {
+color: var(--color);
+	}
 }
 
-.garden .user-menu .button:visited {
-	color: var(--paper);
-}
 
-.garden nav a:not(.home) {
+.garden mast-head nav a:not(.home) {
 	text-transform: uppercase;
 	color: var(--color);
 }
 
-.garden nav a:not(.home):visited {
+.garden mast-head nav a:not(.home, .button):visited {
 	color: var(--accent);
 }
 

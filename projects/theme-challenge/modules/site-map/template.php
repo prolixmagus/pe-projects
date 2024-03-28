@@ -1,12 +1,12 @@
-
+<?php foreach ($pageData['site-map'] as $content) { ?>
 <site-map>
 
 
-	<nav class='site-menu garden'>
+	<nav class='site-menu'>
 		<ul>
 			<li>
-				<a href='#'>
-					<?php include('modules/logo.php'); ?>
+				<a class='logo' href='#'>
+					<?php include("modules/" . $content['logo'] . ".php"); ?>
 				</a>
 			</li>
 
@@ -88,3 +88,5 @@
 
 
 </site-map>
+
+<?php } ?>

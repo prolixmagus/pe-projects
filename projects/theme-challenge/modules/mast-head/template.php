@@ -1,15 +1,11 @@
-
+<?php foreach ($pageData['mast-head'] as $content) { ?>
 <mast-head>
 
 	<nav class='site-menu'>
 		<ul>
 			<li>
 				<a class='home' href='#'>
-					<?php if ($page === 'garden') {
-						include('modules/plant-logo.php');
-					} else {
-						include('modules/logo.php'); 
-					} ?>
+					<?php include("modules/" . $content['logo'] . ".php"); ?>
 				</a>
 			</li>
 
@@ -35,3 +31,5 @@
 	</nav>
 
 </mast-head>
+
+<?php } ?>

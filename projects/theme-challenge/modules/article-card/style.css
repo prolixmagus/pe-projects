@@ -16,3 +16,34 @@
 .article-card a {
 	margin-top: 20px;
 }
+
+.article-card picture {
+	aspect-ratio: 3 / 2;
+}
+.garden .article-card text-content {
+	gap: 10px;
+}
+
+.garden .article-card .button {
+	display: flex;
+	gap: 10px;
+	color: var(--color);
+	background-color: transparent;
+	border: unset;
+	padding: 0;
+	min-width: 0;
+	&::after {
+		gap: 10px;
+		content:'> >';
+		transform: translateY(-1px);
+	}
+}
+
+
+
+.garden .article-card .button:hover {
+	content:'er';
+	border: unset;
+	padding: 0;
+
+}

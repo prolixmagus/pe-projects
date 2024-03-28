@@ -3,7 +3,6 @@ graphic-diptych {
 	display: block;
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
 	padding: 20vh 0;
 }
 
@@ -17,21 +16,37 @@ graphic-diptych p {
 	background-position: center;
 }*/
 
-.garden .welcome {
-}
 
 .garden .welcome inner-column {
 	width: 100%;
 	max-width: 100%;
 }
 
+
 .garden graphic-diptych {
 	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	padding: 1vh 0 10vh 0;
+	align-items: center;
+	padding: 1vh 0 5vh 0;
+	position: relative;
 }
 
+.garden graphic-diptych text-content {
+	position: relative;
+	margin-top: 5vh;
+	padding-inline: 4vw;
+	padding-block-end: 60px;
+	& p {
+		max-width: 65ch;
+	}
+}
+
+.garden graphic-diptych text-content:after {
+	content: '';
+	position: absolute;
+	width: 65%;
+	bottom: 0;
+	border-bottom: 1px solid var(--color);
+	transform: translateX(10%);
 
 }
 
