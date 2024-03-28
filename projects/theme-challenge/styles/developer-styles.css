@@ -13,9 +13,9 @@
 	background-color: rgba(0,0,0,.03);
 }
 
-picture img {
+/*picture img {
 	opacity: 0;
-}
+}*/
 
 picture {
 	background-color: var(--shadow);
