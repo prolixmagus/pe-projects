@@ -4,18 +4,37 @@ graphic-diptych {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	padding: 10vh 0;
+	padding: 20vh 0;
 }
 
 graphic-diptych p {
 	margin-top: 20px;
 }
 
+/*.garden .welcome {
+	background-image: url('../../images/background/garden-diptych.jpg');
+	background-size: cover;
+	background-position: center;
+}*/
+
+.garden .welcome {
+}
+
+.garden .welcome inner-column {
+	width: 100%;
+	max-width: 100%;
+}
+
 .garden graphic-diptych {
-	
+	flex-direction: column;
 	justify-content: center;
+	text-align: center;
+	padding: 1vh 0 10vh 0;
+}
+
 
 }
+
 
 @media (min-width:  700px) {
 	graphic-diptych {
@@ -25,5 +44,11 @@ graphic-diptych p {
 
 	graphic-diptych :is(picture, text-content) {
 		flex-basis: 50%;
+	}
+}
+
+@media (min-width: 750px) {
+	.garden graphic-diptych {
+		padding: 0vh 0 10vh 0;
 	}
 }

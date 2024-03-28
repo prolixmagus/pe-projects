@@ -11,11 +11,13 @@
 	<article-grid>
 		<ul class='article-list'>
 
-			<?php foreach ($articles as $article) { ?>
+			<?php foreach ($pageData['articles-intro'] as $content) { ?>
+				<?php foreach($content['content'] as $article_contents) { ?>
 				<li class='article'>
 					<?php include('modules/article-card/template.php'); ?>
 				</li>
 			<?php } ?>
+		<?php } ?>
 
 		</ul>
 	</article-grid>

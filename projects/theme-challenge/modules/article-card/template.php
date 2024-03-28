@@ -1,8 +1,8 @@
 
 <?php
-	$heading = $article['heading'];
-	$description = $article['description'];
-	$thumbnail = $article['thumbnail'];
+	$heading = $article_contents['heading'];
+	$description = $article_contents['description'];
+	$thumbnail = $article_contents['thumbnail'];
 ?>
 
 <article class='article-card'>

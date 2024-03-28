@@ -1,8 +1,10 @@
-
 <graphic-diptych>
-
 	<picture>
-		<img src='https://peprojects.dev/images/landscape.jpg' alt='$todo'>
+		<?php if ($page === 'default') { ?>
+			<img src="../../images/background/landscape.jpg" alt='$todo'>
+		<?php } else if ($page === 'garden') { ?>
+			<img src='../../images/background/garden-diptych.jpg' alt='$todo'>
+		<?php } ?>
 	</picture>
 	
 	<text-content>
@@ -12,3 +14,5 @@
 	</text-content>
 
 </graphic-diptych>
+
+

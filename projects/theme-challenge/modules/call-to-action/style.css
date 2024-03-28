@@ -11,3 +11,20 @@ call-to-action {
 call-to-action .button {
 	margin-top: 20px;
 }
+
+.garden .sign-up {
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+		rgba(0, 0, 0, 0.4)), url('../../images/background/garden-cta-team.jpeg');
+	background-size: cover;
+	background-position: top 50px;
+	color: var(--paper);
+	& p {
+		color: var(--paper);
+	}
+}
+
+.garden .sign-up inner-column {
+	max-width: var(--tight);
+}
+
