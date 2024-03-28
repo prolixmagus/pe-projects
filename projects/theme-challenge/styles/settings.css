@@ -1,0 +1,38 @@
+html {
+	--black: #111111;
+	--white: #efefef;
+
+	--neutral-stuffs: gray;
+
+	--color: #9ec9eb;
+	--highlight: #aadee9;
+
+	--shadow: rgba(0, 0, 0, 0.8);
+
+	--corners: 10px; /* or whatevers */
+
+	--paper: var(--white);
+	--ink: var(--black);
+
+	--standard: 1140px;
+	--tight: 800px;
+}
+
+html.garden {
+	--black: #333333;
+	--white: #FAF9F6;
+	--color: #256C5F;
+	--accent: #6C3C25;
+
+	--ink: var(--black);
+	--ink-light: #494a4a;
+	--paper: var(--white);
+}
+
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--paper: #231a1a;
+		--ink: #ffffe2;
+	}
+}

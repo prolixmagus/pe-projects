@@ -1,0 +1,68 @@
+{
+	"slug": "about",
+	"title": "Luxury Landscaping",
+	"description": "Theme Challenge from Perpetual Education",
+	"mast-head": [
+		{
+			"module": "mast-head",
+			"theme-1": "default",
+			"theme-2": "garden"
+		}
+	],
+	"graphic-diptych": [
+		{
+			"module": "graphic-diptych"
+		}
+	],
+	"call-to-action": [
+		{
+			"module": "call-to-action"
+		}
+	],
+	"articles-intro": [
+		{
+			"content": [
+				{
+					"heading": "Article or product",
+					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
+					"thumbnail": "landscape.jpg"
+				},
+				{
+					"heading": "Article or product",
+					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
+					"thumbnail": "landscape.jpg"
+				},
+				{
+					"heading": "Article or product",
+					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
+					"thumbnail": "landscape.jpg"
+				},
+				{
+					"heading": "Article or product",
+					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
+					"thumbnail": "landscape.jpg"
+				},
+				{
+					"heading": "Article or product",
+					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
+					"thumbnail": "landscape.jpg"
+				},
+				{
+					"heading": "Article or product",
+					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
+					"thumbnail": "landscape.jpg"
+				}
+			]
+		}
+	],
+	"call-to-action-2": [
+		{
+			"module": "call-to-action"
+		}
+	],
+	"site-map": [
+		{
+			"module": "site-map"
+		}
+	]
+}

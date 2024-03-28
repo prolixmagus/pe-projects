@@ -1,0 +1,70 @@
+
+mast-head {
+	display: block;
+}
+
+mast-head .logo {
+	max-width: 150px;
+}
+
+mast-head .logo * {
+	fill: var(--ink);
+}
+
+mast-head nav ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+mast-head nav .home {
+	padding: 10px 0;
+}
+
+mast-head nav a:not(.home) {
+	padding: .5em 1em;
+}
+
+.garden mast-head nav ul {
+	gap: 20px;
+}
+
+.garden mast-head .plant-leaves *{
+	fill: var(--color);
+}
+
+.garden mast-head .bodrer *{
+	fill: var(--accent);
+}
+
+.garden .user-menu li {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.garden .user-menu .button {
+	color: var(--paper);
+}
+
+.garden .user-menu .button:visited {
+	color: var(--paper);
+}
+
+.garden nav a:not(.home) {
+	text-transform: uppercase;
+	color: var(--color);
+}
+
+.garden nav a:not(.home):visited {
+	color: var(--accent);
+}
+
+@media (min-width:  750px) {
+	mast-head {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
