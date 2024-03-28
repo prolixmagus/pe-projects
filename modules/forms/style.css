@@ -1,8 +1,9 @@
 
 form {
 	display: grid;
-	gap: 20px;
+	gap: 25px;
 	max-width: 500px;
+	margin-top: 20px;
 }
 
 form-section {
@@ -81,7 +82,7 @@ output {
 	display: block;
 	max-width: 65ch;
 	& p {
-		background-color: var(--highlight);
+		background-color: var(--fish-blue);
 		border: 3px solid var(--ink);
 		border-radius: 5px;
 		color: ink;
@@ -106,6 +107,19 @@ blockquote {
 	text-decoration: underline;
 }
 
+/*exercise 2 - Counting Characters */
+.input-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	& .character-count-output {
+		display: flex;
+		gap: 10px;
+	}
+}
+
+
+
 @media (prefers-color-scheme: dark) {
 	.form-title .refresh {
 		color: var(--ink-light);
@@ -114,6 +128,10 @@ blockquote {
 	input:focus {
 		background: hsl(0 0 94% / 2);
 		outline: 2px solid var(--fish-pink); 
+	}
+
+	output p {
+		border: 3px solid var(--fish-pink);
 	}
 
 

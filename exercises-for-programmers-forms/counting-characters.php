@@ -10,16 +10,28 @@
 		</inner-column>
 	</form-explanation>
 
-<form-section>
-	<inner-column>
+	<form-section>
+		<inner-column>
+
+			<fieldset class='toggle-field'>
+				<input id='toggle' class='toggle' type='checkbox'>
+				<label class ='switch' for='toggle'></label>
+				<p>PHP | JS</p>
+			</fieldset>
 			
-			<form method="POST">
+			<form id='counting-characters' method="POST">
 
 				<h2>Input</h2>
 
 				<div class="field">
 					<label for="string">Write anything!</label>
-					<input id ="string" type="text" name="string" value="<?=$string?>" required />
+					<div class='input-wrapper'>
+						<input id ="string" type="text" name="string" value="<?=$string?>" required />
+						<ul class='character-count-output'>
+							<li id='word-count'></li>
+							<li id='character-count'></li>
+						</ul>
+					</div>
 				</div>
 
 				<action-buttons>
@@ -28,13 +40,12 @@
 						Submit
 					</button>
 
-					<button class="clear-button" type="submit" name="clear">
+					<button class="clear-button" type="button" name="clear">
 						clear x
 					</button>
 
 				</action-buttons>
 			</form>
-
 		</inner-column>
 	</form-section>
 </section>

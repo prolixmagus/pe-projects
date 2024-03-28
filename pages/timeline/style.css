@@ -10,7 +10,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
-	border-bottom: 4px dotted var(--fish-green);
 }
 
 .timeline .last {
@@ -38,4 +37,27 @@
 
 work-narrative {
 	display: block;
+}
+
+experience-gained {
+	padding-bottom: 2rem;
+	border-bottom: 4px dotted var(--fish-green);
+}
+
+@media (min-width: 775px) {
+
+	.timeline inner-column {
+		flex-direction: row;
+		gap: 40px;
+		border-bottom: 4px dotted var(--fish-green);
+	}
+
+	work-narrative, experience-gained {
+		width: 50%;
+	}
+
+	experience-gained {
+		padding-bottom: 0rem;
+		border-bottom: none;
+	}
 }

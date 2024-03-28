@@ -9,15 +9,21 @@
 		</inner-column>
 	</form-explanation>
 
-	<form-section id="hello-world">
+	<form-section>
 		<inner-column>
-			<form method="POST">
+			<fieldset class='toggle-field'>
+				<input id='toggle' class='toggle' type='checkbox'>
+				<label class ='switch' for='toggle'></label>
+				<p>PHP | JS</p>
+			</fieldset>
+
+			<form method="POST" id="hello-world">
 
 				<h2>Input</h2>
 
 				<div class="field">
 					<label for="name">What is your name?</label>
-					<input id ="name" type="text" name="name" value="<?=$name?>" />
+					<input id ="name" type="text" name="name" value="<?=$name?>" required/>
 				</div>
 
 				<action-buttons>
@@ -26,7 +32,7 @@
 						Submit
 					</button>
 
-					<button class="clear-button" data-clear="clear" type="button" name="clear">
+					<button class="clear-button" type="button" name="clear">
 						clear x
 					</button>
 
@@ -38,7 +44,9 @@
 
 <section class="form-output">
 	<inner-column id='form-column'>
-			<output class='output-voice'><?=$message?></output>
+			<output>
+				<p class='output-voice'><?=$message?></p>
+			</output>
 	</inner-column>
 </section>
 
