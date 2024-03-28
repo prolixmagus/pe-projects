@@ -19,3 +19,7 @@
 		$pageData = json_decode($json, true);
 		return $pageData;
 	}
+
+	function getFile($path) {
+		return dirname(__FILE__) . "/" . $path;
+	}

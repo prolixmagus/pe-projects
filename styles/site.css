@@ -280,15 +280,6 @@ li a:visited, p a:visited {
 
 @media (min-width: 775px) {
 
-	.timeline inner-column {
-		flex-direction: row;
-		gap: 40px;
-	}
-
-	work-narrative, experience-gained {
-		width: 50%;
-	}
-
 	.seaweed.pink {
 		display: block;
 		position: absolute;
