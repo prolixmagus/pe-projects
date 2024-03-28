@@ -46,10 +46,36 @@ section.get-involved {
 	background-color: var(--highlight);
 }
 
+.garden section.get-involved {
+	background-color: var(--paper);
+}
+
 section.get-involved .button {
 	background-color: var(--ink);
 	color: var(--paper);
 }
+
+section.get-involved {
+	color: var(--color);
+		& p {
+		color: var(color);
+	}
+}
+
+section.get-involved inner-column {
+	padding: 3vh 0vh 10vh 0vh;
+}
+
+section.get-involved call-to-action {
+	border: 2px solid var(--color);
+	padding: 5vh 5vh;
+}
+
+section.get-involved .button {
+	background-color: var(--color);
+}
+
+
 
 @media (prefers-color-scheme: dark) {
 	section.sign-up {

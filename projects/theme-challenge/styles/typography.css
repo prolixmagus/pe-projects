@@ -39,13 +39,19 @@
 .garden .loud-voice {
 	font-family: "Cormorant", serif;
 	font-weight: 500;
-	font-size: 2.75rem; /* 44 px */
+	font-size: clamp(2.75rem, 5vw, 3.75rem); /* 44 px */
 }
 
 .garden .attention-voice {
 	font-family: "Cormorant", serif;
 	font-weight: 500;
 	font-size: 1.875rem; /* 30px px */
+}
+
+.garden .strong-voice	{
+	font-family: "Cormorant", serif;
+	font-weight: 700;
+	font-size:  1.5rem; /* 22 px */
 }
 
 .garden .calm-voice, p, li {

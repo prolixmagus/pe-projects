@@ -23,6 +23,7 @@ html.garden {
 	--white: #FAF9F6;
 	--color: #256C5F;
 	--accent: #6C3C25;
+	--highlight: #ca8564;
 
 	--ink: var(--black);
 	--ink-light: #494a4a;
