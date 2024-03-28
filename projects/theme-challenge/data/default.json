@@ -6,7 +6,8 @@
 		{
 			"module": "mast-head",
 			"theme-1": "default",
-			"theme-2": "garden"
+			"theme-2": "garden",
+			"logo": "logo"
 		}
 	],
 	"graphic-diptych": [
@@ -63,7 +64,8 @@
 	],
 	"site-map": [
 		{
-			"module": "site-map"
+			"module": "site-map",
+			"logo": "logo"
 		}
 	]
 }

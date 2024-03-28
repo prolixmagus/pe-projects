@@ -6,7 +6,8 @@
 		{
 			"module": "mast-head",
 			"theme-1": "default",
-			"theme-2": "garden"
+			"theme-2": "garden",
+			"logo": "plant-logo"
 		}
 	],
 	"graphic-diptych": [
@@ -26,32 +27,32 @@
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "landscape.jpg"
+					"thumbnail": "garden-maintenance.jpg"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "landscape.jpg"
+					"thumbnail": "garden-path.jpg"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "landscape.jpg"
+					"thumbnail": "garden-planting.jpg"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "landscape.jpg"
+					"thumbnail": "garden-pool.jpg"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "landscape.jpg"
+					"thumbnail": "garden-pruning.jpg"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "landscape.jpg"
+					"thumbnail": "garden-house.jpg"
 				}
 			]
 		}
@@ -63,7 +64,8 @@
 	],
 	"site-map": [
 		{
-			"module": "site-map"
+			"module": "site-map",
+			"logo": "plant-logo"
 		}
 	]
 }
