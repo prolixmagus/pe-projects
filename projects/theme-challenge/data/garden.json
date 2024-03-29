@@ -13,7 +13,7 @@
 	"graphic-diptych": [
 		{
 			"module": "graphic-diptych",
-			"img": "../../images/background/garden-diptych.jpg"
+			"img": "garden-diptych"
 		}
 	],
 	"call-to-action": [
