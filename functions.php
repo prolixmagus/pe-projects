@@ -50,7 +50,7 @@ function getExerciseTemplate($name) {
 	include("exercises-for-programmers-forms/$name.php");
 }
 
-function getExerciseNameBySlug($slug) {
+function getExerciseNameBySlug() {
 	//get the exercises from the database
 	$exercises = getAllExercises();
 	//find the right one by id

@@ -1,4 +1,4 @@
-<?php $exercise = getExerciseNameBySlug($_GET['slug']); ?>
+<?php $exercise = getExerciseNameBySlug(); ?>
 
 
 <?php
