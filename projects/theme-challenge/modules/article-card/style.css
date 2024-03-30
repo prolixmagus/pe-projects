@@ -17,11 +17,31 @@
 	margin-top: 20px;
 }
 
-.article-card picture {
-	aspect-ratio: 3 / 2;
+.garden .article-card a {
+	margin-top: 0;
 }
+
+.garden .article-card picture {
+	aspect-ratio: 2:3;
+	& img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
 .garden .article-card text-content {
-	gap: 10px;
+	display: block;
+	& h1 {
+		margin-top: 15px;
+	}
+	& p {
+		margin-top: 15px;
+	}
+	& a {
+		margin-top: 20px;
+	}
+
 }
 
 .garden .article-card .button {

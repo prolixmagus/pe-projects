@@ -2,11 +2,10 @@
 articles-intro {
 	display: block;
 	/*border: 4px solid purple;*/
-	padding: 10vh 1vh;
+	padding: 10vh 0vw 10vh 0vw;
 }
 
 articles-intro header {
-
 }
 
 article-grid {
@@ -18,4 +17,15 @@ article-grid ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	grid-gap: 60px 20px;
+}
+
+.garden article-grid .article-list {
+	grid-template-columns: 1fr;
+	grid-gap: 60px 30px;
+}
+
+@media (min-width: 620px) {
+	.garden article-grid .article-list {
+		grid-template-columns: 1fr 1fr;
+	}
 }
