@@ -23,8 +23,12 @@ mast-head nav .home {
 
 mast-head nav a:not(.home) {
 	padding: .5em 1em;
+	letter-spacing: .02em;
 }
 
+.garden mast-head .logo {
+	min-width: 80px;
+}
 .garden mast-head nav ul {
 	gap: 20px;
 }
@@ -49,7 +53,7 @@ mast-head nav a:not(.home) {
 		color: var(--paper);
 	}
 	&:hover {
-color: var(--color);
+		color: var(--color);
 	}
 }
 
@@ -63,7 +67,7 @@ color: var(--color);
 	color: var(--accent);
 }
 
-@media (min-width:  750px) {
+@media (min-width:  550px) {
 	mast-head {
 		display: flex;
 		flex-direction: row;

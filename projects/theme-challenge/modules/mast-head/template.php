@@ -10,11 +10,11 @@
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='?theme=<?=$content['theme-1']?>'>Wireframe</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='?theme=<?=$content['theme-2']?>'>Garden</a>
 			</li>
 		</ul>
 	</nav>
@@ -23,8 +23,7 @@
 		<ul>
 			<li>
 				<?php foreach($pageData['mast-head'] as $content) { ?>
-					<a class='button' href='?theme=<?=$content['theme-1']?>'>Default</a>
-					<a class='button' href='?theme=<?=$content['theme-2']?>'>Garden</a>
+					<a class='button' href='#'>BOOK NOW</a>
 			<?php } ?>
 			</li>
 		</ul>
