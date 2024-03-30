@@ -17,6 +17,6 @@
 	opacity: 0;
 }*/
 
-picture {
+.default picture {
 	background-color: var(--shadow);
 }

@@ -2,7 +2,7 @@
 	if ( isset($_GET['theme']) ) {
 		$page = $_GET['theme'];
 	} else {
-		$page = 'default';
+		$page = 'garden';
 	}
 
 	function getTemplate($page) {
