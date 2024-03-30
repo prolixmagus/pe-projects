@@ -51,12 +51,10 @@ section.get-involved {
 	top: 0;
 	z-index: 2;
 	background-color: var(--paper);
-	padding: .5vh 1vh;
 }
 
 .garden section.get-involved {
 	background-color: var(--paper);
-	padding: 0vh 1vh;
 }
 
 section.get-involved .button {
@@ -105,7 +103,7 @@ section.get-involved .button {
 
 @media (min-width: 750px) {
 	.garden header#top {
-		padding: 0 1vh;
+		padding-inline: 1vw;
 	}
 }
 
