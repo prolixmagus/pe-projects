@@ -47,9 +47,9 @@ site-map h3 {
 
 .garden footer nav a {
 	text-transform: uppercase;
-	color: var(--color);
+	color: var(--ink);
 }
 
 .garden footer nav a:visited {
-	color: var(--accent);
+	color: var(--ink-light);
 }

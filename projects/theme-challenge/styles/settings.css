@@ -23,7 +23,7 @@ html.garden {
 	--white: #FAF9F6;
 	--color: #256C5F;
 	--accent: #6C3C25;
-	--highlight: #ca8564;
+	--highlight: #f5ad8b;
 
 	--ink: var(--black);
 	--ink-light: #494a4a;
@@ -32,7 +32,7 @@ html.garden {
 
 
 @media (prefers-color-scheme: dark) {
-	html {
+	.default html {
 		--paper: #231a1a;
 		--ink: #ffffe2;
 	}

@@ -85,17 +85,17 @@ section.get-involved .button {
 
 
 @media (prefers-color-scheme: dark) {
-	section.sign-up {
+	.default section.sign-up {
 		background-color: var(--color);
 		color: var(--black);
 	}
 
-	section.sign-up .button {
+	.default section.sign-up .button {
 		background-color: var(--black);
 		color: var(--white);
 	}
 
-	section.get-involved {
+	.default section.get-involved {
 		background-color: var(--highlight);
 		color: var(--black);
 	}
