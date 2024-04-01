@@ -1,23 +1,20 @@
 
-<?php include ('data/articles.php'); ?>
 
 <articles-intro>
 	<header>
-		<h2 class='attention-voice'>Heading for this section here</h2>
+		<h2 class='attention-voice'><?=$section['heading']?></h2>
 
-		<p>A short introduction explaining why these articles are here to help you understand if you want to read them.</p>
+		<p><?=$section['copy']?></p>
 	</header>
 
 	<article-grid>
 		<ul class='article-list'>
 
-			<?php foreach ($pageData['articles-intro'] as $content) { ?>
-				<?php foreach($content['content'] as $article_contents) { ?>
+			<?php foreach ($section['content'] as $content) { ?>
 				<li class='article'>
 					<?php include('modules/article-card/template.php'); ?>
 				</li>
 			<?php } ?>
-		<?php } ?>
 
 		</ul>
 	</article-grid>
