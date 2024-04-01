@@ -23,14 +23,20 @@ mast-head nav .home {
 
 mast-head nav a:not(.home) {
 	padding: .5em 1em;
-	letter-spacing: .02em;
+	letter-spacing: .03em;
+	font-size: 14px;
+}
+
+.garden mast-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .garden mast-head .logo {
+	max-width: 100px;
 	min-width: 80px;
-}
-.garden mast-head nav ul {
-	gap: 20px;
 }
 
 .garden mast-head .plant-leaves * {
@@ -47,7 +53,12 @@ mast-head nav a:not(.home) {
 	gap: 15px;
 }
 
+.garden .user-menu .theme-link {
+	display: none;
+}
+
 .garden .user-menu .button {
+	position: relative;
 	color: var(--paper);
 	&:visited {
 		color: var(--paper);
@@ -57,6 +68,53 @@ mast-head nav a:not(.home) {
 	}
 }
 
+.garden .button-link .button.leaf-sign {
+	display: flex;
+	flex-direction: row;
+	padding: 0.25em .5em;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+	min-width: 100px;
+	& p.calm-voice {
+		font-size: 12px;
+		color: var(--paper);
+	}
+}
+
+.garden .button-link .button.leaf-sign:hover p.calm-voice {
+	color: var(--color);
+}
+
+.garden .button-link .button.leaf-sign:hover .leaf-icon {
+	stroke: var(--color);
+}
+
+.garden .menu-toggle button {
+	font-family: "Source Sans 3", sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: .03em;
+	border: 0;
+	cursor: pointer;
+	color: var(--color);
+	box-shadow: unset;
+	background: unset;
+	padding: .25em .5em;
+	&:visited {
+		color: var(--accent);
+	}
+}
+.garden .leaf-icon {
+	fill: none;
+	stroke: var(--paper);
+	max-width: 15px;
+	height: 15px;
+}
+
+.garden .leaf-icon:hover {
+	stroke: var(--color);
+}
 
 .garden mast-head nav a:not(.home) {
 	text-transform: uppercase;
@@ -67,11 +125,12 @@ mast-head nav a:not(.home) {
 	color: var(--accent);
 }
 
-@media (min-width:  550px) {
-	mast-head {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+@media (min-width: 650px){
+	.garden .user-menu .theme-link {
+		display: block;
+	}
+
+	.garden .user-menu .menu-toggle{
+		display: none;
 	}
 }
