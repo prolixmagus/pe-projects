@@ -23,10 +23,11 @@ graphic-diptych p {
 }*/
 
 .garden graphic-diptych {
+	display: flex;
 	flex-direction: column;
-	align-items: center;
-	padding: 1vh 0vw 5vh 0vw;
+	align-items: flex-start;
 	position: relative;
+	padding: 1vh 0vh 5vh 0vh;
 }
 
 
@@ -40,24 +41,25 @@ graphic-diptych p {
 } 
 
 .garden graphic-diptych text-content {
-	position: relative;
+	display: block;
 	margin-top: 5vh;
-	padding-block-end: 5vh;
+	padding-block-end: 10vh;
 }
 
-.garden graphic-diptych text-content:after {
+.garden graphic-diptych text-content::after {
 	content: '';
+	display: block;
+	background-image: url('../plant-border.svg');
 	position: absolute;
-	width: 65%;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	border-bottom: 1px solid var(--color);
-	transform: translateX(25%);
+	width: 162px;
+	height: 25px;
+	margin-top: 4vh;
+
 }
 
 .garden graphic-diptych p {
 	margin-top: 15px;
+	max-width: 70ch;
 }
 
 
@@ -73,7 +75,12 @@ graphic-diptych p {
 }
 
 @media (min-width: 750px) {
+
 	.garden graphic-diptych {
-		padding-bottom: 10vh;
+		padding: 0vh 0vh 5vh 0vh;
+	}
+
+	.garden graphic-diptych p {
+		max-width: 100ch;
 	}
 }

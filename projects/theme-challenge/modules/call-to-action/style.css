@@ -26,6 +26,14 @@ call-to-action .button {
 	}
 }
 
+.garden .story {
+	max-width: 70ch;
+}
+
+.garden .sign-up .attention-voice {
+	color: var(--paper);
+}
+
 .garden .sign-up inner-column {
 	max-width: var(--tight);
 }

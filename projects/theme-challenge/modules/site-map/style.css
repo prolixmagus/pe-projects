@@ -5,7 +5,7 @@ site-map {
 
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	grid-gap: 20px;
+	grid-gap: 25px;
 
 	padding: 10vh 0vh 15vh 0vh;
 }
@@ -46,7 +46,6 @@ site-map h3 {
 }
 
 .garden footer nav a {
-	text-transform: uppercase;
 	color: var(--ink);
 }
 

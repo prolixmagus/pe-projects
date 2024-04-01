@@ -1,3 +1,5 @@
+
+
 <graphic-diptych>
 	<picture>
 		<?php if ($page === 'default') { ?>
@@ -8,9 +10,9 @@
 	</picture>
 	
 	<text-content>
-		<h1 class='loud-voice'>This is a graphic diptych</h1>
+		<h1 class='loud-voice'><?=$section['title']?></h1>
 
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae quod eum laboriosam voluptatum iste et quo, assumenda placeat minus dolorem culpa, consequuntur tempore velit, veniam delectus voluptatem corrupti eius? </p>
+		<p><?=$section['copy']?></p>
 	</text-content>
 
 </graphic-diptych>

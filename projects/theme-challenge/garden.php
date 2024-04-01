@@ -10,40 +10,16 @@
 
 
 <main id="page-content">
-	<section class='welcome' id='welcome'>
-		<inner-column>
+	<?php foreach ($pageData['section'] as $section) { ?>
+		<section class='<?=$section['class']?>' id='<?=$section['id']?>'>
+			<inner-column>
 
-			<?php include('modules/graphic-diptych/template.php'); ?>
+				<?php include('modules/' . $section['module'] . '/template.php'); ?>
 
-		</inner-column>
-	</section>
+			</inner-column>
+		</section>
+	<?php } ?>
 
-
-	<section class='sign-up' id='sign-up'>
-		<inner-column>
-
-			<?php include('modules/call-to-action/template.php'); ?>
-
-		</inner-column>
-	</section>
-
-
-	<section class='latest' id='latest'>
-		<inner-column>
-
-			<?php include('modules/articles-intro/template.php'); ?>
-
-		</inner-column>
-	</section>
-
-
-	<section class='get-involved' id='get-involved'>
-		<inner-column>
-
-			<?php include('modules/call-to-action/template.php'); ?>
-
-		</inner-column>
-	</section>
 </main>
 
 

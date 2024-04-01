@@ -1,8 +1,9 @@
 
 <?php
-	$heading = $article_contents['heading'];
-	$description = $article_contents['description'];
-	$thumbnail = $article_contents['thumbnail'];
+	$heading = $content['heading'];
+	$description = $content['description'];
+	$thumbnail = $content['thumbnail'];
+	$link = $content['link'];
 ?>
 
 <article class='article-card'>
@@ -15,6 +16,6 @@
 
 		<p class='teaser'><?=$description?></p>
 
-		<a class='button' href='#'>Call to action</a>
+		<a class='button' href='#'><?=$link?></a>
 	</text-content>
 </article>
