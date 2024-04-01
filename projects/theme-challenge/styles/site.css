@@ -74,7 +74,6 @@ section.get-involved inner-column {
 }
 
 section.get-involved call-to-action {
-	border: 2px solid var(--color);
 	padding: 5vh 5vh;
 }
 
@@ -82,7 +81,9 @@ section.get-involved .button {
 	background-color: var(--color);
 }
 
-
+.garden section.get-involved call-to-action {
+	border: 2px solid var(--color);
+}
 
 @media (prefers-color-scheme: dark) {
 	.default section.sign-up {
@@ -102,8 +103,12 @@ section.get-involved .button {
 }
 
 @media (min-width: 750px) {
-	.garden header#top {
-		padding-inline: 1vw;
+
+	.garden section.get-involved call-to-action {
+		border-top: 2px solid var(--color);
+		border-bottom: 2px solid var(--color);
+		border-left: unset;
+		border-right: unset;
 	}
 }
 

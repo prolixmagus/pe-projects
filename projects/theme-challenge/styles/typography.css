@@ -3,7 +3,7 @@
 
 .loud-voice	{
 	font-family: sans-serif;
-	font-size: clamp(36px, 5vw, 60px);
+	font-size: clamp(35px, 5vw, 50px);
 }
 @media (min-width: 600px) {
 	.loud-voice {
@@ -33,25 +33,26 @@
 }
 
 :is(.calm-voice, p, li) strong {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .garden .loud-voice {
 	font-family: "Cormorant", serif;
-	font-weight: 500;
-	font-size: clamp(2.75rem, 6vw, 3.75rem); /* 44 to 60 px */
+	font-weight: 700;
+	font-size: clamp(3rem, 6vw, 3.75rem); /* 44 to 60 px */
 }
 
 .garden .attention-voice {
 	font-family: "Cormorant", serif;
 	font-weight: 500;
-	font-size: clamp(1.875rem, 5vw, 2.5rem); /*30px to 40x*/
+	font-size: 3rem; /*30px to 40x*/
+	color: var(--ink);
 }
 
 .garden .strong-voice	{
 	font-family: "Cormorant", serif;
-	font-weight: 700;
-	font-size:  1.5rem; /* 22 px */
+	font-weight: 600;
+	font-size:  2rem; /* 25 px */
 }
 
 .garden .calm-voice, p, li {

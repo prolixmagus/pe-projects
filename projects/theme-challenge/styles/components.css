@@ -4,7 +4,6 @@
 
 .button {
 	display: block;
-
 	font-family: sans-serif;
 	font-size: 1rem;
 	line-height: 1.4;
@@ -18,8 +17,30 @@
 	transition: all .4s ease-out;
 }
 
+.garden .button {
+	padding: .25em .5em;
+	font-size: 15px;
+}
+
+.garden .menu-toggle {
+	min-width: 50px;
+}
+
 .garden .button:hover {
 	background-color: var(--paper);
 	border: 2px solid var(--color);
 	color: var(--color);
+}
+
+.garden .button.leaf-sign:hover {
+	background-color: var(--paper);
+	border: 2px solid var(--color);
+	color: var(--color);
+
+}
+
+.garden .article-card .button {
+	font-size: 14px;
+	text-decoration: underline;
+	text-transform: none;
 }
