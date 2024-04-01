@@ -7,59 +7,79 @@
 			"module": "mast-head",
 			"theme-1": "default",
 			"theme-2": "garden",
-			"logo": "plant-logo"
+			"logo": "plant-logo",
+			"id": "top",
+			"button": "Book now"
 		}
 	],
-	"graphic-diptych": [
+	"section": [
 		{
 			"module": "graphic-diptych",
-			"img": "garden-diptych"
-		}
-	],
-	"call-to-action": [
+			"img": "garden-diptych",
+			"class": "welcome",
+			"id": "welcome",
+			"title": "We Are EliteEcoScapes",
+			"copy": "For over 20 years, EliteEcoScapes has provided the Greater Los Angeles area with premium landscaping services. From modern beach houses to generational estates - whether in the arid desert or the windy coast - we've sculpted the environment to meet your needs. Our specialists are at the forefront of sustainable landscaping the melds the surrounding biome with your family sanctuary."
+		},
 		{
-			"module": "call-to-action"
-		}
-	],
-	"articles-intro": [
+			"module": "call-to-action",
+			"class": "sign-up",
+			"id": "sign-up",
+			"heading": "Cultivate Your Dreams",
+			"copy": "We want you to have a perfect home - inside and out. Book a consultation today and meet our team or tour one of our showcase properties."
+		},
 		{
+			"module": "articles-intro",
+			"class": "latest",
+			"id": "latest",
+			"heading": "Our Services",
+			"copy": "Our experienced team is ready to provide you with a diverse range of landscaping services that create and maintain a vision for your property.",
 			"content": [
 				{
-					"heading": "Article or product",
-					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "garden-maintenance-portrait.jpg"
+					"heading": "Xeriscaping",
+					"description": "We embrace the arid and dry climate of the Southwest by designing spaces that conserve water and minimize maintenance. Plants are locally sourced, seamlessly integrating your home with the surroudning environment.",
+					"thumbnail": "garden-maintenance-portrait.jpg",
+					"link": "Read more"
 				},
 				{
-					"heading": "Article or product",
-					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "garden-path-portrait.jpg"
+					"heading": "Hardscaping",
+					"description": "Decks, patios, walkways, fences - we breathe life into rock and stone. Your outdoor spaces will be living scultpures, transforming your home into an artistic experience.",
+					"thumbnail": "garden-path-portrait.jpg",
+					"link": "Read more"
 				},
 				{
-					"heading": "Article or product",
-					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "garden-planting-portrait.jpg"
+					"heading": "Planting",
+					"description": "We pride ourselves in our deliberate selection of plants to complement your space. After a designer walks you through the process, our grounds team ertilizes, mulches, plants, and cleans your lawn or garden.",
+					"thumbnail": "garden-planting-portrait.jpg",
+					"link": "Read more"
 				},
 				{
-					"heading": "Article or product",
-					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "garden-pool-portrait.jpg"
+					"heading": "Poolside",
+					"description": "What better way to relax after a swim then to rest in the dappled sunlight surrounded by moisture loving plants? We customize spaces that showcase your pool area while also providing lush, serene plantlife.",
+					"thumbnail": "garden-pool-portrait.jpg",
+					"link": "Read more"
 				},
 				{
-					"heading": "Article or product",
-					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "indoor-garden-portrait.jpg"
+					"heading": "Indoor",
+					"description": "Have a greenhouse, sunroom, or foyer? We curate plants that love the indoors and pruify the air. We can also recommend pet-safe plants or low-pollen alternatives.",
+					"thumbnail": "indoor-garden-portrait.jpg",
+					"link": "Read more"
 				},
 				{
-					"heading": "Article or product",
-					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
-					"thumbnail": "garden-house-portrait.jpg"
+					"heading": "Seasonal Cleanup",
+					"description": "Schedule seasonal maintenance to clean up overgrowth, weeds, or fallen leaves. Your landscape is a living design and we want it looking it's best at all times.",
+					"thumbnail": "garden-house-portrait.jpg",
+					"link": "Read more"
 				}
 			]
-		}
-	],
-	"call-to-action-2": [
+		},
 		{
-			"module": "call-to-action"
+			"module": "call-to-action-2",
+			"class": "get-involved",
+			"id": "get-involved",
+			"heading": "Beautify Your Life",
+			"copy": "Discover how sustainability and luxury work together to maintain a balanced, unique landscape.",
+			"button": "Learn More"
 		}
 	],
 	"site-map": [
