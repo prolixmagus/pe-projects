@@ -27,7 +27,7 @@ graphic-diptych p {
 	flex-direction: column;
 	align-items: flex-start;
 	position: relative;
-	padding: 1vh 0vh 5vh 0vh;
+	padding: 0vh 0vh 5vh 0vh;
 }
 
 

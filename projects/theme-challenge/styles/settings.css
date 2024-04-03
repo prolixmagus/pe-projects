@@ -5,6 +5,7 @@ html {
 	--neutral-stuffs: gray;
 
 	--color: #9ec9eb;
+	--color-opaque: rgba(158, 201, 235, .5);
 	--highlight: #aadee9;
 
 	--shadow: rgba(0, 0, 0, 0.8);

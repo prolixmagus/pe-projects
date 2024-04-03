@@ -26,6 +26,24 @@ error_reporting(E_ALL);
 
 		<?php getTemplate($page) ?>
 
+JS for expandable menu 
+<script>
+			var body = document.querySelector('body');
+			var userMenu = document.querySelector('.user-menu');
+			var siteMenu = document.querySelector('.site-menu');
+
+			body.addEventListener('click', (e) => {
+
+				if ( e.target.matches('[rel="toggle"]') ) {
+					// userMenu.classList.toggle('open-menu');
+					// siteMenu.classList.toggle('hide-menu');
+					body.classList.toggle('open-menu')
+
+				}
+
+			})
+		</script> 
+
 	</body>
 
 </html>

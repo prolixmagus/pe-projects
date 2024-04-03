@@ -45,7 +45,7 @@
             <path d="M360.651,280.258C360.686,280.212 360.768,280.177 360.768,280.235C360.71,280.34 360.686,280.27 360.651,280.258Z" style="fill-rule:nonzero;"/>
         </g>
         <g class="plant-border" transform="matrix(0.683216,0,0,0.663276,365.658,230.939)">
-            <rect x="660.847" y="185.596" width="678.306" height="800" style="fill:none;stroke:black;stroke-width:11.06px;"/>
+            <rect x="660.847" y="185.596" width="678.306" height="800" style="fill:none;stroke-width:11.06px;"/>
         </g>
         <g class="plant-text" transform="matrix(2.94516,0,0,3.07994,-1011.43,-1420.8)">
             <g transform="matrix(1.03,0,0,1,-23.6276,0)">

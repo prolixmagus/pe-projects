@@ -13,6 +13,12 @@
 
 	<nav class='user-menu'>
 		<ul>
+			<li class='close-menu'>
+				<button rel='toggle'>X CLOSE</button>
+			</li>
+			<li class='plant-logo small-menu'>
+				<?php include("modules/" . $content['logo'] . ".php"); ?>
+			</li>
 			<li class='theme-link'>
 				<a href='?theme=<?=$content['theme-1']?>'>Wireframe</a>
 			</li>
@@ -21,7 +27,7 @@
 				<a href='?theme=<?=$content['theme-2']?>'>Garden</a>
 			</li>
 			<li class='menu-toggle'>
-				<button>Menu</button>
+				<button rel='toggle'>Menu</button>
 			</li>
 			<li class='button-link'>
 				<a class='button leaf-sign' href='#'>
