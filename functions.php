@@ -1,5 +1,17 @@
 <?php
 
+//get page database
+function readPageData($page) {
+	$filePath = "data/$page.json";
+	if ( file_get_contents($filePath) ) {
+		$json = file_get_contents($filePath);
+	} else {
+		echo "No contents here!";
+	}
+	$pageData = json_decode($json, true);
+	return $pageData;
+}
+
 // CRUD Functions
 function read($path) {
 	$json = file_get_contents($path);
