@@ -141,7 +141,7 @@ body.open-menu inner-column {
 	align-items: center;
 	min-width: 100px;
 	& p.calm-voice {
-		font-size: 12px;
+		font-size: 14px;
 		color: var(--paper);
 	}
 }
