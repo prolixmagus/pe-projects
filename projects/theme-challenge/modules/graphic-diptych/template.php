@@ -3,9 +3,9 @@
 <graphic-diptych>
 	<picture>
 		<?php if ($page === 'default') { ?>
-			<img src="https://peprojects.dev/images/landscape.jpg" alt='$todo'>
+			<img src="https://peprojects.dev/images/landscape.jpg" alt='wireframe'>
 		<?php } else if ($page === 'garden') { ?>
-			<img src='images/background/garden-diptych.jpg' alt='$todo'>
+			<img src='images/background/garden-diptych.jpg' alt='A stately mansion with a manicured lawn and stone walkway.'>
 		<?php } ?>
 	</picture>
 	

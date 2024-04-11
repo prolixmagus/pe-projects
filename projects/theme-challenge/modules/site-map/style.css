@@ -33,12 +33,22 @@ site-map h3 {
 	gap: 15px;
 }
 
+.x-menu li {
+	display: flex;
+}
+
+.x-menu li::before {
+	content: '•';
+	padding-inline: 2px;
+	color: var(--color);
+}
+
 .garden site-map .plant-leaves * {
 	fill: var(--color);
 }
 
-.garden site-map .border * {
-	fill: var(--accent);
+.garden site-map .plant-border * {
+	stroke: var(--ink);
 }
 
 .garden site-map .logo {
@@ -47,8 +57,26 @@ site-map h3 {
 
 .garden footer nav a {
 	color: var(--ink);
+	text-decoration: 1px underline;
+}
+
+.garden footer nav a.company-email {
+	color: var(--color);
+	&:visited {
+		color: var(--color);
+	}
 }
 
 .garden footer nav a:visited {
 	color: var(--ink-light);
 }
+
+.garden .social {
+	display: flex;
+	gap: 10px;
+	& .social-icon {
+		max-width: 30px;
+	}
+}
+
+

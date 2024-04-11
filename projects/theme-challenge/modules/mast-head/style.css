@@ -44,7 +44,7 @@ mast-head nav a:not(.home) {
 }
 
 .garden mast-head .plant-border * {
-	stroke: var(--accent);
+	stroke: var(--ink);
 }
 
 body.open-menu mast-head .plant-leaves * {
