@@ -39,36 +39,42 @@
 					"heading": "Xeriscaping",
 					"description": "We embrace the arid and dry climate of the Southwest by designing spaces that conserve water and minimize maintenance. Plants are locally sourced, seamlessly integrating your home with the surroudning environment.",
 					"thumbnail": "garden-maintenance-portrait.jpg",
+					"alt": "A desert landscape with a reddish-brown cactus near a small fountain",
 					"link": "Read more"
 				},
 				{
 					"heading": "Hardscaping",
 					"description": "Decks, patios, walkways, fences - we breathe life into rock and stone. Your outdoor spaces will be living scultpures, transforming your home into an artistic experience.",
 					"thumbnail": "garden-path-portrait.jpg",
+					"alt": "A circular wooden deck leading to a rock garden with a rock sculpture",
 					"link": "Read more"
 				},
 				{
 					"heading": "Planting",
 					"description": "We pride ourselves in our deliberate selection of plants to complement your space. After a designer walks you through the process, our grounds team fertilizes, mulches, plants, and cleans your lawn or garden.",
 					"thumbnail": "garden-planting-portrait.jpg",
+					"alt": "sprouted seedlings in clay pots",
 					"link": "Read more"
 				},
 				{
 					"heading": "Poolside",
 					"description": "What better way to relax after a swim then to rest in the dappled sunlight surrounded by moisture loving plants? We customize spaces that showcase your pool area while also providing lush, serene plantlife.",
 					"thumbnail": "garden-pool-portrait.jpg",
+					"alt": "A backyard with a square pool surrounded by lush tropical ferns",
 					"link": "Read more"
 				},
 				{
 					"heading": "Indoor",
 					"description": "Have a greenhouse, sunroom, or foyer? We curate plants that love the indoors and pruify the air. We can also recommend pet-safe plants or low-pollen alternatives.",
 					"thumbnail": "indoor-garden-portrait.jpg",
+					"alt": "An indoor cafe space decorated with plants with a grass carpet",
 					"link": "Read more"
 				},
 				{
 					"heading": "Seasonal Cleanup",
 					"description": "Schedule seasonal maintenance to clean up overgrowth, weeds, or fallen leaves. Your landscape is a living design and we want it looking it's best at all times.",
 					"thumbnail": "garden-house-portrait.jpg",
+					"alt": "A backyard space with overgrown trees with a pathway bordered by spidergrass",
 					"link": "Read more"
 				}
 			]

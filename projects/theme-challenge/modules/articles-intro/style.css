@@ -29,3 +29,9 @@ article-grid ul {
 		grid-template-columns: 1fr 1fr;
 	}
 }
+
+@media (min-width: 900px) {
+	.garden article-grid .article-list {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}

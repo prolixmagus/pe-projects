@@ -4,11 +4,12 @@
 	$description = $content['description'];
 	$thumbnail = $content['thumbnail'];
 	$link = $content['link'];
+	$alt = $content['alt']
 ?>
 
 <article class='article-card'>
 	<picture>
-		<img src='images/<?=$thumbnail?>' alt='$todo'>
+		<img src='images/<?=$thumbnail?>' alt='<?=$alt?>'>
 	</picture>
 
 	<text-content>
