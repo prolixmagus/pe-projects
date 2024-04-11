@@ -26,8 +26,8 @@ error_reporting(E_ALL);
 
 		<?php getTemplate($page) ?>
 
-JS for expandable menu 
-<script>
+
+		<script>
 			var body = document.querySelector('body');
 			var userMenu = document.querySelector('.user-menu');
 			var siteMenu = document.querySelector('.site-menu');
