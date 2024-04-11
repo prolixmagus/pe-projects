@@ -26,7 +26,7 @@
 			"class": "sign-up",
 			"id": "sign-up",
 			"heading": "Cultivate Your Dreams",
-			"copy": "We want you to have a perfect home - inside and out. Book a consultation today and meet our team or tour one of our showcase properties."
+			"copy": "We want you to have a perfect home - inside and out. Book a consultation today and meet our team - or tour one of our showcase properties!"
 		},
 		{
 			"module": "articles-intro",
@@ -49,7 +49,7 @@
 				},
 				{
 					"heading": "Planting",
-					"description": "We pride ourselves in our deliberate selection of plants to complement your space. After a designer walks you through the process, our grounds team ertilizes, mulches, plants, and cleans your lawn or garden.",
+					"description": "We pride ourselves in our deliberate selection of plants to complement your space. After a designer walks you through the process, our grounds team fertilizes, mulches, plants, and cleans your lawn or garden.",
 					"thumbnail": "garden-planting-portrait.jpg",
 					"link": "Read more"
 				},
@@ -85,7 +85,48 @@
 	"site-map": [
 		{
 			"module": "site-map",
-			"logo": "plant-logo"
+			"menu-links": [
+				{
+					"heading": "plant-logo",
+					"email": "garden@elite.ecoscapes",
+					"number": "123-456-789",
+					"street": "1234 Birch Lane",
+					"city": "Los Angeles, CA 91607"
+				}
+			],
+			"services-links": [
+				{
+					"heading": "Services",
+					"xeriscaping": "Xeriscaping", 
+					"hardscaping": "Hardsciping", 
+					"planting": "Planting",
+					"mulching": "Mulching",
+					"water features": "Water features",
+					"indoor design": "Indoor design",
+					"seasonal": "Seasonal" 
+				}
+			],
+			"gallery-links": [
+				{
+					"heading": "Gallery",
+					"pool": "Pool",
+					"lawn": "Lawn",
+					"indoor": "Indoor",
+					"garden": "Garden",
+					"urban": "Urban",
+					"desert": "Desert"
+				}
+			],
+			"social-links": [
+				{
+					"heading": "Social",
+					"blog": "Blog",
+					"facebook": "facebook",
+					"instagram": "instagram",
+					"snapchat": "snapchat"
+				}
+			]
+
 		}
 	]
 }
