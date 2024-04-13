@@ -4,14 +4,14 @@
 		"name": "Exercises for Programmers",
 		"address": "?page=exercises",
 		"competency": "PHP, HTML",
-		"description": "My interpretation of Brian P. Hogan's coding challenges."
+		"description": "My interpretation of Brian P. Hogan's coding challenges, also viewable on <a href='https://codepen.io/Jeremy-Fishman/collections/'>CodePen</a>"
 	},
 	{
 		"id": 2,
 		"name": "Responsive Layout Garden",
 		"address": "?page=layout-garden",
 		"competency": "PHP, HTML, CSS",
-		"description": "A Living collection of internet layouts re-created for your perusal."
+		"description": "A living collection of internet layouts that inspired me during browsing. Repetition and practice, practice, practice!"
 	},
 	{
 		"id": 3,
@@ -26,5 +26,13 @@
 		"address": "projects/site-mockup-to-code",
 		"competency": "PHP, HTML, CSS",
 		"description": "A FIGMA file transmuted into code, scaffolded with a PHP routering structure and flexible CSS design system."
+	},
+	{
+		"id": 5,
+		"name": "Theme Challenge",
+		"address": "projects/theme-challenge",
+		"competency": "PHP, HTML, CSS, JS",
+		"description": "I was tasked to choose an industry and create a professional website for a fictional company. I chose luxury landscaping."
+
 	}
 ]

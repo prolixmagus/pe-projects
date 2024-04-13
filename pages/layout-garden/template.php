@@ -9,11 +9,11 @@
 
 <?php
 
-$layout_database = read('data/layout-garden-database.json');
+$layouts = readPageData('layout-garden-database');
 
 // print_r($layout_database);
 
-foreach ($layout_database['sections'] as $section) { ?>
+foreach ($layouts['sections'] as $section) { ?>
 
 	<section class='module-showcase <?=$section['module']?>'>
 		

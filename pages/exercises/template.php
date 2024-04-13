@@ -1,4 +1,4 @@
-<?php $exercises = read(getFile("data/exercises-database.json"));?>
+<?php $exercises = readPageData('exercises-database') ?>
 
 <section class='challenge-introduction'>
 	<inner-column>

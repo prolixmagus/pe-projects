@@ -65,7 +65,7 @@ function getExerciseTemplate($name) {
 function getExerciseNameBySlug() {
 	//get the exercises from the database
 	$exercises = getAllExercises();
-	//find the right one by id
+	//find the right one by slug
 	foreach ( $exercises as $exercise ) {
 		if ( $_GET['slug'] == $exercise["slug"] ) {
 			return $exercise["slug"]; // slug
