@@ -10,7 +10,7 @@ html {
 	--black: hsl(var(--hue), 0%, 7%);
 	--white: hsl(var(--hue), 0%, 94%);
 
-	--fish-green: hsl(var(--green), 75%, 45%);
+	--fish-green: hsl(var(--green), 75%, 40%);
 	--fish-blue: hsl(var(--blue), 71%, 59%);
 	--tile-red: hsl(var(--red), 100%, 35%);
 	--fish-pink: hsl(var(--pink), 100%, 89%);
