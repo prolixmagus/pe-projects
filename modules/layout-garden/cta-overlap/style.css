@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	place-items: center;
+	border: 1px solid black;
 }
 
 .cta-overlap h2 {

@@ -29,7 +29,7 @@ details[open] > summary::after {
 
 
 .details-item:nth-child(2) {
-	padding-top: .5em;
+	padding-top: .5em
 }
 
 .details-item + .details-item {
@@ -56,24 +56,13 @@ details[open] > summary::after {
 	}
 }
 
-@media (min-width: 1000px) {
-	.day-1-grid module-showcase {
-		display: flex;
-	}
-
-	.picture-grid {
-		place-items: center;
-		margin-top: 4rem;
-	}
-}
-
 @media (min-width: 600px) {
 	.headline .small-heading {
 		font-size: 1.5rem;
 	}
 
 	.details-item:nth-child(2) {
-	padding-top: 1em;
+	padding-top: .25em;
 }
 
 	.details-item + .details-item {
@@ -94,6 +83,17 @@ details[open] > summary::after {
 
 	.headline-group {
 		grid-column: 3 / 5;
+	}
+}
+
+@media (min-width: 1000px) {
+	.day-1-grid module-showcase {
+		display: flex;
+	}
+
+	.picture-grid {
+		place-items: center;
+		margin-top: 4rem;
 	}
 }
 
