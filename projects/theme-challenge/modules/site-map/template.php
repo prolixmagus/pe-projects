@@ -89,27 +89,46 @@
 
 			<nav class='y-menu'>
 				<h3 class='strong-voice'><?=$link['heading']?></h3>
-				
-				<ul>
-					<li>
-						<a href='#'><?=$link['blog']?></a>
-					</li>
-					<li>
-						<a class='social' href='#'>
-							<picture class='social-icon'>
-								<img src='../../images/icons/facebook.png'>
-							</picture>
-							<picture class='social-icon'>
-								<img src='../../images/icons/instagram.png'>
-							</picture>
-							<picture class='social-icon'>
-								<img src='../../images/icons/snapchat.png'>
-							</picture>
-						</a>
-					</li>
-				</ul>
+				<?php if ($page === 'garden') { ?>	
+					<ul>
+						<li>
+							<a href='#'><?=$link['blog']?></a>
+						</li>
+						<li>
+							<ul class='social'>
+								<li>
+									<a href='#'>
+										<picture class='social-icon'>
+											<img src='../../images/icons/facebook.png'>
+										</picture>
+									</a>
+								</li>
+								<li>
+									<a href='#'>
+										<picture class='social-icon'>
+											<img src='../../images/icons/instagram.png'>
+										</picture>
+									</a>
+								</li>
+								<li>
+									<a href='#'>
+										<picture class='social-icon'>
+											<img src='../../images/icons/snapchat.png'>
+										</picture>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				<?php } else { ?>
+					<ul>
+						<li>
+							<a href='#'><?=$link['blog']?></a>
+						</li>
+					</ul>
 			</nav>
 		<?php } ?>
+	<?php } ?>
 
 
 		</site-map>

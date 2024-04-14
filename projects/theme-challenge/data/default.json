@@ -85,7 +85,48 @@
 	"site-map": [
 		{
 			"module": "site-map",
-			"logo": "plant-logo"
+			"menu-links": [
+				{
+					"heading": "Some Page",
+					"email": "Some Email",
+					"number": "Street Number",
+					"street": "Street",
+					"city": "Some Street"
+				}
+			],
+			"services-links": [
+				{
+					"heading": "Some Page",
+					"xeriscaping": "Some Page", 
+					"hardscaping": "Some Pageg", 
+					"planting": "Some Page",
+					"mulching": "Some Page",
+					"water features": "Some Page",
+					"indoor design": "Some Page",
+					"seasonal": "Some Page" 
+				}
+			],
+			"gallery-links": [
+				{
+					"heading": "Some Page",
+					"pool": "Some Page",
+					"lawn": "Some Page",
+					"indoor": "Some Page",
+					"garden": "Some Page",
+					"urban": "Some Page",
+					"desert": "Some Page"
+				}
+			],
+			"social-links": [
+				{
+					"heading": "Some Page",
+					"blog": "Some Page",
+					"facebook": "Some Page",
+					"instagram": "Some Page",
+					"snapchat": "Some Page"
+				}
+			]
+
 		}
 	]
 }

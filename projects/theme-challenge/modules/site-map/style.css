@@ -73,6 +73,7 @@ site-map h3 {
 
 .garden .social {
 	display: flex;
+	flex-direction: row;
 	gap: 10px;
 	& .social-icon {
 		max-width: 30px;
