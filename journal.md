@@ -115,3 +115,15 @@ Today, Derek showed me a wonderful GUI that makes viewing your git history actua
 - [x] Install Git Tower
 - [x] Commit first files
 - [ ] Take a nap
+
+## What If...
+### 4/15/24
+
+It's been a while. While listening to a lesson about preparing content for my website, I stumbled upon a book called _The Getting Thigns Done Workbook_ by David Allen. On p. 5, there's a survey that asks the question: if you had more room in your head, what would you choose to be and do?
+
+**More Creative?**
+**More Strategic?**
+**More Innovative?**
+**More Loving?**
+**More Present with Whatever You're Doing?**
+**What else?**
