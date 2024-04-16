@@ -26,7 +26,8 @@
 			"class": "sign-up",
 			"id": "sign-up",
 			"heading": "Cultivate Your Dreams",
-			"copy": "We want you to have a perfect home - inside and out. Book a consultation today and meet our team - or tour one of our showcase properties!"
+			"copy": "We want you to have a perfect home - inside and out. Book a consultation today and meet our team - or tour one of our showcase properties!",
+			"button": "Call to Action"
 		},
 		{
 			"module": "articles-intro",
@@ -80,7 +81,7 @@
 			]
 		},
 		{
-			"module": "call-to-action-2",
+			"module": "call-to-action",
 			"class": "get-involved",
 			"id": "get-involved",
 			"heading": "Beautify Your Life",
