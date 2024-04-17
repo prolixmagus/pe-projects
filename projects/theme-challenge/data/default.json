@@ -15,18 +15,19 @@
 	"section": [
 		{
 			"module": "graphic-diptych",
-			"img": "garden-diptych",
+			"img": "landscape",
 			"class": "welcome",
 			"id": "welcome",
-			"title": "We Are EliteEcoScapes",
-			"copy": "For over 20 years, EliteEcoScapes has provided the Greater Los Angeles area with premium landscaping services. From modern beach houses to generational estates - whether in the arid desert or the windy coast - we've sculpted the environment to meet your needs. Our specialists are at the forefront of sustainable landscaping the melds the surrounding biome with your family sanctuary."
+			"title": "Diptych",
+			"copy": "This is a graphic diptych."
 		},
 		{
 			"module": "call-to-action",
 			"class": "sign-up",
 			"id": "sign-up",
 			"heading": "Call to Action",
-			"copy": "Things to convince you to do things!"
+			"copy": "Things to convince you to do things!",
+			"button": "Call to Action"
 		},
 		{
 			"module": "articles-intro",
@@ -39,42 +40,48 @@
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
 					"thumbnail": "landscape.jpg",
-					"link": "Read more"
+					"link": "Read more",
+					"alt": "todo"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
 					"thumbnail": "landscape.jpg",
-					"link": "Read more"
+					"link": "Read more",
+					"alt": "todo"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
 					"thumbnail": "landscape.jpg",
-					"link": "Read more"
+					"link": "Read more",
+					"alt": "todo"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
 					"thumbnail": "landscape.jpg",
-					"link": "Read more"
+					"link": "Read more",
+					"alt": "todo"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
 					"thumbnail": "landscape.jpg",
-					"link": "Read more"
+					"link": "Read more",
+					"alt": "todo"
 				},
 				{
 					"heading": "Article or product",
 					"description": "Here's a little info to help you understand if this is a thing you want to know about.",
 					"thumbnail": "landscape.jpg",
-					"link": "Read more"
+					"link": "Read more",
+					"alt": "todo"
 				}
 			]
 		},
 		{
-			"module": "call-to-action-2",
+			"module": "call-to-action",
 			"class": "get-involved",
 			"id": "get-involved",
 			"heading": "Another heading",
@@ -87,7 +94,7 @@
 			"module": "site-map",
 			"menu-links": [
 				{
-					"heading": "Some Page",
+					"heading": "logo",
 					"email": "Some Email",
 					"number": "Street Number",
 					"street": "Street",

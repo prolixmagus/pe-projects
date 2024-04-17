@@ -1,6 +1,6 @@
 
 mast-head {
-	display: block;
+	display: flex;
 }
 
 mast-head .logo {
@@ -69,6 +69,14 @@ body.open-menu mast-head .plant-border * {
 }
 
 .garden .small-menu {
+	display: none;
+}
+
+.default .user-menu .theme-link {
+	display: none;
+}
+
+.default .small-menu {
 	display: none;
 }
 
@@ -184,6 +192,10 @@ body.open-menu .user-menu .close-menu button {
 	display: none;
 }
 
+.default .user-menu .close-menu button {
+	display: none;
+}
+
 .garden .leaf-icon {
 	fill: none;
 	stroke: var(--paper);
@@ -224,7 +236,15 @@ body.open-menu mast-head nav a:not(.home, .button):visited {
 		display: block;
 	}
 
+	.default .user-menu .theme-link {
+		display: block;
+	}
+
 	.garden .user-menu .menu-toggle{
+		display: none;
+	}
+
+	.default .user-menu .menu-toggle {
 		display: none;
 	}
 }
