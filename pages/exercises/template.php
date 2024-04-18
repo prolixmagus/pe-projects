@@ -14,7 +14,7 @@
 		<ol class='project-list'>
 			<?php foreach($exercises as $exercise) { ?>
 				<li class="exercise">
-					<a href="?page=exercise&slug=<?=$exercise['slug']?>">
+					<a class="exercise-link"href="?page=exercise&slug=<?=$exercise['slug']?>">
 						<?=$exercise["name"]?>
 						<div class='e4p-icon'>
 							<?php include('images/' . $exercise['slug'] . '.svg')?>
