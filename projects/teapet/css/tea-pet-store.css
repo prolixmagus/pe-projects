@@ -1,6 +1,7 @@
 .pet-shop-list picture {
 	background-color: hsl(var(--pet-purple) 21% 32% / .2);
 	padding: 1em;
+	box-shadow: 2px 2px 8px 0px;
 }
 
 .item-grid {

@@ -28,15 +28,17 @@ inner-column {
 	padding: 1.5rem 1rem;
 } 
 
-picture {
+.pet-shop-list picture {
 	display: block;
 	border-radius: 5%;
+	aspect-ratio: 3 / 2;
 }
 
 img {
 	display: block;
 	width: 100%;
-	height: auto;
+	height: 100%;
+	object-fit: cover;
 }
 
 header {
