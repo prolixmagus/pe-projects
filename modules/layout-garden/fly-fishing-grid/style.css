@@ -7,7 +7,7 @@
 
 .fly-fishing-grid li {
 	border-bottom: 1px solid rgba(0 0 0 / .2);
-	padding-block: 20px;
+	padding: 20px 10px;
 }
 
 .fly-fishing-grid li:last-child {
@@ -20,6 +20,7 @@
 	font-family: Overpass, sans-serif;
 	text-align: center;
 	opacity: .8;
+	color: ink;
 }
 
 @media (prefers-color-scheme: dark) {
