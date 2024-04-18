@@ -44,10 +44,19 @@
 <inner-column class="details">
 
 <?php 
-	if (isset($detail) ) { ?>
+	if (isset($detail) ) { 
+
+		if ($detail["image"] == null) {
+			$image = 'images/portrait.jpg';
+		} else {
+			$image = $detail["image"];
+		}
+	?>
+
+
 
 	<picture class="detail-picture">
-		<img src="<?=$detail["image"]?>" alt="tea pet">
+		<img src="<?=$image?>" alt="tea pet">
 	</picture>
 	<item-details>
 		<h1 class="pet-name bold"><?=$detail["pet-name"]?></h1>
@@ -70,7 +79,7 @@
 
 	<?php } else { ?>
 
-		<h2 class="attention-voice">No Tea pets Here!</h1>
+		<h2 class="attention-voice">No Tea pets Here!</h2>
 		<p class="calm-voice">Please visit our <a href="?page=pet-shop-list">Pet Shop</a> to nurture a Tea Pet today!</p>
 
 	<?php } ?>
