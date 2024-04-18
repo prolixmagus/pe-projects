@@ -13,7 +13,7 @@
 	<inner-column>
 		<ol class='project-list'>
 			<?php foreach($projects as $project) { ?>
-				<li class="exercise">
+				<li class="exercise e4p">
 					<a href='<?=$project['address']?>'><?=$project['name']?></a>
 					<h2 class='calm-voice'><?=$project['competency']?></h2>
 					<p><?=$project['description']?></p>
