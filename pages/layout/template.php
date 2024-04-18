@@ -25,7 +25,7 @@
 
 	<section class="case-study-paragraph">
 		<inner-column>
-			<?php include("modules/layout-garden/" .  $section['module'] . "/" . $section['case-study'] . ".php");?>
+			<?php include("modules/layout-garden/" .  $section['module'] . "/case-study.php");?>
 <?php } else { ?>
 
 	<section>
