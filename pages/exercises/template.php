@@ -20,6 +20,7 @@
 							<?php include('images/' . $exercise['slug'] . '.svg')?>
 						</div>
 					</a>
+					<p><?=$exercise['description']?></p>
 				</li>
 			<?php } ?>
 		</ol>

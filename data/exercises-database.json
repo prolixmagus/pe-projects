@@ -2,51 +2,62 @@
 	{
 		"id": 1,
 		"name": "Hello, World!",
-		"slug": "hello-world"
+		"slug": "hello-world",
+		"description": "wefwef"
+
 	},
 	{
 		"id": 2,
 		"name": "Counting Characters",
-		"slug": "counting-characters"
+		"slug": "counting-characters",
+		"description": "wefwef"
 	},
 	{
 		"id": 3,
 		"name": "Printing Quotes",
-		"slug": "printing-quotes"
+		"slug": "printing-quotes",
+		"description": "wefwef"
 	},
 	{
 		"id": 4,
 		"name": "Mad Libs",
-		"slug": "mad-libs"
+		"slug": "mad-libs",
+		"description": "wefwef"
 	},
 	{
 		"id": 5,
 		"name": "Simple Math",
-		"slug": "simple-math"
+		"slug": "simple-math",
+		"description": "wefwef"
 	},
 	{
 		"id": 6,
 		"name": "Retirement Calculator",
-		"slug": "retirement-calculator"
+		"slug": "retirement-calculator",
+		"description": "wefwef"
 	},
 	{
 		"id": 7,
 		"name": "Area of a Room",
-		"slug": "area-of-a-room"
+		"slug": "area-of-a-room",
+		"description": "wefwef"
 	},
 	{
 		"id": 8,
 		"name": "Pizza Party",
-		"slug": "pizza-party"
+		"slug": "pizza-party",
+		"description": "wefwef"
 	},
 	{
 		"id": 9,
 		"name": "Paint Calculator",
-		"slug": "paint-calculator"
+		"slug": "paint-calculator",
+		"description": "wefwef"
 	},
 	{
 		"id": 10,
 		"name": "Self-Checkout",
-		"slug": "self-checkout"
+		"slug": "self-checkout",
+		"description": "wefwef"
 	}
 ]
