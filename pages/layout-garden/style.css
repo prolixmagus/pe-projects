@@ -22,18 +22,17 @@ case-study-wrapper {
 module-showcase {
 	display: block;
 }
-
+;
 .case-study-link + module-showcase {
 	margin-top: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
-		color: var(--ink-light);
-		background-color: var(--paper-black);
-	}
 
 	.case-study-link {
-		border: 2px solid var(--paper);
+		border: 2px solid var(--fish-green);
+		color: var(--fish-green);
+		&:hover {
+			color: var(--paper);
+		}
 	}
-}

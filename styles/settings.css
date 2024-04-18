@@ -37,16 +37,13 @@ pre {
 	background-color: black;
 	margin-top: 1rem;
 	max-width: 500px;
-	padding-inline: 10px;
-	border-radius: 5%;
+	padding: 15px;
 }
 
 code {
-	background-color: black;
-	padding: 2px 4px;
 	color: orange;
-	font-weight: 600;
-	border-radius: 20px;
+	font-family: monospace;
+	font-weight: 500;
 }
 
 sup {
@@ -57,9 +54,8 @@ sup {
 
 @media (prefers-color-scheme: dark) {
 	html {
-		--paper-black: hsl(0, 0%, 7%);
+		--paper-black: hsl(5, 0%, 10%);
 		--ink-light: hsl(63, 100%, 96%);
-		--paper-light-gray: hsl(0, 0%, 11%);
 		--fish-blue: hsl(190, 39%, 25%);
 		--sand-yellow: hsl(37, 24%, 28%);
 	}

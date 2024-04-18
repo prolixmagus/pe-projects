@@ -258,22 +258,6 @@ li a:visited, p a:visited {
 	}
 }
 
-@media (min-width: 700px) {
-
-	.graphic-diptych module-showcase {
-		flex-direction: row-reverse;
-	}
-
-	cta-text {
-		width: 50%;
-	}
-
-	.graphic-diptych picture {
-		width: 80%;
-	}
-
-}
-
 @media (min-width: 775px) {
 
 	.seaweed.pink {
@@ -289,7 +273,7 @@ li a:visited, p a:visited {
 @media (prefers-color-scheme: dark) {
 	body {
 		color: var(--ink-light);
-		background-color: var(--paper-light-gray);
+		background-color: var(--paper-black);
 	}
 
 	li, p {
@@ -299,4 +283,5 @@ li a:visited, p a:visited {
 		& a {
 			color: hsl(191 71% 59% / 1);
 		}
+	}
 }
