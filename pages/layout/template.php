@@ -25,8 +25,7 @@
 
 	<section class="case-study-paragraph">
 		<inner-column>
-			<h2 class='small-heading'>Case Study</h2>
-			<p class='calm-voice'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odit, perferendis. Omnis, quod corporis illo asperiores fuga libero, tempore non ullam debitis minima aspernatur dolore, soluta similique accusantium maxime impedit.</p>
+			<?php include("modules/layout-garden/" .  $section['module'] . "/" . $section['case-study'] . ".php");?>
 <?php } else { ?>
 
 	<section>
