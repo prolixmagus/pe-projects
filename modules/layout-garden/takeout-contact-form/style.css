@@ -132,12 +132,12 @@ label-wrapper {
 
 @media (prefers-color-scheme: dark) {
 	.takeout-contact-form header, select {
-		background-color: var(--paper-light-gray);
+		background-color: var(--paper-black);
 		color: var(--ink-light);
 	}
 
 	.takeout-contact-form input {
-		background-color: var(--paper-light-gray);
+		background-color: var(--paper-black);
 		color: var(--ink-light);
 	}
 }

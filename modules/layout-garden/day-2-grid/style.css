@@ -83,7 +83,7 @@ article-section{
 
 @media (prefers-color-scheme: dark) {
 	.article-grid-2-cards li {
-		background-color: var(--paper-light-gray);
+		background-color: var(--paper-black);
 	}
 
 	.day-2-grid-circle {

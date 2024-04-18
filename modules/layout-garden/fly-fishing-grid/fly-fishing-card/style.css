@@ -46,7 +46,7 @@ product-details {
 
 @media (prefers-color-scheme: dark) {
 	.product-name .product-link {
-		color: var(--paper);
+		color: var(--ink);
 	}
 }
 

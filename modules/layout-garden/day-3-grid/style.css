@@ -100,6 +100,6 @@ details[open] > summary::after {
 
 @media (prefers-color-scheme: dark) {
 	.day-3-grid {
-		background-color: var(--paper-light-gray);
+		background-color: var(--paper-black);
 	}
 }

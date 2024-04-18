@@ -4,12 +4,18 @@
 }
 .announcement-grid ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
 	gap: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
-	.announcement-grid {
-		background-color: var(--paper-light-gray);
+	section.page-content.layout .announcement-grid {
+	background-color: #FBF7F5;
+	}
+}
+
+@media (min-width: 900px) {
+	.announcement-grid ul {
+		grid-template-columns: 1fr 1fr;
 	}
 }

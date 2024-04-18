@@ -4,48 +4,39 @@
 	"sections": [
 		{
 			"module": "fly-fishing-grid",
-			"slug": "fly-fishing-grid",
-			"case-study": "fly-fishing-grid-study"
+			"slug": "fly-fishing-grid"
 		},
 		{
 			"module": "graphic-diptych",
-			"slug": "graphic-diptych",
-			"case-study": "graphic-diptych"
+			"slug": "graphic-diptych"
 		},
 		{
 			"module": "announcement-grid",
-			"slug": "announcement-grid",
-			"case-study": "announcement-grid-study"
+			"slug": "announcement-grid"
 		},
 		{
 			"module": "takeout-contact-form",
-			"slug": "takeout-contact-form",
-			"case-study": "takeout-contact-form-study"
+			"slug": "takeout-contact-form"
 		},
 		{
 			"module": "cta-overlap",
-			"slug": "cta-overlap",
-			"case-study": "cta-overlap-study"
+			"slug": "cta-overlap"
 		},
 		{
 			"module": "day-1-grid",
-			"slug": "day-1-grid",
-			"case-study": "day-1-grid-study"
+			"slug": "day-1-grid"
 		},
 		{
 			"module": "day-2-grid",
-			"slug": "day-2-grid",
-			"case-study": "day-2-grid-study"
+			"slug": "day-2-grid"
 		},
 		{
 			"module": "day-3-grid",
-			"slug": "day-3-grid",
-			"case-study": "day-3-grid-study"
+			"slug": "day-3-grid"
 		},
 		{
 			"module": "preview-banner",
-			"slug": "preview-banner",
-			"case-study": "preview-banner-study"
+			"slug": "preview-banner"
 		}
 	] 
 }

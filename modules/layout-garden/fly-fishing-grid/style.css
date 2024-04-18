@@ -20,14 +20,11 @@
 	font-family: Overpass, sans-serif;
 	text-align: center;
 	opacity: .8;
-	color: ink;
+	color: var(--ink);
 }
 
 @media (prefers-color-scheme: dark) {
-	.fly-fishing-grid {
-		background-color: var(--paper-light-gray);
-		& li {
-			border-bottom: 1px solid var(--paper);
-		}
+	section.page-content.layout .fly-fishing-grid {
+	background-color: #FBF7F5;
 	}
 }

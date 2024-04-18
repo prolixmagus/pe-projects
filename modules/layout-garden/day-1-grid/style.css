@@ -62,6 +62,6 @@
 
 @media (prefers-color-scheme: dark) {
 	.day-1-grid {
-		background-color: var(--paper-light-gray);
+		background-color: var(--paper-black);
 	}
 }
