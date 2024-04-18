@@ -135,10 +135,6 @@ li a:visited, p a:visited {
 	color: var(--tile-red);
 }
 
-.exercise a {
-	font-family: 'Comfortaa';
-}
-
 
 .pink-mark {
 	border-bottom: 4px dotted var(--fish-pink);
