@@ -286,21 +286,6 @@ li a:visited, p a:visited {
 	}
 }
 
-@media (min-width: 802px) {
-	.fly-fishing-grid li {
-		border-bottom: none;
-		border-left: 1px solid rgba(0 0 0 / .2);
-	}
-
-	.fly-fishing-grid li:first-child {
-		border-left: none;
-	}
-
-	.fly-fishing-grid li {
-		padding-inline: 20px;
-	}
-}
-
 @media (prefers-color-scheme: dark) {
 	body {
 		color: var(--ink-light);

@@ -1,3 +1,11 @@
-.exercise a {
+.exercise-link {
 	font-family: 'Comfortaa';
+	align-items: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+
+}
+
+.exercise p {
+	margin-top: 10px;
 }
