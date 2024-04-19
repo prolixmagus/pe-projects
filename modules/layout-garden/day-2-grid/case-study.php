@@ -1,2 +1,3 @@
 <h2 class='small-heading'>Headline Layout 2</h2>
+
 <p class='calm-voice'>This layout presented several challenges within the framework of the Layout Garden. In order to have the black and grey background stretch to the edge of the screen - the <code>section</code> parent - I needed to somehow <em>ignore</em> its child, an <code>inner-column</code> wrapper. I used <code>display: contents</code>, which treats what you are targeting as a direct child of the parent. I also experimented with negative margins and <code>transform: translate()</code> to make the headline boxes appear to "break" out of their container. Otherwise, just more <code>grid</code> and svgs!</p>
