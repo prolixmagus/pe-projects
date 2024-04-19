@@ -31,7 +31,5 @@ input.addEventListener('input', function (e) {
 	output.innerHTML = '';
 });
 
-// notes about the if statement (to make a section appear or disappear) preventing the node from recognizing output HTML
-// blog on progressive enhancement (making old code compatible / more flexible with new)
-// also about iterating / adding features to versions (codepen)
+
 // ask derek how to toggle between javascript and php
