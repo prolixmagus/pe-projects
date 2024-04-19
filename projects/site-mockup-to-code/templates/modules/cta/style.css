@@ -37,10 +37,10 @@
 	display: flex;
 	flex-direction: column;
 }
-.action-buttons {
+ul.action-buttons {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 15px;
 	margin-top: 2rem;
 }
 
@@ -49,14 +49,22 @@ cta-text {
 	flex-direction: column;
 }
 
+cta-text {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	& h3 {
+		max-width: 50ch;
+	}
+}
+
 @media (min-width: 575px) {
-	cta-text {
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		& h3 {
-			max-width: 50ch;
-		}
+	ul.action-buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	margin-top: 2rem;
+}
 	}
 
 	.action-buttons {

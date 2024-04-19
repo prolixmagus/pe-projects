@@ -5,6 +5,7 @@
 .media-video media-video-wrapper {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	gap: 25px;
 }
 
