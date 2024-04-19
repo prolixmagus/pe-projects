@@ -84,7 +84,8 @@ site-map h3 {
 	display: flex;
 	flex-direction: column;
 	& ul {
-		display: flex;
+		height: 100%;
+		flex-grow: 1;
 		flex-direction: column;
 		gap: 5px;
 	}
