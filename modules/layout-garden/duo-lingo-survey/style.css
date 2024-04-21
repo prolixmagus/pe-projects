@@ -102,6 +102,18 @@
 	max-width: 50px;
 }
 
+owl {
+	display: flex;
+	position: relative;
+}
+
+owl .speech-bubble {
+	max-width: 200px;
+	position: absolute;
+	left: 100px;
+	top: 20px;
+}
+
 @media (min-width: 500px) {
 	.duo-lingo-survey .user-sources {
 		grid-template-columns: 1fr 1fr;

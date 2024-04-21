@@ -6,9 +6,14 @@
 		<label class='duo-progress-label' for="duo-icon">Progress Bar</label>
 		<progress id="duo-lingo" max="100" value="25">25%</progress>
 	</progress-container>
-	<picture>
-		<img src='modules/layout-garden/duo-lingo-survey/owl.svg'>
-	</picture>
+	<owl>
+		<picture>
+			<img src='modules/layout-garden/duo-lingo-survey/owl.svg'>
+		</picture>
+		<?php include 'owl.php'?>
+	</owl>
+
+
 </progress-section>
 
 <form class='duo-lingo-form' method='POST'>
