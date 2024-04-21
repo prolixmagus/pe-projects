@@ -39,14 +39,24 @@
 	justify-content: center;
 }
 
-.cta-2 cta-text {
+.about .cta-2 cta-text {
+	display: grid;
+	gap: 20px;
+	place-items: center;
+}
+
+.about .cta-2 cta-text {
 	display: grid;
 	gap: 20px;
 	place-items: center;
 }
 
 .contact .cta-2 cta-text {
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+
 }
 
 .cta-2 .action-buttons {
@@ -64,18 +74,17 @@
 
 
 @media (min-width: 575px) {
-	cta-text {
+	.home cta-text, .about cta-text {
 		justify-content: center;
 		align-items: center;
-		text-align: center;
+/*		text-align: center;*/
 		& p {
 			max-width: 50ch;
 		}
 	}
 
 	.contact .cta-2 cta-text {
-		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 	}
 
 	.action-buttons {
