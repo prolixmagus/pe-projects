@@ -99,21 +99,21 @@
 								<li>
 									<a href='#'>
 										<picture class='social-icon'>
-											<img src='../../images/icons/facebook.png'>
+											<img src='images/icons/facebook.png'>
 										</picture>
 									</a>
 								</li>
 								<li>
 									<a href='#'>
 										<picture class='social-icon'>
-											<img src='../../images/icons/instagram.png'>
+											<img src='images/icons/instagram.png'>
 										</picture>
 									</a>
 								</li>
 								<li>
 									<a href='#'>
 										<picture class='social-icon'>
-											<img src='../../images/icons/snapchat.png'>
+											<img src='images/icons/snapchat.png'>
 										</picture>
 									</a>
 								</li>
