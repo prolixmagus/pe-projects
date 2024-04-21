@@ -37,6 +37,10 @@
 		{
 			"module": "preview-banner",
 			"slug": "preview-banner"
+		},
+		{
+			"module": "duo-lingo-survey",
+			"slug": "duo-lingo-survey"
 		}
 	] 
 }

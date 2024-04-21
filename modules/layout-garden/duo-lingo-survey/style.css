@@ -1,0 +1,109 @@
+@import 'article-card/style.css';
+
+.duo-lingo-survey progress-container {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.duo-lingo-survey .duo-progress-label {
+	display: none;
+}
+
+.duo-lingo-survey picture {
+	max-width: 100px;
+	margin-top: 5vh;
+	transform: translateX(30px);
+}
+
+/*.duo-lingo-survey progress-bar {
+	display flex;
+	display: block;
+	border-radius: 10px;
+	background-color: rgba(0 0 0 / .2);
+	width: 100%;
+}
+
+.duo-lingo-survey inner-bar {
+	display: block;
+	width: 20%;
+	background-color: #58CC05;
+	height: 22px;
+	padding: 5px;
+	border-radius: 10px;
+}*/
+
+/*.duo-lingo-survey shine {
+	display: block;
+	width: 100%;
+	background-color: #7ED651;
+	height: 8px;
+	border-radius: 10px;
+}*/
+
+/*.duo-lingo-survey inner-bar {
+	display: block;
+	width: 20%;
+	background-color: #58CC05;
+	height: 22px;
+	padding: 5px;
+	border-radius: 10px;
+}
+*/
+
+.duo-lingo-survey progress[value] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+}
+
+.duo-lingo-survey progress[value]::-webkit-progress-bar {
+  background-color: rgba(0 0 0 / .2);
+  border-radius: 10px;
+  border-radius: 10px;
+}
+
+.duo-lingo-survey progress[value]::-webkit-progress-value {
+	border-radius: 10px;
+	background: linear-gradient(
+		to bottom, 
+		#58CC05 25%,
+		#7ED651 30% 50%,
+		#58CC05 30% 100%
+	);
+}
+
+.duo-lingo-survey .duo-lingo-form {
+	max-width: 100%;
+}
+
+.duo-lingo-survey .user-sources {
+	display: grid;
+	gap: 15px;
+	& label {
+		font-family: Arial, sans-serif;
+		font-weight: 600;
+	}
+}
+
+
+.duo-lingo-survey input[type='checkbox'] {
+	opacity: 0;
+	display: hidden;
+	position: absolute;
+}
+
+.duo-lingo-survey .back-arrow {
+	max-width: 20px;
+	fill: rgba(0 0 0 / .2);
+}
+
+.duo-lingo-survey .duo-icon {
+	max-width: 50px;
+}
+
+@media (min-width: 500px) {
+	.duo-lingo-survey .user-sources {
+		grid-template-columns: 1fr 1fr;
+	}
+}
