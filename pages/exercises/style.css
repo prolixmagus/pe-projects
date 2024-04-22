@@ -9,3 +9,17 @@
 .exercise p {
 	margin-top: 10px;
 }
+
+.exercise {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid black;
+		padding: 10px;
+		border-radius: 10px;
+		font-size: 1.25rem;
+		& a {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}

@@ -12,17 +12,9 @@
 <section class='projects'>
 	<inner-column>
 		<ol class='project-list'>
-			<?php foreach($exercises as $exercise) { ?>
-				<li class="exercise">
-					<a class="exercise-link"href="?page=exercise&slug=<?=$exercise['slug']?>">
-						<?=$exercise["name"]?>
-						<div class='e4p-icon'>
-							<?php include('images/' . $exercise['slug'] . '.svg')?>
-						</div>
-					</a>
-					<p><?=$exercise['description']?></p>
-				</li>
-			<?php } ?>
+			<?php foreach($exercises as $exercise) { 
+				include('modules/exercise-card/template.php');
+			} ?>
 		</ol>
 	</inner-column>
 </section>
