@@ -29,7 +29,6 @@
 		<title>Jeremy Fishman</title>
 
 		<link rel='stylesheet' href='styles/site.css'>
-
 	</head>
 
 		<body>

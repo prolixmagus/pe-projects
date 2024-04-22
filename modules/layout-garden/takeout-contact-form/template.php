@@ -36,7 +36,7 @@
 
 	<field class='location field text'>
 		<label for='location'>Location</label>
-		<select class='field text' name='location'>
+		<select class='field text' id='location' name='location'>
 		  <option value='los-angeles'>Los Angeles</option>
 		  <option value='new-york'>New York</option>
 		  <option value='paris'>Paris</option>
