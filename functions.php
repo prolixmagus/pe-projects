@@ -62,24 +62,11 @@ function getExerciseTemplate($name) {
 	include("exercises-for-programmers-forms/$name.php");
 }
 
-function getExerciseNameBySlug() {
-	//get the exercises from the database
-	$exercises = getAllExercises();
-	//find the right one by slug
-	foreach ( $exercises as $exercise ) {
-		if ( $_GET['slug'] == $exercise["slug"] ) {
-			return $exercise["slug"]; // slug
-		}
-	} 
-	//otherwise return false
-	return false;
-}
-
 function getLayoutGardenTemplate($module) {
 	include("modules/layout-garden/$module/template.php");
 }
 
-function getLayoutBySlug($database, $slug_to_match) {
+function getItemBySlug($database, $slug_to_match) {
 	foreach ($database as $data) {
 		if ($data['slug'] == $slug_to_match) {
 			return $data;

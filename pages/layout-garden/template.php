@@ -25,7 +25,7 @@ foreach ($layouts['sections'] as $section) { ?>
 
 		<inner-column>
 			<module-showcase>
-				<?php include(getFile("modules/layout-garden/" . $section['module'] . "/template.php"));?>
+				<?php include("modules/layout-garden/" . $section['module'] . "/template.php");?>
 			</module-showcase>
 		</inner-column>
 	</section>

@@ -1,5 +1,3 @@
-<?php $exercises = readPageData('exercises-database') ?>
-
 <section class='challenge-introduction'>
 	<inner-column> 
 		<h2 class="loud-voice">Practice Makes Perfect</h2>
@@ -11,10 +9,6 @@
 
 <section class='projects'>
 	<inner-column>
-		<ol class='project-list'>
-			<?php foreach($exercises as $exercise) { 
-				include('modules/exercise-card/template.php');
-			} ?>
-		</ol>
+		<?php include('modules/exercise-list-module/template.php');?>
 	</inner-column>
 </section>

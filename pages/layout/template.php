@@ -1,7 +1,7 @@
 <?php
 	$layouts = readPageData('layout-garden-database');
 
-	$section = getLayoutBySlug($layouts['sections'], $_GET['slug']);
+	$section = getItemBySlug($layouts['sections'], $_GET['slug']);
 
 	$module = $section['module'];
 ?>
