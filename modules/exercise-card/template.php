@@ -4,7 +4,8 @@
 	$exercise_slug = $exercise['slug'] ?? "hello-world"
 ?>
 
-<li class="exercise">
+
+<li class='exercise'>
 	<a class="exercise-link" href="?page=exercise&slug=<?=$exercise_slug?>">
 		<?=$exercise_name?>
 		<div class='e4p-icon'>

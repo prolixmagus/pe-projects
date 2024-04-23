@@ -45,9 +45,7 @@
 						</a>
 					</logo-container>
 
-						<nav>
-							<?php include("modules/nav-menu/template.php")?>
-						</nav>
+					<?php include("modules/nav-menu/template.php")?>
 					
 				</inner-column>
 			</header>

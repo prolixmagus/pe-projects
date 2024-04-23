@@ -1,7 +1,7 @@
 <?php $exercises = readPageData('exercises-database') ?>
 
 <section class='challenge-introduction'>
-	<inner-column>
+	<inner-column> 
 		<h2 class="loud-voice">Practice Makes Perfect</h2>
 		<p class='calm-voice'>In 2015, Brian P. Hogan published <span class="italic">Exercises for Programmers</span>, a collection of 57 coding challenges designed to "develop your coding skills." They can be completed in any language and be made as simple or complex as you want.</p>
 

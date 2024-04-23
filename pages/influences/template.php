@@ -1,13 +1,16 @@
 
 <section class='intro'>
 	<inner-column>
+		<!-- module include -->
 		<h2 class='loud-voice'>Influences</h2>
 		<p>This is a living documentation of my past, current, and future inspirations. If you want to know where my head is at, check out these artists.</p>
+		<!-- module include -->
 	</inner-column>
 </section>
 
 <section class='influence-list'>
 	<inner-column class='first'>
+		<!-- module include -->
 		<div class='books'>
 			<h2 class='attention-voice pink-mark'>Books</h2>
 			<ul class='influences-list'>
@@ -16,10 +19,9 @@
 				<li><span class='italic'>The Rings of Saturn </span><span class='quiet-voice'>by </span>Kurt Vonnegut</li>
 				<li><span class='italic'>The Wind-Up Bird Chronicle </span><span class='quiet-voice'>by </span>Haruki Murakami</li>
 				<li><span class='italic'>Xenogenesis </span><span class='quiet-voice'>by </span>Octavia Butler</li>
-
 			</ul>
-
 		</div>
+		<!-- module include -->
 
 		<div class='shows'>
 			<h2 class='attention-voice green-mark'>Shows</h2>
