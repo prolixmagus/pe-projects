@@ -1,0 +1,18 @@
+
+{
+	"user-menu": [
+		{
+			"heading": "Misc",
+			"links": [
+				{
+					"link": "?page=style-guide",
+					"content": "Style Guide"
+				},
+				{
+					"link": "?page=goals",
+					"content": "Goals"
+				}
+			]
+		}
+	]
+}
