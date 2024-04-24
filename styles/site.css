@@ -14,8 +14,7 @@
 
 /* T ypography */
 @import "typography.css";
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* C omponents */
 @import "components.css";
 
@@ -118,12 +117,6 @@ p a, li a {
 	color: blue;
 	text-decoration: none;
 	display: inline-block;
-}
-
-.main-link a {
-	color: black;
-	font-family: "Comfortaa", sans-serif;
-	font-size: 1rem;
 }
 
 p a:hover, li a:hover {

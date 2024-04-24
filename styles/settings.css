@@ -44,6 +44,8 @@ code {
 	color: orange;
 	font-family: monospace;
 	font-weight: 500;
+	font-size: 1.1rem;
+	padding: 2px;
 }
 
 sup {
