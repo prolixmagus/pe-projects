@@ -53,8 +53,8 @@
 
 				<output>
 					<h2>Output</h2>
-					<p class="output-voice">You entered dimensions of <?=formatDecimals($length)?> feet by <?=formatDecimals($width)?> feet.</p>
-					<p class="output-voice">The area is <?=formatDecimals($totalSquareFeet)?> feet or <?=formatDecimals($totalSquareMeters)?> meters.</p>
+					<p class="output-voice">You entered dimensions of <?=format_decimale($length)?> feet by <?=format_decimale($width)?> feet.</p>
+					<p class="output-voice">The area is <?=format_decimale($totalSquareFeet)?> feet or <?=format_decimale($totalSquareMeters)?> meters.</p>
 				</output>
 		
 		</inner-column>

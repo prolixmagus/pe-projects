@@ -11,7 +11,7 @@
 		$page = 'home'; // default
 	}
 
-	function getTemplate($name) {
+	function get_template($name) {
 			include($name . ".php");
 		}
 ?>

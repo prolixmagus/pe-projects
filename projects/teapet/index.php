@@ -24,7 +24,7 @@
 		<main class="<?=$page?>">
 
 			<section class='page-content'>
-				<?php getTemplate($page); 
+				<?php get_template($page); 
 
 					/* if ($page == 'home') {
 						include('home.php');

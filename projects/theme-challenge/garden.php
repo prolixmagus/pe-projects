@@ -1,4 +1,4 @@
-<?php $pageData = readPageData($page);?>
+<?php $pageData = read_page_data($page);?>
 
 <header id="top">
 	<inner-column>

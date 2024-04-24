@@ -1,6 +1,6 @@
 <?php include("functions.php"); ?>
 <?php require("router.php"); ?>
-<?php $pageData = readPageData($page); ?>
+<?php $pageData = read_page_data($page); ?>
 
 <!doctype html>
 

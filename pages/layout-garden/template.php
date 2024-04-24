@@ -9,7 +9,7 @@
 
 <?php
 
-$layouts = readPageData('layout-garden-database');
+$layouts = read_page_data('layout-garden-database');
 
 // print_r($layout_database);
 

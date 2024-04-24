@@ -80,7 +80,7 @@
 
 		<main>
 			<?php 
-				getTemplate($page);
+				get_template($page);
 			?>	
 		</main>
 	</body>

@@ -43,10 +43,10 @@ $item3 = [
 	}
 
 	$subtotal = ($item1['amount'] * $item1['price']) + ($item2['amount'] * $item2['price']) + ($item3['amount'] * $item3['price']);
-	$subtotal = formatMoney($subtotal);
+	$subtotal = format_money($subtotal);
 	$salesTax = $subtotal * .055;
-	$salesTax = formatMoney($salesTax);
+	$salesTax = format_money($salesTax);
 	$total = $salesTax + $subtotal;
-	$total = formatMoney($total);
+	$total = format_money($total);
 
 ?>

@@ -19,7 +19,7 @@
 		</work-narrative>
 
 		<experience-gained>
-			<h3 class='output-voice'>skills</h3>
+			<h3 class='strong-voice'>skills</h3>
 
 			<ul title='skills so far'>
 				<li>Research and study through <a href='https://www.sciencedirect.com/topics/psychology/deliberate-practice'>Deliberate Practice</a></li>
@@ -43,7 +43,7 @@
 
 		</work-narrative>
 		<experience-gained>
-			<h3 class='output-voice'>skills</h3>
+			<h3 class='strong-voice'>skills</h3>
 			
 			<ul>
 				<li>Designed over 185 unique standards-based lesson plans</li>
@@ -65,7 +65,7 @@
 
 		</work-narrative>
 		<experience-gained>
-			<h3 class='output-voice'>skills</h3>
+			<h3 class='strong-voice'>skills</h3>
 			
 			<ul>
 				<li>Co-taught STEM courses as ELD support</li>
@@ -91,7 +91,7 @@
 			<!-- insert link here -->
 		</work-narrative>
 		<experience-gained>
-			<h3 class='output-voice'>skills</h3>
+			<h3 class='strong-voice'>skills</h3>
 			
 			<ul>
 				<li>Co-taught grades K-6 EFL classes with a certified local English teacher</li>
@@ -113,7 +113,7 @@
 			<p>Post-graduation, I take the train to Princeton, <abbr title='New Jersey'>NJ</abbr>, to write test questions for the <abbr title='Test of English as a Foreign Language'>TOEFL</abbr> <abbr title='internet-Based-Test'>iBT</abbr> at <abbr title='Educational Testing Services'>ETS</abbr> over the summer.</p>
 		</work-narrative>
 		<experience-gained>
-			<h3 class='output-voice'>skills</h3>
+			<h3 class='strong-voice'>skills</h3>
 			
 			<ul>
 				<li>Researched, created, and revised test items for the Speaking Section of the TOEFL iBT</li>
@@ -137,7 +137,7 @@
 			<p>I feel stuck. I miss my family. I move back home</p>
 		</work-narrative>
 		<experience-gained>
-			<h3 class='output-voice'>skills</h3>
+			<h3 class='strong-voice'>skills</h3>
 			
 			<ul>
 				<li>Compiled feedback from tech forums, social media, news outlets, and the Miiverse into digestible reports for upper management.</li>
@@ -162,7 +162,7 @@
 		</work-narrative>
 		<experience-gained>
 			
-			<h3 class='output-voice'>skills</h3>
+			<h3 class='strong-voice'>skills</h3>
 			
 			<ul>
 				<li>Proofread and reformatted 60 titles per month for online distribution to vendors such as Amazon, Barnes & Noble, and iTunes Bookstore</li>

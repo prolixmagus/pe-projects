@@ -5,11 +5,11 @@
 		$page = 'garden';
 	}
 
-	function getTemplate($page) {
+	function get_template($page) {
 		include($page . '.php');
 	}
 
-	function readPageData($page) {
+	function read_page_data($page) {
 		$filePath = "data/$page.json";
 		if ( file_get_contents($filePath) ) {
 			$json = file_get_contents($filePath);
@@ -20,6 +20,6 @@
 		return $pageData;
 	}
 
-	function getFile($path) {
+	function get_file($path) {
 		return dirname(__FILE__) . "/" . $path;
 	}

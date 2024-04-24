@@ -1,6 +1,6 @@
-<?php $exercises = readPageData('exercises-database');
+<?00php $exercises = read_page_data('exercises-database');
 
-$exercise = getItemBySlug($exercises, $_GET['slug']); 
+$exercise = get_item_by_slug($exercises, $_GET['slug']); 
 
 $exercise_slug = $exercise['slug'];
 ?>
@@ -8,7 +8,7 @@ $exercise_slug = $exercise['slug'];
 <?php
 //show correct exercise template
 if ($exercise_slug) {
-	getExerciseTemplate($exercise_slug);
+	get_exercise_template($exercise_slug);
 } else {
 	include("pages/error404/template.php");
 }

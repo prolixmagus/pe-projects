@@ -1,4 +1,4 @@
-<?php $exercises = readPageData('exercises-database');?>
+<?php $exercises = read_page_data('exercises-database');?>
 
 <exercise-list-module>
 	<ol class='project-list'>
@@ -7,11 +7,3 @@
 		} ?>
 	</ol>
 </exercise-list-module>
-
-function getItemBySlug($database, $slug_to_match) {
-	foreach ($database as $data) {
-		if ($data['slug'] == $slug_to_match) {
-			return $data;
-		}
-	}
-}

@@ -28,10 +28,10 @@ if (isset($_POST["submitted"])) {
 	}
 
 	function displayOperations($first, $second) {
-		echo "<p class'output-voice'>$first + $second = " . formatDecimals(add($first, $second)) . "</p>";
-		echo "<p class'output-voice'>$first - $second = " . formatDecimals(subtract($first, $second)) . "</p>";
-		echo "<p class'output-voice'>$first / $second = " . formatDecimals(divide($first, $second)) . "</p>";
-		echo "<p class'output-voice'>$first * $second = " . formatDecimals(multiply($first, $second)) . "</p>";
+		echo "<p class'output-voice'>$first + $second = " . format_decimale(add($first, $second)) . "</p>";
+		echo "<p class'output-voice'>$first - $second = " . format_decimale(subtract($first, $second)) . "</p>";
+		echo "<p class'output-voice'>$first / $second = " . format_decimale(divide($first, $second)) . "</p>";
+		echo "<p class'output-voice'>$first * $second = " . format_decimale(multiply($first, $second)) . "</p>";
 	}
 }
 

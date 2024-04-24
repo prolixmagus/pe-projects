@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 <?php require('router.php');?>
 
-<?php $pageData = readPageData($page);?>
+<?php $pageData = read_page_data($page);?>
 
 <html class=<?=$page?> lang='en' class='special-magic no-js'>
 
@@ -24,7 +24,7 @@ error_reporting(E_ALL);
 
 	<body>
 
-		<?php getTemplate($page) ?>
+		<?php get_template($page) ?>
 
 
 		<script>
