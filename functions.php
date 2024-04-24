@@ -1,7 +1,7 @@
 <?php
 
 //get page database
-function readPageData($page) {
+function read_page_data($page) {
 	$filePath = "data/$page.json";
 	if ( file_get_contents($filePath) ) {
 		$json = file_get_contents($filePath);
@@ -51,22 +51,22 @@ function delete($database, $data_id) {
 
 // reading database for exercises for programmers files
 
-function getAllExercises() {
+function get_all_exercises() {
 	$exercises = read("data/exercises-database.json");
 	return $exercises;
 }
 
 // getting exercise for programmers page for router
 
-function getExerciseTemplate($name) {
+function get_exercise_template($name) {
 	include("exercises-for-programmers-forms/$name.php");
 }
 
-function getLayoutGardenTemplate($module) {
+function get_layout_garden_template($module) {
 	include("modules/layout-garden/$module/template.php");
 }
 
-function getItemBySlug($database, $slug_to_match) {
+function get_item_by_slug($database, $slug_to_match) {
 	foreach ($database as $data) {
 		if ($data['slug'] == $slug_to_match) {
 			return $data;
@@ -74,18 +74,18 @@ function getItemBySlug($database, $slug_to_match) {
 	}
 }
 
-// getting scripts
-
-function getSiteScripts($page) {
+function get_site_scripts($page) {
 	return "scripts/$page.js";
 }
 
-function getExerciseScripts($slug) {
+function get_exercise_scripts($slug) {
 	return "exercises-for-programmers-forms/scripts/$slug.js";
 }
 
+// sorting by closest date 
+
 // for linking to top level files on local server
-function getFile($path) {
+function get_file($path) {
 	return dirname(__FILE__) . "/" . $path;
 }
 
@@ -99,7 +99,7 @@ function highlight_code($path) {
 
 
 // For showing associative array when submitting info
-function displayCode($code) {
+function display_code($code) {
 	echo "<pre><code>";
 	print_r($code);
 	echo "</code></pre>";
@@ -107,7 +107,7 @@ function displayCode($code) {
 
 // For formatting decimals to the hundredths place
 
-function formatDecimals($number) {
+function format_decimals($number) {
 	$decimalPosition = strpos(strval($number), ".");
 	if ($decimalPosition !== false) {
 		return number_format($number, 2, '.', '');
@@ -116,8 +116,9 @@ function formatDecimals($number) {
 	}
 }
 
-function formatMoney($money){
+function format_money($money){
 	return number_format($money, 2, '.', '');
 }
+
 
 ?>

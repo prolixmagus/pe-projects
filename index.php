@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 	<main>
 		<section class='page-content <?=$page?>'>
-			<?php getTemplate($page) ?>
+			<?php get_template($page) ?>
 		</section>
 	</main>
 
@@ -18,12 +18,12 @@ error_reporting(E_ALL);
 	</footer>
 
 
-	<script src="<?=getSiteScripts($page)?>"></script>
+	<script src="<?=get_site_scripts($page)?>"></script>
 
 	<?php if (isset($_GET['page']) && $_GET['page'] == "exercise") {
 		foreach($exercises as $exercise) {
 			if ($_GET['slug'] == $exercise["slug"]) { ?>
-				<script src="<?=getExerciseScripts($exercise["slug"])?>"></script>
+				<script src="<?=get_exercise_scripts($exercise["slug"])?>"></script>
 			<?php } 
 		} 
 	} ?>
