@@ -1,4 +1,4 @@
-header {
+.site-header {
 	background-color: var(--fish-blue);
 }
 
@@ -37,7 +37,7 @@ logo-container {
 }
 
 @media (prefers-color-scheme: dark) {
-	header {
+	.site-header {
 		color: var(--ink-light);
 		background-color: var(--fish-blue);
 	}
