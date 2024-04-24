@@ -1,0 +1,36 @@
+typeface {
+	display: block;
+	margin-top: 2em;
+}
+
+.lettering li {
+	font-size: 1.5rem;
+	font-weight: 500px;
+}
+
+voice {
+	display: block;
+	margin-top: 2em;
+}
+
+voice ul {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+lettering-voice {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid black;
+}
+
+lettering-voice h3 + p {
+	padding-top: 0;
+}
+
+lettering-voice + p {
+	margin-top: 2em;
+}
