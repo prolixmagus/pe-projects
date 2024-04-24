@@ -1,0 +1,26 @@
+[
+	{
+		"id": "1",
+		"title": "eat",
+		"slug": "theme-challenge",
+		"published": "2 MAR 1988",
+		"updated": "10 APR 2024",
+		"related": ["work-home", "boy-toy"]
+	},
+	{
+		"id": "2",
+		"title": "pray",
+		"slug": "theme-challenge",
+		"published": "4 MAR 1988",
+		"updated": "10 APR 2024",
+		"related": ["boy-toy", "posse-foot"]
+	},
+	{
+		"id": "3",
+		"title": "love",
+		"slug": "theme-challenge",
+		"published": "23 MAR 2000",
+		"updated": "10 APR 2024",
+		"related": ["work-home", "feeling-time"]
+	}
+]
