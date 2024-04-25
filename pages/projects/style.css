@@ -1,10 +1,19 @@
+
+.intro inner-column div {
+	grid-column: 1 / 5;
+}
 .project-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr) );
+	grid-column:;
 	gap: 15px;
 	& .calm-voice {
 		color: var(--fish-green);
 	}
+}
+
+.project-list {
+	grid-column: 1 / 13;
+	display: grid;
 }
 
 .projects inner-column {
@@ -14,5 +23,11 @@
 @media (prefers-color-scheme: dark) {
 	.project-list .exercise {
 		border: 1px solid var(--paper);
+	}
+}
+
+@media (min-width: 600px) {
+	.project-list {
+	grid-template-columns: repeat(3, 1fr);
 	}
 }
