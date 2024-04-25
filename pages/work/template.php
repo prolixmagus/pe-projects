@@ -8,7 +8,7 @@
 		usort($articles, function($a, $b) {
 			return strtotime($b['published']) - strtotime($a['published']);
 		});
-		return array_slice($articles, 0, 2);
+		return array_slice($articles, 0, 4);
 	}
 
 	$recent_articles = most_recent_articles($workData);
@@ -18,9 +18,8 @@
 
 <section class='work'>
 	<inner-column>
-		<ol>
-
-
-		</ol>
+		<?php include('modules/recent-articles-list/template.php')?>
 	</inner-column>
 </section>
+
+
