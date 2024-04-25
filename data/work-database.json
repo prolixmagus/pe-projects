@@ -2,25 +2,28 @@
 	{
 		"id": "1",
 		"title": "eat",
-		"slug": "theme-challenge",
+		"slug": "chocolate",
 		"published": "2 MAR 1988",
 		"updated": "10 APR 2024",
+		"description": "",
 		"related": ["work-home", "boy-toy"]
 	},
 	{
 		"id": "2",
 		"title": "pray",
-		"slug": "theme-challenge",
+		"slug": "theme-challenge-case-study",
 		"published": "4 MAR 1988",
 		"updated": "10 APR 2024",
-		"related": ["boy-toy", "posse-foot"]
+		"description": "",
+		"related": ["theme-challenge-case-study", "posse-foot"]
 	},
 	{
 		"id": "3",
 		"title": "love",
-		"slug": "theme-challenge",
+		"slug": "theme-challenge-case-study",
 		"published": "23 MAR 2000",
 		"updated": "10 APR 2024",
+		"description": "",
 		"related": ["work-home", "feeling-time"]
 	}
 ]
