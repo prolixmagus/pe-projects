@@ -6,6 +6,13 @@
 @import '../modules/typeface/style.css';
 @import '../modules/exercise-list-module/style.css';
 @import '../modules/exercise-card/style.css';
+
+@import '../modules/recent-articles-list/style.css';
+@import '../modules/explorations-header/style.css';
+@import '../modules/whiteboard/style.css';
+
+/*layout garden*/
+
 @import '../modules/layout-garden/graphic-diptych/style.css';
 @import '../modules/layout-garden/announcement-grid/style.css';
 @import '../modules/layout-garden/announcement-grid/announcement-card/style.css';
@@ -17,6 +24,7 @@
 @import '../modules/layout-garden/day-2-grid/style.css';
 @import '../modules/layout-garden/day-3-grid/style.css';
 @import '../modules/layout-garden/preview-banner/style.css';
+
 @import '../modules/layout-garden/duo-lingo-survey/style.css';
 @import '../modules/footer/style.css';
 @import '../modules/site-map/style.css';
