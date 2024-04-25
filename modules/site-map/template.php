@@ -7,7 +7,7 @@
 		<nav>
 			<ul>
 				<?php foreach($usermenu['links'] as $link) { ?>
-					<li>
+					<li class='quiet-voice'>
 						<a href='<?=$link['link']?>'><?=$link['content']?></a>
 					</li>
 				<?php } ?>
