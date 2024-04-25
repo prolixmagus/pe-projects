@@ -3,14 +3,16 @@
 ?>
 
 <section class='intro'>
-	<inner-column>
+	<inner-column class='pro-designer-grid'>
+		<div>
 		<h2 class='loud-voice'>Projects</h2>
 		<p>Everyone loves a showcase!</p>
+		</div>
 	</inner-column>
 </section>
 
 <section class='projects'>
-	<inner-column>
+	<inner-column class='pro-designer-grid'>
 		<ol class='project-list'>
 			<?php foreach($projects as $project) { ?>
 				<li class="exercise e4p">
