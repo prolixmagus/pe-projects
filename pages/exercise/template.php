@@ -1,4 +1,4 @@
-<?00php $exercises = read_page_data('exercises-database');
+<?php $exercises = read_page_data('exercises-database');
 
 $exercise = get_item_by_slug($exercises, $_GET['slug']); 
 
@@ -14,4 +14,3 @@ if ($exercise_slug) {
 }
 
 ?>
-

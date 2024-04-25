@@ -8,8 +8,8 @@ function read_page_data($page) {
 	} else {
 		echo "No contents here!";
 	}
-	$pageData = json_decode($json, true);
-	return $pageData;
+	$page_data = json_decode($json, true);
+	return $page_data;
 }
 
 // CRUD Functions
@@ -60,6 +60,10 @@ function get_all_exercises() {
 
 function get_exercise_template($name) {
 	include("exercises-for-programmers-forms/$name.php");
+}
+
+function get_article_template($name) {
+	include("pages/work-detail/explorations/$name/template.php");
 }
 
 function get_layout_garden_template($module) {
