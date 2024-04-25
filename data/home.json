@@ -1,0 +1,10 @@
+{
+	"title": "Jeremy Fishman",
+	"slug": "home",
+	"sections": [
+		{
+			"module": "generic-text-module",
+			"content" "<h2>hey guys</h2>"
+		}
+	]
+}
