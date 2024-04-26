@@ -1,21 +1,21 @@
-<!-- <?php
+<!-- for future jsonifying of data
+ <?php
 	$homeJSON = file_get_contents('data/home.json');
 	$pageData = json_decode($homeJSON, true)
 ?>
 
+<?php foreach($pageData["sections"] as $section) { ?>
 
-<?php foreach($pageData['sections'] as $section) { ?>
 
 	<section>
 		<inner-column>
-			<?php include("modules/" . $section['module'] . "/template.php"); ?>
+			<?php include("modules/" . $section["module"] . "/template.php"); ?>
 		</inner-column>
 	</section>
 
-<?php } ?>
- -->
+<?php } ?> -->
 
-<section class='<?=$page?>'>
+<section>
 	<inner-column>
 		<header class='home-header'>
 			<h2 class='loud-voice'>You made it!</h2>
@@ -29,22 +29,12 @@
 			<p class='calm-voice'>If you want to talk tech, music, linguistics, or whatever crosses your mind, you can reach me at <a href='mailto:jeremypfishman@gmail.com'>jeremypfishman@gmail.com</a>. I usually respond within 24 hours.</p>
 
 			<p class='calm-voice'>And of course, here's my <a href='https://github.com/prolixmagus'>github</a> and <a href='https://prolixmagus.substack.com'>blog</a>.</p>
-
 		</header>
-
-		<!--delete?-->
-
-		<picture class='seaweed pink'>
-			<img src='images/seaweed-1.svg' alt='pink seaweed'>
-		</picture>
-		<picture class='seaweed green'>
-			<img src='images/seaweed-2.svg' alt='green seaweed'>
-		</picture>
-		<picture class='seaweed blue'>
-			<img src='images/seaweed-3.svg' alt='blue seaweed'>
-		</picture>
-		<a href='https://www.aquariumofpacific.org/exhibits/webcams/webcam_tropical_reef' target='_blank' class='fish'>
-			<img src='images/mustache-fish.svg' alt='fish with a mustache'>
-		</a>
 	</inner-column>
-<!--<section class='[[fill-in]]'> !-->
+</section>
+
+<section>
+	<inner-column>
+		<?php include('modules/whiteboard/template.php');?>
+	</inner-column>
+</section>
