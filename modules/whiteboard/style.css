@@ -1,0 +1,70 @@
+white-board {
+	display: flex;
+	flex-drection: row;
+	position: relative;
+}
+
+canvas {
+	display: block;
+	background-color: #F2F2F2;
+	border: 2px solid grey;
+	touch-action: none;
+}
+
+.canvas-btns {
+	display: flex;
+	flex-direction: column;
+	outline: none;
+	position: absolute;
+	left: 2px;
+}
+
+.canvas-btns button, .canvas-btns input {
+/*	border-radius: 50%;*/
+	max-width: 45px;
+	height: 25px;
+	cursor: pointer;
+	border: unset;
+}
+
+#red-btn {
+	background-color: red;
+}
+
+#blue-btn {
+	background-color: blue;
+}
+
+#green-btn {
+	background-color: green;
+}
+
+#yellow-btn {
+	background-color: yellow;
+}
+
+#rainbow-btn {
+	background: linear-gradient(
+		90deg, rgba(255,0,0,1) 0%, 
+		rgba(255,154,0,1) 10%, 
+		rgba(208,222,33,1) 20%, 
+		rgba(79,220,74,1) 30%, 
+		rgba(63,218,216,1) 40%, 
+		rgba(47,201,226,1) 50%, 
+		rgba(28,127,238,1) 60%, 
+		rgba(95,21,242,1) 70%, 
+		rgba(186,12,248,1) 80%, 
+		rgba(251,7,217,1) 90%, 
+		rgba(255,0,0,1) 100%
+	);
+}
+
+.eraser-icon {
+	border: none;
+	max-width: 10px;
+	transform: translateX(10px);
+}
+
+#color-picker {
+	background-color: black;
+}
