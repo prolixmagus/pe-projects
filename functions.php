@@ -8,8 +8,8 @@ function read_page_data($page) {
 	} else {
 		echo "No contents here!";
 	}
-	$page_data = json_decode($json, true);
-	return $page_data;
+	$pageData = json_decode($json, true);
+	return $pageData;
 }
 
 // CRUD Functions

@@ -4,7 +4,7 @@
 	"sections": [
 		{
 			"module": "generic-text-module",
-			"content" "<h2>hey guys</h2>"
+			"content": "<h2>hey guys</h2>"
 		}
 	]
 }
