@@ -9,7 +9,7 @@
 		<a class='exercise-link' href='?page=exercise&slug=<?=$exercise_slug?>'>
 			<?=$exercise_name?>
 			<div class='e4p-icon'>
-				<?php include('images/' . $exercise_slug . '.svg')?>
+				<?php include('icons/' . $exercise_slug . '.svg')?>
 			</div>
 		</a>
 		<p><?=$exercise_description?></p>
