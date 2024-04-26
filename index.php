@@ -6,8 +6,8 @@ error_reporting(E_ALL);
 <?php include("modules/site-header/template.php");?>
 
 	<main>
-		<section class='<?=$page?>'>
-			<?php get_template($page) ?>
+		<section class='<?=$page?>'>		
+			<?php get_template($page) ?>	
 		</section>
 	</main>
 
@@ -18,7 +18,7 @@ error_reporting(E_ALL);
 	</footer>
 
 
-	<script src="<?=get_site_scripts($page)?>"></script>
+	<script src="<?=get_site_scripts($page)?>" type='module'></script>
 
 	<?php if (isset($_GET['page']) && $_GET['page'] == "exercise") {
 		foreach($exercises as $exercise) {
