@@ -44,7 +44,7 @@ label {
 	align-self: center;
 }
 
-input {
+.exercise input {
 	padding: .5em;
 	font-size: 1rem;
 	font-weight: 300;

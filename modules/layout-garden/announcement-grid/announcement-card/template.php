@@ -8,7 +8,7 @@
 		<p><?=$show["summary"]?></p>
 		<showtime>
 			<picture>
-				<img src='images/clock.svg' alt=''>
+				<img src='icons/clock.svg' alt=''>
 			</picture>
 			<time class="showtime"><?=$show["time"]?></time>
 		</showtime>
