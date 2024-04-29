@@ -1,0 +1,18 @@
+{
+	"title": "Influences",
+	"slug": "influences",
+	"intro": "This is a living documentation of my past, current, and future inspirations. If you want to know where my head is at, check out these artists.",
+	"creator-list": [
+		{
+			"figure": "images/square.jpg",
+			"figcaption": "Don Quixote",
+			"creator": "Miguel Cervantes",
+			"featured": true
+		},
+		{
+			"figure": "images/square.jpg",
+			"figcaption": "Badass: Making Users Awesome",
+			"creator": "Kathy Sierra"
+		}
+	]
+}
