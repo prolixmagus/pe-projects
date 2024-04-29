@@ -1,15 +1,25 @@
+/*site header*/
 @import '../modules/site-header/style.css';
-@import '../modules/page-header/style.css';
 @import '../modules/nav-menu/style.css';
+
+@import '../modules/page-header/style.css';
 @import '../modules/forms/style.css';
+@import '../modules/common-figure/style.css';
+
+/*style-guide*/
+
 @import '../modules/colophon/style.css';
 @import '../modules/typeface/style.css';
-@import '../modules/exercise-list-module/style.css';
 @import '../modules/exercise-card/style.css';
+
+/*work modules*/
 
 @import '../modules/recent-articles-list/style.css';
 @import '../modules/explorations-header/style.css';
-@import '../modules/common-figure/style.css';
+
+/*influences modules*/
+@import '../modules/artist-figure/style.css';
+
 @import '../modules/whiteboard/style.css';
 
 
@@ -26,7 +36,8 @@
 @import '../modules/layout-garden/day-2-grid/style.css';
 @import '../modules/layout-garden/day-3-grid/style.css';
 @import '../modules/layout-garden/preview-banner/style.css';
-
 @import '../modules/layout-garden/duo-lingo-survey/style.css';
+
+/*footer*/
 @import '../modules/footer/style.css';
 @import '../modules/site-map/style.css';

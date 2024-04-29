@@ -23,7 +23,9 @@
 /* S tuff (modules) */
 @import "modules.css";
 
-
+body * {
+	border: 1px solid black;
+}
 /* ASSETS */
 .seaweed {
 	width: 100%;
