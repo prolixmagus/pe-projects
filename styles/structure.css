@@ -45,6 +45,5 @@ experience-gained, div {
 
 .pro-designer-grid {
     display: grid;
-    /* might want to change them sometimes! */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
  }

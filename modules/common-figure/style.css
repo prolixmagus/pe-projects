@@ -1,3 +1,7 @@
 common-figure {
 	display: block;
 }
+
+common-figure picture {
+	max-width: 500px;
+}

@@ -1,5 +1,4 @@
 <ol class='recent-articles-list'>
-	<!--make recent articles list -->
 	<?php foreach($recent_articles as $article) {
 		?>
 		<li>
