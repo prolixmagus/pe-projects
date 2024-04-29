@@ -4,7 +4,8 @@
 		"name": "Exercises for Programmers",
 		"address": "?page=exercises",
 		"competency": "PHP, HTML",
-		"description": "My interpretation of Brian P. Hogan's coding challenges, also viewable on <a href='https://codepen.io/Jeremy-Fishman/collections/'>CodePen</a>"
+		"description": "My interpretation of Brian P. Hogan's coding challenges, also viewable on <a href='https://codepen.io/Jeremy-Fishman/collections/'>CodePen</a>",
+		"featured" : true
 	},
 	{
 		"id": 2,
@@ -18,14 +19,15 @@
 		"name": "Tea Pet Shop",
 		"address": "projects/teapet",
 		"competency": "PHP, HTML, CSS",
-		"description": "A CRUD website where you can customize your own Tea Pet."
+		"description": "A CRUD website where you can customize your own Tea Pet"
 	},
 	{
 		"id": 4,
 		"name": "Site Mockup to Code",
 		"address": "projects/site-mockup-to-code",
 		"competency": "PHP, HTML, CSS",
-		"description": "A FIGMA file transmuted into code, scaffolded with a PHP routering structure and flexible CSS design system."
+		"description": "A FIGMA file transmuted into code, scaffolded with a PHP routering structure and flexible CSS design system",
+		"featured": true
 	},
 	{
 		"id": 5,
