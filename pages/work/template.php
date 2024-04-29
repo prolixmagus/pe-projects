@@ -4,13 +4,6 @@
 
 	$workData = read_page_data('work-database');
 
-	function most_recent_articles($articles) {
-		usort($articles, function($a, $b) {
-			return strtotime($b['published']) - strtotime($a['published']);
-		});
-		return array_slice($articles, 0, 4);
-	}
-
 	$recent_articles = most_recent_articles($workData);
 ?>
 
