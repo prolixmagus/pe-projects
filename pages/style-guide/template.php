@@ -18,3 +18,15 @@
 		<?php include ('modules/exercise-card/template.php')?>
 	</inner-column>
 </section>
+
+<section>
+	<inner-column>
+		<?php include ('modules/common-figure/template.php')?>
+	</inner-column>
+</section>
+
+<section>
+	<inner-column>
+		<?php include ('modules/artist-figure/template.php')?>
+	</inner-column>
+</section>
