@@ -1,1 +1,1 @@
-style.php
+style.css
