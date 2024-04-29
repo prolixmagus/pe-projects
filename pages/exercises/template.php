@@ -9,6 +9,13 @@
 
 <section class='projects'>
 	<inner-column>
-		<?php include('modules/exercise-list-module/template.php');?>
+		<?php $exercises = read_page_data('exercises-database');?>
+			<ol class='project-list'>
+					<?php foreach($exercises as $exercise) { ?>
+						<li>
+							<?php include('modules/exercise-card/template.php'); ?>
+					</li>
+				<?php } ?>
+			</ol>
 	</inner-column>
 </section>
