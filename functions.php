@@ -78,6 +78,13 @@ function get_item_by_slug($database, $slug_to_match) {
 	}
 }
 
+function most_recent_articles($articles) {
+	usort($articles, function($a, $b) {
+		return strtotime($b['published']) - strtotime($a['published']);
+	});
+	return array_slice($articles, 0, 4);
+}
+
 function get_site_scripts($page) {
 	return "scripts/$page.js";
 }
