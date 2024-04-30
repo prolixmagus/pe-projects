@@ -17,6 +17,10 @@
 			"page" => "Work",
 			"link" => "?page=work",
 		],
+		[
+			"page" => "Contact",
+			"link" => "?page=contact",
+		],
 	]
 ?>
 
