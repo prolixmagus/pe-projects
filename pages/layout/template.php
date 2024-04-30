@@ -1,5 +1,5 @@
 <?php
-	$layouts = read_page_data('layout-garden-database');
+	$layouts = read_page_data('layout-garden');
 
 	$section = get_item_by_slug($layouts['sections'], $_GET['slug']);
 
