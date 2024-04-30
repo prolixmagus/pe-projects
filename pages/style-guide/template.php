@@ -3,7 +3,7 @@
 
 <section>
 	<inner-column>
-		<?php include ('modules/generic-text-module/template.php')?>
+		<?php include ('modules/generic-text-heading/template.php')?>
 	</inner-column>
 </section>
 

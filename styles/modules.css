@@ -10,6 +10,7 @@
 
 @import '../modules/colophon/style.css';
 @import '../modules/typeface/style.css';
+@import '../modules/generic-text-heading/style.css';
 @import '../modules/exercise-card/style.css';
 
 /*work modules*/
