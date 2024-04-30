@@ -1,0 +1,139 @@
+{
+	"title": "Timeline",
+	"slug": "timeline",
+	"intro": "The following puts my work experience in a narrative context. Of course, there's always the traditional résumé.",
+	"section": [
+		{
+			"year": "2024 - present",
+			"id": "present-day",
+			"narrative": "<p>I am 77% through <a class='derek-pink' href='https://perpetual.education/'>Design for <em>the Web</em></a> taught by <a href='https://sheriffderek.consulting/'>Derek Wood</a>.</p><p>It's a lot of work. I love it.</p><p>Aside from researching and applying new web technologies, I love reading science fiction and playing jazz saxophone. Feel free to check out what I'm currently <a href='?page=influences'>reading, listening to, or watching.</a></p>",
+			"skills": [
+				{
+					"skill": "Preparing and creating shareable rich metadata assets"
+				},
+				{
+					"skill": "Formatting responsive, dynamic, and accessible webapges via semantic HTML, JS, CSS, and PHP"
+				},
+				{
+					"skill": "Mapping out resilient design systems using custom properties, JSON, and PHP routing modules"
+				},
+				{
+					"skill": "Creating webpage layouts with Figma and Affinity 2 software."
+				}
+			]
+		},
+		{
+			"year": "2021 - 2022",
+			"id": "burbank",
+			"narrative": "<p>Leaving Gaithersburg, Maryland for Burbank, California, I join John Muir Middle School as an ESL / English teacher.</p>",
+			"skills": [
+				{
+					"skill": "Created over 185 unique standards-based lesson plans"
+				},
+				{
+					"skill": "Tracked student progress / behavior for ~100 English Language Learners"
+				},
+				{
+					"skill": "Developed academic and behavior intervention plans alongside counselors and school psychologists"
+				},
+				{
+					"skill": "Proctored high stakes state tests (CAASPP and ELPAC)"
+				}
+			]
+		},
+		{
+			"year": "2018 - 2021",
+			"id": "white-oak",
+			"narrative": "<p>Back in the United States after a Fulbright Scholarship in Taiwan, I join White Oak Middle School as an ESL / English teacher. It will be an illuminating four years.</p>",
+			"skills": [
+				{
+					"skill": "Designed language curriculum for ELD levels 1-4 and co-taught 6th-8th ELA classes"
+				},
+				{
+					"skill": "As required, co-taught STEM courses as ELD support teacher"
+				},
+				{
+					"skill": "Developed academic and behavior intervention plans alongside counselors and school psychologists"
+				},
+				{
+					"skill": "Proctored the national WIDA assessment to place incoming and current students"
+				}
+			]
+		},
+		{
+			"year": "2017 - 2018",
+			"id": "fulbright",
+			"narrative": "<p>With my teaching master's degree fresh in hand, I board a plane to Taiwan to teach English as a Fulbright English Teaching Assistant. I travel to different elementary schools in Zhiben, a spa town in the Taitung region</p>",
+			"skills": [
+				{
+					"skill": "Co-taught K-6 English classes alongside a certified local English teacher"
+				},
+				{
+					"skill": "Participated in local and national government events as a cultural representative of the United States"
+				},
+				{
+					"skill": "Recorded native prompts for the General English Proficiency Test"
+				},
+				{
+					"skill": "Gained familiarity with Mandarin's syntax, vocabulary, and socio-linguistic behavior"
+				}
+			],
+			"figure": "landscape."
+		},
+		{
+			"year": "2014-2017",
+			"id": "montclair",
+			"narrative": "<p>I decided to attend Montclair State University's Teaching Program to realize my lifelong love for education. I achieved a Master's in Teaching English as a second language, only one course shy of a Master's in Linguistics due to a timing conflict with a Fulbright scholarship.</p><p>Over the summer, I intern at Educational Testing Services to research and write questions for the TOEFL internet-Based Test</p>",
+			"skills": [
+				{
+					"skill": "Researched, created, and revised test items for the Speaking Section of the TOEFL iBT"
+				},
+				{
+					"skill": "Handled confidential test-taking data"
+				},
+				{
+					"skill": "Recorded native prompts for the General English Proficiency Test"
+				},
+				{
+					"skill": "Gained familiarity with Mandarin's syntax, vocabulary, and socio-linguistic behavior"
+				}
+			]
+		},
+		{
+			"year": "2013 - 2014",
+			"id": "nintendo",
+			"narrative": "<p>To escape the recession and subsequent collapse of the publishing industry in NY, I fly to Seattle, Washington with no clear plan. I work at a call center for Nintendo of America before being promoted to assisting with data management.</p>",
+			"skills": [
+				{
+					"skill": "Compiled user feedback from tech forums, social media, and the Miiverse (remember that?) into slide decks for upper management"
+				},
+				{
+					"skill": "Provided troubleshooting and IT support as needed"
+				},
+				{
+					"skill": "Assisted the social media manager with content creation and various administrative duties"
+				},
+				{
+					"skill": "Nintendo!"
+				}
+			]
+		},
+		{
+			"year": "2011-2013",
+			"id": "skyhorse",
+			"narrative": "<p>I graduated with a degree in Creative Writing from the University of Rochester and a certificate from NYU's Summer Publishing Institute. Should I move to New York City and become an assistant editor?</p>",
+			"skills": [
+				{
+					"skill": "Proofread and reformatted 60 titles per month for online distribution via Amazon, Barnes & Noble, and iTunes bookstore"
+				},
+				{
+					"skill": "Compiled metadata for over 100 vendors, updated through FTP"
+				},
+				{
+					"skill": "Tracked sales and inventory from the digital marketplace using iTunes Producer and Amazon's Vendor Central"
+				}	
+			]
+		}
+	]
+}
+
