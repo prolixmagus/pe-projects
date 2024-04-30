@@ -3,7 +3,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ?>
 
-<?php include("modules/site-header/template.php");?>
+<?php include("modules/mast-head/template.php");?>
 
 	<main>
 		<article class='page-content <?=$page?>'>	
@@ -15,7 +15,7 @@ error_reporting(E_ALL);
 <?php include("modules/footer/template.php")?>
 
 
-
+<script src="scripts/site.js"></script>
 <script src="<?=get_site_scripts($page)?>" type='module'></script>
 
 <?php if (isset($_GET['page']) && $_GET['page'] == "exercise") {
