@@ -6,9 +6,9 @@ error_reporting(E_ALL);
 <?php include("modules/site-header/template.php");?>
 
 	<main>
-		<section class='<?=$page?>'>	
+		<article class='page-content <?=$page?>'>	
 			<?php get_template($page) ?>
-		</section>
+		</article>
 	</main>
 
 
