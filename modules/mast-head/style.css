@@ -1,0 +1,80 @@
+mast-head {
+	display: block;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	background-color: var(--paper);
+	box-shadow: 0px 0px 1px 0px rgb(0 0 0 / .5);
+}
+
+.site-header {
+	background-color: var(--fish-blue);
+}
+
+.site-header inner-column {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.site-header h1 {
+	letter-spacing: .003em;	
+}
+
+svg {
+	display: block;
+	height: auto;
+}
+
+logo-container {
+	grid-column: 1 / 9;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: .5rem;
+}
+
+/*.site-header nav ul {
+	display: flex;
+	flex-direction: row;
+	gap: 2.5rem;
+	justify-content: space-between;
+}*/
+
+.hamburger-btn {
+	grid-column: 11 / -1;
+
+	max-width: 100%;
+	padding: 0;
+	justify-self: end;
+	background-color: transparent;
+	box-shadow: none;
+	stroke: var(--ink);
+}
+
+.hamburger {
+	max-width: 35px;
+}
+
+.fish-logo-solo {
+	max-width: 35px;
+}
+
+@media (min-width: 490px) {
+	.hamburger-btn {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.site-header {
+		color: var(--ink-light);
+		background-color: var(--fish-blue);
+	}
+}
+
