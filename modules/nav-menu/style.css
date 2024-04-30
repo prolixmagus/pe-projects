@@ -1,0 +1,61 @@
+.site-header nav {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.close {
+	
+}
+.open-menu .site-header nav {
+	grid-column: 11 / 13;
+
+	display: grid;
+	position: absolute;
+	display: grid;
+	top: 2px;
+	right: -20px;
+	z-index: 1;
+	background-color: #172B5A;
+	clip: auto;
+	clip-path: none;
+	height: auto;
+	overflow: visible;
+	width: auto;
+	& .user-menu {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		padding: 15px;
+		max-width: 200px;
+	}
+}
+
+@media (min-width: 490px) {
+	logo-container {
+		grid-column: 1 / 6;
+	}
+	.site-header nav {
+		grid-column: 8 / -1;
+		align-self: center;
+		clip: auto;
+		clip-path: none;
+		height: auto;
+		overflow: visible;
+		width: auto;
+		position: static;
+		& .user-menu {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 15px;
+		}
+	}
+}
+
+
+
