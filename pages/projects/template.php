@@ -6,14 +6,14 @@
 ?>
 
 <section class='intro'>
-	<inner-column class='pro-designer-grid'>
+	<inner-column>
 		<?php include('modules/page-header/template.php');?>
 	</inner-column>
 	
 </section>
 
 <section class='projects'>
-	<inner-column class='pro-designer-grid'>
+	<inner-column>
 		<ol class='project-list'>
 			<?php foreach($projects as $project) { ?>
 				<?php if ( isset($project['featured']) ) { ?>

@@ -2,20 +2,13 @@
 
 	$nav_links = [
 		[
-			"page" => "Résumé",
-			"link" => "?page=timeline",
+			"page" => "Work",
+			"link" => "?page=work",
 		],
-		[
-			"page" => "Projects",
-			"link" => "?page=projects",
-		],
+
 		[
 			"page" => "Influences",
 			"link" => "?page=influences",
-		],
-		[
-			"page" => "Work",
-			"link" => "?page=work",
 		],
 		[
 			"page" => "Contact",
@@ -25,13 +18,17 @@
 ?>
 
 <nav>
-	<ul class='header-menu'>
+	<ul class='user-menu'>
 		<?php foreach($nav_links as $link) { 
 
 				$link['page'] = $link['page'] ?? "page link"; 
 			?>
 
-			<li class='main-link quiet-voice'><a href='<?=$link['link']?>'><?=$link['page']?></a></li>
+			<li class='main-link quiet-voice'>
+				<a href='<?=$link['link']?>'><?=$link['page']?></a>
+			</li>
+
 		<?php } ?>
+			<button class='close visually-hidden'>x close</button>
 	</ul>
 </nav>

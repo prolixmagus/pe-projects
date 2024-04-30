@@ -1,22 +1,23 @@
-<!-- for future jsonifying of data
+<!-- in case I want to put it into JSON later ...
  <?php
 	$homeJSON = file_get_contents('data/home.json');
 	$pageData = json_decode($homeJSON, true)
 ?>
 
 <?php foreach($pageData["sections"] as $section) { ?>
+	<?php $content = $section['module']; ?>
 
 
 	<section>
 		<inner-column>
-			<?php include("modules/" . $section["module"] . "/template.php"); ?>
+			<?php include("modules/$content/template.php"); ?>
 		</inner-column>
 	</section>
 
 <?php } ?> -->
 
-<section>
-	<inner-column>
+<section class='section-grid'>
+	<inner-column class='inner-grid'>
 		<header class='home-header'>
 			<h2 class='loud-voice'>You made it!</h2>
 
@@ -30,11 +31,16 @@
 
 			<p class='calm-voice'>And of course, here's my <a href='https://github.com/prolixmagus'>github</a> and <a href='https://prolixmagus.substack.com'>blog</a>.</p>
 		</header>
+
+		<picture>
+			<img src='images/jeremy-1.svg'>
+		</picture>
 	</inner-column>
 </section>
 
-<section>
+<!-- Once I get the canvas figured out on all devices...
+	<section>
 	<inner-column>
 		<?php include('modules/whiteboard/template.php');?>
 	</inner-column>
-</section>
+</section> -->
