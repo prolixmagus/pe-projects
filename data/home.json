@@ -1,10 +1,11 @@
 {
 	"title": "Jeremy Fishman",
 	"slug": "home",
+	"image": "images/jeremy-1.svg",
 	"sections": [
 		{
-			"module": "generic-text-module",
-			"content": "<h2>hey guys</h2>"
+			"module": "generic-text-heading",
+			"content": "<h2 class='loud-voice'>You made it!</h2>"
 		}
 	]
 }
