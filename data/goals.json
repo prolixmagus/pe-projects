@@ -1,0 +1,23 @@
+{
+	"header": "page-header",
+	"sections": [
+		{
+			"module": "goal-list",
+			"goals": [
+				{
+					"hope": "To create language learning applications by leveraging my experience in web design, linguistics, and education."
+
+				},
+				{
+					"hope": "To feel comfortable incorporating animations into more projects by mastering <a href='https://gsap.com/''>GSAP</a>"
+				},
+				{
+					"hope": "To confidantly support design decisions with sketches / realizations by mastering tools like <a href='https://www.figma.com/'>Figma</a>"
+				},
+				{
+					"hope": "To observe the digital and physical world through travel."
+				}
+			]
+		}
+	] 
+}

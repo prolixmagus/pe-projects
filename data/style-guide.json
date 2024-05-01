@@ -1,0 +1,23 @@
+{
+	"header": "page-header",
+	"sections": [
+		{
+			"module": "generic-text-heading"
+		},
+		{
+			"module": "colophon"
+		},
+		{
+			"module": "exercise-card"
+		},
+		{
+			"module": "common-figure"
+		},
+		{
+			"module": "artist-figure"
+		},
+		{
+			"module": "goals-list"
+		}
+	]
+}
