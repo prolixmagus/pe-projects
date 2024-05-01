@@ -8,17 +8,11 @@
   width: 1px;
 }
 
-.close {
-	
-}
 .open-menu .site-header nav {
-	grid-column: 11 / 13;
-
 	display: grid;
-	position: absolute;
-	display: grid;
-	top: 2px;
-	right: -20px;
+	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: 1;
 	background-color: #172B5A;
 	clip: auto;
@@ -29,9 +23,10 @@
 	& .user-menu {
 		display: flex;
 		flex-direction: column;
-		gap: 15px;
+		gap: 20px;
 		padding: 15px;
-		max-width: 200px;
+		height: 100vh;
+		width: 100vw;
 	}
 }
 
@@ -42,6 +37,7 @@
 	.site-header nav {
 		grid-column: 8 / -1;
 		align-self: center;
+		justify-self: end;
 		clip: auto;
 		clip-path: none;
 		height: auto;
@@ -50,8 +46,6 @@
 		position: static;
 		& .user-menu {
 			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
 			gap: 15px;
 		}
 	}
