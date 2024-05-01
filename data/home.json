@@ -6,6 +6,9 @@
 		{
 			"module": "generic-text-heading",
 			"content": "<h2 class='loud-voice'>You made it!</h2>"
+		},
+		{
+			"module": "common-figure"
 		}
 	]
 }
