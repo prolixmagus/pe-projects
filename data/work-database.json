@@ -1,29 +1,58 @@
 [
 	{
 		"id": "1",
-		"title": "eat",
-		"slug": "chocolate",
-		"published": "2 MAR 1988",
-		"updated": "10 APR 2024",
-		"description": "",
-		"related": ["work-home", "boy-toy"]
+		"title": "Death and Design",
+		"slug": "death-and-design",
+		"published": "2 NOV 2023",
+		"updated": "10 NOV 2023",
+		"description": "This is an article description",
+		"related": ["death-and-design", "boy-toy"],
+		"case-study": [
+			{
+				"module": "generic-text-heading",
+				"content": "<h2>Of Corpse!</h2><p>Yesterday, a friend recommended I check out the existential, surrealist 2016 film <a href='https://en.wikipedia.org/wiki/Swiss_Army_Man'>Swiss Army Man</a>,  insisting that there was no other piece of media more “me” than this one. Seeing that the conceit of the film revolves around the budding relationship between a potentially (most definitely) unhinged social outcast and a farting magical corpse, I was more than intrigued. Was I the idealistic protagonist Hank, burdened by the perceived “ugliness” of his physical and mental self, or was I the corpse, rediscovering the beauty and sadness of life through love, loss, and flatulence?</p><p>The answer isn’t important (spoiler alert: a bit of both). What I gleaned from the film, aside from the thrilling roller coaster of heartbreak, imagination, joy, and sobering horror, was that I couldn’t resist trying to put the film into a box. Try as I might to just enjoy the film, I had this uncontrollable urge to put a label on it. Was this film a comedy? Romance? <a href='https://en.wikipedia.org/wiki/Bildungsroman'>Bildungsroman</a>? Fantastic realist hero’s journey?</p><p>What binds this seemingly hodge-podge of genres and moods is the strength of its unifying vision, its unbreakable commitment. As laid out in this <a href='https://acelare.wordpress.com/2016/08/11/swiss-army-man-a-dead-on-analysis-of-themes-and-color-symbolism/#:~:text=His%20pants%20are%20a%20neutral,on%20unrequited%20romance%20and%20relationships.'>wonderful analysis</a>, each character had an identifiable color-palette, each character symbolized an element of Hank’s internal struggle or denied aspirations. Each character was searching for the same clearly-defined goal - acceptance.</p><p>Like Hank’s internal struggle, the film wanted to be accepted as it was, bruises and all, for what we often think is wrong about ourselves is often what makes us unique and alive/</p>"
+			},
+			{
+				"module": "generic-text-heading",
+				"content": "<h2>Life Moves On</h2><p>Regardless of how fantastical things seemed (that a corpse and a living person could become best friends), the film did not compromise its overall design; it remained anchored in the things that make humans unique.<p><em>This is the mission </em> - that I approach design with intention and humanity.</p><p>And of course, leave room for a fart joke here and there.</p>"
+			}
+		]
 	},
 	{
 		"id": "2",
-		"title": "pray",
-		"slug": "theme-challenge-case-study",
+		"title": "Bottles in the Sky",
+		"slug": "bottles-in-the-sky",
 		"published": "4 MAR 1988",
 		"updated": "10 APR 2024",
-		"description": "",
-		"related": ["theme-challenge-case-study", "posse-foot"]
+		"description": "This is an article description",
+		"related": ["death-and-design", "posse-foot"],
+		"case-study": [
+			{
+				"module": "generic-text-heading",
+				"content": "In 1948, a Nebraska farmer named Frank Zybach invented a novel irrigation system that pumped life into the desiccated Great Plains region of North America. By doing so, he unwittingly transformed the patchwork geometry of farms."
+			},
+			{
+				"module": "square-double-figure",
+				"figure": "images/explorations/bottles-in-the-sky/square-fields.jpg",
+				"figCaption": "square fields",
+				"figureTwo": "images/explorations/bottles-in-the-sky/circular-fields.jpg",
+				"figCaptionTwo": "circular fields"
+			}
+		]
 	},
 	{
 		"id": "3",
 		"title": "love",
-		"slug": "theme-challenge-case-study",
+		"slug": "death-and-design",
 		"published": "23 MAR 2000",
 		"updated": "10 APR 2024",
-		"description": "",
-		"related": ["work-home", "feeling-time"]
+		"description": "This is an article description",
+		"related": ["work-home", "feeling-time"],
+		"case-study": [
+			{
+				"module": "generic-text-heading",
+				"content": "ef"
+			}
+		]
 	}
 ]
