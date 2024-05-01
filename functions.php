@@ -63,7 +63,7 @@ function get_exercise_template($name) {
 }
 
 function get_article_template($name) {
-	include("pages/work-detail/explorations/$name/template.php");
+	include("pages/work-detail/$name/template.php");
 }
 
 function get_layout_garden_template($module) {
