@@ -17,6 +17,7 @@
 
 @import '../modules/recent-articles-list/style.css';
 @import '../modules/explorations-header/style.css';
+@import '../modules/square-double-figure/style.css';
 
 /*influences modules*/
 @import '../modules/artist-figure/style.css';
