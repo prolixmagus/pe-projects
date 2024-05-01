@@ -5,11 +5,8 @@
 	$pageIdea = $influencesData['intro'];
 ?>
 
-<section class='intro'>
-	<inner-column>
-		<?php include('modules/page-header/template.php');?>
-	</inner-column>
-</section>
+
+<?php include('modules/page-header/template.php');?>
 
 <section class='influence-list'>
 	<inner-column>
@@ -24,6 +21,8 @@
 		</ul>
 	</inner-column>
 </section>
+
+<?php include('modules/footer/template.php');?>
 
 	<!-- <inner-column class='first'>
 
