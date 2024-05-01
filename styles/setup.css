@@ -38,8 +38,9 @@ svg {
 }
 
 .with-fit img {
- width: 100%; /*adjust*/
- height: 100%; /*adjust*/
+  object-fit: cover;
+  width: 100%; /*adjust*/
+  height: 100%; /*adjust*/
 }
 
 .visually-hidden {
