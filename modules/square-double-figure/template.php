@@ -1,14 +1,17 @@
-<?php 
-	$figure = $section['figure'] ?? "images/landscape.jpg";
-	$figCaption = $section['figCaption'] ?? null;
-	$figureTwo = $section['figureTwo'] ?? "images/landscape.jpg";
-	$figCaptionTwo = $section['figCaptionTwo'] ?? null;
+
+
+<ul class='double-figure'>
+
+	<?php foreach($section['figure'] as $figure) { 
+
+	$image = $figure['image'] ?? "images/landscape.jpg";
+	$figCaption = $figure['figCaption'] ?? null;
+	$alt = $figure['alt'] ?? "placeholder image";
 	?>
 
-<double-figure>
 	<figure>
-		<picture>
-			<img src='<?=$figure?>' alt="[[todo]]">
+		<picture class='with-fit'>
+			<img src='<?=$image?>' alt="<?=$alt?>">
 		</picture>
 		<?php if(isset($figCaption)) { ?>
 			<figcaption>
@@ -16,14 +19,5 @@
 			</figcaption>
 		<?php } ?>
 	</figure>
-	<figure>
-		<picture>
-			<img src='<?=$figureTwo?>' alt="[[todo]]">
-		</picture>
-		<?php if(isset($figCaptionTwo)) { ?>
-			<figcaption>
-				<?=$figCaptionTwo?>
-			</figcaption>
-		<?php } ?>
-	</figure>
-</double-figure>
+<?php } ?>
+</ul>

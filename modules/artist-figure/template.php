@@ -1,5 +1,5 @@
 <?php 
-	$figure = $creator['figure'] ?? "images/landscape.jpg";
+	$figure = $creator['image'] ?? "images/landscape.jpg";
 	$figCaption = $creator['figCaption'] ?? "An illuminating piece of information or a pithy aside.";
 	$creatorName = $creator['creator'] ?? "The name of the author, musician, director, network, or artist."
 	

@@ -1,9 +1,9 @@
 <?php 
-	$figure = $figure ?? "images/landscape.jpg";
-	$figCaption = $figCaption ?? null;
+	$figure = $figure['image'] ?? "images/landscape.jpg";
+	$figCaption = $figure['figCaption'] ?? null;
 	?>
 
-<common-figure>
+<common-figure class="<?= isset($section['headline']) ? 'headline' : 'common-figure' ?>">
 	<figure>
 		<picture>
 			<img src='<?=$figure?>' alt="[[todo]]">
