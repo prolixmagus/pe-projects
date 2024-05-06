@@ -20,6 +20,8 @@ details > summary {
 	cursor: pointer;
 	&::after {
 		content:'➕';
+		display: flex;
+		align-items: center;
 	}
 }
 
