@@ -1,8 +1,20 @@
+<?php $pageData = read_page_data('contact');?>
 
-<?php include('modules/page-header/template.php')?>
+<?php 
+	$pageTitle = $pageData['title'];
+	$pageIdea = $pageData['idea'];
 
-<section>
-	<inner-column>
-		<?php include ('modules/generic-text-heading/template.php')?>
-	</inner-column>
-</section>
+	include('modules/page-header/template.php')
+?>
+
+<?php foreach($pageData['sections'] as $section) { 
+	$module = $section['module']; ?>
+
+	<section>
+		<inner-column>
+			<?php 
+				include ("modules/$module/template.php")?>
+		</inner-column>
+	</section>
+
+<?php } ?>
