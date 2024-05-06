@@ -2,13 +2,13 @@
 
 //get page database
 function read_page_data($page) {
-	$filePath = "data/$page.json";
-	if ( file_get_contents($filePath) ) {
+	$filePath = "data/pages/$page.json";
+	if ( file_exists($filePath) ) {
 		$json = file_get_contents($filePath);
+		$pageData = json_decode($json, true);
 	} else {
 		echo "No contents here!";
 	}
-	$pageData = json_decode($json, true);
 	return $pageData;
 }
 
@@ -52,7 +52,7 @@ function delete($database, $data_id) {
 // reading database for exercises for programmers files
 
 function get_all_exercises() {
-	$exercises = read("data/exercises-database.json");
+	$exercises = read("data/exercises.json");
 	return $exercises;
 }
 
@@ -85,8 +85,8 @@ function most_recent_articles($articles) {
 	return array_slice($articles, 0, 4);
 }
 
-function get_site_scripts($page) {
-	return "scripts/$page.js";
+function get_site_scripts($exercise) {
+	return "scripts/$exercise.js";
 }
 
 function get_exercise_scripts($slug) {
