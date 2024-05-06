@@ -5,12 +5,12 @@
 ?>
 
 <?php foreach($pageData["sections"] as $section) { ?>
-	<?php $content = $section['module']; ?>
+	<?php $module = $section['module']; ?>
 
 
 	<section>
 		<inner-column>
-			<?php include("modules/$content/template.php"); ?>
+			<?php include("modules/$module/template.php"); ?>
 		</inner-column>
 	</section>
 
