@@ -5,17 +5,13 @@
 	$pageIdea = $timelineData['intro'];
 ?>
 
-<section class='intro'>
-	<inner-column>
 
-		<?php include('modules/page-header/template.php');?>
+<?php include('modules/page-header/template.php');?>
 
-	</inner-column>
-</section>
 
 <?php foreach($timelineData['section'] as $section) { ?>
 	<section class='<?=$section['id']?>' id='<?=$section['id']?>'>
-		<inner-column class='first'>
+		<inner-column>
 			<work-narrative>
 				<h2 class='attention-voice'><?=$section['year']?></h2>
 
@@ -34,7 +30,12 @@
 			</experience-gained>
 
 
-		<?php include('modules/common-figure/template.php')?>
+		<?php 
+			$figure = $section['figure'];
+			$figCaption = $section['figCaption'];
+
+			include('modules/common-figure/template.php')
+		?>
 
 		</inner-column>
 	</section>
