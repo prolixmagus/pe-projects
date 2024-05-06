@@ -17,7 +17,7 @@
 		<li>
 			<lettering-voice>
 				<h3 class='calm-voice'>calm-voice</h3>
-				<p class='quiet-voice'>16px || 1rem || weight 500</p>
+				<p class='quiet-voice'>16px || 1rem || weight 400</p>
 			</lettering-voice>
 		</li>
 		<li>

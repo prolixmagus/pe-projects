@@ -2,10 +2,6 @@
 	position: relative;
 }
 
-.first {
-	padding-top: 1rem;
-}
-
 .timeline inner-column {
 	display: flex;
 	flex-direction: column;
