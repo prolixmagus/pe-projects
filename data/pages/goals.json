@@ -1,12 +1,12 @@
 {
+	"title": "goals",
 	"header": "page-header",
 	"sections": [
 		{
-			"module": "goal-list",
+			"module": "goals-list",
 			"goals": [
 				{
 					"hope": "To create language learning applications by leveraging my experience in web design, linguistics, and education."
-
 				},
 				{
 					"hope": "To feel comfortable incorporating animations into more projects by mastering <a href='https://gsap.com/''>GSAP</a>"

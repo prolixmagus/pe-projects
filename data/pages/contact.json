@@ -1,0 +1,11 @@
+{
+	"title": "Contact",
+	"slug": "contact",
+	"idea": "Contact me, hoe",
+	"sections": [
+		{
+			"module": "generic-text-heading",
+			"content": "<p>CONTACT ME</p>"
+		}
+	]
+}
