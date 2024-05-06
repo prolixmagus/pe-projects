@@ -2,6 +2,10 @@ common-figure {
 	display: block;
 }
 
-common-figure picture {
+.common-figure{
 	max-width: 500px;
+}
+
+.headline {
+	max-width: 100%;
 }
