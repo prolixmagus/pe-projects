@@ -8,10 +8,14 @@
 				</a>
 			</h2>
 			<time><?=$article['published']?></time>
+
+			<picture class='work-picture'>
+				<img src="<?=$article['preview-image']?>" / >
+			</picture>
+
 			<p><?=$article['description']?></p>
-			<a href='?page=work-detail&slug=<?=$article['slug']?>'>
-					Read more	
-				</a>
+
+			<a href='?page=work-detail&slug=<?=$article['slug']?>'>Read more</a>
 		</li>
 
 	<?php } ?>
