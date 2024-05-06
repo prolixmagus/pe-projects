@@ -1,3 +1,8 @@
+<?php $json = 
+	file_get_contents('data/exercises.json');
+	$exercises = json_decode($json, true);
+?>
+
 <section class='challenge-introduction'>
 	<inner-column> 
 		<h2 class="loud-voice">Practice Makes Perfect</h2>
@@ -9,12 +14,11 @@
 
 <section class='projects'>
 	<inner-column>
-		<?php $exercises = read_page_data('exercises-database');?>
 			<ol class='project-list'>
 					<?php foreach($exercises as $exercise) { ?>
 						<li>
 							<?php include('modules/exercise-card/template.php'); ?>
-					</li>
+						</li>
 				<?php } ?>
 			</ol>
 	</inner-column>

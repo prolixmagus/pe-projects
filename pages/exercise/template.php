@@ -1,8 +1,10 @@
-<?php $exercises = read_page_data('exercises-database');
+<?php 
+	$exercises = get_all_exercises();
 
-$exercise = get_item_by_slug($exercises, $_GET['slug']); 
+	$exercise = get_item_by_slug($exercises, $_GET['slug']); 
 
-$exercise_slug = $exercise['slug'];
+
+	$exercise_slug = $exercise['slug'];
 ?>
 
 <?php

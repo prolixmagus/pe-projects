@@ -1,5 +1,5 @@
 <?php 
-	$sitemapData = read_page_data('site-map-database');
+	$sitemapData = read('data/site-map-database.json');
 	?>
 	
 <site-map>
