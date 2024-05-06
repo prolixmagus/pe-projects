@@ -3,9 +3,8 @@
 <?php 
 	include("functions.php");
 	require("router.php");
-	// read_page_data($page);
+	// $pageData = read_page_data($page);
 	// create json file for each page, then use php to slot in information
-	$exercises = read(get_file("data/exercises-database.json"));
 ?>
 
 
