@@ -21,7 +21,7 @@
 					"skill": "Creating webpage layouts with Figma and Affinity 2 software."
 				}
 			],
-			"figure": "images/landscape.jpg",
+			"image": "images/landscape.jpg",
 			"figCaption": "caption"
 		},
 		{
@@ -42,7 +42,7 @@
 					"skill": "Proctored high stakes state tests (CAASPP and ELPAC)"
 				}
 			],
-			"figure": "images/landscape.jpg",
+			"image": "images/landscape.jpg",
 			"figCaption": "caption"
 		},
 		{
@@ -63,7 +63,7 @@
 					"skill": "Proctored the national WIDA assessment to place incoming and current students"
 				}
 			],
-			"figure": "images/landscape.jpg",
+			"image": "images/landscape.jpg",
 			"figCaption": "caption"
 		},
 		{
@@ -84,7 +84,7 @@
 					"skill": "Gained familiarity with Mandarin's syntax, vocabulary, and socio-linguistic behavior"
 				}
 			],
-			"figure": "images/landscape.jpg",
+			"image": "images/landscape.jpg",
 			"figCaption": "caption"
 		},
 		{
@@ -105,7 +105,7 @@
 					"skill": "Gained familiarity with Mandarin's syntax, vocabulary, and socio-linguistic behavior"
 				}
 			],
-			"figure": "images/landscape.jpg",
+			"image": "images/landscape.jpg",
 			"figCaption": "caption"
 		},
 		{
@@ -126,7 +126,7 @@
 					"skill": "Nintendo!"
 				}
 			],
-			"figure": "images/landscape.jpg",
+			"image": "images/landscape.jpg",
 			"figCaption": "caption"
 		},
 		{
@@ -144,7 +144,7 @@
 					"skill": "Tracked sales and inventory from the digital marketplace using iTunes Producer and Amazon's Vendor Central"
 				}	
 			],
-			"figure": "images/landscape.jpg",
+			"image": "images/landscape.jpg",
 			"figCaption": "caption"
 		}
 	]

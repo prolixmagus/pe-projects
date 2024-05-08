@@ -18,6 +18,9 @@
 		},
 		{
 			"module": "goals-list"
+		},
+		{
+			"module": "project-card"
 		}
 	]
 }

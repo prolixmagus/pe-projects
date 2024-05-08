@@ -2,12 +2,13 @@
 	"header": "page-header",
 	"sections": [
 		{
-			"module": "project-list",
+			"module": "project-card",
 			"projects": [
 				{
 					"id": 1,
 					"name": "Exercises for Programmers",
 					"address": "?page=exercises",
+					"image": "images/landscape.jpg",
 					"competency": "PHP, HTML",
 					"description": "My interpretation of Brian P. Hogan's coding challenges, also viewable on <a href='https://codepen.io/Jeremy-Fishman/collections/'>CodePen</a>",
 					"featured" : true
@@ -16,6 +17,7 @@
 					"id": 2,
 					"name": "Responsive Layout Garden",
 					"address": "?page=layout-garden",
+					"image": "images/landscape.jpg",
 					"competency": "PHP, HTML, CSS",
 					"description": "A living collection of internet layouts that inspired me during browsing. Repetition and practice, practice, practice!"
 				},
@@ -23,6 +25,7 @@
 					"id": 3,
 					"name": "Tea Pet Shop",
 					"address": "projects/teapet",
+					"image": "images/landscape.jpg",
 					"competency": "PHP, HTML, CSS",
 					"description": "A CRUD website where you can customize your own Tea Pet"
 				},
@@ -30,6 +33,7 @@
 					"id": 4,
 					"name": "Site Mockup to Code",
 					"address": "projects/site-mockup-to-code",
+					"image": "images/landscape.jpg",
 					"competency": "PHP, HTML, CSS",
 					"description": "A FIGMA file transmuted into code, scaffolded with a PHP routering structure and flexible CSS design system",
 					"featured": true
@@ -38,6 +42,7 @@
 					"id": 5,
 					"name": "Theme Challenge",
 					"address": "projects/theme-challenge",
+					"image": "images/landscape.jpg",
 					"competency": "PHP, HTML, CSS, JS",
 					"description": "I was tasked to choose an industry and create a professional website for a fictional company. I chose luxury landscaping."
 
