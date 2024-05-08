@@ -1,6 +1,6 @@
 <?php 
-	$figure = $figure['image'] ?? "images/landscape.jpg";
-	$figCaption = $figure['figCaption'] ?? null;
+	$figure = $section['image'] ?? "images/landscape.jpg";
+	$figCaption = $section['figCaption'] ?? null;
 	?>
 
 <common-figure class="<?= isset($section['headline']) ? 'headline' : 'common-figure' ?>">
