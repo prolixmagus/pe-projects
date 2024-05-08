@@ -11,7 +11,7 @@
 			"updated": "10 NOV 2023",
 			"description": "This is an article description",
 			"preview-image": "images/landscape.jpg",
-			"related": ["death-and-design", "boy-toy"],
+			"related": ["bottles-in-the-sky", "boy-toy"],
 			"case-study": [
 				{
 					"module": "generic-text-heading",
@@ -59,23 +59,56 @@
 					"content": "<p>In 1948, a Nebraska farmer named Frank Zybach invented a novel irrigation system that pumped life into the desiccated Great Plains region of North America. By doing so, he unwittingly transformed the patchwork geometry of farms.</p>"
 				},
 				{
-					"module": "square-double-figure",
+					"module": "figure-list",
 					"figure": [
 						{
 							"image": "images/explorations/bottles-in-the-sky/square-fields.jpg",
-							"figCaption": "Traditional square and rectangular fields",
-							"alt": "alt-text"
+							"figCaption": "Familiar square and rectangle farms",
+							"alt": "An aerial shot of square and rectangle farm plots"
 						},
 						{
 							"image": "images/explorations/bottles-in-the-sky/circular-fields.jpg",
 							"figCaption": "Circular fields using central pivot irrigation",
-							"alt": "alt-text"
+							"alt": "An aerial shot of circular field plots"
 						}
 					]
 				},
 				{
 					"module": "generic-text-heading",
 					"content": "<p>Perhaps I’m being <a href='https://en.wikipedia.org/wiki/Apophenia'>apophonetic</a>, but as the United States was going through a cultural and industrial revolution post-WW2, so did our physical landscape transition from cubist to more abstract, curved forms.</p><p>Let me show you another aerial image. If you live in Los Angeles, it will strike fear into your heart</p>"
+				},
+				{
+					"module": "common-figure",
+					"image": "images/explorations/bottles-in-the-sky/i-110.jpg",
+					"figCaption": "Southband i-110 (courtesy of Wikipedia)",
+					"alt": "Traffic-filled Southbound i-110 freeway in Los Angeles"
+				},
+				{
+					"module": "generic-text-heading",
+					"content": "<p>One of the worst bottle-necks in the nation - the intersection of the 110 and the 105, also known as the Judge Harry Pregerson Interchange.</p><p>Admire the tension between stasis and movement. The gossamer-thin ramps weaved over the thick freeway belt like a silk brocade. One of the few moments where you can feel yourself aging as you wait in traffic.</p><p>Is it beautiful? Is it terrifying? Is it just a road?</p><p>Here is my 8-minute Affinity 2 designed logo for the Pregerson Interchange. Enjoy.</p>"
+				},
+				{
+					"module": "common-figure",
+					"image": "images/explorations/bottles-in-the-sky/i-110-logo.jpg",
+					"figCaption": "Everything should have a logo, right?",
+					"alt": "Black lines branching out with a red and yellow ink slash at point of divergence"
+				},
+				{
+					"module": "key-takeaways",
+					"takeaways": [
+						{
+							"teaser": "First point",
+							"description": "What do you want to say?"
+						},
+						{
+							"teaser": "Second point",
+							"description": "What do you want to say?"
+						},
+						{
+							"teaser": "Third point",
+							"description": "What do you want to say?"
+						}
+					]
 				}
 			]
 		},
