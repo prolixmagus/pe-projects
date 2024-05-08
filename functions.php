@@ -71,11 +71,13 @@ function get_layout_garden_template($module) {
 }
 
 function get_item_by_slug($database, $slug_to_match) {
-	foreach ($database as $data) {
-		if ($data['slug'] == $slug_to_match) {
-			return $data;
-		}
-	}
+    foreach ($database['articles'] as $article) {
+        if ($article['slug'] === $slug_to_match) {
+            return $article;
+        }
+    }
+    // If no matching slug is found, return null or handle it based on your application logic.
+    return null;
 }
 
 function most_recent_articles($articles) {
