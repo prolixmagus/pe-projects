@@ -42,7 +42,6 @@ logo-container {
 
 .hamburger-btn {
 	grid-column: 11 / -1;
-
 	max-width: 100%;
 	padding: 0;
 	justify-self: end;
