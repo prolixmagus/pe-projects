@@ -1,13 +1,11 @@
 var hamburgerMenu = document.querySelector('.hamburger');
-var mastheadNav = document.querySelector('.site-header nav')
+var userMenu = document.querySelector('.site-header nav .user-menu')
 var body = document.querySelector('body')
 var close = document.querySelector('.site-header nav button')
-console.log(mastheadNav)
+
 
 hamburgerMenu.addEventListener('click', (event) => {
-	body.classList.add('open-menu');
-	close.classList.remove('visually-hidden');
-	close.classList.add('visible');
+	userMenu.classList.toggle('slider-open');
 })
 
 close.addEventListener('click', (event) => {
