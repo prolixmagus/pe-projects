@@ -18,10 +18,15 @@
 @import '../modules/recent-articles-list/style.css';
 @import '../modules/explorations-header/style.css';
 @import '../modules/square-double-figure/style.css';
+@import '../modules/key-takeaways/style.css';
 
 /*influences modules*/
 @import '../modules/artist-figure/style.css';
 
+/*project module*/
+@import '../modules/key-takeaways/style.css';
+
+/*canvas?*/
 @import '../modules/whiteboard/style.css';
 
 

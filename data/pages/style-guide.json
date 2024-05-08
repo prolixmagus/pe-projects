@@ -21,6 +21,9 @@
 		},
 		{
 			"module": "project-card"
+		},
+		{
+			"module": "key-takeaways"
 		}
 	]
 }

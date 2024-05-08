@@ -1,0 +1,19 @@
+key-takeaways {
+	display: block;
+}
+
+details > summary {
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	&::after {
+		content:'➕';
+		display: flex;
+		align-items: center;
+	}
+}
+
+details[open] > summary::after {
+	content: '➖';
+}
