@@ -12,8 +12,16 @@
 <?php foreach($timelineData['section'] as $section) { ?>
 	<section class='<?=$section['id']?>' id='<?=$section['id']?>'>
 		<inner-column>
+
 			<work-narrative>
 				<h2 class='attention-voice'><?=$section['year']?></h2>
+
+				<?php 
+				$figure = $section['image'];
+				$figCaption = $section['figCaption'];
+
+				include('modules/common-figure/template.php')
+				?>
 
 				<?=$section['narrative']?>
 			</work-narrative>
@@ -28,14 +36,6 @@
 					<?php } ?>
 				</ul>
 			</experience-gained>
-
-
-		<?php 
-			$figure = $section['figure'];
-			$figCaption = $section['figCaption'];
-
-			include('modules/common-figure/template.php')
-		?>
 
 		</inner-column>
 	</section>
