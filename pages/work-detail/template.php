@@ -1,5 +1,6 @@
 <?php $workData = read_page_data('work');
 
+
 $work_article = get_item_by_slug($workData, $_GET['slug']);
 
 $work_article_slug = $work_article['slug'];
