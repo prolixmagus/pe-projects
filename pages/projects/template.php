@@ -15,7 +15,15 @@
 
 <section>
 	<inner-column>
-		<?php include ("modules/$module/template.php")?>
+		<ol class='project-list'>
+			<?php foreach($section['projects'] as $section) { ?>
+				<?php if ( isset($section['featured']) ) { ?>
+					<li>
+						<?php include ("modules/$module/template.php")?>
+					</li>
+				<?php } ?>
+			<?php } ?>
+		</ol>
 	</inner-column>
 </section>
 
