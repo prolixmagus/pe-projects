@@ -20,6 +20,23 @@
 				{
 					"module": "generic-text-heading",
 					"content": "<h2>Life Moves On</h2><p>Regardless of how fantastical things seemed (that a corpse and a living person could become best friends), the film did not compromise its overall design; it remained anchored in the things that make humans unique.<p><em>This is the mission </em> - that I approach design with intention and humanity.</p><p>And of course, leave room for a fart joke here and there.</p>"
+				},
+				{
+					"module": "key-takeaways",
+					"takeaways": [
+						{
+							"teaser": "First point",
+							"description": "What do you want to say?"
+						},
+						{
+							"teaser": "Second point",
+							"description": "What do you want to say?"
+						},
+						{
+							"teaser": "Third point",
+							"description": "What do you want to say?"
+						}
+					]
 				}
 			]
 		},
