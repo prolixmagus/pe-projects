@@ -21,7 +21,7 @@ voice ul {
 
 lettering-voice {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 2px solid black;
