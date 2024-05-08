@@ -32,22 +32,6 @@ html {
 	--tight: 700px;
 }
 
-pre {
-	display: flex;
-	background-color: black;
-	margin-top: 1rem;
-	max-width: 500px;
-	padding: 15px;
-}
-
-code {
-	color: orange;
-	font-family: monospace;
-	font-weight: 500;
-	font-size: 1.1rem;
-	padding: 2px;
-}
-
 sup {
 	vertical-align: super;
 	vertical-align: 25%;

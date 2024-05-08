@@ -11,7 +11,7 @@
 @import '../modules/colophon/style.css';
 @import '../modules/typeface/style.css';
 @import '../modules/generic-text-heading/style.css';
-@import '../modules/exercise-card/style.css';
+@import '../modules/code-block/style.css';
 
 /*work modules*/
 
@@ -25,6 +25,7 @@
 
 /*project module*/
 @import '../modules/key-takeaways/style.css';
+@import '../modules/exercise-card/style.css';
 
 /*canvas?*/
 @import '../modules/whiteboard/style.css';
