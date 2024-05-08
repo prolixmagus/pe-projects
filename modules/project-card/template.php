@@ -5,7 +5,7 @@
 	$description = $section['description'] ?? "This is a description of the project.";
 ?>
 
-<project-card class='exercise e4p'>
+<project-card class='project-card'>
 	<?php include('modules/common-figure/template.php')?>
 
 	<a href='<?=$address?>'>

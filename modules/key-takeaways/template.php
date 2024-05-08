@@ -2,7 +2,7 @@
 	$takeaways = $section['takeaways'] ?? [1, 2, 3];
 ?>
 
-<key-takeaways>
+<key-takeaways class='key-takeaways'>
 	<h2>Key Takeaways</h2>
 
 	<ul>
@@ -16,7 +16,7 @@
 					<summary>
 						<h3><?=$point?></h3>
 					</summary>
-				<?=$description?>. 
+				<?=$description?>
 				</details>
 			</li>
 		<?php } ?>

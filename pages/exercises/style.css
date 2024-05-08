@@ -1,4 +1,4 @@
-.exercise-link {
+.exercise-link{
 	font-family: 'Comfortaa';
 	align-items: center;
 	padding-bottom: 10px;
@@ -6,11 +6,11 @@
 
 }
 
-.exercise p {
+.exercise p, project-card p {
 	margin-top: 10px;
 }
 
-.exercise {
+.exercise, project-card {
 		display: flex;
 		flex-direction: column;
 		border: 1px solid black;
