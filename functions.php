@@ -80,6 +80,16 @@ function get_item_by_slug($database, $slug_to_match) {
     return null;
 }
 
+function get_layout_by_slug($database, $slug_to_match) {
+    foreach ($database as $layout) {
+        if ($layout['slug'] === $slug_to_match) {
+            return $layout;
+        }
+    }
+    // If no matching slug is found, return null or handle it based on your application logic.
+    return null;
+}
+
 function most_recent_articles($articles) {
 	usort($articles, function($a, $b) {
 		return strtotime($b['published']) - strtotime($a['published']);
