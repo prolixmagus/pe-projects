@@ -18,6 +18,7 @@
 		<picture class='work-picture'>
 			<img src="<?=$preview_image?>" / >
 		</picture>
+		
 		<p><?=$description?></p>
 
 		<a href='?page=work-detail&slug=<?=$slug?>'>Read more</a>
