@@ -1,11 +1,11 @@
 {
 	"title": "Contact",
 	"slug": "contact",
-	"idea": "Contact me, hoe",
+	"idea": "⬇︎⬇︎⬇︎⬇︎⬇︎⬇︎⬇︎⬇︎⬇︎",
 	"sections": [
 		{
 			"module": "generic-text-heading",
-			"content": "<p>CONTACT ME</p>"
+			"content": "<address><a href='mailto:jeremypfishman@gmail.com'><span>jeremypfishman</span><span>@</span><span>gmail.com</span></a></address>"
 		}
 	]
 }

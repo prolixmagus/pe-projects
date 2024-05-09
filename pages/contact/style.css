@@ -1,1 +1,13 @@
-style.css
+.contact address {
+	margin-top: 1em;
+	display: grid;
+}
+
+span {
+	display: block;
+	font-size: 24px;
+}
+
+
+
+

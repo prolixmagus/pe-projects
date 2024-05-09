@@ -10,8 +10,8 @@
 <?php foreach($pageData['sections'] as $section) { 
 	$module = $section['module']; ?>
 
-	<section>
-		<inner-column>
+	<section class='contact section-grid'>
+		<inner-column class='inner-grid'>
 			<?php 
 				include ("modules/$module/template.php")?>
 		</inner-column>
