@@ -2,10 +2,17 @@
 
 	$nav_links = [
 		[
+			"page" => "Home",
+			"link" => "?",
+		],
+		[
 			"page" => "Work",
 			"link" => "?page=work",
 		],
-
+		[
+			"page" => "Resume",
+			"link" => "?page=timeline",
+		],
 		[
 			"page" => "Influences",
 			"link" => "?page=influences",
