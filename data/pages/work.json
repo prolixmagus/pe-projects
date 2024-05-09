@@ -7,34 +7,46 @@
 			"id": "1",
 			"title": "Death and Design",
 			"slug": "death-and-design",
-			"published": "2 NOV 2023",
+			"published": "02 NOV 2023",
 			"updated": "10 NOV 2023",
 			"description": "This is an article description",
 			"preview-image": "images/landscape.jpg",
 			"related": ["bottles-in-the-sky", "boy-toy"],
 			"case-study": [
 				{
-					"module": "generic-text-heading",
-					"content": "<h2>Of Corpse!</h2><p>Yesterday, a friend recommended I check out the existential, surrealist 2016 film <a href='https://en.wikipedia.org/wiki/Swiss_Army_Man'>Swiss Army Man</a>,  insisting that there was no other piece of media more “me” than this one. Seeing that the conceit of the film revolves around the budding relationship between a potentially (most definitely) unhinged social outcast and a farting magical corpse, I was more than intrigued. Was I the idealistic protagonist Hank, burdened by the perceived “ugliness” of his physical and mental self, or was I the corpse, rediscovering the beauty and sadness of life through love, loss, and flatulence?</p><p>The answer isn’t important (spoiler alert: a bit of both). What I gleaned from the film, aside from the thrilling roller coaster of heartbreak, imagination, joy, and sobering horror, was that I couldn’t resist trying to put the film into a box. Try as I might to just enjoy the film, I had this uncontrollable urge to put a label on it. Was this film a comedy? Romance? <a href='https://en.wikipedia.org/wiki/Bildungsroman'>Bildungsroman</a>? Fantastic realist hero’s journey?</p><p>What binds this seemingly hodge-podge of genres and moods is the strength of its unifying vision, its unbreakable commitment. As laid out in this <a href='https://acelare.wordpress.com/2016/08/11/swiss-army-man-a-dead-on-analysis-of-themes-and-color-symbolism/#:~:text=His%20pants%20are%20a%20neutral,on%20unrequited%20romance%20and%20relationships.'>wonderful analysis</a>, each character had an identifiable color-palette, each character symbolized an element of Hank’s internal struggle or denied aspirations. Each character was searching for the same clearly-defined goal - acceptance.</p><p>Like Hank’s internal struggle, the film wanted to be accepted as it was, bruises and all, for what we often think is wrong about ourselves is often what makes us unique and alive/</p>"
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Of Corpse!</h2><p>Yesterday, a friend recommended I check out the existential, surrealist 2016 film <a href='https://en.wikipedia.org/wiki/Swiss_Army_Man'>Swiss Army Man</a>,  insisting that there was no other piece of media more “me” than this one. Seeing that the conceit of the film revolves around the budding relationship between a potentially (most definitely) unhinged social outcast and a farting magical corpse, I was more than intrigued. Was I the idealistic protagonist Hank, burdened by the perceived “ugliness” of his physical and mental self, or was I the corpse, rediscovering the beauty and sadness of life through love, loss, and flatulence?</p><p>The answer isn’t important (spoiler alert: a bit of both). What I gleaned from the film, aside from the thrilling roller coaster of heartbreak, imagination, joy, and sobering horror, was that I couldn’t resist trying to put the film into a box. Try as I might to just enjoy the film, I had this uncontrollable urge to put a label on it. Was this film a comedy? Romance? <a href='https://en.wikipedia.org/wiki/Bildungsroman'>Bildungsroman</a>? Fantastic realist hero’s journey?</p><p>What binds this seemingly hodge-podge of genres and moods is the strength of its unifying vision, its unbreakable commitment. As laid out in this <a href='https://acelare.wordpress.com/2016/08/11/swiss-army-man-a-dead-on-analysis-of-themes-and-color-symbolism/#:~:text=His%20pants%20are%20a%20neutral,on%20unrequited%20romance%20and%20relationships.'>wonderful analysis</a>, each character had an identifiable color-palette, each character symbolized an element of Hank’s internal struggle or denied aspirations. Each character was searching for the same clearly-defined goal - acceptance.</p><p>Like Hank’s internal struggle, the film wanted to be accepted as it was, bruises and all, for what we often think is wrong about ourselves is often what makes us unique and alive/</p>"
+						}		
+					]
 				},
 				{
-					"module": "generic-text-heading",
-					"content": "<h2>Life Moves On</h2><p>Regardless of how fantastical things seemed (that a corpse and a living person could become best friends), the film did not compromise its overall design; it remained anchored in the things that make humans unique.<p><em>This is the mission </em> - that I approach design with intention and humanity.</p><p>And of course, leave room for a fart joke here and there.</p>"
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Life Moves On</h2><p>Regardless of how fantastical things seemed (that a corpse and a living person could become best friends), the film did not compromise its overall design; it remained anchored in the things that make humans unique.<p><em>This is the mission </em> - that I approach design with intention and humanity.</p><p>And of course, leave room for a fart joke here and there.</p>"
+						}	
+					]
 				},
 				{
-					"module": "key-takeaways",
-					"takeaways": [
+					"section": [
 						{
-							"teaser": "First point",
-							"description": "What do you want to say?"
-						},
-						{
-							"teaser": "Second point",
-							"description": "What do you want to say?"
-						},
-						{
-							"teaser": "Third point",
-							"description": "What do you want to say?"
+							"module": "key-takeaways",
+							"takeaways": [
+								{
+									"teaser": "First point",
+									"description": "What do you want to say?"
+								},
+								{
+									"teaser": "Second point",
+									"description": "What do you want to say?"
+								},
+								{
+									"teaser": "Third point",
+									"description": "What do you want to say?"
+								}
+							]
 						}
 					]
 				}
@@ -44,88 +56,248 @@
 			"id": "2",
 			"title": "Bottles in the Sky",
 			"slug": "bottles-in-the-sky",
-			"published": "4 MAR 1988",
-			"updated": "10 APR 2024",
+			"published": "03 NOV 2023",
+			"updated": "10 OCT 2023",
 			"description": "This is an article description",
 			"preview-image": "images/landscape.jpg",
 			"related": ["death-and-design", "posse-foot"],
 			"case-study": [
 				{
-					"module": "common-figure",
-					"headline": true
-				},
-				{
-					"module": "generic-text-heading",
-					"content": "<p>In 1948, a Nebraska farmer named Frank Zybach invented a novel irrigation system that pumped life into the desiccated Great Plains region of North America. By doing so, he unwittingly transformed the patchwork geometry of farms.</p>"
-				},
-				{
-					"module": "figure-list",
-					"figure": [
+					"section": [
 						{
-							"image": "images/explorations/bottles-in-the-sky/square-fields.jpg",
-							"figCaption": "Familiar square and rectangle farms",
-							"alt": "An aerial shot of square and rectangle farm plots"
+							"module": "common-figure",
+							"headline": true
 						},
 						{
-							"image": "images/explorations/bottles-in-the-sky/circular-fields.jpg",
-							"figCaption": "Circular fields using central pivot irrigation",
-							"alt": "An aerial shot of circular field plots"
+							"module": "generic-text-heading",
+							"content": "<h2>Introduction</h2><p>In 1948, a Nebraska farmer named Frank Zybach invented a novel irrigation system that pumped life into the desiccated Great Plains region of North America. By doing so, he unwittingly transformed the patchwork geometry of farms.</p>"
+						},
+						{
+							"module": "figure-list",
+							"figure": [
+								{
+									"image": "images/explorations/bottles-in-the-sky/square-fields.jpg",
+									"figCaption": "Familiar square and rectangle farms",
+									"alt": "An aerial shot of square and rectangle farm plots"
+								},
+								{
+									"image": "images/explorations/bottles-in-the-sky/circular-fields.jpg",
+									"figCaption": "Circular fields using central pivot irrigation",
+									"alt": "An aerial shot of circular field plots"
+								}
+							]
 						}
 					]
 				},
 				{
-					"module": "generic-text-heading",
-					"content": "<p>Perhaps I’m being <a href='https://en.wikipedia.org/wiki/Apophenia'>apophonetic</a>, but as the United States was going through a cultural and industrial revolution post-WW2, so did our physical landscape transition from cubist to more abstract, curved forms.</p><p>Let me show you another aerial image. If you live in Los Angeles, it will strike fear into your heart</p>"
-				},
-				{
-					"module": "common-figure",
-					"image": "images/explorations/bottles-in-the-sky/i-110.jpg",
-					"figCaption": "Southband i-110 (courtesy of Wikipedia)",
-					"alt": "Traffic-filled Southbound i-110 freeway in Los Angeles"
-				},
-				{
-					"module": "generic-text-heading",
-					"content": "<p>One of the worst bottle-necks in the nation - the intersection of the 110 and the 105, also known as the Judge Harry Pregerson Interchange.</p><p>Admire the tension between stasis and movement. The gossamer-thin ramps weaved over the thick freeway belt like a silk brocade. One of the few moments where you can feel yourself aging as you wait in traffic.</p><p>Is it beautiful? Is it terrifying? Is it just a road?</p><p>Here is my 8-minute Affinity 2 designed logo for the Pregerson Interchange. Enjoy.</p>"
-				},
-				{
-					"module": "common-figure",
-					"image": "images/explorations/bottles-in-the-sky/i-110-logo.jpg",
-					"figCaption": "Everything should have a logo, right?",
-					"alt": "Black lines branching out with a red and yellow ink slash at point of divergence"
-				},
-				{
-					"module": "key-takeaways",
-					"takeaways": [
+					"section": [
 						{
-							"teaser": "First point",
-							"description": "What do you want to say?"
+							"module": "generic-text-heading",
+							"content": "<h2>Agricultural Geometry</h2><p>Perhaps I’m being <a href='https://en.wikipedia.org/wiki/Apophenia'>apophonetic</a>, but as the United States was going through a cultural and industrial revolution post-WW2, so did our physical landscape transition from cubist to more abstract, curved forms.</p><p>Let me show you another aerial image. If you live in Los Angeles, it will strike fear into your heart</p>"
 						},
 						{
-							"teaser": "Second point",
-							"description": "What do you want to say?"
-						},
-						{
-							"teaser": "Third point",
-							"description": "What do you want to say?"
+							"module": "common-figure",
+							"image": "images/explorations/bottles-in-the-sky/i-110.jpg",
+							"figCaption": "Southband i-110 (courtesy of Wikipedia)",
+							"alt": "Traffic-filled Southbound i-110 freeway in Los Angeles"
 						}
 					]
-				}
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Changing the Landscape</h2><p>One of the worst bottle-necks in the nation - the intersection of the 110 and the 105, also known as the Judge Harry Pregerson Interchange.</p><p>Admire the tension between stasis and movement. The gossamer-thin ramps weaved over the thick freeway belt like a silk brocade. One of the few moments where you can feel yourself aging as you wait in traffic.</p><p>Is it beautiful? Is it terrifying? Is it just a road?</p><p>Here is my 8-minute Affinity 2 designed logo for the Pregerson Interchange. Enjoy.</p>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/bottles-in-the-sky/i-110-logo.jpg",
+							"figCaption": "Everything should have a logo, right?",
+							"alt": "Black lines branching out with a red and yellow ink slash at point of divergence"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "key-takeaways",
+							"takeaways": [
+								{
+									"teaser": "First point",
+									"description": "What do you want to say?"
+								},
+								{
+									"teaser": "Second point",
+									"description": "What do you want to say?"
+								},
+								{
+									"teaser": "Third point",
+									"description": "What do you want to say?"
+								}
+							]
+						}
+					]
+				}	
 			]
 		},
 		{
 			"id": "3",
-			"title": "love",
-			"slug": "death-and-design",
-			"published": "23 MAR 2000",
-			"updated": "10 APR 2024",
-			"description": "This is an article description",
+			"title": "Theme Challenge",
+			"slug": "theme-challenge",
+			"published": "17 APR 2024",
+			"updated": "20 APR 2024",
 			"preview-image": "images/landscape.jpg",
-			"related": ["work-home", "feeling-time"],
+			"description": "This is an article description",
+			"related": ["death-and-design", "bottles-in-the-sky"],
 			"case-study": [
 				{
-					"module": "generic-text-heading",
-					"content": "ef"
+					"section": [
+						{
+							"module": "common-figure",
+							"image": "images/explorations/theme-challenge/garden-wow-shot.jpg",
+							"headline": true
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Introduction</h2><p>The goal of this project was to transform a wireframe into a professional webpage based on a chosen industry’s style conventions. The hidden challenge was to create a flexible, durable design system where the aesthetics (color, text content, module order) could be changed with only a few lines of code. The HTML should be changed <em>as little as possible</em>."
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Part 1: Research</h2><p>After brainstorming a list of 50 potential industries ranging from “offshore drilling” to “psychedelic-assisted therapy”, I settled on “landscaping” - a ubiquitous presence with dynamic demographics. I chose “luxury landscaping” with a speciality in “dry, arid climates.”</p><p>After compiling a Figma design file with screenshots of various luxury landscaping websites, I created a style tile that represented each module of the website, as well as the “visual tricks” (motifs) the websites shared to convey a “luxury” and “manicured” feel. Visual tricks included:</p><ul><li>Dark green, gold, or black buttons with an off-white background</li><li>Mostly square, sharp edges with generous padding around elements</li><li>Serif headings paired with sans-serif copy → stately with readability</li><li>Images do the talking - if there are any dividers, they should be thin lines</li></ul>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/theme-challenge/garden-style-tile.jpg",
+							"figCaption": "Preliminary sketches of each module in a collage - no code yet!",
+							"alt": "A wireframe website with a graphic diptych, an image next to text"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Part 2: Making It</h2><p>The wireframe had six modules (sections): the masthead, graphic diptych, call-to-action (CTA), article grid, different CTA, and footer. The content was written into the HTML and the styling was responsive (element placement changed based on screen size).</p><p>I began with choosing typefaces, since typography dictates a large portion of the tone and shape of web design. After settling on elegant Cormorant for headings and accessible Source Sans 3 for body copy, I designated the voices and colors.</p><p>My thought process was to initially style the entire website, then perfect section by section. I discovered the delicate balance of meeting each section’s unique design needs while acknowledging the holistic “feel” of the sections working together.</p> "
+						},
+						{
+							"module": "figure-list",
+							"figure": [
+								{
+									"image": "images/explorations/theme-challenge/original-wireframe.jpg",
+									"figCaption": "A wireframe with distinct sections",
+									"alt": "A wireframe of a graphic diptych, an image next to text"
+								},
+								{
+									"image": "images/explorations/theme-challenge/garden-settings-and-typography.jpg",
+									"figCaption": "Setting custom properties allows for greater flexibility and readability.",
+									"alt": "A code snippet of various typography rules"
+								}
+							]
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Header</h2><p>The main challenge of the heading was the layered logo text. I could have re-made the logo to be one line, but I liked the elegance of the ornate fern alongside the text. With this in mind, it made sense to create space. Contextually and functionally, the logo (company signifier) is separate from the “user-menu” (user-functions) on the right. The users eyes immediately jump from the thin logo to the bold, green button, so grouping navigation links there made sense from a UX perspective. Not only that, but many headers are smaller than we think. It wasn’t easy arriving at a layout…</p>"
+						},
+						{
+							"module": "figure-list",
+							"figure": [
+								{
+									"image": "images/explorations/theme-challenge/header-iteration.jpg",
+									"figCaption": "Font-size, logo placement, svg flourishes, and JS functionality",
+									"alt": "A graphics document showing variations of heading styles"
+								},
+								{
+									"image": "images/explorations/theme-challenge/header-decisions.jpg",
+									"figCaption": "Mapping out potential placements.",
+									"alt": "A graphics document of heading elements in different arrangements"
+								}
+							]
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Graphic Diptych + CTA</h2><p>Most luxury websites have a large, immersive photograph or video with minimal text to grab the viewer’s attention. I chose a stately mansion with beautiful landscaping. Beneath, a short paragraph describing the services and mission statement of the company. The repeating leaf svg flourishes not only fill space, but allude to fleur-de-lis decorations on top of iron-wrought fences (fancy!). Ideally, I would have put the image in a separate section so it could span the entire width of the page (as of now, everything is in an “inner-column” container) but I did not want to alter the HTML too much.</p><p>The CTA had two versions. The first conveyed a more “retail” or “marketing” impression. Adding a black background-linear-gradient with slight opacity makes the text pop.</p>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/theme-challenge/garden-cta.jpg",
+							"figCaption": "Slight differences in text size and spacing make a big difference, especially when you can’t always choose the final image!",
+							"alt": "Two distinct CTA modules, one with a man handing a woman a plant, and another with a building surrouded by foilage."
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Article Grid</h2><p>For me, this was the most challenging part of the project. Almost all layouts on the internet are variations of boxes on a page, but making those boxes match a certain tone - and work together in a series - involves a lot of fine tuning. Setting grid and walking away will lead to many unintended layout shifts when screen sizes change.</p>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/theme-challenge/garden-grid-planning.jpg",
+							"figCaption": "Exploring grid layout options",
+							"alt": "Several different screens with potential grid layouts"
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<p>Ultimately, I decided on vertical slabs rather than landscape photos. I wanted the website to appear like a page from a magazine rather business-like list of services. I adjusted the spacing and line-height between the heading, description, and read more link (which I originally had as a button, but was too blocky and distracting) to feel like a print layout. I also had some trouble getting the link to stay at the bottom of the article container - I had to travel up through the html to the parent and set a border to see the problem. Eventually, I realized I had to add flex-grow: 1 to p so it would push the read more link to the bottom</p>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/theme-challenge/spacing-difficulty.jpg",
+							"figCaption": "The p (blue-border) grows to push down the link to the bottom of the parent.",
+							"alt": "Evenly spaced columns with arrows point to the 'read me' button at the buttom of each column"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Footer & Site-Map</h2><p>I had to make a decision whether to have the links underlined or not. For clarity purposes, I prefer underlined links, but many of the luxury sites I researched had them on hover only. I added bullet point flourishes as well as pertinent information on the left-most menu, like contact information and the logo. I felt the terracotta color represented a planter and was fitting at the end fo the page (the content of the site growing out of a pot!). Of course, you can’t forget the social links…</p>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/theme-challenge/garden-final-footer.jpg",
+							"figCaption": "Visited links appear in dark ink and the menus stack at smaller screen sizes.",
+							"alt": "A site footer with four columns of links and social buttons"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>PHP Structure</h2><p>While the focus of this project was visual design and the importance of establishing a consistent design system, actual content makes a website appear professional and complete. I also chose to practice routing and dynamic data insertion with PHP. I also wanted the user to be able to cycle between the wireframe and my styled version of the website.</p><p>The following photograph shows the “garden” page of the website that is inserted into the index. Based on the query string, a function readPageData checks that a json database exists for a specific page and decodes it (in this case, there’s only a “garden” or “default” page). The header and footer include - you guessed it - the header and footer templates. For the main section, I loop over an array of modules. The value of the “module” key will determine which template is pulled.</p>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/theme-challenge/garden-php.jpg",
+							"figCaption": "The basic layout of each website page in PHP",
+							"alt": "A code block showing how to loop over sections using dynamic data"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Conclusion</h2><p>A key takeaway was learning how a global class can help separate different page styles. I can apply the different styles to each page by using that same <code>$page</code> variable to assign a class to the <code>html element</code>. That means every style preceded by <code>.garden</code> will be specific to the garden page, and every style preceded by <code>.default</code> will specific to the default page. The cascade (CSS) is wonderful!</p>"
+						}
+					]
 				}
+
 			]
 		}
 	]
