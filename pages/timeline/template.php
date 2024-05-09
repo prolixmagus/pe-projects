@@ -10,8 +10,8 @@
 
 
 <?php foreach($timelineData['section'] as $section) { ?>
-	<section class='<?=$section['id']?>' id='<?=$section['id']?>'>
-		<inner-column>
+	<section class='<?=$section['id']?> section-grid' id='<?=$section['id']?>'>
+		<inner-column class='inner-grid'>
 
 			<work-narrative>
 				<h2 class='attention-voice'><?=$section['year']?></h2>

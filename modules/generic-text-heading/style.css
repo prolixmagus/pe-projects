@@ -16,10 +16,23 @@ generic-text-heading p + ul {
 	generic-text-heading {
 		grid-column: 2 / 9;
 	}
+
+	.layout generic-text-heading {
+		grid-column: 1 / -1;
+	}
 }
 
 @media (min-width: 1400px) {
 	generic-text-heading {
 		grid-column: 2 / 5;
 	}
+
+	.layout generic-text-heading {
+		grid-column: 1 / -1;
+	}
+}
+
+
+.layout iframe {
+	border-radius: var(--corners);
 }

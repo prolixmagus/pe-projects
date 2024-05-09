@@ -9,9 +9,9 @@
 			<img src='<?=$figure?>' alt="[[todo]]">
 		</picture>
 		<?php if(isset($figCaption)) { ?>
-			<figcaption>
-				<?=$figCaption?>
-			</figcaption>
+		<figcaption class='quiet-voice'>
+			<p><?=$figCaption?></p>
+		</figcaption>
 		<?php } ?>
 	</figure>
 </common-figure>

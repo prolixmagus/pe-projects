@@ -9,8 +9,8 @@
 
 <?php include('modules/page-header/template.php'); ?>
 
-<section class='work'>
-	<inner-column>
+<section class='work section-grid'>
+	<inner-column class='inner-grid'>
 		<?php include('modules/recent-articles-list/template.php')?>
 	</inner-column>
 </section>

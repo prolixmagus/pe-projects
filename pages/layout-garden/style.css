@@ -1,5 +1,4 @@
 .case-study-link {
-	margin-left: 1rem;
 	display: block;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -10,7 +9,7 @@
 
 case-study-wrapper {
 	display: block;
-	padding-top: 1rem;
+	padding: 1rem;
 }
 .layout-garden section:nth-child(even) {
 	background-color: #FBF7F5;

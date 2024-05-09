@@ -1,11 +1,22 @@
-common-figure {
+common-figure figure{
+	display: grid;
+	padding-block: 1rem 1.5rem;
+}
+
+figcaption {
 	display: block;
 }
 
 .common-figure{
-	max-width: 500px;
+	width: 100%;
 }
 
 .headline {
 	max-width: 100%;
+}
+
+@media (min-width: 768) {
+	.common-figure {
+		max-width: 800px;
+	}
 }
