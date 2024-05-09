@@ -1,4 +1,8 @@
-.case-study-paragraph inner-column {
-	border-top: 2px solid;
+.layout case-study-wrapper {
+	grid-column: 1 / -1;
+}
+
+.layout section:nth-child(1) {
+	border-bottom: 2px solid black;
 }
 
