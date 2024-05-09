@@ -2,3 +2,12 @@ generic-text-heading {
 	display: block;
 	border: 3px solid blue;
 }
+
+generic-text-heading li::before {
+	content: '--';
+	padding-right: 5px;
+}
+
+generic-text-heading p + ul {
+	margin-top: 10px;
+}
