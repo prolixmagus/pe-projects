@@ -8,12 +8,12 @@
 
 <?php include('modules/page-header/template.php');?>
 
-<section class='influence-list'>
-	<inner-column>
+<section class='influence-list section-grid'>
+	<inner-column class='inner-grid'>
 		<ul>
 			<?php foreach($influencesData['creator-list'] as $creator) { ?>
 				<?php if(isset($creator['featured'])) { ?>
-					<li class='<?=$creator['id']?>'>
+					<li>
 						<?php include('modules/artist-figure/template.php')?>
 					</li>
 				<?php } ?>
@@ -21,8 +21,6 @@
 		</ul>
 	</inner-column>
 </section>
-
-<?php include('modules/footer/template.php');?>
 
 	<!-- <inner-column class='first'>
 
@@ -71,3 +69,4 @@
 	</inner-column>
 </section>
 
+-->

@@ -5,20 +5,26 @@
 	"creator-list": [
 		{
 			"image": "images/square.jpg",
-			"figcaption": "Don Quixote",
+			"figCaption": "Don Quixote",
 			"creator": "Miguel Cervantes",
 			"featured": true
 		},
 		{
 			"image": "images/square.jpg",
-			"figcaption": "Badass: Making Users Awesome",
+			"figCaption": "Badass: Making Users Awesome",
 			"creator": "Kathy Sierra",
 			"featured": true
 		},
 		{
 			"image": "images/square.jpg",
-			"figcaption": "Le Roi et l'Oiseau",
+			"figCaption": "Le Roi et l'Oiseau",
 			"creator": "Paul Grimault",
+			"featured": true
+		},
+		{
+			"image": "images/square.jpg",
+			"figCaption": "Jaguar II",
+			"creator": "Victoria Monet",
 			"featured": true
 		}
 	]

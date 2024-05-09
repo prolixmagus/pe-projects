@@ -1,3 +1,16 @@
-artist-figure {
-	display: block;
+artist-figure figure {
+	display: grid;
+	gap: 5px;
+/*	position: relative;*/
 }
+
+/*artist-figure figcaption {
+	position: absolute;
+	bottom: 0px;
+	opacity: 0;
+	& :hover {
+		opacity: 1;
+	}
+}
+*/
+

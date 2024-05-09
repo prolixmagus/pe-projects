@@ -1,11 +1,11 @@
-.influence-list {
-	position: relative;
+.influences h2 + p {
+	margin-top: 0px;
 }
+.influence-list ul {
+	grid-column: 1 / -1;
+	display: grid;
+	gap: 40px 10px;
 
-.influence-list inner-column {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
 }
 
 .current {
@@ -16,6 +16,34 @@
 	font-style: italic;
 }
 
-.books, .shows, .music {
-	position: relative;
+
+.influences ul {
+	display: grid;
 }
+
+@media (min-width: 490px) {
+	.influences ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (orientation: landscape) {
+	.influences ul {
+		grid-column: 2 / -1;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 768px) {
+	.influences ul {
+		grid-column: 2 / -1;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 1400px) {
+	.influences ul {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+

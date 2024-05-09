@@ -11,9 +11,9 @@
 		<picture>
 			<img src='<?=$figure?>' alt="[[todo]]">
 		</picture>
-			<figcaption>
-				<h2><?=$figCaption?></h2>
-				<p><?=$creatorName?></p>
-			</figcaption>
+		<figcaption>
+			<h2 class='calm-voice'><em><?=$figCaption?></em></h2>
+			<p class='quiet-voice'><?=$creatorName?></p>
+		</figcaption>
 	</figure>
-</common-figure>
+</artist-figure>
