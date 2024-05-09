@@ -1,6 +1,6 @@
 generic-text-heading {
-	display: block;
-	border: 3px solid blue;
+	grid-column: 1 / -1;
+	display: grid;
 }
 
 generic-text-heading li::before {
@@ -10,4 +10,10 @@ generic-text-heading li::before {
 
 generic-text-heading p + ul {
 	margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+	generic-text-heading {
+		grid-column: 2 / 9;
+	}
 }
