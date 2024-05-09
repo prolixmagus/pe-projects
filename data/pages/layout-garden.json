@@ -1,6 +1,8 @@
 {
 	"id": 1, 
 	"slug": "layout-garden",
+	"title": "Layout Garden",
+	"idea": "The internet is a sprawling forest filled with responsive modules of all kinds. Inspired by their designs, here are the modules I've grown in my own garden.",
 	"sections": [
 		{
 			"module": "fly-fishing-grid",

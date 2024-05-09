@@ -2,6 +2,7 @@
 	margin-left: 1rem;
 	display: block;
 	border: 2px solid black;
+	border-radius: 5px;
 	padding: 8px 4px;
 	text-align: center;
 	max-width: 100px;
@@ -20,7 +21,9 @@ case-study-wrapper {
 }
 
 module-showcase {
-	display: block;
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: subgrid;
 }
 ;
 .case-study-link + module-showcase {

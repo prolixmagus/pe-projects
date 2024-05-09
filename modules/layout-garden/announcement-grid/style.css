@@ -3,6 +3,8 @@
 	
 }
 .announcement-grid ul {
+	grid-column: 1 / -2;
+	
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
 	gap: 10px;

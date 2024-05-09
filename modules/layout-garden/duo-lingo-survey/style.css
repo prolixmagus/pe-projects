@@ -1,5 +1,9 @@
 @import 'article-card/style.css';
 
+duo-lingo-survey{
+	grid-column: 1 / -1;
+	display: grid;
+}
 .duo-lingo-survey progress-container {
 	display: flex;
 	flex-direction: row;

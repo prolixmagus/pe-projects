@@ -1,4 +1,5 @@
 .cta-overlap banner {
+	grid-column: 1 / -1;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	place-items: center;

@@ -25,7 +25,7 @@
 
 			<!--if $page===home statement for following html -->
 
-			<p class='calm-voice'>If I could sum up the 21st century in a single word, I would choose <span>overwhelming</span>. My <a href="?page=goals">goal as a developer</a> is to untangle the knots while preserving joy in discovery. There will be no more <span>whelming</span> on my watch!</p>
+			<p class='calm-voice'>If I could sum up the 21st century in a single word, I would choose <em>overwhelming</em>. My <a href="?page=goals">goal as a developer</a> is to untangle the knots while preserving joy in discovery. There will be no more <em>whelming</em> on my watch!</p>
 
 			<p class='calm-voice'>If you want to talk tech, music, linguistics, or whatever crosses your mind, you can reach me at <a href='mailto:jeremypfishman@gmail.com'>jeremypfishman@gmail.com</a>. I usually respond within 24 hours.</p>
 

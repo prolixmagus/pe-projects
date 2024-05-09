@@ -21,6 +21,10 @@
 	background-color: white;
 }
 
+headline-section {
+grid-column: 1 / -1;
+}
+
 headline-section > inner-column {
 	display: block;
 	background-color: black;

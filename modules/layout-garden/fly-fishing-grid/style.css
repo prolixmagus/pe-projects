@@ -1,8 +1,13 @@
 .fly-fishing-grid ul {
+	grid-column: 1 / -1;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 10px;
 	place-items: center;
+}
+
+.fishing-title {
+	grid-column: 7 / 8;
 }
 
 .fly-fishing-grid li {

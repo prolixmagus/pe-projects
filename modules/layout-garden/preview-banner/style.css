@@ -2,6 +2,8 @@
 	max-width: 600px;
 }
 preview-banner {
+	grid-column: 1 / -1;
+	
 	display: grid;
 	grid-template-columns: .5fr repeat(10, 1fr) .5fr;
 	background: linear-gradient(to right, #17D8D6 5%, #029297 30%, black);

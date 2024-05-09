@@ -17,3 +17,9 @@ generic-text-heading p + ul {
 		grid-column: 2 / 9;
 	}
 }
+
+@media (min-width: 1400px) {
+	generic-text-heading {
+		grid-column: 2 / 5;
+	}
+}

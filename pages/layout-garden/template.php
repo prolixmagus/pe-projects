@@ -1,29 +1,25 @@
-<section class='intro layout-garden'>
-	<inner-column>
-		<h2 class="loud-voice">Layout Garden</h2>
-
-		<p>The internet is a sprawling forest filled with responsive modules of all kinds. Inspired by their designs, here are the modules I've grown in my own garden.</p>
-
-	</inner-column>
-</section>
-
 <?php
 
 $layouts = read_page_data('layout-garden');
 
-// print_r($layout_database);
+$pageTitle = $layouts['title'];
+$pageIdea = $layouts['idea'];
 
-foreach ($layouts['sections'] as $section) { ?>
+?>
 
-	<section class='module-showcase <?=$section['module']?>'>
+<?php include('modules/page-header/template.php')?>
+
+<?php foreach ($layouts['sections'] as $section) { ?>
+
+	<section class='module-showcase <?=$section['module']?> section-grid'>
 		
-		<case-study-wrapper>
-			<a class='case-study-link quiet-voice' href="?page=layout&slug=<?=$section['slug']?>">
-					Case Study
-			</a>
-		</case-study-wrapper>
+	<case-study-wrapper>
+		<a class='case-study-link quiet-voice' href="?page=layout&slug=<?=$section['slug']?>">
+				Case Study
+		</a>
+	</case-study-wrapper>
 
-		<inner-column>
+		<inner-column class='inner-grid'>
 			<module-showcase>
 				<?php include("modules/layout-garden/" . $section['module'] . "/template.php");?>
 			</module-showcase>
