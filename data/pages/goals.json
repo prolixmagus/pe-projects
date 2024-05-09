@@ -1,21 +1,21 @@
 {
-	"title": "goals",
-	"header": "page-header",
+	"title": "Goals",
+	"idea": "Goals help structure time by marking where we started and how far we've come. Here are a few goals I wish to accomplish within the next few years.",
 	"sections": [
 		{
 			"module": "goals-list",
 			"goals": [
 				{
-					"hope": "To create language learning applications by leveraging my experience in web design, linguistics, and education."
+					"hope": "To build language learning applications using my experience as an educator, linguist, and web designer"
 				},
 				{
-					"hope": "To feel comfortable incorporating animations into more projects by mastering <a href='https://gsap.com/''>GSAP</a>"
+					"hope": "To incorporate animations into more projects by mastering <a href='https://gsap.com/''>GSAP</a> as well as transitions"
 				},
 				{
 					"hope": "To confidantly support design decisions with sketches / realizations by mastering tools like <a href='https://www.figma.com/'>Figma</a>"
 				},
 				{
-					"hope": "To observe the digital and physical world through travel."
+					"hope": "To observe the digital and physical world through travel"
 				}
 			]
 		}
