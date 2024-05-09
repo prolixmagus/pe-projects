@@ -44,6 +44,10 @@ li a:visited, p a:visited {
 	color: var(--tile-red);
 }
 
+picture {
+	border-radius: var(--corners);
+}
+
 
 .pink-mark {
 	border-bottom: 4px dotted var(--fish-pink);
