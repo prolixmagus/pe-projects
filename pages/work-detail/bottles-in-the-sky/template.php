@@ -8,24 +8,18 @@ $work_article = get_item_by_slug($workData, $_GET['slug']);
 
 	<?php include('modules/explorations-header/template.php') ?>
 
-	<?php foreach($work_article['case-study'] as $section) {
-			$module = $section['module'] 
-	?>
-		
-		<section>
-			<inner-column>
-					<?php include("modules/$module/template.php") ?>
-			</inner-column>
-		</section>
+<?php foreach($work_article['case-study'] as $part) { ?>
+	
+	<section>
+		<inner-column>
+			<?php foreach($part['section'] as $section) { 
+				$module = $section['module'] 
+			?>
+				<?php include("modules/$module/template.php") ?>
+			<?php } ?>
+		</inner-column>
+	</section>
 
 	<?php } ?>
 
-</article>
-
-<article class='related-articles'>
-	<section>
-		<inner-column>
-			<?php include('modules/related-articles-list.php') ?>
-		</inner-column>
-	</section>
 </article>
