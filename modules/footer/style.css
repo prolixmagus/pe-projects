@@ -1,10 +1,9 @@
 footer {
-	font-family: avenir, sans-serif;
-	background-color: var(--sand-yellow)
+	background-color: var(--sand-yellow);
 }
 
 footer inner-column {
-	padding: 10px;
+	padding-block: 10px;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -12,6 +12,7 @@ article-card {
 article-teaser {
 	display: flex;
 	flex-direction: column;
+	margin-top: 5px;
 	& time {
 		margin-top: 5px;
 	}
@@ -24,9 +25,6 @@ article-teaser {
 	}
 }
 
-article-card + article-card {
-	margin-top: 3rem;
-}
 
 .work-picture {
 	& img {
@@ -37,7 +35,6 @@ article-card + article-card {
 @media (min-width: 768px) {
 	article-card {
 		flex-direction: row-reverse;
-		flex-basis: 50%;
 		& article-teaser {
 			width: 50%;
 		}

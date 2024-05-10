@@ -1,5 +1,9 @@
 key-takeaways {
-	display: block;
+	grid-column: 1 / -1;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
 }
 
 details > summary {
@@ -14,6 +18,28 @@ details > summary {
 	}
 }
 
+.key-takeaways details {
+	margin-top: 1em;
+}
+
 details[open] > summary::after {
 	content: '➖';
+}
+
+@media (prefers-color-scheme: dark) {
+	details > summary {
+		border-bottom: 1px solid var(--fish-pink);
+	}
+}
+
+@media (min-width: 768px) {
+	key-takeaways{
+		grid-column: 2 / 10;
+	}
+}
+
+@media (min-width: 1400px) {
+	key-takeaways {
+		grid-column: 2 / 10;
+	}
 }

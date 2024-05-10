@@ -1,1 +1,23 @@
-style.css
+times {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	gap: 5px;
+	align-items: flex-start;
+}
+
+.page-header times {
+	grid-column: 1 / 6;
+}
+
+@media (min-width: 768px) {
+	.page-header times {
+		grid-column: 2 / -1;
+	}
+}
+
+@media (orientation: landscape) {
+	.page-header times {
+		grid-column: 2 / -1;
+	}
+}

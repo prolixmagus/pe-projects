@@ -4,14 +4,28 @@ recent-articles {
 	grid-template-columns: subgrid;
 	& ol {
 		grid-column: 1 / -1;
-		display: grid;
-		grid-template-columns: subgrid;
+		
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+}
+
+@media (min-width: 768px) {
+	article-card {
+		flex-direction: row-reverse;
+		& article-teaser {
+			width: 50%;
+		}
+		& .work-picture {
+			width: 50%;
+		}
 	}
 }
 
 @media (min-width: 768px) {
 	recent-articles {
-		grid-column: 2 / -1;
+		grid-column: 2 / 11;
 }
 
 @media (min-width: 1000px) {

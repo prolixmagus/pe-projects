@@ -6,11 +6,11 @@
 
 }
 
-.exercise p, project-card p {
+.exercise p{
 	margin-top: 10px;
 }
 
-.exercise, project-card {
+.exercise{
 		display: flex;
 		flex-direction: column;
 		border: 1px solid black;

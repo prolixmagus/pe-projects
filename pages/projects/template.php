@@ -13,8 +13,8 @@
 
 	?>
 
-<section>
-	<inner-column>
+<section class='section-grid'>
+	<inner-column class='inner-grid'>
 		<ol class='project-list'>
 			<?php foreach($section['projects'] as $section) { ?>
 				<?php if ( isset($section['featured']) ) { ?>

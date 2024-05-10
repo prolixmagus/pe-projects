@@ -37,10 +37,10 @@
 
 					<logo-container>
 						<a class='site-logo' href='index.php'>
-							<?php include("logo.php")?>
+							<?php include("icons/jeremy-head-2.php")?>
 						</a>
 						<a class='title' href='index.php'>
-							<h1 class='strong-voice'>Jeremy Fishman</h1>
+							<h1 class='quiet-voice'>Jeremy Fishman</h1>
 						</a>
 					</logo-container>
 

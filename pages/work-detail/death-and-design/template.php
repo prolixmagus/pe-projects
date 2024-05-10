@@ -1,16 +1,18 @@
 <?php $workData = read_page_data('work');
 
 $work_article = get_item_by_slug($workData, $_GET['slug']);
+
+$explorationTitle = $work_article['title']
 ?>
 
 <article class='exploration'>
-	<?php $explorationTitle = $work_article['title']?>
+
 	<?php include('modules/explorations-header/template.php') ?>
 
-<?php foreach($work_article['case-study'] as $part) { ?>
+	<?php foreach($work_article['case-study'] as $part) { ?>
 	
-	<section>
-		<inner-column>
+	<section class='section-grid'>
+		<inner-column class='inner-grid'>
 			<?php foreach($part['section'] as $section) { 
 				$module = $section['module'] 
 			?>

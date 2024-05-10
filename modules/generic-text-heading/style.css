@@ -14,7 +14,7 @@ generic-text-heading p + ul {
 
 @media (min-width: 768px) {
 	generic-text-heading {
-		grid-column: 2 / 9;
+		grid-column: 2 / 10;
 	}
 
 	.layout generic-text-heading {
@@ -24,7 +24,7 @@ generic-text-heading p + ul {
 
 @media (min-width: 1400px) {
 	generic-text-heading {
-		grid-column: 2 / 5;
+		grid-column: 2 / 9;
 	}
 
 	.layout generic-text-heading {

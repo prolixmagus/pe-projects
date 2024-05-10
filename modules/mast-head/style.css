@@ -4,7 +4,7 @@ mast-head {
 	top: 0;
 	z-index: 2;
 	background-color: var(--paper);
-	box-shadow: 0px 0px 1px 0px rgb(0 0 0 / .5);
+	box-shadow: var(--shadow);
 }
 
 .site-header {
@@ -41,13 +41,14 @@ logo-container {
 }*/
 
 .hamburger-btn {
-	grid-column: 11 / -1;
+	grid-column: 10 / -1;
 	max-width: 100%;
 	padding: 0;
 	justify-self: end;
 	background-color: transparent;
 	box-shadow: none;
 	stroke: var(--ink);
+	border: unset;
 }
 
 .hamburger {
@@ -56,6 +57,7 @@ logo-container {
 
 .fish-logo-solo {
 	max-width: 35px;
+	border-radius: 50%;
 }
 
 @media (min-width: 490px) {

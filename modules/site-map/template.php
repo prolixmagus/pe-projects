@@ -1,17 +1,36 @@
-<?php 
-	$sitemapData = read('data/site-map-database.json');
-	?>
-	
+
 <site-map>
-	<?php foreach ($sitemapData['user-menu'] as $usermenu) { ?>
-		<nav>
-			<ul>
-				<?php foreach($usermenu['links'] as $link) { ?>
-					<li class='quiet-voice'>
-						<a href='<?=$link['link']?>'><?=$link['content']?></a>
-					</li>
-				<?php } ?>
-			</ul>
-		</nav>
-	<?php } ?>
+	<nav class='main-menu'>
+		<ul>
+			<li>
+				<a href="?page=home">Home</a>
+			</li>
+			<li>
+				<a href="?page=work">Work</a>
+			</li>
+			<li>
+				<a href="?page=influences">Influences</a>
+			</li>
+			<li>
+				<a href="?page=contact">Contact</a>
+			</li>
+		</ul>
+	</nav>
+
+	<nav class='xtra-menu'>
+		<ul>
+			<li>
+				<a href="?page=projects">Projects</a>
+			</li>
+			<li>
+				<a href="?page=layout-garden">Layout Garden</a>
+			</li>
+			<li>
+				<a href="?page=style-guide">Style Guide</a>
+			</li>
+			<li>
+				<a href="?page=goals">Goals</a>
+			</li>
+		</ul>
+	</nav>
 </site-map>

@@ -7,15 +7,16 @@
 
 <project-card class='project-card'>
 	<?php include('modules/common-figure/template.php')?>
+	<project-teaser>
+		<a href='<?=$address?>'>
+			<h2><?=$name?></h2>
+		</a>
 
-	<a href='<?=$address?>'>
-		<h2><?=$name?></h2>
-	</a>
+		<h3 class='calm-voice'><?=$competency?></h3>
 
-	<h3 class='calm-voice'><?=$competency?></h2>
+		<p><?=$description?></p>
 
-	<p><?=$description?></p>
-
-	<a href='<?=$address?>'>Read more</a>
+		<a class='read-more' href='<?=$address?>'>Read more</a>
+	</project-teaser>
 </project-card>
 

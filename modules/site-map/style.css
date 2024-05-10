@@ -1,3 +1,53 @@
 site-map {
-	display: block;
+	padding: 2rem 1rem;
+	grid-column: 1 / -1;
+	/*border: 4px solid green;*/
+
+	display: grid;
+	grid-template-columns: subgrid;
 }
+
+/*footer::before {
+	grid-column: 1/ 5;
+	position: absolute;
+  content: "";
+  padding-block: 10px;
+  width: 25%;
+  background-color: var(--fish-blue);
+  z-index: 1;
+  transform: translateY(30px);
+  border-top-right-radius: var(--corners);
+  border-bottom-right-radius: var(--corners);
+}*/
+
+site-map ul {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+site-map nav {
+	grid-column: 1 / -1;
+	display: grid;
+}
+
+.main-menu {
+	grid-column: 1 / 4;
+}
+
+.xtra-menu {
+	grid-column: 6 / 10;
+}
+
+@media (min-width: 490px) {
+	.xtra-menu {
+		grid-column: 4 / 8;
+	}
+}
+
+@media (orientation: landscape) {
+	.xtra-menu {
+		grid-column: 4 / 8;
+	}
+}
+
