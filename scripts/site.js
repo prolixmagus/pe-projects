@@ -8,8 +8,6 @@ hamburgerMenu.addEventListener('click', (event) => {
 	userMenu.classList.toggle('slider-open');
 })
 
-close.addEventListener('click', (event) => {
-	body.classList.remove('open-menu');
-	close.classList.remove('visible');
-	close.classList.add('visually-hidden');
+hamburgerMenu.addEventListener('click', (event) => {
+	body.classList.toggle('open-menu');
 })
