@@ -16,6 +16,7 @@
 /*work modules*/
 
 @import '../modules/recent-articles-list/style.css';
+@import '../modules/related-articles-list/style.css';
 @import '../modules/explorations-header/style.css';
 @import '../modules/article-card/style.css';
 @import '../modules/figure-list/style.css';
@@ -27,6 +28,7 @@
 /*project module*/
 @import '../modules/key-takeaways/style.css';
 @import '../modules/exercise-card/style.css';
+@import '../modules/project-card/style.css';
 
 /*canvas?*/
 @import '../modules/whiteboard/style.css';

@@ -1,13 +1,17 @@
 
-.quiet-voice {
+.quiet-voice, site-map li a{
   font-family: "Noto Sans", sans-serif;
   font-size: 0.75rem;
   font-optical-sizing: auto;
   font-weight: 400;
-  color: var(--caption);
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+.caption {
+  color: var(--caption);
+}
+
 .calm-voice, p, li {
   font-family: "Noto Sans", sans-serif;
   font-size: 1em;

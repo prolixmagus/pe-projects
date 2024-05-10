@@ -22,7 +22,7 @@ html {
 	--color: hsl(206, 66%, 77%);
 	--highlight: hsl(190, 59%, 79%);
 
-	--shadow: rgba(0, 0, 0, 0.8);
+	--shadow: 0px 0px 5px 0px rgba(0 0 0 / .5);
 
 	--corners: 10px; /* or whatevers */
 	--container: 1rem;
@@ -46,6 +46,8 @@ sup {
 		--ink-light: hsl(63, 100%, 96%);
 		--fish-blue: hsl(190, 39%, 25%);
 		--sand-yellow: hsl(37, 24%, 28%);
+		--shadow: 0px 0px 5px 0px rgba(255 203 199 / .5);
+		--caption: hsla(4, 100%, 89%, 0.8);
 	}
 	
 }
