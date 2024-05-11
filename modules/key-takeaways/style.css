@@ -3,7 +3,11 @@ key-takeaways {
 
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
+	min-height: 25px;
+}
+
+.key-takeaways {
+	overflow-y: scroll;
 }
 
 details > summary {

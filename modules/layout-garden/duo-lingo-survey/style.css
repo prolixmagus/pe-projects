@@ -5,6 +5,7 @@ duo-lingo-survey{
 	display: grid;
 }
 .duo-lingo-survey progress-container {
+	margin-top: 1.5rem;
 	display: flex;
 	flex-direction: row;
 	gap: 15px;

@@ -20,6 +20,9 @@
 			"module": "goals-list"
 		},
 		{
+			"module": "article-card"
+		},
+		{
 			"module": "project-card"
 		},
 		{

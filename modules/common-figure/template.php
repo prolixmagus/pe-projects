@@ -5,11 +5,11 @@
 
 <common-figure class="<?= isset($section['headline']) ? 'headline' : 'common-figure' ?>">
 	<figure>
-		<picture>
+		<picture class="with-fit">
 			<img src='<?=$figure?>' alt="[[todo]]">
 		</picture>
 		<?php if(isset($figCaption)) { ?>
-		<figcaption class='quiet-voice'>
+		<figcaption class='quiet-voice caption'>
 			<p><?=$figCaption?></p>
 		</figcaption>
 		<?php } ?>

@@ -1,6 +1,6 @@
 .site-header .user-menu {
 	position: absolute;
-	left: -200px;
+	left: -300px;
 	top: 0px;
 	transition: left .3s ease-out;
 	padding: 15vw;

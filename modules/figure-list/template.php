@@ -1,6 +1,6 @@
 
 
-<ul class='double-figure'>
+<ul class="<?= isset($section['double-figure']) ? 'double-figure' : 'figure-list' ?>">
 
 	<?php foreach($section['figure'] as $figure) { 
 
@@ -14,7 +14,7 @@
 			<img src='<?=$image?>' alt="<?=$alt?>">
 		</picture>
 		<?php if(isset($figCaption)) { ?>
-			<figcaption>
+			<figcaption class='quiet-voice caption'>
 				<?=$figCaption?>
 			</figcaption>
 		<?php } ?>

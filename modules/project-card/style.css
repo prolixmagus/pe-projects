@@ -4,17 +4,18 @@ project-card {
 	border-radius: var(--corners);
 	grid-column: 1 / -1;
 	gap: 5px;
-
-	display: flex;
+	display: grid;
+/*	display: flex;
 	flex-direction: column;
+	align-items: center;*/
 }
 
 project-teaser {
 	display: flex;
 	flex-direction: column;
-	margin-top: 5px;
+	margin-top: 10px;
 	& h3 {
-		margin-top: 5px;
+		margin-top: 10px;
 	}
 	& p {
 		margin-top: 1em;
@@ -25,11 +26,11 @@ project-teaser {
 	}
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 800px) {
 	project-card {
 		flex-direction: row-reverse;
 		& project-teaser {
-			width: 50%;
+			width: 60%;
 		}
 		& .common-figure {
 			width: 50%;
@@ -37,3 +38,17 @@ project-teaser {
 	}
 }
 
+@media (min-width: 1000px) {
+	project-card {
+		gap: 10px;
+		flex-direction: row-reverse;
+		& project-teaser {
+			width: 60%;
+		}
+		& .common-figure {
+			width: 40%;
+		}
+	}
+}
+
+*/

@@ -1,13 +1,16 @@
+.related-articles-list h2 + ol {
+	margin-top: 1em;
+}
 article-card {
 	padding: var(--container);
 	background-color: var(--fish-blue);
 	border-radius: var(--corners);
 	grid-column: 1 / -1;
-	gap: 5px;
+	gap: 10px;
 
-	display: flex;
-	flex-direction: column;
+	display: grid;
 }
+
 
 article-teaser {
 	display: flex;
@@ -29,18 +32,32 @@ article-teaser {
 .work-picture {
 	& img {
 			border-radius: var(--corners);
+			height: 100%;
 	}
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 	article-card {
 		flex-direction: row-reverse;
 		& article-teaser {
-			width: 50%;
+			width: 60%;
 		}
 		& .work-picture {
 			width: 50%;
 		}
 	}
 }
+
+@media (min-width: 1000px) {
+	article-card {
+		gap: 10px;
+		flex-direction: row-reverse;
+		& article-teaser {
+			width: 60%;
+		}
+		& .work-picture {
+			width: 40%;
+		}
+	}
+}*/
 
