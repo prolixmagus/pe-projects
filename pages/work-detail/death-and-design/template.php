@@ -5,7 +5,7 @@ $work_article = get_item_by_slug($workData, $_GET['slug']);
 $explorationTitle = $work_article['title']
 ?>
 
-<article class='exploration'>
+<article class='exploration death-and-design'>
 
 	<?php include('modules/explorations-header/template.php') ?>
 

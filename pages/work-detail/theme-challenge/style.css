@@ -1,0 +1,22 @@
+.theme-challenge common-figure.headline {
+	grid-column: 1 / -1;
+}
+
+.theme-challenge common-figure {
+	grid-column: 1 / -1;
+}
+
+.theme-challenge .double-figure {
+	grid-column: 1 / -1;
+}
+
+@media (min-width: 625px) {
+
+
+.theme-challenge common-figure {
+	grid-column: 2 / 9;
+}
+
+.theme-challenge .double-figure {
+	grid-column: 2 / 10;
+}

@@ -1,0 +1,21 @@
+/* Targets each section individually to style images within that section  */
+
+.bottles-in-the-sky common-figure.headline {
+	grid-column: 1 / -1;
+}
+
+.bottles-in-the-sky common-figure {
+	grid-column: 1 / -1;
+}
+
+.bottles-in-the-sky .double-figure {
+	grid-column: 1 / -1;
+}
+
+.bottles-in-the-sky common-figure {
+	grid-column: 2 / 9;
+}
+
+.bottles-in-the-sky .double-figure {
+	grid-column: 2 / 10;
+}

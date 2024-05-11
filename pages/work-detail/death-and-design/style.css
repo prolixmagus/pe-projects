@@ -1,0 +1,22 @@
+/* Targets each section individually to style images within that section  */
+
+.death-and-design common-figure.headline {
+	grid-column: 1 / -1;
+}
+
+.death-and-design common-figure {
+	grid-column: 1 / -1;
+}
+
+.death-and-design .double-figure {
+	grid-column: 1 / -1;
+}
+
+.death-and-design common-figure {
+	grid-column: 2 / 9;
+}
+
+.death-and-design .double-figure {
+	grid-column: 2 / 10;
+}
+}
