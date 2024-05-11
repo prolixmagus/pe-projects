@@ -6,11 +6,11 @@
 			"projects": [
 				{
 					"id": 1,
-					"name": "Exercises for Programmers",
+					"name": "E4P",
 					"address": "?page=exercises",
 					"image": "images/landscape.jpg",
 					"competency": "PHP, HTML",
-					"description": "My interpretation of Brian P. Hogan's coding challenges, also viewable on <a href='https://codepen.io/Jeremy-Fishman/collections/'>CodePen</a>",
+					"description": "My interpretation of Brian P. Hogan's <em>Exercises for Progammers</em> coding challenges, also viewable on <a href='https://codepen.io/Jeremy-Fishman/collections/'>CodePen</a>",
 					"featured" : true
 				},
 				{
