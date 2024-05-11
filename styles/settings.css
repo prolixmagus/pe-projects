@@ -17,7 +17,7 @@ html {
 	--sand-yellow: hsl(var(--yellow), 99%, 66%);
 
 	--neutral-stuffs: gray;
-	--caption: hsl(var(--hue), 0%, 0%, 0.4);
+	--caption: hsl(var(--hue), 0%, 0%, 0.6);
 
 	--color: hsl(206, 66%, 77%);
 	--highlight: hsl(190, 59%, 79%);
@@ -29,6 +29,7 @@ html {
 
 	--paper: var(--white);
 	--ink: var(--black);
+	--ink-light: hsla(var(--hue), 0%, 0%, .8);
 
 	--standard: 1000px;
 	--tight: 700px;
