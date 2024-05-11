@@ -6,12 +6,17 @@
 
 	gap: 3em;
 	& li {
+		max-width: 100%;
 		grid-column: 1 / -1;
 	}
 }
 
+@media (min-width: 490px) {
+	.project-list {
+		grid-column: 1 / 11;
+}
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 	.project-list {
 		grid-column: 2 / 11;
 }

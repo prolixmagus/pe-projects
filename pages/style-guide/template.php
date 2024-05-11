@@ -12,8 +12,8 @@
 
 	?>
 
-<section>
-	<inner-column>
+<section class='section-grid'>
+	<inner-column class='inner-grid'>
 		<?php include ("modules/$module/template.php")?>
 	</inner-column>
 </section>

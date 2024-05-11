@@ -1,4 +1,6 @@
 .case-study-link {
+	grid-column: 1 / 5;
+
 	display: block;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -10,6 +12,11 @@
 case-study-wrapper {
 	display: block;
 	padding: 1rem;
+}
+
+.module-showcase {
+	display: flex;
+	flex-direction: column;
 }
 .layout-garden section:nth-child(even) {
 	background-color: #FBF7F5;

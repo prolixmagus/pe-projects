@@ -9,7 +9,7 @@
 			"slug": "death-and-design",
 			"published": "02 NOV 2023",
 			"updated": "10 NOV 2023",
-			"description": "This is an article description",
+			"description": "This will be a description for the aticle. A teaser of sorts. Read more to find out!",
 			"preview-image": "images/landscape.jpg",
 			"related": ["bottles-in-the-sky", "theme-challenge"],
 			"case-study": [
@@ -58,7 +58,7 @@
 			"slug": "bottles-in-the-sky",
 			"published": "03 NOV 2023",
 			"updated": "10 OCT 2023",
-			"description": "This is an article description",
+			"description": "This will be a description for the aticle. A teaser of sorts. Read more to find out!",
 			"preview-image": "images/landscape.jpg",
 			"related": ["death-and-design", "theme-challenge"],
 			"case-study": [
@@ -74,6 +74,7 @@
 						},
 						{
 							"module": "figure-list",
+							"double-figure": true,
 							"figure": [
 								{
 									"image": "images/explorations/bottles-in-the-sky/square-fields.jpg",
@@ -147,7 +148,7 @@
 			"published": "17 APR 2024",
 			"updated": "20 APR 2024",
 			"preview-image": "images/landscape.jpg",
-			"description": "This is an article description",
+			"description": "This will be a description for the aticle. A teaser of sorts. Read more to find out!",
 			"related": ["death-and-design", "bottles-in-the-sky"],
 			"case-study": [
 				{
@@ -181,10 +182,11 @@
 					"section": [
 						{
 							"module": "generic-text-heading",
-							"content": "<h2>Part 2: Making It</h2><p>The wireframe had six modules (sections): the masthead, graphic diptych, call-to-action (CTA), article grid, different CTA, and footer. The content was written into the HTML and the styling was responsive (element placement changed based on screen size).</p><p>I began with choosing typefaces, since typography dictates a large portion of the tone and shape of web design. After settling on elegant Cormorant for headings and accessible Source Sans 3 for body copy, I designated the voices and colors.</p><p>My thought process was to initially style the entire website, then perfect section by section. I discovered the delicate balance of meeting each section’s unique design needs while acknowledging the holistic “feel” of the sections working together.</p> "
+							"content": "<h2>Part 2: Making It</h2><p>The wireframe had six modules (sections): the masthead, graphic diptych, call-to-action (CTA), article grid, different CTA, and footer. The content was written into the HTML and the styling was responsive (element placement changed based on screen size).</p><p>I began with choosing typefaces, since typography dictates a large portion of the tone and shape of web design. After settling on elegant Cormorant for headings and accessible Source Sans 3 for body copy, I designated the voices and colors.</p><p>My thought process was to initially style the entire website, then perfect section by section. I discovered the delicate balance of meeting each section’s unique design needs while acknowledging the holistic “feel” of the sections working together.</p>"
 						},
 						{
 							"module": "figure-list",
+							"double-figure": true,
 							"figure": [
 								{
 									"image": "images/explorations/theme-challenge/original-wireframe.jpg",
@@ -208,6 +210,7 @@
 						},
 						{
 							"module": "figure-list",
+							"double-figure": true,
 							"figure": [
 								{
 									"image": "images/explorations/theme-challenge/header-iteration.jpg",
