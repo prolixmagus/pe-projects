@@ -1,6 +1,13 @@
 .influences h2 + p {
 	margin-top: 0px;
 }
+
+.fair-use {
+	grid-column: 1 / -1;
+	grid-row: 2;
+	padding-top: 2rem;
+	max-width: 80ch;
+}
 .influence-list ul {
 	grid-column: 1 / -1;
 	display: grid;

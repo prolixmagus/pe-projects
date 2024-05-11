@@ -19,6 +19,8 @@
 				<?php } ?>
 			<?php } ?>
 		</ul>
+
+		<p class="quiet-voice fair-use caption">All copyrighted material is presented for educational and commentary purposes, in accordance with the principles of 'fair use' as defined in <a href="https://www.law.cornell.edu/uscode/text/17/107">Section 107 of the U.S. Copyright Law.</a></p>
 	</inner-column>
 </section>
 

@@ -3,7 +3,7 @@ key-takeaways {
 
 	display: flex;
 	flex-direction: column;
-	min-height: 25px;
+	flex-grow: 1;
 }
 
 .key-takeaways {

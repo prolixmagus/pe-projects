@@ -1,10 +1,14 @@
 project-card {
+	grid-column: 1 / -1;
+
+	display: grid;
 	padding: var(--container);
 	background-color: var(--fish-blue);
 	border-radius: var(--corners);
-	grid-column: 1 / -1;
 	gap: 5px;
-	display: grid;
+	& figure {
+		padding: 0;
+	}
 /*	display: flex;
 	flex-direction: column;
 	align-items: center;*/
