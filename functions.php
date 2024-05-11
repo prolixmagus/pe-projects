@@ -70,13 +70,23 @@ function get_layout_garden_template($module) {
 	include("modules/layout-garden/$module/template.php");
 }
 
-function get_item_by_slug($database, $slug_to_match) {
+/* can consolidate these functions ... standard variable naming */
+
+function get_article_by_slug($database, $slug_to_match) {
     foreach ($database['articles'] as $article) {
         if ($article['slug'] === $slug_to_match) {
             return $article;
         }
     }
-    // If no matching slug is found, return null or handle it based on your application logic.
+    return null;
+}
+
+function get_exercise_by_slug($database, $slug_to_match) {
+    foreach ($database as $exercise) {
+        if ($exercise['slug'] === $slug_to_match) {
+            return $exercise;
+        }
+    }
     return null;
 }
 
@@ -86,9 +96,10 @@ function get_layout_by_slug($database, $slug_to_match) {
             return $layout;
         }
     }
-    // If no matching slug is found, return null or handle it based on your application logic.
     return null;
 }
+
+/* ------------ */
 
 function most_recent_articles($articles) {
 	usort($articles, function($a, $b) {

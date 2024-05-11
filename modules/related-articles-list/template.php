@@ -10,7 +10,7 @@
 		<ol>
 			<?php
 				foreach ($related_work_article_slugs as $related_article_slug) {
-					$article = get_item_by_slug($workData, $related_article_slug);
+					$article = get_article_by_slug($workData, $related_article_slug);
 
 					if ($article) { ?>
 

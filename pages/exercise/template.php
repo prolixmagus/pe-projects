@@ -1,7 +1,7 @@
 <?php 
 	$exercises = get_all_exercises();
 
-	$exercise = get_item_by_slug($exercises, $_GET['slug']); 
+	$exercise = get_exercise_by_slug($exercises, $_GET['slug']); 
 
 
 	$exercise_slug = $exercise['slug'];
