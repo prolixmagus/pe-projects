@@ -15,11 +15,12 @@
 				},
 				{
 					"id": 2,
-					"name": "Responsive Layout Garden",
+					"name": "Layout Garden",
 					"address": "?page=layout-garden",
 					"image": "images/landscape.jpg",
 					"competency": "PHP, HTML, CSS",
-					"description": "A living collection of internet layouts that inspired me during browsing. Repetition and practice, practice, practice!"
+					"description": "A living collection of responsive layouts. Repetition and practice, practice, practice!",
+					"featured" : true
 				},
 				{
 					"id": 3,
@@ -27,24 +28,26 @@
 					"address": "projects/teapet",
 					"image": "images/landscape.jpg",
 					"competency": "PHP, HTML, CSS",
-					"description": "A CRUD website where you can customize your own Tea Pet"
+					"description": "A CRUD website where you can customize Tea Pets and store them in a database!",
+					"featured" : true
 				},
 				{
 					"id": 4,
-					"name": "Site Mockup to Code",
+					"name": "Mockup to Code",
 					"address": "projects/site-mockup-to-code",
 					"image": "images/landscape.jpg",
 					"competency": "PHP, HTML, CSS",
-					"description": "A FIGMA file transmuted into code, scaffolded with a PHP routering structure and flexible CSS design system",
+					"description": "A FIGMA file transmuted into code, scaffolded PHP routering and flexible CSS design system",
 					"featured": true
 				},
 				{
 					"id": 5,
 					"name": "Theme Challenge",
 					"address": "projects/theme-challenge",
-					"image": "images/landscape.jpg",
+					"image": "images/explorations/theme-challenge/garden-style-tile.jpg",
 					"competency": "PHP, HTML, CSS, JS",
-					"description": "I was tasked to choose an industry and create a professional website for a fictional company. I chose luxury landscaping."
+					"description": "I was tasked to choose an industry and create a professional website for a fictional company. I chose luxury landscaping.",
+					"featured" : true
 
 				}
 			]
