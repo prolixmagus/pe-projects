@@ -1,20 +1,27 @@
 .project-list {
 	grid-column: 1 / -1;
-
-	display: grid;
-	grid-template-columns: subgrid;
-
-	gap: 3em;
-	& li {
-		max-width: 100%;
+	& ol {
 		grid-column: 1 / -1;
+		
+		display: grid;
+		gap: 3rem;
 	}
 }
 
 @media (min-width: 490px) {
 	.project-list {
 		grid-column: 1 / 11;
+	}
 }
+
+@media (min-width: 768px) {
+	.project-list {
+		grid-column: 2 / 11;
+		& ol {
+			grid-template-columns: repeat(2, 1fr);
+		}
+}
+
 
 @media (min-width: 768px) {
 	.project-list {
@@ -24,10 +31,4 @@
 @media (min-width: 1000px) {
 	.project-list {
 		grid-column: 2 / 11;
-}
-
-@media (prefers-color-scheme: dark) {
-	.project-list .exercise {
-		border: 1px solid var(--paper);
-	}
 }

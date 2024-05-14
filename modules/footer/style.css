@@ -6,8 +6,19 @@ footer inner-column {
 	padding-block: 10px;
 }
 
+.updated-time {
+	margin-top: 1rem;
+	justify-self: start;
+	grid-column: 1 / -1;
+}
+
 @media (prefers-color-scheme: dark) {
 	footer {
 		background-color: var(--sand-yellow);
 	}
+}
+
+@media (min-width: 490px) {
+	.updated-time {
+		justify-self: end;
 }
