@@ -12,18 +12,19 @@
 	<head>
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<meta name="Last-Modified" content="[[add later]]" >
+		<meta name='description' content='Teacher. Web Developer. Linguist. Human.'
+		<meta name="Last-Modified" content="Saturday, May 11th, 2024">
 		
 		<meta property='og:title' content='Jeremy Fishman'>
 		<meta property='og:type' content='article'>
-		<meta property='og:description' content='Teacher. Web Developer. Linguist. Writer. Human.'>
+		<meta property='og:description' content='Teacher. Web Developer. Linguist. Human.'>
 
-		<meta property='og:url' content='https://www.peprojects.dev/alpha-8/jeremy/index.html'>
-		<meta property='og:image' content='www.peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg'>
+		<meta property='og:url' content='https://peprojects.dev/alpha-8/jeremy/index.html'>
+		<meta property='og:image' content='https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg'>
 
 		<meta name="twitter:title" content="Jeremy Fishman's Portfolio">
-		<meta name="twitter:description" content="Teacher. Web Developer. Linguist. Writer. Human.">
-		<meta name="twitter:image" content="www.peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg">
+		<meta name="twitter:description" content="Teacher. Web Developer. Linguist. Human.">
+		<meta name="twitter:image" content="https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg">
 		<meta name="twitter:card" content="summary_large_image">
 
 		<title>Jeremy Fishman</title>

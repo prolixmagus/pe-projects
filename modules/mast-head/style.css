@@ -3,12 +3,12 @@ mast-head {
 	position: sticky;
 	top: 0;
 	z-index: 2;
-	background-color: var(--paper);
+/*	background-color: var(--paper);*/
 	box-shadow: var(--shadow);
 }
 
 .site-header {
-	background-color: var(--fish-blue);
+/*	background-color: gray;*/
 }
 
 .site-header inner-column {
@@ -60,7 +60,7 @@ logo-container {
 	border-radius: 50%;
 }
 
-@media (min-width: 490px) {
+@media (min-width: 600px) {
 	.hamburger-btn {
 		clip: rect(0 0 0 0);
 		clip-path: inset(50%);
