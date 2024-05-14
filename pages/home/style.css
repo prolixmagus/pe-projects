@@ -22,7 +22,7 @@
 }
 
 .open-menu main {
-	opacity: .4;
+	opacity: .1;
 }
 
 @media(min-width: 768px) {
