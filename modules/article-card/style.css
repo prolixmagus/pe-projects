@@ -5,10 +5,9 @@ article-card {
 	padding: var(--container);
 	background-color: var(--fish-blue);
 	border-radius: var(--corners);
-	grid-column: 1 / -1;
 	gap: 10px;
-
-	display: grid;
+	display: flex;
+	flex-direction: column;
 }
 
 

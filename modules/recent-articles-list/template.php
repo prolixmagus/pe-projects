@@ -4,7 +4,9 @@
 	<ol>
 		<?php foreach($recent_articles as $article) {
 			?>
-			<?php include('modules/article-card/template.php')?>
+			<li>
+				<?php include('modules/article-card/template.php')?>
+			</li>
 		<?php } ?>
 	</ol>
 </recent-articles>

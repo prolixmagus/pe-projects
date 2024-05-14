@@ -1,6 +1,5 @@
 recent-articles {
 	grid-column: 1 / -1;
-	display: grid;
 	& ol {
 		grid-column: 1 / -1;
 		
@@ -12,15 +11,15 @@ recent-articles {
 @media (min-width: 490px) {
 	recent-articles {
 		grid-column: 1 / 11;
-		& recent-articles ol {
-			grid-template-columns: repeat(2, 1fr);
-		}
 	}
 }
 
 @media (min-width: 768px) {
 	recent-articles {
 		grid-column: 2 / 11;
+		& ol {
+			grid-template-columns: repeat(2, 1fr);
+		}
 }
 
 
