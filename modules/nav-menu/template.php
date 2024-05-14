@@ -25,17 +25,18 @@
 ?>
 
 <nav>
+	<div>
 	<ul class='user-menu'>
+		<button type='button'>x close</button>
 		<?php foreach($nav_links as $link) { 
 
 				$link['page'] = $link['page'] ?? "page link"; 
 			?>
 
-			<li class='main-link quiet-voice'>
+			<li class='main-link'>
 				<a href='<?=$link['link']?>'><?=$link['page']?></a>
 			</li>
 
 		<?php } ?>
-			<button class='close visually-hidden'>x close</button>
 	</ul>
 </nav>
