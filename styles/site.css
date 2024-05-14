@@ -29,6 +29,10 @@
 
 /* ASSETS */
 
+body * {
+	border: 1px solid black;
+}
+
 p a, li a {
 	color: blue;
 	text-decoration: none;

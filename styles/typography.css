@@ -1,5 +1,5 @@
 
-.quiet-voice, site-map li a{
+.quiet-voice, nav li{
   font-family: "Noto Sans", sans-serif;
   font-size: 0.75rem;
   font-optical-sizing: auto;
@@ -60,4 +60,25 @@
 
 p, li {
 	max-width: 70ch;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+pre + p {
+  margin-top: 1rem;
+}
+
+h1 + p {
+  margin-top: 1em;
+}
+
+h2 + p {
+  margin-top: 1em;
+  color: var(--ink-light);
+}
+
+h3 + p {
+  margin-top: .5em;
 }
