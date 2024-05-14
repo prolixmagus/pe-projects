@@ -57,19 +57,19 @@ work-narrative + experience-gained {
 
 @media (min-width: 490px) {
 	work-narrative, experience-gained {
-		grid-column: 1 / 11;
+		grid-column: 2 / 11;
 	}
 }
 
 @media (orientation: landscape) {
 	work-narrative, experience-gained {
-		grid-column: 1 / 10;
+		grid-column: 2 / 11;
 	}
 }
 
 @media (min-width: 768px) {
 	work-narrative, experience-gained {
-		grid-column: 2 / 10;
+		grid-column: 2 / 11;
 	}
 }
 
