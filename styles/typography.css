@@ -1,5 +1,5 @@
 
-.quiet-voice, nav li{
+.quiet-voice {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.75rem;
   font-optical-sizing: auto;
@@ -8,9 +8,11 @@
   font-variation-settings: "wdth" 100;
 }
 
-.caption {
+.quiet-voice.caption {
   color: var(--caption);
   margin-top: 2.5px;
+  font-family: "inconsolata", monospace, sans-serif;
+  letter-spacing: .02em;
 }
 
 .calm-voice, p, li {
@@ -20,34 +22,45 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  line-height: 1.5;
+  line-height: 1.44;
+  color: var(--ink-light);
 }
 
-.strong-voice {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
+.strong-voice, cite {
+  font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
+  font-size: 1.5rem;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  letter-spacing: .2;
 }
 
 .attention-voice, h2 {
-	font-family: "Noto Sans", sans-serif;
+	font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
   font-size: clamp(24px, 8vw, 2rem);
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
 
 .loud-voice {
-	font-family: "Noto Sans", sans-serif;
+	font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
 	font-size: clamp(30px, 10vw, 3rem);
 	font-optical-sizing: auto;
-	font-weight: 700;
+	font-weight: 500;
 	font-style: normal;
 	font-variation-settings: "wdth" 100;
+}
+
+nav li {
+  font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 :is(.calm-voice, p, li) em {
@@ -81,4 +94,8 @@ h2 + p {
 
 h3 + p {
   margin-top: .5em;
+}
+
+.site-map nav li {
+  font-size: .75rem;
 }
