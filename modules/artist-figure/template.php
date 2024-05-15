@@ -5,15 +5,21 @@
 	
 	?>
 
-<artist-figure>
-	<figure>
-		<!--<artist-icon><svg></svg></artist-icon>-->
-		<picture>
-			<img src='<?=$figure?>' alt="[[todo]]">
-		</picture>
-		<figcaption>
-			<h2 class='calm-voice'><em><?=$figCaption?></em></h2>
-			<p class='quiet-voice'><?=$creatorName?></p>
-		</figcaption>
-	</figure>
-</artist-figure>
+
+<figure class='artist-card'>
+	<div class='placeholder-icon'>
+		<svg viewBox='0 0 10 10'>
+			<circle cx='5' cy='5' r='5' />
+		</svg>
+	</div>
+
+	<picture>
+		<img src='<?=$figure?>' alt="[[todo]]">
+	</picture>
+
+	<figcaption>
+		<cite><em><?=$figCaption?></em></cite>
+		<p><?=$creatorName?></p>
+	</figcaption>
+
+</figure>

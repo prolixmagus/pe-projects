@@ -5,8 +5,8 @@
 	$address = $exercise['address'] ?? "#";
 ?>
 
-<exercise-card class='exercise'>
-	<a class='exercise-link' href='<?=$address?>'>
+<li class='exercise'>
+	<a href='<?=$address?>'>
 		<h2><?=$name?></h2>
 		<div class='e4p-icon'>
 			<?php include('icons/' . $exercise_slug . '.svg')?>
@@ -15,5 +15,5 @@
 	
 	<p><?=$exercise_description?></p>
 
-	<a class='exercise-link' href='<?=$address?>'>Read more</a>
-</exercise-card>
+	<a class='read-more' href='<?=$address?>'>Read more</a>
+</li>

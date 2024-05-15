@@ -3,15 +3,13 @@
 	$figCaption = $section['figCaption'] ?? null;
 	?>
 
-<common-figure class="<?= isset($section['headline']) ? 'headline' : 'common-figure' ?>">
-	<figure>
-		<picture class="with-fit">
-			<img src='<?=$figure?>' alt="[[todo]]">
-		</picture>
-		<?php if(isset($figCaption)) { ?>
-		<figcaption class='quiet-voice caption'>
-			<p><?=$figCaption?></p>
-		</figcaption>
-		<?php } ?>
-	</figure>
-</common-figure>
+<figure class="<?= isset($section['headline']) ? 'headline' : 'common-figure' ?>">
+	<picture class="with-fit">
+		<img src='<?=$figure?>' alt="[[todo]]">
+	</picture>
+	<?php if(isset($figCaption)) { ?>
+	<figcaption class='quiet-voice caption'>
+		<p class='quiet-voice caption'><?=$figCaption?></p>
+	</figcaption>
+	<?php } ?>
+</figure>
