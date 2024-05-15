@@ -1,0 +1,78 @@
+{
+	"title": "Exercises For Programmers",
+	"slug": "exercises",
+	"intro": "In 2015, Brian P. Hogan published Exercises for Programmers, a collection of 57 coding challenges designed to develop your coding skills. They can be completed in any language and be made as simple or complex as you want!",
+	"exercises": [
+		{
+			"id": 1,
+			"name": "Hello, World!",
+			"slug": "hello-world",
+			"address": "?page=exercise&slug=hello-world",
+			"description": "Write a program that prompts for your name and prints a greeting"
+
+		},
+		{
+			"id": 2,
+			"name": "Counting Characters",
+			"slug": "counting-characters",
+			"address": "?page=exercise&slug=counting-characters",
+			"description": "Write a program that prints a string and the number of characters that string contains"
+		},
+		{
+			"id": 3,
+			"name": "Printing Quotes",
+			"slug": "printing-quotes",
+			"address": "?page=exercise&slug=printing-quotes",
+			"description": "Write a program that recieves a quote and author and renders a formatted output"
+		},
+		{
+			"id": 4,
+			"name": "Mad Libs",
+			"slug": "mad-libs",
+			"address": "?page=exercise&slug=mad-libs",
+			"description": "Write a simple mad-lib program that recieves input and formats output"
+		},
+		{
+			"id": 5,
+			"name": "Simple Math",
+			"slug": "simple-math",
+			"address": "?page=exercise&slug=simple-math",
+			"description": "Write a program that recieves two numbers and outputs their sum, difference, product, and quotient."
+		},
+		{
+			"id": 6,
+			"name": "Retirement Calculator",
+			"slug": "retirement-calculator",
+			"address": "?page=exercise&slug=retirement-calculator",
+			"description": "Write a program that calculates how many years you have until retirement based on your age"
+		},
+		{
+			"id": 7,
+			"name": "Area of a Room",
+			"slug": "area-of-a-room",
+			"address": "?page=exercise&slug=area-of-a-room",
+			"description": "Write a program that calculates the area of a room"
+		},
+		{
+			"id": 8,
+			"name": "Pizza Party",
+			"slug": "pizza-party",
+			"address": "?page=exercise&slug=pizza-party",
+			"description": "Write a program evenly divides a pizza pie based on the number of people, pizzas, and slices per pizza."
+		},
+		{
+			"id": 9,
+			"name": "Paint Calculator",
+			"slug": "paint-calculator",
+			"address": "?page=exercise&slug=paint-calculator",
+			"description": "Write a program that calculates the amoutn of paint needed to paint the ceiling of a room."
+		},
+		{
+			"id": 10,
+			"name": "Self-Checkout",
+			"slug": "self-checkout",
+			"address": "?page=exercise&slug=self-checkout",
+			"description": "Create a simple self-checkout system that calculates the subtotal, tax, and total of three items."
+		}
+	]
+}
