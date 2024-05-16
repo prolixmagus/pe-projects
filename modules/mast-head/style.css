@@ -33,6 +33,10 @@ logo-container {
 	gap: .5rem;
 }
 
+.jeremy-logo {
+	stroke-color: #36496d;
+	max-width: 175px;
+}
 /*.site-header nav ul {
 	display: flex;
 	flex-direction: row;

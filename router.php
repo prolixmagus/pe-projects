@@ -16,5 +16,3 @@
 			include("pages/error404/template.php");
 		}
 	}
-
-?>

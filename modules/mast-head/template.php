@@ -5,29 +5,47 @@
 	require("router.php");
 	// $pageData = read_page_data($page);
 	// create json file for each page, then use php to slot in information
+	if ($page === 'exercise') {
+		$pageData = read_page_data('exercises');
+	} else if ($page === 'work-detail') {
+		$pageData = read_page_data('work');
+	} else {
+		$pageData = read_page_data($page);
+	}
+	// if ($page === 'work-detail') {
+	// 	$pageData = read_page_data('work'); /*fuction for each page*/
+
+	// }
+
+	$metaTitle = $pageData['title'] ?? "Home: Jeremy Fishman's Portfolio";
+	$metaDescription = $pageData['intro'] ?? "Teacher. Web Developer. Linguist. Human.";
+	$metaImage = $pageData['meta-image'] ?? "https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg";
+	$metaUpdate = $pageData['meta-updated'] ?? "Tuesday, May 14th, 2024";
 ?>
+
+
 
 
 <html lang="en">
 	<head>
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<meta name='description' content='Teacher. Web Developer. Linguist. Human.'
-		<meta name="Last-Modified" content="Saturday, May 11th, 2024">
+		<title><?=$metaTitle?></title>
+
+		<meta name='description' content='<?=$metaDescription?>'>
+		<meta name="Last-Modified" content='<?=$metaUpdate?>'>
 		
-		<meta property='og:title' content='Jeremy Fishman'>
+		<meta property='og:title' content='<?=$metaTitle?>'>
 		<meta property='og:type' content='article'>
-		<meta property='og:description' content='Teacher. Web Developer. Linguist. Human.'>
+		<meta property='og:description' content='<?=$metaDescription?>'>
 
 		<meta property='og:url' content='https://peprojects.dev/alpha-8/jeremy/index.html'>
 		<meta property='og:image' content='https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg'>
 
-		<meta name="twitter:title" content="Jeremy Fishman's Portfolio">
-		<meta name="twitter:description" content="Teacher. Web Developer. Linguist. Human.">
+		<meta name="twitter:title" content='<?=$metaTitle?>'>
+		<meta name="twitter:description" content='<?=$metaDescription?>'>
 		<meta name="twitter:image" content="https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg">
 		<meta name="twitter:card" content="summary_large_image">
-
-		<title>Jeremy Fishman</title>
 
 		<link rel='stylesheet' href='styles/site.css'>
 	</head>
@@ -39,10 +57,7 @@
 
 					<logo-container>
 						<a class='site-logo' href='index.php'>
-							<?php include("icons/jeremy-head-2.php")?>
-						</a>
-						<a class='title' href='index.php'>
-							<h1 class='quiet-voice'>Jeremy Fishman</h1>
+							<?php include("icons/jeremy-logo.svg")?>
 						</a>
 					</logo-container>
 

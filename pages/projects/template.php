@@ -1,5 +1,5 @@
 <?php
-	$projectData = read_page_data('projects-database');
+	$projectData = read_page_data('projects');
 
 	$pageTitle = 'Projects';
 	$pageIdea = 'Everyone loves a showcase!';
@@ -15,17 +15,15 @@
 
 <section class='section-grid'>
 	<inner-column class='inner-grid'>
-		<project-list class='project-list'>
-			<ol>
-				<?php foreach($section['projects'] as $section) { ?>
-					<?php if ( isset($section['featured']) ) { ?>
-						<li>
-							<?php include ("modules/$module/template.php")?>
-						</li>
-					<?php } ?>
+		<ol class='project-list'>
+			<?php foreach($section['projects'] as $section) { ?>
+				<?php if ( isset($section['featured']) ) { ?>
+					<li>
+						<?php include ("modules/$module/template.php")?>
+					</li>
 				<?php } ?>
-			</ol>
-		</project-list>
+			<?php } ?>
+		</ol>
 	</inner-column>
 </section>
 

@@ -4,7 +4,7 @@ recent-articles {
 		grid-column: 1 / -1;
 		
 		display: grid;
-		gap: 3rem;
+		gap: 2rem 1rem;
 	}
 }
 

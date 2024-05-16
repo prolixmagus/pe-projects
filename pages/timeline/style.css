@@ -4,7 +4,7 @@
 }
 
 .timeline section:not(.present-day) {
-	margin-top: 3rem;
+	margin-top: 1rem;
 }
 
 .timeline p, .timeline li {

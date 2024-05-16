@@ -1,10 +1,8 @@
-/* Targets each section individually to style images within that section  */
-
-.bottles-in-the-sky common-figure.headline {
+.bottles-in-the-sky .common-figure.headline {
 	grid-column: 1 / -1;
 }
 
-.bottles-in-the-sky common-figure {
+.bottles-in-the-sky .common-figure {
 	grid-column: 1 / -1;
 }
 
@@ -12,10 +10,15 @@
 	grid-column: 1 / -1;
 }
 
-.bottles-in-the-sky common-figure {
-	grid-column: 2 / 9;
-}
+@media (min-width: 625px) {
+	.headline {
+		grid-column: 2 / 11;
+	}
+	.bottles-in-the-sky .common-figure {
+		grid-column: 2 / 11;
+	}
 
-.bottles-in-the-sky .double-figure {
-	grid-column: 2 / 10;
+	.bottles-in-the-sky .double-figure {
+		grid-column: 2 / 11;
+	}
 }

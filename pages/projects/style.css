@@ -1,10 +1,8 @@
 .project-list {
 	grid-column: 1 / -1;
-	& ol {
-		grid-column: 1 / -1;
-		
-		display: grid;
-		gap: 3rem;
+	
+	display: grid;
+	gap: 2rem 1rem;
 	}
 }
 
@@ -17,9 +15,8 @@
 @media (min-width: 768px) {
 	.project-list {
 		grid-column: 2 / 11;
-		& ol {
-			grid-template-columns: repeat(2, 1fr);
-		}
+
+		grid-template-columns: repeat(2, 1fr);
 }
 
 

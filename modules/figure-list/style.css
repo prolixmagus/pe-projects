@@ -1,3 +1,6 @@
+.exploration .double-figure figure {
+	padding-block: 1rem;
+}
 
 @media (min-width: 768px) {
 	.exploration .double-figure figure {

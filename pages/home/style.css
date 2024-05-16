@@ -18,17 +18,23 @@
 	margin-top: 20px;
 	grid-column: 8 / 13;
 	grid-row: 2;
-	max-width: 200px;
+	max-width: 160px;
 }
 
-.open-menu main {
+/*.open-menu main {
 	opacity: .1;
-}
+}*/
 
 @media(min-width: 768px) {
 	.home-header intro-area {
 		grid-column: 2 / -1;
 	}
+
+	.home picture {
+	margin-top: 20px;
+	grid-column: 8 / -1;
+	grid-row: 2;
+	max-width: 160px;
 }
 
 @media(orientation: landscape) {

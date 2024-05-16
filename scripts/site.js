@@ -8,23 +8,15 @@ var windowCover = document.createElement('div')
 
 hamburgerMenu.addEventListener('click', (event) => {
     userMenu.classList.add('small-menu-open');
-    windowCover.style.position = 'fixed';
-    windowCover.style.height = '100%';
-    windowCover.style.width = '100%';
-    windowCover.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-    windowCover.style.zIndex = '1';
-    body.style.overflow = 'hidden';
-    body.appendChild(windowCover)
+    body.classList.add('menu-open')
 })
 
 close.addEventListener('click', (event) => {
 	userMenu.classList.remove('small-menu-open');
-	body.removeChild(windowCover);
-	body.style.overflow = 'auto';
+	body.classList.remove('menu-open')
 })
 
 window.addEventListener('resize', (event) => {
 	userMenu.classList.remove('small-menu-open');
-	body.removeChild(windowCover);
-	body.style.overflow = 'auto';
+	body.classList.remove('menu-open')
 })
