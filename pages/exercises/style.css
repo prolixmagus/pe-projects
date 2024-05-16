@@ -22,24 +22,21 @@
 
 .e4p-grid{
 	grid-column: 1 / -1;
-	
+	display: grid;
 
-@media (min-width: 490px) {
-	.e4p-grid{
-		grid-column: 1 / 11;
+	gap: 20px;
+}
+
+@media (min-width: 520px) {
+	.e4p-grid {
+		grid-column: 2 / 11;
+		grid-template-columns: repeat(2, 1fr);
 	}
-
-@media (min-width: 768px) {
-	.e4p-grid{
-		grid-column: 2 / 11;
-
-
-@media (min-width: 768px) {
-	.e4p-grid{
-		grid-column: 2 / 11;
 }
 
 @media (min-width: 1000px) {
-	.e4p-grid{
+	.e4p-grid {
 		grid-column: 2 / 11;
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
