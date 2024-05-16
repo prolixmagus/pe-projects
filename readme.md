@@ -12,13 +12,14 @@ Welcome to my personal website! So far, it has gone through four structural iter
 	target="live">Live Link</a>
 
 ## General Todo
-- [ ] Finish <a href="https://perpetual.education/stories/serious-times-with-jeremy/">code review</a> and take notes 
+- [x] Finish <a href="https://perpetual.education/stories/serious-times-with-jeremy/">code review</a> and take notes 
+- [ ] create Figma prototype of app
 
 ## Website Todo
 
 #### General
 
-- [ ] Typography and Spacing
+- [x] Typography and Spacing -> in progress
 	- [ ] Visual language! Style tile?
 
 - [ ] Favicon
@@ -48,7 +49,7 @@ Welcome to my personal website! So far, it has gone through four structural iter
 	- [ ] Responsive Layout Garden
 	- [ ] Tea Pet Shop
 
-- [ ] E4P page on grid layout
+- [x] E4P page on grid layout
 - [ ] E4P project-detail page on grid layout
 - [x] Fix uneven grid layout
 
@@ -56,7 +57,7 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 - [ ] Add more Influences artists
 - [ ] Find influences svg icons / edit
-- [ ] Place icons in artist figure module
+- [x] Place icons in artist figure module (placeholder)
 
 #### Contact
 
@@ -65,7 +66,7 @@ Welcome to my personal website! So far, it has gone through four structural iter
 #### Home
 
 - [x] Figure out small menu ... (tab on side poking out? event listener to click that as well as button?)
-- [ ] Find examples of small menus and save them
+- [x] Find examples of small menus and save them
 
 ## Long Term Todo
 
