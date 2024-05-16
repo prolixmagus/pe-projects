@@ -7,10 +7,10 @@ $retirementYear="";
 $errorMessage="";
 $message="";
 
-	if ( isset($_POST['submitted']) ) {
-		$currentAge = $_POST['currentAge'];
-		$retirementAge = $_POST['retirementAge'];
-	}
+if ( isset($_POST['submitted']) ) {
+	$currentAge = $_POST['currentAge'];
+	$retirementAge = $_POST['retirementAge'];
+}
 
 function getYearsUntilRetirement($currentAge, $retirementAge) {
 	return intval($retirementAge) - intval($currentAge);
@@ -23,5 +23,3 @@ function getRetirementYear($currentYear, $yearsLeft) {
 $yearsLeft = getYearsUntilRetirement($currentAge, $retirementAge);
 
 $retirementYear = getRetirementYear($currentYear, $yearsLeft);
-
-?>

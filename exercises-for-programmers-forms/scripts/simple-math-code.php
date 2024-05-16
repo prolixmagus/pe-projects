@@ -34,5 +34,3 @@ if (isset($_POST["submitted"])) {
 		echo "<p class'output-voice'>$first * $second = " . format_decimale(multiply($first, $second)) . "</p>";
 	}
 }
-
-?>

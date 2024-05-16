@@ -19,8 +19,8 @@ error_reporting(E_ALL);
 <script src="<?=get_site_scripts($page)?>" type='module'></script>
 
 <?php if (isset($_GET['page']) && $_GET['page'] == "exercise") { ?>
-	<?php $exercises = get_all_exercises()?>
-	<?php foreach($exercises as $exercise) {
+	<?php $exercises = read_page_data('exercises')?>
+	<?php foreach($exercises['exercises'] as $exercise) {
 		if ($_GET['slug'] == $exercise["slug"]) { ?>
 			<script src="<?=get_exercise_scripts($exercise["slug"])?>"></script>
 		<?php } 

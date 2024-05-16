@@ -51,11 +51,6 @@ function delete($database, $data_id) {
 
 // reading database for exercises for programmers files
 
-function get_all_exercises() {
-	$exercises = read("data/exercises.json");
-	return $exercises;
-}
-
 // getting exercise for programmers page for router
 
 function get_exercise_template($name) {
@@ -153,5 +148,3 @@ function format_decimals($number) {
 function format_money($money){
 	return number_format($money, 2, '.', '');
 }
-
-?>
