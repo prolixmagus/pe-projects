@@ -1,24 +1,24 @@
 .style-guide {
-	& colophon, exercise-card, artist-figure, common-figure, project-card, article-card {
+	& colophon, .exercise, .artist-card, .common-figure, .project-card, .card{
 		grid-column: 1 / -1;
 	}
 }
 
 @media (min-width: 768px) {
 	.style-guide {
-		& colophon, article-card, project-card {
+		& colophon, .card, .project-card {
 			grid-column: 2 / 11;
 		}
-		& common-figure {
+		& .common-figure {
 			grid-column: 2 / 9;
 		}
-		& exercise-card {
+		& .exercise{
 			grid-column: 2 / 5;
 		}
-		& artist-figure {
+		& .artist-card {
 			grid-column: 2 / 5;
 		}
-		.project-card common-figure {
+		& .project-card common-figure {
 			grid-column: 1 / -1;
 		}
 
