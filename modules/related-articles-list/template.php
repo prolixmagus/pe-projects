@@ -3,9 +3,8 @@
 	<?php if (empty($related_work_article_slugs)) { ?>
 		<p>It seems I haven't written any related articles yet ... research time!</p>
 	<?php } else { ?>
-
-		<h2>Related Articles</h2>
 		<ol class='related-articles'>
+			<h2>Related Articles</h2>
 			<?php
 				foreach ($related_work_article_slugs as $related_article_slug) {
 					$article = get_article_by_slug($workData, $related_article_slug);
@@ -19,5 +18,6 @@
 					<?php } ?>
 			<?php } ?>
 		</ol>
+		<related-articles>
 		
 <?php } ?>

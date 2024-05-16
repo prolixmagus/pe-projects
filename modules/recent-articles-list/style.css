@@ -1,4 +1,4 @@
-recent-articles {
+.recent-articles {
 	grid-column: 1 / -1;
 	& ol {
 		grid-column: 1 / -1;
@@ -9,13 +9,13 @@ recent-articles {
 }
 
 @media (min-width: 490px) {
-	recent-articles {
+	.recent-articles {
 		grid-column: 1 / 11;
 	}
 }
 
 @media (min-width: 768px) {
-	recent-articles {
+	.recent-articles {
 		grid-column: 2 / 11;
 		& ol {
 			grid-template-columns: repeat(2, 1fr);
@@ -24,11 +24,11 @@ recent-articles {
 
 
 @media (min-width: 768px) {
-	recent-articles {
+	.recent-articles {
 		grid-column: 2 / 11;
 }
 
 @media (min-width: 1000px) {
-	recent-articles {
+	.recent-articles {
 		grid-column: 2 / 11;
 }

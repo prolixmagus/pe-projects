@@ -18,7 +18,7 @@
 	</picture>
 
 	<figcaption>
-		<cite><em><?=$figCaption?></em></cite>
+		<cite><?=$figCaption?></cite>
 		<p><?=$creatorName?></p>
 	</figcaption>
 

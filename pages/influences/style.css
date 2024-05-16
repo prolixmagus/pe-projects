@@ -1,8 +1,8 @@
 .fair-use {
 	grid-column: 1 / -1;
 	grid-row: 2;
-	margin-top: 2rem;
 	max-width: 80ch;
+	padding-top: 2rem;
 }
 
 .influence-list ul {
