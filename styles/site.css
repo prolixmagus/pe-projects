@@ -15,6 +15,8 @@
 /* T ypography */
 @import "typography.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 /* C omponents */
 @import "components.css";
 
@@ -25,13 +27,15 @@
 
 /*body * {
 	border: 1px solid black;
+}
+*/
+
+/*body {
+    background: linear-gradient(to bottom, transparent 8px, rgba(0, 191, 255, 0.2) 8px, rgba(0, 191, 255, 0.2) 9px, transparent 9px),
+                linear-gradient(to right, transparent 10px, rgba(167, 50, 45, 0.2) 10px, rgba(167, 50, 45, 0.2) 15px, transparent 15px);
+    background-size: 100% 18px, 100% 18px;
 }*/
 
-/* ASSETS */
-
-body * {
-	border: 1px solid black;
-}
 
 p a, li a {
 	color: blue;

@@ -70,3 +70,11 @@
 .toggle:checked + .switch {
 	background-color: var(--tile-red);
 }
+
+.placeholder-icon {
+	max-width: 40px;
+	position: absolute;
+	right: 0;
+	fill: yellow;
+	stroke: green;
+}
