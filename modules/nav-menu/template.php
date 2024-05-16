@@ -33,7 +33,7 @@
 				$link['page'] = $link['page'] ?? "page link"; 
 			?>
 
-			<li class='main-link'>
+			<li>
 				<a href='<?=$link['link']?>'><?=$link['page']?></a>
 			</li>
 

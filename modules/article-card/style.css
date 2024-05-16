@@ -1,32 +1,24 @@
 .related-articles-list h2 + ol {
 	margin-top: 1em;
 }
-article-card {
+
+.card {
 	padding: var(--container);
 	background-color: var(--fish-blue);
 	border-radius: var(--corners);
-	gap: 10px;
 	display: flex;
 	flex-direction: column;
-}
-
-
-article-teaser {
-	display: flex;
-	flex-direction: column;
-	margin-top: 5px;
-	& time {
-		margin-top: 5px;
-	}
 	& p {
 		margin-top: 1em;
 		flex-grow: 1;
+	}
+	& time {
+		text-transform: uppercase;
 	}
 	& .read-more {
 		margin-top: 2rem;
 	}
 }
-
 
 .work-picture {
 	& img {

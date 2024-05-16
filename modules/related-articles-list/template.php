@@ -4,10 +4,8 @@
 		<p>It seems I haven't written any related articles yet ... research time!</p>
 	<?php } else { ?>
 
-	<related-articles class='related-articles-list'>
 		<h2>Related Articles</h2>
-
-		<ol>
+		<ol class='related-articles'>
 			<?php
 				foreach ($related_work_article_slugs as $related_article_slug) {
 					$article = get_article_by_slug($workData, $related_article_slug);
@@ -21,5 +19,5 @@
 					<?php } ?>
 			<?php } ?>
 		</ol>
-	</related-articles>
+		
 <?php } ?>

@@ -6,22 +6,22 @@
 	$description = $article['description'] ?? "A one sentence teaser to entice the reader!";
 ?>
 
-	<article-card>
-		<picture class='work-picture'>
-			<img src="<?=$preview_image?>" / >
-		</picture>
+<article class='card'>
+	
+	<picture class='work-picture'>
+		<img src="<?=$preview_image?>" / >
+	</picture>
 
-		<article-teaser>
-			<h2>
-				<a href='?page=work-detail&slug=<?=$slug?>'>
-					<?=$title?>
-				</a>
-			</h2>
+		<h2>
+			<a href='?page=work-detail&slug=<?=$slug?>'>
+				<?=$title?>
+			</a>
+		</h2>
 
-			<time class='quiet-voice'><?=$published?></time>
-			
-			<p><?=$description?></p>
+		<time class='quiet-voice'><?=$published?></time>
+		
+		<p><?=$description?></p>
 
-			<a class='read-more' href='?page=work-detail&slug=<?=$slug?>'>Read more</a>
-		</article-teaser>
-	</article-card>
+		<a class='read-more' href='?page=work-detail&slug=<?=$slug?>'>Read more</a>
+
+</article class='card'>

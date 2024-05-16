@@ -5,9 +5,8 @@
 	$description = $section['description'] ?? "This is a description of the project.";
 ?>
 
-<project-card class='project-card'>
+<article class='project-card'>
 	<?php include('modules/common-figure/template.php')?>
-	<project-teaser>
 		<a href='<?=$address?>'>
 			<h2><?=$name?></h2>
 		</a>
@@ -17,6 +16,5 @@
 		<p><?=$description?></p>
 
 		<a class='read-more' href='<?=$address?>'>Read more</a>
-	</project-teaser>
-</project-card>
+</article>
 
