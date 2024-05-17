@@ -1,8 +1,8 @@
-<?php $influencesData = read_page_data('influences');?>
+<?php $pageData = read_page_data('influences');?>
 
 <?php
-	$pageTitle = $influencesData['title'];
-	$pageIdea = $influencesData['intro'];
+	$pageTitle = $pageData['title'];
+	$pageIdea = $pageData['intro'];
 ?>
 
 
@@ -11,7 +11,7 @@
 <section class='influence-list section-grid'>
 	<inner-column class='inner-grid'>
 		<ul>
-			<?php foreach($influencesData['creator-list'] as $creator) { ?>
+			<?php foreach($pageData['creator-list'] as $creator) { ?>
 				<?php if(isset($creator['featured'])) { ?>
 					<li>
 						<?php include('modules/artist-figure/template.php')?>

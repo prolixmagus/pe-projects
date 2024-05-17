@@ -1,4 +1,4 @@
-.theme-challenge .common-figure.headline {
+.theme-challenge .headline {
 	grid-column: 1 / -1;
 }
 
@@ -10,8 +10,8 @@
 	grid-column: 1 / -1;
 }
 
-@media (min-width: 625px) {
-	.headline {
+@media (min-width: 768px) {
+	.theme-challenge .headline {
 		grid-column: 2 / 11;
 	}
 	

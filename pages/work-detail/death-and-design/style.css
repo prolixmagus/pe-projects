@@ -1,6 +1,6 @@
 
 
-.death-and-design .common-figure.headline {
+.death-and-design .headline {
 	grid-column: 1 / -1;
 }
 
@@ -12,8 +12,8 @@
 	grid-column: 1 / -1;
 }
 
-@media (min-width: 625px) {
-	.headline {
+@media (min-width: 768px) {
+	.death-and-design .headline {
 		grid-column: 2 / 11;
 	}
 	

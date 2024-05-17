@@ -1,4 +1,4 @@
-.bottles-in-the-sky .common-figure.headline {
+.bottles-in-the-sky .headline {
 	grid-column: 1 / -1;
 }
 
@@ -10,8 +10,8 @@
 	grid-column: 1 / -1;
 }
 
-@media (min-width: 625px) {
-	.headline {
+@media (min-width: 768px) {
+	.bottles-in-the-sky .headline {
 		grid-column: 2 / 11;
 	}
 	.bottles-in-the-sky .common-figure {

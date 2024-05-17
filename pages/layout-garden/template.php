@@ -1,15 +1,15 @@
 <?php
 
-$layouts = read_page_data('layout-garden');
+$pageData = read_page_data('layout-garden');
 
-$pageTitle = $layouts['title'];
-$pageIdea = $layouts['idea'];
+$pageTitle = $pageData['title'];
+$pageIdea = $pageData['idea'];
 
 ?>
 
 <?php include('modules/page-header/template.php')?>
 
-<?php foreach ($layouts['sections'] as $section) { ?>
+<?php foreach ($pageData['sections'] as $section) { ?>
 
 	<section class='module-showcase <?=$section['module']?> section-grid'>
 		

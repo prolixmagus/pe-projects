@@ -1,6 +1,6 @@
-<?php $workData = read_page_data('work');
+<?php $pageData = read_page_data('work');
 
-$work_article = get_article_by_slug($workData, $_GET['slug']);
+$work_article = get_article_by_slug($pageData, $_GET['slug']);
 
 $explorationTitle = $work_article['title']
 ?>

@@ -1,12 +1,12 @@
 <?php
-	$styleGuideData = read_page_data('style-guide');
+	$pageData = read_page_data('style-guide');
 
-	$header = $styleGuideData['header'];
+	$header = $pageData['header'];
 ?>
 
 <?php include("modules/$header/template.php");?>
 
-<?php foreach($styleGuideData['sections'] as $section) { 
+<?php foreach($pageData['sections'] as $section) { 
 
 	$module = $section['module'];
 

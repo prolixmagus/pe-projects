@@ -1,5 +1,5 @@
 <?php
-	$projectData = read_page_data('projects');
+	$pageData = read_page_data('projects');
 
 	$pageTitle = 'Projects';
 	$pageIdea = 'Everyone loves a showcase!';
@@ -7,7 +7,7 @@
 
 <?php include('modules/page-header/template.php');?>
 
-<?php foreach($projectData['sections'] as $section) {
+<?php foreach($pageData['sections'] as $section) {
 
 	$module = $section['module'];
 

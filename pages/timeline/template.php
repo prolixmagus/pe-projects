@@ -1,15 +1,15 @@
-<?php $timelineData = read_page_data('timeline') ?>
+<?php $pageData = read_page_data('timeline') ?>
 
 <?php
-	$pageTitle = $timelineData['title'];
-	$pageIdea = $timelineData['intro'];
+	$pageTitle = $pageData['title'];
+	$pageIdea = $pageData['intro'];
 ?>
 
 
 <?php include('modules/page-header/template.php');?>
 
 
-<?php foreach($timelineData['section'] as $section) { ?>
+<?php foreach($pageData['section'] as $section) { ?>
 	<section class='<?=$section['id']?> section-grid' id='<?=$section['id']?>'>
 		<inner-column class='inner-grid'>
 
