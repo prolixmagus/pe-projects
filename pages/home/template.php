@@ -18,7 +18,7 @@
 		</header>
 
 		<picture>
-			<img src='images/jeremy-1.svg'>
+			<img src='images/jeremy-circles.svg'>
 		</picture>
 	</inner-column>
 </section>

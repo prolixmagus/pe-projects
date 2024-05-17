@@ -18,7 +18,7 @@
 	margin-top: 20px;
 	grid-column: 8 / 13;
 	grid-row: 2;
-	max-width: 160px;
+	max-width: 400px;
 }
 
 /*.open-menu main {
@@ -34,16 +34,15 @@
 	margin-top: 20px;
 	grid-column: 8 / -1;
 	grid-row: 2;
-	max-width: 160px;
 }
 
-@media(orientation: landscape) {
+@media(min-width: 1000px) {
 	.home-header{
 		grid-column: 1 / 8;
 	}
 
 	.home picture {
 		grid-column: 9 / 13;
-		grid-row: 1;
+		grid-row: 2;
 	}
 }
