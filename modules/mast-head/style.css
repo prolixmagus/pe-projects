@@ -8,7 +8,7 @@ mast-head {
 }
 
 .site-header {
-/*	background-color: gray;*/
+	background-color: var(--paper);
 }
 s
 .site-header inner-column {
