@@ -3,14 +3,14 @@ mast-head {
 	position: sticky;
 	top: 0;
 	z-index: 2;
-/*	background-color: var(--paper);*/
+	background-color: var(--paper);
 	box-shadow: var(--shadow);
 }
 
 .site-header {
 /*	background-color: gray;*/
 }
-
+s
 .site-header inner-column {
 	padding-top: 5px;
 	padding-bottom: 5px;
