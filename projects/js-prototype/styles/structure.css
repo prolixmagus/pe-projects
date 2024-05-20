@@ -1,0 +1,51 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+inner-column {
+	display: block;
+	width: 98%;
+	max-width: 1000px;
+	margin-inline: auto;
+	padding: 5px 10px;
+} 
+
+experience-gained, div {
+	display: block;
+}
+
+/* Grid Classes */
+
+.section-grid {
+	display: grid;
+ 	grid-template-columns: auto repeat(12, minmax(0, 100px)) auto;
+}
+
+.inner-grid {
+	grid-column: 2 / -2;
+
+	display: grid;
+	grid-template-columns: subgrid;
+}
+
+@media (min-width: 490px) {
+	inner-column {
+		padding: 1rem;
+	}
+}
+
+
+
+
+
+
+
+

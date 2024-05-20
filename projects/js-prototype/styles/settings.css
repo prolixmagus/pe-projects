@@ -1,0 +1,54 @@
+html {
+
+/*	--green: 108;
+	--blue: 191;
+	--red: 358;
+	--pink: 4;
+	--yellow: 42;*/
+	--hue: 0;
+
+	--black: hsl(var(--hue), 0%, 7%);
+	--white: hsl(var(--hue), 0%, 94%);
+/*
+	--fish-green: hsl(var(--green), 75%, 40%);
+	--fish-blue: hsl(var(--blue), 71%, 59%);
+	--tile-red: hsl(var(--red), 100%, 35%);
+	--fish-pink: hsl(var(--pink), 100%, 89%);
+	--sand-yellow: hsl(var(--yellow), 99%, 66%);*/
+
+	--neutral-stuffs: gray;
+	--caption: hsl(var(--hue), 0%, 0%, 0.6);
+
+/*	--color: hsl(206, 66%, 77%);
+	--highlight: hsl(190, 59%, 79%);*/
+
+	--shadow: 0px 0px 2px 0px rgba(0 0 0 / .5);
+
+	--corners: 10px; /* or whatevers */
+	--container: 1rem;
+
+	--paper: var(--white);
+	--ink: var(--black);
+	--ink-light: hsla(var(--hue), 0%, 0%, .8);
+
+	--standard: 1000px;
+	--tight: 700px;
+}
+
+sup {
+	vertical-align: super;
+	vertical-align: 25%;
+	font-size: .7rem;
+}
+
+/*@media (prefers-color-scheme: dark) {
+	html {
+		--paper-black: hsl(5, 0%, 10%);
+		--ink-light: hsl(63, 100%, 96%);
+		--fish-blue: hsl(190, 39%, 25%);
+		--sand-yellow: hsl(37, 24%, 28%);
+		--shadow: 0px 0px 5px 0px rgba(255 203 199 / .5);
+		--caption: hsla(4, 100%, 89%, 0.8);
+	}
+	*/
+}
