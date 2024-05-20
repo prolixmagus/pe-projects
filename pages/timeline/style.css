@@ -1,16 +1,3 @@
-
-.timeline .last {
-	border-bottom: none;
-}
-
-.timeline section:not(.present-day) {
-	margin-top: 1rem;
-}
-
-.timeline p, .timeline li {
-	max-width: 70ch;
-}
-
 .timeline li + li {
 	margin-top: 1em;
 }
@@ -26,6 +13,10 @@
 
 .timeline h3 + ul {
 	margin-top: 10px;
+}
+
+.timeline h3.strong-voice {
+	font-size: 1.5rem;
 }
 
 work-narrative {

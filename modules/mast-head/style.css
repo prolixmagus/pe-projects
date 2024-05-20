@@ -7,10 +7,6 @@ mast-head {
 	box-shadow: var(--shadow);
 }
 
-.site-header {
-	background-color: var(--paper);
-}
-s
 .site-header inner-column {
 	padding-top: 5px;
 	padding-bottom: 5px;

@@ -57,17 +57,6 @@ picture {
 }
 
 
-.pink-mark {
-	border-bottom: 4px dotted var(--fish-pink);
-}
-
-.blue-mark {
-	border-bottom: 4px dotted var(--fish-blue);
-}
-
-.green-mark {
-	border-bottom: 4px dotted var(--fish-green);
-}
 /* Media */
 
 @media (min-width: 350px) {
