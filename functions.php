@@ -7,7 +7,7 @@ function read_page_data($page) {
 		$json = file_get_contents($filePath);
 		$pageData = json_decode($json, true);
 	} else {
-		echo "No contents here!";
+		$pageData = null;
 	}
 	return $pageData;
 }

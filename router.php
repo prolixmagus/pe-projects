@@ -10,7 +10,7 @@
 
 	function get_template($page) {
 		$filePath = "pages/$page/template.php";
-		if (file_get_contents($filePath)) {
+		if (file_exists($filePath)) {
 			include($filePath);
 		} else {
 			include("pages/error404/template.php");

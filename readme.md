@@ -9,11 +9,36 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 <a 
 	href="'https://peprojects.dev/alpha-8/jeremy"
-	target="live">Live Link</a>
+	target="live">Live Link
+</a>
 
-## General Todo
-- [x] Finish <a href="https://perpetual.education/stories/serious-times-with-jeremy/">code review</a> and take notes 
-- [ ] create Figma prototype of app
+## App Todo
+- [x] setup CodePen properly
+- [ ] setup project
+
+- [ ] Header
+- [ ] Login Page
+
+---
+
+- [ ] Search Page
+	- [ ] Database Structure
+	- [ ] List Page
+- [ ] Tour Detail Page
+
+- [ ] User Profile
+
+- [ ] Inbox
+	- [ ] Open Message Sample
+
+- [ ] Payment Confirmation Page (add Trip);
+	- [ ] Payment Confirmation Message (once submitted)
+
+- [ ] Your Trips Page
+- [ ] Your Trips Detail Page
+	- [ ] Your Trips (cancel / delete a trip)
+
+
 
 ## Website Todo
 
@@ -21,11 +46,6 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 - [x] Typography and Spacing -> in progress
 	- [ ] Visual language! Style tile?
-
-- [ ] Favicon
-- [ ] Less cluttered logo?
-
-
 
 #### Work Page
 
@@ -72,6 +92,16 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 - [ ] Style E4P individual forms ... 
 
+---
+
+## Completed Todo (5/20 - 5/25)
+- [x] Finish <a href="https://perpetual.education/stories/serious-times-with-jeremy/">code review</a> and take notes 
+- [x] create Figma prototype of app
+- [x] Favicon
+- [x] Less cluttered logo?
+- [x] Write blog about planning / designing app (end of app design sprint)
+- [x] Survey jobs 
+- [x] CodePen login page
 
 
 
