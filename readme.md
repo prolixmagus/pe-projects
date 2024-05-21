@@ -14,10 +14,10 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 ## App Todo
 - [x] setup CodePen properly
-- [ ] setup project
+- [x] setup project
 
-- [ ] Header
-- [ ] Login Page
+- [x] Header
+- [x] Login Page
 
 ---
 
