@@ -1,1 +1,3 @@
-@import "login.css";
+@import 'pages/login.css';
+@import 'pages/site-header.css';
+@import 'pages/site-footer.css';

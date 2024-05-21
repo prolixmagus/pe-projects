@@ -1,11 +1,12 @@
 html {
 
 /*	--green: 108;
-	--blue: 191;
+	
 	--red: 358;
 	--pink: 4;
 	--yellow: 42;*/
 	--hue: 0;
+	--blue: 196;
 
 	--black: hsl(var(--hue), 0%, 7%);
 	--white: hsl(var(--hue), 0%, 94%);
@@ -23,6 +24,7 @@ html {
 	--paper: var(--white);
 	--ink: var(--black);
 	--ink-light: hsla(var(--hue), 0%, 0%, .8);
+	--wireframe: hsla(var(--blue), 46%, 77%);
 
 	--standard: 1000px;
 	--tight: 700px;

@@ -1,0 +1,15 @@
+logo-container {
+	display: flex;
+	align-items: center;
+}
+
+mast-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	& .user-menu ul {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+}

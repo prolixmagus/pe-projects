@@ -55,8 +55,8 @@
 }
 
 nav li {
-  font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
-  font-size: 1rem;
+  font-family: sans-serif;
+  font-size: .8rem;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
