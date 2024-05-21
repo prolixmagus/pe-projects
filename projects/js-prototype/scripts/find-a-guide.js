@@ -11,7 +11,7 @@ function renderLoginPage() {
          <input id='userEmail' type='email' class='email' placeholder='someone@something.com' required>
 
          <label for='password'>Password</label>
-         <input id='password' class='password' type='password' placeholder='Enter password' required>
+         <input id='password' class='password' type='password' autocomplete='dragon' required>
 
          <button class='login-btn' type='button'>Login</button>
         </form>

@@ -18,7 +18,7 @@
 /* C omponents */
 /*@import "components.css";*/
 
-@import "pages.css";
+@import "pages/login.css";
 
 /* S tuff (modules) */
 /*@import "modules.css";*/
@@ -34,6 +34,9 @@
     background-size: 100% 18px, 100% 18px;
 }*/
 
+body * {
+	border: 1px solid blue;
+}
 
 p a, li a {
 	color: blue;
@@ -55,86 +58,4 @@ picture {
 }
 
 
-/* Media */
 
-@media (min-width: 350px) {
-	.fish {
-		display: block;
-		position: absolute;
-		max-width: 50px;
-		right: 250px;
-	}
-}
-
-@media (min-width: 540px) {
-
-	.takeout-form {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.email {
-		grid-column: span 2;
-	}
-
-	.company {
-		grid-column: span 2;
-	}
-
-	.takeout-message {
-		grid-column: 1 / 3;
-	}
-
-	.takeout-button {
-	grid-column: 1 / 3;
-	}
-	
-}
-
-@media (min-width: 541px) {
-	.fly-fishing-grid li {
-		border-bottom: none;
-	}
-}
-
-
-@media (min-width: 525px) {
-	.site-header inner-column {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	.header-menu {
-		gap: 2.5rem;
-	} 
-}
-
-@media (min-width: 650px) {
-	.fish {
-		display: block;
-		position: absolute;
-		right: 120px;
-		max-width: 50px;
-	}
-
-	.influences inner-column {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	body {
-		color: var(--ink-light);
-		background-color: var(--paper-black);
-	}
-
-	li, p {
-		& a:visited {
-			color: var(--fish-pink);
-		}
-		& a {
-			color: hsl(191 71% 59% / 1);
-		}
-	}
-}
