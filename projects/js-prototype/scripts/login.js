@@ -1,3 +1,6 @@
+import { attachTemplate } from './find-a-guide.js';
+import { state } from './state.js';
+
 function renderLoginPage(container) {
   container.innerHTML += `
       <section class='login-page'>
@@ -5,7 +8,7 @@ function renderLoginPage(container) {
 
           <h1 class='loud-voice'>Find-A-Guide</h1>
 
-          <form class='login'>
+          <form class='login' data-action:'login'>
             <field>
               <label for='userEmail'>Email</label>
               <input id='userEmail' type='email' class='email' value='charlesmings@jazz.org' required>
@@ -39,14 +42,27 @@ function attachLoginEventListener(button, password, message) {
     message.innerHTML = '';
     
     if (password.value === 'moanin') {
-      message.innerHTML = `You did it!`
+      attachTemplate(homePage);
     } else {
-      message.innerHTML = `Try again!`;
+      message.textContent = `Try again!`;
     }
     
   })
 }
 
+function homePage(container) {
+  container.innerHTML = ``
+  container.innerHTML += `
+  <section>
+    <inner-column>
+      <p>This is an example!!</p>
+    </inner-column>
+  </section>
+  `
+}
+
+
 export {
 	renderLoginPage,
+  attachLoginEventListener
 }

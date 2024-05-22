@@ -1,28 +1,32 @@
-import {renderNavLinks, renderSiteHeader} from './site-header.js'
-import {renderLoginPage} from './login.js'
-import {renderSiteFooter} from './site-footer.js'
+import { renderSiteHeader, attachLinkEventListeners } from './site-header.js';
+import { renderLoginPage, attachLoginEventListener } from './login.js';
+import { renderSiteFooter } from './site-footer.js';
+import { state } from './state.js';
 
 const main = document.querySelector('main');
 const body = document.querySelector('body');
 
-// renderHeader(main);
-
-function renderPage(pageRenderFunction) {
+function renderPageSkeleton() {
+  const main = document.querySelector('main')
+  main.innerHTML = '';
   renderSiteHeader(main);
-  pageRenderFunction(main);
-  renderSiteFooter(body);
+  renderSiteFooter(main);
 }
 
-function example(container) {
-  container.innerHTML += `
-  <section>
-    <inner-column>
-      <p>This is an example!!</p>
-    </inner-column>
-  </section>
-  `
+function attachTemplate(template) {
+  const main = document.querySelector('main');
+  return template(main);
 }
 
-// renderLoginPage(main);
+function initialize() {
+  const main = document.querySelector('main')
+  main.innerHTML = '';
+  renderPageSkeleton();
+  renderLoginPage(main);
+}
 
-renderPage(example);
+initialize();
+
+export {
+  attachTemplate
+}

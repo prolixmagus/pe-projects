@@ -1,38 +1,42 @@
-function renderNavLinks() {
+import {attachTemplate} from './find-a-guide.js'
+import { state } from './state.js';
+
+function renderHeaderLinks() {
   const links = [
     {
       "href": '#',
-      "dataset": 'search',
+      "datalink": 'search',
       "content": 'Search'
     },
     {
       "href": '#',
-      "dataset": 'inbox',
+      "datalink": 'inbox',
       "content": 'Inbox'
     },
     {
       "href": '#',
-      "dataset": 'trips',
+      "datalink": 'trips',
       "content": 'Trips'
     },
     {
       "href": '#',
-      "dataset": 'profile',
+      "datalink": 'profile',
       "content": 'Profile'
     }
   ];
 
-  return links.map((link) => `
+  const userMenu = links.map((link) => `
     <li>
-      <a href='${link.href}' data-set='${link.dataset}'>${link.content}</a>
+      <button type='button' data-link='${link.datalink}'>${link.content}</button>
     </li>
-    `
-  ).join('')
+    `).join('')
+
+  return userMenu
 }
 
 function renderSiteHeader(container) {
-  	container.innerHTML += ` 
-    <header class='page-header'>
+  const header = ` 
+    <header class='site-header'>
       <inner-column>
         <mast-head>
           <logo-container>
@@ -45,16 +49,105 @@ function renderSiteHeader(container) {
           </logo-container>
           <nav class='user-menu'>
             <ul>
-              ${renderNavLinks()}
+              ${renderHeaderLinks()}
             </ul>
           </nav>
         </mast-head>
       </inner-column>
     </header>
   `
+
+  container.insertAdjacentHTML('beforebegin', header);
+
+  // ATTACHING EVENT LISTENERS?! 
+  const searchNav = document.querySelector('.site-header button[data-link="search"]')
+  const inboxNav = document.querySelector('.site-header button[data-link="inbox"]')
+  const tripsNav = document.querySelector('.site-header button[data-link="trips"]')
+  const profileNav = document.querySelector('.site-header button[data-link="profile"]')
+
+  attachLinkEventListeners(searchNav, inboxNav, tripsNav, profileNav)
+}
+
+/*
+
+window.addEventListener('click', (event) => {
+  if (event.target.matches('[data-link]'))
+    if (target.dataset.link === 'search') {
+  
+    }
+
+})
+
+*/
+
+function attachLinkEventListeners(search, inbox, trips, profile) {
+  search.addEventListener('click', (event) => {
+    attachTemplate(getSearchPage);
+    console.log(event);
+  });
+  inbox.addEventListener('click', (event) => {
+    attachTemplate(getInboxPage)
+  })
+  trips.addEventListener('click', (event) => {
+    attachTemplate(getTripsPage);
+  })
+  profile.addEventListener('click', (event) => {
+    attachTemplate(getProfilePage);
+  })
+}
+
+//TEST PAGES
+
+function getSearchPage(container) {
+  container.innerHTML = ``
+
+  container.innerHTML += `
+  <section>
+    <inner-column>
+      <p>This is the search page</p>
+    </inner-column>
+  </section>
+  `
+}
+
+function getProfilePage(container) {
+  container.innerHTML = ``
+
+  container.innerHTML += `
+  <section>
+    <inner-column>
+      <p>This is the profile page</p>
+    </inner-column>
+  </section>
+  `
+}
+
+function getInboxPage(container) {
+  container.innerHTML = ``
+
+  container.innerHTML += `
+  <section>
+    <inner-column>
+      <p>This is the inbox page</p>
+    </inner-column>
+  </section>
+  `
+}
+
+function getTripsPage(container) {
+  container.innerHTML = ``
+
+  container.innerHTML += `
+  <section>
+    <inner-column>
+      <p>This is the trips page</p>
+    </inner-column>
+  </section>
+  `
 }
 
 export {
-	renderNavLinks,
-	renderSiteHeader
+	renderHeaderLinks,
+	renderSiteHeader,
+  attachLinkEventListeners
 }
