@@ -1,6 +1,8 @@
 import {renderHeaderLinks, attachLinkEventListeners} from './site-header.js'
 import { state } from './state.js';
 
+
+
 function renderSiteFooter(container) {
   const footer = ` 
     <footer class='site-footer'>

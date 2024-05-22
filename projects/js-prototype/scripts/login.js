@@ -1,5 +1,6 @@
 import { attachTemplate } from './find-a-guide.js';
 import { state } from './state.js';
+import { renderSiteHeader, attachLinkEventListeners, getTourSearchPage } from './site-header.js';
 
 function renderLoginPage(container) {
   container.innerHTML += `
@@ -8,7 +9,7 @@ function renderLoginPage(container) {
 
           <h1 class='loud-voice'>Find-A-Guide</h1>
 
-          <form class='login' data-action:'login'>
+          <form class='login' data-action='login'>
             <field>
               <label for='userEmail'>Email</label>
               <input id='userEmail' type='email' class='email' value='charlesmings@jazz.org' required>
@@ -16,53 +17,54 @@ function renderLoginPage(container) {
 
             <field>
               <label for='password'>Password</label>
-              <input id='password' class='password' type='password' value='moanin' placeholder='moanin' required>
+              <input id='password' class='password' type='password' placeholder='moanin' required>
             </field>
 
-            <button class='login-btn' type='button'>Login</button>
+            <button class='login-btn' data-set="login" type='submit'>Submit</button>
           </form>
 
-          <p class='message-container'></p>
+          <p class='login-message'></p>
 
         </inner-column>
       </section>
     `
-
-  const loginButton = document.querySelector('.login-btn');
-  const passwordInput = document.querySelector('.password');
-  const messageContainer = document.querySelector('.message-container');
     
-  attachLoginEventListener(loginButton, passwordInput, messageContainer);
+  attachLoginFormEventListener()
 }
 
-function attachLoginEventListener(button, password, message) {
-  button.addEventListener('click', (event) => {
-    event.preventDefault();
-    
-    message.innerHTML = '';
-    
-    if (password.value === 'moanin') {
-      attachTemplate(homePage);
-    } else {
-      message.textContent = `Try again!`;
+function validate(password) {
+  console.log(password);
+  return (password.value === 'moanin')
+}
+
+function handleLogin() {
+  const password = document.querySelector('.password');
+  const message = document.querySelector('.login-message');
+
+  if (validate(password)) {
+    const main = document.querySelector('main');
+    state.login = true;
+    renderSiteHeader(main);
+    attachLinkEventListeners();
+    attachTemplate(getTourSearchPage);
+  } else {
+    message.textContent = 'Incorrect password';
+  }
+}
+
+function attachLoginFormEventListener() {
+  window.addEventListener('click', (event) => {
+    if (event.target.matches('[data-set="login"]') ) {
+      event.preventDefault();
+      handleLogin();
     }
-    
   })
-}
-
-function homePage(container) {
-  container.innerHTML = ``
-  container.innerHTML += `
-  <section>
-    <inner-column>
-      <p>This is an example!!</p>
-    </inner-column>
-  </section>
-  `
 }
 
 
 export {
 	renderLoginPage,
-  attachLoginEventListener
+  attachLoginFormEventListener,
+  handleLogin,
+  validate
 }

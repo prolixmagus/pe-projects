@@ -1,40 +1,67 @@
-import {attachTemplate} from './find-a-guide.js'
+import { attachTemplate } from './find-a-guide.js'
 import { state } from './state.js';
+import { renderLoginPage, handleLogin, validate } from './login.js';
 
 function renderHeaderLinks() {
   const links = [
     {
-      "href": '#',
-      "datalink": 'search',
-      "content": 'Search'
+      datalink: 'search',
+      content: 'Search',
+      public: true
     },
     {
-      "href": '#',
-      "datalink": 'inbox',
-      "content": 'Inbox'
+      datalink: 'inbox',
+      content: 'Inbox',
+      public: true
     },
     {
-      "href": '#',
-      "datalink": 'trips',
-      "content": 'Trips'
+      datalink: 'trips',
+      content: 'Trips',
+      public: true
     },
     {
-      "href": '#',
-      "datalink": 'profile',
-      "content": 'Profile'
+      datalink: 'profile',
+      content: 'Profile',
+      public: true
     }
   ];
 
-  const userMenu = links.map((link) => `
-    <li>
-      <button type='button' data-link='${link.datalink}'>${link.content}</button>
-    </li>
-    `).join('')
+  if (state.login === true) {
 
-  return userMenu
+    //filter header links when logged in
+
+    let userMenu = links.map((link) => `
+      <li>
+        <button type='button' data-link='${link.datalink}'>${link.content}</button>
+      </li>
+    `).join('');
+
+    userMenu += `
+      <li>
+        <button type='button' data-link='logoutroute'>Logout</button>
+      </li>
+    `;
+
+    return userMenu;
+
+  } else {
+
+    //filter header links when not logged in
+    let userMenu =`
+      <li>
+        <button type='button' data-link='loginroute'>Login</button>
+      </li>
+    `;
+
+    return userMenu;
+  }
 }
 
 function renderSiteHeader(container) {
+  const currentHeader = document.querySelector('.site-header')
+  if (currentHeader) {
+    currentHeader.remove();
+  }
   const header = ` 
     <header class='site-header'>
       <inner-column>
@@ -55,50 +82,47 @@ function renderSiteHeader(container) {
         </mast-head>
       </inner-column>
     </header>
-  `
+  `;
 
   container.insertAdjacentHTML('beforebegin', header);
 
-  // ATTACHING EVENT LISTENERS?! 
-  const searchNav = document.querySelector('.site-header button[data-link="search"]')
-  const inboxNav = document.querySelector('.site-header button[data-link="inbox"]')
-  const tripsNav = document.querySelector('.site-header button[data-link="trips"]')
-  const profileNav = document.querySelector('.site-header button[data-link="profile"]')
-
-  attachLinkEventListeners(searchNav, inboxNav, tripsNav, profileNav)
 }
 
-/*
+function attachLinkEventListeners() {
+  window.addEventListener('click', (event) => {
 
-window.addEventListener('click', (event) => {
-  if (event.target.matches('[data-link]'))
-    if (target.dataset.link === 'search') {
-  
+    if (event.target.matches('[data-link]')) {
+      const main = document.querySelector('main');
+
+      if (event.target.dataset.link === 'search') {
+        attachTemplate(getTourSearchPage);
+      }
+      if (event.target.dataset.link === 'inbox') {
+        attachTemplate(getInboxPage);
+      }
+      if (event.target.dataset.link === 'trips') {
+        attachTemplate(getTripsListPage);
+      }
+      if (event.target.dataset.link === 'profile') {
+        attachTemplate(getProfilePage);
+      }
+      if (event.target.dataset.link === 'logoutroute') {
+        state.login = false;
+        main.innerHTML = ''
+        renderSiteHeader(main)
+        attachLinkEventListeners();
+        renderLoginPage(main);
+      }
+      if (event.target.dataset.link === 'loginroute') {
+        handleLogin();
+      }
     }
-
-})
-
-*/
-
-function attachLinkEventListeners(search, inbox, trips, profile) {
-  search.addEventListener('click', (event) => {
-    attachTemplate(getSearchPage);
-    console.log(event);
-  });
-  inbox.addEventListener('click', (event) => {
-    attachTemplate(getInboxPage)
-  })
-  trips.addEventListener('click', (event) => {
-    attachTemplate(getTripsPage);
-  })
-  profile.addEventListener('click', (event) => {
-    attachTemplate(getProfilePage);
   })
 }
 
 //TEST PAGES
 
-function getSearchPage(container) {
+function getTourSearchPage(container) {
   container.innerHTML = ``
 
   container.innerHTML += `
@@ -134,7 +158,7 @@ function getInboxPage(container) {
   `
 }
 
-function getTripsPage(container) {
+function getTripsListPage(container) {
   container.innerHTML = ``
 
   container.innerHTML += `
@@ -149,5 +173,6 @@ function getTripsPage(container) {
 export {
 	renderHeaderLinks,
 	renderSiteHeader,
-  attachLinkEventListeners
+  attachLinkEventListeners,
+  getTourSearchPage
 }

@@ -1,5 +1,5 @@
-const state = {
-	login: false;
+let state = {
+	login: false
 }
 
 export {
