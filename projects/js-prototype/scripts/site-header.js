@@ -1,9 +1,9 @@
 import { attachTemplate } from './find-a-guide.js'
 import { state } from './state.js';
 import { renderLoginPage, handleLogin, validate } from './login.js';
+import { renderSiteFooter } from './site-footer.js'
 
-function renderHeaderLinks() {
-  const links = [
+const siteHeaderLinks = [
     {
       datalink: 'search',
       content: 'Search',
@@ -26,11 +26,13 @@ function renderHeaderLinks() {
     }
   ];
 
+function renderNavLinks(menu) {
+
   if (state.login === true) {
 
     //filter header links when logged in
 
-    let userMenu = links.map((link) => `
+    let userMenu = menu.map((link) => `
       <li>
         <button type='button' data-link='${link.datalink}'>${link.content}</button>
       </li>
@@ -76,7 +78,7 @@ function renderSiteHeader(container) {
           </logo-container>
           <nav class='user-menu'>
             <ul>
-              ${renderHeaderLinks()}
+              ${renderNavLinks(siteHeaderLinks)}
             </ul>
           </nav>
         </mast-head>
@@ -112,6 +114,7 @@ function attachLinkEventListeners() {
         renderSiteHeader(main)
         attachLinkEventListeners();
         renderLoginPage(main);
+        renderSiteFooter(main);
       }
       if (event.target.dataset.link === 'loginroute') {
         handleLogin();
@@ -171,7 +174,7 @@ function getTripsListPage(container) {
 }
 
 export {
-	renderHeaderLinks,
+	renderNavLinks,
 	renderSiteHeader,
   attachLinkEventListeners,
   getTourSearchPage

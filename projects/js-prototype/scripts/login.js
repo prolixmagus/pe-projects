@@ -1,6 +1,7 @@
 import { attachTemplate } from './find-a-guide.js';
 import { state } from './state.js';
 import { renderSiteHeader, attachLinkEventListeners, getTourSearchPage } from './site-header.js';
+import { renderSiteFooter } from './site-footer.js';
 
 function renderLoginPage(container) {
   container.innerHTML += `
@@ -33,7 +34,6 @@ function renderLoginPage(container) {
 }
 
 function validate(password) {
-  console.log(password);
   return (password.value === 'moanin')
 }
 
@@ -47,6 +47,7 @@ function handleLogin() {
     renderSiteHeader(main);
     attachLinkEventListeners();
     attachTemplate(getTourSearchPage);
+    renderSiteFooter(main);
   } else {
     message.textContent = 'Incorrect password';
   }

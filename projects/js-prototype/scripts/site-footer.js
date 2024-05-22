@@ -1,15 +1,41 @@
-import {renderHeaderLinks, attachLinkEventListeners} from './site-header.js'
+import {renderNavLinks, attachLinkEventListeners} from './site-header.js'
 import { state } from './state.js';
 
+  const siteFooterLinks = [
+    {
+      datalink: 'search',
+      content: 'Search',
+      public: true
+    },
+    {
+      datalink: 'inbox',
+      content: 'Inbox',
+      public: true
+    },
+    {
+      datalink: 'trips',
+      content: 'Trips',
+      public: true
+    },
+    {
+      datalink: 'profile',
+      content: 'Profile',
+      public: true
+    }
+  ];
 
 
 function renderSiteFooter(container) {
+  const currentFooter = document.querySelector('.site-footer')
+  if (currentFooter) {
+    currentFooter.remove();
+  }
   const footer = ` 
     <footer class='site-footer'>
       <inner-column>
         <nav class='user-menu'>
           <ul>
-            ${renderHeaderLinks()}
+            ${renderSiteFooterLinks(siteFooterLinks)}
           </ul>
         </nav>
       </inner-column>
@@ -17,14 +43,31 @@ function renderSiteFooter(container) {
   `
   container.insertAdjacentHTML('afterend', footer);
 
-  const searchNav = document.querySelector('.site-footer button[data-link="search"]')
-  const inboxNav = document.querySelector('.site-footer button[data-link="inbox"]')
-  const tripsNav = document.querySelector('.site-footer button[data-link="trips"]')
-  const profileNav = document.querySelector('.site-footer button[data-link="profile"]')
-
-  attachLinkEventListeners(searchNav, inboxNav, tripsNav, profileNav)
+  attachLinkEventListeners()
 }
 
+function renderSiteFooterLinks(menu) {
+
+  if (state.login === true) {
+
+    let userMenu = menu.map((link) => `
+      <li>
+        <button type='button' data-link='${link.datalink}'>${link.content}</button>
+      </li>
+    `).join('');
+
+    return userMenu;
+
+  } else {
+
+    let userMenu =`<h2>Welcome!</h2>`
+
+    return userMenu;
+  }
+}
+
+
 export {
-	renderSiteFooter
+	renderSiteFooter,
+  renderSiteFooterLinks
 }

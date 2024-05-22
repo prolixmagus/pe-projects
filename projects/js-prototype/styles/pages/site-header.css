@@ -5,8 +5,8 @@ logo-container {
 
 mast-head {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
 	& .user-menu ul {
 		display: flex;
 		align-items: center;
