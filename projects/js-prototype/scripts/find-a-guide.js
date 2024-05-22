@@ -1,5 +1,5 @@
 import { renderSiteHeader, attachLinkEventListeners } from './site-header.js';
-import { renderLoginPage, attachLoginFormEventListener } from './login.js';
+import { renderLoginView, attachLoginFormEventListener } from './login.js';
 import { renderSiteFooter } from './site-footer.js';
 import { state } from './state.js';
 
@@ -16,7 +16,7 @@ function initialize() {
   const main = document.querySelector('main')
   main.innerHTML = '';
   renderSiteHeader(main);
-  renderLoginPage(main);
+  renderLoginView(main);
   renderSiteFooter(main);
 }
 

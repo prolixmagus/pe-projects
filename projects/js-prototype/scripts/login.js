@@ -1,11 +1,11 @@
 import { attachTemplate } from './find-a-guide.js';
 import { state } from './state.js';
-import { renderSiteHeader, attachLinkEventListeners, getTourSearchPage } from './site-header.js';
+import { renderSiteHeader, attachLinkEventListeners, getTourSearchView } from './site-header.js';
 import { renderSiteFooter } from './site-footer.js';
 
-function renderLoginPage(container) {
+function renderLoginView(container) {
   container.innerHTML += `
-      <section class='login-page'>
+      <section class='login-view'>
         <inner-column>
 
           <h1 class='loud-voice'>Find-A-Guide</h1>
@@ -46,7 +46,7 @@ function handleLogin() {
     state.login = true;
     renderSiteHeader(main);
     attachLinkEventListeners();
-    attachTemplate(getTourSearchPage);
+    attachTemplate(getTourSearchView);
     renderSiteFooter(main);
   } else {
     message.textContent = 'Incorrect password';
@@ -64,7 +64,7 @@ function attachLoginFormEventListener() {
 
 
 export {
-	renderLoginPage,
+	renderLoginView,
   attachLoginFormEventListener,
   handleLogin,
   validate

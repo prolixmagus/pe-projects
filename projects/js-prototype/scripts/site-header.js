@@ -1,6 +1,6 @@
 import { attachTemplate } from './find-a-guide.js'
 import { state } from './state.js';
-import { renderLoginPage, handleLogin, validate } from './login.js';
+import { renderLoginView, handleLogin, validate } from './login.js';
 import { renderSiteFooter } from './site-footer.js'
 
 const siteHeaderLinks = [
@@ -97,23 +97,23 @@ function attachLinkEventListeners() {
       const main = document.querySelector('main');
 
       if (event.target.dataset.link === 'search') {
-        attachTemplate(getTourSearchPage);
+        attachTemplate(getTourSearchView);
       }
       if (event.target.dataset.link === 'inbox') {
-        attachTemplate(getInboxPage);
+        attachTemplate(getInboxView);
       }
       if (event.target.dataset.link === 'trips') {
-        attachTemplate(getTripsListPage);
+        attachTemplate(getTripsListView);
       }
       if (event.target.dataset.link === 'profile') {
-        attachTemplate(getProfilePage);
+        attachTemplate(getProfileView);
       }
       if (event.target.dataset.link === 'logoutroute') {
         state.login = false;
         main.innerHTML = ''
         renderSiteHeader(main)
         attachLinkEventListeners();
-        renderLoginPage(main);
+        renderLoginView(main);
         renderSiteFooter(main);
       }
       if (event.target.dataset.link === 'loginroute') {
@@ -125,7 +125,7 @@ function attachLinkEventListeners() {
 
 //TEST PAGES
 
-function getTourSearchPage(container) {
+function getTourSearchView(container) {
   container.innerHTML = ``
 
   container.innerHTML += `
@@ -137,7 +137,7 @@ function getTourSearchPage(container) {
   `
 }
 
-function getProfilePage(container) {
+function getProfileView(container) {
   container.innerHTML = ``
 
   container.innerHTML += `
@@ -149,7 +149,7 @@ function getProfilePage(container) {
   `
 }
 
-function getInboxPage(container) {
+function getInboxView(container) {
   container.innerHTML = ``
 
   container.innerHTML += `
@@ -161,7 +161,7 @@ function getInboxPage(container) {
   `
 }
 
-function getTripsListPage(container) {
+function getTripsListView(container) {
   container.innerHTML = ``
 
   container.innerHTML += `
@@ -177,5 +177,5 @@ export {
 	renderNavLinks,
 	renderSiteHeader,
   attachLinkEventListeners,
-  getTourSearchPage
+  getTourSearchView
 }
