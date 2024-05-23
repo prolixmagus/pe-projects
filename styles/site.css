@@ -54,6 +54,7 @@ li a:visited, p a:visited {
 
 picture {
 	border-radius: var(--corners);
+	box-shadow: var(--shadow);
 }
 
 

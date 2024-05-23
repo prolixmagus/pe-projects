@@ -10,7 +10,7 @@
 			"published": "02 NOV 2023",
 			"updated": "10 NOV 2023",
 			"description": "This will be a description for the aticle. A teaser of sorts. Read more to find out!",
-			"preview-image": "images/landscape.jpg",
+			"preview-image": "images/explorations/death-and-design/headline.jpg",
 			"related": ["bottles-in-the-sky", "theme-challenge"],
 			"case-study": [
 				{
@@ -54,14 +54,16 @@
 			"slug": "bottles-in-the-sky",
 			"published": "03 NOV 2023",
 			"updated": "10 OCT 2023",
-			"description": "This will be a description for the aticle. A teaser of sorts. Read more to find out!",
-			"preview-image": "images/landscape.jpg",
+			"description": "This will be a description for the article. A teaser of sorts. Read more to find out!",
+			"preview-image": "images/explorations/bottles-in-the-sky/headline.jpg",
 			"related": ["death-and-design", "theme-challenge"],
 			"case-study": [
 				{
 					"section": [
 						{
 							"module": "common-figure",
+							"image": "images/explorations/bottles-in-the-sky/bottles-in-the-sky-headline.jpg",
+							"alt": "Three outlines of bottles against a purple backdrop",
 							"headline": true
 						},
 						{
