@@ -2,6 +2,7 @@ import { attachTemplate } from './find-a-guide.js'
 import { state } from './state.js';
 import { renderLoginView, handleLogin, validate } from './login.js';
 import { renderSiteFooter } from './site-footer.js'
+import { getTourSearchView } from './search.js'
 
 const siteHeaderLinks = [
     {
@@ -125,17 +126,6 @@ function attachLinkEventListeners() {
 
 //TEST PAGES
 
-function getTourSearchView(container) {
-  container.innerHTML = ``
-
-  container.innerHTML += `
-  <section>
-    <inner-column>
-      <p>This is the search page</p>
-    </inner-column>
-  </section>
-  `
-}
 
 function getProfileView(container) {
   container.innerHTML = ``

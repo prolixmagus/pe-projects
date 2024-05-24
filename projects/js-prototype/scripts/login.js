@@ -18,7 +18,7 @@ function renderLoginView(container) {
 
             <field>
               <label for='password'>Password</label>
-              <input id='password' class='password' type='password' placeholder='moanin' required>
+              <input id='password' class='password' type='password' value='moanin' required>
             </field>
 
             <button class='login-btn' data-set="login" type='submit'>Submit</button>

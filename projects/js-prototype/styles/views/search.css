@@ -1,0 +1,9 @@
+.search {
+	display: grid;
+	flex-direction: column;
+}
+
+/*.tour-dates {
+	display: flex;
+	flex-wrap: wrap;
+}*/

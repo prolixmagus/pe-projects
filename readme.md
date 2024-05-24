@@ -51,8 +51,8 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 - [ ] Work articles preview images
 	- [ ] Theme Challenge
-	- [ ] Bottles in the Sky
-	- [ ] Death and Design
+	- [x] Bottles in the Sky
+	- [x] Death and Design
 
 - [ ] Work articles "key points"
 	- [ ] Theme Challenge
