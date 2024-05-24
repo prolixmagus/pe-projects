@@ -1,5 +1,6 @@
 const tours = [
   {
+    id: 'a1',
     title: `LA Ice Cream Tour`,
     photo: 'images/landscape.jpg',
     rating: '★★★★★',
@@ -22,6 +23,7 @@ const tours = [
     }
   },
   {
+    id: 'a2',
     title: `Haunted Pizza Crawl`,
     photo:'images/landscape.jpg',
     rating: '★★★★',
@@ -43,6 +45,7 @@ const tours = [
     }
   },
   {
+    id: 'a3',
     title: `UFO Spotting Safari`,
     photo: 'images/landscape.jpg',
     rating: '★★★',
@@ -64,6 +67,7 @@ const tours = [
     }
   },
   {
+    id: 'a4',
     title: `Mystery Bookshop Hop`,
     photo: 'images/landscape.jpg',
     rating: '★★★★★',
@@ -85,6 +89,7 @@ const tours = [
     }
   },
   {
+    id: 'a5',
     title: `Underwater Basket Weaving Expedition`,
     photo: 'images/landscape.jpg',
     rating: '★★★★★',
@@ -106,6 +111,7 @@ const tours = [
     }
   },
   {
+    id: 'a6',
     title: `Invisible Art Gallery Tour`,
     photo: 'images/landscape.jpg',
     rating: '★★',
@@ -127,6 +133,7 @@ const tours = [
     }
   },
   {
+    id: 'a7',
     title: `Time Traveler's Tea Party`,
     photo: 'images/landscape.jpg',
     rating: '★★★★★',
@@ -148,6 +155,7 @@ const tours = [
     }
   },
   {
+    id: 'a8',
     title: `Extreme Ironing Adventure`,
     photo: 'images/landscape.jpg',
     rating: '★★★',
@@ -167,6 +175,7 @@ const tours = [
     }
   },
   {
+    id: 'a9',
     title: `Intergalactic Food Tasting Tour`,
     photo: 'images/landscape.jpg',
     rating: '★',
@@ -186,6 +195,7 @@ const tours = [
     }
   },
   {
+    id: 'a10',
     title: `Magical Unicorn Safari`,
     photo: 'images/landscape.jpg',
     rating: '★★★★★',
@@ -252,7 +262,7 @@ function getTourSearchView(container) {
 
 function renderTourCards(tours) {
   const allTours = tours.map((tour) => `
-  <section class='tour-card'>
+  <section class='tour-card' id='${tour.id}'>
     <inner-column>
       <figure>
         <picture>
