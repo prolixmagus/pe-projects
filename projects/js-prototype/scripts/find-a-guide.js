@@ -2,7 +2,7 @@ import { renderSiteHeader, attachLinkEventListeners } from './site-header.js';
 import { renderLoginView, attachLoginFormEventListener } from './login.js';
 import { renderSiteFooter } from './site-footer.js';
 import { state } from './state.js';
-import { getTourSearchView, renderTourCards, tours} from './search.js'
+import { getTourSearchView } from './search.js'
 
 const main = document.querySelector('main');
 const body = document.querySelector('body');
