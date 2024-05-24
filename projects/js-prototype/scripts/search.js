@@ -2,6 +2,7 @@ const tours = [
   {
     title: `LA Ice Cream Tour`,
     photo: 'images/landscape.jpg',
+    rating: '★★★★★',
     teaser: `This is a one sentence teaser.`,
     description: `Explore the sweetest spots in Los Angeles with the LA Ice Cream Tour, a delightful journey through the city's best and most unique ice cream parlors. Perfect for ice cream enthusiasts and families alike, this tour offers a chance to savor a variety of flavors, from classic favorites to innovative concoctions.`,
     itinerary: `There is so much for us to do! First, you will go to Salt&Straw where they have a special "fragrance enhancer" to make your ice cream shine - one spray for 25 cents! Then there's McConnell's fine Fine Ice Creams. Their vegan flavors are to die for! <ol><li>Walk around.</li><li>Eat ice cream</li></ol>`,
@@ -10,7 +11,7 @@ const tours = [
     end: '05/30/2024',
     location: 'Los Angeles, California, USA',
 
-    cost: '$35.00',
+    price: '$35.00',
     guide: {
       name: 'Mathdaniel Squirrel',
       languages: ['English', 'Swahili', 'Japanese'],
@@ -23,6 +24,7 @@ const tours = [
   {
     title: `Haunted Pizza Crawl`,
     photo:'images/landscape.jpg',
+    rating: '★★★★',
     teaser: `A spooky, cheesy adventure!`,
     description: `Join us for a haunted tour through the city's most ghostly pizzerias. Taste the most terrifyingly delicious slices while learning about the haunted history of each location.`,
     itinerary: `We will visit five haunted pizzerias, each with its own spooky story and unique pizza. <ol><li>Ghostly Pizzeria</li><li>Phantom Slice</li><li>Spooky Crust</li></ol>`,
@@ -30,7 +32,7 @@ const tours = [
     start: '01/01/2024',
     end: '05/30/2024',
     location: 'Wichita, Kansas, USA',
-    cost: '$50.00',
+    price: '$50.00',
     guide: {
       name: 'Ghoulish Gary',
       languages: ['English', 'French', 'Latin'],
@@ -43,6 +45,7 @@ const tours = [
   {
     title: `UFO Spotting Safari`,
     photo: 'images/landscape.jpg',
+    rating: '★★★',
     teaser: `An out-of-this-world experience!`,
     description: `Venture into the desert for a UFO spotting adventure. Learn about famous UFO sightings and enjoy some cosmic snacks under the stars.`,
     itinerary: `We will drive out to the best UFO spotting locations, equipped with high-tech equipment. <ol><li>Desert Stargazing</li><li>UFO Watch</li><li>Cosmic Snacks</li></ol>`,
@@ -50,7 +53,7 @@ const tours = [
     location: 'Tokyo, Japan',
     start: '06/01/2024',
     end: '12/31/2024',
-    cost: '$75.00',
+    price: '$75.00',
     guide: {
       name: 'Alien Alex',
       languages: ['English', 'Japanese', 'Binary'],
@@ -63,6 +66,7 @@ const tours = [
   {
     title: `Mystery Bookshop Hop`,
     photo: 'images/landscape.jpg',
+    rating: '★★★★★',
     teaser: `For the bookworm with a sense of adventure.`,
     description: `Visit the city's coziest and most mysterious bookshops. Discover hidden literary gems and participate in a live mystery game.`,
     itinerary: `Our tour will take you to five unique bookshops, each with its own charm and secrets. <ol><li>Hidden Nook Books</li><li>Mystery Manor</li><li>Secret Stories</li></ol>`,
@@ -70,7 +74,7 @@ const tours = [
     location: 'Amsterdam, Netherlands',
     start: '06/01/2024',
     end: '12/31/2024',
-    cost: '$40.00',
+    price: '$40.00',
     guide: {
       name: 'Detective Dan',
       languages: ['English', 'Spanish', 'Dutch'],
@@ -83,6 +87,7 @@ const tours = [
   {
     title: `Underwater Basket Weaving Expedition`,
     photo: 'images/landscape.jpg',
+    rating: '★★★★★',
     teaser: `A wet and wild crafting experience!`,
     description: `Dive into the art of underwater basket weaving. Perfect for those who love crafting and water activities.`,
     itinerary: `We will provide all necessary equipment and instruction. <ol><li>Intro to Basket Weaving</li><li>Diving Session</li><li>Weaving Underwater</li></ol>`,
@@ -90,7 +95,7 @@ const tours = [
     start: '06/01/2024',
     end: '12/31/2024',
     location: 'Toronto, Canada',
-    cost: '$60.00',
+    price: '$60.00',
     guide: {
       name: 'Aqua Amy',
       languages: ['English', 'Dolphinese', 'French'],
@@ -103,6 +108,7 @@ const tours = [
   {
     title: `Invisible Art Gallery Tour`,
     photo: 'images/landscape.jpg',
+    rating: '★★',
     teaser: `See what can't be seen!`,
     description: `Explore the world's only invisible art gallery. Appreciate the unseen masterpieces with guided audio descriptions.`,
     itinerary: `We will guide you through several rooms of invisible art. <ol><li>Room of the Unknown</li><li>Gallery of the Unseen</li><li>Invisible Masterpieces</li></ol>`,
@@ -110,7 +116,7 @@ const tours = [
     start: '06/01/2024',
     end: '12/31/2024',
     location: 'BangKok, Thailand',
-    cost: '$25.00',
+    price: '$25.00',
     guide: {
       name: 'Imaginary Irene',
       languages: ['English', 'Thai', 'Imaginary Communication'],
@@ -123,6 +129,7 @@ const tours = [
   {
     title: `Time Traveler's Tea Party`,
     photo: 'images/landscape.jpg',
+    rating: '★★★★★',
     teaser: `Tea through the ages!`,
     description: `Join a tea party that transcends time. Sample teas from different eras and learn about their historical significance.`,
     itinerary: `We will visit different time periods through our themed tea rooms. <ol><li>Medieval Tea Room</li><li>Victorian Tea Room</li><li>Future Tea Room</li></ol>`,
@@ -130,7 +137,7 @@ const tours = [
     start: '08/01/2024',
     end: '12/31/2024',
     location: 'Berlin, Germany',
-    cost: '$45.00',
+    price: '$45.00',
     guide: {
       name: 'Chrono Chris',
       languages: ['English', 'German', 'Future Speak'],
@@ -143,12 +150,13 @@ const tours = [
   {
     title: `Extreme Ironing Adventure`,
     photo: 'images/landscape.jpg',
+    rating: '★★★',
     teaser: `Press your clothes in extreme places!`,
     description: `Combine the thrill of adventure sports with the practicality of ironing. Press your clothes in the most extreme locations imaginable.`,
     itinerary: `We will travel to various extreme locations for ironing. <ol><li>Mountain Peak Ironing</li><li>Skydiving Ironing</li><li>Underwater Ironing</li></ol>`,
     tourLength: '7 hours',
     location: 'Cairo, Egypt',
-    cost: '$100.00',
+    price: '$100.00',
     guide: {
       name: 'Ironing Ivan',
       languages: ['English', 'Egyptian Arabic', 'Laundromat'],
@@ -161,12 +169,13 @@ const tours = [
   {
     title: `Intergalactic Food Tasting Tour`,
     photo: 'images/landscape.jpg',
+    rating: '★',
     teaser: `A culinary journey through the cosmos!`,
     description: `Taste dishes from across the galaxy. Learn about alien cuisines and enjoy a unique dining experience.`,
     itinerary: `We will visit themed restaurants representing different planets. <ol><li>Martian Delights</li><li>Venusian Veggies</li><li>Jovian Desserts</li></ol>`,
     tourLength: '5 hours',
     location: 'Cairo, Egypt',
-    cost: '$80.00',
+    price: '$80.00',
     guide: {
       name: 'Galactic Gina',
       languages: ['English', 'Martian', 'Egyptian Arabic'],
@@ -179,12 +188,13 @@ const tours = [
   {
     title: `Magical Unicorn Safari`,
     photo: 'images/landscape.jpg',
+    rating: '★★★★★',
     teaser: `A whimsical adventure with mythical creatures.`,
     description: `Join us for a magical safari where you'll encounter unicorns in their natural habitat. Perfect for fantasy lovers and families.`,
     itinerary: `We will journey to the enchanted forest to find unicorns. <ol><li>Unicorn Spotting</li><li>Enchanted Forest Walk</li><li>Magical Picnic</li></ol>`,
     tourLength: '4 hours',
     location: 'Wichita, Kansas, USA',
-    cost: '$55.00',
+    price: '$55.00',
     guide: {
       name: 'Fairy Fiona',
       languages: ['English', 'Elvish', 'Dragon Tongue'],
@@ -196,8 +206,8 @@ const tours = [
   }
 ];
    
-
 function getTourSearchView(container) {
+  const main = document.querySelector('main');
   container.innerHTML = ``
 
   container.innerHTML += `
@@ -229,25 +239,39 @@ function getTourSearchView(container) {
     </inner-column>
   </section>
   `
+
+  renderTourCards(tours, main);
 }
 
 function renderTourCards(tours, container) {
-  container += `
+  const allTours = tours.map((tour) => `
   <section class='tour-results'>
     <inner-column>
       <figure>
         <picture>
-          <img src='${tours.photo}'>
-        </picture
+          <img src='${tour.photo}'>
+        </picture>
+        <p>${tour.rating}</p>
       </figure>
-      <h2>${tours.}
+      <h2>${tour.title}</h2>
+      <p>${tour.teaser}</p>
+      <p>${tour.price}</p>
+      <button type='button'>Check it out!</button>
     </inner-column>
+  </section>
+  `).join('');
 
+  container.innerHTML += allTours;
+}
+
+function getSearchResults() {
 
 }
 
 
 
 export {
-  getTourSearchView
+  getTourSearchView,
+  renderTourCards,
+  tours
 }
