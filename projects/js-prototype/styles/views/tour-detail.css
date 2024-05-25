@@ -1,0 +1,10 @@
+.guide-details ul {
+	display: flex;
+	
+	& li::after {
+		content: ' • ';
+	}
+	& li:nth-last-child(1)::after {
+		content: '';
+	}
+}

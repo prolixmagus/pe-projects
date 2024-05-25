@@ -13,6 +13,10 @@ function attachTemplate(template) {
   return template(main);
 }
 
+function generateList(list) {
+  return list.map((item) => `<li>${item}</li>`).join('')
+}
+
 function initialize() {
   const main = document.querySelector('main')
   main.innerHTML = '';
@@ -21,8 +25,11 @@ function initialize() {
   renderSiteFooter(main);
 }
 
+
+
 initialize();
 
 export {
-  attachTemplate
+  attachTemplate,
+  generateList
 }

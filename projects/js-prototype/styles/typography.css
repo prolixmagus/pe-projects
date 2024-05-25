@@ -26,8 +26,8 @@
   color: var(--ink-light);
 }
 
-.strong-voice, cite {
-  font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
+.strong-voice, cite{
+  font-family: "Lato", "Noto Sans", sans-serif;
   font-size: 1rem;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -37,7 +37,7 @@
 }
 
 .attention-voice, h2 {
-	font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
+	font-family: "Lato", "Noto Sans", "Noto Sans", sans-serif;
   font-size: clamp(24px, 8vw, 2rem);
   font-optical-sizing: auto;
   font-weight: 500;
@@ -46,7 +46,7 @@
 }
 
 .loud-voice {
-	font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
+	font-family: "Lato", "Noto Sans", "Noto Sans", sans-serif;
 	font-size: clamp(30px, 10vw, 3rem);
 	font-optical-sizing: auto;
 	font-weight: 500;

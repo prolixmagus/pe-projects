@@ -1,3 +1,4 @@
+import { generateList } from './find-a-guide.js'
 const tours = [
   {
     id: 'a1',
@@ -6,12 +7,14 @@ const tours = [
     rating: '★★★★★',
     teaser: `This is a one sentence teaser.`,
     description: `Explore the sweetest spots in Los Angeles with the LA Ice Cream Tour, a delightful journey through the city's best and most unique ice cream parlors. Perfect for ice cream enthusiasts and families alike, this tour offers a chance to savor a variety of flavors, from classic favorites to innovative concoctions.`,
-    itinerary: `There is so much for us to do! First, you will go to Salt&Straw where they have a special "fragrance enhancer" to make your ice cream shine - one spray for 25 cents! Then there's McConnell's fine Fine Ice Creams. Their vegan flavors are to die for! <ol><li>Walk around.</li><li>Eat ice cream</li></ol>`,
-    tourLength: '3 hours',
+    itinerary: {
+      intro: `There is so much for us to do! First, you will go to Salt&Straw where they have a special "fragrance enhancer" to make your ice cream shine - one spray for 25 cents! Then there's McConnell's fine Fine Ice Creams. Their vegan flavors are to die for!`,
+      schedule: `<ol><li>Walk around.</li><li>Eat ice cream</li></ol>`
+    },
+    length: '3 hours',
     start: '01/01/2024',
     end: '05/30/2024',
     location: 'Los Angeles, California, USA',
-
     price: '$35.00',
     guide: {
       name: 'Mathdaniel Squirrel',
@@ -25,12 +28,15 @@ const tours = [
   {
     id: 'a2',
     title: `Haunted Pizza Crawl`,
-    photo:'images/landscape.jpg',
+    photo: 'images/landscape.jpg',
     rating: '★★★★',
     teaser: `A spooky, cheesy adventure!`,
     description: `Join us for a haunted tour through the city's most ghostly pizzerias. Taste the most terrifyingly delicious slices while learning about the haunted history of each location.`,
-    itinerary: `We will visit five haunted pizzerias, each with its own spooky story and unique pizza. <ol><li>Ghostly Pizzeria</li><li>Phantom Slice</li><li>Spooky Crust</li></ol>`,
-    tourLength: '4 hours',
+    itinerary: {
+      intro: `We will visit five haunted pizzerias, each with its own spooky story and unique pizza.`,
+      schedule: `<ol><li>Ghostly Pizzeria</li><li>Phantom Slice</li><li>Spooky Crust</li></ol>`
+    },
+    length: '4 hours',
     start: '01/01/2024',
     end: '05/30/2024',
     location: 'Wichita, Kansas, USA',
@@ -51,11 +57,14 @@ const tours = [
     rating: '★★★',
     teaser: `An out-of-this-world experience!`,
     description: `Venture into the desert for a UFO spotting adventure. Learn about famous UFO sightings and enjoy some cosmic snacks under the stars.`,
-    itinerary: `We will drive out to the best UFO spotting locations, equipped with high-tech equipment. <ol><li>Desert Stargazing</li><li>UFO Watch</li><li>Cosmic Snacks</li></ol>`,
-    tourLength: '6 hours',
-    location: 'Tokyo, Japan',
+    itinerary: {
+      intro: `We will drive out to the best UFO spotting locations, equipped with high-tech equipment.`,
+      schedule: `<ol><li>Desert Stargazing</li><li>UFO Watch</li><li>Cosmic Snacks</li></ol>`
+    },
+    length: '6 hours',
     start: '06/01/2024',
     end: '12/31/2024',
+    location: 'Tokyo, Japan',
     price: '$75.00',
     guide: {
       name: 'Alien Alex',
@@ -73,11 +82,14 @@ const tours = [
     rating: '★★★★★',
     teaser: `For the bookworm with a sense of adventure.`,
     description: `Visit the city's coziest and most mysterious bookshops. Discover hidden literary gems and participate in a live mystery game.`,
-    itinerary: `Our tour will take you to five unique bookshops, each with its own charm and secrets. <ol><li>Hidden Nook Books</li><li>Mystery Manor</li><li>Secret Stories</li></ol>`,
-    tourLength: '3 hours',
-    location: 'Amsterdam, Netherlands',
+    itinerary: {
+      intro: `Our tour will take you to five unique bookshops, each with its own charm and secrets.`,
+      schedule: `<ol><li>Hidden Nook Books</li><li>Mystery Manor</li><li>Secret Stories</li></ol>`
+    },
+    length: '3 hours',
     start: '06/01/2024',
     end: '12/31/2024',
+    location: 'Amsterdam, Netherlands',
     price: '$40.00',
     guide: {
       name: 'Detective Dan',
@@ -95,8 +107,11 @@ const tours = [
     rating: '★★★★★',
     teaser: `A wet and wild crafting experience!`,
     description: `Dive into the art of underwater basket weaving. Perfect for those who love crafting and water activities.`,
-    itinerary: `We will provide all necessary equipment and instruction. <ol><li>Intro to Basket Weaving</li><li>Diving Session</li><li>Weaving Underwater</li></ol>`,
-    tourLength: '5 hours',
+    itinerary: {
+      intro: `We will provide all necessary equipment and instruction.`,
+      schedule: `<ol><li>Intro to Basket Weaving</li><li>Diving Session</li><li>Weaving Underwater</li></ol>`
+    },
+    length: '5 hours',
     start: '06/01/2024',
     end: '12/31/2024',
     location: 'Toronto, Canada',
@@ -117,8 +132,11 @@ const tours = [
     rating: '★★',
     teaser: `See what can't be seen!`,
     description: `Explore the world's only invisible art gallery. Appreciate the unseen masterpieces with guided audio descriptions.`,
-    itinerary: `We will guide you through several rooms of invisible art. <ol><li>Room of the Unknown</li><li>Gallery of the Unseen</li><li>Invisible Masterpieces</li></ol>`,
-    tourLength: '2 hours',
+    itinerary: {
+      intro: 'We will guide you through several rooms of invisible art.',
+      schedule: `<ol><li>Room of the Unknown</li><li>Gallery of the Unseen</li><li>Invisible Masterpieces</li></ol>`
+    },
+    length: '2 hours',
     start: '06/01/2024',
     end: '12/31/2024',
     location: 'BangKok, Thailand',
@@ -139,8 +157,11 @@ const tours = [
     rating: '★★★★★',
     teaser: `Tea through the ages!`,
     description: `Join a tea party that transcends time. Sample teas from different eras and learn about their historical significance.`,
-    itinerary: `We will visit different time periods through our themed tea rooms. <ol><li>Medieval Tea Room</li><li>Victorian Tea Room</li><li>Future Tea Room</li></ol>`,
-    tourLength: '3 hours',
+    itinerary: {
+      intro: `We will visit different time periods through our themed tea rooms.`,
+      schedule: `<ol><li>Medieval Tea Room</li><li>Victorian Tea Room</li><li>Future Tea Room</li></ol>`
+    },
+    length: '3 hours',
     start: '08/01/2024',
     end: '12/31/2024',
     location: 'Berlin, Germany',
@@ -161,57 +182,22 @@ const tours = [
     rating: '★★★',
     teaser: `Press your clothes in extreme places!`,
     description: `Combine the thrill of adventure sports with the practicality of ironing. Press your clothes in the most extreme locations imaginable.`,
-    itinerary: `We will travel to various extreme locations for ironing. <ol><li>Mountain Peak Ironing</li><li>Skydiving Ironing</li><li>Underwater Ironing</li></ol>`,
-    tourLength: '7 hours',
+    itinerary: {
+      intro: `We will travel to various extreme locations for ironing.`,
+      schedule: `<ol><li>Mountain Peak Ironing</li><li>Skydiving Ironing</li><li>Underwater Ironing</li></ol>`
+    },
+    length: '7 hours',
+    start: '06/01/2024',
+    end: '12/31/2024',
     location: 'Cairo, Egypt',
     price: '$100.00',
     guide: {
-      name: 'Ironing Ivan',
-      languages: ['English', 'Egyptian Arabic', 'Laundromat'],
+      name: 'Extreme Eddie',
+      languages: ['English', 'Arabic', 'Ironing Speak'],
       education: 'Extreme Sports Academy',
-      expertise: ['Ironing', 'Extreme Sports', 'Survival Skills'],
+      expertise: ['Ironing', 'Extreme Sports', 'Travel'],
       maritalStatus: 'Single',
       pronouns: ['He', 'Him']
-    }
-  },
-  {
-    id: 'a9',
-    title: `Intergalactic Food Tasting Tour`,
-    photo: 'images/landscape.jpg',
-    rating: '★',
-    teaser: `A culinary journey through the cosmos!`,
-    description: `Taste dishes from across the galaxy. Learn about alien cuisines and enjoy a unique dining experience.`,
-    itinerary: `We will visit themed restaurants representing different planets. <ol><li>Martian Delights</li><li>Venusian Veggies</li><li>Jovian Desserts</li></ol>`,
-    tourLength: '5 hours',
-    location: 'Cairo, Egypt',
-    price: '$80.00',
-    guide: {
-      name: 'Galactic Gina',
-      languages: ['English', 'Martian', 'Egyptian Arabic'],
-      education: 'Intergalactic Culinary Institute',
-      expertise: ['Cooking', 'Extraterrestrial Cultures', 'Gastronomy'],
-      maritalStatus: 'In a Relationship',
-      pronouns: ['She', 'Her']
-    }
-  },
-  {
-    id: 'a10',
-    title: `Magical Unicorn Safari`,
-    photo: 'images/landscape.jpg',
-    rating: '★★★★★',
-    teaser: `A whimsical adventure with mythical creatures.`,
-    description: `Join us for a magical safari where you'll encounter unicorns in their natural habitat. Perfect for fantasy lovers and families.`,
-    itinerary: `We will journey to the enchanted forest to find unicorns. <ol><li>Unicorn Spotting</li><li>Enchanted Forest Walk</li><li>Magical Picnic</li></ol>`,
-    tourLength: '4 hours',
-    location: 'Wichita, Kansas, USA',
-    price: '$55.00',
-    guide: {
-      name: 'Fairy Fiona',
-      languages: ['English', 'Elvish', 'Dragon Tongue'],
-      education: 'Fantasy Creatures University',
-      expertise: ['Mythical Creatures', 'Nature', 'Magic'],
-      maritalStatus: 'Single',
-      pronouns: ['She', 'Her']
     }
   }
 ];
@@ -274,7 +260,7 @@ function renderTourCards(tours) {
       <h3>${tour.location}</h3>
       <p>${tour.teaser}</p>
       <p>${tour.price}</p>
-      <button type='submit'>Check it out!</button>
+      <button type='submit' data-set='detail'>Check it out!</button>
     </inner-column>
   </section>
   `).join('');
@@ -320,15 +306,110 @@ function getTourResults(tours) {
 
 }
 
-function handleSearch(tours) {
-  window.addEventListener('click', (event) => {
-    event.preventDefault();
-    if (event.target.matches('[data-set="tour-search"]') ) {
-      const filteredTours = getTourResults(tours);
-      renderTourCards(filteredTours);
-    }
+// DETAIL PAGE
+
+function getTourById(tours, id) {
+  return tours.find((tour) => tour.id === id);
+}
+
+function renderDetailPage(tour) {
+  const main = document.querySelector('main');
+  main.innerHTML = ``
+  main.innerHTML += `<section class='tour-detail'></section>`
+  const tourDetail = document.querySelector('.tour-detail');
+  tourDetail.innerHTML += renderTourDetailCard(tour);
+  tourDetail.innerHTML += renderTourGuideCard(tour);
+}
+
+function renderTourDetailCard(tour) {
+  return `
+    <section class='tour-intro'>
+      <inner-column>
+      <h2>${tour.title}</h2>
+      <picture>
+        <img src='${tour.photo}'>
+      </picture>
+      <p>${tour.teaser}</p>
+      </inner-column>
+    </section>
+
+    <section class='itinerary'>
+      <inner-column>
+        <h2>Itinerary</h2>
+        <p>Length: ${tour.length}</p>
+        <p>${tour.itinerary.intro}</p>
+        ${tour.itinerary.schedule}
+      </inner-column>
+    </section>
+    `
+}
+
+function renderTourGuideCard(tour) {
+  return `
+    <section class='guide'>
+      <inner-column>
+        <h2>Meet Your Guide</h2>
+
+        <section class='guide-intro'>
+          <div class='temp-icon'>
+            <svg viewBox='0 0 10 10'>
+              <circle cx='5' cy='5' r='5' />
+            </svg>
+          </div>
+          <h3>${tour.guide.name}</h3>
+        </section>
+
+        <ul class='guide-details'>
+          <li>
+            <h3>Languages</h3>
+            <ul>
+              ${generateList(tour.guide.languages)}
+            </ul>
+          </li>
+          <li>
+            <h3>Languages</h3>
+            <ul>
+              ${generateList(tour.guide.languages)}
+            </ul>
+          </li>
+          <p>${tour.itinerary.intro}</p>
+          ${tour.itinerary.schedule}
+      </inner-column>
+    </section>
+    `
+}
+
+function renderGuideDetails(tours){
+  const guide = tours.guide
+  const guideKeys = guide.Keys()
+  guideKeys.forEach((key) => {
+
   })
 }
+
+function handleSearch(event) {
+    const filteredTours = getTourResults(tours);
+    renderTourCards(filteredTours);
+}
+
+function handleRenderTourDetail(event, tours) {
+  const sectionId = event.target.closest('section').getAttribute('id');
+  const foundTour = getTourById(tours, sectionId)
+  renderDetailPage(foundTour);
+}
+
+window.addEventListener('click', (event) => {
+  if (event.target.matches('[data-set="detail"]') ) {
+    event.preventDefault();
+    handleRenderTourDetail(event, tours);
+  }
+
+  if (event.target.matches('[data-set="tour-search"]') ) {
+    event.preventDefault();
+    handleSearch(event, tours);
+
+  }
+});
 
 export {
   getTourSearchView,
