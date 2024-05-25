@@ -26,7 +26,7 @@
   color: var(--ink-light);
 }
 
-.strong-voice, cite{
+.strong-voice, cite, h3{
   font-family: "Lato", "Noto Sans", sans-serif;
   font-size: 1rem;
   font-optical-sizing: auto;

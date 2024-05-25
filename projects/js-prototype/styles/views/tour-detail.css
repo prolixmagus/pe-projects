@@ -1,10 +1,13 @@
 .guide-details ul {
 	display: flex;
-	
 	& li::after {
 		content: ' • ';
 	}
 	& li:nth-last-child(1)::after {
 		content: '';
 	}
+}
+
+.guide-details h3 {
+	margin-top: 10px;
 }
