@@ -112,6 +112,7 @@ function attachLinkEventListeners() {
       if (event.target.dataset.link === 'logoutroute') {
         state.login = false;
         main.innerHTML = ''
+        localStorage.removeItem('currentUser')
         renderSiteHeader(main)
         attachLinkEventListeners();
         renderLoginView(main);

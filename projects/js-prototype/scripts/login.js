@@ -40,10 +40,22 @@ function validate(password, storedUserPassword, username, storedUserInput) {
 function createUserProfile(username, userPassword) {
   const userData = { username: username.value, password: userPassword.value };
   localStorage.setItem(userData.username, JSON.stringify(userData));
+  // change current user to just-created profile
+  setCurrentUser('currentUser', username.value);
+}
+
+function setCurrentUser(key, username) {
+  localStorage.setItem(key, username);
 }
 
 function getUserData(key) {
   return localStorage.getItem(key)
+}
+
+function getCurrentUserData() {
+  const currentUsername = localStorage.getItem('currentUser')
+  const userData = getUserData(currentUsername);
+  return JSON.parse(userData)
 }
 
 function handleLogin() {
@@ -58,6 +70,8 @@ function handleLogin() {
     if ( validate(password, storedUser.password, username, storedUser.username) ) {
       const main = document.querySelector('main');
       state.login = true;
+
+      setCurrentUser('currentUser', storedUser.username);
       renderSiteHeader(main);
       attachLinkEventListeners();
       attachTemplate(getTourSearchView);
@@ -67,6 +81,7 @@ function handleLogin() {
     }
   } else {
     createUserProfile(username, password)
+    message.textContent = 'Profile created! Click submit to log in.'
   }
 }
 
@@ -86,5 +101,7 @@ export {
 	renderLoginView,
   attachLoginFormEventListener,
   handleLogin,
-  validate
+  validate,
+  getUserData,
+  getCurrentUserData
 }

@@ -19,6 +19,7 @@
 	grid-column: 8 / 13;
 	grid-row: 2;
 	max-width: 400px;
+	box-shadow: none;
 }
 
 /*.open-menu main {

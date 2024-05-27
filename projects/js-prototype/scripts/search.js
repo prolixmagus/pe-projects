@@ -1,6 +1,10 @@
 import { generateList } from './find-a-guide.js'
 import { tours } from './data.js'
 import { attachDetailEventListener } from './tour-detail.js'
+import { getUserData, getCurrentUserData } from './login.js'
+
+const what = getCurrentUserData();
+console.log(what);
    
 function getTourSearchView(container) {
   const main = document.querySelector('main');
