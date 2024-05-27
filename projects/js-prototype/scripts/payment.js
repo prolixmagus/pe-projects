@@ -4,7 +4,9 @@ import { getTourById } from './tour-detail.js'
 
 function renderPaymentView(tour, userData) {
 	const main = document.querySelector('main');
-	const guests = userData.searchData.guests;
+	const guests = userData.searchData.guests || 1;
+	const startDate = userData.searchData.startDate || 'N/A';
+	const endDate = userData.searchData.endDate || 'N/A';
 	const price = parseFloat(tour.price.replace('$', ''));
 	main.innerHTML = `
 		<section class='payment-details'>
@@ -25,15 +27,15 @@ function renderPaymentView(tour, userData) {
 					</li>
 					<li>
 						<h3><strong>Tour Dates</strong></h3>
-						<h4>${userData.searchData.startDate} - ${userData.searchData.endDate}</h4>
+						<h4>${startDate} - ${endDate}</h4>
 					</li>
 					<li>
 						<h3><strong>Guests</strong></h3>
-						<h4>${userData.searchData.guests}</h4>
+						<h4>${guests}</h4>
 					</li>
 					<li>
 						<h3><strong>Price Per Person</strong></h3>
-						<h4>${tour.price}</h4>
+						<h4>${price}</h4>
 					</li>
 				</ul>
 			</inner-column>
@@ -41,7 +43,7 @@ function renderPaymentView(tour, userData) {
 		<section class='disclaimer'>
 			<inner-column>
 				<h2>Disclaimer</h2>
-				<p><strong>Please have all required travel documents ready, as well as required vaccines.<strong></p>
+				<p><strong>Please have all required travel documents ready, as well as required vaccines.</strong></p>
 				<p>If you have any speciic requests, dietary restrictions, or questions about your trip, you can message your guide after confirming the booking</p>
 			</inner-column>
 		</section>
@@ -90,10 +92,16 @@ function handleRenderPaymentView(event, tours) {
 
 window.addEventListener('click', (event) => {
 	if (event.target.matches('[data-action="book-tour"]')) {
-		event.preventDefault()
-      handleRenderPaymentView(event, tours)
+		event.preventDefault();
+      handleRenderPaymentView(event, tours);
+   }
+
+   if (event.target.matches('[data-action="confirm-booking"]')) {
+		event.preventDefault();
+      renderConfirmationSection();
    }
 })
+
 
 export {
 	handleRenderPaymentView

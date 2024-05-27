@@ -1,6 +1,6 @@
 import { tours } from './data.js'
 import { generateList } from './find-a-guide.js'
-import { handleRenderPaymentView } from './payment.js'
+import { handleRenderPaymentView} from './payment.js'
 
 function getTourById(tours, id) {
   return tours.find((tour) => tour.id === id);

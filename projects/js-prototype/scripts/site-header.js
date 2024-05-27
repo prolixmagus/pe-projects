@@ -113,7 +113,7 @@ function attachLinkEventListeners() {
         state.login = false;
         main.innerHTML = ''
         localStorage.removeItem('currentUser')
-        renderSiteHeader(main)
+        renderSiteHeader(main);
         attachLinkEventListeners();
         renderLoginView(main);
         renderSiteFooter(main);

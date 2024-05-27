@@ -51,21 +51,29 @@ function createUserProfile(username, userPassword) {
 function getCurrentUserData() {
   const userDataString = localStorage.getItem('currentUser')
   const userData = JSON.parse(userDataString)
+  console.log(userData);
   return userData;
 }
+
+function getUserData(key) {
+  return localStorage.getItem(key)
+}
+
 
 function handleLogin() {
   const username = document.querySelector('.username')
   const password = document.querySelector('.password');
   const message = document.querySelector('.login-message');
 
-  const currentUserData = getCurrentUserData()
+  const userData = getUserData(username.value)
 
-  if (currentUserData) {
-    if ( validate(password, currentUserData.password, username, currentUserData.username) ) {
+  if (userData) {
+    const storedUser = JSON.parse(userData);
+    if ( validate(password, storedUser.password, username, storedUser.username) ) {
       const main = document.querySelector('main');
       state.login = true;
 
+      setCurrentUser('currentUser', storedUser);
       renderSiteHeader(main);
       attachLinkEventListeners();
       attachTemplate(getTourSearchView);
@@ -74,8 +82,12 @@ function handleLogin() {
       message.textContent = 'Incorrect password';
     }
   } else {
-    createUserProfile(username, password)
-    message.textContent = 'Profile created! Click submit to log in.'
+    if (!username.value || !password.value) {
+      message.textContent = 'Please input a username and password';
+    } else {
+      createUserProfile(username, password)
+      message.textContent = 'Profile created! Click submit to log in.'
+    }
   }
 }
 
