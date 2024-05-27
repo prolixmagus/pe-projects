@@ -1,14 +1,15 @@
 import { tours } from './data.js'
 import { generateList } from './find-a-guide.js'
+import { handleRenderPaymentView } from './payment.js'
 
 function getTourById(tours, id) {
   return tours.find((tour) => tour.id === id);
 }
 
-function renderDetailPage(tour) {
+function renderTourDetailView(tour) {
   const main = document.querySelector('main');
   main.innerHTML = ``
-  main.innerHTML += `<section class='tour-detail'></section>`
+  main.innerHTML += `<section class='tour-detail' id='${tour.id}'></section>`
   const tourDetail = document.querySelector('.tour-detail');
   tourDetail.innerHTML += renderTourDetailCard(tour);
   tourDetail.innerHTML += renderTourGuideCard(tour);
@@ -22,16 +23,18 @@ function renderTourDetailCard(tour) {
       <picture>
         <img src='${tour.photo}'>
       </picture>
+      <p>${tour.rating}</p>
       <p>${tour.teaser}</p>
       </inner-column>
     </section>
 
-    <section class='itinerary'>
+    <section class='itinerary' data-id='${tour.id}'>
       <inner-column>
         <h2>Itinerary</h2>
         <p>Length: ${tour.length}</p>
         <p>${tour.itinerary.intro}</p>
         ${tour.itinerary.schedule}
+        <button type='button' data-action='book-tour'>Book Tour</button>
       </inner-column>
     </section>
     `
@@ -55,6 +58,7 @@ function renderTourGuideCard(tour) {
         <ul class='guide-details'>
           ${renderGuideDetails(tour.guide.info)}
         </ul>
+        <button type='button' data-action='message-guide'>Message Guide</button>
       </inner-column>
     </section>
     `
@@ -87,7 +91,7 @@ function renderGuideDetails(info) {
 function handleRenderTourDetail(event, tours) {
   const sectionId = event.target.closest('section').getAttribute('id');
   const foundTour = getTourById(tours, sectionId)
-  renderDetailPage(foundTour);
+  renderTourDetailView(foundTour);
 }
 
 function attachDetailEventListener() {
@@ -100,5 +104,6 @@ function attachDetailEventListener() {
 }
 
 export {
-  attachDetailEventListener
+  attachDetailEventListener,
+  getTourById
 }
