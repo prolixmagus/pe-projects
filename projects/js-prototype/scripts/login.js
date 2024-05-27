@@ -50,13 +50,14 @@ function createUserProfile(username, userPassword) {
 
 function getCurrentUserData() {
   const userDataString = localStorage.getItem('currentUser')
-  const userData = JSON.parse(userDataString)
-  console.log(userData);
+  const userData = JSON.parse(userDataString);
   return userData;
 }
 
 function getUserData(key) {
-  return localStorage.getItem(key)
+  const userDataString = localStorage.getItem(key)
+  const userData = JSON.parse(userDataString)
+  return userData;
 }
 
 
@@ -68,12 +69,11 @@ function handleLogin() {
   const userData = getUserData(username.value)
 
   if (userData) {
-    const storedUser = JSON.parse(userData);
-    if ( validate(password, storedUser.password, username, storedUser.username) ) {
+    if ( validate(password, userData.password, username, userData.username) ) {
       const main = document.querySelector('main');
       state.login = true;
 
-      setCurrentUser('currentUser', storedUser);
+      setCurrentUser('currentUser', userData);
       renderSiteHeader(main);
       attachLinkEventListeners();
       attachTemplate(getTourSearchView);
@@ -108,5 +108,6 @@ export {
   attachLoginFormEventListener,
   handleLogin,
   validate,
-  getCurrentUserData
+  getCurrentUserData,
+  getUserData
 }

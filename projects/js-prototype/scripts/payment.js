@@ -1,14 +1,17 @@
-import { getCurrentUserData } from './login.js'
+import { getCurrentUserData, getUserData } from './login.js'
 import { tours } from './data.js'
 import { getTourById } from './tour-detail.js'
 
 function renderPaymentView(tour, userData) {
 	const main = document.querySelector('main');
+	main.innerHTML = ``
+	main.innerHTML += `<section class='receipt' data-id ='${tour.id}'</section>`;
 	const guests = userData.searchData.guests || 1;
 	const startDate = userData.searchData.startDate || 'N/A';
 	const endDate = userData.searchData.endDate || 'N/A';
 	const price = parseFloat(tour.price.replace('$', ''));
-	main.innerHTML = `
+	const receipt = document.querySelector('.receipt');
+	receipt.innerHTML += `
 		<section class='payment-details'>
 			<inner-column>
 				<h2>Payment Details</h2>
@@ -35,7 +38,7 @@ function renderPaymentView(tour, userData) {
 					</li>
 					<li>
 						<h3><strong>Price Per Person</strong></h3>
-						<h4>${price}</h4>
+						<h4>$${price}</h4>
 					</li>
 				</ul>
 			</inner-column>
@@ -54,6 +57,7 @@ function renderPaymentView(tour, userData) {
 			</inner-column>
 		</section>
 	`
+
 }
 
 function calculatePayment(guests, price) {
@@ -62,9 +66,9 @@ function calculatePayment(guests, price) {
 	return totalPayment.toFixed(2);
 }
 
-function renderConfirmationSection() {
-	const main = document.querySelector('main');
-	main.innerHTML += `
+function renderConfirmationSection(tour) {
+	const receipt = document.querySelector('.receipt');
+	receipt.innerHTML += `
 	<section class='confirmation'>
 		<inner-column>
 			<h2>Booking Complete!</h2>
@@ -82,11 +86,25 @@ function renderConfirmationSection() {
 	`
 }
 
+function handleRenderConfirmationSection(event, tours) {
+    const sectionId = event.target.closest('section[data-id]').getAttribute('data-id');
+    const foundTour = getTourById(tours, sectionId);
+    saveConfirmedTrip(sectionId);
+    renderConfirmationSection();
+}
+
+function saveConfirmedTrip(tourId) {
+	const currentUser = getCurrentUserData();
+	const userData = getUserData(currentUser.username);
+	userData.confirmedTrips = userData.confirmedTrips || [];
+	userData.confirmedTrips.push(tourId);
+	localStorage.setItem(userData.username, JSON.stringify(userData));
+}
+
 function handleRenderPaymentView(event, tours) {
 	const sectionId = event.target.closest('section[data-id]').getAttribute('data-id');
 	const foundTour = getTourById(tours, sectionId);
 	const currentUserData = getCurrentUserData('currentUser');
-	console.log(currentUserData);
 	renderPaymentView(foundTour, currentUserData);
 }
 
@@ -98,7 +116,7 @@ window.addEventListener('click', (event) => {
 
    if (event.target.matches('[data-action="confirm-booking"]')) {
 		event.preventDefault();
-      renderConfirmationSection();
+      handleRenderConfirmationSection(event, tours);
    }
 })
 
