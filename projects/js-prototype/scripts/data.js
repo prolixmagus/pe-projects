@@ -335,7 +335,61 @@ const tours = [
         }
       ]
     }
-  }
+  },
+  {
+    id: 'a9',
+    title: 'Desert Safari Adventure',
+    photo: 'images/landscape.jpg',
+    rating: '★★★★★',
+    teaser: 'Experience the thrill of the desert!',
+    description: 'Embark on an exhilarating journey through the vast deserts of Egypt. Explore sand dunes, ride camels, and witness breathtaking sunsets.',
+    itinerary: {
+      intro: 'Discover the wonders of the desert with our expert guides.',
+      schedule: '<ol><li>Camel Ride through the Desert</li><li>Sandboarding on Dunes</li><li>Traditional Bedouin Dinner</li></ol>'
+    },
+    length: '6 hours',
+    start: '07/01/2024',
+    end: '12/31/2024',
+    location: 'Luxor, Egypt',
+    price: '$120.00',
+    guide: {
+      name: 'Desert Dan',
+      info: [
+        { header: 'Languages', content: ['English', 'Arabic'] },
+        { header: 'Education', content: 'Desert Exploration School' },
+        { header: 'Expertise', content: ['Desert Travel', 'Camel Riding', 'Sandboarding'] },
+        { header: 'Marital Status', content: 'Married' },
+        { header: 'Pronouns', content: ['He', 'Him'] }
+      ]
+    }
+  },
+  {
+    id: 'b1',
+    title: 'Nile River Cruise',
+    photo: 'images/landscape.jpg',
+    rating: '★★★★',
+    teaser: 'Sail down the historic Nile River!',
+    description: 'Relax and enjoy a leisurely cruise along the iconic Nile River. Experience the beauty of ancient temples, bustling cities, and picturesque landscapes.',
+    itinerary: {
+      intro: 'Explore Egypt\'s rich history and vibrant culture from the comfort of a luxury cruise ship.',
+      schedule: '<ol><li>Visit Luxor and Karnak Temples</li><li>Explore the Valley of the Kings</li><li>Sail to Aswan and visit Philae Temple</li></ol>'
+    },
+    length: '3 days',
+    start: '08/01/2024',
+    end: '12/31/2024',
+    location: 'Aswan, Egypt',
+    price: '$350.00',
+    guide: {
+      name: 'Nile Nadia',
+      info: [
+        { header: 'Languages', content: ['English', 'Arabic'] },
+        { header: 'Education', content: 'Egyptology Institute' },
+        { header: 'Expertise', content: ['History', 'Archaeology', 'Cruise Hosting'] },
+        { header: 'Marital Status', content: 'Single' },
+        { header: 'Pronouns', content: ['She', 'Her'] }
+      ]
+    }
+  },
 ];
 
 export {

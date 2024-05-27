@@ -37,25 +37,21 @@ function validate(password, storedUserPassword, username, storedUserInput) {
   return (password.value === storedUserPassword && username.value === storedUserInput)
 }
 
+function setCurrentUser(key, username) {
+  localStorage.setItem(key, JSON.stringify(username));
+}
+
 function createUserProfile(username, userPassword) {
   const userData = { username: username.value, password: userPassword.value };
   localStorage.setItem(userData.username, JSON.stringify(userData));
   // change current user to just-created profile
-  setCurrentUser('currentUser', username.value);
-}
-
-function setCurrentUser(key, username) {
-  localStorage.setItem(key, username);
-}
-
-function getUserData(key) {
-  return localStorage.getItem(key)
+  setCurrentUser('currentUser', userData);
 }
 
 function getCurrentUserData() {
-  const currentUsername = localStorage.getItem('currentUser')
-  const userData = getUserData(currentUsername);
-  return JSON.parse(userData)
+  const userDataString = localStorage.getItem('currentUser')
+  const userData = JSON.parse(userDataString)
+  return userData;
 }
 
 function handleLogin() {
@@ -63,15 +59,13 @@ function handleLogin() {
   const password = document.querySelector('.password');
   const message = document.querySelector('.login-message');
 
-  const userData = getUserData(username.value)
+  const currentUserData = getCurrentUserData()
 
-  if (userData) {
-    const storedUser = JSON.parse(userData);
-    if ( validate(password, storedUser.password, username, storedUser.username) ) {
+  if (currentUserData) {
+    if ( validate(password, currentUserData.password, username, currentUserData.username) ) {
       const main = document.querySelector('main');
       state.login = true;
 
-      setCurrentUser('currentUser', storedUser.username);
       renderSiteHeader(main);
       attachLinkEventListeners();
       attachTemplate(getTourSearchView);
@@ -102,6 +96,5 @@ export {
   attachLoginFormEventListener,
   handleLogin,
   validate,
-  getUserData,
   getCurrentUserData
 }

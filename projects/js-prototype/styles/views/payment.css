@@ -1,1 +1,7 @@
-payment.css
+.payment-details ul li {
+	margin-top: 10px;
+}
+
+.disclaimer {
+	color: red;
+}

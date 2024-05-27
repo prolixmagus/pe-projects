@@ -1,10 +1,7 @@
 import { generateList } from './find-a-guide.js'
 import { tours } from './data.js'
 import { attachDetailEventListener } from './tour-detail.js'
-import { getUserData, getCurrentUserData } from './login.js'
-
-const what = getCurrentUserData();
-console.log(what);
+import { getCurrentUserData } from './login.js'
    
 function getTourSearchView(container) {
   const main = document.querySelector('main');
@@ -65,7 +62,7 @@ function renderTourCards(tours) {
       <h3>${tour.location}</h3>
       <p>${tour.teaser}</p>
       <p>${tour.price}</p>
-      <button type='submit' data-set='detail'>Check it out!</button>
+      <button type='button' data-set='detail'>Check it out!</button>
     </inner-column>
   </section>
   `).join('');
@@ -84,7 +81,6 @@ function renderTourCards(tours) {
     </section>
     `
   }
-
   attachDetailEventListener();
 }
 
@@ -113,13 +109,20 @@ function getTourResults(tours) {
 
 }
 
-// DETAIL PAGE
-
-
-
 function handleSearch(event) {
     const filteredTours = getTourResults(tours);
+    storeCurrentSearchInformation();
     renderTourCards(filteredTours);
+}
+
+function storeCurrentSearchInformation() {
+    const currentUserData = getCurrentUserData()
+    const inputStartDate = document.querySelector('#start-date').value;
+    const inputEndDate = document.querySelector('#end-date').value;
+    const inputGuests = document.querySelector('#guests').value;
+    currentUserData['searchData'] = { startDate: inputStartDate, endDate: inputEndDate, guests: inputGuests };
+
+    localStorage.setItem('currentUser', JSON.stringify(currentUserData));
 }
 
 function attachSearchEventListener() {
