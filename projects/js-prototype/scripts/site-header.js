@@ -3,6 +3,7 @@ import { state } from './state.js';
 import { renderLoginView, handleLogin, validate } from './login.js';
 import { renderSiteFooter } from './site-footer.js'
 import { getTourSearchView } from './search.js'
+import { getTripsListView } from './trips.js'
 
 const siteHeaderLinks = [
     {
@@ -147,18 +148,6 @@ function getInboxView(container) {
   <section>
     <inner-column>
       <p>This is the inbox page</p>
-    </inner-column>
-  </section>
-  `
-}
-
-function getTripsListView(container) {
-  container.innerHTML = ``
-
-  container.innerHTML += `
-  <section>
-    <inner-column>
-      <p>This is the trips page</p>
     </inner-column>
   </section>
   `
