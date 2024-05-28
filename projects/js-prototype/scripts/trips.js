@@ -23,7 +23,7 @@ function renderTripCards(tripsList, tours) {
 	//find is to get the specific data for tha tour
 
   const tripCards = filteredTourData.map((tour) => {
-  	const tripData =  tripsList.find((trip) => trip.tourId === tour.id)
+  	const tripData = tripsList.find((trip) => trip.tourId === tour.id)
   	return `
   	<section class='confirmed-trips' data-id='${tour.id}'>
     	<section class='trip-content'>
