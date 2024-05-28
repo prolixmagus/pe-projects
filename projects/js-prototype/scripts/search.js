@@ -50,7 +50,7 @@ function getTourSearchView(container) {
 
 function renderTourCards(tours) {
   const allTours = tours.map((tour) => `
-  <section class='tour-card' id='${tour.id}'>
+  <section class='tour-card' data-id='${tour.id}'>
     <inner-column>
       <figure>
         <picture>
@@ -62,7 +62,7 @@ function renderTourCards(tours) {
       <h3>${tour.location}</h3>
       <p>${tour.teaser}</p>
       <p>${tour.price}</p>
-      <button type='button' data-set='detail'>Check it out!</button>
+      <button type='button' data-action='view-detail'>Check it out!</button>
     </inner-column>
   </section>
   `).join('');
@@ -96,8 +96,7 @@ function getTourResults(tours) {
     const location = tour.location.toLowerCase();
     const activity = tour.description.toLowerCase();
 
-    //if startDate and endDate are not numbers (in this case, objects)
-    //creating a range for the dates to fall in
+    //creating a range for the dates to fall in or non-opp
 
     const startDateMatch = isNaN(inputStartDate) || inputStartDate <= endDate
     const endDateMatch = isNaN(inputStartDate) || inputEndDate >= startDate

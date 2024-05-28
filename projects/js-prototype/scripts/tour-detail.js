@@ -9,7 +9,7 @@ function getTourById(tours, id) {
 function renderTourDetailView(tour) {
   const main = document.querySelector('main');
   main.innerHTML = ``
-  main.innerHTML += `<section class='tour-detail' id='${tour.id}'></section>`
+  main.innerHTML += `<section class='tour-detail' data-id='${tour.id}'></section>`
   const tourDetail = document.querySelector('.tour-detail');
   tourDetail.innerHTML += renderTourDetailCard(tour);
   tourDetail.innerHTML += renderTourGuideCard(tour);
@@ -89,14 +89,14 @@ function renderGuideDetails(info) {
 }
 
 function handleRenderTourDetail(event, tours) {
-  const sectionId = event.target.closest('section').getAttribute('id');
+  const sectionId = event.target.closest('section[data-id]').getAttribute('data-id');
   const foundTour = getTourById(tours, sectionId)
   renderTourDetailView(foundTour);
 }
 
 function attachDetailEventListener() {
   window.addEventListener('click', (event) => {
-    if (event.target.matches('[data-set="detail"]') ) {
+    if (event.target.matches('[data-action="view-detail"]') ) {
       event.preventDefault();
       handleRenderTourDetail(event, tours);
     }
@@ -105,5 +105,6 @@ function attachDetailEventListener() {
 
 export {
   attachDetailEventListener,
-  getTourById
+  getTourById,
+  renderTourDetailView
 }

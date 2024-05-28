@@ -7,7 +7,6 @@ import { getTourSearchView } from './search.js'
 const main = document.querySelector('main');
 const body = document.querySelector('body');
 
-
 function attachTemplate(template) {
   const main = document.querySelector('main');
   return template(main);

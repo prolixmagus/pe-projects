@@ -41,6 +41,10 @@ body * {
 	border: 1px solid var(--wireframe);
 }
 
+body p, h1, h2, h3, h4, li, ul {
+	padding: 5px;
+}
+
 p a, li a {
 	color: blue;
 	text-decoration: none;

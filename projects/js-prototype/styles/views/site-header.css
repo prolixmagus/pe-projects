@@ -9,6 +9,7 @@ mast-head {
 	justify-content: space-between;
 	& .user-menu ul {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		gap: 5px;
 	}

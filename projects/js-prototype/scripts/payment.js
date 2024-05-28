@@ -67,8 +67,8 @@ function calculatePayment(guests, price) {
 }
 
 function renderConfirmationSection(tour) {
-	const receipt = document.querySelector('.receipt');
-	receipt.innerHTML += `
+	const paymentSection = document.querySelector('.total-payment');
+	paymentSection.innerHTML = `
 	<section class='confirmation'>
 		<inner-column>
 			<h2>Booking Complete!</h2>
@@ -96,8 +96,17 @@ function handleRenderConfirmationSection(event, tours) {
 function saveConfirmedTrip(tourId) {
 	const currentUser = getCurrentUserData();
 	const userData = getUserData(currentUser.username);
-	userData.confirmedTrips = userData.confirmedTrips || [];
-	userData.confirmedTrips.push(tourId);
+	userData.confirmedTours = userData.confirmedTours || [];
+
+	const bookedTrip = {
+		tourId: tourId,
+		startDate: currentUser.searchData.startDate || '',
+		endDate: currentUser.searchData.endDate || '',
+		guests: currentUser.searchData.guests || 1
+	}
+
+
+	userData.confirmedTours.push(bookedTrip);
 	localStorage.setItem(userData.username, JSON.stringify(userData));
 }
 
