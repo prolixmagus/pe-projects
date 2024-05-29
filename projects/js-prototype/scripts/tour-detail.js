@@ -1,6 +1,7 @@
 import { tours } from './data.js'
 import { generateList } from './find-a-guide.js'
 import { handleRenderPaymentView} from './payment.js'
+import { deleteTrip, renderTripCards, getConfirmedToursList } from './trips.js'
 
 function getTourById(tours, id) {
   return tours.find((tour) => tour.id === id);
@@ -99,6 +100,12 @@ function attachDetailEventListener() {
     if (event.target.matches('[data-action="view-detail"]') ) {
       event.preventDefault();
       handleRenderTourDetail(event, tours);
+    }
+
+    if (event.target.matches('[data-action="cancel-trip"]') ) {
+      const tripIdToDelete = event.target.closest('section[data-id]').getAttribute('data-id');
+      deleteTrip(tripIdToDelete)
+      renderTripCards(getConfirmedToursList(), tours);
     }
   })
 }

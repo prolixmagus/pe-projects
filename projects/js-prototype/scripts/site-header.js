@@ -1,9 +1,9 @@
-import { attachTemplate, navigateTo } from './find-a-guide.js'
-import { state, getCurrentView, saveState } from './state.js';
+import { attachTemplate } from './find-a-guide.js';
+import { state, loadState, saveState } from './state.js';
 import { renderLoginView, handleLogin, validate } from './login.js';
-import { renderSiteFooter } from './site-footer.js'
-import { getTourSearchView } from './search.js'
-import { getTripsListView } from './trips.js'
+import { renderSiteFooter } from './site-footer.js';
+import { getTourSearchView } from './search.js';
+import { getTripsListView } from './trips.js';
 
 const siteHeaderLinks = [
     {
@@ -29,6 +29,7 @@ const siteHeaderLinks = [
   ];
 
 function renderNavLinks(menu) {
+
   if (state.login === true) {
 
     //filter header links when logged in
@@ -98,23 +99,28 @@ function attachLinkEventListeners() {
       const main = document.querySelector('main');
 
       if (event.target.dataset.link === 'search') {
-        navigateTo('search');
+        // attachTemplate(getTourSearchView);
+        navigateTo('search')
       }
       if (event.target.dataset.link === 'inbox') {
-        navigateTo('inbox');
+        // attachTemplate(getInboxView);
+        navigateTo('inbox')
       }
       if (event.target.dataset.link === 'trips') {
-        navigateTo('trips');
+        // attachTemplate(getTripsListView);
+        navigateTo('trips')
       }
       if (event.target.dataset.link === 'profile') {
+        // attachTemplate(getProfileView);
         navigateTo('profile');
       }
       if (event.target.dataset.link === 'logoutroute') {
         state.login = false;
+        state.currentView = 'login';
         saveState();
-
-        main.innerHTML = ''
         localStorage.removeItem('currentUser')
+        
+        main.innerHTML = ''
         renderSiteHeader(main);
         attachLinkEventListeners();
         renderLoginView(main);
@@ -127,6 +133,38 @@ function attachLinkEventListeners() {
   })
 }
 
+//navigation render 'router'
+
+function navigateTo(view) {
+  state.currentView = view;
+  saveState();
+  renderView(view);
+}
+
+function renderView(view) {
+  const main = document.querySelector('main');
+  main.innerHTML = '';
+
+  switch (view) {
+    case 'search':
+      getTourSearchView(main);
+      break;
+    case 'inbox':
+      getInboxView(main);
+      break;
+    case 'trips':
+      getTripsListView(main);
+      break;
+    case 'profile':
+      getProfileView(main);
+      break;
+    case 'login':
+    default:
+      renderLoginView(main);
+      break;
+  }
+}
+
 //TEST PAGES
 
 
@@ -136,7 +174,8 @@ function getProfileView(container) {
   container.innerHTML += `
   <section>
     <inner-column>
-      <p>This is the profile page</p>
+      <h2>Profile Page</h2>
+      <p>This will be a user profile page!</p>
     </inner-column>
   </section>
   `
@@ -148,7 +187,8 @@ function getInboxView(container) {
   container.innerHTML += `
   <section>
     <inner-column>
-      <p>This is the inbox page</p>
+      <h2>Inbox</h2>
+      <p>This is the inbox page! You will be able to view and send messages to your personal tour guide.</p>
     </inner-column>
   </section>
   `
@@ -159,6 +199,5 @@ export {
 	renderSiteHeader,
   attachLinkEventListeners,
   getTourSearchView,
-  getInboxView,
-  getProfileView
+  renderView
 }
