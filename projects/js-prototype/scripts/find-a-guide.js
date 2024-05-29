@@ -1,8 +1,8 @@
-import { renderSiteHeader, attachLinkEventListeners } from './site-header.js';
+import { renderSiteHeader, attachLinkEventListeners, renderView } from './site-header.js';
 import { renderLoginView, attachLoginFormEventListener } from './login.js';
 import { renderSiteFooter } from './site-footer.js';
-import { state } from './state.js';
-import { getTourSearchView } from './search.js'
+import { state, loadState, saveState } from './state.js';
+import { getTourSearchView } from './search.js';
 // import { getTripsListView } from './trips.js'
 
 const main = document.querySelector('main');
@@ -18,10 +18,11 @@ function generateList(list) {
 }
 
 function initialize() {
+  loadState();
   const main = document.querySelector('main')
   main.innerHTML = '';
   renderSiteHeader(main);
-  renderLoginView(main);
+  renderView(state.currentView);
   renderSiteFooter(main);
 }
 
@@ -33,5 +34,6 @@ initialize();
 
 export {
   attachTemplate,
-  generateList
+  generateList,
+  initialize
 }

@@ -1,9 +1,9 @@
-import { attachTemplate } from './find-a-guide.js'
-import { state } from './state.js';
+import { attachTemplate } from './find-a-guide.js';
+import { state, loadState, saveState } from './state.js';
 import { renderLoginView, handleLogin, validate } from './login.js';
-import { renderSiteFooter } from './site-footer.js'
-import { getTourSearchView } from './search.js'
-import { getTripsListView } from './trips.js'
+import { renderSiteFooter } from './site-footer.js';
+import { getTourSearchView } from './search.js';
+import { getTripsListView } from './trips.js';
 
 const siteHeaderLinks = [
     {
@@ -99,21 +99,28 @@ function attachLinkEventListeners() {
       const main = document.querySelector('main');
 
       if (event.target.dataset.link === 'search') {
-        attachTemplate(getTourSearchView);
+        // attachTemplate(getTourSearchView);
+        navigateTo('search')
       }
       if (event.target.dataset.link === 'inbox') {
-        attachTemplate(getInboxView);
+        // attachTemplate(getInboxView);
+        navigateTo('inbox')
       }
       if (event.target.dataset.link === 'trips') {
-        attachTemplate(getTripsListView);
+        // attachTemplate(getTripsListView);
+        navigateTo('trips')
       }
       if (event.target.dataset.link === 'profile') {
-        attachTemplate(getProfileView);
+        // attachTemplate(getProfileView);
+        navigateTo('profile');
       }
       if (event.target.dataset.link === 'logoutroute') {
         state.login = false;
-        main.innerHTML = ''
+        state.currentView = 'login';
+        saveState();
         localStorage.removeItem('currentUser')
+        
+        main.innerHTML = ''
         renderSiteHeader(main);
         attachLinkEventListeners();
         renderLoginView(main);
@@ -124,6 +131,38 @@ function attachLinkEventListeners() {
       }
     }
   })
+}
+
+//navigation render 'router'
+
+function navigateTo(view) {
+  state.currentView = view;
+  saveState();
+  renderView(view);
+}
+
+function renderView(view) {
+  const main = document.querySelector('main');
+  main.innerHTML = '';
+
+  switch (view) {
+    case 'search':
+      getTourSearchView(main);
+      break;
+    case 'inbox':
+      getInboxView(main);
+      break;
+    case 'trips':
+      getTripsListView(main);
+      break;
+    case 'profile':
+      getProfileView(main);
+      break;
+    case 'login':
+    default:
+      renderLoginView(main);
+      break;
+  }
 }
 
 //TEST PAGES
@@ -159,5 +198,6 @@ export {
 	renderNavLinks,
 	renderSiteHeader,
   attachLinkEventListeners,
-  getTourSearchView
+  getTourSearchView,
+  renderView
 }

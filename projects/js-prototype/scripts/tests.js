@@ -1,4 +1,5 @@
 import { initialize } from './find-a-guide.js'
+
 function test(description, assertion) {
 	if (typeof assertion === 'function') {
 		if (assertion()) {
