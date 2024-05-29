@@ -44,7 +44,7 @@ function renderTripCards(tripsList, tours) {
 			      	<h3>${tour.guide.name}</h3>
 			      </li>
 			      <li>
-			      	<h3>${tripData.startDate} - ${tripData.endDate}</h3>
+			      	<h3>${tripData.startDate} -- ${tripData.endDate}</h3>
 			      </li>
 			   </ul>
 			</inner-column>

@@ -1,5 +1,5 @@
-import { attachTemplate } from './find-a-guide.js'
-import { state } from './state.js';
+import { attachTemplate, navigateTo } from './find-a-guide.js'
+import { state, getCurrentView, saveState } from './state.js';
 import { renderLoginView, handleLogin, validate } from './login.js';
 import { renderSiteFooter } from './site-footer.js'
 import { getTourSearchView } from './search.js'
@@ -29,7 +29,6 @@ const siteHeaderLinks = [
   ];
 
 function renderNavLinks(menu) {
-
   if (state.login === true) {
 
     //filter header links when logged in
@@ -99,19 +98,21 @@ function attachLinkEventListeners() {
       const main = document.querySelector('main');
 
       if (event.target.dataset.link === 'search') {
-        attachTemplate(getTourSearchView);
+        navigateTo('search');
       }
       if (event.target.dataset.link === 'inbox') {
-        attachTemplate(getInboxView);
+        navigateTo('inbox');
       }
       if (event.target.dataset.link === 'trips') {
-        attachTemplate(getTripsListView);
+        navigateTo('trips');
       }
       if (event.target.dataset.link === 'profile') {
-        attachTemplate(getProfileView);
+        navigateTo('profile');
       }
       if (event.target.dataset.link === 'logoutroute') {
         state.login = false;
+        saveState();
+
         main.innerHTML = ''
         localStorage.removeItem('currentUser')
         renderSiteHeader(main);
@@ -157,5 +158,7 @@ export {
 	renderNavLinks,
 	renderSiteHeader,
   attachLinkEventListeners,
-  getTourSearchView
+  getTourSearchView,
+  getInboxView,
+  getProfileView
 }

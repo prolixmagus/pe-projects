@@ -1,5 +1,5 @@
 import { attachTemplate } from './find-a-guide.js';
-import { state } from './state.js';
+import { state, saveState } from './state.js';
 import { renderSiteHeader, attachLinkEventListeners, getTourSearchView } from './site-header.js';
 import { renderSiteFooter } from './site-footer.js';
 
@@ -71,7 +71,9 @@ function handleLogin() {
   if (userData) {
     if ( validate(password, userData.password, username, userData.username) ) {
       const main = document.querySelector('main');
+
       state.login = true;
+      saveState();
 
       setCurrentUser('currentUser', userData);
       renderSiteHeader(main);

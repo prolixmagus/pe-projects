@@ -48,7 +48,7 @@ const tours = [
     photo: 'images/landscape.jpg',
     rating: '★★★★',
     teaser: `A spooky, cheesy adventure!`,
-    description: `Join us for a haunted tour through the city's most ghostly pizzerias. Taste the most terrifyingly delicious slices while learning about the haunted history of each location.`,
+    description: `Join us for a haunted tour through the city's most ghostly pizzerias. Taste the most terrifyingly delicious slices while learning about the haunted history of each spooky location.`,
     itinerary: {
       intro: `We will visit five haunted pizzerias, each with its own spooky story and unique pizza.`,
       schedule: `<ol><li>Ghostly Pizzeria</li><li>Phantom Slice</li><li>Spooky Crust</li></ol>`

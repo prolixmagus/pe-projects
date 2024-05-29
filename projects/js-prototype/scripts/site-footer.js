@@ -1,5 +1,5 @@
 import {renderNavLinks, attachLinkEventListeners} from './site-header.js'
-import { state } from './state.js';
+import { state, getCurrentView } from './state.js';
 
   const siteFooterLinks = [
     {
@@ -47,7 +47,7 @@ function renderSiteFooter(container) {
 }
 
 function renderSiteFooterLinks(menu) {
-
+  
   if (state.login === true) {
 
     let userMenu = menu.map((link) => `
