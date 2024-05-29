@@ -21,49 +21,59 @@ function renderTripCards(tripsList, tours) {
 
 	//filter is for retrieving multiple tours that meet a condition
 	//find is to get the specific data for tha tour
-
-  const tripCards = filteredTourData.map((tour) => {
-  	const tripData = tripsList.find((trip) => trip.tourId === tour.id)
-  	return `
-  	<section class='confirmed-trips' data-id='${tour.id}'>
-    	<section class='trip-content'>
- 	   	<inner-column>
-		      <figure>
-		        <picture>
-		          <img src='${tour.photo}'>
-		        </picture>
-		      </figure>
-		      <ul class='trip-details'>
-			      <li>
-			      	<h2>${tour.title}</h2>
-			      </li>
-			      <li>
-			      	<h3>${tour.location}</h3>
-			      </li>
-			      <li>
-			      	<h3>${tour.guide.name}</h3>
-			      </li>
-			      <li>
-			      	<h3>${tripData.startDate} -- ${tripData.endDate}</h3>
-			      </li>
-			   </ul>
-			</inner-column>
-		</section>
-		<section>
+	if (filteredTourData.length === 0) {
+		main.innerHTML += `
+		<section class='confirmed-trips'>
 			<inner-column>
-				<ul class='further-actions'>
-			      <button type='button' data-action='view-detail'>More Details</button>
- 					<button type='button' data-action='cancel-trip'>Cancel Trip</button>
-
-			  	</ul>
+				<h2>No trips booked!</h2>
+				<button type='button' data-link='search'>Search Tours</button>
 			</inner-column>
 		</section>
-	</section>
-  		`}).join('');
-	
-	attachDetailEventListener();
+		`
+	} else {
+   	const tripCards = filteredTourData.map((tour) => {
+  		const tripData = tripsList.find((trip) => trip.tourId === tour.id)
+  		return `
+		  	<section class='confirmed-trips' data-id='${tour.id}'>
+		    	<section class='trip-content'>
+		 	   	<inner-column>
+				      <figure>
+				        <picture>
+				          <img src='${tour.photo}'>
+				        </picture>
+				      </figure>
+				      <ul class='trip-details'>
+					      <li>
+					      	<h2>${tour.title}</h2>
+					      </li>
+					      <li>
+					      	<h3>${tour.location}</h3>
+					      </li>
+					      <li>
+					      	<h3>${tour.guide.name}</h3>
+					      </li>
+					      <li>
+					      	<h3>${tripData.startDate} -- ${tripData.endDate}</h3>
+					      </li>
+					   </ul>
+					</inner-column>
+				</section>
+				<section>
+					<inner-column>
+						<ul class='further-actions'>
+					      <button type='button' data-action='view-detail'>More Details</button>
+		 					<button type='button' data-action='cancel-trip'>Cancel Trip</button>
 
-	main.innerHTML += tripCards;
+					  	</ul>
+					</inner-column>
+				</section>
+			</section>
+		  		`}).join('');
+	
+			attachDetailEventListener();
+
+			main.innerHTML += tripCards;
+	}
 }
 
 function getTripsListView(container) {
