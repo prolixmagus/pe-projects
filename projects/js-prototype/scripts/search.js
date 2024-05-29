@@ -23,11 +23,11 @@ function getTourSearchView(container) {
         <div class='tour-dates'>
           <field class='startDate'>
             <label>From:</label>
-            <input id='start-date' type='text' placeholder='mm/dd/yyyy'>
+            <input id='start-date' type='date' placeholder='mm/dd/yyyy'>
           </field>
           <field class='endDate'>
             <label>To:</label>
-            <input id='end-date' type='text' placeholder='mm/dd/yyyy'>
+            <input id='end-date' type='date' placeholder='mm/dd/yyyy'>
           </field>
         </div>
         <field class='guests'>

@@ -1,6 +1,7 @@
 import { getCurrentUserData, getUserData } from './login.js'
 import { tours } from './data.js'
 import { getTourById } from './tour-detail.js'
+import { getTripsListView } from './trips.js'
 
 function renderPaymentView(tour, userData) {
 	const main = document.querySelector('main');
@@ -75,7 +76,7 @@ function renderConfirmationSection(tour) {
 			<p>Enjoy your trip!</p>
 			<ul class='further-actions'>
 				<li>
-					<button type='button'>View Your Trips</button>
+					<button type='button' data-action='view-trips'>View Your Trips</button>
 				</li>
 				<li>
 					<button type='button'>Message Guide</button>
@@ -120,12 +121,18 @@ function handleRenderPaymentView(event, tours) {
 window.addEventListener('click', (event) => {
 	if (event.target.matches('[data-action="book-tour"]')) {
 		event.preventDefault();
-      handleRenderPaymentView(event, tours);
+      	handleRenderPaymentView(event, tours);
    }
 
    if (event.target.matches('[data-action="confirm-booking"]')) {
 		event.preventDefault();
-      handleRenderConfirmationSection(event, tours);
+      	handleRenderConfirmationSection(event, tours);
+   }
+
+    if (event.target.matches('[data-action="view-trips"]')) {
+    	const main = document.querySelector('main');
+   		event.preventDefault();
+   		getTripsListView(main)
    }
 })
 

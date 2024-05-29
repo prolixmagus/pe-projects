@@ -44,7 +44,7 @@ function renderTripCards(tripsList, tours) {
 			      	<h3>${tour.guide.name}</h3>
 			      </li>
 			      <li>
-			      	<h3>${tripData.startDate} - ${tripData.endDate}</h3>
+			      	<h3>${tripData.startDate} -- ${tripData.endDate}</h3>
 			      </li>
 			   </ul>
 			</inner-column>
@@ -53,7 +53,8 @@ function renderTripCards(tripsList, tours) {
 			<inner-column>
 				<ul class='further-actions'>
 			      <button type='button' data-action='view-detail'>More Details</button>
-			      <button type='button' data-action='cancel'>Cancel Trip</button>
+ 					<button type='button' data-action='cancel-trip'>Cancel Trip</button>
+
 			  	</ul>
 			</inner-column>
 		</section>
@@ -79,6 +80,18 @@ function getTripsListView(container) {
   	renderTripCards(getConfirmedToursList(), tours);
 }
 
+function deleteTrip(tripId) {
+	const currentUser = getCurrentUserData();
+	const userData = getUserData(currentUser.username);
+	let tripsList = userData.confirmedTours
+		const filteredArray = tripsList.filter((trip) => trip.tourId != tripId);
+		userData.confirmedTours = filteredArray;
+		localStorage.setItem(userData.username, JSON.stringify(userData))
+}
+
 export {
-	getTripsListView
+	getTripsListView,
+	deleteTrip,
+	renderTripCards,
+	getConfirmedToursList
 }
