@@ -1,5 +1,5 @@
 import {renderNavLinks, attachLinkEventListeners} from './site-header.js'
-import { state, getCurrentView } from './state.js';
+import { state } from './state.js';
 
   const siteFooterLinks = [
     {
