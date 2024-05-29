@@ -3,6 +3,7 @@ import { renderLoginView, attachLoginFormEventListener } from './login.js';
 import { renderSiteFooter } from './site-footer.js';
 import { state } from './state.js';
 import { getTourSearchView } from './search.js'
+// import { getTripsListView } from './trips.js'
 
 const main = document.querySelector('main');
 const body = document.querySelector('body');
@@ -24,6 +25,8 @@ function initialize() {
   renderSiteFooter(main);
 }
 
+  // getTripsListView(main);
+// switch out while working on styles for pages to address refresh issue
 
 
 initialize();

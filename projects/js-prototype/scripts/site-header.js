@@ -135,7 +135,8 @@ function getProfileView(container) {
   container.innerHTML += `
   <section>
     <inner-column>
-      <p>This is the profile page</p>
+      <h2>Profile Page</h2>
+      <p>This will be a user profile page!</p>
     </inner-column>
   </section>
   `
@@ -147,7 +148,8 @@ function getInboxView(container) {
   container.innerHTML += `
   <section>
     <inner-column>
-      <p>This is the inbox page</p>
+      <h2>Inbox</h2>
+      <p>This is the inbox page! You will be able to view and send messages to your personal tour guide.</p>
     </inner-column>
   </section>
   `
