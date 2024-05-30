@@ -1,7 +1,9 @@
-import { tours } from './data.js'
-import { generateList, scrollToTop } from './find-a-guide.js'
-import { handleRenderPaymentView} from './payment.js'
-import { deleteTrip, renderTripCards, getConfirmedToursList } from './trips.js'
+import { tours } from './data.js';
+import { generateList, scrollToTop } from './find-a-guide.js';
+import { handleRenderPaymentView} from './payment.js';
+import { deleteTrip, renderTripCards, getConfirmedToursList } from './trips.js';
+import { saveState, state } from './state.js';
+import { getInboxView } from './site-header.js';
 
 function getTourById(tours, id) {
   return tours.find((tour) => tour.id === id);
@@ -19,21 +21,23 @@ function renderTourDetailView(tour) {
 
 function renderTourDetailCard(tour) {
   return `
-    <section class='tour-intro'>
-      <inner-column>
+    <section class='tour-card card-detail' data-id='${tour.id}'>
       <h2>${tour.title}</h2>
-      <picture>
-        <img src='${tour.photo}'>
-      </picture>
-      <p>${tour.rating}</p>
+      <figure>
+        <picture>
+          <img src='${tour.photo}'>
+        </picture>
+        <p>${tour.rating}</p>
+      </figure>
+      <h3 class='subtitle'>${tour.location}</h3>
+      <p class='tour-price subtitle'>${tour.price} per person</p>
       <p>${tour.teaser}</p>
-      </inner-column>
     </section>
 
     <section class='itinerary' data-id='${tour.id}'>
       <inner-column>
         <h2>Itinerary</h2>
-        <p>Length: ${tour.length}</p>
+        <p class='subtitle'>Length: ${tour.length}</p>
         <p>${tour.itinerary.intro}</p>
         ${tour.itinerary.schedule}
         <button type='button' data-action='book-tour'>Book Tour</button>
@@ -46,21 +50,23 @@ function renderTourGuideCard(tour) {
   return `
     <section class='guide'>
       <inner-column>
-        <h2>Meet Your Guide</h2>
+        <div class='guide-card'>
+          <h2>Meet Your Guide</h2>
 
-        <section class='guide-intro'>
-          <div class='temp-icon'>
-            <svg viewBox='0 0 10 10'>
-              <circle cx='5' cy='5' r='5' />
-            </svg>
-          </div>
-          <h3>${tour.guide.name}</h3>
-        </section>
+          <section class='guide-intro'>
+            <div class='temp-icon profile-holder'>
+              <svg viewBox='0 0 10 10'>
+                <circle cx='5' cy='5' r='5' />
+              </svg>
+            </div>
+            <h3>${tour.guide.name}</h3>
+          </section>
 
-        <ul class='guide-details'>
-          ${renderGuideDetails(tour.guide.info)}
-        </ul>
-        <button type='button' data-action='message-guide'>Message Guide</button>
+          <ul class='guide-details'>
+            ${renderGuideDetails(tour.guide.info)}
+          </ul>
+          <button type='button' data-action='message-guide'>Message Guide</button>
+        </div>
       </inner-column>
     </section>
     `
@@ -107,6 +113,11 @@ function attachDetailEventListener() {
       const tripIdToDelete = event.target.closest('section[data-id]').getAttribute('data-id');
       deleteTrip(tripIdToDelete)
       renderTripCards(getConfirmedToursList(), tours);
+    }
+
+    if (event.target.matches('[data-action="message-guide"]') ) {
+        const main = document.querySelector('main');
+        getInboxView(main);
     }
   })
 }

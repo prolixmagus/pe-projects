@@ -3,10 +3,10 @@ button {
 	border: none;
 	background-color: var(--color-primary);
 	color: var(--white);
-	max-width: 120px;
+	max-width: 130px;
 	padding-inline: 0;
-	font-size: 1em;
-	padding: 4px 8px;
+	font-size: .9em;
+	padding: 4px 16px;
 	border-radius: 4px;
 }
 
@@ -27,6 +27,9 @@ button {
 	fill: var(--color-secondary);
 }
 
+.profile-holder {
+	max-width: 100px;
+}
 /*.submit-button {
 	background-color: var(--fish-green);
 	box-shadow: 2px 2px black;

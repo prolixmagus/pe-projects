@@ -19,9 +19,11 @@ html {
 
 
 	--color-primary: hsl(var(--primary), 41%, 30%);
-	--color-primary-light: hsl(var(--primary), 41%, 30%, 0.3);
+	--color-primary-light: hsl(var(--primary), 41%, 30%, 0.4);
+	--color-primary-complement: hsl(221, 70%, 66%);
 	--color-secondary: hsl(var(--secondary), 72%, 65%); 
 	--color-secondary-light: hsl(var(--secondary), 72%, 65%, 0.8);
+	--color-secondary-complement: hsl(26, 41%, 30%);
 
 /*	--color: hsl(206, 66%, 77%);
 	--highlight: hsl(190, 59%, 79%);*/

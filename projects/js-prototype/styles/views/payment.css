@@ -5,3 +5,8 @@
 .disclaimer {
 	color: red;
 }
+
+.further-actions {
+	display: flex;
+	gap: 24px;
+}

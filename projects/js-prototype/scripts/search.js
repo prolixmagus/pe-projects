@@ -51,9 +51,9 @@ function renderTourCards(tours) {
       </figure>
       <h2>${tour.title}</h2>
       <h3 class='subtitle'>${tour.location}</h3>
-      <p class='tour-price subtitle'>${tour.price}</p>
+      <p class='tour-price subtitle'>${tour.price} per person</p>
       <p>${tour.teaser}</p>
-      <button type='button' data-action='view-detail'>Check it out!</button>
+      <button type='button' data-action='view-detail'>Let's go!</button>
   </section>
   `).join('');
 
@@ -119,7 +119,6 @@ function attachSearchEventListener() {
     if (event.target.matches('[data-set="tour-search"]') ) {
       event.preventDefault();
       handleSearch(event, tours);
-
     }
   });
 }

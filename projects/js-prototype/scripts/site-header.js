@@ -200,5 +200,6 @@ export {
 	renderSiteHeader,
   attachLinkEventListeners,
   getTourSearchView,
-  renderView
+  renderView,
+  getInboxView,
 }

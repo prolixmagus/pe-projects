@@ -54,7 +54,7 @@ function renderPaymentView(tour, userData) {
 		<section class='total-payment'>
 			<inner-column>
 				<h2>Total: $${calculatePayment(guests, price)}</h2>
-				<button type='button' data-action='confirm-booking'>Confirm booking</button>
+				<button type='button' data-action='confirm-booking'>Confirm</button>
 			</inner-column>
 		</section>
 	`
@@ -76,10 +76,10 @@ function renderConfirmationSection(tour) {
 			<p>Enjoy your trip!</p>
 			<ul class='further-actions'>
 				<li>
-					<button type='button' data-action='view-trips'>View Your Trips</button>
+					<button type='button' data-action='view-trips'>View Trips</button>
 				</li>
 				<li>
-					<button type='button'>Message Guide</button>
+					<button type='button'>Send Message</button>
 				</li>
 			</ul>
 		</inner-column>

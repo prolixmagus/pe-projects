@@ -21,7 +21,7 @@ function renderLoginView(container) {
               <input id='password' class='password' type='password' required>
             </field>
 
-            <button class='login-btn' data-set="login" type='submit'>Submit</button>
+            <button class='login-btn' data-set="login" type='submit'>Login</button>
           </form>
 
           <p class='login-message'></p>
@@ -73,6 +73,7 @@ function handleLogin() {
       const main = document.querySelector('main');
 
       state.login = true;
+      state.currentView = 'search';
       saveState();
 
       setCurrentUser('currentUser', userData);
