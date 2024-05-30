@@ -14,6 +14,7 @@
 
 /* T ypography */
 @import "typography.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* C omponents */
 @import "components.css";
@@ -36,13 +37,8 @@
     background-size: 100% 18px, 100% 18px;
 }*/
 
-
-body * {
-	border: 1px solid var(--wireframe);
-}
-
-body p, h1, h2, h3, h4, li, ul {
-	padding: 5px;
+body {
+	background-color: var(--gray-light);
 }
 
 p a, li a {

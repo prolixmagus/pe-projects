@@ -35,6 +35,16 @@ function renderSiteFooter(container) {
       <inner-column>
         <nav class='user-menu'>
           <ul>
+            <li>
+              <logo-container>
+                <div class='temp-icon'>
+                  <svg viewBox='0 0 10 10'>
+                    <circle cx='5' cy='5' r='5' />
+                  </svg>
+                </div>
+                <h1 class='attention-voice'>Find-A-Guide</h1>
+              </logo-container>
+            </li>
             ${renderSiteFooterLinks(siteFooterLinks)}
           </ul>
         </nav>

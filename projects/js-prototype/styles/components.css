@@ -1,16 +1,15 @@
-.login-btn {
-	font-family: sans-serif;
-	box-shadow: 0 2px 0 0 var(--wireframe);
+.site-header button, .site-footer button {
+	font-family: "Open Sans";
 	border: none;
-	border-radius: 5px;
-	text-decoration: underline;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: unset;
+	color: var(--white);
 	max-width: 100px;
+	padding-inline: 0;
 }
 
 .temp-icon {
-	max-width: 40px;
-	fill: var(--wireframe);
+	max-width: 25px;
+	fill: var(--color-secondary);
 }
 
 /*.submit-button {

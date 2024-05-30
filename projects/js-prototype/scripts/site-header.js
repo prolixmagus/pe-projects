@@ -76,7 +76,7 @@ function renderSiteHeader(container) {
                 <circle cx='5' cy='5' r='5' />
               </svg>
             </div>
-            <h1>Find-A-Guide</h1>
+            <h1 class='attention-voice'>Find-A-Guide</h1>
           </logo-container>
           <nav class='user-menu'>
             <ul>

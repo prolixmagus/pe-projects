@@ -1,16 +1,41 @@
+.site-header {
+	background-color: var(--color-primary);
+}
 logo-container {
 	display: flex;
 	align-items: center;
+	gap: .25em;
 }
 
 mast-head {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap: 5px;
+	& h1 {
+		color: var(--color-secondary);
+	}
 	& .user-menu ul {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 5px;
+		gap: 1.5em;
+	} 
+}
+
+@media (min-width: 600px) {
+	mast-head {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		& h1 {
+			color: var(--color-secondary);
+		}
+		& .user-menu {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 1.5em;
+		} 
 	}
 }

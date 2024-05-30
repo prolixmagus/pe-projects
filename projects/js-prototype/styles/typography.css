@@ -1,6 +1,6 @@
 
 .quiet-voice {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.75rem;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -11,12 +11,12 @@
 .quiet-voice.caption {
   color: var(--caption);
   margin-top: 2.5px;
-  font-family: "inconsolata", monospace, sans-serif;
+  font-family: "Courier New", serif;
   letter-spacing: .02em;
 }
 
 .calm-voice, p, li {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -27,7 +27,7 @@
 }
 
 .strong-voice, cite, h3{
-  font-family: "Lato", "Noto Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -36,7 +36,7 @@
 }
 
 .attention-voice, h2 {
-	font-family: "Lato", "Noto Sans", "Noto Sans", sans-serif;
+	font-family: "Montserrat", "Roboto", sans-serif;
   font-size: clamp(24px, 8vw, 2rem);
   font-optical-sizing: auto;
   font-weight: 500;
@@ -45,7 +45,7 @@
 }
 
 .loud-voice {
-	font-family: "Lato", "Noto Sans", "Noto Sans", sans-serif;
+	font-family: "Montserrat", "Roboto", sans-serif;
 	font-size: clamp(30px, 10vw, 3rem);
 	font-optical-sizing: auto;
 	font-weight: 500;

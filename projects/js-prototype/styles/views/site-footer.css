@@ -1,5 +1,14 @@
+.site-footer {
+	background-color: var(--color-primary);
+	padding-block: 2.5vh 10vh
+}
 .site-footer ul {
 	max-width: 500px;
+	display: grid;
+	gap: 1em;
+	& h1 {
+		color: var(--color-secondary);
+	}
 	& h2 {
 		font-size: 1em;
 	}

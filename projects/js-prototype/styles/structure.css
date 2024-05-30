@@ -36,12 +36,6 @@ experience-gained, div {
 	grid-template-columns: subgrid;
 }
 
-@media (min-width: 490px) {
-	inner-column {
-		padding: 1rem;
-	}
-}
-
 
 
 

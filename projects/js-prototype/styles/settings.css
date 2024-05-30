@@ -6,13 +6,17 @@ html {
 	--pink: 4;
 	--yellow: 42;*/
 	--hue: 0;
-	--blue: 196;
+
+	--primary: 206;
+	--secondary: 38;
 
 	--black: hsl(var(--hue), 0%, 7%);
+	--gray-light: hsl(var(--hue), 0%, 98%);
 	--white: hsl(var(--hue), 0%, 94%);
 
-	--neutral-stuffs: gray;
-	--caption: hsl(var(--hue), 0%, 0%, 0.6);
+
+	--color-primary: hsl(var(--primary), 41%, 30%); /* blue */
+	--color-secondary: hsl(var(--secondary), 72%, 65%); /* red */
 
 /*	--color: hsl(206, 66%, 77%);
 	--highlight: hsl(190, 59%, 79%);*/
