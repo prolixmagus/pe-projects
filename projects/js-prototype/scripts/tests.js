@@ -34,6 +34,5 @@ test('login rendered', () => {
 	return head.textContent == 'Find-A-Guide';
 });
 
-
 // route to home page
 // detect something is present in dom

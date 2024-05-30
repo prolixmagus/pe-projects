@@ -35,16 +35,6 @@ function renderSiteFooter(container) {
       <inner-column>
         <nav class='user-menu'>
           <ul>
-            <li>
-              <logo-container>
-                <div class='temp-icon'>
-                  <svg viewBox='0 0 10 10'>
-                    <circle cx='5' cy='5' r='5' />
-                  </svg>
-                </div>
-                <h1 class='attention-voice'>Find-A-Guide</h1>
-              </logo-container>
-            </li>
             ${renderSiteFooterLinks(siteFooterLinks)}
           </ul>
         </nav>
@@ -62,7 +52,7 @@ function renderSiteFooterLinks(menu) {
 
     let userMenu = menu.map((link) => `
       <li>
-        <button type='button' data-link='${link.datalink}'>${link.content}</button>
+        <button class='nav-button ${link.datalink === state.currentView ? 'active' : ''}' type='button' data-link='${link.datalink}'>${link.content}</button>
       </li>
     `).join('');
 
@@ -70,7 +60,7 @@ function renderSiteFooterLinks(menu) {
 
   } else {
 
-    let userMenu =`<h2>Welcome!</h2>`
+    let userMenu = ``
 
     return userMenu;
   }

@@ -11,12 +11,17 @@ html {
 	--secondary: 38;
 
 	--black: hsl(var(--hue), 0%, 7%);
+	--black-shadow: hsla(var(--hue), 0%, 0%, 0.4);
 	--gray-light: hsl(var(--hue), 0%, 98%);
+	--gray-medium: hsl(var(--hue), 0%, 93%);
+	--gray-shadow: hsl(var(--hue), 0%, 75%);
 	--white: hsl(var(--hue), 0%, 94%);
 
 
-	--color-primary: hsl(var(--primary), 41%, 30%); /* blue */
-	--color-secondary: hsl(var(--secondary), 72%, 65%); /* red */
+	--color-primary: hsl(var(--primary), 41%, 30%);
+	--color-primary-light: hsl(var(--primary), 41%, 30%, 0.3);
+	--color-secondary: hsl(var(--secondary), 72%, 65%); 
+	--color-secondary-light: hsl(var(--secondary), 72%, 65%, 0.8);
 
 /*	--color: hsl(206, 66%, 77%);
 	--highlight: hsl(190, 59%, 79%);*/
@@ -28,6 +33,7 @@ html {
 	--paper: var(--white);
 	--ink: var(--black);
 	--ink-light: hsla(var(--hue), 0%, 0%, .8);
+	--ink-subtitle: hsla(var(--hue), 0%, 0%, .6);
 	--wireframe: hsla(var(--blue), 46%, 77%);
 
 	--standard: 1000px;

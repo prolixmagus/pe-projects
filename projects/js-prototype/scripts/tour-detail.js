@@ -1,5 +1,5 @@
 import { tours } from './data.js'
-import { generateList } from './find-a-guide.js'
+import { generateList, scrollToTop } from './find-a-guide.js'
 import { handleRenderPaymentView} from './payment.js'
 import { deleteTrip, renderTripCards, getConfirmedToursList } from './trips.js'
 
@@ -14,6 +14,7 @@ function renderTourDetailView(tour) {
   const tourDetail = document.querySelector('.tour-detail');
   tourDetail.innerHTML += renderTourDetailCard(tour);
   tourDetail.innerHTML += renderTourGuideCard(tour);
+  scrollToTop();
 }
 
 function renderTourDetailCard(tour) {

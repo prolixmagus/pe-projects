@@ -26,6 +26,10 @@ function initialize() {
   renderSiteFooter(main);
 }
 
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
   // getTripsListView(main);
 // switch out while working on styles for pages to address refresh issue
 
@@ -35,5 +39,6 @@ initialize();
 export {
   attachTemplate,
   generateList,
-  initialize
+  initialize,
+  scrollToTop
 }

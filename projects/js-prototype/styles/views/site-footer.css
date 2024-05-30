@@ -1,11 +1,14 @@
 .site-footer {
 	background-color: var(--color-primary);
-	padding-block: 2.5vh 10vh
+	position: sticky;
+	bottom: 0;
+	border-top: 1px solid var(--gray-shadow);
 }
 .site-footer ul {
 	max-width: 500px;
-	display: grid;
-	gap: 1em;
+	justify-content: space-between;
+	display: flex;
+	padding: 8px;
 	& h1 {
 		color: var(--color-secondary);
 	}

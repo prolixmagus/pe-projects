@@ -1,10 +1,25 @@
-.site-header button, .site-footer button {
+button {
 	font-family: "Open Sans";
 	border: none;
-	background-color: unset;
+	background-color: var(--color-primary);
 	color: var(--white);
-	max-width: 100px;
+	max-width: 120px;
 	padding-inline: 0;
+	font-size: 1em;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.nav-button {
+	background-color: unset;
+	padding-inline: 0;
+	font-size: 1em;
+	&.active {
+		color: var(--color-secondary);
+	}
+	&.nav-login {
+	text-decoration: underline;
+	}
 }
 
 .temp-icon {

@@ -77,9 +77,9 @@ function handleLogin() {
 
       setCurrentUser('currentUser', userData);
       renderSiteHeader(main);
-      attachLinkEventListeners();
       attachTemplate(getTourSearchView);
       renderSiteFooter(main);
+      attachLinkEventListeners();
     } else {
       message.textContent = 'Incorrect password';
     }

@@ -13,23 +13,13 @@ function getTourSearchView(container) {
 
       <form class='search'>
         <field>
-          <label>Where are you going? (City, State, Country)</label>
+          <label>Where are you going?</label>
           <input id='location' type='text' placeholder='Enter location' required>
         </field>
         <field>
           <label>What do you want to do?</label>
           <input id='activity' type='text' placeholder='Enter an activity'>
         </field>
-        <div class='tour-dates'>
-          <field class='startDate'>
-            <label>From:</label>
-            <input id='start-date' type='date' placeholder='mm/dd/yyyy'>
-          </field>
-          <field class='endDate'>
-            <label>To:</label>
-            <input id='end-date' type='date' placeholder='mm/dd/yyyy'>
-          </field>
-        </div>
         <field class='guests'>
           <label>Guests:</label>
           <input id='guests' type='number' placeholder='Enter number of guests'>
@@ -40,6 +30,8 @@ function getTourSearchView(container) {
     </inner-column>
   </section>
   <section class='tour-results'>
+      <inner-column>
+      </inner-column>
   </section>
   `
 
@@ -51,7 +43,6 @@ function getTourSearchView(container) {
 function renderTourCards(tours) {
   const allTours = tours.map((tour) => `
   <section class='tour-card' data-id='${tour.id}'>
-    <inner-column>
       <figure>
         <picture>
           <img src='${tour.photo}'>
@@ -59,15 +50,14 @@ function renderTourCards(tours) {
         <p>${tour.rating}</p>
       </figure>
       <h2>${tour.title}</h2>
-      <h3>${tour.location}</h3>
+      <h3 class='subtitle'>${tour.location}</h3>
+      <p class='tour-price subtitle'>${tour.price}</p>
       <p>${tour.teaser}</p>
-      <p>${tour.price}</p>
       <button type='button' data-action='view-detail'>Check it out!</button>
-    </inner-column>
   </section>
   `).join('');
 
-  const tourResults = document.querySelector('.tour-results')
+  const tourResults = document.querySelector('.tour-results inner-column')
   // clear each time
   tourResults.innerHTML = ``
 
@@ -85,25 +75,25 @@ function renderTourCards(tours) {
 }
 
 function getTourResults(tours) {
-  const inputStartDate = new Date(document.querySelector('#start-date').value);
-  const inputEndDate = new Date(document.querySelector('#end-date').value);
+  // const inputStartDate = new Date(document.querySelector('#start-date').value);
+  // const inputEndDate = new Date(document.querySelector('#end-date').value);
   const inputLocation = document.querySelector('#location').value.toLowerCase();
   const inputActivity = document.querySelector('#activity').value.toLowerCase();
 
   return tours.filter((tour) => {
-    const startDate = new Date(tour.start);
-    const endDate = new Date(tour.end);
+    // const startDate = new Date(tour.start);
+    // const endDate = new Date(tour.end);
     const location = tour.location.toLowerCase();
     const activity = tour.description.toLowerCase();
 
     //creating a range for the dates to fall in or non-opp
 
-    const startDateMatch = isNaN(inputStartDate) || inputStartDate <= endDate
-    const endDateMatch = isNaN(inputStartDate) || inputEndDate >= startDate
+    // const startDateMatch = isNaN(inputStartDate) || inputStartDate <= endDate
+    // const endDateMatch = isNaN(inputStartDate) || inputEndDate >= startDate
     const locationMatch = location.includes(inputLocation);
     const activityMatch = activity.includes(inputActivity);
 
-    return locationMatch && endDateMatch && startDateMatch && activityMatch;
+    return locationMatch && activityMatch; /* endDateMatch && startDateMatch */
   })
 
 }
@@ -116,10 +106,10 @@ function handleSearch(event) {
 
 function storeCurrentSearchInformation() {
     const currentUserData = getCurrentUserData()
-    const inputStartDate = document.querySelector('#start-date').value;
-    const inputEndDate = document.querySelector('#end-date').value;
+    // const inputStartDate = document.querySelector('#start-date').value;
+    // const inputEndDate = document.querySelector('#end-date').value;
     const inputGuests = document.querySelector('#guests').value;
-    currentUserData['searchData'] = { startDate: inputStartDate, endDate: inputEndDate, guests: inputGuests };
+    currentUserData['searchData'] = { guests: inputGuests }; // startDate: inputStartDate, endDate: inputEndDate,
 
     localStorage.setItem('currentUser', JSON.stringify(currentUserData));
 }
@@ -137,3 +127,15 @@ function attachSearchEventListener() {
 export {
   getTourSearchView,
 }
+
+//date fields
+        // <div class='tour-dates'>
+        //   <field class='startDate'>
+        //     <label>From:</label>
+        //     <input id='start-date' type='date' placeholder='mm/dd/yyyy'>
+        //   </field>
+        //   <field class='endDate'>
+        //     <label>To:</label>
+        //     <input id='end-date' type='date' placeholder='mm/dd/yyyy'>
+        //   </field>
+        // </div>

@@ -34,15 +34,9 @@ function renderNavLinks(menu) {
 
     //filter header links when logged in
 
-    let userMenu = menu.map((link) => `
+    let userMenu = `
       <li>
-        <button type='button' data-link='${link.datalink}'>${link.content}</button>
-      </li>
-    `).join('');
-
-    userMenu += `
-      <li>
-        <button type='button' data-link='logoutroute'>Logout</button>
+        <button class='nav-button nav-login' type='button' data-link='logoutroute'>Logout</button>
       </li>
     `;
 
@@ -53,7 +47,7 @@ function renderNavLinks(menu) {
     //filter header links when not logged in
     let userMenu =`
       <li>
-        <button type='button' data-link='loginroute'>Login</button>
+        <button class='nav-button nav-login' type='button' data-link='loginroute'>Login</button>
       </li>
     `;
 
@@ -76,7 +70,7 @@ function renderSiteHeader(container) {
                 <circle cx='5' cy='5' r='5' />
               </svg>
             </div>
-            <h1 class='attention-voice'>Find-A-Guide</h1>
+            <h1 class>Find-A-Guide</h1>
           </logo-container>
           <nav class='user-menu'>
             <ul>
@@ -121,6 +115,7 @@ function attachLinkEventListeners() {
         localStorage.removeItem('currentUser')
         
         main.innerHTML = ''
+
         renderSiteHeader(main);
         attachLinkEventListeners();
         renderLoginView(main);
@@ -129,8 +124,14 @@ function attachLinkEventListeners() {
       if (event.target.dataset.link === 'loginroute') {
         handleLogin();
       }
+      renderSiteFooter(main);
     }
   })
+}
+
+function toggle(element) {
+  const selectedElement = document.querySelector(element);
+  selectedElement.classList.toggle('visually-hidden');
 }
 
 //navigation render 'router'
