@@ -47,10 +47,10 @@ function renderTripCards(tripsList, tours) {
 					      	<h2>${tour.title}</h2>
 					      </li>
 					      <li>
-					      	<h3>${tour.location}</h3>
+					      	<h3 class='subtitle'>${tour.location}</h3>
 					      </li>
 					      <li>
-					      	<h3>${tour.guide.name}</h3>
+					      	<h3 class='subtitle'>${tour.guide.name}</h3>
 					      </li>
 					      <li>
 					      	<h3>${tripData.startDate} -- ${tripData.endDate}</h3>
@@ -58,15 +58,15 @@ function renderTripCards(tripsList, tours) {
 					   </ul>
 					</inner-column>
 				</section>
-				<section>
+				<section class='trips-buttons'>
 					<inner-column>
 						<ul class='further-actions'>
 					      <button type='button' data-action='view-detail'>More Details</button>
 		 					<button type='button' data-action='cancel-trip'>Cancel Trip</button>
-
 					  	</ul>
 					</inner-column>
 				</section>
+				<hr></hr>
 			</section>
 		  		`}).join('');
 	

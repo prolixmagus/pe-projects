@@ -30,6 +30,10 @@ function scrollToTop() {
   window.scrollTo(0, 0);
 }
 
+function scrollToBottom() {
+  window.scrollTo(0, document.body.scrollHeight)
+}
+
   // getTripsListView(main);
 // switch out while working on styles for pages to address refresh issue
 
@@ -40,5 +44,6 @@ export {
   attachTemplate,
   generateList,
   initialize,
-  scrollToTop
+  scrollToTop,
+  scrollToBottom
 }

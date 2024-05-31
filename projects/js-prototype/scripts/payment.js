@@ -2,6 +2,7 @@ import { getCurrentUserData, getUserData } from './login.js'
 import { tours } from './data.js'
 import { getTourById } from './tour-detail.js'
 import { getTripsListView } from './trips.js'
+import { scrollToBottom } from './find-a-guide.js'
 
 function renderPaymentView(tour, userData) {
 	const main = document.querySelector('main');
@@ -70,7 +71,7 @@ function calculatePayment(guests, price) {
 function renderConfirmationSection(tour) {
 	const paymentSection = document.querySelector('.total-payment');
 	paymentSection.innerHTML = `
-	<section class='confirmation'>
+	<div class='confirmation'>
 		<inner-column>
 			<h2>Booking Complete!</h2>
 			<p>Enjoy your trip!</p>
@@ -79,11 +80,11 @@ function renderConfirmationSection(tour) {
 					<button type='button' data-action='view-trips'>View Trips</button>
 				</li>
 				<li>
-					<button type='button'>Send Message</button>
+					<button type='button' data-action='message-guide'>Message</button>
 				</li>
 			</ul>
 		</inner-column>
-	</section>
+	</div>
 	`
 }
 
@@ -127,6 +128,7 @@ window.addEventListener('click', (event) => {
    if (event.target.matches('[data-action="confirm-booking"]')) {
 		event.preventDefault();
       	handleRenderConfirmationSection(event, tours);
+      	scrollToBottom();
    }
 
     if (event.target.matches('[data-action="view-trips"]')) {

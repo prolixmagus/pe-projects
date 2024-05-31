@@ -60,5 +60,8 @@ picture {
 	border-radius: var(--corners);
 }
 
+section + section {
+	margin-top: 24px;
+}
 
 

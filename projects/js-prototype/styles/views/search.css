@@ -3,8 +3,8 @@
 	flex-direction: column;
 }
 
-.tour-card + .tour-card {
-	margin-top: 32px;
+.tour-results {
+	margin-top: 0;
 }
 
 .tour-card {

@@ -10,3 +10,9 @@
 	display: flex;
 	gap: 24px;
 }
+
+.total-payment {
+	& button {
+		margin-top: 8px;
+	}
+}

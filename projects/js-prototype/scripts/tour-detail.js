@@ -12,8 +12,12 @@ function getTourById(tours, id) {
 function renderTourDetailView(tour) {
   const main = document.querySelector('main');
   main.innerHTML = ``
-  main.innerHTML += `<section class='tour-detail' data-id='${tour.id}'></section>`
-  const tourDetail = document.querySelector('.tour-detail');
+  main.innerHTML += `
+  <section class='tour-detail' data-id='${tour.id}'>
+    <inner-column>
+    </inner-column>
+  </section>`
+  const tourDetail = document.querySelector('.tour-detail inner-column');
   tourDetail.innerHTML += renderTourDetailCard(tour);
   tourDetail.innerHTML += renderTourGuideCard(tour);
   scrollToTop();
@@ -35,13 +39,11 @@ function renderTourDetailCard(tour) {
     </section>
 
     <section class='itinerary' data-id='${tour.id}'>
-      <inner-column>
-        <h2>Itinerary</h2>
-        <p class='subtitle'>Length: ${tour.length}</p>
-        <p>${tour.itinerary.intro}</p>
-        ${tour.itinerary.schedule}
-        <button type='button' data-action='book-tour'>Book Tour</button>
-      </inner-column>
+      <h2>Itinerary</h2>
+      <p class='subtitle'>Length: ${tour.length}</p>
+      <p>${tour.itinerary.intro}</p>
+      ${tour.itinerary.schedule}
+      <button type='button' data-action='book-tour'>Book Tour</button>
     </section>
     `
 }
@@ -49,25 +51,23 @@ function renderTourDetailCard(tour) {
 function renderTourGuideCard(tour) {
   return `
     <section class='guide'>
-      <inner-column>
-        <div class='guide-card'>
-          <h2>Meet Your Guide</h2>
+      <div class='guide-card'>
+        <h2>Meet Your Guide</h2>
 
-          <section class='guide-intro'>
-            <div class='temp-icon profile-holder'>
-              <svg viewBox='0 0 10 10'>
-                <circle cx='5' cy='5' r='5' />
-              </svg>
-            </div>
-            <h3>${tour.guide.name}</h3>
-          </section>
+        <section class='guide-intro'>
+          <div class='temp-icon profile-holder'>
+            <svg viewBox='0 0 10 10'>
+              <circle cx='5' cy='5' r='5' />
+            </svg>
+          </div>
+          <h3>${tour.guide.name}</h3>
+        </section>
 
-          <ul class='guide-details'>
-            ${renderGuideDetails(tour.guide.info)}
-          </ul>
-          <button type='button' data-action='message-guide'>Message Guide</button>
-        </div>
-      </inner-column>
+        <ul class='guide-details'>
+          ${renderGuideDetails(tour.guide.info)}
+        </ul>
+        <button type='button' data-action='message-guide'>Message</button>
+      </div>
     </section>
     `
 }

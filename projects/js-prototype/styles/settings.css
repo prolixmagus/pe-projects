@@ -23,7 +23,8 @@ html {
 	--color-primary-complement: hsl(221, 70%, 66%);
 	--color-secondary: hsl(var(--secondary), 72%, 65%); 
 	--color-secondary-light: hsl(var(--secondary), 72%, 65%, 0.8);
-	--color-secondary-complement: hsl(26, 41%, 30%);
+	--color-secondary-complement: hsl(26, 100%, 30%);
+	--color-cancel: #d1000f;
 
 /*	--color: hsl(206, 66%, 77%);
 	--highlight: hsl(190, 59%, 79%);*/
