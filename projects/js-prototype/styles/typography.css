@@ -99,3 +99,13 @@ h2 + p {
 .site-map nav li {
   font-size: .75rem;
 }
+
+@media (prefers-color-scheme: dark) {
+    p, h1, h2 {
+      color: var(--ink);
+      
+  }
+    h3, h4, .subtitle {
+      color: var(--ink-light);
+  }
+}

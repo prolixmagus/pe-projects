@@ -19,7 +19,7 @@ html {
 
 
 	--color-primary: hsl(var(--primary), 41%, 30%);
-	--color-primary-light: hsl(var(--primary), 41%, 30%, 0.4);
+	--color-primary-light: hsl(var(--primary), 41%, 45%, 0.9);
 	--color-primary-complement: hsl(221, 70%, 66%);
 	--color-secondary: hsl(var(--secondary), 72%, 65%); 
 	--color-secondary-light: hsl(var(--secondary), 72%, 65%, 0.8);
@@ -49,8 +49,18 @@ sup {
 	font-size: .7rem;
 }
 
-/*@media (prefers-color-scheme: dark) {
+
+@media (prefers-color-scheme: dark) {
 	html {
+	--border-light: hsl(var(--hue), 0%, 23%);
+	--background-light: hsl(var(--hue), 0%, 17%); /* dark gray */
+	--background: hsl(var(--hue), 0%, 12%); /* dark gray */
+	--background-dark: hsl(var(--hue), 0%, 7%); /*very dark gray*/
+	--ink: var(--white);
+	--ink-light: hsla(var(--hue), 0%, 100%, 50%);
+
+	--color-primary-light: hsl(var(--primary), 35%, 40%, 0.9);
+	--color-secondary: hsl(var(--secondary), 45%, 65%); 
+	--color-secondary-light: hsl(38, 10%, 60%);
 	}
-	*/
 }

@@ -35,7 +35,9 @@
 	}
 }
 
-/*.tour-dates {
-	display: flex;
-	flex-wrap: wrap;
-}*/
+@media (prefers-color-scheme: dark) {
+	.tour-card {
+		background-color: var(--background);
+		border: 1px solid var(--border-light);
+	}
+}

@@ -37,8 +37,14 @@
     background-size: 100% 18px, 100% 18px;
 }*/
 
+html {
+	background-color: black;
+}
+
 body {
 	background-color: var(--gray-light);
+	max-width: 400px;
+	margin-inline: auto;
 }
 
 p a, li a {
@@ -64,4 +70,9 @@ section + section {
 	margin-top: 24px;
 }
 
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--background-dark);
+	}
+}
 

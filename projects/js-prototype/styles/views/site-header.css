@@ -20,3 +20,9 @@ mast-head {
 		font-family: "Montserrat";
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	.site-header {
+		background-color: var(--background);
+	}
+}

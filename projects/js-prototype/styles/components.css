@@ -40,33 +40,19 @@ button {
 .profile-holder {
 	max-width: 100px;
 }
-/*.submit-button {
-	background-color: var(--fish-green);
-	box-shadow: 2px 2px black;
-	font-family: "Avenir", sans-serif;
-	font-weight: 600;
-	padding: 5px 10px;
-	border-radius: 5px;
-	&.php {
-		background-color: var(--fish-blue);
+
+@media (prefers-color-scheme: dark) {
+	button {
+    background-color: var(--color-primary-light);
+    color: var(--paper);
+	}
+	button:hover {
+	    background-color: var(--background-light)
+	    border: 1px solid var(--border-light);
+	    color: var(--white);
+	  }
+
+	input:focus {
+	    border-color: hsl(275, 100%, 76%); /* Focus Border */
 	}
 }
-
-.cta-button {
-	padding-inline: 1rem;
-	padding-block: .5rem;
-	border-radius: 50px;
-	font-family: "Avenir", sans-serif;
-	font-size: 1.25rem;
-	border: 1px solid black;
-}
-
-
-.placeholder-icon {
-	max-width: 40px;
-	position: absolute;
-	right: 0;
-	fill: yellow;
-	stroke: green;
-}
-*/
