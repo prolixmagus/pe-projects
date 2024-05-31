@@ -36,7 +36,6 @@
     background-size: 100% 18px, 100% 18px;
 }*/
 
-
 p a, li a {
 	color: blue;
 	text-decoration: none;
@@ -56,6 +55,7 @@ picture {
 	border-radius: var(--corners);
 	box-shadow: var(--shadow);
 }
+
 
 
 /* Media */
@@ -127,17 +127,7 @@ picture {
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
-		color: var(--ink-light);
-		background-color: var(--paper-black);
-	}
-
-	li, p {
-		& a:visited {
-			color: var(--fish-pink);
-		}
-		& a {
-			color: hsl(191 71% 59% / 1);
-		}
+	html {
+		background-color: var(--background-dark);
 	}
 }

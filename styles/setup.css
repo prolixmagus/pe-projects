@@ -61,3 +61,10 @@ svg {
   width: auto;
 }
 
+sup {
+  vertical-align: super;
+  vertical-align: 25%;
+  font-size: .7rem;
+}
+
+

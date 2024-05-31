@@ -99,3 +99,9 @@ h3 + p {
 .site-map nav li {
   font-size: .75rem;
 }
+
+@media(prefers-color-scheme: dark) {
+  h2 {
+    color: var(--ink);
+  }
+}
