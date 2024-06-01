@@ -1,3 +1,7 @@
 colophon {
 	display: block;
 }
+
+colophon li {
+	margin-top: 1em;
+}

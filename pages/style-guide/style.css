@@ -1,6 +1,7 @@
 .style-guide {
-	& colophon, .exercise, .artist-card, .common-figure, .project-card, .card{
+	& colophon, .exercise-card, .artist-card, .common-figure, .project-card, .card{
 		grid-column: 1 / -1;
+		gap: 40px;
 	}
 }
 
@@ -12,7 +13,7 @@
 		& .common-figure {
 			grid-column: 2 / 9;
 		}
-		& .exercise{
+		& .exercise-card{
 			grid-column: 2 / 5;
 		}
 		& .artist-card {
