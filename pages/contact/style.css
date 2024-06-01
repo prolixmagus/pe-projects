@@ -1,15 +1,21 @@
 .contact address {
-	margin-top: 1em;
+	padding: 1em;
 	display: grid;
-}
-
-span {
-	margin-top: 10px;
-	display: block;
 	font-size: clamp(16px, 5vw, 32px);
 	font-family: "Noto Sans", sans-serif;
+	gap: 10px;
+}
+
+.contact picture {
+	padding: 15vw;
+	& img {
+		border-radius: 10px;
+	}
 }
 
 
-
-
+@media (prefers-color-scheme: dark) {
+	.contact a {
+		color: white;
+	}
+}

@@ -1,7 +1,7 @@
 <section class='section-grid'>
 	<inner-column class='inner-grid'>
 		<header class='home-header'>
-			<h2 class='loud-voice'>You made it!</h2>
+			<h1 class='loud-voice'>You made it!</h1>
 
 			<intro-area>
 				<p class='calm-voice'>I'm Jeremy, a web developer and K-12 <abbr title='English as a Second Language'>ESL</abbr> educator. I help people of all ages navigate foreign systems.</p>

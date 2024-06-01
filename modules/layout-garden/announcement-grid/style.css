@@ -10,14 +10,17 @@
 	gap: 10px;
 }
 
+@media (min-width: 900px) {
+	.announcement-grid ul {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
 @media (prefers-color-scheme: dark) {
 	section.page-content.layout .announcement-grid {
 	background-color: #FBF7F5;
 	}
-}
-
-@media (min-width: 900px) {
-	.announcement-grid ul {
-		grid-template-columns: 1fr 1fr;
+	.announcement-grid p, .announcement-grid h2 {
+		color: hsla(0, 0%, 0%, .8);
 	}
 }

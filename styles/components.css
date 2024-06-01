@@ -71,10 +71,10 @@
 	background-color: var(--tile-red);
 }
 
-.placeholder-icon {
-	max-width: 40px;
+.influences-icon {
+	max-width: 25px;
 	position: absolute;
-	right: 0;
-	fill: yellow;
-	stroke: green;
+	right: 2.5px;
+	top: 2.5px;
+	background-color: black;
 }

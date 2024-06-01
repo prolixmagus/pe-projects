@@ -101,4 +101,8 @@ day-3-grid {
 	.day-3-grid {
 		background-color: var(--paper-black);
 	}
+
+	.day-3-grid details > summary {
+		border-bottom: 1px solid var(--white);
+	}
 }

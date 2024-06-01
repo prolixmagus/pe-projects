@@ -30,6 +30,20 @@
 			"creator": "Victoria Monet",
 			"featured": true, 
 			"icon": "icons/headphones-icon.svg"
+		},
+		{
+			"image": "images/influences/mingus.jpg",
+			"figCaption": "Mingus Ah Um",
+			"creator": "Charles Mingus",
+			"featured": true, 
+			"icon": "icons/headphones-icon.svg"
+		},
+		{
+			"image": "images/influences/dr-who.jpg",
+			"figCaption": "Doctor Who",
+			"creator": "BBC",
+			"featured": true, 
+			"icon": "icons/film-icon.svg"
 		}
 	]
 }

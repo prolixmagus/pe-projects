@@ -1,0 +1,109 @@
+
+.exercise form {
+	margin-top: 8px;
+	display: grid;
+	gap: 16px;
+	border-radius: 10px;
+	box-shadow: 0px 2px 5px 0px var(--black-shadow);
+	padding: 16px;
+	max-width: 500px;
+	& field {
+		display: grid;
+		gap: 4px;
+	}
+	& label {
+		font-size: .9rem;
+		opacity: .7;
+		font-family: "Fredoka";
+	}
+	& input {
+		padding: .5em;
+		font-family: "Noto Sans";
+		border-radius: 4px;
+		border: 1px solid var(--gray-shadow);
+		background-color: var(--paper-medium);
+	}
+}
+
+label + input {
+	margin-top: 4px;
+}
+
+
+action-buttons {
+	display: flex;
+	gap: 20px;
+}
+
+
+input.numbertype {
+	max-width: 70px;
+}
+
+.checkout-field {
+	display: flex;
+	gap: 20px;
+}
+
+
+output {
+	display: block;
+	max-width: 65ch;
+	& p {
+		background-color: var(--fish-blue);
+		border: 3px solid var(--ink);
+		border-radius: 5px;
+		color: ink;
+		padding: 1em;
+	}
+}
+
+/* Exercise 3 - Printing Quotes */
+h2 + blockquote {
+	padding-top: 1rem;
+}
+
+blockquote {
+	font-size: 20px;
+	font-family: "Apple Chancery", serf;
+}
+
+/* Exercise 4 - Mad Libs */
+.field.mad-libs {
+	display: grid;
+}
+.mad-libs-color {
+	color: var(--fish-green);
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+/*exercise 2 - Counting Characters */
+.input-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	& .character-count-output {
+		display: flex;
+		gap: 10px;
+	}
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+	.form-title .refresh {
+		color: var(--ink-light);
+	}
+
+	input:focus {
+		background: hsl(0 0 94% / 2);
+		outline: 2px solid var(--fish-pink); 
+	}
+
+	output p {
+		border: 3px solid var(--fish-pink);
+	}
+
+
+}

@@ -50,3 +50,9 @@
 		margin-top: 16px;
 	}
 }
+
+@media (prefer-color-scheme: dark) {
+	.itinerary {
+		background-color: var(--background-light);
+	}
+}

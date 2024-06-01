@@ -1,11 +1,15 @@
 {
 	"title": "Contact",
 	"slug": "contact",
-	"idea": "⬇︎⬇︎⬇︎⬇︎⬇︎⬇︎⬇︎⬇⬇︎",
+	"idea": "",
 	"sections": [
 		{
 			"module": "generic-text-heading",
-			"content": "<address><a href='mailto:jeremypfishman@gmail.com'><span>jeremypfishman</span><span>@</span><span>gmail.com</span></a></address>"
+			"content": "<p>You can reach me at</p><address><a href='mailto:jeremypfishman@gmail.com'>jeremypfishman@gmail.com</a></address><p>or flag down this scooter!</p>"
+		},
+		{
+			"module": "generic-text-heading",
+			"content": "<picture><img src='images/site/scooter.jpg'></picture>"
 		}
 	]
 }

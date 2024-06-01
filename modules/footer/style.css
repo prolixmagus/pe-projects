@@ -3,6 +3,10 @@ footer {
 	box-shadow: 0 6px 8px 3px rgba(0 0 0 / 0.5);
 }
 
+.site-footer {
+	margin-top: 10vh;
+}
+
 footer inner-column {
 	padding-block: 20px;
 }

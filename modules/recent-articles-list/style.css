@@ -14,18 +14,12 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
 	.recent-articles {
 		grid-column: 2 / 11;
 		& ol {
 			grid-template-columns: repeat(2, 1fr);
 		}
-}
-
-
-@media (min-width: 680px) {
-	.recent-articles {
-		grid-column: 2 / 11;
 }
 
 @media (min-width: 1000px) {

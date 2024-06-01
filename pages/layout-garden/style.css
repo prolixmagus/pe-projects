@@ -39,9 +39,10 @@ module-showcase {
 @media (prefers-color-scheme: dark) {
 
 	.case-study-link {
-		border: 2px solid var(--fish-green);
-		color: var(--fish-green);
+		border: 2px solid var(--color-two);
+		color: var(--color-two);
 		&:hover {
-			color: var(--paper);
+			border: 2px solid var(--color-three);
+			color: var(--color-three);
 		}
 	}

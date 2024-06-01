@@ -40,7 +40,7 @@ body {
 	background-color: var(--paper);
 }
 
-.page-content p a, .page-content li a {
+p a, li a {
 	color: blue;
 	text-decoration: none;
 	display: inline-block;
@@ -51,8 +51,16 @@ p a:hover, li a:hover {
 	text-decoration-color: var(--color-primary-dark);
 }
 
-.page-content li a:visited, .page-content p a:visited {
-	color: var(--color-three-dark);
+li a:visited, p a:visited {
+	color: var(--color-two-dark);
+}
+
+.site-header li a:visited, .site-footer li a:visited, .site-header p a:visited, .site-footer li a:visited {
+	color: var(--ink);
+}
+
+.card li a:visited, .card li a:visited {
+	color: var(--ink);
 }
 
 picture {

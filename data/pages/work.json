@@ -16,6 +16,12 @@
 				{
 					"section": [
 						{
+							"module": "common-figure",
+							"image": "images/explorations//death-and-design/headline.jpg",
+							"alt": "Three outlines of bottles against a purple backdrop",
+							"headline": true
+						},
+						{
 							"module": "generic-text-heading",
 							"content": "<h2>Of Corpse!</h2><p>Yesterday, a friend recommended I check out the existential, surrealist 2016 film <a href='https://en.wikipedia.org/wiki/Swiss_Army_Man'>Swiss Army Man</a>,  insisting that there was no other piece of media more “me” than this one. Seeing that the conceit of the film revolves around the budding relationship between a potentially (most definitely) unhinged social outcast and a farting magical corpse, I was more than intrigued. Was I the idealistic protagonist Hank, burdened by the perceived “ugliness” of his physical and mental self, or was I the corpse, rediscovering the beauty and sadness of life through love, loss, and flatulence?</p><p>The answer isn’t important (spoiler alert: a bit of both). What I gleaned from the film, aside from the thrilling roller coaster of heartbreak, imagination, joy, and sobering horror, was that I couldn’t resist trying to put the film into a box. Try as I might to just enjoy the film, I had this uncontrollable urge to put a label on it. Was this film a comedy? Romance? <a href='https://en.wikipedia.org/wiki/Bildungsroman'>Bildungsroman</a>? Fantastic realist hero’s journey?</p><p>What binds this seemingly hodge-podge of genres and moods is the strength of its unifying vision, its unbreakable commitment. As laid out in this <a href='https://acelare.wordpress.com/2016/08/11/swiss-army-man-a-dead-on-analysis-of-themes-and-color-symbolism/#:~:text=His%20pants%20are%20a%20neutral,on%20unrequited%20romance%20and%20relationships.'>wonderful analysis</a>, each character had an identifiable color-palette, each character symbolized an element of Hank’s internal struggle or denied aspirations. Each character was searching for the same clearly-defined goal - acceptance.</p><p>Like Hank’s internal struggle, the film wanted to be accepted as it was, bruises and all, for what we often think is wrong about ourselves is often what makes us unique and alive.</p>"
 						}		
@@ -62,7 +68,7 @@
 					"section": [
 						{
 							"module": "common-figure",
-							"image": "images/explorations/bottles-in-the-sky/bottles-in-the-sky-headline.jpg",
+							"image": "images/explorations/bottles-in-the-sky/headline.jpg",
 							"alt": "Three outlines of bottles against a purple backdrop",
 							"headline": true
 						},
@@ -145,7 +151,7 @@
 			"slug": "theme-challenge",
 			"published": "17 APR 2024",
 			"updated": "20 APR 2024",
-			"preview-image": "images/landscape.jpg",
+			"preview-image": "images/explorations/theme-challenge/headline.jpg",
 			"description": "This will be a description for the aticle. A teaser of sorts. Read more to find out!",
 			"related": ["death-and-design", "bottles-in-the-sky"],
 			"case-study": [
@@ -153,7 +159,7 @@
 					"section": [
 						{
 							"module": "common-figure",
-							"image": "images/explorations/theme-challenge/garden-wow-shot.jpg",
+							"image": "images/explorations/theme-challenge/headline.jpg",
 							"headline": true
 						},
 						{

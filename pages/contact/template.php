@@ -12,8 +12,7 @@
 
 	<section class='contact section-grid'>
 		<inner-column class='inner-grid'>
-			<?php 
-				include ("modules/$module/template.php")?>
+			<?php include ("modules/$module/template.php") ?>
 		</inner-column>
 	</section>
 

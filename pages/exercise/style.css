@@ -1,1 +1,41 @@
-style.css
+.page-content.exercise {
+	display: grid;
+ 	grid-template-columns: auto repeat(12, minmax(0, 100px)) auto;
+}
+
+.form-group, .form-output {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: subgrid;
+	& inner-column {
+		grid-column: 2 / -2;
+		display: grid;
+		grid-template-columns: subgrid;
+		& form-explanation {
+			grid-column: 1 / -1;
+		}
+		& form-section {
+			grid-column: 1 / -1;
+		}
+		& output {
+			grid-column: 1 / -1;
+			padding: 16px;
+		}
+	}
+}
+
+@media (min-width: 490px) {
+	.form-group form-explanation, .form-group form-section, .form-output output {
+		grid-column: 1 / 11;
+	}
+}
+
+@media (min-width: 700px) {
+	form-explanation, form-section, output {
+		grid-column: 2 / 11;
+}
+
+@media (min-width: 1000px) {
+	form-explanation, form-section, output {
+		grid-column: 2 / 11;
+}

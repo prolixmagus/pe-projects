@@ -2,15 +2,15 @@
 	$figure = $creator['image'] ?? "images/square.jpg";
 	$figCaption = $creator['figCaption'] ?? "An illuminating piece of information or a pithy aside.";
 	$creatorName = $creator['creator'] ?? "The name of the author, musician, director, network, or artist.";
-	$category = $creator['icon'] ?? include('icons/book-icon.svg');
+	$category = $creator['icon'];
 	
 	?>
 
 
 <figure class='artist-card'>
-	<div class='placeholder-icon'>
-		<?=$category?>
-	</div>
+	<picture class='influences-icon'>
+		<?php include($category)?>
+	</picture>
 
 	<picture>
 		<img src='<?=$figure?>' alt="[[todo]]">

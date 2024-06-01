@@ -24,7 +24,10 @@ function renderLoginView(container) {
             <button class='login-btn' data-set="login" type='submit'>Login</button>
           </form>
 
-          <p class='login-message'></p>
+          <div class='login-message'>
+          <p>Username: Test (or make your own)</p>
+          <p>Password: Test (or make your own)</p>
+          </div>
 
         </inner-column>
       </section>
@@ -89,7 +92,7 @@ function handleLogin() {
       message.textContent = 'Please input a username and password';
     } else {
       createUserProfile(username, password)
-      message.textContent = 'Profile created! Click submit to log in.'
+      message.innerHTML = '<p>Profile created! Log in.</p>'
     }
   }
 }

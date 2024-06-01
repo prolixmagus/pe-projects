@@ -29,6 +29,11 @@
 	section.page-content.layout .cta-overlap {
 	background-color: #FBF7F5;
 	}
+
+	.article-grid-2-cards {
+		& p, h2, h3 {
+		color: hsla(0, 0%, 0%, .8);
+		}
 }
 
 

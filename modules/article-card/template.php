@@ -9,14 +9,14 @@
 <article class='card'>
 	
 	<picture class='work-picture'>
-		<img src="<?=$preview_image?>" / >
+		<img src='<?=$preview_image?>' / >
 	</picture>
 
-		<h2>
-			<a href='?page=work-detail&slug=<?=$slug?>'>
+		<a href='?page=work-detail&slug=<?=$slug?>'>
+			<h2>
 				<?=$title?>
-			</a>
-		</h2>
+			</h2>
+		</a>
 
 		<time class='quiet-voice'><?=$published?></time>
 		

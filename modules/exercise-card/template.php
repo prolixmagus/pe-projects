@@ -5,7 +5,7 @@
 	$address = $exercise['address'] ?? "#";
 ?>
 
-<li class='exercise'>
+<li class='exercise-card'>
 	<a href='<?=$address?>'>
 		<h2><?=$name?></h2>
 		<div class='e4p-icon'>

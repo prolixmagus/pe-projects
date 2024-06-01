@@ -10,19 +10,19 @@
 }
 
 .goals-list li:nth-child(1) {
-	background-color: var(--fish-pink);
+	background-color: var(--color-primary);
 }
 
 .goals-list li:nth-child(2) {
-	background-color: var(--fish-blue);
+	background-color: var(--color-two);
 }
 
 .goals-list li:nth-child(3) {
-	background-color: var(--fish-green);
+	background-color: var(--color-three);
 }
 
 .goals-list li:nth-child(4) {
-	background-color: var(--sand-yellow);
+	background-color: var(--color-two-dark);
 }
 
 @media (orientation: landscape) {

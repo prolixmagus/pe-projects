@@ -36,7 +36,6 @@ html {
 	--ink: var(--black);
 	--ink-light: hsla(var(--hue), 0%, 0%, .8);
 	--ink-subtitle: hsla(var(--hue), 0%, 0%, .6);
-	--wireframe: hsla(var(--blue), 46%, 77%);
 
 	--standard: 1000px;
 	--tight: 700px;
