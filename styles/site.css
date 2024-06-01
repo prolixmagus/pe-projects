@@ -36,7 +36,11 @@
     background-size: 100% 18px, 100% 18px;
 }*/
 
-p a, li a {
+body {
+	background-color: var(--paper);
+}
+
+.page-content p a, .page-content li a {
 	color: blue;
 	text-decoration: none;
 	display: inline-block;
@@ -44,17 +48,18 @@ p a, li a {
 
 p a:hover, li a:hover {
 	text-decoration: wavy underline;
-	text-decoration-color: #FECA52;
+	text-decoration-color: var(--color-primary-dark);
 }
 
-li a:visited, p a:visited {
-	color: var(--tile-red);
+.page-content li a:visited, .page-content p a:visited {
+	color: var(--color-three-dark);
 }
 
 picture {
 	border-radius: var(--corners);
 	box-shadow: var(--shadow);
 }
+
 
 
 
@@ -127,7 +132,7 @@ picture {
 }
 
 @media (prefers-color-scheme: dark) {
-	html {
+	body {
 		background-color: var(--background-dark);
 	}
 }

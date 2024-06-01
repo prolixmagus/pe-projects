@@ -3,8 +3,8 @@ mast-head {
 	position: sticky;
 	top: 0;
 	z-index: 2;
-	background-color: var(--paper);
-	box-shadow: 0 -6px 10px 5px rgba(0 0 0 / 0.5);
+	background-color: var(--paper-medium);
+	box-shadow: 0 -6px 8px 3px rgba(0 0 0 / 0.5);
 }
 
 .site-header inner-column {
@@ -32,6 +32,15 @@ logo-container {
 .jeremy-logo {
 	stroke-color: #36496d;
 	max-width: 180px;
+	& .bubble-1 {
+		fill:rgb(190,125,180);
+	}
+	& .bubble-2 {
+		fill:rgb(96,211,172)
+	}
+	& .bubble-3 {
+		fill:rgb(233,153,75);
+	}
 }
 /*.site-header nav ul {
 	display: flex;
@@ -76,6 +85,27 @@ logo-container {
 	.site-header {
 		color: var(--ink-light);
 		background-color: var(--fish-blue);
+	}
+
+	.site-logo {
+		filter: invert(100%);
+	}
+
+	.jeremy-logo {
+		fill: var(--black);
+		stroke: var(--black);
+		& .bubble-1 {
+			fill: #41824B; 
+		}
+		& .bubble-2 {
+			fill: #9F2C53
+		}
+		& .bubble-3 {
+			fill: #1666B4
+		}
+		.fish-body {
+			fill: white;
+		}
 	}
 }
 

@@ -1,24 +1,26 @@
 footer {
-	background-color: var(--sand-yellow);
+	background-color: var(--paper-dark);
+	box-shadow: 0 6px 8px 3px rgba(0 0 0 / 0.5);
 }
 
 footer inner-column {
-	padding-block: 10px;
+	padding-block: 20px;
 }
 
 .updated-time {
-	margin-top: 1rem;
+	padding-top: 1rem;
 	justify-self: start;
 	grid-column: 1 / -1;
-}
-
-@media (prefers-color-scheme: dark) {
-	footer {
-		background-color: var(--sand-yellow);
-	}
 }
 
 @media (min-width: 490px) {
 	.updated-time {
 		justify-self: end;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	footer {
+		background-color: var(--background);
+	}
 }

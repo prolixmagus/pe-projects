@@ -2,10 +2,6 @@
 	margin-top: 1em;
 }
 
-.timeline li {
-	display: flex;
-}
-
 .timeline li::before {
 	content: '•';
 	padding-right: 5px;
@@ -17,6 +13,7 @@
 
 .timeline h3.strong-voice {
 	font-size: 1.5rem;
+	color: var(--color-two);
 }
 
 work-narrative {
@@ -28,10 +25,9 @@ experience-gained {
 	grid-column: 1 / -1;
 
 	display: grid;
-/*	grid-template-columns: subgrid;*/
-	background-color: var(--fish-blue);
+	border: 1px solid var(--color-three);
 	border-radius: var(--corners);
-	padding: var(--container);
+	padding: 1em;
 /*	& h3 {
 		grid-column: 1 / -1;
 	}
@@ -44,18 +40,6 @@ experience-gained {
 
 work-narrative + experience-gained {
 	margin-top: 1.5rem;
-}
-
-@media (min-width: 490px) {
-	work-narrative, experience-gained {
-		grid-column: 2 / 11;
-	}
-}
-
-@media (orientation: landscape) {
-	work-narrative, experience-gained {
-		grid-column: 2 / 11;
-	}
 }
 
 @media (min-width: 768px) {

@@ -4,10 +4,12 @@
 
 .card {
 	padding: var(--container);
-	background-color: var(--fish-blue);
 	border-radius: var(--corners);
 	display: flex;
 	flex-direction: column;
+	padding: 1em;
+	background-color: var(--paper-dark);
+	box-shadow: var(--shadow);
 	& p {
 		margin-top: 1em;
 		flex-grow: 1;
@@ -24,6 +26,12 @@
 	& img {
 			border-radius: var(--corners);
 			height: 100%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.card {
+	background-color: var(--background-light);
 	}
 }
 

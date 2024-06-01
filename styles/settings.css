@@ -1,30 +1,38 @@
 html {
 
 	--hue: 0;
-	--primary: 206;
-	--secondary: 38;
+	--primary: 165; /* teal */
+	--accent-two: 308; /* purple */
+	--accent-three: 32; /* orange */
 
+	/* neutral */
+
+	--white: hsl(var(--hue), 0%, 98%);
 
 	--black: hsl(var(--hue), 0%, 7%);
 	--black-shadow: hsla(var(--hue), 0%, 0%, 0.4);
-	--gray-light: hsl(var(--hue), 0%, 98%);
-	--gray-medium: hsl(var(--hue), 0%, 93%);
+
+	--paper-medium: hsl(var(--hue), 0%, 96%);
+	--paper: var(--white);
+	--paper-dark: hsl(var(--hue), 0%, 90%);
 	--gray-shadow: hsl(var(--hue), 0%, 75%);
-	--white: hsl(var(--hue), 0%, 94%);
+	--caption: hsla(var(--hue), 0%, 100%, 60%);
 
+	/* colors */ 
 
-	--color-primary: hsl(var(--primary), 41%, 30%);
-	--color-primary-light: hsl(var(--primary), 41%, 45%, 0.9);
-	--color-primary-complement: hsl(221, 70%, 66%);
-	--color-secondary: hsl(var(--secondary), 72%, 65%); 
-	--color-secondary-light: hsl(var(--secondary), 72%, 65%, 0.8);
-	--color-secondary-complement: hsl(26, 100%, 30%);
+	--color-primary: hsl(var(--primary), 59%, 60%);
+	--color-primary-dark: hsl(var(--primary), 33%, 40%);
+	--color-two: hsl(var(--accent-two), 30%, 61%);
+	--color-two-dark: hsl(var(--accent-two), 33%, 40%);
+	--color-three: hsl(var(--accent-three), 76%, 60%);
+	--color-three-dark: hsl(var(--accent-three), 33%, 40%);
 
 	--shadow: 0px 0px 2px 0px rgba(0 0 0 / .5);
 
 	--corners: 10px; /* or whatevers */
 
-	--paper: var(--white);
+	/* text */
+
 	--ink: var(--black);
 	--ink-light: hsla(var(--hue), 0%, 0%, .8);
 	--ink-subtitle: hsla(var(--hue), 0%, 0%, .6);
@@ -37,11 +45,12 @@ html {
 @media (prefers-color-scheme: dark) {
 	html {
 	--border-light: hsl(var(--hue), 0%, 23%);
-	--background-light: hsl(var(--hue), 0%, 17%); /* dark gray */
+	--background-light: hsl(var(--hue), 0%, 18%); /* dark gray */
 	--background: hsl(var(--hue), 0%, 12%); /* dark gray */
 	--background-dark: hsl(var(--hue), 0%, 7%); /*very dark gray*/
 	--ink: var(--white);
 	--ink-light: hsla(var(--hue), 0%, 100%, 80%);
+	--caption: hsla(var(--hue), 0%, 100%, 60%);
 
 	--color-primary-light: hsl(var(--primary), 35%, 40%, 0.9);
 	--color-secondary: hsl(var(--secondary), 45%, 65%); 

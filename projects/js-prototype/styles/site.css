@@ -55,7 +55,7 @@ p a, li a {
 
 p a:hover, li a:hover {
 	text-decoration: wavy underline;
-	text-decoration-color: #FECA52;
+	text-decoration-color: var(--color-primary);
 }
 
 li a:visited, p a:visited {

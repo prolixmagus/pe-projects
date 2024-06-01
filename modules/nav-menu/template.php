@@ -28,13 +28,14 @@
 	<div>
 	<ul class='user-menu'>
 		<button type='button'>x close</button>
-		<?php foreach($nav_links as $link) { 
 
-				$link['page'] = $link['page'] ?? "page link"; 
+		<?php foreach($nav_links as $link) { 
+				$link_page = $link['page'] ?? "page link"; 
+				$current_page = $_GET['page'] ?? "";
 			?>
 
 			<li>
-				<a href='<?=$link['link']?>'><?=$link['page']?></a>
+				<a href='<?=$link['link']?>' <?php if ($current_page === $link_page) { ?> class='active'<?php } ?>><?=$link_page?></a>
 			</li>
 
 		<?php } ?>
