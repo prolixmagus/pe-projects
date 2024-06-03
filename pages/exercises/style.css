@@ -1,6 +1,6 @@
 
 
-.exercise-card {
+li.exercise-card {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
@@ -14,9 +14,6 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-	}
-	& .read-more {
-		margin-top: 2rem;
 	}
 }
 

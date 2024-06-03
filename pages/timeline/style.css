@@ -42,7 +42,7 @@ experience-gained {
 	grid-column: 1 / -1;
 
 	display: grid;
-	border: 1px solid var(--color-three);
+	border: 5px solid var(--color-three);
 	border-radius: var(--corners);
 	padding: 1em;
 	max-width: 650px;

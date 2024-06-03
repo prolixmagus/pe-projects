@@ -6,6 +6,7 @@
 	border-radius: var(--corners);
 	box-shadow: var(--shadow);
 	height: 100%;
+	border: 1px solid black;
 	& .text-area {
 		flex-grow: 1;
 
@@ -22,9 +23,6 @@
 	}
 	& h3 {
 		margin-top: 10px;
-	}
-	& .read-more {
-		margin-top: 2rem;
 	}
 }
 

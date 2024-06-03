@@ -67,4 +67,9 @@ sup {
   font-size: .7rem;
 }
 
+  & .read-more {
+    margin-top: 2rem;
+    text-decoration: underline;
+  }
+
 

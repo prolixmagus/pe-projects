@@ -11,6 +11,7 @@
 	padding: 1em;
 	background-color: var(--paper-dark);
 	box-shadow: var(--shadow);
+	border: 1px solid black;
 	& .text-area {
 		flex-grow: 1;
 
@@ -24,9 +25,6 @@
 	}
 	& time {
 		text-transform: uppercase;
-	}
-	& .read-more {
-		margin-top: 2rem;
 	}
 }
 

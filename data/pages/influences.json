@@ -8,42 +8,49 @@
 			"figCaption": "Don Quixote de la Mancha",
 			"creator": "Miguel Cervantes",
 			"featured": true,
-			"icon": "icons/book-icon.svg"
+			"icon": "icons/book-icon.svg",
+			"alt": "A knight on shining armor - Don Quixote!"
 		},
 		{
 			"image": "images/influences/badass.jpg",
 			"figCaption": "Badass: Making Users Awesome",
 			"creator": "Kathy Sierra",
 			"featured": true,
-			"icon": "icons/book-icon.svg"
+			"icon": "icons/book-icon.svg",
+			"alt": "Book cover of Basass: Making Users Awesome by Kathy Sierra"
 		},
 		{
 			"image": "images/influences/le-roi.jpg",
 			"figCaption": "Le Roi et l'Oiseau",
 			"creator": "Paul Grimault",
 			"featured": true,
-			"icon": "icons/film-icon.svg"
+			"icon": "icons/film-icon.svg",
+			"alt": "Poster image of a cartoon king, a mockingbird, and a young teenage couple."
 		},
 		{
 			"image": "images/influences/jaguar-ii.jpg",
 			"figCaption": "Jaguar II",
 			"creator": "Victoria Monet",
 			"featured": true, 
-			"icon": "icons/headphones-icon.svg"
+			"icon": "icons/headphones-icon.svg",
+			"alt": "A woman emerging from a dark lake"
 		},
 		{
 			"image": "images/influences/mingus.jpg",
 			"figCaption": "Mingus Ah Um",
 			"creator": "Charles Mingus",
 			"featured": true, 
-			"icon": "icons/headphones-icon.svg"
+			"icon": "icons/headphones-icon.svg",
+			"alt": "Kaledosocopic shapes similar to Kandinsky artwork."
+
 		},
 		{
 			"image": "images/influences/dr-who.jpg",
 			"figCaption": "Doctor Who",
 			"creator": "BBC",
 			"featured": true, 
-			"icon": "icons/film-icon.svg"
+			"icon": "icons/film-icon.svg",
+			"alt": "A blue polic box traveling through time and space"
 		}
 	]
 }

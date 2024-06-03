@@ -13,30 +13,7 @@ Welcome to my personal website! So far, it has gone through four structural iter
 </a>
 
 ## App Todo
-- [x] setup CodePen properly
-- [x] setup project
-
-- [x] Header
-- [x] Login Page
-
----
-
-- [ ] Search Page
-	- [ ] Database Structure
-	- [ ] List Page
-- [ ] Tour Detail Page
-
-- [ ] User Profile
-
-- [ ] Inbox
-	- [ ] Open Message Sample
-
-- [ ] Payment Confirmation Page (add Trip);
-	- [ ] Payment Confirmation Message (once submitted)
-
-- [ ] Your Trips Page
-- [ ] Your Trips Detail Page
-	- [ ] Your Trips (cancel / delete a trip)
+- [ ] Fix negative number of guests
 
 
 
@@ -44,15 +21,10 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 #### General
 
-- [x] Typography and Spacing -> in progress
-	- [ ] Visual language! Style tile?
-
 #### Work Page
 
-- [ ] Work articles preview images
-	- [ ] Theme Challenge
-	- [x] Bottles in the Sky
-	- [x] Death and Design
+- [x] Work articles preview images
+	 [ ] ALT TEXT
 
 - [ ] Work articles "key points"
 	- [ ] Theme Challenge
@@ -69,24 +41,15 @@ Welcome to my personal website! So far, it has gone through four structural iter
 	- [ ] Responsive Layout Garden
 	- [ ] Tea Pet Shop
 
-- [x] E4P page on grid layout
-- [ ] E4P project-detail page on grid layout
-- [x] Fix uneven grid layout
-
 #### Influences
 
 - [ ] Add more Influences artists
-- [ ] Find influences svg icons / edit
-- [x] Place icons in artist figure module (placeholder)
 
 #### Contact
 
 - [ ] Figure out what to put on there
 
 #### Home
-
-- [x] Figure out small menu ... (tab on side poking out? event listener to click that as well as button?)
-- [x] Find examples of small menus and save them
 
 ## Long Term Todo
 
@@ -105,6 +68,14 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 
 
+## Completed Todo (5/27 - 5/31)
 
-
-
+- [x] E4P page on grid layout
+- [x] E4P project-detail page on grid layout
+- [x] Fix uneven grid layout
+- [x] Find influences svg icons / edit
+- [x] Place icons in artist figure module (placeholder)
+- [x] Figure out small menu ... (tab on side poking out? event listener to click that as well as button?)
+- [x] Find examples of small menus and save them
+- [x] Typography and Spacing -> in progress
+- [x] Visual language! Style tile?

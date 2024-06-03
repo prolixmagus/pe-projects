@@ -3,6 +3,7 @@
 	$figCaption = $creator['figCaption'] ?? "An illuminating piece of information or a pithy aside.";
 	$creatorName = $creator['creator'] ?? "The name of the author, musician, director, network, or artist.";
 	$category = $creator['icon'] ?? 'icons/headphones-icon.svg';
+	$alt = $creator['alt'] ?? 'alt-text'
 	
 	?>
 
@@ -13,7 +14,7 @@
 	</picture>
 
 	<picture>
-		<img src='<?=$figure?>' alt="[[todo]]">
+		<img src='<?=$figure?>' alt='<?=$alt?>'>
 	</picture>
 
 	<figcaption>

@@ -42,13 +42,16 @@
 	</form-section>
 </section>
 
-<section class="form-output">
-	<inner-column id='form-column'>
-			<output>
-				<p class='output-voice'><?=$message?></p>
-			</output>
-	</inner-column>
-</section>
+<?php if (isset($_POST["submitted"]) ) { ?>
 
+	<section class="form-output">
+		<inner-column id='form-column'>
+				<output>
+					<p class='output-voice'><?=$message?></p>
+				</output>
+		</inner-column>
+	</section>
+
+<?php } ?>
 
 
