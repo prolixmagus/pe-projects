@@ -20,7 +20,7 @@
 	$metaTitle = $pageData['title'] ?? "Home: Jeremy Fishman's Portfolio";
 	$metaDescription = $pageData['intro'] ?? "Teacher. Web Developer. Linguist. Human.";
 	$metaImage = $pageData['meta-image'] ?? "https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg";
-	$metaUpdate = $pageData['meta-updated'] ?? "Tuesday, May 14th, 2024";
+	$metaUpdate = $pageData['meta-updated'] ?? "Sunday, June 2nd, 2024";
 ?>
 
 

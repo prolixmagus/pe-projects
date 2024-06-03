@@ -8,7 +8,7 @@
 					"id": 1,
 					"name": "E4P",
 					"address": "?page=exercises",
-					"image": "images/landscape.jpg",
+					"image": "images/site/e4p-project.jpg",
 					"competency": "PHP, HTML",
 					"description": "My interpretation of Brian P. Hogan's <em>Exercises for Progammers</em> coding challenges, also viewable on <a href='https://codepen.io/Jeremy-Fishman/collections/'>CodePen</a>",
 					"featured" : true
@@ -17,7 +17,7 @@
 					"id": 2,
 					"name": "Layout Garden",
 					"address": "?page=layout-garden",
-					"image": "images/landscape.jpg",
+					"image": "images/site/layout-garden-project.jpg",
 					"competency": "PHP, HTML, CSS",
 					"description": "A living collection of responsive layouts. Repetition and practice, practice, practice!",
 					"featured" : true
@@ -26,7 +26,7 @@
 					"id": 3,
 					"name": "Tea Pet Shop",
 					"address": "projects/teapet",
-					"image": "images/landscape.jpg",
+					"image": "images/site/teapet-shop.jpg",
 					"competency": "PHP, HTML, CSS",
 					"description": "A CRUD website where you can customize Tea Pets and store them in a database!",
 					"featured" : true
@@ -35,7 +35,7 @@
 					"id": 4,
 					"name": "Mockup to Code",
 					"address": "projects/site-mockup-to-code",
-					"image": "images/landscape.jpg",
+					"image": "images/site/site-mockup-project.jpg",
 					"competency": "PHP, HTML, CSS",
 					"description": "A FIGMA file transmuted into code, scaffolded PHP routering and flexible CSS design system",
 					"featured": true
@@ -44,7 +44,7 @@
 					"id": 5,
 					"name": "Theme Challenge",
 					"address": "projects/theme-challenge",
-					"image": "images/explorations/theme-challenge/garden-style-tile.jpg",
+					"image": "images/site/theme-challenge-project.jpg",
 					"competency": "PHP, HTML, CSS, JS",
 					"description": "I was tasked to choose an industry and create a professional website for a fictional company. I chose luxury landscaping.",
 					"featured" : true

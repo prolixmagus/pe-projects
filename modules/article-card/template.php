@@ -12,6 +12,7 @@
 		<img src='<?=$preview_image?>' / >
 	</picture>
 
+	<div class='text-area'>
 		<a href='?page=work-detail&slug=<?=$slug?>'>
 			<h2>
 				<?=$title?>
@@ -19,9 +20,10 @@
 		</a>
 
 		<time class='quiet-voice'><?=$published?></time>
-		
+			
 		<p><?=$description?></p>
 
 		<a class='read-more' href='?page=work-detail&slug=<?=$slug?>'>Read more</a>
+	</div>
 
 </article class='card'>

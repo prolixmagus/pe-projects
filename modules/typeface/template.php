@@ -1,23 +1,3 @@
-<typeface class='lettering'>
-	<div class='alphabet'>
-		<h2>Fredoka</h2>
-		<ul>
-			<li class='attention-voice'>abcdefghijklmnopqrstuvwxyz</li>
-			<li class='attention-voice'>ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
-			<li class='attention-voice'>(!@#$%&.^,*?:;)</li>
-		</ul> 
-	</div>
-
-	<div class='alphabet'>
-		<h2 style='font-family: "Noto Sans";'>Noto Sans</h2>
-		<ul>
-			<li>abcdefghijklmnopqrstuvwxyz</li>
-			<li>ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
-			<li>(!@#$%&.^,*?:;)</li>
-		</ul> 
-	</div>
-</typeface>
-
 <voice>
 	<ul>
 		<li>

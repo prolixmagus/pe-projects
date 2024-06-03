@@ -21,8 +21,8 @@
 					"skill": "Creating webpage layouts with Figma and Affinity 2 software."
 				}
 			],
-			"image": "images/landscape.jpg",
-			"figCaption": "caption"
+			"image": "images/timeline/perpetual.jpg",
+			"figCaption": "Learning how to design UX/UI and develop accessible websites"
 		},
 		{
 			"year": "2021 - 2022",
@@ -42,8 +42,8 @@
 					"skill": "Proctored high stakes state tests (CAASPP and ELPAC)"
 				}
 			],
-			"image": "images/landscape.jpg",
-			"figCaption": "caption"
+			"image": "images/timeline/burbank.jpg",
+			"figCaption": "John Muir Middle School in Burbank, California"
 		},
 		{
 			"year": "2018 - 2021",
@@ -63,8 +63,8 @@
 					"skill": "Proctored the national WIDA assessment to place incoming and current students"
 				}
 			],
-			"image": "images/landscape.jpg",
-			"figCaption": "caption"
+			"image": "images/timeline/white-oak.jpg",
+			"figCaption": "White Oak Middle School in White Oak, Maryland, 25 minutes from D.C."
 		},
 		{
 			"year": "2017 - 2018",
@@ -84,13 +84,13 @@
 					"skill": "Gained familiarity with Mandarin's syntax, vocabulary, and socio-linguistic behavior"
 				}
 			],
-			"image": "images/landscape.jpg",
-			"figCaption": "caption"
+			"image": "images/timeline/taiwan.jpg",
+			"figCaption": "Mr. Browns Road in Chihshang, Taitung, just a scooter ride away from the city."
 		},
 		{
 			"year": "2014-2017",
 			"id": "montclair",
-			"narrative": "<p>I decided to attend Montclair State University's Teaching Program to realize my lifelong love for education. I achieved a Master's in Teaching English as a second language, only one course shy of a Master's in Linguistics due to a timing conflict with a Fulbright scholarship.</p><p>Over the summer, I intern at Educational Testing Services to research and write questions for the TOEFL internet-Based Test</p>",
+			"narrative": "<p>After a few years in the publishing, I decided to attend Montclair State University's Teaching Program to realize my lifelong love for education. I achieved a Master's in Teaching English as a second language, only one course shy of a Master's in Linguistics due to a timing conflict with a Fulbright scholarship.</p><p>Over the summer, I intern at Educational Testing Services to research and write questions for the TOEFL internet-Based Test.</p>",
 			"skills": [
 				{
 					"skill": "Researched, created, and revised test items for the Speaking Section of the TOEFL iBT"
@@ -105,47 +105,8 @@
 					"skill": "Gained familiarity with Mandarin's syntax, vocabulary, and socio-linguistic behavior"
 				}
 			],
-			"image": "images/landscape.jpg",
-			"figCaption": "caption"
-		},
-		{
-			"year": "2013 - 2014",
-			"id": "nintendo",
-			"narrative": "<p>To escape the recession and subsequent collapse of the publishing industry in NY, I fly to Seattle, Washington with no clear plan. I work at a call center for Nintendo of America before being promoted to assisting with data management.</p>",
-			"skills": [
-				{
-					"skill": "Compiled user feedback from tech forums, social media, and the Miiverse (remember that?) into slide decks for upper management"
-				},
-				{
-					"skill": "Provided troubleshooting and IT support as needed"
-				},
-				{
-					"skill": "Assisted the social media manager with content creation and various administrative duties"
-				},
-				{
-					"skill": "Nintendo!"
-				}
-			],
-			"image": "images/landscape.jpg",
-			"figCaption": "caption"
-		},
-		{
-			"year": "2011-2013",
-			"id": "skyhorse",
-			"narrative": "<p>I graduated with a degree in Creative Writing from the University of Rochester and a certificate from NYU's Summer Publishing Institute. Should I move to New York City and become an assistant editor?</p>",
-			"skills": [
-				{
-					"skill": "Proofread and reformatted 60 titles per month for online distribution via Amazon, Barnes & Noble, and iTunes bookstore"
-				},
-				{
-					"skill": "Compiled metadata for over 100 vendors, updated through FTP"
-				},
-				{
-					"skill": "Tracked sales and inventory from the digital marketplace using iTunes Producer and Amazon's Vendor Central"
-				}	
-			],
-			"image": "images/landscape.jpg",
-			"figCaption": "caption"
+			"image": "images/timeline/montclair.jpg",
+			"figCaption": "Montclair State University campus in Montclair, New Jersey"
 		}
 	]
 }

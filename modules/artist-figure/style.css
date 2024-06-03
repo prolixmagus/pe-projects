@@ -1,4 +1,4 @@
-.artist-card{
+.artist-card, .style-guide{
 	position: relative;
 	& li {
 		display: flex;
@@ -19,6 +19,7 @@
 		}
 	}
 	& figcaption {
+		margin-top: 4px;
 		display: flex;
 		flex-direction: column;
 	}

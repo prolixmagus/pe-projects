@@ -1,22 +1,36 @@
 .project-card {
 	display: flex;
 	flex-direction: column;
-	padding: var(--container);
-	background-color: var(--fish-blue);
+	padding: 1em;
+	background-color: var(--paper-dark);
 	border-radius: var(--corners);
+	box-shadow: var(--shadow);
+	height: 100%;
+	& .text-area {
+		flex-grow: 1;
+
+		display: flex;
+		flex-direction: column;
+		& p {
+			flex-grow: 1;
+
+			margin-top: 1em;
+		}
+	}
 	& figure {
 		padding: 0;
 	}
 	& h3 {
 		margin-top: 10px;
 	}
-	& p {
-		margin-top: 1em;
-		flex-grow: 1;
-	}
 	& .read-more {
 		margin-top: 2rem;
 	}
+}
+
+.project-card figure + a, .card picture + a {
+	margin-top: 4px;
+}
 	
 /*	display: flex;
 	flex-direction: column;

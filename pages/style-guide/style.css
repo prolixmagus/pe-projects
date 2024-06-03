@@ -1,9 +1,12 @@
 .style-guide {
-	& colophon, .exercise-card, .artist-card, .common-figure, .project-card, .card{
+	display: grid;
+
+	& colophon, .exercise-card, .artist-card, .common-figure, .project-card, .card {
 		grid-column: 1 / -1;
-		gap: 40px;
 	}
 }
+
+
 
 @media (min-width: 768px) {
 	.style-guide {

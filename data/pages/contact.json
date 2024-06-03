@@ -9,7 +9,7 @@
 		},
 		{
 			"module": "generic-text-heading",
-			"content": "<picture><img src='images/site/scooter.jpg'></picture>"
+			"content": "<picture class='scooter'><img src='images/site/scooter.jpg'></picture>"
 		}
 	]
 }

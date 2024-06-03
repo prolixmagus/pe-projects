@@ -300,11 +300,23 @@
 					"section": [
 						{
 							"module": "generic-text-heading",
-							"content": "<h2>Conclusion</h2><p>A key takeaway was learning how a global class can help separate different page styles. I can apply the different styles to each page by using that same <code>$page</code> variable to assign a class to the <code>html element</code>. That means every style preceded by <code>.garden</code> will be specific to the garden page, and every style preceded by <code>.default</code> will specific to the default page. The cascade (CSS) is wonderful!</p>"
+							"content": "<h2>Result</h2><p>Check out the <a href='projects/site-mockup-to-code'>styled project!</a> If you like what you see, head over to the <a href='?page=projects'>projects page</a> for more.</p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "key-takeaways",
+							"takeaways": [
+								{
+									"teaser": "Global classes help differentiate styles",
+									"description": "<p>I can apply the different styles to each page by using that same <code>$page</code> variable to dynamically assign a class to the <code>html element</code>. That means every style preceded by <code>.garden</code> will be specific to the garden page, and every style preceded by <code>.default</code> will specific to the default page.</p>"
+								}
+							]
 						}
 					]
 				}
-
 			]
 		}
 	]

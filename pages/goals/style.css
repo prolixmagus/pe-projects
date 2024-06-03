@@ -3,6 +3,11 @@
 
 	display: grid;
 	gap: 30px;
+	& p {
+		color: white;
+		font-size: 1.5em;
+
+	}
 }
 .goals-list li {
 	padding: 3rem;
@@ -10,13 +15,13 @@
 }
 
 .goals-list li:nth-child(1) {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-dark);
 }
 
 .goals-list li:nth-child(2) {
 	background-color: var(--color-two);
 }
-
+ 
 .goals-list li:nth-child(3) {
 	background-color: var(--color-three);
 }

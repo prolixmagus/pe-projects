@@ -8,6 +8,10 @@ figcaption {
 	display: block;
 }
 
+figure {
+	max-width: 650px;
+}
+
 .common-figure{
 	width: 100%;
 }

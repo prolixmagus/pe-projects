@@ -1,10 +1,10 @@
 <?php 
-	$pgaeData = read_page_data('work');
+	$pageData = read_page_data('work');
 	
-	$pageTitle = $pgaeData['title'];
-	$pageIdea = $pgaeData['intro'];
+	$pageTitle = $pageData['title'];
+	$pageIdea = $pageData['intro'];
 
-	$recent_articles = most_recent_articles($pgaeData['articles']);
+	$recent_articles = most_recent_articles($pageData['articles']);
 ?>
 
 <?php include('modules/page-header/template.php'); ?>
