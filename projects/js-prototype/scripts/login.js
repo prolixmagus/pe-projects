@@ -25,8 +25,8 @@ function renderLoginView(container) {
           </form>
 
           <div class='login-message'>
-          <p>Username: Test (or make your own)</p>
-          <p>Password: Test (or make your own)</p>
+            <p>Username: Test (or make your own)</p>
+            <p>Password: Test (or make your own)</p>
           </div>
 
         </inner-column>

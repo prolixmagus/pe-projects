@@ -48,7 +48,15 @@
 					"competency": "PHP, HTML, CSS, JS",
 					"description": "I was tasked to choose an industry and create a professional website for a fictional company. I chose luxury landscaping.",
 					"featured" : true
-
+				},
+				{
+					"id": 5,
+					"name": "Find-A-Guide",
+					"address": "projects/js-prototype",
+					"image": "images/landscape.jpg",
+					"competency": "Vanilla JS",
+					"description": "I had one week to make a web application prototype purely in Javascript",
+					"featured" : true
 				}
 			]
 		}

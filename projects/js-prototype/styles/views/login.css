@@ -5,5 +5,12 @@
 	& p {
 		max-width: 500px;
 	}
+}
+
+.login-message {
+	margin-top: 16px;
+}
+
+
 
 
