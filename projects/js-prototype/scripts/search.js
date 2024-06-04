@@ -22,7 +22,7 @@ function getTourSearchView(container) {
         </field>
         <field class='guests'>
           <label>Guests:</label>
-          <input id='guests' type='number' placeholder='Enter number of guests'>
+          <input id='guests' type='number' placeholder='Enter number of guests' min='1'>
         </field>
 
         <button type='submit' data-set='tour-search'>Search</button>
@@ -98,9 +98,24 @@ function getTourResults(tours) {
 
 }
 
+function handleGuestInput(guests) {
+    const guestField = document.querySelector('.guests');
+    let numberOfGuests = parseInt(guests.value);
+    if (numberOfGuests >= 1) {
+      numberOfGuests = guests.value;
+    } else if (numberOfGuests <= 0) {
+      guestField.innerHTML = `
+          <label>Guests:</label>
+          <input id='guests' type='number' placeholder='Enter number of guests' min='1'>
+          <p>Minimum of 1 guest</p>
+          `
+    }
+    return numberOfGuests;
+}
+
 function handleSearch(event) {
-    const filteredTours = getTourResults(tours);
     storeCurrentSearchInformation();
+    const filteredTours = getTourResults(tours);
     renderTourCards(filteredTours);
 }
 
@@ -108,9 +123,9 @@ function storeCurrentSearchInformation() {
     const currentUserData = getCurrentUserData()
     // const inputStartDate = document.querySelector('#start-date').value;
     // const inputEndDate = document.querySelector('#end-date').value;
-    const inputGuests = document.querySelector('#guests').value;
-    currentUserData['searchData'] = { guests: inputGuests }; // startDate: inputStartDate, endDate: inputEndDate,
-
+    const inputGuests = document.querySelector('#guests');
+    const numberOfGuests = handleGuestInput(inputGuests);
+    currentUserData['searchData'] = { guests: numberOfGuests }; // startDate: inputStartDate, endDate: inputEndDate,
     localStorage.setItem('currentUser', JSON.stringify(currentUserData));
 }
 
