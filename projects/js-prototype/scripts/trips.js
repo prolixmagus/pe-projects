@@ -35,38 +35,35 @@ function renderTripCards(tripsList, tours) {
   		const tripData = tripsList.find((trip) => trip.tourId === tour.id)
   		return `
 		  	<section class='confirmed-trips' data-id='${tour.id}'>
-		    	<section class='trip-content'>
-		 	   	<inner-column>
-				      <figure>
-				        <picture>
-				          <img src='${tour.photo}'>
-				        </picture>
-				      </figure>
-				      <ul class='trip-details'>
-					      <li>
-					      	<h2>${tour.title}</h2>
-					      </li>
-					      <li>
-					      	<h3 class='subtitle'>${tour.location}</h3>
-					      </li>
-					      <li>
-					      	<h3 class='subtitle'>${tour.guide.name}</h3>
-					      </li>
-					      <li>
-					      	<h3>${tripData.startDate} -- ${tripData.endDate}</h3>
-					      </li>
-					   </ul>
-					</inner-column>
-				</section>
-				<section class='trips-buttons'>
-					<inner-column>
-						<ul class='further-actions'>
-					      <button type='button' data-action='view-detail'>More Details</button>
-		 					<button type='button' data-action='cancel-trip'>Cancel Trip</button>
-					  	</ul>
-					</inner-column>
-				</section>
-				<hr></hr>
+		  		<inner-column>
+			    	<section class='trip-content'>
+				    	<div>
+					      <figure>
+					        <picture>
+					          <img src='${tour.photo}'>
+					        </picture>
+					      </figure>
+					      <ul class='trip-details'>
+						      <li>
+						      	<h2>${tour.title}</h2>
+						      </li>
+						      <li>
+						      	<h3 class='subtitle'>${tour.location}</h3>
+						      </li>
+						      <li>
+						      	<h3 class='subtitle'>${tour.guide.name}</h3>
+						      </li>
+						      <li>
+						      	<h3>${tripData.startDate} -- ${tripData.endDate}</h3>
+						      </li>
+						   </ul>
+						 </div>
+						 <ul class='further-actions'>
+							<button type='button' data-action='view-detail'>More Details</button>
+				 			<button type='button' data-action='cancel-trip'>Cancel Trip</button>
+						</ul>
+					</section>
+				</inner-column>
 			</section>
 		  		`}).join('');
 	

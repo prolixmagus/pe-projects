@@ -12,6 +12,11 @@
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
+## Screenshots
+
+<picture>
+  <img src=''
+
 ## About the Project
 
 Find-A-Guide is a Vanilla JS web application designed to help users find local tour guides to enhance their dream vacations. It is the result of a 1 week sprint where the challenge was to go from ideation to creation of an mvp (most viable product) that could demonstrate a proof-of-concept to a potential investor.
@@ -35,6 +40,10 @@ All Vanilla JS, baby.
 | Secondary Color | #E6B765 | <div style='background-color: #E6B765;width: 20px;height: 20px;border-radius: 5px'><div> |
 | Paper|#FAFAFA | <div style='background-color: #FAFAFA;width: 20px;height: 20px;border-radius: 5px;border:1px solid black'><div>|
 | Ink | #323232 | <div style='background-color: #323232;width: 20px;height: 20px;border-radius: 5px;'><div> |
+
+## Screenshot
+
+
 
 ## Contact
 
