@@ -39,6 +39,7 @@ output {
 		color: var(--ink-light);
 		padding: 1em;
 		font-weight: 700;
+		max-width: 400px;
 	}
 }
 

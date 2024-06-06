@@ -84,17 +84,14 @@
 						clear x
 					</button>
 
-			</action-buttons>
+				</action-buttons>
          </form>
-
-         <section class='total-count outer-grid'>
-         	<inner-column class='inner-grid'>
-         <output v-if='this.totalChars > 0'>
+         
+         <output class='total-count' v-if='this.totalChars > 0'>
             <p class='first-result'>{{message}}</p>
             <p class='previous' v-if='lastInput'>{{renderPreviousMessage()}}</p>
          </output>
-      </inner-column>
-   </section>
+
 
 	</inner-column>
 </form-section>

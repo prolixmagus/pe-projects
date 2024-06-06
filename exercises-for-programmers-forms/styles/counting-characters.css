@@ -6,11 +6,14 @@
 	grid-row: 3;
 	grid-column: 1 / -1;
 	margin-top: 1rem;
+		& output {
+			grid-column: 1 / -1;
+		}
 		& .previous {
 			border:2px solid var(--color-two);
 		}
 		& .first-result {
-			border:2px solid var(--color-two);
+			border: 2px solid var(--color-two);
 		}
 	}
 	& action-buttons {
