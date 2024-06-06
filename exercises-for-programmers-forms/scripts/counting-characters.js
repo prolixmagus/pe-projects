@@ -97,7 +97,7 @@ const countingCharacters = Vue.createApp({
          return `Your previous input '${this.lastInput}' had ${this.lastInput.length} characters.`
       },
       clear() {
-      	    this.userInput = '';
+      	   this.userInput = '';
             this.wordLabel = 'Write a word, any word!';
             this.totalChars = 0;
             this.message = '';

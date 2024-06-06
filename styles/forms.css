@@ -33,9 +33,10 @@ output {
 	display: block;
 	max-width: 65ch;
 	& p {
-		background-color: var(--color-three);
+		border: 2px solid var(--color-three);
 		border-radius: 10px;
-		color: var(--paper);
+		box-shadow: var(--shadow);
+		color: var(--ink-light);
 		padding: 1em;
 		font-weight: 700;
 	}

@@ -55,10 +55,9 @@
 	<section class="form-output section-grid">
 		<inner-column class="inner-grid">
 
-				<output>
-					<h2>Output</h2>
-					<p class="output-voice"><?=$message?></p>
-				</output>
+			<output>
+				<p class="output-voice"><?=$message?></p>
+			</output>
 		
 		</inner-column>
 	</section>
@@ -74,12 +73,28 @@
                <label for='wordInput'>{{wordLabel}}</label>
                <input id='wordInput' type='text' v-model="userInput">
             </div>
+
+           	<action-buttons>
+
+					<button class="submit-button" type="submit" name="submitted">
+						Submit
+					</button>
+
+					<button class="clear-button" type="button" name="clear" @click='clear()'>
+						clear x
+					</button>
+
+			</action-buttons>
          </form>
 
-         <output class='total-count' v-if='this.totalChars > 0'>
-            <p>{{message}}</p>
+         <section class='total-count outer-grid'>
+         	<inner-column class='inner-grid'>
+         <output v-if='this.totalChars > 0'>
+            <p class='first-result'>{{message}}</p>
             <p class='previous' v-if='lastInput'>{{renderPreviousMessage()}}</p>
          </output>
+      </inner-column>
+   </section>
 
 	</inner-column>
 </form-section>

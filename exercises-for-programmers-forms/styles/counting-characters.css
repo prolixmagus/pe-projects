@@ -1,7 +1,21 @@
-.exercise .vue-counting .total-count {
+.exercise .vue-counting {
+	& form {
+		background-color: var(--color-two);
+	}
+	& .total-count {
 	grid-row: 3;
 	grid-column: 1 / -1;
 	margin-top: 1rem;
+		& .previous {
+			border:2px solid var(--color-two);
+		}
+		& .first-result {
+			border:2px solid var(--color-two);
+		}
+	}
+	& action-buttons {
+		grid-column: 1 / -1;
+	}
 }
 
 .big-thing {
@@ -10,12 +24,15 @@
 	opacity: .3;
 }
 
-.previous {
-	background-color: var(--color-two);
-}
 
 @media (min-width: 400px) {
 	.big-thing {
 		grid-column: 6/ 8;
+	}
+}
+
+@media (min-width: 768px) {
+	.exercise .vue-counting .total-count {
+		grid-column: 2 / 11;
 	}
 }
