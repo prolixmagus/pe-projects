@@ -1,0 +1,8 @@
+h2 + blockquote {
+	padding-top: 1rem;
+}
+
+blockquote {
+	font-size: 20px;
+	font-family: "Apple Chancery", serf;
+}

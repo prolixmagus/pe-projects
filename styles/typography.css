@@ -10,7 +10,7 @@
 
 .quiet-voice.caption {
   color: var(--caption);
-  margin-top: 2.5px;
+  margin-top: 5px;
   font-family: "inconsolata", monospace, sans-serif;
   letter-spacing: .02em;
 }

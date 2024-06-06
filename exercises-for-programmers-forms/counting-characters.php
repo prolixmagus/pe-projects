@@ -23,7 +23,7 @@
 				<p>PHP | JS</p>
 			</fieldset>
 
-			<h2>Input</h2>
+			<h2>PHP / JS</h2>
 
 			<div class="field">
 				<label for="string">Write anything!</label>
@@ -63,3 +63,23 @@
 		</inner-column>
 	</section>
 <?php } ?>
+
+<form-section class="vue-counting section-grid">
+	<inner-column class="inner-grid">
+		
+		   <form @submit='handleSubmit'>
+            <h2>Vue 3</h2>
+            <div class='big-thing'>{{totalChars}}</div>
+            <div class='field'>
+               <label for='wordInput'>{{wordLabel}}</label>
+               <input id='wordInput' type='text' v-model="userInput">
+            </div>
+         </form>
+
+         <output class='total-count' v-if='this.totalChars > 0'>
+            <p>{{message}}</p>
+            <p class='previous' v-if='lastInput'>{{renderPreviousMessage()}}</p>
+         </output>
+
+	</inner-column>
+</form-section>

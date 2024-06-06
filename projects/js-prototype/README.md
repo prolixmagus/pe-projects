@@ -21,7 +21,7 @@
 
 Find-A-Guide is a Vanilla JS web application designed to help users find local tour guides to enhance their dream vacations. It is the result of a 1 week sprint where the challenge was to go from ideation to creation of an mvp (most viable product) that could demonstrate a proof-of-concept to a potential investor.
 
-This was a challenge as part of the [Perpetual Education](https://perpetual.education/) mentorship / bootcamp. Previous to this, I had focused on PHP, HTML, and progressive enhancement through Javascript. This is my first attempt where JS handles rendering and the program logic.
+This was a challenge assigned by the [Perpetual Education](https://perpetual.education/) mentorship / bootcamp. Prior to this, I had focused on PHP, HTML, and progressive enhancement through Javascript. This is my first attempt where JS handles rendering and the program logic.
 
 ## Tech Stack
 All Vanilla JS, baby.

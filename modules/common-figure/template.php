@@ -9,7 +9,7 @@
 	</picture>
 	<?php if(isset($figCaption)) { ?>
 	<figcaption class='quiet-voice caption'>
-		<p class='quiet-voice caption'><?=$figCaption?></p>
+		<?=$figCaption?>
 	</figcaption>
 	<?php } ?>
 </figure>

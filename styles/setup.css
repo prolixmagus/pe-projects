@@ -67,7 +67,7 @@ sup {
   font-size: .7rem;
 }
 
-  & .read-more {
+.read-more {
     margin-top: 2rem;
     text-decoration: underline;
   }

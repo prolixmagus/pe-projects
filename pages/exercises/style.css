@@ -6,6 +6,7 @@ li.exercise-card {
 	padding: 1rem;
 	border-radius: var(--corners);
 	border: 1px solid black;
+	background-color: var(--paper-dark);
 	& p {
 		flex-grow: 1;
 		margin-top: .25rem;
@@ -24,17 +25,10 @@ li.exercise-card {
 	gap: 20px;
 }
 
-@media (min-width: 520px) {
+@media (min-width: 800px) {
 	.e4p-grid {
 		grid-column: 2 / 11;
 		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (min-width: 1000px) {
-	.e4p-grid {
-		grid-column: 2 / 11;
-		grid-template-columns: repeat(3, 1fr);
 	}
 }
 

@@ -16,6 +16,7 @@ error_reporting(E_ALL);
 
 
 <script src="scripts/site.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="<?=get_site_scripts($page)?>" type='module'></script>
 
 <?php if (isset($_GET['page']) && $_GET['page'] == "exercise") { ?>

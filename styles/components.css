@@ -31,6 +31,8 @@
 .e4p-icon {
 	max-width: 30px;
 	stroke: var(--black);
+	align-self: start;
+
 } 
 
 .switch {
