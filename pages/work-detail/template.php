@@ -9,7 +9,7 @@ $work_article_slug = $work_article['slug'];
 
 <?php 
 	if($work_article_slug) {
-		get_article_template($work_article_slug);
+		include('pages/work-detail/blog-template/template.php');
 	} else {
 		include('error404/template.php');
 	}

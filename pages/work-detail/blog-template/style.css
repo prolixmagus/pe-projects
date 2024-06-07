@@ -1,0 +1,26 @@
+.work-detail .headline {
+	grid-column: 1 / -1;
+}
+
+.work-detail .common-figure {
+	grid-column: 1 / -1;
+}
+
+.work-detail .double-figure {
+	grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+	.work-detail .headline {
+		grid-column: 2 / 11;
+	}
+	
+	.work-detail .common-figure {
+		grid-column: 2 / 11;
+	}
+
+	.work-detail .double-figure {
+		grid-column: 2 / 11;
+	}
+}
+

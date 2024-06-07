@@ -5,11 +5,11 @@ $work_article = get_article_by_slug($pageData, $_GET['slug']);
 $explorationTitle = $work_article['title']
 ?>
 
-<article class='exploration death-and-design'>
-
+<article class='exploration <?=$work_article['slug']?>'>
+	<?php $explorationTitle = $work_article['title']?>
 	<?php include('modules/explorations-header/template.php') ?>
 
-	<?php foreach($work_article['case-study'] as $part) { ?>
+<?php foreach($work_article['case-study'] as $part) { ?>
 	
 	<section class='section-grid'>
 		<inner-column class='inner-grid'>
