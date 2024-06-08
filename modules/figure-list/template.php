@@ -3,10 +3,9 @@
 <ul class="<?= isset($section['double-figure']) ? 'double-figure' : 'figure-list' ?>">
 
 	<?php foreach($section['figure'] as $figure) { 
-
-	$image = $figure['image'] ?? "images/landscape.jpg";
-	$figCaption = $figure['figCaption'] ?? null;
-	$alt = $figure['alt'] ?? "placeholder image";
+		$image = $figure['image'] ?? "images/landscape.jpg";
+		$figCaption = $figure['figCaption'] ?? null;
+		$alt = $figure['alt'] ?? "placeholder image";
 	?>
 
 	<figure>

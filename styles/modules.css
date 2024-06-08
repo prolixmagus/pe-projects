@@ -20,6 +20,7 @@
 @import '../modules/article-card/style.css';
 @import '../modules/figure-list/style.css';
 @import '../modules/key-takeaways/style.css';
+@import '../modules/codepen/style.css';
 
 /*influences modules*/
 @import '../modules/artist-figure/style.css';

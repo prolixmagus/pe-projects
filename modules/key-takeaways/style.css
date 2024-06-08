@@ -29,7 +29,7 @@ details[open] > summary::after {
 
 @media (prefers-color-scheme: dark) {
 	details > summary {
-		border-bottom: 1px solid var(--fish-pink);
+		border-bottom: 1px solid var(--paper);
 	}
 }
 

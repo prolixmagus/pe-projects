@@ -10,7 +10,7 @@
 			"slug": "death-and-design",
 			"published": "02 NOV 2023",
 			"updated": "10 NOV 2023",
-			"description": "This will be a description for the aticle. A teaser of sorts. Read more to find out!",
+			"description": "Cinema weaves sight and sound into a storytelling design sytsem.",
 			"preview-image": "images/explorations/death-and-design/headline.jpg",
 			"related": ["bottles-in-the-sky", "theme-challenge"],
 			"case-study": [
@@ -61,7 +61,7 @@
 			"slug": "bottles-in-the-sky",
 			"published": "03 NOV 2023",
 			"updated": "10 OCT 2023",
-			"description": "This will be a description for the article. A teaser of sorts. Read more to find out!",
+			"description": "There are great designs and terrible designs all around us. Nothing is permanent.",
 			"preview-image": "images/explorations/bottles-in-the-sky/headline.jpg",
 			"related": ["death-and-design", "theme-challenge"],
 			"case-study": [
@@ -153,7 +153,7 @@
 			"published": "17 APR 2024",
 			"updated": "20 APR 2024",
 			"preview-image": "images/explorations/theme-challenge/headline.jpg",
-			"description": "This will be a description for the aticle. A teaser of sorts. Read more to find out!",
+			"description": "Given a blank canvas and a demographic, what elements do you reach for to establish connection?",
 			"related": ["death-and-design", "bottles-in-the-sky"],
 			"case-study": [
 				{
@@ -316,6 +316,48 @@
 								}
 							]
 						}
+					]
+				}
+			]
+		},
+		{
+			"id": "4",
+			"title": "Caesar Cipher",
+			"slug": "caesar-cipher",
+			"published": "06 JUN 2024",
+			"updated": "06 JUN 2024",
+			"preview-image": "images/explorations/caesar-cipher/headline.jpg",
+			"description": "Let's take a crack at some cryptography - with Javascript!",
+			"related": ["theme-challenge", "bottles-in-the-sky"],
+			"case-study": [
+				{
+					"section": [
+						{
+							"module": "common-figure",
+							"image": "images/explorations/caesar-cipher/headline.jpg",
+							"alt": "The letter 'A' and 'Z' in a roman-style door frame",
+							"headline": true
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Introduction</h2><p>The other day I picked up The Code Book by <a href='https://simonsingh.net/'>Simon Singh</a>, a fascinating survey of the history of cryptography. The book “call(s) upon stories of political intrigue and tales of life and death” that serve as “turning points in the evolutionary development of codes,” to quote Singh himself.</p><p>Aside from being a history hobbyist, I’ve always been intrigued by codebreaking games like <a href='https://en.wikipedia.org/wiki/Mastermind_(board_game)'>Mastermind</a>, <a href='https://www.nytimes.com/games/wordle/index.html'>Wordle</a>, or those fun elementary school <a href='https://www.superteacherworksheets.com/secret-code-math.html'>math worksheets</a> where a “hidden message” is revealed through solving problems (each solution associated with a letter from the alphabet).</p><p>Now that I’m balancing out design with practicing algorithms, I thought it would be fun to attempt to “recreate” some of these ciphers in code, specifically using Vue. This would be a good chance to practice array manipulation techniques like <code>.map()</code> and <code>.indexOf()</code>.</p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>The Cipher</h2><p>To be a good politician, you need to be obsessed with secrecy. Julius Caesar was no different - he used to encrypt his messages in a substitution cipher with a twist, the letters would be shifted a certain interval. In my cipher, I decided to shift the letters by 3, so “hello” would equal “khoor.”</p>"
+						},
+						{
+							"module": "codepen",
+							"pen": "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='LYoLLVe' data-pen-title='caesar-cipher' data-user='Jeremy-Fishman' style='height: 300px; box-sizing: border-box; display: flex; data-editable='true'; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><span>See the Pen <a href='https://codepen.io/Jeremy-Fishman/pen/LYoLLVe'>caesar-cipher</a> by Jeremy Fishman (<a href='https://codepen.io/Jeremy-Fishman'>@Jeremy-Fishman</a>)on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<p>Some problems I did not foresee: looping back around the alphabet.</p><p>To compare the alphabet list and the input word, you need to figure out “how do I convert the word into where it falls in the alphabet?” You use indexes, it’s “slot” in the list - like saying “d” is the “4th” letter of the alphabet (the 4 would be the index). You can find this out by “for each of these letters, return the index where they fall on the alphabet list.”</p><p>However, the problem comes when you apply the shift. Let’s shift 3 letters. If “d” is the 4th letter, bring me back the 7th letter “g.” No issue yet. But when we get to “x”, “y”, and “z” … we’re going beyond the scope of our list, to 26, 27, 28 respectively. 26 is outside of the items because javascript starts counting indexes at 0, but counts length as the number of items. There are 25 indexes (z is 25), but the list is 26 items long. After some headscratching and research, the solution was to use a modulo operator (shows the remainder of a number). So 26 % 26 would be 0, which would access the first element of the array (the “a”). 27 % 26 would be 1, or “b”, and 28 % 26 would be 2, or “c”.</p><p>Here is some fun trivia to end on. According to wikipedia, substitution cipher where you swap a letter with its 13th letter has a special name - ROT13 - which “was used in online forums a means of hiding spoilers, punchlines, puzzle solutions, and offensive material from the casual glance.”</p>"
+						}	
 					]
 				}
 			]
