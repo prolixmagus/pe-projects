@@ -35,7 +35,7 @@
 			?>
 
 			<li>
-				<a href='<?=$link['link']?>' <?php if ($current_page === $link_page) { ?> class='active'<?php } ?>><?=$link_page?></a>
+				<a href='<?=$link['link']?>'><?=$link_page?></a>
 			</li>
 
 		<?php } ?>

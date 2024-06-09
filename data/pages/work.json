@@ -352,7 +352,7 @@
 						},
 						{
 							"module": "codepen",
-							"pen": "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='LYoLLVe' data-pen-title='caesar-cipher' data-user='Jeremy-Fishman' style='height: 300px; box-sizing: border-box; display: flex; data-editable='true'; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><span>See the Pen <a href='https://codepen.io/Jeremy-Fishman/pen/LYoLLVe'>caesar-cipher</a> by Jeremy Fishman (<a href='https://codepen.io/Jeremy-Fishman'>@Jeremy-Fishman</a>)on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"
+							"pen": "<iframe height='450' style='width: 100%;' scrolling='no' title='caesar-cipher' src='https://codepen.io/Jeremy-Fishman/embed/LYoLLVe?default-tab=result&editable=true' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/Jeremy-Fishman/pen/LYoLLVe'>caesar-cipher</a> by Jeremy Fishman (<a href='https://codepen.io/Jeremy-Fishman'>@Jeremy-Fishman</a>)on <a href='https://codepen.io'>CodePen</a>.</iframe>"
 						},
 						{
 							"module": "generic-text-heading",

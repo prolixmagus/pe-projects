@@ -1,31 +1,24 @@
 .project-list {
-	grid-column: 1 / -1;
-	
-	display: grid;
-	gap: 2rem;
-	}
+    grid-column: 1 / -1;
+    display: grid;
+    gap: 2rem;
 }
 
 @media (min-width: 490px) {
-	.project-list {
-		grid-column: 1 / 11;
-	}
+    .project-list {
+        grid-column: 1 / 11;
+    }
 }
 
 @media (min-width: 768px) {
-	.project-list {
-		grid-column: 2 / 11;
-
-		grid-template-columns: repeat(2, 1fr);
-}
-
-
-@media (min-width: 768px) {
-	.project-list {
-		grid-column: 2 / 11;
+    .project-list {
+        grid-column: 2 / 11;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 1000px) {
-	.project-list {
-		grid-column: 2 / 11;
+    .project-list {
+        grid-column: 2 / 11;
+    }
 }

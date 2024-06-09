@@ -10,7 +10,7 @@
 
 @media (min-width: 490px) {
 	.recent-articles {
-		grid-column: 1 / 11;
+		grid-column: 3 / 11;
 	}
 }
 

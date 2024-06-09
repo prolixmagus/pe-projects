@@ -41,7 +41,7 @@ body {
 }
 
 p a, li a {
-	color: blue;
+	color: var(--color-primary-dark);
 	text-decoration: none;
 	display: inline-block;
 }
@@ -142,5 +142,20 @@ picture {
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--background-dark);
+	}
+
+	p a, li a {
+	color: var(--color-primary);
+	text-decoration: none;
+	display: inline-block;
+	}
+
+	p a:hover, li a:hover {
+	text-decoration: wavy underline;
+	text-decoration-color: var(--color-primary);
+	}
+
+	li a:visited, p a:visited {
+	color: var(--color-two);
 	}
 }

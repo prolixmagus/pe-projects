@@ -21,7 +21,7 @@ html {
 	/* colors */ 
 
 	--color-primary: hsl(var(--primary), 59%, 60%);
-	--color-primary-dark: hsl(var(--primary), 33%, 40%);
+	--color-primary-dark: hsl(var(--primary), 46%, 28%);
 	--color-two: hsl(var(--accent-two), 30%, 61%);
 	--color-two-dark: hsl(var(--accent-two), 33%, 40%);
 	--color-three: hsl(var(--accent-three), 76%, 60%);

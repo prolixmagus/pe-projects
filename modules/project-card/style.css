@@ -29,6 +29,12 @@
 .project-card figure + a, .card picture + a {
 	margin-top: 4px;
 }
+
+@media (prefers-color-scheme: dark) {
+	.project-card {
+		background-color: var(--background-light);
+	}
+}
 	
 /*	display: flex;
 	flex-direction: column;

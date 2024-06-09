@@ -1,14 +1,19 @@
 .contact address {
-	padding: 1em;
+	padding: .5em 1em;
 	display: grid;
 	font-size: clamp(16px, 5vw, 32px);
 	font-family: "Noto Sans", sans-serif;
 	gap: 10px;
+	color: var(--color-primary-dark);
+	&:hover {
+		text-decoration: underline wavy;
+	}
 }
 
 .contact picture {
-	padding: 5vw;
+	padding: 1em;
 	background-color: var(--color-two);
+	max-width: 400px;
 	& img {
 		border-radius: 10px;
 	}
