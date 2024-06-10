@@ -2,7 +2,7 @@
 	"title": "Work & Exploration",
 	"slug": "work",
 	"template": "blog",
-	"intro": "Great designers know that those “a-ha!” moments hide within the tall grass of process and practice. Below are various writings, wonderings, and experiments that hopefully spark ... you guessed it ... joy.",
+	"intro": "Great designers know that those “a-ha!” moments hide within the tall grass of process and practice. Below is a list of my most recent writings, wonderings, and experiments. Within each article are two related articles, so plenty of opportunity for discovery!",
 	"articles": [
 		{
 			"id": "1",
@@ -358,6 +358,91 @@
 							"module": "generic-text-heading",
 							"content": "<p>Some problems I did not foresee: looping back around the alphabet.</p><p>To compare the alphabet list and the input word, you need to figure out “how do I convert the word into where it falls in the alphabet?” You use indexes, it’s “slot” in the list - like saying “d” is the “4th” letter of the alphabet (the 4 would be the index). You can find this out by “for each of these letters, return the index where they fall on the alphabet list.”</p><p>However, the problem comes when you apply the shift. Let’s shift 3 letters. If “d” is the 4th letter, bring me back the 7th letter “g.” No issue yet. But when we get to “x”, “y”, and “z” … we’re going beyond the scope of our list, to 26, 27, 28 respectively. 26 is outside of the items because javascript starts counting indexes at 0, but counts length as the number of items. There are 25 indexes (z is 25), but the list is 26 items long. After some headscratching and research, the solution was to use a modulo operator (shows the remainder of a number). So 26 % 26 would be 0, which would access the first element of the array (the “a”). 27 % 26 would be 1, or “b”, and 28 % 26 would be 2, or “c”.</p><p>Here is some fun trivia to end on. According to wikipedia, substitution cipher where you swap a letter with its 13th letter has a special name - ROT13 - which “was used in online forums a means of hiding spoilers, punchlines, puzzle solutions, and offensive material from the casual glance.”</p>"
 						}	
+					]
+				}
+			]
+		},
+		{
+			"id": "5",
+			"title": "Teapet Shop",
+			"slug": "teaept-shop",
+			"published":"22 APR 2024",
+			"updated": "24 APR 2024",
+			"preview-image": "images/explorations/teapet-store/headline.jpg",
+			"description": "Making a mock storefront selling teapets to keep you company - using CRUD methods.",
+			"related": ["caesar-cipher", "theme-challenge"],
+			"case-study": [
+				{
+					"section": [
+						{
+							"module": "common-figure",
+							"image": "images/explorations/teapet-store/headline.jpg",
+							"alt": "A lucky cat in the middle of two steaming teapots",
+							"headline": true
+						},
+						{
+							"module": "generic-text-heading",
+							"content":"<h2>Introduction</h2><p>The goal of this project was to make a website with CRUD functionality using PHP. The website features a simple routing system using URL query strings, a UX friendly form for user input, and detail pages for each item. There are also functions that handle encoding PHP associative arrays into JSON (and decoding as needed). I chose to make a store where a user can purchase tea pets or customize their own, since steeping and enjoying different types of teas is a passion of mine."
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Create, Read, Update</h2><p>The creation aspect begins at the Customize page. Users will encounter a form, where they will customize the name, type, origin, material, and size. I thought it best to use select (dropdown) elements, as it reduces chance of typos (plus it is whatever we have in stock). If any fields are blank, warning messages will appear.</p>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/teapet-store/validation-form.jpg",
+							"figCaption": "Form validation if required input is empty",
+							"alt": "Two website forms for submitted order details for a custom teapet"
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<p>Once the user clicks submit, the PHP associate array (list of values) is stored in a variable (in this case, $customTeapet). We want to add this new information to the database, so first we need to <strong>read</strong> the data. We then add $customTeapet to the end of that list to <strong>update</strong> it. The updated list is then encoded into JSON (<strong>created / saved</strong>). When we go to the list page, we will see the new entry.</p>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/teapet-store/teapet-list-page.jpg",
+							"figCaption": "A list of premade teapets along with the new custom teapet",
+							"alt": "pictures of a buddha, frog, and cat teapet with price listings underneath."
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Delete</h2><p>All is well and good, but what if you want to learn more information about a tea pet? What if you had a change of heart and want to delete your creation? If you click on the card, you will be brought to a details page that has more information as well as a short description.</p>"
+						},
+						{
+							"module": "common-figure",
+							"image": "images/explorations/teapet-store/teapet-detail.jpg",
+							"figCaption": "The delete button needs some work!",
+							"alt": "A picture of a buddha teapet on a stone slab with price listing underneath"
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<p>The server knows which HTML page to render by looking at the data in the URL query string. For the Buddha, it sees index.php?page=detail&tea-pet=Buddha. Every tea pet has a unique id.</p><p>The delete button is actually a small form. Once input is submitted to the server, it loops over each item in the list. The loop is trying to find the ids that <em>don't</em> match the id in the URL query string to store them in a separate list (a sort of ‘do not delete me’ list). Those tea pets are pushed to the database, leaving the Buddha Teapet to seek Enlightenment elsewhere.</p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "key-takeaways",
+							"takeaways": [
+								{
+									"teaser": "You can follow CRUD tutorials and copy functions, but...",
+									"description": "It's sometimes more useful to build on what you know (in this case, adding and removing data from arrays) to create more complex functions. This will give you a deeper understanding how these programs tick."
+								},
+								{
+									"teaser": "Managing data is half the battle",
+									"description": "To avoid pulling in the database information on every page, you can pull in the database information once at a larger scope. You can then sprinkle the data throughout smaller scopes as needed."
+								}
+							]
+						}
 					]
 				}
 			]

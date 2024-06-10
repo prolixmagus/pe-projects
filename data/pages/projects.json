@@ -24,7 +24,7 @@
 				},
 				{
 					"id": 3,
-					"name": "Tea Pet Shop",
+					"name": "Teapet Shop",
 					"address": "projects/teapet",
 					"image": "images/site/teapet-shop.jpg",
 					"competency": "PHP, HTML, CSS",

@@ -18,6 +18,5 @@
 					<?php } ?>
 			<?php } ?>
 		</ol>
-		<related-articles>
 		
 <?php } ?>
