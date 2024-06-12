@@ -96,11 +96,11 @@ function get_layout_by_slug($database, $slug_to_match) {
 
 /* ------------ */
 
-function most_recent_articles($articles) {
+function sorted_articles($articles) {
 	usort($articles, function($a, $b) {
 		return strtotime($b['published']) - strtotime($a['published']);
 	});
-	return array_slice($articles, 0, 4);
+	return $articles;
 }
 
 function get_site_scripts($exercise) {

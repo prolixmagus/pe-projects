@@ -4,8 +4,8 @@
 	$pageTitle = $pageData['title'];
 	$pageIdea = $pageData['intro'];
 
-	$recent_articles = most_recent_articles($pageData['articles']);
-?>
+	$recent_articles = array_slice(sorted_articles($pageData['articles']), 0, 4);
+?>	
 
 <?php include('modules/page-header/template.php'); ?>
 
