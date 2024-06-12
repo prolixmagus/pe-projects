@@ -1,19 +1,9 @@
-.artist-card, .style-guide{
+.artist-card {
 	position: relative;
 	height: 100%;
-	& li {
-		display: flex;
-		flex-direction: column;
-		flex-grow: 1;
-		height: 100%;
-	}
-	& figure {
    flex-grow: 1;
-   height: 100%;
-	gap: 5px;
 	& picture {
 		aspect-ratio: 1 / 1;
-
 		&img {
 			object-fit: cover;
 			width: 100%;
