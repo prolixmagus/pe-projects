@@ -11,7 +11,7 @@
 		],
 		[
 			"page" => "Resume",
-			"link" => "?page=timeline",
+			"link" => "?page=resume",
 		],
 		[
 			"page" => "Influences",
@@ -25,7 +25,6 @@
 ?>
 
 <nav>
-	<div>
 	<ul class='user-menu'>
 		<button type='button'>x close</button>
 
@@ -35,7 +34,7 @@
 			?>
 
 			<li>
-				<a href='<?=$link['link']?>'><?=$link_page?></a>
+				<a href='<?=$link['link']?>' class='<?=(strtolower($current_page) === strtolower($link_page)) ? 'active' : "" ?>'><?=$link_page?></a>
 			</li>
 
 		<?php } ?>

@@ -1,6 +1,7 @@
 .active {
-	background-color: green;
+	color: blue;
 }
+
 body.menu-open::before {
     content: "";
     position: fixed;

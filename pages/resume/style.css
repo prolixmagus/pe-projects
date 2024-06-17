@@ -1,37 +1,37 @@
 /* For horizontal scroll
 
-.timeline {
+.resume {
 	display: flex;
 	overflow-x: scroll;
 }
 
-.timeline .section-grid {
+.resume .section-grid {
 	display: block;
 }
 
-.timeline .inner-grid {
+.resume .inner-grid {
 	display: flex;
 	flex-direction: column;
 }*/
 
-.timeline section + section {
+.resume section + section {
 	margin-top: 4rem;
 }
 
-.timeline li + li {
+.resume li + li {
 	margin-top: 1em;
 }
 
-.timeline li::before {
+.resume li::before {
 	content: '•';
 	padding-right: 5px;
 }
 
-.timeline h3 + ul {
+.resume h3 + ul {
 	margin-top: 10px;
 }
 
-.timeline h3.strong-voice {
+.resume h3.strong-voice {
 	font-size: 1.5rem;
 	color: var(--color-two);
 }

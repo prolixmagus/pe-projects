@@ -36,6 +36,7 @@
 	margin-top: 20px;
 	grid-column: 8 / -1;
 	grid-row: 2;
+	}
 }
 
 @media(min-width: 1000px) {

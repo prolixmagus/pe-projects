@@ -59,6 +59,11 @@ li a:visited, p a:visited {
 	color: var(--ink);
 }
 
+.site-header li a.active {
+	text-decoration: wavy underline;
+	text-decoration-color: var(--color-primary-dark);
+}
+
 .card li a:visited, .card li a:visited {
 	color: var(--ink);
 }
@@ -150,7 +155,7 @@ picture {
 	display: inline-block;
 	}
 
-	p a:hover, li a:hover {
+	p a:hover, li a:hover, .site-header li a.active {
 	text-decoration: wavy underline;
 	text-decoration-color: var(--color-primary);
 	}
