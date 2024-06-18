@@ -11,7 +11,7 @@
             <g transform="matrix(4.15374,0,0,7.00842,-1429.71,-1196.49)">
                 <g transform="matrix(16,0,0,16,618,205.019)">
                 </g>
-                <text x="362.711px" y="205.019px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:16px;">How did you hear about Duo Lingo?</text>
+                <text x="362.711px" y="205.019px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:16px;">Búho is owl in Spanish.</text>
             </g>
         </g>
     </g>

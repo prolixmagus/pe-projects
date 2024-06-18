@@ -13,13 +13,20 @@
 	cursor: pointer;
 }
 
-.duo-lingo-survey .checked {
-	background-color: #DDF4FF;
-	box-shadow: 0px 2px #85D8FF;
-}
-
 .duo-lingo-survey .checked:hover {
 	background-color: #DDF4FF;
+}
+
+@media (prefers-color-scheme: dark) {
+	.duo-lingo-survey li:hover  {
+	background-color: #C28FEF;
+	cursor: pointer;
+	}
+
+	.duo-lingo-survey .checked {
+	background-color: #C28FEF;
+	box-shadow: 0px 2px #85D8FF;
+	}
 }
 
 

@@ -43,8 +43,9 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 4px 8px;;
+	padding: 4px 8px;
 	border: 2px solid purple;
+	gap: 1em;
 }
 
 .takeout-form label {
@@ -58,17 +59,21 @@
 .takeout-form input, .takeout-form input[type="text"] {
   border: none;
   font-size: 1.15rem;
-  max-width: 150px;
-  padding
+  width: 100%;
+  padding: 1em;
 }
 
 
 
-.takeout-form input:focus {
+/*.takeout-form input:focus {
 	outline: none;
 	background: #CBC3E3;
 }
 
+.field.text:focus-within {
+	  background: #CBC3E3;
+}
+*/
 .takeout-form select {
 	border: none;
 	font-size: 1.15rem;
@@ -82,10 +87,6 @@
 .takeout-form fieldset {
 	display: flex;
 	width: 100%;
-}
-
-.field.text:focus-within {
-	  background: #CBC3E3;
 }
 
 .text {
@@ -139,5 +140,9 @@ label-wrapper {
 	.takeout-contact-form input {
 		background-color: var(--paper-black);
 		color: var(--ink-light);
+	}
+
+	.takeout-contact-form label {
+		color: #CBC3E3;
 	}
 }
