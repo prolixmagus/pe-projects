@@ -13,18 +13,17 @@ Welcome to my personal website! So far, it has gone through four structural iter
 </a>
 
 ## App Todo
-- [ ] Fix negative number of guests
-
 
 
 ## Website Todo
 
+
 #### General
+
 
 #### Work Page
 
-- [x] Work articles preview images
-	 [ ] ALT TEXT
+- [ ] Fix breakpoints for grid / article card page
 
 - [ ] Work articles "key points"
 	- [ ] Theme Challenge
@@ -35,29 +34,37 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 - [ ] Projects preview images
 
-- [ ] Add blogs to site / grid layout
-	- [ ] Site Mockup to Code
-	- [ ] e4p (madlibs?)
-	- [ ] Responsive Layout Garden
-	- [ ] Tea Pet Shop
-
 #### Influences
 
 - [ ] Add more Influences artists
 
 #### Contact
 
-- [ ] Figure out what to put on there
 
 #### Home
 
+
 ## Long Term Todo
 
-- [ ] Style E4P individual forms ... 
 
----
+## Completed Todo 
 
-## Completed Todo (5/20 - 5/25)
+### 5/27 - 6/1
+- [x] Add blogs to site / grid layout
+	- [x] Site Mockup to Code
+	- [x] e4p (madlibs?)
+	- [x] Responsive Layout Garden
+	- [x] Tea Pet Shop
+- [x] Style E4P individual forms ...
+- [x] Work articles preview images
+- [x] Add blogs to site / grid layout
+	- [x] Site Mockup to Code
+	- [x] e4p (madlibs?)
+	- [x] Responsive Layout Garden
+	- [x] Tea Pet Shop
+
+
+### 5/20 - 5/25
 - [x] Finish <a href="https://perpetual.education/stories/serious-times-with-jeremy/">code review</a> and take notes 
 - [x] create Figma prototype of app
 - [x] Favicon
@@ -68,7 +75,7 @@ Welcome to my personal website! So far, it has gone through four structural iter
 
 
 
-## Completed Todo (5/27 - 5/31)
+### 5/27 - 5/31
 
 - [x] E4P page on grid layout
 - [x] E4P project-detail page on grid layout
