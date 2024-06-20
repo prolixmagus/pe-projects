@@ -39,12 +39,12 @@
 		<meta property='og:type' content='article'>
 		<meta property='og:description' content='<?=$metaDescription?>'>
 
-		<meta property='og:url' content='https://peprojects.dev/alpha-8/jeremy/index.html'>
-		<meta property='og:image' content='https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg'>
+		<meta property='og:url' content='https://peprojects.dev/alpha-8/index.html'>
+		<meta property='og:image' content='https://peprojects.dev/alpha-8/images/meta-fish-card.jpg'>
 
 		<meta name="twitter:title" content='<?=$metaTitle?>'>
 		<meta name="twitter:description" content='<?=$metaDescription?>'>
-		<meta name="twitter:image" content="https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg">
+		<meta name="twitter:image" content="https://peprojects.dev/alpha-8/images/meta-fish-card.jpg">
 		<meta name="twitter:card" content="summary_large_image">
 
 		<link rel='stylesheet' href='styles/site.css'>
