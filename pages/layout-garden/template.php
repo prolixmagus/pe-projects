@@ -3,7 +3,7 @@
 $pageData = read_page_data('layout-garden');
 
 $pageTitle = $pageData['title'];
-$pageIdea = $pageData['idea'];
+$pageIdea = $pageData['intro'];
 
 ?>
 

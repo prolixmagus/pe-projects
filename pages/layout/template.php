@@ -24,23 +24,20 @@
 	</section>
 
 	<?php foreach ($section['case-study'] as $section) { 
-		$module = $section['module'] ?>
+		$module = $section['module']?>
 		
 		<section class="case-study-paragraph section-grid">
 			<inner-column class='inner-grid'>
 
+				<!-- includes generic text heading -->
+
 				<?php include("modules/$module/template.php");?>
+				
 			</inner-column>
 		</section>
 		
 	<?php } ?>
 
-
-<!-- 	<section class="case-study-paragraph section-grid">
-		<inner-column class='inner-grid'>
-			<?php include("modules/layout-garden/" .  $section['module'] . "/case-study.php");?>
-		</inner-column>
-	</section> -->
 <?php } else { ?>
 
 	<section>

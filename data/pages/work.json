@@ -2,7 +2,8 @@
 	"title": "Work & Exploration",
 	"slug": "work",
 	"template": "blog",
-	"intro": "Great designers know that those “a-ha!” moments hide within the tall grass of process and practice. Below is a list of my most recent writings, wonderings, and experiments. Within each article are two related articles, so plenty of opportunity for discovery!",
+	"meta-description": "Great designers know that those “a-ha!” moments hide within the tall grass of process and practice.",
+	"intro": "Great designers know that those “a-ha!” moments hide within the tall grass of process and practice. Below is a list of my four most recent writings, wonderings, and experiments. Don’t forget to check out <a href='?page=archive'>the archive</a> for more ideas.",
 	"articles": [
 		{
 			"id": "1",

@@ -1,6 +1,6 @@
 {
 	"title": "Goals",
-	"idea": "Goals help structure time by marking where we started and how far we've come. Here are a few goals I wish to accomplish within the next few years.",
+	"intro": "Goals help structure time by marking where we started and how far we've come. Here are a few goals I wish to accomplish within the next few years.",
 	"sections": [
 		{
 			"module": "goals-list",

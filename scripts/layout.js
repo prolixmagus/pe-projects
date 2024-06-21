@@ -1,7 +1,7 @@
 const duoForm = document.querySelector('.duo-lingo-form')
 
-duoForm.addEventListener('click', (event) => {
-	if (event.target.matches('[type="checkbox"]')) {
+window.addEventListener('click', (event) => {
+	if (event.target.matches('[data-set="duo"]')) {
 		const listItem = event.target.closest('li')
 		listItem.classList.toggle('checked')
 	}

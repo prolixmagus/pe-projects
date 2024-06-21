@@ -1,6 +1,6 @@
 <?php $pageData = read_page_data('goals'); 
 	$pageTitle = $pageData['title'];
-	$pageIdea = $pageData['idea'];
+	$pageIdea = $pageData['intro'];
 ?>
 
 <?php include('modules/page-header/template.php') ?>

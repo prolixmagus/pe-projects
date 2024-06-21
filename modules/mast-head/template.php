@@ -18,7 +18,7 @@
 	// }
 
 	$metaTitle = $pageData['title'] ?? "Home: Jeremy Fishman's Portfolio";
-	$metaDescription = $pageData['intro'] ?? "Teacher. Web Developer. Linguist. Human.";
+	$metaDescription = $pageData['meta-description'] ?? "Teacher. Web Developer. Linguist. Human.";
 	$metaImage = $pageData['meta-image'] ?? "https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg";
 	$metaUpdate = $pageData['meta-updated'] ?? "Monday, June 10th, 2024";
 ?>

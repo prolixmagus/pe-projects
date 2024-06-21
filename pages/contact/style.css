@@ -1,5 +1,5 @@
 .contact address {
-	padding: .5em 1em;
+	padding: .5em 0em;
 	display: grid;
 	font-size: clamp(16px, 5vw, 32px);
 	font-family: "Noto Sans", sans-serif;

@@ -17,7 +17,7 @@
 
 	</progress-section>
 
-	<form class='duo-lingo-form' method='POST'>
+	<form class='duo-lingo-form' data-set='duo' method='POST'>
 		<ul class='user-sources'>
 			<?php foreach ($categories as $category) {
 				include('modules/layout-garden/duo-lingo-survey/article-card/template.php');

@@ -1,9 +1,10 @@
 <?php 
 	$pageData = read_page_data('work');
-	$pageTitle = $pageData['title'];
-	$pageIdea = $pageData['intro'];
+	
+	$pageTitle = 'The Archive';
+	$pageIdea = 'Here is a complete list of my writings (so far)!';
 
-	$recent_articles = array_slice(sorted_articles($pageData['articles']), 0, 4);
+	$recent_articles = sorted_articles($pageData['articles']);
 ?>	
 
 <?php include('modules/page-header/template.php'); ?>
@@ -13,5 +14,3 @@
 		<?php include('modules/recent-articles-list/template.php')?>
 	</inner-column>
 </section>
-
-
