@@ -28,7 +28,9 @@
 		& key-takeaways {
 			grid-column: 2 / 10;
 		}
-
+		& .formatted-codepen iframe {
+			margin-top: 1em;
+		}
 	}
 }
 

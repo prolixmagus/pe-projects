@@ -28,6 +28,10 @@
 		grid-column: 2 / 11;
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.fair-use {
+		grid-column: 2 / 11;
+	}
 }
 
 @media (min-width: 900px) {
