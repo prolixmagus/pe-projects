@@ -27,13 +27,19 @@
 
 @media (prefers-color-scheme: dark) {
 	section.page-content.layout .cta-overlap {
-	background-color: #FBF7F5;
+		background-color: #FBF7F5;
 	}
 
-	.article-grid-2-cards {
-		& p, h2, h3 {
-		color: hsla(0, 0%, 0%, .8);
-		}
+	.cta-overlap h3 {
+		color: #373737;
+		opacity: .2;
+	}
+
+	.cta-overlap h2 {
+		color: black;
+	}
+
+
 }
 
 

@@ -32,4 +32,8 @@
 	section.page-content.layout .fly-fishing-grid {
 	background-color: #FBF7F5;
 	}
+
+	.fly-fishing-grid h2{
+		color: black;
+	}
 }
