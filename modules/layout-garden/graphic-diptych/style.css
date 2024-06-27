@@ -1,6 +1,4 @@
-.graphic-diptych inner-column, .module-showcase.graphic-diptych case-study-wrapper {
-	background-color: #000034;
-}
+
 .graphic-diptych module-showcase {
 	display: flex;
 	flex-direction: column;
@@ -57,7 +55,11 @@ cta-text {
 	.graphic-diptych picture {
 		width: 80%;
 	}
+}
 
+@media(prefers-color-scheme: dark) {
+	.graphic-diptych, .module-showcase.graphic-diptych case-study-wrapper {
+	background-color: #000034;
 }
 
 
