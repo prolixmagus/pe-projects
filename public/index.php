@@ -11,7 +11,6 @@ error_reporting(E_ALL);
     </article>
   </main>
 
-
 <?php include("../modules/footer/template.php")?>
 
 
