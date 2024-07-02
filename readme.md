@@ -12,7 +12,12 @@ Welcome to my personal website! So far, it has gone through four structural iter
 	target="live">Live Link
 </a>
 
-## App Todo
+## Tools
+
+- [packagist](https://packagist.org/) package manager
+- [composer](https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies) dependency maanger
+- [scssphp](https://scssphp.github.io/scssphp/) for SaSS in PHP (minify, concatenate)
+- [fswatch](https://emcrisostomo.github.io/fswatch/) for watching changes to run build script
 
 
 ## Website Todo
