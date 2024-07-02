@@ -108,7 +108,9 @@ function get_site_scripts($exercise) {
 }
 
 function get_exercise_scripts($slug) {
-	return "exercises-for-programmers-forms/scripts/$slug.js";
+	if (file_exists("exercises-for-programmers-forms/scripts/$slug.js")) {
+		return "exercises-for-programmers-forms/scripts/$slug.js";
+	}
 }
 
 // sorting by closest date 
