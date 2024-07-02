@@ -302,7 +302,7 @@
 					"section": [
 						{
 							"module": "generic-text-heading",
-							"content": "<h2>Result</h2><p>Check out the <a href='projects/site-mockup-to-code'>styled project!</a> If you like what you see, head over to the <a href='?page=projects'>projects page</a> for more.</p>"
+							"content": "<h2>Result</h2><p>Check out the <a href='projects/theme-challenge'>styled project!</a> If you like what you see, head over to the <a href='?page=projects'>projects page</a> for more.</p>"
 						}
 					]
 				},
