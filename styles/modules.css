@@ -1,55 +1,55 @@
 /*site header*/
-@import '../modules/mast-head/style.css';
-@import '../modules/nav-menu/style.css';
+@import 'modules/mast-head/style.css';
+@import 'modules/nav-menu/style.css';
 
-@import '../modules/page-header/style.css';
-@import '../modules/common-figure/style.css';
+@import 'modules/page-header/style.css';
+@import 'modules/common-figure/style.css';
 
-/*style-guide*/
+/*style-ge*/
 
-@import '../modules/colophon/style.css';
-@import '../modules/typeface/style.css';
-@import '../modules/generic-text-heading/style.css';
-@import '../modules/code-block/style.css';
+@import 'modules/colophon/style.css';
+@import 'modules/typeface/style.css';
+@import 'modules/generic-text-heading/style.css';
+@import 'modules/code-block/style.css';
 
-/*work modules*/
+/*work moes*/
 
-@import '../modules/recent-articles-list/style.css';
-@import '../modules/related-articles-list/style.css';
-@import '../modules/explorations-header/style.css';
-@import '../modules/article-card/style.css';
-@import '../modules/figure-list/style.css';
-@import '../modules/key-takeaways/style.css';
-@import '../modules/codepen/style.css';
+@import 'modules/recent-articles-list/style.css';
+@import 'modules/related-articles-list/style.css';
+@import 'modules/explorations-header/style.css';
+@import 'modules/article-card/style.css';
+@import 'modules/figure-list/style.css';
+@import 'modules/key-takeaways/style.css';
+@import 'modules/codepen/style.css';
 
-/*influences modules*/
-@import '../modules/artist-figure/style.css';
+/*influen modules*/
+@import 'modules/artist-figure/style.css';
 
-/*project module*/
-@import '../modules/key-takeaways/style.css';
-@import '../modules/exercise-card/style.css';
-@import '../modules/project-card/style.css';
+/*projectdule*/
+@import 'modules/key-takeaways/style.css';
+@import 'modules/exercise-card/style.css';
+@import 'modules/project-card/style.css';
 
-/*canvas?*/
-@import '../modules/whiteboard/style.css';
+/*canvas?
+@import 'modules/whiteboard/style.css';
 
 
-/*layout garden*/
+/*layout den*/
 
-@import '../modules/layout-garden/graphic-diptych/style.css';
-@import '../modules/layout-garden/announcement-grid/style.css';
-@import '../modules/layout-garden/announcement-grid/announcement-card/style.css';
-@import '../modules/layout-garden/cta-overlap/style.css';
-@import '../modules/layout-garden/fly-fishing-grid/style.css';
-@import '../modules/layout-garden/fly-fishing-grid/fly-fishing-card/style.css';
-@import '../modules/layout-garden/takeout-contact-form/style.css';
-@import '../modules/layout-garden/day-1-grid/style.css';
-@import '../modules/layout-garden/day-2-grid/style.css';
-@import '../modules/layout-garden/day-3-grid/style.css';
-@import '../modules/layout-garden/preview-banner/style.css';
-@import '../modules/layout-garden/duo-lingo-survey/style.css';
-@import '../modules/layout-garden/responsive-donut/style.css';
+@import 'modules/layout-garden/graphic-diptych/style.css';
+@import 'modules/layout-garden/announcement-grid/style.css';
+@import 'modules/layout-garden/announcement-grid/announcement-card/style.css';
+@import 'modules/layout-garden/cta-overlap/style.css';
+@import 'modules/layout-garden/fly-fishing-grid/style.css';
+@import 'modules/layout-garden/fly-fishing-grid/fly-fishing-card/style.css';
+@import 'modules/layout-garden/takeout-contact-form/style.css';
+@import 'modules/layout-garden/day-1-grid/style.css';
+@import 'modules/layout-garden/day-2-grid/style.css';
+@import 'modules/layout-garden/day-3-grid/style.css';
+@import 'modules/layout-garden/preview-banner/style.css';
+@import 'modules/layout-garden/duo-lingo-survey/style.css';
+@import 'modules/layout-garden/responsive-donut/style.css';
 
-/*footer*/
-@import '../modules/footer/style.css';
-@import '../modules/site-map/style.css';
+/*footer*
+@import 'modules/footer/style.css';
+@import 'modules/site-map/style.css';

@@ -24,6 +24,6 @@
 			</li>
 		</ul>
 	</div>
-	<?php include('modules/typeface/template.php') ?>
+	<?php include('../modules/typeface/template.php') ?>
 </colophon>
 

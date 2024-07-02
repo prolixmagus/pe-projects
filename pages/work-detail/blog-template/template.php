@@ -7,7 +7,7 @@ $explorationTitle = $work_article['title']
 
 <article class='exploration <?=$work_article['slug']?>'>
 	<?php $explorationTitle = $work_article['title']?>
-	<?php include('modules/explorations-header/template.php') ?>
+	<?php include('../modules/explorations-header/template.php') ?>
 
 <?php foreach($work_article['case-study'] as $part) { ?>
 	
@@ -16,7 +16,7 @@ $explorationTitle = $work_article['title']
 			<?php foreach($part['section'] as $section) { 
 				$module = $section['module'] 
 			?>
-				<?php include("modules/$module/template.php") ?>
+				<?php include("../modules/$module/template.php") ?>
 			<?php } ?>
 		</inner-column>
 	</section>

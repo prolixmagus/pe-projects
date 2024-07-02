@@ -7,7 +7,7 @@ $pageIdea = $pageData['intro'];
 
 ?>
 
-<?php include('modules/page-header/template.php')?>
+<?php include('../modules/page-header/template.php')?>
 
 <?php foreach ($pageData['sections'] as $section) { ?>
 
@@ -21,7 +21,7 @@ $pageIdea = $pageData['intro'];
 
 		<inner-column class='inner-grid'>
 			<module-showcase>
-				<?php include("modules/layout-garden/" . $section['module'] . "/template.php");?>
+				<?php include("../modules/layout-garden/" . $section['module'] . "/template.php");?>
 			</module-showcase>
 		</inner-column>
 	</section>

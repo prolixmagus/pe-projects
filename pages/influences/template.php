@@ -6,7 +6,7 @@
 ?>
 
 
-<?php include('modules/page-header/template.php');?>
+<?php include('../modules/page-header/template.php');?>
 
 <section class='influence-list section-grid'>
 	<inner-column class='inner-grid'>
@@ -14,7 +14,7 @@
 			<?php foreach($pageData['creator-list'] as $creator) { ?>
 				<?php if(isset($creator['featured'])) { ?>
 					<li>
-						<?php include('modules/artist-figure/template.php')?>
+						<?php include('../modules/artist-figure/template.php')?>
 					</li>
 				<?php } ?>
 			<?php } ?>

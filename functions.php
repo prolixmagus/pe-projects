@@ -2,7 +2,7 @@
 
 //get page database
 function read_page_data($page) {
-	$filePath = "data/pages/$page.json";
+	$filePath = "../data/pages/$page.json";
 	if ( file_exists($filePath) ) {
 		$json = file_get_contents($filePath);
 		$pageData = json_decode($json, true);
@@ -54,15 +54,15 @@ function delete($database, $data_id) {
 // getting exercise for programmers page for router
 
 function get_exercise_template($name) {
-	include("exercises-for-programmers-forms/$name.php");
+	include("../exercises-for-programmers-forms/$name.php");
 }
 
 function get_article_template($name) {
-	include("pages/work-detail/$name/template.php");
+	include("../pages/work-detail/$name/template.php");
 }
 
 function get_layout_garden_template($module) {
-	include("modules/layout-garden/$module/template.php");
+	include("../modules/layout-garden/$module/template.php");
 }
 
 /* can consolidate these functions ... standard variable naming */
@@ -104,12 +104,12 @@ function sorted_articles($articles) {
 }
 
 function get_site_scripts($exercise) {
-	return "scripts/$exercise.js";
+	return "../scripts/$exercise.js";
 }
 
 function get_exercise_scripts($slug) {
-	if (file_exists("exercises-for-programmers-forms/scripts/$slug.js")) {
-		return "exercises-for-programmers-forms/scripts/$slug.js";
+	if (file_exists("../exercises-for-programmers-forms/scripts/$slug.js")) {
+		return "../exercises-for-programmers-forms/scripts/$slug.js";
 	}
 }
 

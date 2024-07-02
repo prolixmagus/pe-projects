@@ -7,7 +7,7 @@
 				<ul>
 					<li>
 						<a class='logo' href='#'>
-							<?php include("modules/" . $link['heading'] . ".php"); ?>
+							<?php include("../modules/" . $link['heading'] . ".php"); ?>
 						</a>
 					</li>
 					<li>

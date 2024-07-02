@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <?php 
-	include("functions.php");
-	require("router.php");
+	include("../functions.php");
+	require("../router.php");
 	// $pageData = read_page_data($page);
 	// create json file for each page, then use php to slot in information
 	if ($page === 'exercise') {
@@ -47,7 +47,7 @@
 		<meta name="twitter:image" content="https://peprojects.dev/alpha-8/images/meta-fish-card.jpg">
 		<meta name="twitter:card" content="summary_large_image">
 
-		<link rel='stylesheet' href='styles/site.css'>
+		<link rel='stylesheet' href='site.css'>
 	</head>
 
 		<body>
@@ -57,11 +57,11 @@
 
 					<logo-container>
 						<a class='site-logo' href='index.php'>
-							<?php include("icons/jeremy-logo.svg")?>
+							<?php include("../icons/jeremy-logo.svg")?>
 						</a>
 					</logo-container>
 
-					<?php include("modules/nav-menu/template.php")?>
+					<?php include("../modules/nav-menu/template.php")?>
 
 					<button class='hamburger-btn'>
 						<svg class='hamburger' viewBox="0 0 24 24" fill="none" stroke="#fffafa">

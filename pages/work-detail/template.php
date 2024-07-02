@@ -17,6 +17,6 @@ $work_article_slug = $work_article['slug'];
 
 <section class='work-detail section-grid'>
 	<inner-column class='inner-grid'>
-		<?php include('modules/related-articles-list/template.php')?>
+		<?php include('../modules/related-articles-list/template.php')?>
 	</inner-column>
 </section>

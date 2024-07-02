@@ -13,7 +13,7 @@
 if ($exercise_slug) {
 	get_exercise_template($exercise_slug);
 } else {
-	include("pages/error404/template.php");
+	include("../pages/error404/template.php");
 }
 
 ?>

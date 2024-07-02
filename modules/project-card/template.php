@@ -6,7 +6,7 @@
 ?>
 
 <article class='project-card'>
-	<?php include('modules/common-figure/template.php')?>
+	<?php include('../modules/common-figure/template.php')?>
 	<div class='text-area'>	
 		<a href='<?=$address?>'>
 			<h2><?=$name?></h2>

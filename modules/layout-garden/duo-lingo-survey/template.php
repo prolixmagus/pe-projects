@@ -1,4 +1,4 @@
-<?php include('modules/layout-garden/data/duo-lingo-survey-data.php') ?>
+<?php include('../modules/layout-garden/data/duo-lingo-survey-data.php') ?>
 
 <duo-lingo-survey>
 	<progress-section>
@@ -9,7 +9,7 @@
 		</progress-container>
 		<owl>
 			<picture>
-				<img src='modules/layout-garden/duo-lingo-survey/owl.svg'>
+				<img src='../modules/layout-garden/duo-lingo-survey/owl.svg'>
 			</picture>
 			<?php include 'owl.php'?>
 		</owl>
@@ -20,7 +20,7 @@
 	<form class='duo-lingo-form' data-set='duo' method='POST'>
 		<ul class='user-sources'>
 			<?php foreach ($categories as $category) {
-				include('modules/layout-garden/duo-lingo-survey/article-card/template.php');
+				include('../modules/layout-garden/duo-lingo-survey/article-card/template.php');
 			} ?>
 		</ul>
 	</form>

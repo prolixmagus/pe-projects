@@ -6,7 +6,7 @@
 ?>
 
 
-<?php include('modules/page-header/template.php');?>
+<?php include('../modules/page-header/template.php');?>
 
 
 <?php foreach($pageData['section'] as $section) { ?>
@@ -20,7 +20,7 @@
 				$figure = $section['image'];
 				$figCaption = $section['figCaption'];
 
-				include('modules/common-figure/template.php')
+				include('../modules/common-figure/template.php')
 				?>
 
 				<?=$section['narrative']?>

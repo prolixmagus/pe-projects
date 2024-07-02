@@ -9,8 +9,8 @@
 		<img src='<?=$figure?>' alt='<?=$alt?>'>
 	</picture>
 	<?php if(isset($figCaption)) { ?>
-	<figcaption class='quiet-voice caption'>
-		<?=$figCaption?>
-	</figcaption>
+		<figcaption class='quiet-voice caption'>
+			<?=$figCaption?>
+		</figcaption>
 	<?php } ?>
 </figure>

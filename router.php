@@ -9,10 +9,10 @@
 	}
 
 	function get_template($page) {
-		$filePath = "pages/$page/template.php";
+		$filePath = "../pages/$page/template.php";
 		if (file_exists($filePath)) {
 			include($filePath);
 		} else {
-			include("pages/error404/template.php");
+			include("../pages/error404/template.php");
 		}
 	}

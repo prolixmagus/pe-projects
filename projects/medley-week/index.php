@@ -4,7 +4,7 @@
 
 <section class='day-1-grid'>
 	<inner-column>
-		<?php include('modules/day-1-grid/template.php');
+		<?php include('../modules/day-1-grid/template.php');
 		?>
 
 	</inner-column>

@@ -5,7 +5,7 @@
 		<?php foreach($recent_articles as $article) {
 			?>
 			<li>
-				<?php include('modules/article-card/template.php')?>
+				<?php include('../modules/article-card/template.php')?>
 			</li>
 		<?php } ?>
 	</ol>

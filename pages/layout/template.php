@@ -17,7 +17,7 @@
 					</a>
 				</case-study-wrapper>
 
-				<?php include("modules/layout-garden/" . $section['module'] . "/template.php");?>
+				<?php include("../modules/layout-garden/" . $section['module'] . "/template.php");?>
 			</module-showcase>
 
 		</inner-column>
@@ -31,7 +31,7 @@
 
 				<!-- includes generic text heading -->
 
-				<?php include("modules/$module/template.php");?>
+				<?php include("../modules/$module/template.php");?>
 				
 			</inner-column>
 		</section>

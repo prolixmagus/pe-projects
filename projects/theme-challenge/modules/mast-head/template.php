@@ -5,7 +5,7 @@
 		<ul>
 			<li>
 				<a class='home' href='#'>
-					<?php include("modules/" . $content['logo'] . ".php"); ?>
+					<?php include("../modules/" . $content['logo'] . ".php"); ?>
 				</a>
 			</li>
 		</ul>
@@ -17,7 +17,7 @@
 				<button rel='toggle'>X CLOSE</button>
 			</li>
 			<li class='plant-logo small-menu'>
-				<?php include("modules/" . $content['logo'] . ".php"); ?>
+				<?php include("../modules/" . $content['logo'] . ".php"); ?>
 			</li>
 			<li class='theme-link'>
 				<a href='?theme=<?=$content['theme-1']?>'>Wireframe</a>
