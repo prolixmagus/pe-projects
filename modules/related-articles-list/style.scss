@@ -6,7 +6,7 @@
 		flex-direction: column;*/
 	gap: 2rem 1rem;
 	margin-top: 4rem;
-	}
+}
 
 .work-detail h2 {
 	grid-column: 1 / -1;
@@ -28,4 +28,5 @@
 @media (min-width: 1000px) {
 	.related-articles {
 		grid-column: 2 / 12;
+	}
 }

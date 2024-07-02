@@ -1,29 +1,30 @@
 
 /* RESET */
 
-@import "preset.css";
+@import "preset";
 
 /* S etup */
-@import "setup.css";
+@import "setup";
 
 /* S setings */
-@import "settings.css";
+@import "settings";
 
 /* S tructure */
-@import "structure.css";
+@import "structure";
 
 /* T ypography */
-@import "typography.css";
+@import "typography";
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 /* C omponents */
-@import "components.css";
+@import "components";
 
-@import "pages.css";
+@import "pages";
 
 /* S tuff (modules) */
-@import "modules.css";
+@import "modules";
 
 /*body * {
 	border: 1px solid black;

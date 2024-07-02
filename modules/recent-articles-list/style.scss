@@ -20,9 +20,11 @@
 		& ol {
 			grid-template-columns: repeat(2, 1fr);
 		}
+	}
 }
 
 @media (min-width: 1000px) {
 	.recent-articles {
 		grid-column: 2 / 11;
+	}
 }

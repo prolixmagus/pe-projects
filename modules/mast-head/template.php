@@ -47,7 +47,7 @@
 		<meta name="twitter:image" content="https://peprojects.dev/alpha-8/images/meta-fish-card.jpg">
 		<meta name="twitter:card" content="summary_large_image">
 
-		<link rel='stylesheet' href='site.css'>
+		<link rel='stylesheet' href='site-compiled.css'>
 	</head>
 
 		<body>

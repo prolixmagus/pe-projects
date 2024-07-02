@@ -38,6 +38,7 @@ cta-text {
 .graphic-diptych picture {
 	border: 1px solid #170D7C;
 }
+
 .graphic-diptych picture img {
 	border-radius: 10px;
 }
@@ -60,6 +61,7 @@ cta-text {
 @media(prefers-color-scheme: dark) {
 	.graphic-diptych, .module-showcase.graphic-diptych case-study-wrapper {
 	background-color: #000034;
+	}
 }
 
 
