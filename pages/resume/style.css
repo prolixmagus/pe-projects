@@ -22,9 +22,12 @@
 	margin-top: 1em;
 }
 
-.resume li::before {
-	content: '•';
-	padding-right: 5px;
+.resume ul {
+	padding-left: 1.1em;
+
+	li {
+		list-style: initial;
+	}
 }
 
 .resume h3 + ul {
