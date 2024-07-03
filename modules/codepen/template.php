@@ -3,6 +3,5 @@
 ?>
 
 <section class='formatted-codepen'>
-	<h2>This is a sample CodePen!</h2>
 	<?=$pen?>
 </section>
