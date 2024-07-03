@@ -1,3 +1,28 @@
+const main = document.querySelector('main');
+const body = document.querySelector('body');
+const revivalMessage = document.createElement('div');
+
+document.addEventListener('click', (event) => {
+	if (event.target.matches('[data-action="disappear"]')) {
+		main.classList.add('disappear');
+		setTimeout(bringItBack, 5000);
+
+	}
+	if (event.target.matches('[data-action="reappear"]')) {
+		main.classList.remove('disappear');
+		body.removeChild(revivalMessage)
+	}
+});
+function bringItBack() {
+	
+	revivalMessage.classList.add('bring-back')
+	body.appendChild(revivalMessage);
+	revivalMessage.innerHTML = `
+	<p>Happy now?</p>
+	<button id='reappear' data-action='reappear'>There's more to see!</button>
+	`
+}
+
 // //get canvas context
 
 // var canvas = document.querySelector('canvas')
