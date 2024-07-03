@@ -1,9 +1,8 @@
-.page-content.home {
-	min-height: 100vh;
+.page-content {
+	padding-block: 2em;
 }
 
 .home-header {
-	margin-top: 1em;
 	grid-column: 1 / -1;
 	display: grid;
 	grid-template-columns: subgrid;
@@ -37,6 +36,8 @@
 
 	& .thoughts-list {
 		grid-column: 1 / -1;
+
+		margin-top: 1.25em;
 
 		& date {
 			display: block;
@@ -100,6 +101,7 @@
 
 	.home picture {
 		grid-column: 9 / 13;
+		max-width: 275px;
 		grid-row: 3;
 	}
 }
