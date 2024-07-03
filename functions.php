@@ -104,7 +104,7 @@ function sorted_articles($articles) {
 }
 
 function get_site_scripts($exercise) {
-	return "../scripts/$exercise.js";
+	return "scripts/$exercise.js";
 }
 
 function get_exercise_scripts($slug) {
