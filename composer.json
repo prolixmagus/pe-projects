@@ -2,7 +2,7 @@
     "require": {
         "scssphp/scssphp": "^1.12.1"
     },
-      "scripts" : {
+    "scripts" : {
         "build": [
             "vendor/bin/pscss --style=expanded styles/site.scss public/site-compiled.css"
         ],
@@ -11,3 +11,4 @@
         ]
     }
 }
+
