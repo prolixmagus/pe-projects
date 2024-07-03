@@ -1,14 +1,27 @@
 {
-	"title": "Jeremy Fishman",
+	"list": "Thoughts",
 	"slug": "home",
-	"image": "images/jeremy-1.svg",
-	"sections": [
+	"blogs": [
 		{
-			"module": "generic-text-heading",
-			"content": "<h2 class='loud-voice'>You made it!</h2>"
+			"description": "Successful Sass ... and You!",
+			"link": "https://prolixmagus.substack.com/p/successful-sass",
+			"date": "02 JUL 2024"
 		},
 		{
-			"module": "common-figure"
+			"description": "Investigating the Caesar Cipher",
+			"link": "?page=work-detail&slug=caesar-cipher",
+			"date": "06 JUN 2024"
+		},
+		{
+			"description": "From Wireframe to Webpage",
+			"link": "?page=work-detail&slug=theme-challenge",
+			"date": "17 APR 2024"
+		},
+		{
+			"description": "To Abstract, Too Abstract?",
+			"link": "https://prolixmagus.substack.com/p/abstraction",
+			"date": "29 MAR 2024"
 		}
+
 	]
 }
