@@ -1,5 +1,29 @@
 @import 'forms';
 
+.cycle {
+	padding: .5em 2em;
+	border-radius: 5px;
+	min-width: 150px;
+	font-size: 1em;
+	color: black;
+	text-align: center;
+	font-weight: 600;
+	font-family: "Noto Sans", sans-serif;
+	background: linear-gradient(to bottom, hsl(var(--primary), 59%, 70%), hsl(var(--primary), 59%, 60%) );
+	box-shadow: 0 5px 0 0 var(--color-primary-dark), 
+					inset 0px -1px 0px rgba(0 0 0 / .2), 
+					inset 0px 1px 0px rgba(255 255 255 / .2);
+	border: 1px solid var(--color-primary-dark);
+	transition: all .05s ease-in-out;
+	cursor: pointer;
+}
+
+.cycle:active {
+	transform: translateY(5px);
+	box-shadow: 0 2px 0 0 var(--color-primary-dark),
+				inset 0px -1px 0px rgba(0 0 0 / .2), 
+				inset 0px 1px 0px rgba(255 255 255 / .2);
+}
 
 .clear-button {
 	box-shadow: none;

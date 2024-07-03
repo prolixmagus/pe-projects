@@ -12,6 +12,10 @@
 			</intro-area>
 		</header>
 
+		<section class='cycle-button-container'>
+			<button class='cycle' id='cycle' data-action='cycle'>Click Me</button>
+		</section>
+
 		<section class='thoughts'>
 				<h2>Thoughts</h2>
 					<ul class='thoughts-list'>
@@ -28,13 +32,9 @@
 
 		<!-- JUST playing ... maybe add to code pen ... do the click button to replace header text, cycle through many options with final message - 'alright you reached the end, curiosity sated? -->
 
-		<div class='disappearing-act'>
-			<button id='disappear' data-action='disappear'>Over it?</button>
-		</div>
-
-		<picture>
+<!-- 		<picture>
 			<img src='../images/jeremy-circles.svg'>
-		</picture>
+		</picture> -->
 	</inner-column>
 </section>
 

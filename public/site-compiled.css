@@ -401,6 +401,25 @@ input.numbertype {
     border: 3px solid var(--color-three);
   }
 }
+.cycle {
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  min-width: 150px;
+  font-size: 1em;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+  background: linear-gradient(to bottom, hsl(var(--primary), 59%, 70%), hsl(var(--primary), 59%, 60%));
+  box-shadow: 0 5px 0 0 var(--color-primary-dark), inset 0px -1px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--color-primary-dark);
+  transition: all 0.05s ease-in-out;
+  cursor: pointer;
+}
+.cycle:active {
+  transform: translateY(5px);
+  box-shadow: 0 2px 0 0 var(--color-primary-dark), inset 0px -1px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
 .clear-button {
   box-shadow: none;
   border: none;
@@ -596,25 +615,31 @@ li.exercise-card a {
 .thoughts-list li + li {
   margin-top: 1em;
 }
-.disappear {
-  transition: 2s;
-  opacity: 0;
+.cycle-button-container {
+  margin-top: 1em;
 }
-.bring-back {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+body.scary {
+  filter: grayscale(60%);
+  transition: 3s;
+  background-color: black;
 }
-/*.open-menu main {
-	opacity: .1;
-}*/
+body.scary * {
+  color: black;
+}
+@media (min-width: 550px) {
+  .cycle-button-container {
+    display: grid;
+    grid-column: 8;
+    grid-row: 4;
+    transform: translateY(-150px);
+  }
+}
 @media (min-width: 768px) {
   .home-header intro-area {
     grid-column: 2 / -1;
+  }
+  .cycle-button-container {
+    transform: translateY(-100px);
   }
   .home .thoughts {
     display: grid;
@@ -636,6 +661,9 @@ li.exercise-card a {
 @media (min-width: 1000px) {
   .home-header {
     grid-column: 1 / 8;
+  }
+  .cycle-button-container {
+    grid-column: 6;
   }
   .home picture {
     grid-column: 9 / 13;
