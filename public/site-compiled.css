@@ -624,7 +624,7 @@ li.exercise-card a {
 }
 body.scary {
   filter: grayscale(60%);
-  transition: 3s;
+  transition: 4s;
   background-color: black;
 }
 body.scary * {
