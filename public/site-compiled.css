@@ -487,6 +487,10 @@ input.numbertype {
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 5px 0 #d3d3d3;
 }
+.timeline-arrow {
+  max-width: 100px;
+  fill: var(--color-three);
+}
 .exercise form {
   grid-column: 1 / 11;
   border: 1px solid var(--color-three);
@@ -795,17 +799,20 @@ module-showcase {
 	display: flex;
 	flex-direction: column;
 }*/
-.resume section + section {
-  margin-top: 4rem;
+.timeline-wrapper {
+  display: flex;
+  overflow-x: auto;
 }
-.resume li + li {
-  margin-top: 1em;
+.timeline-wrapper .section-flex {
+  flex: 0 0 auto;
+  width: 100%;
 }
-.resume ul {
-  padding-left: 1.1em;
+.timeline-wrapper .inner-flex {
+  display: flex;
+  align-items: center;
 }
-.resume ul li {
-  list-style: initial;
+.timeline-wrapper .common-figure {
+  max-width: 500px;
 }
 .resume h3 + ul {
   margin-top: 10px;
@@ -814,31 +821,14 @@ module-showcase {
   font-size: 1.5rem;
   color: var(--color-two);
 }
-work-narrative {
-  grid-column: 1 / -1;
-  display: grid;
-  max-width: 650px;
-}
-experience-gained {
-  grid-column: 1 / -1;
-  display: grid;
-  border: 5px solid var(--color-three);
-  border-radius: var(--corners);
-  padding: 1em;
-  max-width: 650px;
-  /*	& h3 {
-		grid-column: 1 / -1;
-	}
-	& ul {
-		grid-column: 2 / -2;
-	}*/
-}
-work-narrative + experience-gained {
-  margin-top: 1.5rem;
-}
 @media (min-width: 768px) {
-  work-narrative, experience-gained {
-    grid-column: 2 / 11;
+  .timeline-wrapper {
+    grid-column: 2 / -1;
+  }
+}
+@media (orientation: landscape) {
+  .timeline-wrapper {
+    grid-column: 2 / -1;
   }
 }
 .goals-list {

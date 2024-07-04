@@ -3,40 +3,42 @@
 <?php
 	$pageTitle = $pageData['title'];
 	$pageIdea = $pageData['intro'];
+
+   $totalSections = count($pageData['section']);
+   $currentIndex = 0;
 ?>
 
 
 <?php include('../modules/page-header/template.php');?>
 
+<div class='timeline-wrapper'>
+	<?php foreach($pageData['section'] as $section) {
+		$currentIndex++; 
+	?>
+		<section class='<?=$section['id']?> section-flex' id='<?=$section['id']?>'>
+			<inner-column class='inner-flex'>
 
-<?php foreach($pageData['section'] as $section) { ?>
-	<section class='<?=$section['id']?> section-grid' id='<?=$section['id']?>'>
-		<inner-column class='inner-grid'>
+				<work-narrative>
+					<h2 class='attention-voice'><?=$section['year']?></h2>
 
-			<work-narrative>
-				<h2 class='attention-voice'><?=$section['year']?></h2>
+					<?php 
+						$figure = $section['image'];
+						$figCaption = $section['figCaption'];
 
-				<?php 
-				$figure = $section['image'];
-				$figCaption = $section['figCaption'];
+						include('../modules/common-figure/template.php')
+					?>
 
-				include('../modules/common-figure/template.php')
-				?>
+					<?=$section['narrative']?>
+				</work-narrative>
 
-				<?=$section['narrative']?>
-			</work-narrative>
+				<?php if ($currentIndex < $totalSections) { ?>
+					<div class='timeline-arrow'>
+						<?php include('../icons/timeline-arrow.svg')?>
+						<aside class='quiet-voice caption'>more to see</aside>
+					</div>
+				<?php } ?>
 
-
-			<experience-gained>
-				<h3 class='strong-voice'>Skills</h3>		
-
-				<ul title='skills'>
-					<?php foreach($section['skills'] as $skill) { ?>
-						<li><?=$skill['skill']?></li>
-					<?php } ?>
-				</ul>
-			</experience-gained>
-
-		</inner-column>
-	</section>
-<?php } ?>
+			</inner-column>
+		</section>
+	<?php } ?>
+</div>
