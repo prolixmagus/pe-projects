@@ -15,7 +15,7 @@ Welcome to my personal website! So far, it has gone through four structural iter
 ## Tools
 
 - [packagist](https://packagist.org/) package manager
-- [composer](https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies) dependency maanger
+- [composer](https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies) dependency manager
 - [scssphp](https://scssphp.github.io/scssphp/) for SaSS in PHP (minify, concatenate)
 - [fswatch](https://emcrisostomo.github.io/fswatch/) for watching changes to run build script
 
