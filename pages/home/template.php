@@ -3,7 +3,7 @@
 <section class='section-grid'>
 	<inner-column class='inner-grid'>
 		<header class='home-header'>
-			<h1 class='loud-voice'>You made it!</h1>
+			<h1 class='loud-voice'>Web Developer. </br> Linguist. Human.</h1>
 
 			<intro-area>
 				<p class='calm-voice'>I'm Jeremy, a web developer and K-12 <abbr title='English as a Second Language'>ESL</abbr> educator. I help people of all ages navigate foreign systems.</p>
@@ -18,16 +18,16 @@
 
 		<section class='thoughts'>
 				<h2>Thoughts</h2>
-					<ul class='thoughts-list'>
-						<?php foreach($pageData['blogs'] as $blog) { ?>
-						<li>
-							<a href='<?=$blog['link']?>'>
-								<h3><?=$blog['description']?></h3>
-							</a>
-							<date class='quiet-voice'><?=$blog['date'] ?></date>
-						</li>
-						<?php } ?>
-					</ul>
+				<ul class='thoughts-list'>
+					<?php foreach($pageData['blogs'] as $blog) { ?>
+					<li>
+						<a href='<?=$blog['link']?>'>
+							<h3><?=$blog['description']?></h3>
+						</a>
+						<date class='quiet-voice'><?=$blog['date'] ?></date>
+					</li>
+					<?php } ?>
+				</ul>
 		</section>
 
 		<!-- JUST playing ... maybe add to code pen ... do the click button to replace header text, cycle through many options with final message - 'alright you reached the end, curiosity sated? -->

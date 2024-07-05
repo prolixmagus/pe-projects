@@ -228,7 +228,7 @@ experience-gained, div {
 }
 .attention-voice, h2 {
   font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
-  font-size: clamp(24px, 8vw, 2rem);
+  font-size: clamp(1.5rem, 8vw, 2rem);
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -491,6 +491,9 @@ input.numbertype {
   max-width: 100px;
   fill: var(--color-three);
 }
+.circle-icon {
+  max-width: 30px;
+}
 .exercise form {
   grid-column: 1 / 11;
   border: 1px solid var(--color-three);
@@ -589,7 +592,7 @@ li.exercise-card a {
   grid-column: 1 / -1;
 }
 .home-header intro-area {
-  margin-top: 1.25em;
+  margin-top: 1.75em;
   grid-column: 1 / -1;
   grid-row: 2;
   display: flex;
@@ -609,6 +612,9 @@ li.exercise-card a {
   grid-template-columns: subgrid;
   margin-top: 4em;
 }
+.home .thoughts h2 {
+  grid-column: 1 / -1;
+}
 .home .thoughts .thoughts-list {
   grid-column: 1 / -1;
   margin-top: 1.25em;
@@ -623,12 +629,18 @@ li.exercise-card a {
   margin-top: 1em;
 }
 body.scary {
-  filter: grayscale(60%);
-  transition: 4s;
-  background-color: black;
+  transition: all 2s;
+  background-color: hsl(var(--hue), 0%, 7%);
 }
 body.scary * {
-  color: black;
+  color: hsl(var(--hue), 0%, 7%);
+}
+body.scary a:hover {
+  text-decoration: none;
+}
+body.scary .terminal {
+  font-family: "inconsolata", monospace, sans-serif;
+  color: var(--color-three);
 }
 @media (min-width: 550px) {
   .cycle-button-container {
@@ -658,16 +670,13 @@ body.scary * {
   }
   .home picture {
     margin-top: 20px;
-    grid-column: 8 / -1;
+    grid-column: 9 / -1;
     grid-row: 4;
   }
 }
 @media (min-width: 1000px) {
-  .home-header {
-    grid-column: 1 / 8;
-  }
   .cycle-button-container {
-    grid-column: 6;
+    grid-column: 7;
   }
   .home picture {
     grid-column: 9 / 13;
