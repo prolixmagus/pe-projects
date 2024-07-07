@@ -2,21 +2,26 @@
 	color: blue;
 }
 
-body.menu-open::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    pointer-event: none;
-}
+//dim background and make it unclickable
 
-body.menu-open {
-	overflow: hidden;
-}
+/* 
+	body.menu-open::before {
+     content: "";
+     position: fixed;
+     top: 0;
+	 left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.2);
+     z-index: 1;
+     pointer-event: none;
+ }
+
+*/
+
+// body.menu-open {
+// 	overflow: hidden;
+// }
 
 .site-header .user-menu {
 	position: absolute;

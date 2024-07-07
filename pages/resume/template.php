@@ -34,7 +34,6 @@
 				<?php if ($currentIndex < $totalSections) { ?>
 					<div class='timeline-arrow'>
 						<?php include('../icons/timeline-arrow.svg')?>
-						<aside class='quiet-voice caption'>more to see</aside>
 					</div>
 				<?php } ?>
 
