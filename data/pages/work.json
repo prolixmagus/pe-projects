@@ -6,7 +6,7 @@
 	"intro": "Great designers know that those “a-ha!” moments hide within the tall grass of process and practice. Below is a list of my four most recent writings, wonderings, and experiments. Don’t forget to check out <a href='?page=archive'>the archive</a> for more ideas.",
 	"articles": [
 		{
-			"id": "1",
+			"id": "6b7ed1c1-0f9e-48ec-b8fe-e64ba4536ee1",
 			"title": "Death and Design",
 			"slug": "death-and-design",
 			"published": "02 NOV 2023",
@@ -57,7 +57,7 @@
 			]
 		},
 		{
-			"id": "2",
+			"id": "197a8b43-e7df-4809-abe2-1938f4a2cc63",
 			"title": "Bottles in the Sky",
 			"slug": "bottles-in-the-sky",
 			"published": "03 NOV 2023",
@@ -148,7 +148,7 @@
 			]
 		},
 		{
-			"id": "3",
+			"id": "847201ff-480b-46af-98a5-4b787d84fd6c",
 			"title": "Theme Challenge",
 			"slug": "theme-challenge",
 			"published": "17 APR 2024",
@@ -322,7 +322,7 @@
 			]
 		},
 		{
-			"id": "4",
+			"id": "4f07a236-71f8-44d3-9b93-5c5b8e8889f6",
 			"title": "Caesar Cipher",
 			"slug": "caesar-cipher",
 			"published": "06 JUN 2024",
@@ -364,9 +364,9 @@
 			]
 		},
 		{
-			"id": "5",
+			"id": "eef3c6f4-43a8-45f7-b5c6-493a87b2756b",
 			"title": "Teapet Shop",
-			"slug": "teaept-shop",
+			"slug": "teapet-shop",
 			"published":"22 APR 2024",
 			"updated": "24 APR 2024",
 			"preview-image": "images/explorations/teapet-store/headline.jpg",
@@ -451,6 +451,32 @@
 									"description": "To avoid pulling in the database information on every page, you can pull in the database information once at a larger scope. You can then sprinkle the data throughout smaller scopes as needed."
 								}
 							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "85ee9f83-8e39-47ca-bfe2-abfe0e02ba5d",
+			"title": "Find-A-Guide",
+			"slug": "find-a-guide",
+			"published": "11 JUN 2024",
+			"updated": "11 JUN 2024",
+			"preview-image": "images/explorations/find-a-guide/headline.jpg",
+			"description": "One week sprint to design and code a vanilla JS prototype",
+			"related": ["theme-challenge", "teapet-shop"],
+			"case-study": [
+				{
+					"section": [
+						{
+							"module": "common-figure",
+							"image": "images/explorations/find-a-guide/headline.jpg",
+							"alt": "The letter 'A' and 'Z' in a roman-style door frame",
+							"headline": true
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Introduction</h2><p>hi</p>"
 						}
 					]
 				}
