@@ -11,33 +11,31 @@
 
 <?php include('../modules/page-header/template.php');?>
 
-<div class='timeline-wrapper'>
-	<?php foreach($pageData['section'] as $section) {
-		$currentIndex++; 
-	?>
-		<section class='<?=$section['id']?> section-flex' id='<?=$section['id']?>'>
-			<inner-column class='inner-flex'>
+<section class='timeline-grid section-grid'>
+	<inner-column class='inner-grid'>
+		<div class='timeline-wrapper'>
+			<?php foreach($pageData['section'] as $section) {
+				$currentIndex++; 
+			?>
+				<section class='<?=$section['id']?> section-flex' id='<?=$section['id']?>'>
+					<inner-column class='inner-flex'>
 
-				<work-narrative>
-					<h2 class='attention-voice'><?=$section['year']?></h2>
+						<work-narrative>
+							<h2 class='attention-voice'><?=$section['year']?></h2>
 
-					<?php 
-						$figure = $section['image'];
-						$figCaption = $section['figCaption'];
+							<?php 
+								$figure = $section['image'];
+								$figCaption = $section['figCaption'];
 
-						include('../modules/common-figure/template.php')
-					?>
+								include('../modules/common-figure/template.php')
+							?>
 
-					<?=$section['narrative']?>
-				</work-narrative>
+							<?=$section['narrative']?>
+						</work-narrative>
 
-				<?php if ($currentIndex < $totalSections) { ?>
-					<div class='timeline-arrow'>
-						<?php include('../icons/timeline-arrow.svg')?>
-					</div>
-				<?php } ?>
-
-			</inner-column>
-		</section>
-	<?php } ?>
-</div>
+					</inner-column>
+				</section>
+			<?php } ?>
+		</div>
+	</inner-column>
+</section>

@@ -805,13 +805,17 @@ module-showcase {
 	flex-direction: column;
 }*/
 .timeline-wrapper {
-  display: block;
+  grid-column: 1 / -1;
+  gap: 30px;
 }
 .timeline-wrapper .common-figure {
   max-width: 500px;
 }
-.timeline-arrow {
-  display: none;
+.section-flex .inner-flex {
+  padding: 0;
+}
+.section-flex + .section-flex {
+  margin-top: 2em;
 }
 .resume h3 + ul {
   margin-top: 10px;
@@ -827,17 +831,15 @@ module-showcase {
   }
   .timeline-wrapper .section-flex {
     flex: 0 0 auto;
-    width: 60%;
+    width: 75%;
   }
   .timeline-wrapper .inner-flex {
     display: flex;
-    align-items: center;
     gap: 1em;
+    align-items: center;
   }
-  .timeline-arrow {
-    display: block;
-    max-width: 100px;
-    fill: var(--color-three);
+  .section-flex + .section-flex {
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) {
@@ -1226,7 +1228,7 @@ logo-container {
 .common-figure {
   display: flex;
   flex-direction: column;
-  padding-block: 1.5rem;
+  padding-block: 1.25em;
 }
 figcaption {
   display: block;
