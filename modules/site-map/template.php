@@ -20,16 +20,10 @@
 	<nav class='xtra-menu'>
 		<ul>
 			<li>
-				<a href="?page=projects">Projects</a>
-			</li>
-			<li>
 				<a href="?page=layout-garden">Layout Garden</a>
 			</li>
 			<li>
 				<a href="?page=style-guide">Style Guide</a>
-			</li>
-			<li>
-				<a href="?page=goals">Goals</a>
 			</li>
 		</ul>
 	</nav>
