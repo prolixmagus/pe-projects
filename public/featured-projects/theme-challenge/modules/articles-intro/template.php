@@ -12,7 +12,7 @@
 
 			<?php foreach ($section['content'] as $content) { ?>
 				<li class='article'>
-					<?php include('../modules/article-card/template.php'); ?>
+					<?php include('modules/article-card/template.php'); ?>
 				</li>
 			<?php } ?>
 

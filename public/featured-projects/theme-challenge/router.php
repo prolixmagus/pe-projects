@@ -1,15 +1,19 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 	if ( isset($_GET['theme']) ) {
 		$page = $_GET['theme'];
 	} else {
 		$page = 'garden';
 	}
 
-	function get_template($page) {
+	function add_template($page) {
 		include($page . '.php');
 	}
 
-	function read_page_data($page) {
+	function read_data($page) {
 		$filePath = "data/$page.json";
 		if ( file_get_contents($filePath) ) {
 			$json = file_get_contents($filePath);

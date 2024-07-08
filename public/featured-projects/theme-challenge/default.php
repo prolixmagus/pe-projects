@@ -1,9 +1,9 @@
-<?php $pageData = read_page_data($page);?>
+<?php $pageData = read_data($page);?>
 
 <header id="top">
 	<inner-column>
 		
-		<?php include('../modules/mast-head/template.php'); ?>
+		<?php include('modules/mast-head/template.php'); ?>
 
 	</inner-column>	
 </header>
@@ -14,7 +14,7 @@
 		<section class='<?=$section['class']?>' id='<?=$section['id']?>'>
 			<inner-column>
 
-				<?php include('../modules/' . $section['module'] . '/template.php'); ?>
+				<?php include('modules/' . $section['module'] . '/template.php'); ?>
 
 			</inner-column>
 		</section>
@@ -26,7 +26,7 @@
 <footer>
 	<inner-column>
 			
-		<?php include('../modules/site-map/template.php'); ?>
+		<?php include('modules/site-map/template.php'); ?>
 
 	</inner-column>
 </footer>

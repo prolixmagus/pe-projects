@@ -2,7 +2,7 @@
 
 <?php require('router.php');?>
 
-<?php $pageData = read_page_data($page);?>
+<?php $pageData = read_data($page);?>
 
 <html class=<?=$page?> lang='en' class='special-magic no-js'>
 
@@ -19,7 +19,7 @@
 
 	<body>
 
-		<?php get_template($page) ?>
+		<?php add_template($page) ?>
 
 
 		<script>
