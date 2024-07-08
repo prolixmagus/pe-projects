@@ -1,5 +1,5 @@
 <picture>
-	<img src="images/jellyfish.jpg" alt="">
+	<img src="images/layout-garden/jellyfish.jpg" alt="">
 </picture>
 <cta-text>
 	<h2 class="attention-voice bold">This is a jellyfish</h2>

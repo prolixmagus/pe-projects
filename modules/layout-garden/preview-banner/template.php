@@ -9,7 +9,7 @@
 		</svg>
 	</div>
 	<picture>
-		<img src='images/tommy.jpg'>
+		<img src='images/layout-garden/tommy.jpg'>
 	</picture>
 	<show-info>
 		<h2>Start Watching</h2>

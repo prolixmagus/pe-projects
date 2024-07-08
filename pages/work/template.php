@@ -3,7 +3,7 @@
 	$pageTitle = $pageData['title'];
 	$pageIdea = $pageData['intro'];
 
-	$recent_articles = array_slice(sorted_articles($pageData['articles']), 0, 4);
+	$recent_articles = sorted_articles($pageData['articles']);
 ?>	
 
 <?php include('../modules/page-header/template.php'); ?>

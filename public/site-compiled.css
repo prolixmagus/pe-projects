@@ -1516,9 +1516,6 @@ details > summary::after {
   display: flex;
   align-items: center;
 }
-.key-takeaways details {
-  margin-top: 1em;
-}
 details[open] > summary::after {
   content: "➖";
 }
@@ -1597,9 +1594,6 @@ details > summary::after {
   content: "➕";
   display: flex;
   align-items: center;
-}
-.key-takeaways details {
-  margin-top: 1em;
 }
 details[open] > summary::after {
   content: "➖";
@@ -2149,7 +2143,7 @@ headline-section {
 }
 headline-section > inner-column {
   display: block;
-  background-color: black;
+  background-color: #340A58;
   width: 100%;
 }
 article-section {
@@ -2160,8 +2154,11 @@ article-section {
   display: block;
   color: white;
 }
+.day-2-grid headline p {
+  color: white;
+}
 .day-2-grid-circle {
-  fill: var(--fish-blue);
+  fill: var(--color-two);
   max-width: 40px;
 }
 @media (min-width: 375px) {
@@ -2173,7 +2170,7 @@ article-section {
     padding: 10px 10px 2rem 10px;
   }
   .article-grid-2-cards {
-    margin-top: -55px;
+    margin-top: -45px;
   }
   .article-grid-2-cards li {
     padding-block: 10px;
@@ -2189,18 +2186,27 @@ article-section {
 }
 @media (min-width: 1000px) {
   .day-2-grid {
-    background-color: black;
+    background-color: #121212;
   }
   .article-grid-2-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (prefers-color-scheme: dark) {
+  headline-section > inner-column {
+    background-color: #160327;
+  }
+  .day-2-grid case-study-wrapper {
+    background-color: #121212;
+  }
+  headline-section {
+    background-color: #121212;
+  }
   .article-grid-2-cards li {
-    background-color: var(--paper-black);
+    background-color: #121212;
   }
   .day-2-grid-circle {
-    fill: var(--fish-pink);
+    fill: var(--color-primary);
   }
 }
 day-3-grid {

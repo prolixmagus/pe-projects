@@ -5,7 +5,7 @@ $flies = [
 		"category" => "Wet Flies",
 		"name" => "Classic Triumph Bass",
 		"price" => "3.00",
-		"image" => "images/classictriumph.jpg",
+		"image" => "images/layout-garden/classictriumph.jpg",
 		"alt" => "fly fishing tie that imitates a red and black insect with spotted wings",
 
 	],
@@ -13,7 +13,7 @@ $flies = [
 		"category" => "Dry Flies",
 		"name" => "Royal Wulff",
 		"price" => "1.50",
-		"image" => "images/royalwulff.jpg",
+		"image" => "images/layout-garden/royalwulff.jpg",
 		"alt" => "a fly fishing tie that imitates a fuzzy insect with bushy wings",
 
 	],
@@ -21,7 +21,7 @@ $flies = [
 		"category" => "Wet Flies",
 		"name" => "Alexandra",
 		"price" => "2.50",
-		"image" => "images/alexandra.jpg",
+		"image" => "images/layout-garden/alexandra.jpg",
 		"alt" => "a fly fishing tie that imitates a sardine or anchovy", 
 	],
 ];

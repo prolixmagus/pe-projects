@@ -19,10 +19,6 @@ details > summary {
 	}
 }
 
-.key-takeaways details {
-	margin-top: 1em;
-}
-
 details[open] > summary::after {
 	content: '➖';
 }

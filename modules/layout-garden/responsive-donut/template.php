@@ -1,7 +1,7 @@
 <ul class='donut-list'>
 	<li class='featured-donut'>
 		<picture>
-			<img src='../modules/layout-garden/responsive-donut/glazed-donut.jpg' alt='yellow glazed donut'>
+			<img src='images/layout-garden/glazed-donut.jpg' alt='yellow glazed donut'>
 		</picture>
 		<article class='donut-description'>
 			<h2 class='donut-voice'>Glazed Donut</h2>
@@ -12,7 +12,7 @@
 
 	<li class='featured-donut'>
 		<picture>
-			<img src='../modules/layout-garden/responsive-donut/strawberry-donut.jpg' alt='strawberry donut'>
+			<img src='images//layout-garden/strawberry-donut.jpg' alt='strawberry donut'>
 		</picture>
 		<article class='donut-description'>
 			<h2 class='donut-voice'>Strawberry Donut</h2>
@@ -23,10 +23,10 @@
 
 	<li class='featured-donut'>
 		<picture>
-			<img src='../modules/layout-garden/responsive-donut/creampie.jpg' alt='boston creampie donut'>
+			<img src='images/layout-garden/boston.jpg' alt='boston creampie donut'>
 		</picture>
 		<article class='donut-description'>
-			<h2 class='donut-voice'>Boston Creampie</h2>
+			<h2 class='donut-voice'>Boston Cream</h2>
 			<p class='calm-voice'>Milky goodness that should be illegal. Get thee to a bunnery!</p>
 			<a class='shop-link' href='#'>Pick Me!</a>
 		</article>

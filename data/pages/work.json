@@ -302,7 +302,7 @@
 					"section": [
 						{
 							"module": "generic-text-heading",
-							"content": "<h2>Result</h2><p>Check out the <a href='featured-projects/theme-challenge/index.php'>styled project!</a> If you like what you see, head over to the <a href='?page=projects'>projects page</a> for more.</p>"
+							"content": "<h2>Result</h2><p>Check out the <a href='featured-projects/theme-challenge'>styled project!</a>"
 						}
 					]
 				},
@@ -426,6 +426,14 @@
 						{
 							"module": "generic-text-heading",
 							"content": "<p>The server knows which HTML page to render by looking at the data in the URL query string. For the Buddha, it sees index.php?page=detail&tea-pet=Buddha. Every tea pet has a unique id.</p><p>The delete button is actually a small form. Once input is submitted to the server, it loops over each item in the list. The loop is trying to find the ids that <em>don't</em> match the id in the URL query string to store them in a separate list (a sort of ‘do not delete me’ list). Those tea pets are pushed to the database, leaving the Buddha Teapet to seek Enlightenment elsewhere.</p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Result</h2><p>Check out the <a href='featured-projects/teapet'>styled project!</a>"
 						}
 					]
 				},
