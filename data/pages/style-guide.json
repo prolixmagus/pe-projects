@@ -8,19 +8,14 @@
 			"module": "colophon"
 		},
 		{
-			"module": "exercise-card"
-		},
-		{
-			"module": "common-figure"
+			"module": "common-figure",
+			"figCaption": "A purple landscape and a telling caption"
 		},
 		{
 			"module": "artist-figure"
 		},
 		{
 			"module": "article-card"
-		},
-		{
-			"module": "project-card"
 		},
 		{
 			"module": "key-takeaways"

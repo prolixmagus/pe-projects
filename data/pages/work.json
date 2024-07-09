@@ -125,28 +125,7 @@
 							"alt": "Black lines branching out with a red and yellow ink slash at point of divergence"
 						}
 					]
-				},
-				{
-					"section": [
-						{
-							"module": "key-takeaways",
-							"takeaways": [
-								{
-									"teaser": "First point",
-									"description": "What do you want to say?"
-								},
-								{
-									"teaser": "Second point",
-									"description": "What do you want to say?"
-								},
-								{
-									"teaser": "Third point",
-									"description": "What do you want to say?"
-								}
-							]
-						}
-					]
-				}	
+				}
 			]
 		},
 		{

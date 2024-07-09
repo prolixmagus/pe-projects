@@ -1,7 +1,7 @@
 <?php 
-	$figure = $creator['image'] ?? "../images/square.jpg";
-	$figCaption = $creator['figCaption'] ?? "An illuminating piece of information or a pithy aside.";
-	$creatorName = $creator['creator'] ?? "The name of the author, musician, director, network, or artist.";
+	$figure = $creator['image'] ?? "../images/teal-square.jpg";
+	$figCaption = $creator['figCaption'] ?? "Name of the Work.";
+	$creatorName = $creator['creator'] ?? "Author, musician, director, artist...";
 	$category = $creator['icon'] ?? '../icons/headphones-icon.svg';
 	$alt = $creator['alt'] ?? 'alt-text'
 	
@@ -19,7 +19,7 @@
 
 	<figcaption>
 		<cite><?=$figCaption?></cite>
-		<p><?=$creatorName?></p>
+		<p class='quiet-voice caption'><?=$creatorName?></p>
 	</figcaption>
 
 </figure>

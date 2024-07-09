@@ -12,21 +12,21 @@
 	grid-column: 1 / -1;
 }
 
-@media (min-width: 490px) {
+@media (min-width: 600px) {
 	.related-articles {
-		grid-column: 1 / 12;
+		grid-column: 2 / 13;
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media (min-width: 768px) {
 	.related-articles {
-		grid-column: 2 / 12;
+		grid-column: 2 / 11;
 	}
 }
 
 @media (min-width: 1000px) {
 	.related-articles {
-		grid-column: 2 / 12;
+		grid-column: 2 / 11;
 	}
 }

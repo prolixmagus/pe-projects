@@ -9,7 +9,7 @@
 		</svg>
 	</div>
 	<picture>
-		<img src='images/layout-garden/tommy.jpg'>
+		<img src='images/layout-garden/tommy.jpg' alt='Actor Tommy Wiseau holding a football'>
 	</picture>
 	<show-info>
 		<h2>Start Watching</h2>

@@ -1,5 +1,5 @@
 <?php 
-	$figure = $section['image'] ?? "images/landscape.jpg";
+	$figure = $section['image'] ?? "images/purple-landscape.jpg";
 	$figCaption = $section['figCaption'] ?? null;
 	$alt = $section['alt'] ?? 'add alt text';
 	?>

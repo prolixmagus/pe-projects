@@ -9,8 +9,8 @@ colophon li {
 
 .fredoka-alphabet{
 	& ul {
-		border: 1px solid black;
-		border-radius: 10px;
+		border: 1px solid var(--color-three);
+		border-radius: var(--corners);
 		padding: 1rem;
 	}
 	& li {
@@ -21,12 +21,12 @@ colophon li {
 
 .noto-alphabet{
 	& ul {
-		border: 1px solid black;
-		border-radius: 10px;
+		border: 1px solid var(--color-two);
+		border-radius: var(--corners);
 		padding: 1rem;
 	}
 	& li {
-	font-family: "Noto Sans";
-	font-size: 1.125rem;
+		font-family: "Noto Sans";
+		font-size: 1.125rem;
 	}
 }

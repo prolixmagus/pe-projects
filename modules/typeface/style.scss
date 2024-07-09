@@ -8,9 +8,9 @@ typeface {
 	display: grid;
 	gap: 1rem;
 	& li {
-	font-size: 1rem;
-	font-weight: 500px;
-	margin-top: 0;
+		font-size: 1rem;
+		font-weight: 500px;
+		margin-top: 0;
 	}
 }
 
@@ -25,7 +25,7 @@ lettering-voice {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid var(--ink);
 }
 
 lettering-voice h3 + p {
@@ -34,4 +34,10 @@ lettering-voice h3 + p {
 
 lettering-voice + p {
 	margin-top: 2em;
+}
+
+@media (prefers-color-scheme: dark) {
+	lettering-voice {
+		border-bottom: 2px solid var(--ink-light);
+	}
 }

@@ -9,7 +9,7 @@
 		</progress-container>
 		<owl>
 			<picture>
-				<img src='../modules/layout-garden/duo-lingo-survey/owl.svg'>
+				<img src='../modules/layout-garden/duo-lingo-survey/owl.svg' alt='a perched cartoon owl'>
 			</picture>
 			<?php include 'owl.php'?>
 		</owl>

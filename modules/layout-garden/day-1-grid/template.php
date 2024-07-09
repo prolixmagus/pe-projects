@@ -12,22 +12,22 @@
 <ul class='picture-grid'>
 	<li>
 		<picture>
-			<img src="https://peprojects.dev/images/square.jpg">
+			<img src="images/teal-square.jpg" alt='teal placeholder'>
 		</picture>
 	</li>
 	<li>
 		<picture>
-			<img src="https://peprojects.dev/images/square.jpg">
+			<img src="images/purple-square.jpg" alt='purple placehodler'>
 		</picture>
 	</li>
 	<li>
 		<picture>
-			<img src="https://peprojects.dev/images/square.jpg">
+			<img src="images/orange-square.jpg" alt='orange placeholder'>
 		</picture>
 	</li>
 	<li>
 		<picture>
-			<img src="https://peprojects.dev/images/square.jpg">
+			<img src="images/square.jpg" alt='gray placeholder'>
 		</picture>
 	</li>
 </ul>

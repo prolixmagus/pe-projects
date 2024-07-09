@@ -4,6 +4,10 @@
 	& colophon, .exercise-card, .artist-card, .common-figure, .project-card, .card {
 		grid-column: 1 / -1;
 	}
+
+	.quiet-voice.caption {
+		margin-top: 0;
+	}
 }
 
 
@@ -33,5 +37,6 @@
 		}
 	}
 }
+
 
 
