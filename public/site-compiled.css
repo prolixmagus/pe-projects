@@ -1576,6 +1576,9 @@ details[open] > summary::after {
   display: flex;
   flex-direction: column;
 }
+.artist-card figcaption .quiet-voice.caption {
+  margin-top: 0;
+}
 /*	position: relative;*/
 /*artist-figure figcaption {
 	position: absolute;
