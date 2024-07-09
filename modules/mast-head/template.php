@@ -56,14 +56,14 @@
 				<inner-column class='inner-grid'>
 
 					<logo-container>
-						<a class='site-logo' href='index.php'>
+						<a class='site-logo' href='index.php' aria-label='Home: Jeremy Fishman'>
 							<?php include("../icons/jeremy-logo.svg")?>
 						</a>
 					</logo-container>
 
 					<?php include("../modules/nav-menu/template.php")?>
 
-					<button class='hamburger-btn'>
+					<button class='hamburger-btn' id='hamburger-btn' aria-label='small-menu-button'>
 						<svg class='hamburger' viewBox="0 0 24 24" fill="none" stroke="#fffafa">
 							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

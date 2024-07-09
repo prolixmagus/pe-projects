@@ -1,15 +1,16 @@
-	<?php
+<?php
 	$title = $article['title'] ?? "Article Title"; 
 	$slug = $article['slug'] ?? "#"; 
 	$published = $article['published'] ?? "Date published";
 	$preview_image = $article['preview-image'] ?? "images/landscape.jpg";
 	$description = $article['description'] ?? "A one sentence teaser to entice the reader!";
+	$alt = $article['alt'] ?? "alt-text for image accessibility"
 ?>
 
 <article class='card'>
 	
 	<picture class='work-picture'>
-		<img src='<?=$preview_image?>' / >
+		<img src='<?=$preview_image?>' alt=<?=$alt?> / >
 	</picture>
 
 	<div class='text-area'>

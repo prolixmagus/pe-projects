@@ -11,6 +11,7 @@
 			"slug": "death-and-design",
 			"published": "02 NOV 2023",
 			"updated": "10 NOV 2023",
+			"alt": "Outline of a cartoonish skeletal arm giving a thumbs up",
 			"description": "Cinema weaves sight and sound into a storytelling design sytsem.",
 			"preview-image": "images/explorations/death-and-design/headline.jpg",
 			"related": ["bottles-in-the-sky", "theme-challenge"],
@@ -20,7 +21,7 @@
 						{
 							"module": "common-figure",
 							"image": "images/explorations//death-and-design/headline.jpg",
-							"alt": "Three outlines of bottles against a purple backdrop",
+							"alt": "Outline of a cartoonish skeletal arm giving a thumbs up",
 							"headline": true
 						},
 						{
@@ -62,6 +63,7 @@
 			"slug": "bottles-in-the-sky",
 			"published": "03 NOV 2023",
 			"updated": "10 OCT 2023",
+			"alt": "Three outlines of bottles against a purple backdrop",
 			"description": "There are great designs and terrible designs all around us. Nothing is permanent.",
 			"preview-image": "images/explorations/bottles-in-the-sky/headline.jpg",
 			"related": ["death-and-design", "theme-challenge"],
@@ -153,6 +155,7 @@
 			"slug": "theme-challenge",
 			"published": "17 APR 2024",
 			"updated": "20 APR 2024",
+			"alt": "A cartoon drawing of boxes within boxes making a web layout",
 			"preview-image": "images/explorations/theme-challenge/headline.jpg",
 			"description": "Given a blank canvas and a demographic, what elements do you reach for to establish connection?",
 			"related": ["death-and-design", "bottles-in-the-sky"],
@@ -162,6 +165,7 @@
 						{
 							"module": "common-figure",
 							"image": "images/explorations/theme-challenge/headline.jpg",
+							"alt": "A cartoon drawing of boxes within boxes making a web layout",
 							"headline": true
 						},
 						{
@@ -327,6 +331,7 @@
 			"slug": "caesar-cipher",
 			"published": "06 JUN 2024",
 			"updated": "06 JUN 2024",
+			"alt": "The letter 'A' and 'Z' in a roman-style door frame",
 			"preview-image": "images/explorations/caesar-cipher/headline.jpg",
 			"description": "Let's take a crack at some cryptography - with Javascript!",
 			"related": ["theme-challenge", "bottles-in-the-sky"],
@@ -369,6 +374,7 @@
 			"slug": "teapet-shop",
 			"published":"22 APR 2024",
 			"updated": "24 APR 2024",
+			"alt": "A lucky cat in the middle of two steaming teapots",
 			"preview-image": "images/explorations/teapet-store/headline.jpg",
 			"description": "Making a mock storefront selling teapets to keep you company - using CRUD methods.",
 			"related": ["caesar-cipher", "theme-challenge"],
@@ -462,6 +468,7 @@
 			"slug": "find-a-guide",
 			"published": "11 JUN 2024",
 			"updated": "11 JUN 2024",
+			"alt": "Symbols of binoculars, a globe, and a walking person",
 			"preview-image": "images/explorations/find-a-guide/headline.jpg",
 			"description": "One week sprint to design and code a vanilla JS prototype",
 			"related": ["theme-challenge", "teapet-shop"],
@@ -471,12 +478,36 @@
 						{
 							"module": "common-figure",
 							"image": "images/explorations/find-a-guide/headline.jpg",
-							"alt": "The letter 'A' and 'Z' in a roman-style door frame",
+							"alt": "Symbols of binoculars, a globe, and a walking person",
 							"headline": true
 						},
 						{
 							"module": "generic-text-heading",
-							"content": "<h2>Introduction</h2><p>hi</p>"
+							"content": "<h2>Introduction</h2><p>The past week, I spent six days brainstorming, researching, sketching, writing, and testing a design for a javascript web application. Even though I engaged with this process when designing my website, I enjoyed it much more. Perhaps it was because I set clearer goals and tossed my perfectionist tendencies in the dustbin. Or maybe, having done it before, I felt more confident recognizing stumbling blocks.</p><p>The main requirement of this sprint was to create something more complex than a single page, but not something unachievable in two weeks. The app should be browser-based, meaning I will primarily be using Javascript to render each page and manipulate the data dynamically</p><p>Before this, to use an auto-mechanic metaphor, I’d been tinkering with the brake system, the engine, the ignition separately. Now, I’d need to put everything together to make a functioning vehicle. It probably won’t be the most efficient, stylish, or environmentally friendly, but come hell or high water, it will move!</p><p>But way before reviewing arrays or common functions, the key to success was design.</p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>The Plan</h2><p>I wanted to showcase an app that related to my career goals and interests, so I chose to create an app that helps travelers find the perfect local tour guide for their dream vacation, where the focus would be cultural and linguistic immersion. I’ve seen luxury customizable tours pop up recently, but what about the ability to find yourself in a city, hop on to an app, and get a tour designed by a local with your interests in mind? Wouldn’t it be cool if those guides had education degrees or finessed their tours for language learning experiences in mind? Wouldn’t it be cool if those guides had education degrees or finessed their tours for language learning experiences in mind?</p><p>What if it turned into a lifelong friendship? Or potential romance?</p><p>Of course, things like this <a href='https://www.toursbylocals.com/' target='_blank'>already exist</a>, and other <a href='https://www.airbnb.com/' target='_blank'>massively popular apps</a> offer <a href='https://www.couchsurfing.com/' target='_blank'>similar services</a>.</p><p>But that’s great! If the idea sucked, nobody would have tried it!</p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>The Design</h2><p>First, I had to come up with user goals, the tasks involved, what could go wrong, and the scope of the app. I collected my thoughts in <a href='https://docs.google.com/document/d/1w7Piu5a_QkAmjlFWlU3kErWByOOC_q8LGFbyO4qZulk/edit#heading=h.sgjgnm3v66qh' target='_blank'>this document</a>.</p><p>Once those were established, I planned out my content model data points. Each tour would need a name, price, and associated tour guide. Each tour guide would need to have their location, mastered languages, area of expertise, photo, preferred pronouns/titles, etc…</p><p>After that, I used a <a href='https://www.mermaidchart.com/raw/7e4a5398-8c41-42a2-8794-6edb18d0e273?theme=light&version=v0.1&format=svg' target='_blank'>mermaid chart</a> to plan out the user flow.</p><p>Finally, I moved to the visual design; I planned out each page in <a href='https://www.figma.com/design/Hsc9H4KRy5Dwf2H4XLxHIk/Find-A-Guide-JS-Prototype?node-id=0-1&t=ZUg2y8dDThtPplKW-0' target='_blank'>Figma</a> with basic ('passable') styling."
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>The Code</h2><p>The first problem I encountered was - where to start? Should you go through each page 100% style and features, or should you get the skeleton of the navgiation down? According to Derek, it might make sense to start with the hardest thing - because that might create the longest blocker. Imagine reaching the end of the sprint and then beginning the toughest challenge when you are tired and just want to eat peanut m&ms and take a long shower.</p><p>Handling navigation meant saving state somewhere (aka, where you are). Every time a page rendered (gets painted on the screen), you had to save your state - or load your state! Reminded me of the fond days of emulating Super Nintendo games. It also meant creating a rudimentary router, that based on your state, a certain page would render.</p><p>After that got settled, I realized I needed to separate my functions. There are functions that handle computations, functions that handled the rendering, functions that grab or store date, and overall ‘structual’ functions that handled the other functions! I also encountered the joy of managing lots of imports and exports between files (which apparently is what happens in frameworks).</p>"
 						}
 					]
 				}
