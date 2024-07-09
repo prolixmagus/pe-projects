@@ -486,7 +486,37 @@
 					"section": [
 						{
 							"module": "generic-text-heading",
-							"content": "<h2>The Code</h2><p>The first problem I encountered was - where to start? Should you go through each page 100% style and features, or should you get the skeleton of the navgiation down? According to Derek, it might make sense to start with the hardest thing - because that might create the longest blocker. Imagine reaching the end of the sprint and then beginning the toughest challenge when you are tired and just want to eat peanut m&ms and take a long shower.</p><p>Handling navigation meant saving state somewhere (aka, where you are). Every time a page rendered (gets painted on the screen), you had to save your state - or load your state! Reminded me of the fond days of emulating Super Nintendo games. It also meant creating a rudimentary router, that based on your state, a certain page would render.</p><p>After that got settled, I realized I needed to separate my functions. There are functions that handle computations, functions that handled the rendering, functions that grab or store date, and overall ‘structual’ functions that handled the other functions! I also encountered the joy of managing lots of imports and exports between files (which apparently is what happens in frameworks).</p>"
+							"content": "<h2>The Code</h2><p>The first problem I encountered was - where should I start? Should I go through each page 100% style and features, or should I get the skeleton of the navgiation down? According to Derek, it might make sense to start with the hardest thing - because that might create the longest blocker. Imagine reaching the end of the sprint and then beginning the toughest challenge when you are tired and just want to eat peanut m&ms and take a long shower.</p><p>Handling navigation meant saving state somewhere (aka, where you are). Every time a page rendered (gets painted on the screen), you had to save your state - or load your state! Reminded me of the fond days of emulating Super Nintendo games. It also meant creating a rudimentary router, that based on your state, a certain page would render.</p><p>After that got settled, I realized I needed to organize my functions. There were functions that handle search, functions that handled rendering, functions that loaded or stored data, and overall ‘structual’ functions that handled the other functions! I also encountered the joy of managing lots of module imports and exports between files.</p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "common-figure",
+							"image": "images/explorations/find-a-guide/js-app.jpg",
+							"alt": "Left to right: search page, trip detail page, booked trips page"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "key-takeaways",
+							"takeaways": [
+								{
+									"teaser": "Pseudo-code / talking to yourself (or an object) is the gift that keeps on giving!",
+									"description": "This includes making a todo list and checking them off to show progress. I never used to be a todo list guy, but perhaps that’s because I didn’t have a lot of things todo … at the time … womp."
+								},
+								{
+									"teaser": "Make sure your data is organized.",
+									"description": "The more complex the JSON, the more you’re going to have to work to extract the data you need. Things can be as complicated or as simple as you want."
+								},
+								{
+									"teaser": "Reusability and modularity is the name of the game.",
+									"description": "I could see refactoring this into a class. I could also see keeping it as distinct functions. Naming what you need, of course, is the challenge"
+								}
+							]
 						}
 					]
 				}
