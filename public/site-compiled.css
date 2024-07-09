@@ -812,7 +812,10 @@ module-showcase {
   max-width: 500px;
 }
 .section-flex .inner-flex {
-  padding: 0;
+  padding: 15px 30px;
+  border-radius: var(--corners);
+  background-color: var(--background-light);
+  height: 100%;
 }
 .section-flex + .section-flex {
   margin-top: 2em;
@@ -836,7 +839,6 @@ module-showcase {
   .timeline-wrapper .inner-flex {
     display: flex;
     gap: 1em;
-    align-items: center;
   }
   .section-flex + .section-flex {
     margin-top: 0;

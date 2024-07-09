@@ -2,7 +2,7 @@ const header = document.querySelector('.home-header h1');
 const body = document.querySelector('body');
 ;const buttonText = document.querySelector('[data-action="cycle"]')
 let index = 0;
-const phrases = ['Web Developer. </br> Linguist. Human.', 'How are you? <br /> Doing alright? ', 'Me? Ok, I guess. <br /> Well, actually ...', 'My wife tells me <br /> “It’s normal, dear”', 'I don‘t feel normal. <br /> It calls to me ...', '“Can’t you code a little longer?”', '“Refactor me!” <br /> “Compile faster!”', '“I’m just your type: <br /> Always truthy,”', `This love may be <br /> <span class='terminal'>terminal</span>  ...`, 'Pun intended.<br /> End scene. 🎭', 'If you got this far ... <br /> Congratulations!', 'Let‘s build cool stuff together 🤝'];
+const phrases = ['Web Developer. </br> Linguist. Human.', 'How are you? <br /> Doing alright? ', 'Me? Ok, I guess. <br /> Well, actually ...', 'My wife tells me <br /> “It’s normal, dear”', 'I don‘t feel normal. <br /> There is a voice', 'It calls to me <br /> every night ...', '“Can’t you code <br /> a little longer?”', '“Refactor me!” <br /> “Compile faster!”', '“I’m just your type: <br /> Always truthy,”', `This love may be <br /> <span class='terminal'>terminal</span>  ...`, 'Pun intended.<br /> End scene. 🎭', 'If you got this far ... <br /> Congratulations!', 'Let‘s build cool stuff <br /> together 🤝'];
 
 function cyclePhrases() {
 	index += 1;

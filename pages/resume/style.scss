@@ -28,7 +28,10 @@
 }
 
 .section-flex .inner-flex {
-	padding: 0;
+	padding: 15px 30px;
+	border-radius: var(--corners);
+	background-color: var(--background-light);
+	height: 100%;
 }
 
 .section-flex + .section-flex {
@@ -57,7 +60,6 @@
 		.inner-flex {
 			display: flex;
 			gap: 1em;
-			align-items: center;
 		}
 	}
 
@@ -84,3 +86,5 @@
 		}
 	}
 }
+
+
