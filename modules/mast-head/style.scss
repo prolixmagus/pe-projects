@@ -4,7 +4,7 @@ mast-head {
 	top: 0;
 	z-index: 2;
 	background-color: var(--paper-medium);
-	box-shadow: 0 -6px 8px 3px rgba(0 0 0 / 0.5);
+	border-bottom: 1px solid hsla(var(--accent-two), 59%, 60%);
 }
 
 .site-header inner-column {

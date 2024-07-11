@@ -22,8 +22,9 @@ site-map {
 site-map ul {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 10px;
 }
+
 
 site-map nav {
 	grid-column: 1 / -1;

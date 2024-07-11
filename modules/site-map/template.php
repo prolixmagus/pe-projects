@@ -27,4 +27,8 @@
 			</li>
 		</ul>
 	</nav>
+
+	<div class='circle-graphic'>
+		<img src='images/footer-circles.svg'>
+	</div>
 </site-map>

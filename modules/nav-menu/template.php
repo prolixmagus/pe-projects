@@ -3,7 +3,7 @@
 	$nav_links = [
 		[
 			"page" => "Home",
-			"link" => "?",
+			"link" => "?page=home",
 		],
 		[
 			"page" => "Work",
@@ -30,7 +30,7 @@
 
 		<?php foreach($nav_links as $link) { 
 				$link_page = $link['page'] ?? "page link"; 
-				$current_page = $_GET['page'] ?? "";
+				$current_page = $_GET['page'] ?? "/";
 			?>
 
 			<li>
