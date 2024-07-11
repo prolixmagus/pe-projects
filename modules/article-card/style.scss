@@ -8,21 +8,22 @@
 	height: 100%;
 	align-items: flex-start;
 	border-radius: var(--corners);
-	padding: 1em;
-	background-color: var(--paper-dark);
-	box-shadow: var(--shadow);
-	border: 1px solid black;
+
 	& .text-area {
 		flex-grow: 1;
 
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
+
 		& p {
 			flex-grow: 1;
 
 			margin-top: 1em;
 		}
+
 	}
+
 	& time {
 		text-transform: uppercase;
 	}

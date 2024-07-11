@@ -14,7 +14,7 @@
 	</picture>
 
 	<div class='text-area'>
-		<a href='?page=work-detail&slug=<?=$slug?>'>
+		<a class='card-title' href='?page=work-detail&slug=<?=$slug?>'>
 			<h2>
 				<?=$title?>
 			</h2>
