@@ -11,8 +11,7 @@
 
 <?php include('../modules/page-header/template.php');?>
 
-<section class='timeline-grid section-grid'>
-	<inner-column class='inner-grid'>
+<section>
 		<div class='timeline-wrapper'>
 			<?php foreach($pageData['section'] as $section) {
 				$currentIndex++; 
@@ -37,5 +36,4 @@
 				</section>
 			<?php } ?>
 		</div>
-	</inner-column>
 </section>

@@ -21,10 +21,10 @@
 				<ul class='thoughts-list'>
 					<?php foreach($pageData['blogs'] as $blog) { ?>
 					<li>
+						<date class='quiet-voice'><?=$blog['date'] ?></date>
 						<a href='<?=$blog['link']?>'>
 							<h3><?=$blog['description']?></h3>
 						</a>
-						<date class='quiet-voice'><?=$blog['date'] ?></date>
 					</li>
 					<?php } ?>
 				</ul>

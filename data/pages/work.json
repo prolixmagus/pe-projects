@@ -417,14 +417,6 @@
 				{
 					"section": [
 						{
-							"module": "generic-text-heading",
-							"content": "<h2>Result</h2><p>Check out the <a href='featured-projects/teapet'>styled project!</a>"
-						}
-					]
-				},
-				{
-					"section": [
-						{
 							"module": "key-takeaways",
 							"takeaways": [
 								{
@@ -436,6 +428,14 @@
 									"description": "To avoid pulling in the database information on every page, you can pull in the database information once at a larger scope. You can then sprinkle the data throughout smaller scopes as needed."
 								}
 							]
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Result</h2><p>Check out the <a href='featured-projects/teapet'>styled project!</a>"
 						}
 					]
 				}
@@ -517,6 +517,14 @@
 									"description": "I could see refactoring this into a class. I could also see keeping it as distinct functions. Naming what you need, of course, is the challenge"
 								}
 							]
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Result</h2><p>Check out the <a href='featured-projects/js-prototype'>styled project!</a>"
 						}
 					]
 				}

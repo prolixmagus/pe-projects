@@ -42,9 +42,10 @@ body {
 }
 
 p a, li a {
-	color: var(--color-primary-dark);
+	color: var(--ink-light);
 	text-decoration: none;
 	display: inline-block;
+	font-weight: 500;
 }
 
 p a:hover, li a:hover {
@@ -56,8 +57,8 @@ li a:visited, p a:visited {
 	color: var(--color-two-dark);
 }
 
-.site-header li a:visited, .site-footer li a:visited, .site-header p a:visited, .site-footer li a:visited {
-	color: var(--ink);
+.site-header li a, .site-footer li a {
+	font-weight: 400;
 }
 
 .site-header li a.active {
