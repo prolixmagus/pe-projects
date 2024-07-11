@@ -101,9 +101,7 @@ sup {
   font-size: 0.7rem;
 }
 .read-more {
-  margin-top: 2rem;
-  text-decoration: underline;
-  text-decoration-style: wavy;
+  margin-top: 1.5rem;
   justify-self: start;
 }
 /* S setings */
@@ -230,7 +228,7 @@ experience-gained, div {
 }
 .attention-voice, h2 {
   font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
-  font-size: clamp(1.5rem, 8vw, 2rem);
+  font-size: clamp(1.5rem, 8vw, 1.75rem);
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -984,7 +982,7 @@ module-showcase {
   color: var(--color-primary-dark);
 }
 .contact address:hover {
-  text-decoration: underline wavy;
+  text-decoration: underline;
 }
 .contact picture {
   padding: 1em;
@@ -1007,7 +1005,7 @@ mast-head {
   top: 0;
   z-index: 2;
   background-color: var(--paper-medium);
-  border-bottom: 1px solid hsla(var(--accent-two), 59%, 60%);
+  border-bottom: 1px solid hsla(var(--hue), 0%, 85%, 0.5);
 }
 .site-header inner-column {
   padding-top: 5px;
