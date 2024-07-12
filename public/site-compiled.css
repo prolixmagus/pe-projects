@@ -806,7 +806,6 @@ module-showcase {
 .section-flex .inner-flex {
   display: flex;
   border-radius: var(--corners);
-  background-color: var(--background-light);
   height: 100%;
 }
 .section-flex + .section-flex {
@@ -1457,11 +1456,6 @@ times {
 .work-picture img {
   border-radius: var(--corners);
   height: 100%;
-}
-@media (prefers-color-scheme: dark) {
-  .card {
-    background-color: var(--background-light);
-  }
 }
 /*@media (min-width: 768px) {
 	article-card {
@@ -2799,12 +2793,7 @@ picture {
   }
   p a, li a {
     color: var(--color-primary);
-    text-decoration: none;
     display: inline-block;
-  }
-  p a:hover, li a:hover, .site-header li a.active {
-    text-decoration: wavy underline;
-    text-decoration-color: var(--color-primary);
   }
   li a:visited, p a:visited {
     color: var(--color-two);

@@ -154,14 +154,8 @@ picture {
 	}
 
 	p a, li a {
-	color: var(--color-primary);
-	text-decoration: none;
-	display: inline-block;
-	}
-
-	p a:hover, li a:hover, .site-header li a.active {
-	text-decoration: wavy underline;
-	text-decoration-color: var(--color-primary);
+		color: var(--color-primary);
+		display: inline-block;
 	}
 
 	li a:visited, p a:visited {
