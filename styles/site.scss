@@ -43,14 +43,15 @@ body {
 
 p a, li a {
 	color: var(--ink-light);
-	text-decoration: none;
+	text-decoration: underline;
 	display: inline-block;
 	font-weight: 500;
 }
 
 p a:hover, li a:hover {
-	text-decoration: wavy underline;
-	text-decoration-color: var(--color-primary-dark);
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-decoration-color: var(--color-primary);
 }
 
 li a:visited, p a:visited {
@@ -62,8 +63,9 @@ li a:visited, p a:visited {
 }
 
 .site-header li a.active {
-	text-decoration: wavy underline;
-	text-decoration-color: var(--color-primary-dark);
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-decoration-color: var(--color-primary);
 }
 
 .card li a:visited, .card li a:visited {

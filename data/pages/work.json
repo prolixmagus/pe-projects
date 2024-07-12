@@ -12,7 +12,7 @@
 			"published": "02 NOV 2023",
 			"updated": "10 NOV 2023",
 			"alt": "Outline of a cartoonish skeletal arm giving a thumbs up",
-			"description": "Cinema weaves sight and sound into a storytelling design sytsem.",
+			"description": "Successful cinema weaves sight and sound according to a carefully crafted visual design system.",
 			"preview-image": "images/explorations/death-and-design/headline.jpg",
 			"related": ["bottles-in-the-sky", "theme-challenge"],
 			"case-study": [
@@ -312,7 +312,7 @@
 			"updated": "06 JUN 2024",
 			"alt": "The letter 'A' and 'Z' in a roman-style door frame",
 			"preview-image": "images/explorations/caesar-cipher/headline.jpg",
-			"description": "Let's take a crack at some cryptography - with Javascript!",
+			"description": "My first installment of exploring cryptographic methods mentioned in <cite><em>The Code Book</em></cite> by Simon Singh",
 			"related": ["theme-challenge", "bottles-in-the-sky"],
 			"case-study": [
 				{
@@ -449,7 +449,7 @@
 			"updated": "11 JUN 2024",
 			"alt": "Symbols of binoculars, a globe, and a walking person",
 			"preview-image": "images/explorations/find-a-guide/headline.jpg",
-			"description": "One week sprint to design and code a vanilla JS prototype",
+			"description": "One week sprint to design and code a vanilla JS prototype to find local tour guide.",
 			"related": ["theme-challenge", "teapet-shop"],
 			"case-study": [
 				{

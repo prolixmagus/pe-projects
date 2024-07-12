@@ -224,7 +224,7 @@ experience-gained, div {
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  letter-spacing: 0.2;
+  letter-spacing: 0.02em;
 }
 .attention-voice, h2 {
   font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
@@ -243,7 +243,7 @@ experience-gained, div {
   font-variation-settings: "wdth" 100;
 }
 nav li {
-  font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
+  font-family: "Fredoka", "Noto Sans", sans-serif;
   font-size: 1rem;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -251,6 +251,7 @@ nav li {
   font-variation-settings: "wdth" 100;
 }
 :is(.calm-voice, p, li) em {
+  font-family: "Noto Sans", sans-serif;
   font-style: italic;
 }
 :is(.calm-voice, p, li) strong {
@@ -636,6 +637,9 @@ body.scary {
 body.scary * {
   color: hsl(var(--hue), 0%, 7%);
 }
+body.scary a {
+  text-decoration: none;
+}
 body.scary a:hover {
   text-decoration: none;
 }
@@ -979,7 +983,7 @@ module-showcase {
   font-size: clamp(16px, 5vw, 32px);
   font-family: "Noto Sans", sans-serif;
   gap: 10px;
-  color: var(--color-primary-dark);
+  color: var(--color-three);
 }
 .contact address:hover {
   text-decoration: underline;
@@ -1111,6 +1115,9 @@ logo-container {
  }
 
 */
+.site-header a {
+  text-decoration: none;
+}
 .site-header .user-menu {
   position: absolute;
   left: -300px;
@@ -1355,7 +1362,7 @@ code {
 .recent-articles ol {
   grid-column: 1 / -1;
   display: grid;
-  gap: 2rem;
+  gap: 4rem 2rem;
 }
 @media (min-width: 490px) {
   .recent-articles {
@@ -1443,6 +1450,9 @@ times {
 }
 .card time {
   text-transform: uppercase;
+}
+.card .card-title {
+  text-decoration: none;
 }
 .work-picture img {
   border-radius: var(--corners);
@@ -2605,6 +2615,9 @@ footer inner-column {
   max-width: 150px;
   margin-top: 1em;
 }
+.circle-graphic img {
+  animation: revolve 5s linear infinite;
+}
 @media (min-width: 490px) {
   .updated-time {
     justify-self: end;
@@ -2625,6 +2638,11 @@ footer inner-column {
 @media (prefers-color-scheme: dark) {
   footer {
     background-color: var(--background);
+  }
+}
+@keyframes revolve {
+  100% {
+    transform: rotate(360deg);
   }
 }
 site-map {
@@ -2649,6 +2667,9 @@ site-map ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+site-map ul a {
+  text-decoration: none;
 }
 site-map nav {
   grid-column: 1 / -1;
@@ -2692,13 +2713,14 @@ body {
 }
 p a, li a {
   color: var(--ink-light);
-  text-decoration: none;
+  text-decoration: underline;
   display: inline-block;
   font-weight: 500;
 }
 p a:hover, li a:hover {
-  text-decoration: wavy underline;
-  text-decoration-color: var(--color-primary-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--color-primary);
 }
 li a:visited, p a:visited {
   color: var(--color-two-dark);
@@ -2707,8 +2729,9 @@ li a:visited, p a:visited {
   font-weight: 400;
 }
 .site-header li a.active {
-  text-decoration: wavy underline;
-  text-decoration-color: var(--color-primary-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--color-primary);
 }
 .card li a:visited {
   color: var(--ink);

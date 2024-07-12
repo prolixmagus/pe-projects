@@ -66,6 +66,10 @@ body.scary {
 		color: hsl(var(--hue), 0%, 7%);
 	}
 
+	a {
+		text-decoration: none;
+	}
+
 	a:hover {
 		text-decoration: none;
 	}

@@ -33,7 +33,7 @@
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  letter-spacing: .2;
+  letter-spacing: .02em;
 }
 
 .attention-voice, h2 {
@@ -55,7 +55,7 @@
 }
 
 nav li {
-  font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
+  font-family: "Fredoka", "Noto Sans", sans-serif;
   font-size: 1rem;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -64,6 +64,7 @@ nav li {
 }
 
 :is(.calm-voice, p, li) em {
+  font-family: "Noto Sans", sans-serif; 
 	font-style: italic;
 }
 
