@@ -22,10 +22,10 @@
 .fly-fishing-grid h2 {
 	font-size: .85rem;
 	text-transform: uppercase;
-	font-family: Overpass, sans-serif;
+	font-family: "Fredoka", sans-serif;
 	text-align: center;
 	opacity: .8;
-	color: var(--ink);
+	color: hsla(var(--hue), 0%, 0%, .8);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +34,6 @@
 	}
 
 	.fly-fishing-grid h2{
-		color: black;
+		color: var(--color-primary);
 	}
 }

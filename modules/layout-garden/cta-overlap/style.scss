@@ -3,7 +3,8 @@
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	place-items: center;
-	border: 1px solid black;
+	border: 2px solid var(--color-primary);
+	border-radius: 5px;
 }
 
 .cta-overlap h2 {
@@ -11,9 +12,9 @@
 	grid-row: 1;
 	z-index: 1;
 	font-size: clamp(20px, 5vw, 48px);
-	font-family: Oswald, "sans-serif";
+	font-family: "Fredoka", sans-serif;
 	font-weight: 600;
-	color: var(--ink);
+	color: var(--color-primary);
 }
 
 .cta-overlap h3 {
@@ -21,7 +22,7 @@
 	grid-row: 1;
 	font-size: 12rem;
 	opacity: .05;
-	font-family: Futura, sans-serif;
+	font-family: "Fredoka", sans-serif;
 	color: var(--ink);
 }
 
@@ -31,14 +32,9 @@
 	}
 
 	.cta-overlap h3 {
-		color: #373737;
+		color: hsla(var(--accent-two), 59%, 60%, 0.5);
 		opacity: .2;
 	}
-
-	.cta-overlap h2 {
-		color: black;
-	}
-
 
 }
 

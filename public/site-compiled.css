@@ -409,7 +409,7 @@ input.numbertype {
   font-size: 1em;
   color: var(--color-primary-dark);
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Noto Sans", sans-serif;
   box-shadow: 0 4px 0 0 var(--color-primary-dark), inset 0px -1px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   border: 1px solid var(--color-primary-dark);
@@ -442,12 +442,12 @@ input.numbertype {
   border-radius: 5px;
 }
 .cta-button {
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
-  border-radius: 50px;
-  font-family: "Avenir", sans-serif;
-  font-size: 1.25rem;
+  padding-inline: 2em;
+  padding-block: 0.5em;
+  border-radius: 5px;
+  font-size: 1rem;
   border: 1px solid black;
+  font-family: "Noto Sans";
 }
 .e4p-icon {
   max-width: 30px;
@@ -494,6 +494,13 @@ input.numbertype {
 }
 .circle-icon {
   max-width: 30px;
+}
+@media (prefers-color-scheme: dark) {
+  .cycle {
+    background-color: #2E2E2E;
+    color: var(--color-primary);
+    font-weight: 500;
+  }
 }
 .exercise form {
   grid-column: 1 / 11;
@@ -719,6 +726,11 @@ body.scary .terminal {
 .layout section:nth-child(1) {
   border-bottom: 2px solid black;
 }
+@media (prefers-color-scheme: dark) {
+  .layout section:nth-child(1) {
+    border-bottom: 2px solid white;
+  }
+}
 .case-study-link {
   grid-column: 1 / 5;
   display: block;
@@ -730,14 +742,14 @@ body.scary .terminal {
 }
 case-study-wrapper {
   display: block;
-  padding: 1rem;
+  padding-block: 1rem;
 }
 .module-showcase {
   display: flex;
   flex-direction: column;
 }
 .layout-garden section:nth-child(even) {
-  background-color: #FBF7F5;
+  background-color: #FAFAFA;
 }
 .case-study-link:hover {
   background-color: var(--fish-green);
@@ -751,6 +763,9 @@ module-showcase {
   margin-top: 1rem;
 }
 @media (prefers-color-scheme: dark) {
+  .layout-garden section:nth-child(even) {
+    background-color: #1d1d1d;
+  }
   .case-study-link {
     border: 2px solid var(--color-two);
     color: var(--color-two);
@@ -997,7 +1012,7 @@ module-showcase {
 }
 @media (prefers-color-scheme: dark) {
   .contact a {
-    color: white;
+    color: var(--color-three);
   }
 }
 /* S tuff (modules) */
@@ -1213,11 +1228,6 @@ logo-container {
   grid-column: 1 / -1;
 }
 @media (min-width: 768px) {
-  .page-header p {
-    grid-column: 2 / -1;
-  }
-}
-@media (orientation: landscape) {
   .page-header p {
     grid-column: 2 / -1;
   }
@@ -1694,13 +1704,6 @@ cta-text {
   flex-direction: column;
   justify-content: center;
 }
-.graphic-diptych p {
-  padding-top: 1rem;
-}
-.graphic-diptych .attention-voice.bold {
-  font-size: 2.5rem;
-  font-family: Roboto;
-}
 .graphic-diptych .cta-button {
   max-width: 175px;
   margin-top: 1.5rem;
@@ -1716,9 +1719,6 @@ cta-text {
 }
 .graphic-diptych picture {
   border: 1px solid #170D7C;
-}
-.graphic-diptych picture img {
-  border-radius: 10px;
 }
 @media (min-width: 810px) {
   .graphic-diptych module-showcase {
@@ -1751,11 +1751,11 @@ cta-text {
   }
 }
 @media (prefers-color-scheme: dark) {
-  section.page-content.layout .announcement-grid {
-    background-color: #FBF7F5;
+  .announcement-grid {
+    background-color: #121212;
   }
   .announcement-grid p, .announcement-grid h2 {
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--white);
   }
 }
 .announcement-card date-container {
@@ -1764,54 +1764,47 @@ cta-text {
   justify-items: stretch;
 }
 .time-banner {
-  font-family: "Gothic A1", sans-serif;
   font-size: 1.5rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   padding-inline: 2rem;
   padding-block: 1rem;
   text-transform: uppercase;
+  font-family: "Fredoka", sans-serif;
 }
 .day {
-  background-color: #328042;
+  background-color: var(--color-two-dark);
   color: white;
   overflow: hidden;
 }
 .date {
-  background-color: #8EA880;
-  color: #328042;
+  background-color: var(--color-two);
+  color: var(--color-two-dark);
 }
 .announcement-card {
-  border: 2px solid #328042;
-  border-radius: 10px;
+  border: 2px solid #D2A6D9;
+  border-radius: 5px;
   overflow: hidden;
 }
 card-info {
   display: block;
-  border-top: 2px solid #328042;
   padding: 15px;
   color: #328042;
 }
-.announcement-card h2 {
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-.announcement-card p {
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 300;
+card-info p {
+  margin-top: 0.5em;
 }
 showtime {
   display: flex;
-  margin-top: 10px;
+  margin-top: 1.5em;
   align-items: center;
-  font-family: "Gothic A1", sans-serif;
-  color: #328042;
+  font-family: "inconsolata";
+  color: var(--color-three);
   font-size: 1rem;
   font-weight: 700;
   gap: 10px;
 }
-showtime picture {
+.clock {
   max-width: 30px;
 }
 .cta-overlap banner {
@@ -1819,23 +1812,24 @@ showtime picture {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   place-items: center;
-  border: 1px solid black;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
 }
 .cta-overlap h2 {
   grid-column: 2 / 6;
   grid-row: 1;
   z-index: 1;
   font-size: clamp(20px, 5vw, 48px);
-  font-family: Oswald, "sans-serif";
+  font-family: "Fredoka", sans-serif;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--color-primary);
 }
 .cta-overlap h3 {
   grid-column: 3 / 5;
   grid-row: 1;
   font-size: 12rem;
   opacity: 0.05;
-  font-family: Futura, sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: var(--ink);
 }
 @media (prefers-color-scheme: dark) {
@@ -1843,11 +1837,8 @@ showtime picture {
     background-color: #FBF7F5;
   }
   .cta-overlap h3 {
-    color: #373737;
+    color: hsla(var(--accent-two), 59%, 60%, 0.5);
     opacity: 0.2;
-  }
-  .cta-overlap h2 {
-    color: black;
   }
 }
 .fly-fishing-grid ul {
@@ -1870,17 +1861,17 @@ showtime picture {
 .fly-fishing-grid h2 {
   font-size: 0.85rem;
   text-transform: uppercase;
-  font-family: Overpass, sans-serif;
+  font-family: "Fredoka", sans-serif;
   text-align: center;
   opacity: 0.8;
-  color: var(--ink);
+  color: hsla(var(--hue), 0%, 0%, 0.8);
 }
 @media (prefers-color-scheme: dark) {
   section.page-content.layout .fly-fishing-grid {
     background-color: #FBF7F5;
   }
   .fly-fishing-grid h2 {
-    color: black;
+    color: var(--color-primary);
   }
 }
 product-details .category {
@@ -1888,6 +1879,7 @@ product-details .category {
   opacity: 0.5;
   font-size: 0.75rem;
   text-transform: none;
+  font-family: "Noto Sans", sans-serif;
 }
 product-details {
   margin-top: 10px;
@@ -1899,8 +1891,7 @@ product-details {
 .product-name .product-link {
   text-decoration: none;
   font-weight: 600;
-  color: black;
-  font-family: Overpass, sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 .product-name a:hover {
   text-decoration: underline;
@@ -1909,7 +1900,7 @@ product-details {
   display: flex;
   align-items: center;
   gap: 2px;
-  font-family: sans-serif;
+  font-family: "inconsolata", sans-serif;
   font-size: 16px;
   margin-top: 0;
   padding-top: 0;
@@ -1926,7 +1917,11 @@ product-details {
 }
 @media (prefers-color-scheme: dark) {
   .product-name .product-link {
-    color: var(--ink);
+    color: var(--white);
+  }
+  product-details .category {
+    color: var(--color-two);
+    opacity: 1;
   }
 }
 @media (min-width: 802px) {
@@ -2151,6 +2146,7 @@ headline-section > inner-column {
   width: 100%;
 }
 article-section {
+  background-color: #b6009c;
   display: block;
   width: 100%;
 }
@@ -2170,7 +2166,6 @@ article-section {
     max-width: 250px;
   }
   article-section {
-    background-color: #E5E5E5;
     padding: 10px 10px 2rem 10px;
   }
   .article-grid-2-cards {
@@ -2178,9 +2173,6 @@ article-section {
   }
   .article-grid-2-cards li {
     padding-block: 10px;
-  }
-  headline-section {
-    padding-bottom: 4rem;
   }
 }
 @media (min-width: 575px) {
@@ -2198,7 +2190,7 @@ article-section {
 }
 @media (prefers-color-scheme: dark) {
   headline-section > inner-column {
-    background-color: #160327;
+    background-color: #BE7DB5;
   }
   .day-2-grid case-study-wrapper {
     background-color: #121212;
@@ -2587,6 +2579,39 @@ owl .speech-bubble {
     padding: 5px 20px;
     border-radius: 50px;
     font-family: "Gill Sans";
+  }
+}
+.marquee {
+  white-space: nowrap;
+  font-size: 3rem;
+}
+.scroll {
+  padding-block: 5em;
+  border-block: 5px dotted var(--color-primary);
+  grid-column: 1 / -1;
+}
+.layout .scroll {
+  overflow-y: scroll;
+  position: relative;
+}
+.layout .marquee {
+  transform: translate(-300px);
+  animation: marqueeAnimation 10s linear infinite;
+}
+@keyframes {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marqueeAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
 /*footer*/

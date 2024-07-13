@@ -11,15 +11,6 @@ cta-text {
 	justify-content: center;
 }
 
-.graphic-diptych p {
-	padding-top: 1rem;
-}
-
-.graphic-diptych .attention-voice.bold {
-	font-size: 2.5rem;
-	font-family: Roboto;
-}
-
 .graphic-diptych .cta-button {
 	max-width: 175px;
 	margin-top: 1.5rem;
@@ -37,10 +28,6 @@ cta-text {
 
 .graphic-diptych picture {
 	border: 1px solid #170D7C;
-}
-
-.graphic-diptych picture img {
-	border-radius: 10px;
 }
 
 @media (min-width: 810px) {

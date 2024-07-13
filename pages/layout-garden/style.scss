@@ -11,7 +11,7 @@
 
 case-study-wrapper {
 	display: block;
-	padding: 1rem;
+	padding-block: 1rem;
 }
 
 .module-showcase {
@@ -19,7 +19,7 @@ case-study-wrapper {
 	flex-direction: column;
 }
 .layout-garden section:nth-child(even) {
-	background-color: #FBF7F5;
+	background-color: #FAFAFA;
 }
 
 .case-study-link:hover {
@@ -37,6 +37,10 @@ module-showcase {
 }
 
 @media (prefers-color-scheme: dark) {
+
+	.layout-garden section:nth-child(even) {
+	background-color: #1d1d1d;
+	}
 
 	.case-study-link {
 		border: 2px solid var(--color-two);

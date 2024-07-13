@@ -12,17 +12,18 @@ $pageIdea = $pageData['intro'];
 <?php foreach ($pageData['sections'] as $section) { ?>
 
 	<section class='module-showcase <?=$section['module']?> section-grid'>
-		
-	<case-study-wrapper>
-		<a class='case-study-link quiet-voice' href="?page=layout&slug=<?=$section['slug']?>">
-				Case Study
-		</a>
-	</case-study-wrapper>
-
 		<inner-column class='inner-grid'>
+
+			<case-study-wrapper>
+				<a class='case-study-link quiet-voice' href="?page=layout&slug=<?=$section['slug']?>">
+						Case Study
+				</a>
+			</case-study-wrapper>
+
 			<module-showcase>
 				<?php include("../modules/layout-garden/" . $section['module'] . "/template.php");?>
 			</module-showcase>
+
 		</inner-column>
 	</section>
 

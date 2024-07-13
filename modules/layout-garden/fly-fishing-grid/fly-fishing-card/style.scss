@@ -3,6 +3,7 @@ product-details .category {
 	opacity: .5;
 	font-size: .75rem;
 	text-transform: none;
+	font-family: "Noto Sans", sans-serif;
 }
 
 product-details {
@@ -16,8 +17,8 @@ product-details {
 .product-name .product-link {
 	text-decoration: none;
 	font-weight: 600;
-	color: black;
-	font-family: Overpass, sans-serif;
+	font-family: "Noto Sans", sans-serif;
+
 }
 
 .product-name a:hover {
@@ -28,7 +29,7 @@ product-details {
 	display: flex;
 	align-items: center;
 	gap: 2px;
-	font-family: sans-serif;
+	font-family: "inconsolata", sans-serif;
 	font-size: 16px;
 	margin-top: 0;
 	padding-top: 0;
@@ -48,8 +49,13 @@ product-details {
 }
 
 @media (prefers-color-scheme: dark) {
-	.product-name .product-link {
-		color: var(--ink);
+	.product-name .product-link{
+		color: var(--white);
+	}
+
+	product-details .category {
+		color: var(--color-two);
+		opacity: 1;
 	}
 }
 

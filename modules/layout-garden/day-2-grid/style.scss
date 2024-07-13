@@ -32,6 +32,7 @@ headline-section > inner-column {
 }
 
 article-section{
+	background-color: #b6009c;
 	display: block;
 	width: 100%;
 }
@@ -56,7 +57,6 @@ article-section{
 	}
 
 	article-section{
-		background-color: #E5E5E5;
 		padding: 10px 10px 2rem 10px;
 	}
 
@@ -66,10 +66,6 @@ article-section{
 
 	.article-grid-2-cards li {
 		padding-block: 10px;
-	}
-
-	headline-section{
-		padding-bottom: 4rem;
 	}
 }
 
@@ -92,7 +88,7 @@ article-section{
 @media (prefers-color-scheme: dark) {
 
 	headline-section > inner-column {
-		background-color: #160327;
+		background-color: #BE7DB5;
 	}
 	.day-2-grid case-study-wrapper {
 		background-color: #121212;

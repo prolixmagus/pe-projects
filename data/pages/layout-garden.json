@@ -29,6 +29,16 @@
 			]
 		},
 		{
+			"module": "scroll-marquee",
+			"slug": "scroll-marquee",
+			"case-study": [
+				{
+					"module": "generic-text-heading",
+					"content": "<h2 class='small-heading'>Marquee</h2><p class='calm-voice'>Hearkening back to MySpace days, it seems the scrolling marquee is a common feature of modern websites. The version on this page uses keyframe animation to scroll continuously. The marquee on the previous page dynamically calculated the text's position on the x-axis in relation to the viewport at a given scroll distance."
+				}
+			]
+		},
+		{
 			"module": "announcement-grid",
 			"slug": "announcement-grid",			
 				"case-study": [

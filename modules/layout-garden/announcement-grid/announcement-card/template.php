@@ -7,9 +7,9 @@
 		<h2><?=$show["headliner"]?></h2>
 		<p><?=$show["summary"]?></p>
 		<showtime>
-			<picture>
-				<img src='icons/clock.svg' alt=''>
-			</picture>
+			<div class='clock'>
+				<?php include('../icons/clock.svg')?>
+			</div>
 			<time class="showtime"><?=$show["time"]?></time>
 		</showtime>
 	</card-info>
