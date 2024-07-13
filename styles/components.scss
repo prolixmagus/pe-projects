@@ -7,7 +7,7 @@
 	font-size: 1em;
 	color: var(--color-primary-dark);
 	text-align: center;
-	font-weight: 600;
+	font-weight: 500;
 	font-family: "Noto Sans", sans-serif;
 	box-shadow: 0 4px 0 0 var(--color-primary-dark), 
 					inset 0px -1px 0px rgba(0 0 0 / .2), 
@@ -51,12 +51,12 @@
 }
 
 .cta-button {
-	padding-inline: 1rem;
-	padding-block: .5rem;
-	border-radius: 50px;
-	font-family: "Avenir", sans-serif;
-	font-size: 1.25rem;
+	padding-inline: 2em;
+	padding-block: .5em;
+	border-radius: 5px;
+	font-size: 1rem;
 	border: 1px solid black;
+	font-family: "Noto Sans";
 }
 
 .e4p-icon {
@@ -111,4 +111,12 @@
 
 .circle-icon {
 	max-width: 30px;
+}
+
+@media(prefers-color-scheme: dark) {
+	.cycle {
+		background-color: #2E2E2E;
+		color: var(--color-primary);
+		font-weight: 500;
+	}
 }

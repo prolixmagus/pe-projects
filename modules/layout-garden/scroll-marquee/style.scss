@@ -1,0 +1,38 @@
+.marquee{
+  	white-space: nowrap;
+  	font-size: 3rem;
+} 
+
+.scroll {
+	padding-block: 5em;
+	border-block: 5px dotted var(--color-primary);
+	grid-column: 1 / -1;
+}
+
+.layout .scroll {
+	overflow-y: scroll;
+	position: relative;
+}
+
+.layout .marquee {
+	transform: translate(-300px);
+	animation: marqueeAnimation 10s linear infinite; 
+}
+
+@keyframes {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+    @keyframes marqueeAnimation {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
