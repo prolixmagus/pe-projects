@@ -1,12 +1,8 @@
 {
 	"title": "Contact",
 	"slug": "contact",
-	"idea": "⬇︎⬇︎⬇︎",
+	"idea": "You can reach me at <a class='email-address' href='mailto:jeremypfishman@gmail.com'>jeremypfishman@gmail.com</a> or flag down this scooter:",
 	"sections": [
-		{
-			"module": "generic-text-heading",
-			"content": "<p>You can reach me at</p><address><a href='mailto:jeremypfishman@gmail.com'>jeremypfishman@gmail.com</a></address><p>or flag down this scooter!</p>"
-		},
 		{
 			"module": "generic-text-heading",
 			"content": "<picture class='scooter'><img src='images/site/scooter.jpg'></picture>"

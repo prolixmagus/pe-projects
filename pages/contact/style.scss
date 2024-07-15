@@ -1,12 +1,9 @@
-.contact address {
-	padding: .5em 0em;
-	display: grid;
-	font-size: clamp(16px, 5vw, 32px);
-	font-family: "Noto Sans", sans-serif;
-	gap: 10px;
-	color: var(--color-three);
+.contact .email-address {
+	color: var(--color-primary-dark);
 	&:hover {
 		text-decoration: underline;
+		text-decoration-thickness: 4px;
+		text-decoration-color: var(--color-primary);
 	}
 }
 

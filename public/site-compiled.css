@@ -408,6 +408,7 @@ input.numbertype {
   min-width: 150px;
   font-size: 1em;
   color: var(--color-primary-dark);
+  background-color: #FAFAFA;
   text-align: center;
   font-weight: 500;
   font-family: "Noto Sans", sans-serif;
@@ -654,6 +655,9 @@ body.scary .terminal {
   font-family: "inconsolata", monospace, sans-serif;
   color: var(--color-three);
 }
+.email-link {
+  color: var(--color-primary-dark);
+}
 @media (min-width: 768px) {
   .cycle-button-container {
     grid-column: 2 / -1;
@@ -664,7 +668,7 @@ body.scary .terminal {
   .home .thoughts {
     display: grid;
     grid-row: 3;
-    grid-column: 2 / -1;
+    grid-column: 2 / 6;
   }
   .home picture {
     margin-top: 20px;
@@ -991,16 +995,13 @@ module-showcase {
     grid-column: 2 / -1;
   }
 }
-.contact address {
-  padding: 0.5em 0em;
-  display: grid;
-  font-size: clamp(16px, 5vw, 32px);
-  font-family: "Noto Sans", sans-serif;
-  gap: 10px;
-  color: var(--color-three);
+.contact .email-address {
+  color: var(--color-primary-dark);
 }
-.contact address:hover {
+.contact .email-address:hover {
   text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--color-primary);
 }
 .contact picture {
   padding: 1em;
@@ -1222,9 +1223,6 @@ logo-container {
   }
 }
 .page-header h1 {
-  grid-column: 1 / -1;
-}
-.page-header p {
   grid-column: 1 / -1;
 }
 @media (min-width: 768px) {

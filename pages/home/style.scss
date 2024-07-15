@@ -80,6 +80,10 @@ body.scary {
 	}
 }
 
+.email-link {
+	color: var(--color-primary-dark);
+}
+
 @media(min-width: 768px) {
 	.cycle-button-container {
 		grid-column: 2 / -1;
@@ -91,7 +95,7 @@ body.scary {
 	.home .thoughts {
 		display: grid;
 		grid-row: 3;
-		grid-column:  2 / -1;
+		grid-column:  2 / 6;
 	}
 
 	.home picture {
