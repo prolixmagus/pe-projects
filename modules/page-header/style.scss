@@ -3,6 +3,10 @@
 	grid-column: 1 / -1;
 }
 
+.page-header p {
+	grid-column: 1 / -1;
+}
+
 @media (min-width: 768px) {
 	.page-header p {
 		grid-column: 2 / -1;
