@@ -12,6 +12,14 @@
 			"alt": "A knight on shining armor - Don Quixote!"
 		},
 		{
+			"image": "images/influences/web-type.jpg",
+			"figCaption": "On Web Typography",
+			"creator": "Jason Santa Maria",
+			"featured": true, 
+			"icon": "../icons/book-icon.svg",
+			"alt": "Picture of On Web Typography by Jason Santa Maria"
+		},
+		{
 			"image": "images/influences/badass.jpg",
 			"figCaption": "Badass: Making Users Awesome",
 			"creator": "Kathy Sierra",
@@ -28,12 +36,12 @@
 			"alt": "Poster image of a cartoon king, a mockingbird, and a young teenage couple."
 		},
 		{
-			"image": "images/influences/jaguar-ii.jpg",
-			"figCaption": "Jaguar II",
-			"creator": "Victoria Monet",
+			"image": "images/influences/katamari.jpg",
+			"figCaption": "Katamari Damacy",
+			"creator": "Keita Takahashi",
 			"featured": true, 
-			"icon": "../icons/headphones-icon.svg",
-			"alt": "A woman emerging from a dark lake"
+			"icon": "../icons/film-icon.svg",
+			"alt": "A skyscraper-sized ball of everyday objects rolls under a rainbow"
 		},
 		{
 			"image": "images/influences/mingus.jpg",
@@ -45,12 +53,54 @@
 
 		},
 		{
+			"image": "images/influences/miro.jpg",
+			"figCaption": "Part of “Poligrafa XV Anos”",
+			"creator": "Joan Miró",
+			"featured": true, 
+			"icon": "../icons/book-icon.svg",
+			"alt": "An abstract interpretation of a primary colored man with thick ink blots"
+		},		
+		{
+			"image": "images/influences/jaguar-ii.jpg",
+			"figCaption": "Jaguar II",
+			"creator": "Victoria Monet",
+			"featured": true, 
+			"icon": "../icons/headphones-icon.svg",
+			"alt": "A woman emerging from a dark lake"
+		},
+		{
 			"image": "images/influences/dr-who.jpg",
 			"figCaption": "Doctor Who",
 			"creator": "BBC",
 			"featured": true, 
 			"icon": "../icons/film-icon.svg",
 			"alt": "A blue polic box traveling through time and space"
+		},
+		{
+			"image": "images/influences/pulsar.jpg",
+			"figCaption": "Pulsar",
+			"creator": "L'Impératrice",
+			"featured": true, 
+			"icon": "../icons/headphones-icon.svg",
+			"alt": "A butterfly rests on the index finger of an outstretched chrome hand"
+		},
+		{
+			"image": "images/influences/code-book.jpg",
+			"figCaption": "The Code Book",
+			"creator": "Simon Singh",
+			"featured": true, 
+			"icon": "../icons/book-icon.svg",
+			"alt": "Picture of The Code Book by Simon Singh"
+		},
+		{
+			"image": "images/influences/moonlight.jpg",
+			"figCaption": "Moonlight",
+			"creator": "Barry Jenkins",
+			"featured": true, 
+			"icon": "../icons/book-icon.svg",
+			"alt": "A young black man stares poignantly into the distance"
 		}
+
+
 	]
 }

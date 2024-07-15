@@ -9,9 +9,9 @@
 
 
 <figure class='artist-card'>
-	<picture class='influences-icon'>
+<!-- 	<picture class='influences-icon'>
 		<?php include($category)?>
-	</picture>
+	</picture> -->
 
 	<picture>
 		<img src='<?=$figure?>' alt='<?=$alt?>'>
