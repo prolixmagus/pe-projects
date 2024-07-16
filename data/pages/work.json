@@ -14,7 +14,7 @@
 			"alt": "Outline of a cartoonish skeletal arm giving a thumbs up",
 			"description": "Successful cinema weaves sight and sound according to a carefully crafted visual design system.",
 			"preview-image": "images/explorations/death-and-design/headline.jpg",
-			"related": ["bottles-in-the-sky", "theme-challenge"],
+			"related": ["bottles-in-the-sky", "teapet-shop"],
 			"case-study": [
 				{
 					"section": [
@@ -132,12 +132,12 @@
 			"id": "847201ff-480b-46af-98a5-4b787d84fd6c",
 			"title": "Theme Challenge",
 			"slug": "theme-challenge",
-			"published": "17 APR 2024",
-			"updated": "20 APR 2024",
+			"published": "05 MAY 2024",
+			"updated": "10 JUN 2024",
 			"alt": "A cartoon drawing of boxes within boxes making a web layout",
 			"preview-image": "images/explorations/theme-challenge/headline.jpg",
 			"description": "Given a blank canvas and a demographic, what elements do you reach for to establish connection?",
-			"related": ["death-and-design", "bottles-in-the-sky"],
+			"related": ["mockup", "teapet-shop"],
 			"case-study": [
 				{
 					"section": [
@@ -308,7 +308,7 @@
 			"id": "4f07a236-71f8-44d3-9b93-5c5b8e8889f6",
 			"title": "Caesar Cipher",
 			"slug": "caesar-cipher",
-			"published": "06 JUN 2024",
+			"published": "25 MAY 2024",
 			"updated": "06 JUN 2024",
 			"alt": "The letter 'A' and 'Z' in a roman-style door frame",
 			"preview-image": "images/explorations/caesar-cipher/headline.jpg",
@@ -356,7 +356,7 @@
 			"alt": "A lucky cat in the middle of two steaming teapots",
 			"preview-image": "images/explorations/teapet-store/headline.jpg",
 			"description": "Making a mock storefront selling teapets to keep you company - using CRUD methods.",
-			"related": ["caesar-cipher", "theme-challenge"],
+			"related": ["mockup", "theme-challenge"],
 			"case-study": [
 				{
 					"section": [
@@ -514,7 +514,7 @@
 								},
 								{
 									"teaser": "Reusability and modularity is the name of the game.",
-									"description": "I could see refactoring this into a class. I could also see keeping it as distinct functions. Naming what you need, of course, is the challenge"
+									"description": "I could see refactoring this into a class. I could also see keeping it as distinct functions. Naming what you need, of course, is the challenge."
 								}
 							]
 						}
@@ -525,6 +525,49 @@
 						{
 							"module": "generic-text-heading",
 							"content": "<h2>Result</h2><p>Check out the <a href='featured-projects/js-prototype'>styled project!</a>"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "87c48b27-90ff-4a0f-8ac6-2ec02452af6b",
+			"title": "Mockup to Code",
+			"slug": "mockup",
+			"published": "25 APR 2024",
+			"updated": "15 JUL 2024",
+			"alt": "A layout of multicolored squared put into a computer screen",
+			"preview-image": "images/explorations/site-mockup-to-code/headline.jpg",
+			"description": "Converting a Figma design into code while keeping a consistent design system across styles.",
+			"related": ["theme-challenge", "find-a-guide"],
+			"case-study": [
+				{
+					"section": [
+						{
+							"module": "common-figure",
+							"image": "images/explorations/site-mockup-to-code/headline.jpg",
+							"alt": "A layout of multicolored squared put into a computer screen",
+							"headline": true
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Introduction</h2><p>The challenge of this project was to “take a mockup in whatever graphics program is hot right now and turn it into code.” In this case, that would be Figma. At first, I thought it would be mostly responsive CSS and well structured HTML. However, the mockup presented three stylistically distinct versions of the webpage - and I had to design them all. I would have to find a way to swap between styles - and reorder modules - without re-writing the code three times.</p><p>This was a PHP and site architecture challenge after all, and I had to finish it in 18 hours.</p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Comparison</h2><p>You can view the original mockup in this <a href='https://www.figma.com/file/TN28dkJ1pQ04fRlb2mqAqm/Wireframe-Kit?type=design&node-id=0-1&mode=design' target ='_blank'>Figma</a>. Compare it to <a href='../public/featured-projects/site-mockup-to-code' target='_blank'>my version!</a></p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Reflection</h2><p>I handled switching between styles by taking advantage of the cascade in CSS. If I nested visual styling under a certain class, those styles would be restricted to that class being active. This could be done quite easily with Javascript, but the challenge was to use PHP and url query strings, which allow you to load different templates based on whatever value the string is. For example, “index?page=about” and “index?page=home” allow you to write a condition where “if the page variable is ‘home’ I want to load in a striped gradient” or “if the page variable is ‘about’ I want to load the ‘about’ database.”</p><p>Creating three separate design systems at once required very precise planning. I could have definitely planned better. The second-to-last module in the Contact section has centered text when it should be left-aligned. I fixed it, but then some of the alignment in Home and About ran off-kilter. Managing specificity and formalizing naming conventions is something to consider in the future.</p><p>Thankfully, the power of spacing and typography helped it look polished - and techniques like <code>background-image: repeating-linear-gradient()</code>, mix-blend-mode(), and svg “wave” generators can create complex visual tricks to bring your website to 100%.</p><p>UPDATE: I’ve had more experience since I attempted this challenge. One day I’ll have to return and refactor a more durable design system. For a quick sprint, not bad at all!</p>"
 						}
 					]
 				}
