@@ -65,7 +65,7 @@
 				<inner-column class='inner-grid'>
 
 					<logo-container>
-						<a class='site-logo' href='index.php' aria-label='Home: Jeremy Fishman'>
+						<a class='site-logo' href='/' aria-label='Home: Jeremy Fishman'>
 							<?php include("../icons/jeremy-logo.svg")?>
 						</a>
 					</logo-container>
