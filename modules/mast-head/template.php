@@ -66,7 +66,7 @@
 
 					<logo-container>
 						<a class='site-logo' href='/' aria-label='Home: Jeremy Fishman'>
-							<?php include("../icons/jeremy-logo.svg")?>
+							<?php include("../icons/jeremy-logo-2.svg")?>
 						</a>
 					</logo-container>
 
