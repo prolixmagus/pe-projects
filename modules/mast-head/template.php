@@ -20,7 +20,7 @@
 	$metaTitle = $pageData['title'] ?? "Home: Jeremy Fishman's Portfolio";
 	$metaDescription = $pageData['meta-description'] ?? "Teacher. Web Developer. Linguist. Human.";
 	$metaImage = $pageData['meta-image'] ?? "https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg";
-	$metaUpdate = $pageData['meta-updated'] ?? "Thursday, July 11th, 2024";
+	$metaUpdate = $pageData['meta-updated'] ?? "Thursday, July 16th, 2024";
 ?>
 
 
@@ -65,8 +65,8 @@
 				<inner-column class='inner-grid'>
 
 					<logo-container>
-						<a class='site-logo' href='/' aria-label='Home: Jeremy Fishman'>
-							<?php include("../icons/jeremy-logo-2.svg")?>
+						<a class='site-logo' href='https://jeremyfishman.dev' aria-label='Home: Jeremy Fishman'>
+							<?php include("../icons/jeremy-logo.svg")?>
 						</a>
 					</logo-container>
 

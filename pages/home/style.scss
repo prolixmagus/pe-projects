@@ -18,40 +18,44 @@
 	}
 }
 
-.home picture {
-	margin-top: 20px;
-	grid-column: 8 / 13;
-	grid-row: 4;
-	max-width: 400px;
-	box-shadow: none;
-}
-
 .home .thoughts {
+	position: relative;
 	grid-column: 1/ -1;
-	grid-row: 3;
+	grid-row: 4;
 
 	display: grid;
 	grid-template-columns: subgrid;
-	margin-top: 3em;
+	margin-top: 5em;
+	// background-color: var(--color-two);
+	border-radius: 5px;
+	// box-shadow: 6px 6px 0px 0px (var(--color-three));
 
 	& h2 {
-		grid-column: 1 / -1;
+		grid-column: 1 / 9;
 	}
 
-	& .thoughts-list {
-		grid-column: 1 / -1;
+	& .thoughts-wrapper {
+		grid-column: 1 / 11;
 
 		margin-top: 1.25em;
+		display: flex;
+		flex-direction: column;
+		overflow: visible;
 
-		& li {
+		& .octo {
+			max-width: 300px;
+		}
+
+		& .thoughts-list {
 			display: flex;
 			flex-direction: column;
+			gap: 1em;
+			& li {
+				display: flex;
+				flex-direction: column;
+			}
 		}
 	}
-}
-
-.thoughts-list li + li {
-		margin-top: 1em;
 }
 
 .cycle-button-container {
@@ -84,6 +88,7 @@ body.scary {
 	color: var(--color-primary-dark);
 }
 
+
 @media(min-width: 768px) {
 	.cycle-button-container {
 		grid-column: 2 / -1;
@@ -94,22 +99,68 @@ body.scary {
 
 	.home .thoughts {
 		display: grid;
-		grid-row: 3;
-		grid-column:  2 / 6;
-	}
-
-	.home picture {
-		margin-top: 20px;
-		grid-column: 9 / -1;
 		grid-row: 4;
+		grid-column:  2 / 10;
+		& .thoughts-wrapper {
+			flex-direction: row;
+			.thoughts-list {
+				width: 60%;
+			}
+		}
 	}
 }
 
-@media(min-width: 1000px) {
+.octo-bubble-2 {
+	animation: juggling 1s infinite ease-in-out .33s;
+	transform-origin: center;
+}
 
-	.home picture {
-		grid-column: 9 / 13;
-		max-width: 275px;
-		grid-row: 3;
+.octo-bubble-3 {
+	animation: juggling 1s infinite ease-in-out .66s;
+	transform-origin: center;
+}
+
+.octo-bubble-4 {
+	animation: juggling 1s infinite ease-in-out .99s;
+	transform-origin: center;
+}
+
+
+@keyframes juggling {
+   0% {
+       transform: translateY(0);
+   }
+   25% {
+       transform: translateY(-40px);
+   }
+   100% {
+       transform: translateY(0);
 	}
+}
+
+
+.octo-legs, .octo-head {
+	stroke: #121212;
+	fill: #121212;
+}
+
+.octo-stache, .octo-left, .octo-right {
+	fill: white;
+}
+
+@media(prefers-color-scheme: dark) {
+	.octo-legs {
+		fill: var(--paper);
+	}
+	.octo-head {
+		fill: var(--paper);
+	}
+
+	.octo-stache, .octo-left, .octo-right {
+	fill: #121212;
+	}
+
+	.email-link {
+	color: var(--color-primary);
+	}	
 }

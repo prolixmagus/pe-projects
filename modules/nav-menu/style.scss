@@ -15,19 +15,9 @@
 
 */
 
-// body.menu-open {
-// 	overflow: hidden;
-// }
-
-.site-header {
-	& a {
-		text-decoration: none;
-	}
-}
-
 .site-header .user-menu {
 	position: absolute;
-	left: -300px; /* calc(5% + -225px) */
+	left: calc(5% + -225px);
 	top: 0px;
 	transition: all .2s ease-out;
 	opacity: 0;
@@ -35,7 +25,6 @@
 	padding: 14vw;
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
 	background-color: var(--paper-medium);
 	& button {
 		display: none;
@@ -53,6 +42,12 @@
 	font-size: 1rem;
 }
 
+.site-header .user-menu.small-menu-open button:hover {
+		text-decoration: underline;
+		text-decoration-thickness: 4px;
+		text-decoration-color: var(--color-three);
+}
+
 .site-header .user-menu.small-menu-open{
 	display: flex;
 	flex-direction: column;
@@ -60,18 +55,26 @@
 	width: 100%;
 	z-index: 2;
 	opacity: 1;
-	gap: 30px;
 	background-color: var(--paper-medium);
 	border-top-right-radius: var(--corners);
 	border-bottom-right-radius: var(--corners);
 	box-shadow: var(--shadow);
 	& li {
-	font-size: 1.5rem;
+		font-size: 1.5rem;
+		a {
+			padding: 10px 40px;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+			text-decoration-thickness: 4px;
+			text-decoration-color: var(--color-three);
+		}
 	}
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
 	logo-container {
 		grid-column: 1 / 6;
 	}
@@ -84,24 +87,32 @@
 			transition: none;
 			position: static;
 			flex-direction: row;
-			gap: 25px;
 			font-family: "Fredoka";
 			padding: 0;
 			opacity: 1;
 			height: auto;
+			& a {
+				text-decoration: none;
+				padding: 5px 15px;
+			}
+			& a:hover {
+				text-decoration: underline;
+				text-decoration-thickness: 4px;
+				text-decoration-color: var(--color-three);
+			}	
 		}
 	}
 }
 
-@media (min-width: 700px) {
-	.site-header nav .user-menu {
-		gap: 35px;
+@media (min-width: 750px) {
+	.site-header nav .user-menu a {
+		padding: 5px 25px;
 	}
 }
 
 @media (min-width: 1440px) {
-	.site-header nav .user-menu {
-		gap: 45px;
+	.site-header nav .user-menu a {
+		padding: 5px 30px;
 	}
 }
 

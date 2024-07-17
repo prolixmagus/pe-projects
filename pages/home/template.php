@@ -17,7 +17,8 @@
 		</section>
 
 		<section class='thoughts'>
-				<h2>Thoughts</h2>
+			<h2>Thoughts</h2>
+			<div class='thoughts-wrapper'>
 				<ul class='thoughts-list'>
 					<?php foreach($pageData['blogs'] as $blog) { ?>
 					<li>
@@ -28,6 +29,8 @@
 					</li>
 					<?php } ?>
 				</ul>
+				<?php include('../icons/octo.svg')?>
+			</div>
 		</section>
 	</inner-column>
 </section>

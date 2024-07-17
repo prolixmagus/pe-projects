@@ -5,22 +5,23 @@
 	border-radius: 5px;
 	min-width: 150px;
 	font-size: 1em;
+	font-family: "Fredoka", sans-serif;
 	color: var(--color-primary-dark);
-	background-color: #FAFAFA;
+	background: linear-gradient(to bottom, hsl(var(--primary), 59%, 70%), hsl(var(--primary), 59%, 60%) );
 	text-align: center;
 	font-weight: 500;
-	font-family: "Noto Sans", sans-serif;
+	border: 2px solid var(--color-primary-dark);
 	box-shadow: 0 4px 0 0 var(--color-primary-dark), 
 					inset 0px -1px 0px rgba(0 0 0 / .2), 
 					inset 0px 1px 0px rgba(255 255 255 / .2);
-	border: 1px solid var(--color-primary-dark);
 	transition: transform .05s ease-in-out;
 	cursor: pointer;
 }
 
+
 .cycle:hover {
 	color: var(--color-primary-dark);
-	background: linear-gradient(to bottom, hsl(var(--primary), 59%, 70%), hsl(var(--primary), 59%, 60%) );
+	background: #FAFAFA;
 	box-shadow: 0 4px 0 0 var(--color-primary-dark), 
 					inset 0px -1px 0px rgba(0 0 0 / .2), 
 					inset 0px 1px 0px rgba(255 255 255 / .2);
@@ -29,6 +30,34 @@
 .cycle:active {
 	transform: translateY(5px);
 	box-shadow: 0 2px 0 0 var(--color-primary-dark),
+				inset 0px -1px 0px rgba(0 0 0 / .2), 
+				inset 0px 1px 0px rgba(255 255 255 / .2);
+}
+
+.escape {
+	color: var(--color-three);
+	background: linear-gradient(to bottom, hsl(var(--accent-three), 59%, 70%), hsl(var(--accent-three), 59%, 60%) );
+	border: 2px solid var(--color-three-dark);
+	box-shadow: 0 4px 0 0 var(--color-three-dark), 
+					inset 0px -1px 0px rgba(0 0 0 / .2), 
+					inset 0px 1px 0px rgba(255 255 255 / .2);
+	transition: transform .05s ease-in-out;
+	cursor: pointer;
+}
+
+.escape:hover {
+	color: var(--color-three-dark);
+	background: linear-gradient(to bottom, hsl(var(--accent-three), 59%, 70%), hsl(var(--accent-three), 59%, 60%) );
+	border: 2px solid var(--color-three-dark);
+	box-shadow: 0 4px 0 0 var(--color-three-dark), 
+					inset 0px -1px 0px rgba(0 0 0 / .2), 
+					inset 0px 1px 0px rgba(255 255 255 / .2);
+	transition: transform .05s ease-in-out;
+	cursor: pointer;
+}
+
+.escape:active {
+	box-shadow: 0 2px 0 0 var(--color-three-dark),
 				inset 0px -1px 0px rgba(0 0 0 / .2), 
 				inset 0px 1px 0px rgba(255 255 255 / .2);
 }
@@ -117,7 +146,7 @@
 @media(prefers-color-scheme: dark) {
 	.cycle {
 		background-color: #2E2E2E;
-		color: var(--color-primary);
+		color: var(--color-primary-dark);
 		font-weight: 500;
 	}
 }

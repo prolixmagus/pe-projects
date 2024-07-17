@@ -9,16 +9,16 @@
 				<a href="?page=work">Work</a>
 			</li>
 			<li>
-				<a href="?page=influences">Influences</a>
-			</li>
-			<li>
 				<a href="?page=contact">Contact</a>
 			</li>
 		</ul>
 	</nav>
 
-	<nav class='xtra-menu'>
+	<nav class='main-menu xtra'>
 		<ul>
+			<li>
+				<a href="?page=influences">Influences</a>
+			</li>
 			<li>
 				<a href="?page=layout-garden">Layout Garden</a>
 			</li>
@@ -27,8 +27,4 @@
 			</li>
 		</ul>
 	</nav>
-
-	<div class='circle-graphic'>
-		<img src='images/footer-circles.svg'>
-	</div>
 </site-map>

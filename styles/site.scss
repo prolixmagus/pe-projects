@@ -46,6 +46,7 @@ p a, li a {
 	text-decoration: underline;
 	display: inline-block;
 	font-weight: 500;
+	position: relative;
 }
 
 p a:hover, li a:hover {
@@ -53,6 +54,7 @@ p a:hover, li a:hover {
 	text-decoration-thickness: 4px;
 	text-decoration-color: var(--color-primary);
 }
+
 
 li a:visited, p a:visited {
 	color: var(--color-two-dark);
@@ -65,7 +67,7 @@ li a:visited, p a:visited {
 .site-header li a.active {
 	text-decoration: underline;
 	text-decoration-thickness: 4px;
-	text-decoration-color: var(--color-primary);
+	text-decoration-color: var(--color-three);
 }
 
 .card li a:visited, .card li a:visited {
