@@ -1,18 +1,16 @@
 footer {
-	 background: linear-gradient(90deg, 
-	 	#FAFAFA 50%,
+	margin-top: 2vh;
+	border-top: 1px solid hsla(var(--hue), 0%, 85%, 0.5);
+	background: linear-gradient(90deg, 
+	 	#FAFAFA 60%,
         hsl(var(--primary), 59%, 60%) 60%, 
         hsl(var(--accent-two), 30%, 61%) 80%, 
         hsl(var(--accent-three), 76%, 60%) 100%
    );
 }
 
-.site-footer {
-	margin-top: 10vh;
-}
-
 footer inner-column {
-	padding-block: 2em;
+	padding-top: 2em;
 }
 
 .updated-time {
@@ -44,11 +42,12 @@ footer inner-column {
 
 @media (prefers-color-scheme: dark) {
 	footer {
-		 background: linear-gradient(90deg, 
-		 	#121212 50%,
-	        hsl(var(--primary), 59%, 60%) 60%, 
-	        hsl(var(--accent-two), 30%, 61%) 80%, 
-	        hsl(var(--accent-three), 76%, 60%) 100%
-	   );
+		border-top: 1px solid hsla(var(--hue), 0%, 85%, 0.5);
+		background: linear-gradient(90deg, 
+			#121212 60%,
+	     hsl(var(--primary), 59%, 60%) 60%, 
+	     hsl(var(--accent-two), 30%, 61%) 80%, 
+	     hsl(var(--accent-three), 76%, 60%) 100%
+   );
 	}
 }

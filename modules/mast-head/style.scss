@@ -8,8 +8,8 @@ mast-head {
 }
 
 .site-header inner-column {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .site-header h1 {
@@ -29,9 +29,19 @@ logo-container {
 	gap: .5rem;
 }
 
-.jeremy-logo {
-	max-width: 180px;
+.site-logo {
+	max-width: 175px;
+	padding-block: 10px;
 }
+
+// .site-logo:hover {
+// 	.firstname, .lastname {
+// 		fill: var(--color-primary);
+// 	}
+// 	.fish-body {
+// 		fill: var(--color-primary);
+// 	}
+// }
 /*.site-header nav ul {
 	display: flex;
 	flex-direction: row;
