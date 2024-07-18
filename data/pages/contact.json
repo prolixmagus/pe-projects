@@ -5,7 +5,7 @@
 	"sections": [
 		{
 			"module": "generic-text-heading",
-			"content": "<picture class='scooter'><img src='images/site/scooter.jpg'></picture>"
+			"content": "<picture class='scooter' data-title='2020 Genuine Buddy 170i'><img src='images/site/scooter.jpg' alt='Seafoam Green 2020 Genuine Buddy 170i'></picture>"
 		}
 	]
 }

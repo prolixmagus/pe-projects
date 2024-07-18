@@ -55,11 +55,6 @@ p a:hover, li a:hover {
 	text-decoration-color: var(--color-primary);
 }
 
-
-li a:visited, p a:visited {
-	color: var(--color-two-dark);
-}
-
 .site-header li a, .site-footer li a {
 	font-weight: 400;
 }
@@ -68,10 +63,6 @@ li a:visited, p a:visited {
 	text-decoration: underline;
 	text-decoration-thickness: 4px;
 	text-decoration-color: var(--color-three);
-}
-
-.card li a:visited, .card li a:visited {
-	color: var(--ink);
 }
 
 picture {
@@ -158,9 +149,5 @@ picture {
 	p a, li a {
 		color: var(--color-primary);
 		display: inline-block;
-	}
-
-	li a:visited, p a:visited {
-	color: var(--color-two);
 	}
 }

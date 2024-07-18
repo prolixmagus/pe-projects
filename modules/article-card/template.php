@@ -14,11 +14,9 @@
 	</picture>
 
 	<div class='text-area'>
-		<a class='card-title' href='?page=work-detail&slug=<?=$slug?>'>
 			<h2>
 				<?=$title?>
 			</h2>
-		</a>
 
 		<time class='quiet-voice'><?=$published?></time>
 			

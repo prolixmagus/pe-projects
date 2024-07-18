@@ -3,7 +3,7 @@
 	"slug": "work",
 	"template": "blog",
 	"meta-description": "Great designers know that those “a-ha!” moments hide within the tall grass of process and practice.",
-	"intro": "Great designers know that those “a-ha!” moments hide within the tall grass of process and practice. Below is a list of my four most recent writings, wonderings, and experiments. Don’t forget to check out <a href='?page=archive'>the archive</a> for more ideas.",
+	"intro": "I'm currently working on adding responsive layouts to my <a href='?page=layout-garden'>layout garden</a> and practicing javascript in <a href='https://codepen.io/your-work/?grid_type=grid&sort_by=updatedat'>Codepens</a>. I’m always seeking those “a-ha!” moments hide within the tall grass of process and practice.",
 	"articles": [
 		{
 			"id": "6b7ed1c1-0f9e-48ec-b8fe-e64ba4536ee1",
@@ -12,7 +12,7 @@
 			"published": "02 NOV 2023",
 			"updated": "10 NOV 2023",
 			"alt": "Outline of a cartoonish skeletal arm giving a thumbs up",
-			"description": "Successful cinema weaves sight and sound according to a carefully crafted visual design system.",
+			"description": "I decided to practice recognizing cohesive visual design systems by analyzing the film <em>Swiss Army Man</em>",
 			"preview-image": "images/explorations/death-and-design/headline.jpg",
 			"related": ["bottles-in-the-sky", "teapet-shop"],
 			"case-study": [
@@ -64,7 +64,7 @@
 			"published": "03 NOV 2023",
 			"updated": "10 OCT 2023",
 			"alt": "Three outlines of bottles against a purple backdrop",
-			"description": "There are great designs and terrible designs all around us. Nothing is permanent.",
+			"description": "Continuing my visual design practice, I turn to geographic feature and policy decisions that show how designs have long-reaching consequences.",
 			"preview-image": "images/explorations/bottles-in-the-sky/headline.jpg",
 			"related": ["death-and-design", "theme-challenge"],
 			"case-study": [
@@ -136,7 +136,7 @@
 			"updated": "10 JUN 2024",
 			"alt": "A cartoon drawing of boxes within boxes making a web layout",
 			"preview-image": "images/explorations/theme-challenge/headline.jpg",
-			"description": "Given a blank canvas and a demographic, what elements do you reach for to establish connection?",
+			"description": "This project emphasized the design process and obligation of attention to detail in order to take a website from 90% to 100%. Over time it gets easier, but these things take time.",
 			"related": ["mockup", "teapet-shop"],
 			"case-study": [
 				{
@@ -149,7 +149,7 @@
 						},
 						{
 							"module": "generic-text-heading",
-							"content": "<h2>Introduction</h2><p>The goal of this project was to transform a wireframe into a professional webpage based on a chosen industry’s style conventions. The hidden challenge was to create a flexible, durable design system where the aesthetics (color, text content, module order) could be changed with only a few lines of code. The HTML should be changed <em>as little as possible</em>."
+							"content": "<h2>Introduction</h2><p>Working with boilerplates or wireframes can speed up the initial scaffolding of designing a website, but it often feels like 'blank page' syndrome - what to fill it with? A flexible, durable design system where the aesthetics (color, text content, module order) could be changed with only a few lines of code. The HTML should be changed <em>as little as possible</em>."
 						}
 					]
 				},
@@ -355,7 +355,7 @@
 			"updated": "24 APR 2024",
 			"alt": "A lucky cat in the middle of two steaming teapots",
 			"preview-image": "images/explorations/teapet-store/headline.jpg",
-			"description": "Making a mock storefront selling teapets to keep you company - using CRUD methods.",
+			"description": "I wanted to keep CRUD methods fresh in my mind, so what better way than to make a prototype/mock storefront?",
 			"related": ["mockup", "theme-challenge"],
 			"case-study": [
 				{
@@ -449,7 +449,7 @@
 			"updated": "11 JUN 2024",
 			"alt": "Symbols of binoculars, a globe, and a walking person",
 			"preview-image": "images/explorations/find-a-guide/headline.jpg",
-			"description": "One week sprint to design and code a vanilla JS prototype to find local tour guide.",
+			"description": "I gave myself one week to create a prototype using nothing but Vanilla javascript. I learned <em>a lot</em> through the process.",
 			"related": ["theme-challenge", "teapet-shop"],
 			"case-study": [
 				{
@@ -538,7 +538,7 @@
 			"updated": "15 JUL 2024",
 			"alt": "A layout of multicolored squared put into a computer screen",
 			"preview-image": "images/explorations/site-mockup-to-code/headline.jpg",
-			"description": "Converting a Figma design into code while keeping a consistent design system across styles.",
+			"description": "Oftentimes developers have little choice over the images or mockup. It's our job to turn these designs into webpages.",
 			"related": ["theme-challenge", "find-a-guide"],
 			"case-study": [
 				{

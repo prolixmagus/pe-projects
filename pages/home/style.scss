@@ -44,6 +44,7 @@
 
 		& .octo {
 			max-width: 300px;
+			transform: translateX(-40px);
 		}
 
 		& .thoughts-list {
@@ -88,7 +89,9 @@ body.scary {
 	color: var(--color-primary-dark);
 }
 
+@media (min-width: 600px) {
 
+}
 @media(min-width: 768px) {
 	.cycle-button-container {
 		grid-column: 2 / -1;
@@ -100,12 +103,25 @@ body.scary {
 	.home .thoughts {
 		display: grid;
 		grid-row: 4;
-		grid-column:  2 / 10;
+		grid-column:  2 / -1;
 		& .thoughts-wrapper {
 			flex-direction: row;
-			.thoughts-list {
-				width: 60%;
+
+			& .octo {
+				max-width: 300px;
+				transform: translateY(-150px);
+				transform: translateX(100px)
 			}
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.home .thoughts .thoughts-wrapper {
+		justify-content: space-between;
+		& .octo {
+			max-width: 350px;
+			transform: translateY(-60px);
 		}
 	}
 }
@@ -157,10 +173,18 @@ body.scary {
 	}
 
 	.octo-stache, .octo-left, .octo-right {
-	fill: #121212;
+		fill: #121212;
 	}
 
 	.email-link {
-	color: var(--color-primary);
+		color: var(--color-primary);
 	}	
+
+	.firstname, .lastname {
+		fill: white;
+	}
+
+	.firstname:hover {
+		fill: blue;
+	}
 }

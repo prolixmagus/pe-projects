@@ -15,10 +15,42 @@
 		border-radius: 10px;
 	}
 }
+[data-title] {
+    position: relative;
+}
+
+[data-title]::after {
+    content: attr(data-title); /* Use attr() to get the value of data-title */
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    opacity: 0;
+    visibility: visible;
+    background-color: var(--color-three);
+    color: var(--ink-light);
+    font-size: 1em;
+    font-family: "inconsolata", monospace;
+    padding: 1px 5px 2px 5px;
+    box-shadow: 1px 1px 3px #222222;
+    border: 1px solid #111111;
+    border-radius: var(--corners);
+    z-index: 99999;
+    transition: all 0.1s ease-out 0.1s;
+}
+
+[data-title]:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
 
 
 @media (prefers-color-scheme: dark) {
-	.contact a {
-		color: var(--color-three);
+	.contact .email-address {
+		color: var(--color-primary);
+			&:hover {
+				text-decoration: underline;
+				text-decoration-thickness: 4px;
+				text-decoration-color: var(--color-three);
+		}
 	}
 }
