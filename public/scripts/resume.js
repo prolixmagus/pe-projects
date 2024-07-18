@@ -1,13 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const startingTime = document.querySelector('.present-day');
-    const offsetPercentage = 20;
+    const startingContainer = document.querySelector('.burbank');
+    let offsetPercentage = 0;
+    console.log(innerWidth);
 
-    if (startingTime) {
+    if (innerWidth < 768) {
+      offsetPercentage = 2;
+    } else if (innerWidth > 768) {
+      offsetPercentage = 8;     
+    }
+
+    if (startingContainer) {
     	const offset = (window.innerWidth / 100) * offsetPercentage;
+      console.log(window.innerWidth);
       const timelineWrapper = document.querySelector('.timeline-wrapper');
 
       if (timelineWrapper) {
-      	 startingTime.scrollIntoView({behavior: 'auto'});
+      	 startingContainer.scrollIntoView({behavior: 'auto'});
 
           timelineWrapper.scrollBy({ left: -offset, behavior: 'auto' });
 
