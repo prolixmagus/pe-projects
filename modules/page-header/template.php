@@ -7,6 +7,6 @@
 <header class='page-header section-grid'>
 	<inner-column class='inner-grid'>
 		<h1 class="loud-voice"><?=$pageTitle?></h1>
-		<p class='calm-voice'><?=$pageIdea?></p>
+		<p class='calm-voice light-text'><?=$pageIdea?></p>
 	</inner-column>
 </header>

@@ -22,7 +22,7 @@
 
 		<time class='quiet-voice'><?=$published?></time>
 			
-		<p><?=$description?></p>
+		<p class='light-text'><?=$description?></p>
 
 		<a class='read-more' href='?page=work-detail&slug=<?=$slug?>'>Read more</a>
 	</div>
