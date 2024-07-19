@@ -1,3 +1,16 @@
+.divider-wrapper {
+	grid-column: 1 / -1;
+	padding: 1em;
+}
+.blog-divider {
+    background-color: var(--color-two);
+    opacity: 0.5;
+    width: 100%;
+    height: 4px;
+    border: unset;
+    margin-block: 4em;
+}
+
 .work-detail .headline {
 	grid-column: 1 / -1;
 }
@@ -6,11 +19,15 @@
 	grid-column: 1 / -1;
 }
 
-.work-detail .double-figure {
+.double-figure {
 	grid-column: 1 / -1;
 }
 
 @media (min-width: 768px) {
+	.divider-wrapper {
+		padding: 0;
+		grid-column: 2 / 11;
+	}
 	.work-detail .headline {
 		grid-column: 2 / 11;
 	}
@@ -19,7 +36,7 @@
 		grid-column: 2 / 11;
 	}
 
-	.work-detail .double-figure {
+	.double-figure {
 		grid-column: 2 / 11;
 	}
 }

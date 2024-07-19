@@ -8,6 +8,7 @@
 	height: 100%;
 	align-items: flex-start;
 	border-radius: var(--corners);
+	line-height: 1.6;
 
 	& .text-area {
 		flex-grow: 1;
@@ -24,8 +25,9 @@
 
 	}
 
-	& time {
+	& time.quiet-voice {
 		text-transform: uppercase;
+		color: var(--color-two-dark);
 	}
 
 	& .card-title {
@@ -40,16 +42,14 @@
 	}
 }
 
+.style-guide .card {
+	grid-column: 1 / -1;
+}
 
-/*@media (min-width: 768px) {
-	article-card {
-		flex-direction: row-reverse;
-		& article-teaser {
-			width: 60%;
-		}
-		& .work-picture {
-			width: 50%;
-		}
+
+@media (min-width: 768px) {
+	.style-guide .card {
+		grid-column: 2 / 11;
 	}
 }
 
@@ -64,5 +64,5 @@
 			width: 40%;
 		}
 	}
-}*/
+}
 

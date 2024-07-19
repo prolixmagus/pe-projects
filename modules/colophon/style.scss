@@ -1,6 +1,7 @@
 colophon {
 	display: grid;
 	gap: 16px;
+	grid-column: 1 / -1;
 }
 
 colophon li {
@@ -9,7 +10,7 @@ colophon li {
 
 .fredoka-alphabet{
 	& ul {
-		border: 1px solid var(--color-three);
+		border: var(--border) solid var(--color-three);
 		border-radius: var(--corners);
 		padding: 1rem;
 	}
@@ -21,12 +22,18 @@ colophon li {
 
 .noto-alphabet{
 	& ul {
-		border: 1px solid var(--color-two);
+		border: var(--border) solid var(--color-two);
 		border-radius: var(--corners);
 		padding: 1rem;
 	}
 	& li {
 		font-family: "Noto Sans";
 		font-size: 1.125rem;
+	}
+}
+
+@media (min-width: 768px) {
+	colophon {
+		grid-column: 2 / 11;
 	}
 }

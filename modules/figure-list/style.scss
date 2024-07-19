@@ -1,9 +1,9 @@
-.exploration .double-figure figure {
+.double-figure figure {
 	padding-block: 1.5rem;
 }
 
 @media (min-width: 768px) {
-	.exploration .double-figure figure {
+	.double-figure figure {
 		display: flex;
 		flex-direction: row;
 		gap: 10px;

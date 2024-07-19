@@ -4,8 +4,14 @@
 	display: grid;
 /*		display: flex;
 		flex-direction: column;*/
-	gap: 2rem 1rem;
-	margin-top: 4rem;
+	gap: 4rem;
+	margin-top: 1.5em;
+	padding: 1em;
+
+
+	h2 {
+		grid-column: 1 / -1;
+	}
 }
 
 .work-detail h2 {
@@ -14,12 +20,15 @@
 
 @media (min-width: 600px) {
 	.related-articles {
-		grid-column: 2 / 13;
 		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem 1rem;
 	}
 }
 
 @media (min-width: 768px) {
+	h2.related-title {
+		grid-column: 2 / 11;
+	}
 	.related-articles {
 		grid-column: 2 / 11;
 	}

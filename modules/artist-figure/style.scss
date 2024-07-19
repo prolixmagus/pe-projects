@@ -1,7 +1,6 @@
 .artist-card {
 	position: relative;
 	height: 100%;
-   flex-grow: 1;
 	& picture {
 		aspect-ratio: 1 / 1;
 		&img {
@@ -18,6 +17,22 @@
 		.quiet-voice.caption {
 			margin-top: 0;
 		}
+	}
+}
+
+.style-guide .artist-card {
+	grid-column: 1 / 7;
+}
+
+@media (min-width: 768px) {
+.style-guide .artist-card{
+	grid-column: 2 / 5;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	cite {
+		color: var(--paper);
 	}
 }
 

@@ -14,7 +14,7 @@
 			<li>
 				<details>
 					<summary>
-						<h3><em><?=$point?></em></h3>
+						<h3><?=$point?></h3>
 					</summary>
 				<?=$description?>
 				</details>

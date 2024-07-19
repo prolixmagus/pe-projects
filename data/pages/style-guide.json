@@ -12,6 +12,22 @@
 			"figCaption": "A purple landscape and a telling caption"
 		},
 		{
+			"module": "figure-list",
+			"double-figure": true,
+			"figure": [
+				{
+					"image": "images/teal-landscape.jpg",
+					"figCaption": "Familiar square and rectangle farms",
+					"alt": "An aerial shot of square and rectangle farm plots"
+				},
+				{
+					"image": "images/orange-landscape.jpg",
+					"figCaption": "Circular fields using central pivot irrigation",
+					"alt": "An aerial shot of circular field plots"
+				}
+			]
+		},
+		{
 			"module": "artist-figure"
 		},
 		{

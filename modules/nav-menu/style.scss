@@ -63,12 +63,12 @@
 	& li {
 		font-size: 1.5rem;
 		a {
-			padding: 10px 44px;
+			padding: 5px 44px;
 			text-decoration: none;
 		}
 		a:hover {
 			text-decoration: underline;
-			text-decoration-thickness: 4px;
+			text-decoration-thickness: var(--border);
 			text-decoration-color: var(--color-three);
 		}
 	}
@@ -98,7 +98,7 @@
 			}
 			& a:hover {
 				text-decoration: underline;
-				text-decoration-thickness: 4px;
+				text-decoration-thickness: var(--border);
 				text-decoration-color: var(--color-three);
 			}	
 		}
@@ -108,12 +108,6 @@
 @media (min-width: 750px) {
 	.site-header nav .user-menu a {
 		padding: 15px 25px;
-	}
-}
-
-@media (min-width: 1440px) {
-	.site-header nav .user-menu a {
-		padding: 15px 44px;
 	}
 }
 

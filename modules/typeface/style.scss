@@ -25,7 +25,7 @@ lettering-voice {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 2px solid var(--ink);
+	border-bottom: var(--border) solid var(--ink);
 }
 
 lettering-voice h3 + p {
@@ -38,6 +38,6 @@ lettering-voice + p {
 
 @media (prefers-color-scheme: dark) {
 	lettering-voice {
-		border-bottom: 2px solid var(--ink-light);
+		border-bottom: var(--border) solid var(--ink-light);
 	}
 }

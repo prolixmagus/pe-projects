@@ -41,7 +41,7 @@ body {
 	background-color: var(--paper);
 }
 
-p a, li a {
+p a, li a, article a {
 	color: var(--ink-light);
 	text-decoration: underline;
 	display: inline-block;
@@ -49,9 +49,9 @@ p a, li a {
 	position: relative;
 }
 
-p a:hover, li a:hover {
+p a:hover, li a:hover, article a:hover {
 	text-decoration: underline;
-	text-decoration-thickness: 4px;
+	text-decoration-thickness: var(--border);
 	text-decoration-color: var(--color-primary);
 }
 
@@ -61,7 +61,7 @@ p a:hover, li a:hover {
 
 .site-header li a.active {
 	text-decoration: underline;
-	text-decoration-thickness: 4px;
+	text-decoration-thickness: var(--border);
 	text-decoration-color: var(--color-three);
 }
 
@@ -146,7 +146,7 @@ picture {
 		background-color: var(--background-dark);
 	}
 
-	p a, li a {
+	p a, li a, article a {
 		color: var(--color-primary);
 		display: inline-block;
 	}

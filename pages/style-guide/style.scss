@@ -1,42 +1,11 @@
 .style-guide {
 	display: grid;
-
-	& colophon, .exercise-card, .artist-card, .common-figure, .project-card, .card {
-		grid-column: 1 / -1;
-	}
-
-	.quiet-voice.caption {
-		margin-top: 0;
-	}
 }
 
-
-
-@media (min-width: 768px) {
-	.style-guide {
-		& colophon, .card, .project-card {
-			grid-column: 2 / 11;
-		}
-		& .common-figure {
-			grid-column: 2 / 9;
-		}
-		& .exercise-card{
-			grid-column: 2 / 5;
-		}
-		& .artist-card {
-			grid-column: 2 / 5;
-		}
-		& .project-card common-figure {
-			grid-column: 1 / -1;
-		}
-		& key-takeaways {
-			grid-column: 2 / 10;
-		}
-		& .formatted-codepen iframe {
-			margin-top: 1em;
-		}
-	}
+.style-guide section + section {
+	margin-top: 3em;
 }
 
-
-
+.style-guide > section:nth-of-type(1) {
+	margin-top: 3em;
+}

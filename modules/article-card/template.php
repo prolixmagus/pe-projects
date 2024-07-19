@@ -2,7 +2,7 @@
 	$title = $article['title'] ?? "Article Title"; 
 	$slug = $article['slug'] ?? "#"; 
 	$published = $article['published'] ?? "29 FEB 2024";
-	$preview_image = $article['preview-image'] ?? "images/landscape.jpg";
+	$preview_image = $article['preview-image'] ?? "images/purple-landscape.jpg";
 	$description = $article['description'] ?? "A one sentence teaser to entice the reader!";
 	$alt = $article['alt'] ?? "alt-text for image accessibility"
 ?>

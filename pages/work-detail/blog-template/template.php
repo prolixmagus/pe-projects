@@ -22,5 +22,13 @@ $explorationTitle = $work_article['title']
 	</section>
 
 	<?php } ?>
+	
+	<div class='section-grid'>
+		<div class='inner-grid'>
+			<div class='divider-wrapper'>
+				<hr class='blog-divider' />
+			</div>
+		</div>
+	</div>
 
 </article>

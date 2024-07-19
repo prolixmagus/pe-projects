@@ -30,6 +30,16 @@
 	margin-top: 4px;
 }
 
+.style-guide .project-card {
+	grid-column: 2 / 11;
+}
+
+@media (min-width: 768px) {
+	.project-card {
+		grid-column: 2 / 11;
+	}
+}
+
 @media (prefers-color-scheme: dark) {
 	.project-card {
 		background-color: var(--background-light);
