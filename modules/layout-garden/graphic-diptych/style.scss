@@ -1,3 +1,6 @@
+	.layout-garden .graphic-diptych inner-column {
+		background-color: #58A6FB;
+	}
 
 .graphic-diptych module-showcase {
 	display: flex;
@@ -46,8 +49,8 @@ cta-text {
 }
 
 @media(prefers-color-scheme: dark) {
-	.graphic-diptych, .module-showcase.graphic-diptych case-study-wrapper {
-	background-color: #000034;
+	.layout-garden .graphic-diptych inner-column {
+		background-color: #000034;
 	}
 }
 

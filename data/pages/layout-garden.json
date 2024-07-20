@@ -5,12 +5,12 @@
 	"intro": "The internet is a sprawling forest filled with responsive modules of all kinds. Inspired by their designs, I have grown my own garden.",
 	"sections": [
 		{
-			"module": "fly-fishing-grid",
-			"slug": "fly-fishing-grid",
-			"case-study": [
+			"module": "day-1-grid",
+			"slug": "day-1-grid",			
+				"case-study": [
 				{
 					"module": "generic-text-heading",
-					"content": "<h2 class='small-heading'>Fly Fishing Grid</h2><p class='calm-voice'>I chose this layout because because it is a common method for displaying related items. I loved the contrast between the weight of the category name and item name. The oval button, thin divider ines, and copious whitespace highlight the colorful items. Not to mention all of the practice I had adjusting grid for various screen sizes with media break points!</p>"
+					"content": "<h2 class='small-heading'>Headline Layout 1</h2><p class='calm-voice'>This is a common layout found on content aggregation or news websites. I creatd an 'article list' and 'picture list' containers, flexing them side by side. Each container was a two-column grid, but I spanned the heading list element across two columns to draw attention to a featured article. The list of headlines is actually styled / written as a separate 'article grid card' module that I looped over and included in the parent 'article grid' module.</p>"
 				}
 			]
 		},
@@ -69,16 +69,6 @@
 			]
 		},
 		{
-			"module": "day-1-grid",
-			"slug": "day-1-grid",			
-				"case-study": [
-				{
-					"module": "generic-text-heading",
-					"content": "<h2 class='small-heading'>Headline Layout 1</h2><p class='calm-voice'>This is a common layout found on content aggregation or news websites. I creatd an 'article list' and 'picture list' containers, flexing them side by side. Each container was a two-column grid, but I spanned the heading list element across two columns to draw attention to a featured article. The list of headlines is actually styled / written as a separate 'article grid card' module that I looped over and included in the parent 'article grid' module.</p>"
-				}
-			]
-		},
-		{
 			"module": "day-2-grid",
 			"slug": "day-2-grid",			
 				"case-study": [
@@ -95,6 +85,16 @@
 				{
 					"module": "generic-text-heading",
 					"content": "<h2 class='small-heading'>Headline Layout 3</h2><p class='calm-voice'>The goal of this layout was to create <code>detail</code> elements where the detail icon changed based on its state (open or closed). I learned you can style that attribute.<p>This exercise also was good to practice content hierarchy between the 'little teaser,'' H2, H3, and detail text</p>"
+				}
+			]
+		},
+		{
+			"module": "fly-fishing-grid",
+			"slug": "fly-fishing-grid",
+			"case-study": [
+				{
+					"module": "generic-text-heading",
+					"content": "<h2 class='small-heading'>Fly Fishing Grid</h2><p class='calm-voice'>I chose this layout because because it is a common method for displaying related items. I loved the contrast between the weight of the category name and item name. The oval button, thin divider ines, and copious whitespace highlight the colorful items. Not to mention all of the practice I had adjusting grid for various screen sizes with media break points!</p>"
 				}
 			]
 		},

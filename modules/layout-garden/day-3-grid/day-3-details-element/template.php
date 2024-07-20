@@ -1,6 +1,6 @@
 <details>
 	<summary>
-		<h3 class='small-heading'>Heading level 3 large</h3>
+		<h3 class='small-heading'>Here is what you can do.</h3>
 	</summary>
-	This is some body text. This is some body text. This is some body text. 
+	<p>Smell the flowers. Have face to face conversations. It won't hurt (too much).</p>
 </details>

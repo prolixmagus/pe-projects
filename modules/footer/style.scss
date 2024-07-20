@@ -1,12 +1,6 @@
 footer {
 	margin-top: 2em;
-	border-top: 1px solid hsla(var(--hue), 0%, 85%, 0.5);
-	background: linear-gradient(180deg, 
-	 	#FAFAFA 90%,
-        hsl(var(--primary), 59%, 60%) 90%, 
-        hsl(var(--accent-two), 30%, 61%) 95%, 
-        hsl(var(--accent-three), 76%, 60%) 100%
-   );
+	border-top: var(--border) solid hsla(var(--hue), 0%, 85%, 0.5);
 }
 
 footer inner-column {

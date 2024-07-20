@@ -1,7 +1,7 @@
 <ul class='article-grid'>
-	<li class='headline'>
-		<h2 class='attention-voice'>Heading level 2 large</h2>
-		<p class='calm-voice'>This is some body text. This is some body text. This is some body text. This is some body text.</p>
+	<li class='article-headline'>
+		<h2 class='attention-voice'>We like ideas.</h2>
+		<p class='calm-voice'>Tall ones, short ones, wild ones, fiesty ones, we're here to make your ideas ideate! </p>
 	</li>
 	<?php
 		for ($article = 0; $article <= 5; $article++) {

@@ -1,8 +1,8 @@
 <headline-section>
 		<inner-column>
 			<headline class="article-grid-2">
-				<h2 class='quiet-heading'><strong>Heading level 2 small</strong></h2>
-				<p class='quiet-voice'>This is some body text. This is some body text. This is some body text. This is some body text.</p>
+				<h2 class='quiet-heading'>Routine</h2>
+				<p class='quiet-voice'>I know you want to break free, but embrace the pattern! That's the only way out.</p>
 			</headline>
 		</inner-column>
 </headline-container>

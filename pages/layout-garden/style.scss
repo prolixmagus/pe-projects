@@ -10,14 +10,16 @@
 }
 
 case-study-wrapper {
-	display: block;
+	grid-column: 1 / -1;
+	display: grid;
 	padding-block: 1rem;
 }
 
 .module-showcase {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-column: 1 / -1;
 }
+
 .layout-garden section:nth-child(even) {
 	background-color: #FAFAFA;
 }
@@ -39,7 +41,7 @@ module-showcase {
 @media (prefers-color-scheme: dark) {
 
 	.layout-garden section:nth-child(even) {
-	background-color: #1d1d1d;
+		background-color: #1d1d1d;
 	}
 
 	.case-study-link {

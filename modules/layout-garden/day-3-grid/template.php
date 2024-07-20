@@ -1,11 +1,11 @@
 <day-3-grid>
 	<ul class='headline-list'>
 		<li>
-			<h2 class='teaser-little'>Little teaser</h2>
+			<h2 class='teaser-little'>Shocking Update!</h2>
 		</li>
-		<li class='headline'>
-			<h2 class='small-heading'><strong>Heading level 2</strong></h2>
-			<p class='calm-voice'>This is some body text. This is some body text. This is some body text. This is some body text.</p>
+		<li class='article-headline'>
+			<h2 class='small-heading'>There is news!</h2>
+			<p class='calm-voice'>Internet outages sweep the country. Are you and your loved ones safe?</p>
 		</li>
 	</ul>
 
@@ -13,7 +13,7 @@
 		<li class='headline-list'>
 			<ul>
 				<li>
-					<h2 class='teaser-little'>Little teaser</h2>
+					<h2 class='teaser-little'>Lock Your Doors</h2>
 				</li>
 				<?php
 					for ($article = 0; $article <= 2; $article++) { ?>
@@ -29,7 +29,7 @@
 		<li class='headline-list'>
 			<ul>
 				<li>
-					<h2 class='teaser-little'>Little teaser</h2>
+					<h2 class='teaser-little'>Drink Water</h2>
 				</li>
 				<?php
 					for ($article = 0; $article <= 7; $article++) { ?>

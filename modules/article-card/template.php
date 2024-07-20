@@ -23,6 +23,8 @@
 		<p class='light-text'><?=$description?></p>
 
 		<a class='read-more' href='?page=work-detail&slug=<?=$slug?>'>Read more</a>
+
+		<a class='article-link' href='?page=work-detail&slug=<?=$slug?>'></a>
 	</div>
 
 </article class='card'>

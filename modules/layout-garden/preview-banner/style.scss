@@ -85,6 +85,11 @@ show-info {
 	}
 }*/
 
+@media (min-width: 650px) {
+	preview-banner {
+		grid-column: 1 / 9;
+	}
+}
 @media (max-width: 400px) {
 	preview-banner .rank-number {
 		max-width: 30px;

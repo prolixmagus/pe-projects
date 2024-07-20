@@ -1,12 +1,12 @@
 
-.article-grid .headline {
-	padding-block: 2.5rem;
+.article-grid .article-headline {
+	padding-block: 1rem;
 	border-top: none;
 }
 
 .article-grid li {
 	padding-top: 1rem;
-	border-top: 1px solid black;
+	border-top: var(--border) solid black;
 }
 
 .article-grid {
@@ -37,7 +37,7 @@
 		column-gap: 10px;
 	}
 
-	.article-grid .headline {
+	.article-grid .article-headline {
 		grid-column: span 2;
 	}
 
@@ -63,5 +63,9 @@
 @media (prefers-color-scheme: dark) {
 	.day-1-grid {
 		background-color: var(--paper-black);
+	}
+
+	.article-grid li {
+		border-top: var(--border) solid var(--ink-light);
 	}
 }
