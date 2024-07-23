@@ -659,6 +659,7 @@ li.exercise-card a {
   gap: 1em;
 }
 .home .thoughts .thoughts-wrapper .thoughts-list li {
+  font-size: 1.25em;
   display: flex;
   flex-direction: column;
 }
@@ -683,7 +684,7 @@ body.scary .terminal {
   color: var(--color-three);
 }
 .email-link {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 @media (min-width: 768px) {
   .cycle-button-container {

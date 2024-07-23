@@ -52,6 +52,7 @@
 			flex-direction: column;
 			gap: 1em;
 			& li {
+				font-size: 1.25em;
 				display: flex;
 				flex-direction: column;
 			}
@@ -86,7 +87,7 @@ body.scary {
 }
 
 .email-link {
-	color: var(--color-primary);
+	color: var(--color-primary-dark);
 }
 
 @media (min-width: 600px) {
