@@ -1,4 +1,4 @@
-<?php $pageData = read_page_data('timeline') ?>
+<?php $pageData = read_page_data('resume') ?>
 
 <?php
 	$pageTitle = $pageData['title'];

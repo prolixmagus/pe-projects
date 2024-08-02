@@ -1,6 +1,6 @@
 {
-	"title": "Timeline",
-	"slug": "timeline",
+	"title": "Résumé",
+	"slug": "Résumé",
 	"intro": "The following puts my work experience in a narrative context. <br /> If you prefer, here is my <a href='docs/jeremy-fishman-resume.pdf'>traditional résumé</a>.",
 	"section": [
 		{
@@ -13,7 +13,7 @@
 		{
 			"year": "2024 - present",
 			"id": "present-day",
-			"narrative": "<p>I am a student and contributor to <a href='https://perpetual.education/'><em>Design for the Web</em></a> created by <a href='https://sheriffderek.consulting/'>Derek Wood</a>. I am constantly pushing my limits and exploring the possibilities of modern web developemnt.</p>",
+			"narrative": "<p>I am a perpetual student and contributor to <a href='https://perpetual.education/'><em>Design for the Web</em></a> created by <a href='https://sheriffderek.consulting/'>Derek Wood</a>. I am constantly pushing my limits and exploring the possibilities of modern web developemnt.</p>",
 			"skills": [
 				{
 					"skill": "Preparing and creating shareable rich metadata assets"
