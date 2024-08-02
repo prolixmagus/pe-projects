@@ -51,8 +51,9 @@
 	}
 }
 
-@media (prefer-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	.itinerary {
-		background-color: var(--background-light);
+		background-color: var(--background);
+		border: 1px solid var(--border-light);
 	}
 }

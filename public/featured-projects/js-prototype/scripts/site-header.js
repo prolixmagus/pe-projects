@@ -5,30 +5,7 @@ import { renderSiteFooter } from './site-footer.js';
 import { getTourSearchView } from './search.js';
 import { getTripsListView } from './trips.js';
 
-const siteHeaderLinks = [
-    {
-      datalink: 'search',
-      content: 'Search',
-      public: true
-    },
-    {
-      datalink: 'inbox',
-      content: 'Inbox',
-      public: true
-    },
-    {
-      datalink: 'trips',
-      content: 'Trips',
-      public: true
-    },
-    {
-      datalink: 'profile',
-      content: 'Profile',
-      public: true
-    }
-  ];
-
-function renderNavLinks(menu) {
+function renderNavLinks() {
 
   if (state.login === true) {
 
@@ -74,7 +51,7 @@ function renderSiteHeader(container) {
           </logo-container>
           <nav class='user-menu'>
             <ul>
-              ${renderNavLinks(siteHeaderLinks)}
+              ${renderNavLinks()}
             </ul>
           </nav>
         </mast-head>
