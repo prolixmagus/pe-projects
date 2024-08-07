@@ -1,5 +1,7 @@
 {
 	"header": "page-header",
+	"title": "Living Style Guide",
+	"meta-description": "A style guide showcasing modules, typography, and design choices.",
 	"sections": [
 		{
 			"module": "generic-text-heading"

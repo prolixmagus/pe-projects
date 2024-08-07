@@ -19,7 +19,7 @@
 
 	$metaTitle = $pageData['title'] ?? "Home: Jeremy Fishman's Portfolio";
 	$metaDescription = $pageData['meta-description'] ?? "Teacher. Web Developer. Linguist. Human.";
-	$metaImage = $pageData['meta-image'] ?? "https://peprojects.dev/alpha-8/jeremy/images/meta-fish-card.jpg";
+	$metaImage = $pageData['meta-image'] ?? "https://peprojects.dev/alpha-8/public/images/meta-fish-card.jpg";
 	$metaUpdate = $pageData['meta-updated'] ?? "Thursday, July 16th, 2024";
 ?>
 
@@ -49,7 +49,7 @@
 		<meta property='og:description' content='<?=$metaDescription?>'>
 
 		<meta property='og:url' content='https://peprojects.dev/alpha-8/index.html'>
-		<meta property='og:image' content='https://peprojects.dev/alpha-8/images/meta-fish-card.jpg'>
+		<meta property='og:image' content='<?=$metaImage?>'>
 
 		<meta name="twitter:title" content='<?=$metaTitle?>'>
 		<meta name="twitter:description" content='<?=$metaDescription?>'>
