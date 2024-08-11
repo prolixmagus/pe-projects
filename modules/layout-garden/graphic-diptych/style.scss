@@ -1,8 +1,7 @@
-	.layout-garden .graphic-diptych inner-column {
-		background-color: #58A6FB;
-	}
 
-.graphic-diptych module-showcase {
+
+.graphic-diptych .diptych-wrapper {
+	grid-column: 1 / -1;
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
@@ -14,28 +13,22 @@ cta-text {
 	justify-content: center;
 }
 
-.graphic-diptych .cta-button {
+.graphic-diptych .cycle-btn.escape {
 	max-width: 175px;
 	margin-top: 1.5rem;
-	background-color: #296BE5;
-	color: white;
 }
 
 .graphic-diptych .cta-button:hover {
 	max-width: 175px;
 	margin-top: 1.5rem;
 	background-color: white;
-	border: 1px solid #296BE5;
-	color: #296BE5;
-}
-
-.graphic-diptych picture {
-	border: 1px solid #170D7C;
+	border: 1px solid var(--color-two);
+	color: var(--color-two);
 }
 
 @media (min-width: 810px) {
 
-	.graphic-diptych module-showcase {
+	.graphic-diptych .diptych-wrapper {
 		flex-direction: row-reverse;
 	}
 
@@ -45,12 +38,6 @@ cta-text {
 
 	.graphic-diptych picture {
 		width: 80%;
-	}
-}
-
-@media(prefers-color-scheme: dark) {
-	.layout-garden .graphic-diptych inner-column {
-		background-color: #000034;
 	}
 }
 

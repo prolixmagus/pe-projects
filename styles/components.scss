@@ -1,25 +1,28 @@
 @import 'forms';
 
-.cycle{
+.cycle-btn{
 	padding: .5em 2em;
 	border-radius: 5px;
 	min-width: 150px;
 	font-size: 1em;
 	font-family: "Fredoka", sans-serif;
-	color: var(--color-primary-dark);
-	background: linear-gradient(to bottom, hsl(var(--primary), 59%, 70%), hsl(var(--primary), 59%, 60%) );
 	text-align: center;
 	font-weight: 500;
-	border: 2px solid var(--color-primary-dark);
-	box-shadow: 0 4px 0 0 var(--color-primary-dark), 
-					inset 0px -1px 0px rgba(0 0 0 / .2), 
-					inset 0px 1px 0px rgba(255 255 255 / .2);
 	transition: transform .05s ease-in-out;
 	cursor: pointer;
 }
 
+.teal {
+	border: 2px solid var(--color-primary-dark);
+	box-shadow: 0 4px 0 0 var(--color-primary-dark), 
+					inset 0px -1px 0px rgba(0 0 0 / .2), 
+					inset 0px 1px 0px rgba(255 255 255 / .2);
+	color: var(--color-primary-dark);
+	background: linear-gradient(to bottom, hsl(var(--primary), 59%, 70%), hsl(var(--primary), 59%, 60%) );
+}
 
-.cycle:hover {
+
+.cycle-btn.teal:hover {
 	color: var(--color-primary-dark);
 	background: #FAFAFA;
 	box-shadow: 0 4px 0 0 var(--color-primary-dark), 
@@ -27,7 +30,7 @@
 					inset 0px 1px 0px rgba(255 255 255 / .2);
 }
 
-.cycle:active {
+.cycle-btn:active {
 	transform: translateY(5px);
 	box-shadow: 0 2px 0 0 var(--color-primary-dark),
 				inset 0px -1px 0px rgba(0 0 0 / .2), 
@@ -35,7 +38,6 @@
 }
 
 .escape {
-	color: var(--color-three);
 	background: linear-gradient(to bottom, hsl(var(--accent-three), 59%, 70%), hsl(var(--accent-three), 59%, 60%) );
 	border: 2px solid var(--color-three-dark);
 	box-shadow: 0 4px 0 0 var(--color-three-dark), 

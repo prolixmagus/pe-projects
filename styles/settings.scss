@@ -45,7 +45,7 @@ html {
 @media (prefers-color-scheme: dark) {
 	html {
 	--border-light: hsl(var(--hue), 0%, 23%);
-	--background-light: hsl(var(--hue), 0%, 18%); /* dark gray */
+	--background-light: hsl(var(--hue), 0%, 16%); /* dark gray */
 	--background: hsl(var(--hue), 0%, 12%); /* dark gray */
 	--background-dark: hsl(var(--hue), 0%, 7%); /*very dark gray*/
 	--ink: var(--white);

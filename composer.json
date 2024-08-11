@@ -1,14 +1,15 @@
 {
-    "require": {
+    "require":
+    {
         "scssphp/scssphp": "^1.12.1"
     },
-    "scripts" : {
+    "scripts":
+    {
         "build": [
             "vendor/bin/pscss --style=expanded styles/site.scss public/site-compiled.css"
         ],
         "watch": [
-           "fswatch -0 pages modules styles | xargs -0 -n 1 -I {} php composer.phar build"
+            "fswatch -0 pages modules styles | xargs -0 -n 1 -I {} php composer.phar build"
         ]
     }
 }
-

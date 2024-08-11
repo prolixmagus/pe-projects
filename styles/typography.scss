@@ -45,6 +45,12 @@
   font-variation-settings: "wdth" 100;
 }
 
+.layout-voice {
+  font-family: "Inconsolata", "monospace";
+  font-size: clamp(1.5rem, 8vw, 1.75rem);
+    letter-spacing: .02em;
+}
+
 .loud-voice {
 	font-family: "Fredoka", "Noto Sans", "Noto Sans", sans-serif;
 	font-size: clamp(30px, 10vw, 3rem);

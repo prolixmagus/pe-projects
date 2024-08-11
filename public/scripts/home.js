@@ -45,11 +45,11 @@ function resetCycle() {
 	body.classList.remove('scary');
 	header.style.color = 'var(--ink)';
 	buttonContainer.innerHTML = `
-	<button class='cycle' id='cycle' data-action='cycle'>Click me</button>`;
+	<button class='cycle-btn' id='cycle' data-action='cycle'>Click me</button>`;
 }
 
 function renderEscape() {
-	buttonContainer.insertAdjacentHTML('beforeend', `<button class='cycle escape' id='escape' data-action='escape'>Retreat</button>`);
+	buttonContainer.insertAdjacentHTML('beforeend', `<button class='cycle-btn escape' id='escape' data-action='escape'>Retreat</button>`);
 }
 
 

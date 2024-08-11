@@ -19,7 +19,8 @@
 	gap: 1rem;
 }
 
-.day-1-grid module-showcase{
+.day-1-grid .day-1-wrapper{
+	grid-column: 1 / -1;
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 1rem;
@@ -50,7 +51,7 @@
 }
 
 @media (min-width: 1000px) {
-	.day-1-grid module-showcase {
+	.day-1-grid .day-1-wrapper {
 		display: flex;
 	}
 

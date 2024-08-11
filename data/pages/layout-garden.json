@@ -1,5 +1,5 @@
 {
-	"id": 1, 
+	"id": 1,
 	"slug": "layout-garden",
 	"title": "Layout Garden",
 	"meta-description": "Various web layouts I've created (and planted) over time",
@@ -7,17 +7,19 @@
 	"sections": [
 		{
 			"module": "day-1-grid",
-			"slug": "day-1-grid",			
-				"case-study": [
+			"title": "Responsive Article Grid",
+			"slug": "day-1-grid",
+			"case-study": [
 				{
 					"module": "generic-text-heading",
-					"content": "<h2 class='small-heading'>Headline Layout 1</h2><p class='calm-voice'>This is a common layout found on content aggregation or news websites. I creatd an 'article list' and 'picture list' containers, flexing them side by side. Each container was a two-column grid, but I spanned the heading list element across two columns to draw attention to a featured article. The list of headlines is actually styled / written as a separate 'article grid card' module that I looped over and included in the parent 'article grid' module.</p>"
+					"content": "<h2 class='small-heading'>Case Study</h2><p class='calm-voice'>This is a common layout found on content aggregation or news websites. I created an 'article list' and 'picture list' containers, flexing them side by side. Each container was a two-column grid, but I spanned the heading list element across two columns to draw attention to a featured article. The list of headlines is actually styled / written as a separate 'article grid card' module that I looped over and included in the parent 'article grid' module.</p>"
 				}
 			]
 		},
 		{
 			"module": "graphic-diptych",
 			"slug": "graphic-diptych",
+			"title": "Graphic Diptych",
 			"case-study": [
 				{
 					"module": "generic-text-heading",
@@ -32,6 +34,7 @@
 		{
 			"module": "scroll-marquee",
 			"slug": "scroll-marquee",
+			"title": "Scroll Marquee",
 			"case-study": [
 				{
 					"module": "generic-text-heading",
@@ -41,8 +44,9 @@
 		},
 		{
 			"module": "announcement-grid",
-			"slug": "announcement-grid",			
-				"case-study": [
+			"slug": "announcement-grid",
+			"title": "Announcement Grid",
+			"case-study": [
 				{
 					"module": "generic-text-heading",
 					"content": "<h2 class='small-heading'>Announcement Grid</h2><p class='calm-voice'>I found this poster-style announcement grid while browsing Instagram. I wanted to challenge myself to emulate a design made in a graphics program on the web. I had to pay special attention apply borders to certain elements while foregoing others to avoid overlap. Let's not forget about the clock svg!</p>"
@@ -51,8 +55,9 @@
 		},
 		{
 			"module": "takeout-contact-form",
-			"slug": "takeout-contact-form",			
-				"case-study": [
+			"slug": "takeout-contact-form",
+			"title": "Takeout Contact Form",
+			"case-study": [
 				{
 					"module": "generic-text-heading",
 					"content": "<h2 class='small-heading'>Takeout form</h2><p class='calm-voice'>This form seemed appealing because of its various fields and spanned grid frames that looked like layered bricks. Suffice to say, it was more difficult than I thought to preserve the aesthetic. I used <code>margin: calc(-0.5* 2px);</code> to keep the borders from overlapping. One of the key takeaway was reflecitng on the purpose of online forms. Was this from accessible? Is it better to have vertical forms (as it appears on a smaller screen) or forms side by side? What information do you really need from your clients to begin a relationship?</p>"
@@ -61,8 +66,9 @@
 		},
 		{
 			"module": "cta-overlap",
-			"slug": "cta-overlap",			
-				"case-study": [
+			"slug": "cta-overlap",
+			"title": "Overlapping CTA",
+			"case-study": [
 				{
 					"module": "generic-text-heading",
 					"content": "<h2 class='small-heading'>CTA Overlap</h2><p class='calm-voice'>This layout struck me with it's bold simplicity. It can be a chapter head, block quote, anything. I set <code>grid-temlate-columns: repeat(6, 1fr);</code> and manually placed each element. Capturing the correct font was important - in this case, the clean lines of Oswald.</p>"
@@ -71,8 +77,9 @@
 		},
 		{
 			"module": "day-2-grid",
-			"slug": "day-2-grid",			
-				"case-study": [
+			"slug": "day-2-grid",
+			"title": "Responsive Corporate Grid",
+			"case-study": [
 				{
 					"module": "generic-text-heading",
 					"content": "<h2 class='small-heading'>Headline Layout 2</h2><p class='calm-voice'>This layout presented several challenges within the framework of the Layout Garden. In order to have the black and grey background stretch to the edge of the screen - the <code>section</code> parent - I needed to somehow <em>ignore</em> its child, an <code>inner-column</code> wrapper. I used <code>display: contents</code>, which treats what you are targeting as a direct child of the parent. I also experimented with negative margins and <code>transform: translate()</code> to make the headline boxes appear to 'break' out of their container. Otherwise, just more <code>grid</code> and svgs!</p>"
@@ -81,8 +88,9 @@
 		},
 		{
 			"module": "day-3-grid",
-			"slug": "day-3-grid",			
-				"case-study": [
+			"slug": "day-3-grid",
+			"title": "Responsive Hidden Option Grid",
+			"case-study": [
 				{
 					"module": "generic-text-heading",
 					"content": "<h2 class='small-heading'>Headline Layout 3</h2><p class='calm-voice'>The goal of this layout was to create <code>detail</code> elements where the detail icon changed based on its state (open or closed). I learned you can style that attribute.<p>This exercise also was good to practice content hierarchy between the 'little teaser,'' H2, H3, and detail text</p>"
@@ -92,6 +100,7 @@
 		{
 			"module": "fly-fishing-grid",
 			"slug": "fly-fishing-grid",
+			"title": "Merch Layout",
 			"case-study": [
 				{
 					"module": "generic-text-heading",
@@ -101,8 +110,9 @@
 		},
 		{
 			"module": "preview-banner",
-			"slug": "preview-banner",			
-				"case-study": [
+			"slug": "preview-banner",
+			"title": "Preview Banner",
+			"case-study": [
 				{
 					"module": "generic-text-heading",
 					"content": "<h2 class='small-heading'>Hulu “Most Watched” Preview Banner</h2><p class='calm-voice'>I saw this layout while browsing Hulu and tried to take a crack at it. I'm sure there are ways to optimize it for smaller screen sizes. I utilized the techniques from the <a href='index.php?page=layout&slug=cta-overlap'>cta-overlap</a> to overlay the title over the number. I used a color picker to find the right colors to make a linear-gradient, then found the font used for the actual movie title. Oh hai, layout garden!</p>"
@@ -111,8 +121,9 @@
 		},
 		{
 			"module": "duo-lingo-survey",
-			"slug": "duo-lingo-survey"	,	
-				"case-study": [
+			"slug": "duo-lingo-survey",
+			"title": "Duo Lingo Survey",
+			"case-study": [
 				{
 					"module": "generic-text-heading",
 					"content": "<h2 class='small-heading'>'Duolingo' Survey</h2><p class='calm-voice'>This is the first of several explorations of language learning app layouts. I want to combine my love for languages with web design. Since many language apps are gamified, I thought this was good practice trying out the <code>progress</code> html element as well as some svg placement. It's a bit <a href='https://css-tricks.com/html5-progress-element/'>hard to style</a></p>"
@@ -122,12 +133,13 @@
 		{
 			"module": "responsive-donut",
 			"slug": "responsive-donut",
-			"case-stud": [
+			"title": "Responsive Storefront",
+			"case-study": [
 				{
 					"module": "generic-text-heading",
 					"content": "<h2 class='small-heading'>Donut Display</h2>"
 				}
 			]
 		}
-	] 
+	]
 }

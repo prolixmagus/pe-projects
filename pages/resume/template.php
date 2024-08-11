@@ -11,7 +11,7 @@
 
 <?php include('../modules/page-header/template.php');?>
 
-<section>
+<section class='resume-wrapper'>
 		<ul class='timeline-wrapper'>
 			<?php foreach($pageData['section'] as $section) {
 				$currentIndex++; 

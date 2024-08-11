@@ -13,7 +13,7 @@
 		</header>
 
 		<section class='cycle-button-container'>
-			<button class='cycle' id='cycle' data-action='cycle'>Click me</button>
+			<button class='cycle-btn teal' id='cycle' data-action='cycle'>Click me</button>
 		</section>
 
 		<section class='thoughts'>
