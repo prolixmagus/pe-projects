@@ -18,7 +18,7 @@
 
 	<body class="<?=$page?>">
 		<header class='page-header'>
-			<?php include('templat../modules/page-header/template.php') ?>
+			<?php include('templates/modules/page-header/template.php') ?>
 		</header>
 
 		<main class="page-content">
@@ -26,7 +26,7 @@
 				foreach ($pageData['sections'] as $section) { ?>
 				<section class='<?=$section['section-class']?>'>
 					<inner-column>
-						<?php include("templat../modules/" . $section['module'] . "/template.php");?>
+						<?php include("templates/modules/" . $section['module'] . "/template.php");?>
 					</inner-column>
 					<?php if ($section['module'] == "cta") { ?>
 						<?php include('templates/components/slice.php')?>
@@ -37,7 +37,7 @@
 		</main>
 
 		<footer class='page-footer'>
-			<?php include('templat../modules/page-footer/template.php') ?>
+			<?php include('templates/modules/page-footer/template.php') ?>
 		</footer>
 
 	</body>

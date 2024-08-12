@@ -14,7 +14,10 @@
 			"alt": "Outline of a cartoonish skeletal arm giving a thumbs up",
 			"description": "I decided to practice recognizing cohesive visual design systems by analyzing the film <em>Swiss Army Man</em>",
 			"preview-image": "images/explorations/death-and-design/headline.jpg",
-			"related": ["bottles-in-the-sky", "teapet-shop"],
+			"related": [
+				"bottles-in-the-sky",
+				"teapet-shop"
+			],
 			"case-study": [
 				{
 					"section": [
@@ -27,7 +30,7 @@
 						{
 							"module": "generic-text-heading",
 							"content": "<h2>Of Corpse!</h2><p>Yesterday, a friend recommended I check out the existential, surrealist 2016 film <a href='https://en.wikipedia.org/wiki/Swiss_Army_Man'>Swiss Army Man</a>,  insisting that there was no other piece of media more “me” than this one. Seeing that the conceit of the film revolves around the budding relationship between a potentially (most definitely) unhinged social outcast and a farting magical corpse, I was more than intrigued. Was I the idealistic protagonist Hank, burdened by the perceived “ugliness” of his physical and mental self, or was I the corpse, rediscovering the beauty and sadness of life through love, loss, and flatulence?</p><p>The answer isn’t important (spoiler alert: a bit of both). What I gleaned from the film, aside from the thrilling roller coaster of heartbreak, imagination, joy, and sobering horror, was that I couldn’t resist trying to put the film into a box. Try as I might to just enjoy the film, I had this uncontrollable urge to put a label on it. Was this film a comedy? Romance? <a href='https://en.wikipedia.org/wiki/Bildungsroman'>Bildungsroman</a>? Fantastic realist hero’s journey?</p><p>What binds this seemingly hodge-podge of genres and moods is the strength of its unifying vision, its unbreakable commitment. As laid out in this <a href='https://acelare.wordpress.com/2016/08/11/swiss-army-man-a-dead-on-analysis-of-themes-and-color-symbolism/#:~:text=His%20pants%20are%20a%20neutral,on%20unrequited%20romance%20and%20relationships.'>wonderful analysis</a>, each character had an identifiable color-palette, each character symbolized an element of Hank’s internal struggle or denied aspirations. Each character was searching for the same clearly-defined goal - acceptance.</p><p>Like Hank’s internal struggle, the film wanted to be accepted as it was, bruises and all, for what we often think is wrong about ourselves is often what makes us unique and alive.</p>"
-						}		
+						}
 					]
 				},
 				{
@@ -35,7 +38,7 @@
 						{
 							"module": "generic-text-heading",
 							"content": "<h2>Life Moves On</h2><p>Regardless of how fantastical things seemed (that a corpse and a living person could become best friends), the film did not compromise its overall design; it remained anchored in the things that make humans unique.<p><em>This is the mission </em> - that I approach design with intention and humanity.</p><p>And of course, leave room for a fart joke here and there.</p>"
-						}	
+						}
 					]
 				},
 				{
@@ -66,7 +69,10 @@
 			"alt": "Three outlines of bottles against a purple backdrop",
 			"description": "Continuing my visual design practice, I turn to geographic feature and policy decisions that show how designs have long-reaching consequences.",
 			"preview-image": "images/explorations/bottles-in-the-sky/headline.jpg",
-			"related": ["death-and-design", "theme-challenge"],
+			"related": [
+				"death-and-design",
+				"theme-challenge"
+			],
 			"case-study": [
 				{
 					"section": [
@@ -137,7 +143,10 @@
 			"alt": "A cartoon drawing of boxes within boxes making a web layout",
 			"preview-image": "images/explorations/theme-challenge/headline.jpg",
 			"description": "This project emphasized the design process and obligation of attention to detail in order to take a website from 90% to 100%. Over time it gets easier, but these things take time.",
-			"related": ["mockup", "teapet-shop"],
+			"related": [
+				"mockup",
+				"teapet-shop"
+			],
 			"case-study": [
 				{
 					"section": [
@@ -313,7 +322,10 @@
 			"alt": "The letter 'A' and 'Z' in a roman-style door frame",
 			"preview-image": "images/explorations/caesar-cipher/headline.jpg",
 			"description": "My first installment of exploring cryptographic methods mentioned in <cite><em>The Code Book</em></cite> by Simon Singh",
-			"related": ["theme-challenge", "bottles-in-the-sky"],
+			"related": [
+				"theme-challenge",
+				"bottles-in-the-sky"
+			],
 			"case-study": [
 				{
 					"section": [
@@ -342,7 +354,7 @@
 						{
 							"module": "generic-text-heading",
 							"content": "<p>Some problems I did not foresee: looping back around the alphabet.</p><p>To compare the alphabet list and the input word, you need to figure out “how do I convert the word into where it falls in the alphabet?” You use indexes, it’s “slot” in the list - like saying “d” is the “4th” letter of the alphabet (the 4 would be the index). You can find this out by “for each of these letters, return the index where they fall on the alphabet list.”</p><p>However, the problem comes when you apply the shift. Let’s shift 3 letters. If “d” is the 4th letter, bring me back the 7th letter “g.” No issue yet. But when we get to “x”, “y”, and “z” … we’re going beyond the scope of our list, to 26, 27, 28 respectively. 26 is outside of the items because javascript starts counting indexes at 0, but counts length as the number of items. There are 25 indexes (z is 25), but the list is 26 items long. After some headscratching and research, the solution was to use a modulo operator (shows the remainder of a number). So 26 % 26 would be 0, which would access the first element of the array (the “a”); 27 % 26 would be 1, or “b”; and 28 % 26 would be 2, or “c”.</p><p>Here is some fun trivia to end on. According to wikipedia, substitution cipher where you swap a letter with its 13th letter has a special name - ROT13 - which “was used in online forums as a means of hiding spoilers, punchlines, puzzle solutions, and offensive material from the casual glance.”</p>"
-						}	
+						}
 					]
 				}
 			]
@@ -351,12 +363,15 @@
 			"id": "eef3c6f4-43a8-45f7-b5c6-493a87b2756b",
 			"title": "Teapet Shop",
 			"slug": "teapet-shop",
-			"published":"22 APR 2024",
+			"published": "22 APR 2024",
 			"updated": "24 APR 2024",
 			"alt": "A lucky cat in the middle of two steaming teapots",
 			"preview-image": "images/explorations/teapet-store/headline.jpg",
 			"description": "I wanted to keep CRUD methods fresh in my mind, so what better way than to make a prototype/mock storefront?",
-			"related": ["mockup", "theme-challenge"],
+			"related": [
+				"mockup",
+				"theme-challenge"
+			],
 			"case-study": [
 				{
 					"section": [
@@ -368,7 +383,7 @@
 						},
 						{
 							"module": "generic-text-heading",
-							"content":"<h2>Introduction</h2><p>The goal of this project was to make a website with CRUD functionality using PHP. The website features a simple routing system using URL query strings, a UX friendly form for user input, and detail pages for each item. There are also functions that handle encoding PHP associative arrays into JSON (and decoding as needed). I chose to make a store where a user can purchase tea pets or customize their own, since steeping and enjoying different types of teas is a passion of mine."
+							"content": "<h2>Introduction</h2><p>The goal of this project was to make a website with CRUD functionality using PHP. The website features a simple routing system using URL query strings, a UX friendly form for user input, and detail pages for each item. There are also functions that handle encoding PHP associative arrays into JSON (and decoding as needed). I chose to make a store where a user can purchase tea pets or customize their own, since steeping and enjoying different types of teas is a passion of mine."
 						}
 					]
 				},
@@ -450,7 +465,10 @@
 			"alt": "Symbols of binoculars, a globe, and a walking person",
 			"preview-image": "images/explorations/find-a-guide/headline.jpg",
 			"description": "I gave myself one week to create a prototype using nothing but Vanilla javascript. I learned <em>a lot</em> through the process.",
-			"related": ["theme-challenge", "teapet-shop"],
+			"related": [
+				"theme-challenge",
+				"teapet-shop"
+			],
 			"case-study": [
 				{
 					"section": [
@@ -539,7 +557,10 @@
 			"alt": "A layout of multicolored squared put into a computer screen",
 			"preview-image": "images/explorations/site-mockup-to-code/headline.jpg",
 			"description": "Oftentimes developers have little choice over the images or mockup. It's our job to turn these designs into webpages.",
-			"related": ["theme-challenge", "find-a-guide"],
+			"related": [
+				"theme-challenge",
+				"find-a-guide"
+			],
 			"case-study": [
 				{
 					"section": [
@@ -559,7 +580,7 @@
 					"section": [
 						{
 							"module": "generic-text-heading",
-							"content": "<h2>Comparison</h2><p>You can view the original mockup in this <a href='https://www.figma.com/file/TN28dkJ1pQ04fRlb2mqAqm/Wireframe-Kit?type=design&node-id=0-1&mode=design' target ='_blank'>Figma</a>. Compare it to <a href='../public/featured-projects/site-mockup-to-code' target='_blank'>my version!</a></p>"
+							"content": "<h2>Comparison</h2><p>You can view the original mockup in this <a href='https://www.figma.com/file/TN28dkJ1pQ04fRlb2mqAqm/Wireframe-Kit?type=design&node-id=0-1&mode=design' target ='_blank'>Figma</a>. Compare it to <a href='featured-projects/site-mockup-to-code' target='_blank'>my version!</a></p>"
 						}
 					]
 				},
