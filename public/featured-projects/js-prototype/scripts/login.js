@@ -101,7 +101,6 @@ function attachLoginFormEventListener() {
   const loginForm = document.querySelector('.login')
 
   loginForm.addEventListener('click', (event) => {
-    event.preventDefault();
     if (event.target.matches('[data-set="login"]') ) {
       event.preventDefault();
       handleLogin();
