@@ -630,7 +630,7 @@ li.exercise-card a {
   grid-column: 1 / -1;
 }
 .home-header intro-area {
-  margin-top: 1.25em;
+  margin-top: 2em;
   grid-column: 1 / -1;
   grid-row: 2;
   display: flex;
