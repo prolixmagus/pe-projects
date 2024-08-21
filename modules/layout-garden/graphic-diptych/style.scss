@@ -5,7 +5,11 @@
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
+	picture {
+		max-width: 500px;
+	}
 }
+
 
 cta-text {
 	display: flex;
@@ -30,14 +34,15 @@ cta-text {
 
 	.graphic-diptych .diptych-wrapper {
 		flex-direction: row-reverse;
+		gap: 35px;
+
+		picture {
+			max-width: 500px;
+		}
 	}
 
 	cta-text {
-		width: 50%;
-	}
-
-	.graphic-diptych picture {
-		width: 80%;
+		align-items: flex-start;
 	}
 }
 

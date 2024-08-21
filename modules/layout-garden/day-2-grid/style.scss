@@ -1,10 +1,7 @@
 
-.day-2-grid > inner-column {
-	display: contents;
-}
 
 .article-grid-2 {
-	padding: 4rem 10px 1rem 10px;
+	padding: 2rem 10px 1rem 10px;
 }
 
 .article-grid-2-cards {
@@ -17,7 +14,7 @@
 }
 
 .article-grid-2-cards li {
-	padding-inline: 10px;
+	padding: 20px;
 	background-color: white;
 }
 
@@ -31,7 +28,7 @@ headline-section > inner-column {
 	width: 100%;
 }
 
-article-section{
+article-section > inner-column {
 	background-color: #b6009c;
 	display: block;
 	width: 100%;
@@ -56,16 +53,8 @@ article-section{
 		max-width: 250px;
 	}
 
-	article-section{
-		padding: 10px 10px 2rem 10px;
-	}
-
 	.article-grid-2-cards {
-		margin-top: -45px;
-	}
-
-	.article-grid-2-cards li {
-		padding-block: 10px;
+		transform: translateY(-65px);
 	}
 }
 

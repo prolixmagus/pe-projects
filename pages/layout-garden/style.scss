@@ -2,6 +2,11 @@
 	padding-block: 5em;
 }
 
+.layout-garden .module-showcase:first-of-type {
+	padding-top: 0;
+}
+
+
 .layout-divider  {
 	grid-column: 1 / -1;
 	transform: translateY(-10px);
@@ -22,7 +27,7 @@ case-study-wrapper {
 	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 15px;
 
 	.case-study-link {
 
@@ -42,13 +47,7 @@ module-showcase {
 	grid-column: 1 / -1;
 	display: grid;
 	grid-template-columns: subgrid;
-
-	margin-top: 2em;
-}
-.case-study-link + module-showcase {
-	margin-top: 1rem;
-	min-width: 100px;
-
+	margin-top: 1em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,11 +57,6 @@ module-showcase {
 	}
 
 	.case-study-link {
-		border: 2px solid var(--color-two);
 		color: var(--color-two);
-		&:hover {
-			border: 2px solid var(--color-three);
-			color: var(--color-three);
-		}
 	}
 }

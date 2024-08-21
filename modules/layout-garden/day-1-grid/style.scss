@@ -1,7 +1,11 @@
 
 .article-grid .article-headline {
 	padding-block: 1rem;
-	border-top: none;
+}
+
+.article-grid li:first-of-type {
+	padding-top: 0;
+	border-top: unset;
 }
 
 .article-grid li {

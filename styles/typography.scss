@@ -46,7 +46,9 @@
 }
 
 .layout-voice {
-  font-family: "Inconsolata", "monospace";
+  font-family: "Fredoka";
+  text-transform: uppercase;
+  font-weight: 200;
   font-size: clamp(1.5rem, 8vw, 1.75rem);
     letter-spacing: .02em;
 }
