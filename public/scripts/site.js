@@ -6,9 +6,6 @@ var main = document.querySelector('main');
 var windowCover = document.createElement('div')
 
 const siteLogo = document.querySelector('.site-logo');
-const siteFirstName = document.querySelector('.site-logo .firstname');
-const siteSecondName = document.querySelector('.site-logo .lastname');
-const fishBody = document.querySelector('.site-logo .fish-body');
 
 
 
@@ -30,15 +27,18 @@ window.addEventListener('resize', (event) => {
 
 function randomFishColor() {
 	const colorArray = ['#E9994B', '#BE7DB4', '#60D3AC'];
-	const colorIndex = Math.floor(Math.random() *colorArray.length);
+	const colorIndex = Math.floor(Math.random() * colorArray.length);
 	return colorArray[colorIndex];
 }
 
 function addFishColor() {
-	const elements = [siteFirstName, siteSecondName, fishBody];
+	// const elements = [siteFirstName, siteSecondName, fishBody];
+	const elements = ['.firstname', '.lastname', '.fish-body'];
 	elements.forEach((element) => {
-		element.style.fill = randomFishColor();
+		document.querySelector('.site-logo ' + element).style.fill = randomFishColor();
 	})
 }
 
-siteLogo.addEventListener('mouseover', addFishColor);
+
+siteLogo.addEventListener('mouseenter', addFishColor);
+
