@@ -106,6 +106,7 @@ sup {
 }
 /* S setings */
 html {
+  --highlight-color: null;
   --hue: 0;
   --primary: 165;
   /* teal */
@@ -114,7 +115,7 @@ html {
   --accent-three: 32;
   /* orange */
   /* neutral */
-  --white: hsl(var(--hue), 0%, 91%);
+  --white: hsl(var(--hue), 0%, 98%);
   --black: hsl(var(--hue), 0%, 7%);
   --black-shadow: hsla(var(--hue), 0%, 0%, 0.4);
   --paper-medium: hsl(var(--hue), 0%, 96%);
@@ -149,7 +150,7 @@ html {
     /* dark gray */
     --background-dark: hsl(var(--hue), 0%, 7%);
     /*very dark gray*/
-    --ink: var(--white);
+    --ink: hsl(var(--hue), 0%, 98%);
     --ink-light: hsla(var(--hue), 0%, 100%, 80%);
     --caption: hsla(var(--hue), 0%, 100%, 60%);
     --color-primary-light: hsl(var(--primary), 35%, 40%, 0.9);
@@ -288,6 +289,9 @@ h3 + p {
 }
 .light-text {
   opacity: 0.7;
+}
+::selection {
+  background: var(--highlight-color);
 }
 @media (prefers-color-scheme: dark) {
   h1, h2 {
@@ -2369,9 +2373,6 @@ article-section > inner-column {
   }
 }
 @media (min-width: 1000px) {
-  .day-2-grid {
-    background-color: #121212;
-  }
   .article-grid-2-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }

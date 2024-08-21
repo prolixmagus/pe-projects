@@ -1,5 +1,7 @@
 html {
 
+	--highlight-color: null;
+
 	--hue: 0;
 	--primary: 165; /* teal */
 	--accent-two: 308; /* purple */
@@ -7,7 +9,7 @@ html {
 
 	/* neutral */
 
-	--white: hsl(var(--hue), 0%, 91%);
+	--white: hsl(var(--hue), 0%, 98%);
 
 	--black: hsl(var(--hue), 0%, 7%);
 	--black-shadow: hsla(var(--hue), 0%, 0%, 0.4);
@@ -48,7 +50,7 @@ html {
 	--background-light: hsl(var(--hue), 0%, 16%); /* dark gray */
 	--background: hsl(var(--hue), 0%, 12%); /* dark gray */
 	--background-dark: hsl(var(--hue), 0%, 7%); /*very dark gray*/
-	--ink: var(--white);
+	--ink: hsl(var(--hue), 0%, 98%);
 	--ink-light: hsla(var(--hue), 0%, 100%, 80%);
 	--caption: hsla(var(--hue), 0%, 100%, 60%);
 

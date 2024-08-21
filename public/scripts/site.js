@@ -39,6 +39,21 @@ function addFishColor() {
 	})
 }
 
+(function() {
+	let colors = ['#5DD5B7', '#E8994A', '#BE7DB5'];
+
+	function rotateHighlightColor(array) {   
+		const color = array.shift();
+		//selects root element
+    	document.documentElement.style.setProperty("--highlight-color", color);
+    	array.push(color);
+    }
+
+	window.addEventListener('mousedown', () => {
+		rotateHighlightColor(colors)
+	})
+})();
+
 
 siteLogo.addEventListener('mouseenter', addFishColor);
 

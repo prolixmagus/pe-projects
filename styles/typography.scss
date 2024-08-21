@@ -112,6 +112,10 @@ h3 + p {
   opacity: 0.7;
 }
 
+::selection {
+  background: var(--highlight-color);
+}
+
 @media (prefers-color-scheme: dark) {
   h1, h2 {
     color: var(--ink);
