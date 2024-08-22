@@ -1,8 +1,11 @@
-typeface {
+.typeface {
 	display: block;
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
+.typeface:nth-of-type(2) {
+	margin-top: 2em;
+}
 
 .lettering { 
 	display: grid;
@@ -17,6 +20,7 @@ typeface {
 voice ul {
 	display: flex;
 	flex-direction: column;
+	margin-top: 2em;
 	gap: 2em;
 }
 
