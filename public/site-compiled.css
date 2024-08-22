@@ -1429,7 +1429,8 @@ colophon li {
 .fredoka-alphabet ul {
   border: var(--border) solid var(--color-three);
   border-radius: var(--corners);
-  padding: 1rem;
+  padding: 2rem;
+  margin-top: 1em;
 }
 .fredoka-alphabet li {
   font-family: "Fredoka";
@@ -1438,7 +1439,8 @@ colophon li {
 .noto-alphabet ul {
   border: var(--border) solid var(--color-two);
   border-radius: var(--corners);
-  padding: 1rem;
+  padding: 2rem;
+  margin-top: 1em;
 }
 .noto-alphabet li {
   font-family: "Noto Sans";
@@ -1454,7 +1456,7 @@ colophon li {
   margin-top: 1em;
 }
 .typeface:nth-of-type(2) {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 .lettering {
   display: grid;
@@ -1468,7 +1470,7 @@ colophon li {
 voice ul {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 3em;
   gap: 2em;
 }
 lettering-voice {

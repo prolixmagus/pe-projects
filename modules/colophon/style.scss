@@ -11,7 +11,8 @@ colophon li {
 	& ul {
 		border: var(--border) solid var(--color-three);
 		border-radius: var(--corners);
-		padding: 1rem;
+		padding: 2rem;
+		margin-top: 1em;
 	}
 	& li {
 		font-family: "Fredoka";
@@ -23,7 +24,8 @@ colophon li {
 	& ul {
 		border: var(--border) solid var(--color-two);
 		border-radius: var(--corners);
-		padding: 1rem;
+		padding: 2rem;
+		margin-top: 1em;
 	}
 	& li {
 		font-family: "Noto Sans";

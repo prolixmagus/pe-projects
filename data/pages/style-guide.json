@@ -4,10 +4,10 @@
 	"meta-description": "A style guide showcasing modules, typography, and design choices.",
 	"sections": [
 		{
-			"module": "generic-text-heading"
+			"module": "colophon"
 		},
 		{
-			"module": "colophon"
+			"module": "generic-text-heading"
 		},
 		{
 			"module": "common-figure",
