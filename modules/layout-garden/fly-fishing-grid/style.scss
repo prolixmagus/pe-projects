@@ -8,6 +8,12 @@
 
 .fishing-title {
 	grid-column: 5 / 9;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: "Fredoka", sans-serif;
+	text-align: center;
+	opacity: .8;
+	color: hsla(var(--hue), 0%, 0%, .8);
 }
 
 .fly-fishing-grid li {
@@ -19,21 +25,12 @@
 	border-bottom: none;
 }
 
-.fly-fishing-grid h2 {
-	font-size: 2rem;
-	text-transform: uppercase;
-	font-family: "Fredoka", sans-serif;
-	text-align: center;
-	opacity: .8;
-	color: hsla(var(--hue), 0%, 0%, .8);
-}
-
 @media (prefers-color-scheme: dark) {
 	section.page-content.layout .fly-fishing-grid {
 	background-color: #FBF7F5;
 	}
 
-	.fly-fishing-grid h2{
+	.fishing-title{
 		color: var(--color-primary);
 	}
 }
