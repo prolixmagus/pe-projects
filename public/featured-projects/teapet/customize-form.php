@@ -11,7 +11,6 @@ $petNameError = false;
 $customTeapet = "";
 $id = "";
 
-
 if ( isset($_POST["submitted"]) ) {
 
 	//setting variables for $_POST key => values
