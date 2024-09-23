@@ -593,6 +593,72 @@
 					]
 				}
 			]
+		},
+		{
+			"id": "8845bbe4-c208-4129-96f4-2ababc04929d",
+			"title": "Voiceover Profile",
+			"slug": "voiceover",
+			"published": "22 Sep 2024",
+			"updated": "22 Sep 2024",
+			"alt": "Jelene Dela Cruz: Voiceover",
+			"preview-image": "images/explorations/voiceover-profile/headline.jpg",
+			"description": "I designed and deployed a website for a voiceover artist",
+			"related": [
+				"theme-challenge",
+				"mockup"
+			],
+			"case-study": [
+				{
+					"section": [
+						{
+							"module": "common-figure",
+							"image": "images/explorations/voiceover-profile/headline.jpg",
+							"alt": "Jelene Dela Cruz: Voiceover",
+							"headline": true
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Introduction</h2><p>Recently, my wife - voiceover actress and artist Jelene Dela Cruz - recorded a commercial demo to send out to agents. Aside from skill and a hearty social media presence, most agencies also expect talent to have a personal website that showcases any promotional materials.</p><p>Jelene prepared a mood board heavily inspired by the French New Wave aesthetic of the late 1950’s. This style consists of jocose, decorative fonts, where shadowed black-and-white photographs contrast bold pastels.</p>"
+						},
+						{
+							"module": "figure-list",
+							"double-figure": true,
+							"figure": [
+								{
+									"image": "images/explorations/voiceover-profile/jelene-mood.jpg",
+									"figCaption": "Familiar square and rectangle farms",
+									"alt": "An aerial shot of square and rectangle farm plots"
+								},
+								{
+									"image": "images/explorations/voiceover-profile/jelene-meta.jpg",
+									"figCaption": "The meta preview image that appears up when the site is shared",
+									"alt": "An aerial shot of circular field plots"
+								}
+							]
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Design</h2><p>For the headings, I chose the typeface Massenet  with a semi-bold weight. The designer describes the font as a “revival of Old Style Grotesque Condensed” that is a “sans-serif font that sports a nice combination of thin and thick strokes.” For the copy, I chose Poppins, a legible geometric sans-serif that rounds out (pun intended) the text while highlighting the modern elements of the Grotesque.</p>"
+						},
+						{
+							"module": "generic-text-heading",
+							"content": "<p>Before proceeding with any layout design, I wanted to understand the goals of the website. First goal: for agents to hear her demo. Second goal: showcase her clients. Third goal: contact. Rather than having her work on a separate page, I wanted everything esential to appear upon page load. That meant a large above-the-fold hero with the demo, a photo, and her name.</p><p>In all honesty, that could have been the entire website - the simpler the better! But we added an About Me section, Client section, and of course, where to contact her. No need for filling out any forms - that would just create unnecessary friction for the agencies, as well as send off a ‘formal, corporate’ message.</p>"
+						}
+					]
+				},
+				{
+					"section": [
+						{
+							"module": "generic-text-heading",
+							"content": "<h2>Challenges</h2><p>Designing and structuring the website went smoothly, but I faced minor challenges when it came to adding that last 5% that really makes a website stand out. There were a lot of embellishments that required absolute positioning (or grid stacking hacks), and I had to fine-tune this positioning to make the site responsive at reasonable breakpoints. Adding the audio element was not an issue, but I learned that each browser generates their own styling for the element, and to customize it requires a complete re-creation of the element + hooking up the media player functionality with Javascript. I would like to explore this at some point, but as long as the content was playing, the website’s goal was accomplished.</p><p>Most of all, it was extremely fun to collaborate with a partner on a project, especially someone as close as a spouse. I’ve heard mixed reactions to couples working together, but I feel that the differences in our creative and communicative approaches enhanced the project rather than paralyzed it.</p><p>The only thing left to do is for me to beseech you - visit <a href='http://jelenedlc.com'>jelenedlc.com!</a></p>"
+						}
+					]
+				}
+			]
 		}
 	]
 }
