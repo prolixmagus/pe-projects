@@ -12,44 +12,33 @@ function read_page_data($page) {
 	return $pageData;
 }
 
-// CRUD Functions
-function read($path) {
-	$json = file_get_contents($path);
-	return json_decode($json, true);
+
+// getting updated time
+
+function getLatestUpdateTime($dir) {
+    $latestTime = 0;
+    $files = scandir($dir);
+
+    foreach ($files as $file) {
+        if ($file !== '.' && $file !== '..') {
+            $filepath = $dir . '/' . $file;
+            if (is_dir($filepath)) {
+                // Recursive call for directories
+                $latestTime = max($latestTime, getLatestUpdateTime($filepath));
+            } else {
+                if (is_file($filepath)) {
+                    $modTime = filemtime($filepath);
+                    if ($modTime > $latestTime) {
+                        $latestTime = $modTime;
+                    }
+                }
+            }
+        }
+    }
+
+    // Return the latest timestamp or null if no valid timestamp was found
+    return $latestTime > 0 ? $latestTime : null;
 }
-
-function create($database, $data) {
-	$database[] = $data;
-	return $database;
-}
-
-function save($path, $database) {
-	$encodedJson = json_encode($database);
-	file_put_contents($path, $encodedJson);
-}
-
-function update(&$database, $this_data_id, $new_data) {
-	foreach ($database as &$data) {
-		if ($data["id"] == $this_data_id) {
-			$data = $new_data;
-			break;
-		}
-	}
-	return $database;
-}
-
-function delete($database, $data_id) {
-	$filtered = [];
-	
-	foreach ($database as $data) {
-		if ($data["id"] !== $data_id) {
-			array_push($filtered, $data);
-			}
-		}
-	return $filtered;
-	}
-
-// reading database for exercises for programmers files
 
 // getting exercise for programmers page for router
 
@@ -115,11 +104,46 @@ function get_exercise_scripts($slug) {
 	}
 }
 
-// sorting by closest date 
-
 // for linking to top level files on local server
 function get_file($path) {
 	return dirname(__FILE__) . "/" . $path;
+}
+
+// CRUD Functions
+function read($path) {
+	$json = file_get_contents($path);
+	return json_decode($json, true);
+}
+
+function create($database, $data) {
+	$database[] = $data;
+	return $database;
+}
+
+function save($path, $database) {
+	$encodedJson = json_encode($database);
+	file_put_contents($path, $encodedJson);
+}
+
+function update(&$database, $this_data_id, $new_data) {
+	foreach ($database as &$data) {
+		if ($data["id"] == $this_data_id) {
+			$data = $new_data;
+			break;
+		}
+	}
+	return $database;
+}
+
+function delete($database, $data_id) {
+	$filtered = [];
+	
+	foreach ($database as $data) {
+		if ($data["id"] !== $data_id) {
+			array_push($filtered, $data);
+			}
+		}
+	return $filtered;
 }
 
 // formatting php highlight code

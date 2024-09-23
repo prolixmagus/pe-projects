@@ -20,7 +20,14 @@
 	$metaTitle = $pageData['title'] ?? "Home: Jeremy Fishman's Portfolio";
 	$metaDescription = $pageData['meta-description'] ?? "Teacher. Web Developer. Linguist. Human.";
 	$metaImage = $pageData['meta-image'] ?? "https://peprojects.dev/alpha-8/public/images/meta-fish-card.jpg";
-	$metaUpdate = $pageData['meta-updated'] ?? "Monday, September 23rd, 2024";
+
+
+	$metaUpdate = getLatestUpdateTime(__DIR__);
+	if ($metaUpdate !== null) {
+		$metaUpdate = date('Y-m-d H:i:s', $metaUpdate);
+	} else {
+		$metaUpdate = "No time found";
+	}
 ?>
 
 
@@ -42,7 +49,7 @@
 		<title><?=$metaTitle?></title>
 
 		<meta name='description' content='<?=$metaDescription?>'>
-		<meta name="Last-Modified" content='<?=$metaUpdate?>'>
+		<meta name="last-modified" content='<?=$metaUpdate?>'>
 		
 		<meta property='og:title' content='<?=$metaTitle?>'>
 		<meta property='og:type' content='article'>
