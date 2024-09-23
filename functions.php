@@ -37,7 +37,7 @@ function getLatestUpdateTime($dir) {
     }
 
     // Return the latest timestamp or null if no valid timestamp was found
-    return $latestTime > 0 ? $latestTime : null;
+    return $latestTime > 0 ? $latestTime - 25200 : null;
 }
 
 // getting exercise for programmers page for router

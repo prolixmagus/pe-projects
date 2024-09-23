@@ -1,6 +1,6 @@
 <footer class='site-footer section-grid'>
 	<inner-column class='inner-grid'>
 		<?php include('../modules/site-map/template.php')?>
-		<p class='quiet-voice caption updated-time'>Last Updated: <?=$metaUpdate?></p>
+		<p class='quiet-voice caption updated-time'>Last Updated: <?=$metaUpdate?> PST</p>
 	</inner-column>
 </footer>
