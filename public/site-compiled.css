@@ -955,6 +955,7 @@ module-showcase {
     overflow-x: auto;
     gap: 2em;
     padding-inline: 1em;
+    padding-bottom: 2em;
   }
   .timeline-wrapper li {
     max-width: 500px;

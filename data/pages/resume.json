@@ -2,7 +2,7 @@
 	"title": "Résumé",
 	"slug": "Résumé",
 	"meta-description": "A timeline of my professional experience as a teacher and web developer",
-	"intro": "The following puts my work experience in a narrative context. <br /> If you prefer, here is my <a href='docs/jeremy-fishman-resume.pdf'>traditional résumé</a>.",
+	"intro": "The following puts my work experience in a narrative context. <br /> If you prefer, here is my <a href='docs/jeremy-fishman-resume.pdf' target='resume'>traditional résumé</a>.",
 	"section": [
 		{
 			"year": "Future",
@@ -118,4 +118,3 @@
 		}
 	]
 }
-
