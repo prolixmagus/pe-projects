@@ -1,0 +1,12 @@
+.formatted-video {
+	padding-block: 1.5em;
+	grid-column: 1 / -1;
+
+	display: grid;
+}
+
+@media (min-width: 768px) {
+	.formatted-video {
+		grid-column: 2 / 12;
+	}
+}

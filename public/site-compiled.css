@@ -1419,7 +1419,7 @@ figure {
     grid-column: 2 / 11;
   }
 }
-/*style-ge*/
+/*style-guide*/
 colophon {
   display: grid;
   grid-column: 1 / -1;
@@ -1536,7 +1536,7 @@ code {
   font-weight: 500;
   font-size: 1.1rem;
 }
-/*work moes*/
+/*work modules*/
 .recent-articles {
   grid-column: 1 / -1;
 }
@@ -1741,6 +1741,16 @@ details[open] > summary::after {
 }
 @media (min-width: 768px) {
   .formatted-codepen {
+    grid-column: 2 / 12;
+  }
+}
+.formatted-video {
+  padding-block: 1.5em;
+  grid-column: 1 / -1;
+  display: grid;
+}
+@media (min-width: 768px) {
+  .formatted-video {
     grid-column: 2 / 12;
   }
 }
