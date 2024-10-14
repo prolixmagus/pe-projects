@@ -666,8 +666,8 @@
 			"slug": "talk-with-derek",
 			"published": "5 Oct 2024",
 			"updated": "10 Oct 2024",
-			"alt": "A fish and the logo for Perpetual Education in a fishbowl",
-			"preview-image": "images/explorations/orange-landscape.jpg",
+			"alt": "A fish logo next to Perpetual Education's logo",
+			"preview-image": "images/explorations/talk-with-derek/headline.jpg",
 			"description": "I had a conversation with Derek Wood - senior dev/designer and founder of Perpetual Education - about learning web development.",
 			"related": [
 				"theme-challenge",
@@ -678,13 +678,13 @@
 					"section": [
 						{
 							"module": "common-figure",
-							"image": "images/explorations/orange-landscape.jpg",
-							"alt": "A fish and the logo for Perpetual Education in a fishbowl",
+							"image": "images/explorations/talk-with-derek/headline.jpg",
+							"alt": "A fish logo next to Perpetual Education's logo",
 							"headline": true
 						},
 						{
 							"module": "generic-text-heading",
-							"content": "<h2>Introduction</h2><p>I‘ve been working with Derek for over a year refining my “designer vision”, as I like to call seeing witih intention. I feel more confidant making deliberate choices when choosing typography, developing a visual language, or creating a design system that harmonizes with my code structure. Recently, he asked if I wanted to record a conversation for the <a href='https://perpetual.education/'>Perpetual Education</a> newsletter where we talked about that process, as well as my thoughts about the pedagogy behind “learning to code”. "
+							"content": "<h2>Introduction</h2><p>I‘ve been working with Derek for over a year learning how to become a better web developer and designer. I feel more confidant making deliberate choices when choosing typography, developing a visual language, or creating a design system that harmonizes with my code structure. Recently, he asked if I wanted to record a conversation for the <a href='https://perpetual.education/'>Perpetual Education</a> newsletter where we talked about that process, as well as my thoughts about the pedagogy behind “learning to code”.</p>"
 						},
 						{
 							"module": "video-embed",
