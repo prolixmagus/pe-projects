@@ -1,59 +1,72 @@
-var hamburgerMenu = document.querySelector('.hamburger');
-var userMenu = document.querySelector('.site-header nav .user-menu')
-var body = document.querySelector('body')
-var close = document.querySelector('.site-header nav button')
-var main = document.querySelector('main');
-var windowCover = document.createElement('div')
+var hamburgerMenu = document.querySelector(".hamburger");
+var userMenu = document.querySelector(".site-header nav .user-menu");
+var body = document.querySelector("body");
+var close = document.querySelector(".site-header nav button");
+var main = document.querySelector("main");
+var windowCover = document.createElement("div");
 
-const siteLogo = document.querySelector('.site-logo');
+const siteLogo = document.querySelector(".site-logo");
 
+//event listeners
 
+hamburgerMenu.addEventListener("click", (event) => {
+    userMenu.classList.add("small-menu-open");
+    body.classList.add("menu-open");
+});
 
-hamburgerMenu.addEventListener('click', (event) => {
-    userMenu.classList.add('small-menu-open');
-    body.classList.add('menu-open')
-})
+close.addEventListener("click", (event) => {
+    userMenu.classList.remove("small-menu-open");
+    body.classList.remove("menu-open");
+});
 
-close.addEventListener('click', (event) => {
-	userMenu.classList.remove('small-menu-open');
-	body.classList.remove('menu-open')
-})
+window.addEventListener("resize", (event) => {
+    userMenu.classList.remove("small-menu-open");
+    body.classList.remove("menu-open");
+});
 
-window.addEventListener('resize', (event) => {
-	userMenu.classList.remove('small-menu-open');
-	body.classList.remove('menu-open')
-})
-
+window.addEventListener("mousedown", () => {
+    const highlightColor = "#5DD5B7";
+    document.documentElement.style.setProperty(
+        "--highlight-color",
+        highlightColor
+    );
+});
 
 function randomFishColor() {
-	const colorArray = ['#E9994B', '#BE7DB4', '#60D3AC'];
-	const colorIndex = Math.floor(Math.random() * colorArray.length);
-	return colorArray[colorIndex];
+    const colorArray = ["#E9994B", "#BE7DB4", "#60D3AC"];
+    const colorIndex = Math.floor(Math.random() * colorArray.length);
+    return colorArray[colorIndex];
 }
 
 function addFishColor() {
-	// const elements = [siteFirstName, siteSecondName, fishBody];
-	const elements = ['.firstname', '.lastname', '.fish-body'];
-	elements.forEach((element) => {
-		document.querySelector('.site-logo ' + element).style.fill = randomFishColor();
-	})
+    // const elements = [siteFirstName, siteSecondName, fishBody];
+    const elements = [".firstname", ".lastname", ".fish-body"];
+    elements.forEach((element) => {
+        document.querySelector(".site-logo " + element).style.fill =
+            randomFishColor();
+    });
 }
 
-(function() {
-	let colors = ['#5DD5B7', '#E8994A', '#BE7DB5'];
+siteLogo.addEventListener("mouseenter", addFishColor);
 
-	function rotateHighlightColor(array) {   
-		const color = array.shift();
-		//selects root element
-    	document.documentElement.style.setProperty("--highlight-color", color);
-    	array.push(color);
-    }
+/* --randomized highlight closure--
 
-	window.addEventListener('mousedown', () => {
-		rotateHighlightColor(colors)
-	})
-})();
+	(function() {
+		//teal - #5DD5B7
 
 
-siteLogo.addEventListener('mouseenter', addFishColor);
+		let colors = ['#5DD5B7', '#E8994A', '#BE7DB5'];
 
+		function rotateHighlightColor(array) {   
+			const color = array.shift();
+			//selects root element
+			document.documentElement.style.setProperty("--highlight-color", color);
+			array.push(color);
+		}
+
+
+		window.addEventListener('mousedown', () => {
+			rotateHighlightColor(colors)
+		})
+	})();
+*/
