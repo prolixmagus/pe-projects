@@ -28,8 +28,8 @@
 					<inner-column>
 						<?php include("templates/modules/" . $section['module'] . "/template.php");?>
 					</inner-column>
-					<?php if ($section['module'] == "cta") { ?>
-						<?php include('templates/components/slice.php')?>
+					<?php if ($section['module'] == "cta") { 
+						include('templates/components/slice.php')?>
 					<?php } ?>
 				</section>
 			<?php } ?>
