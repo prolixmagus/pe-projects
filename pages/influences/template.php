@@ -13,7 +13,7 @@
 		<ul>
 			<?php foreach($pageData['creator-list'] as $creator) { ?>
 				<?php if(isset($creator['featured'])) { ?>
-					<li>
+					<li class="artist-card-container">
 						<?php include('../modules/artist-figure/template.php')?>
 					</li>
 				<?php } ?>

@@ -13,11 +13,11 @@
 		<?php include($category)?>
 	</picture> -->
 
-	<picture>
+	<picture class="front-card">
 		<img src='<?=$figure?>' alt='<?=$alt?>'>
 	</picture>
 
-	<figcaption>
+	<figcaption class="back-card">
 		<cite><?=$figCaption?></cite>
 		<p class='quiet-voice caption'><?=$creatorName?></p>
 	</figcaption>

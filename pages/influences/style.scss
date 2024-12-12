@@ -15,6 +15,14 @@
 
 }
 
+/* see artist-card module */
+
+.artist-card-container {
+	perspective: 600px;
+	min-width: 250px;
+	min-height: 250px;
+}
+
 .current {
 	background-color: var(--sand-yellow)
 }
@@ -23,14 +31,36 @@
 	font-style: italic;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 332px) {
+	.artist-card-container {
+		width: 200px;
+	}
+}
+
+@media (min-width: 375px) {
+	.artist-card-container {
+		width: 250px;
+	}
+}
+
+@media (min-width: 571px) {
 	.influences ul {
 		grid-column: 2 / 11;
 		grid-template-columns: repeat(2, 1fr);
+
+		.artist-card-container {
+			width: 200px;
+		}
 	}
 
 	.fair-use {
 		grid-column: 2 / 11;
+	}
+}
+
+@media (min-width: 700px) {
+	.artist-card-container {
+		width: 325px;
 	}
 }
 

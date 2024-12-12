@@ -1,6 +1,29 @@
+
+.artist-card-container:hover .artist-card {
+	transform: rotateY(180deg);
+}
+
+.front-card, .back-card {
+	position: absolute;
+	width: 100%;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	
+}
+
+.back-card {
+	transform: rotateY(180deg);
+}
+
 .artist-card {
+	border: 2px solid green;
 	position: relative;
 	height: 100%;
+	width: 100%;
+	transition: .4s cubic-bezier(.37,.18,.5,1.16);
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 	& picture {
 		aspect-ratio: 1 / 1;
 		&img {
@@ -10,9 +33,12 @@
 		}
 	}
 	& figcaption {
-		margin-top: 4px;
+		height: 100%;
 		display: flex;
+		margin: 0 auto;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
 		.quiet-voice.caption {
 			margin-top: 0;
@@ -29,6 +55,8 @@
 	grid-column: 2 / 5;
 	}
 }
+
+
 
 @media (prefers-color-scheme: dark) {
 	cite {
