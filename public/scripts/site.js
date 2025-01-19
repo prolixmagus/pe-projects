@@ -24,14 +24,6 @@ window.addEventListener("resize", (event) => {
     body.classList.remove("menu-open");
 });
 
-window.addEventListener("mousedown", () => {
-    const highlightColor = "#5DD5B7";
-    document.documentElement.style.setProperty(
-        "--highlight-color",
-        highlightColor
-    );
-});
-
 function randomFishColor() {
     const colorArray = ["#E9994B", "#BE7DB4", "#60D3AC"];
     const colorIndex = Math.floor(Math.random() * colorArray.length);

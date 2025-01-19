@@ -106,7 +106,6 @@ sup {
 }
 /* S setings */
 html {
-  --highlight-color: null;
   --hue: 0;
   --primary: 165;
   /* teal */
@@ -156,6 +155,8 @@ html {
     --color-primary-light: hsl(var(--primary), 35%, 40%, 0.9);
     --color-secondary: hsl(var(--secondary), 45%, 65%);
     --color-secondary-light: hsl(38, 10%, 60%);
+    --highlight-color:
+	;
   }
 }
 /* S tructure */
@@ -291,7 +292,7 @@ h3 + p {
   opacity: 0.7;
 }
 ::selection {
-  background: var(--highlight-color);
+  background: #1A3A4B;
 }
 @media (prefers-color-scheme: dark) {
   h1, h2 {
@@ -1311,20 +1312,23 @@ logo-container {
   flex-direction: column;
   background-color: var(--paper-medium);
 }
-.site-header .user-menu button {
+.site-header .user-menu .close-button-item {
   display: none;
 }
-.site-header .user-menu.small-menu-open button {
+.site-header .user-menu.small-menu-open .close-button-item {
   display: block;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  z-index: 99;
+  top: 5px;
+  right: 5px;
+}
+.site-header .user-menu.small-menu-open .close-button-item button {
   border: unset;
-  background-color: var(--paper-medium);
+  background-color: transparent;
   cursor: pointer;
   font-size: 1rem;
 }
-.site-header .user-menu.small-menu-open button:hover {
+.site-header .user-menu.small-menu-open .close-button-item button:hover {
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-decoration-color: var(--color-three);
@@ -1391,7 +1395,7 @@ logo-container {
   .site-header .user-menu.small-menu-open {
     background-color: var(--background-light);
   }
-  .site-header .user-menu.small-menu-open button {
+  .site-header .user-menu.small-menu-open .close-button-item button {
     background-color: inherit;
     color: var(--white);
   }

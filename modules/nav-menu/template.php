@@ -26,7 +26,9 @@
 
 <nav>
 	<ul class='user-menu'>
-		<button type='button' id='user-menu-close' aria-label='Aria x close'>x close</button>
+		<li class='close-button-item'>
+			<button type='button' id='user-menu-close' aria-label='Aria x close'>x close</button>
+		</li>
 
 		<?php foreach($nav_links as $link) { 
 				$link_page = $link['page'] ?? "page link"; 
