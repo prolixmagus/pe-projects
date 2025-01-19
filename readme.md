@@ -1,6 +1,6 @@
 # Personal Website
 
-Welcome to my personal website! So far, it has gone through four structural iterations.
+Welcome to my personal website! So far, it has gone through four structural iterations:
 
 1. Single page HTML with inline-styles sans flex or grid
 2. Several HTML pages with linked CSS stylesheets using flex
@@ -27,20 +27,26 @@ To make sure SASS compiles the SCSS into a single file, run the script `php comp
 
 #### Work Page
 
--   [ ] Fix breakpoints for grid / article card page
+-   [x] Fix breakpoints for grid / article card page
 
--   [ ] Work articles "key points"
-    -   [ ] Theme Challenge
-    -   [ ] Bottles in the SKy
+-   [x] Work articles "key points"
+    -   [x] Theme Challenge
+    -   [x] Bottles in the Sky
     -   [x] Death and Design
 
 #### Projects
 
--   [ ] Projects preview images
+-   [x] Projects preview images
+
+#### Resume
+
+-   [x] Update Resume PDF
+-   [ ] Add Center Centre to Timeline
 
 #### Influences
 
 -   [ ] Add more Influences artists
+-   [ ] Add links in the <figcaption> portion of the flipcard
 
 #### Contact
 
