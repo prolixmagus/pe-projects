@@ -3,6 +3,24 @@
 <?php
 	$pageTitle = $pageData['title'];
 	$pageIdea = $pageData['intro'];
+
+	function wikipediaEntryExists($title) {
+		$url = "https://en.wikipedia.org/w/api.php?action=query&titles=" . urlencode($title) . "&format=json";
+		$response = file_get_contents($url);
+		
+		if (!$response) {
+			return false;
+		}
+
+		$data = json_decode($response, true);
+		$wiki_page_ids = $data["query"]["pages"];
+		$the_wiki_id = array_key_first($wiki_page_ids);
+		if ($the_wiki_id == -1) {
+			return false;
+		} else {
+			return true;
+		}
+	}
 ?>
 
 

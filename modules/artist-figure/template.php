@@ -3,8 +3,10 @@
 	$figCaption = $creator['figCaption'] ?? "Name of the Work.";
 	$creatorName = $creator['creator'] ?? "Author, musician, director, artist...";
 	$category = $creator['icon'] ?? '../icons/headphones-icon.svg';
-	$alt = $creator['alt'] ?? 'alt-text'
-	
+	$alt = $creator['alt'] ?? 'alt-text';
+
+	$parsedCreator = str_replace(" ", "_", $creatorName);
+
 	?>
 
 
@@ -19,7 +21,12 @@
 
 	<figcaption class="back-card">
 		<cite><?=$figCaption?></cite>
-		<p class='quiet-voice caption'><?=$creatorName?></p>
+		<?php if (wikipediaEntryExists($creatorName)) { ?>
+			<a class='quiet-voice caption' href="https://en.wikipedia.org/wiki/<?=$parsedCreator?>" target="_blank"><?=$creatorName?></a>
+			<?php } else { ?>
+				<p class='quiet-voice caption'><?=$creatorName?></p>
+			<?php } 
+		?>
 	</figcaption>
 
 </figure>
