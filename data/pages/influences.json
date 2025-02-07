@@ -16,7 +16,7 @@
 			"image": "images/influences/web-type.jpg",
 			"figCaption": "On Web Typography",
 			"creator": "Jason Santa Maria",
-			"featured": true, 
+			"featured": true,
 			"icon": "../icons/book-icon.svg",
 			"alt": "Picture of On Web Typography by Jason Santa Maria"
 		},
@@ -40,7 +40,7 @@
 			"image": "images/influences/katamari.jpg",
 			"figCaption": "Katamari Damacy",
 			"creator": "Keita Takahashi",
-			"featured": true, 
+			"featured": true,
 			"icon": "../icons/film-icon.svg",
 			"alt": "A skyscraper-sized ball of everyday objects rolls under a rainbow"
 		},
@@ -48,24 +48,23 @@
 			"image": "images/influences/mingus.jpg",
 			"figCaption": "Mingus Ah Um",
 			"creator": "Charles Mingus",
-			"featured": true, 
+			"featured": true,
 			"icon": "../icons/headphones-icon.svg",
 			"alt": "Kaledosocopic shapes similar to Kandinsky artwork."
-
 		},
 		{
 			"image": "images/influences/miro.jpg",
 			"figCaption": "Part of “Poligrafa XV Anos”",
 			"creator": "Joan Miró",
-			"featured": true, 
+			"featured": true,
 			"icon": "../icons/book-icon.svg",
 			"alt": "An abstract interpretation of a primary colored man with thick ink blots"
-		},		
+		},
 		{
 			"image": "images/influences/jaguar-ii.jpg",
 			"figCaption": "Jaguar II",
-			"creator": "Victoria Monet",
-			"featured": true, 
+			"creator": "Victoria Monét",
+			"featured": true,
 			"icon": "../icons/headphones-icon.svg",
 			"alt": "A woman emerging from a dark lake"
 		},
@@ -73,7 +72,7 @@
 			"image": "images/influences/dr-who.jpg",
 			"figCaption": "Doctor Who",
 			"creator": "BBC",
-			"featured": true, 
+			"featured": true,
 			"icon": "../icons/film-icon.svg",
 			"alt": "A blue polic box traveling through time and space"
 		},
@@ -81,7 +80,7 @@
 			"image": "images/influences/pulsar.jpg",
 			"figCaption": "Pulsar",
 			"creator": "L'Impératrice",
-			"featured": true, 
+			"featured": true,
 			"icon": "../icons/headphones-icon.svg",
 			"alt": "A butterfly rests on the index finger of an outstretched chrome hand"
 		},
@@ -89,7 +88,7 @@
 			"image": "images/influences/code-book.jpg",
 			"figCaption": "The Code Book",
 			"creator": "Simon Singh",
-			"featured": true, 
+			"featured": true,
 			"icon": "../icons/book-icon.svg",
 			"alt": "Picture of The Code Book by Simon Singh"
 		},
@@ -97,11 +96,9 @@
 			"image": "images/influences/moonlight.jpg",
 			"figCaption": "Moonlight",
 			"creator": "Barry Jenkins",
-			"featured": true, 
+			"featured": true,
 			"icon": "../icons/book-icon.svg",
 			"alt": "A young black man stares poignantly into the distance"
 		}
-
-
 	]
 }
