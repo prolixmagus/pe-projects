@@ -1,10 +1,11 @@
-<?php $pageData = read_page_data('work');
+<?php
+$pageData = read_page_data('work');
 
 $work_article = get_article_by_slug($pageData, $_GET['slug']);
 
-$explorationTitle = $work_article['title']
-?>
+$explorationTitle = $work_article['title'];
 
+?>
 <article class='exploration <?=$work_article['slug']?>'>
 	<?php $explorationTitle = $work_article['title']?>
 	<?php include('../modules/explorations-header/template.php') ?>

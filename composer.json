@@ -1,6 +1,7 @@
 {
     "require": {
-        "scssphp/scssphp": "^1.12.1"
+        "scssphp/scssphp": "^1.12.1",
+        "erusev/parsedown": "^1.7"
     },
     "scripts": {
         "build": [

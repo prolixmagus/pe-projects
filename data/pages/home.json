@@ -3,6 +3,16 @@
 	"slug": "home",
 	"blogs": [
 		{
+			"description": "Modularity",
+			"link": "https://prolixmagus.substack.com/p/modularity",
+			"date": "12 APR 2025"
+		},
+		{
+			"description": "Garbage Collection",
+			"link": "https://prolixmagus.substack.com/p/garbage-collection",
+			"date": "12 DEC 2024"
+		},
+		{
 			"description": "Successful Sass ... and You!",
 			"link": "https://prolixmagus.substack.com/p/successful-sass",
 			"date": "02 JUL 2024"
@@ -16,11 +26,6 @@
 			"description": "From Wireframe to Webpage",
 			"link": "?page=work-detail&slug=theme-challenge",
 			"date": "17 APR 2024"
-		},
-		{
-			"description": "To Abstract, Too Abstract?",
-			"link": "https://prolixmagus.substack.com/p/abstraction",
-			"date": "29 MAR 2024"
 		}
 	]
 }
